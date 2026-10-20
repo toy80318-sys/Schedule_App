@@ -7,13 +7,15 @@ let frame,now=0;
 const ctx={globalAlpha:1,tx:0,ty:0,ellipses:[],stack:[],save(){this.stack.push([this.globalAlpha,this.tx,this.ty])},restore(){[this.globalAlpha,this.tx,this.ty]=this.stack.pop()},resetTransform(){this.tx=this.ty=0},clearRect(){this.ellipses=[]},translate(x,y){this.tx+=x;this.ty+=y},ellipse(){this.ellipses.push({x:this.tx,y:this.ty,alpha:this.globalAlpha})}};
 for(const name of ['scale','rotate','fillRect','beginPath','fill'])ctx[name]=()=>{};
 const draws=[];ctx.drawImage=im=>draws.push({source:im.source,x:ctx.tx,y:ctx.ty});
+const videos=[];
 class Element{
- constructor(){this.dataset={};this.style={};this.children=[];this.classList={add(){}};this.hidden=false}
+ constructor(tag='DIV'){this.tagName=tag.toUpperCase();if(this.tagName==='VIDEO')videos.push(this);this.paused=true;this.videoWidth=this.videoHeight=100;this.currentTime=0;this.dataset={};this.style={};this.children=[];this.classList={add(){}};this.hidden=false}
+ get source(){return this.src} load(){queueMicrotask(()=>this.onloadeddata?.())} play(){this.paused=false;return Promise.resolve()} pause(){this.paused=true} removeAttribute(k){delete this[k]}
  append(x){this.children.push(x)} replaceChildren(){this.children=[]} setAttribute(k,v){this[k]=v} addEventListener(){} getContext(){return ctx} getBoundingClientRect(){return{width:1000,height:300}} click(){this.onclick?.()}
 }
 const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,new Element());return nodes.get(id)};
 class Image{constructor(){this.naturalWidth=this.naturalHeight=100}set src(s){this.source=s;queueMicrotask(()=>this.onload?.())}}
-const document={baseURI:'https://example.test/player.html?embedded=1',hidden:false,body:new Element(),getElementById:get,createElement:()=>new Element(),addEventListener(){}};
+const document={baseURI:'https://example.test/player.html?embedded=1',hidden:false,body:new Element(),getElementById:get,createElement:tag=>new Element(tag),addEventListener(){}};
 const window={document,devicePixelRatio:1,jejuFinalCatalog:{backgrounds:[{src:BASE+'background.png'}]},jejuPlayerArt:{displaySrc:s=>s},jejuPngPairs:require('../docs/png-state-pairs.js'),jejuAmbient:{cleanProject:p=>p,currentAsset:a=>a,atmosphereKind:()=>null},matchMedia:()=>({matches:false,addEventListener(){}}),addEventListener(){}};window.parent=window;
 const sandbox={window,document,location:new URL(document.baseURI),URL,URLSearchParams,Image,performance:{now:()=>now},requestAnimationFrame:fn=>{frame=fn;return 1},cancelAnimationFrame(){frame=null},createImageBitmap:async blob=>({source:blob.src,width:100,height:100,close(){}}),fetch:async src=>({ok:true,json:async()=>manifest,blob:async()=>({src})}),setTimeout,clearTimeout,console};
 vm.runInNewContext(fs.readFileSync(require.resolve('../docs/player.js'),'utf8'),sandbox);
@@ -43,6 +45,10 @@ const advance=ms=>{now=ms;const fn=frame;frame=null;assert(fn);fn(ms)};
  const wrapped=draws.find(d=>d.source===frames[0]);assert(wrapped,'sequence must wrap to the first frame');assert.equal(wrapped.x,pose.x);assert.equal(wrapped.y,pose.y);assert.equal(api.state().activeBlooms,0);
  await api.load({format:'jeju-maze-wall-v1',oilAssetVersion:14,width:1000,height:300,assets:[{id:'grass',category:'grass',src:frames[0],frames,fps:2,loopInPlace:true},{id:'flower',group:'flowers',species:'camellia',src:BASE+'camellia_a_open.png'}],objects:[{id:'grass1',assetId:'grass',x:100,y:50,w:100,h:100,r:0,opacity:1},{id:'flower1',assetId:'flower',x:100,y:50,w:100,h:100,r:0,opacity:1}],background:BASE+'background.png'});
  draws.length=0;api.reset();const grassIndex=draws.findIndex(d=>d.source===frames[0]),flowerIndex=draws.findIndex(d=>d.source===BASE+'camellia_a_bud.png');assert(grassIndex>=0&&flowerIndex>grassIndex,'animated grass must keep its saved layer behind the flower');
+ const videoSrc=BASE+'cloud.webm';await api.load({format:'jeju-maze-wall-v1',oilAssetVersion:14,width:1000,height:300,assets:[{id:'cloud',src:frames[0],frames,fps:2,loopInPlace:true,loopVideo:videoSrc}],objects:[{id:'cloud1',assetId:'cloud',x:100,y:50,w:100,h:100,r:0,opacity:1}],background:BASE+'background.png'});
+ draws.length=0;api.reset();assert(draws.some(d=>d.source===videoSrc),'exhibition must draw the native alpha-video decoder');assert.equal(api.state().queuedFrames,0,'native actors must not queue individual frame downloads');
+ const native=videos.at(-1);assert.equal(native.paused,false);api.setActive(false);assert.equal(native.paused,true);api.setActive(true);assert.equal(native.paused,false);native.currentTime=9;api.reset();assert.equal(native.currentTime,0);
+ console.log('PASS:native alpha playback avoids frame-request starvation.');
  console.log('PASS:oil actor sequence advances, wraps and remains in place without changing saved motion.');
  console.log('PASS:mouse hover, touch/click, duplicate guard, left/up travel, final3s smooth fade,10s expiry, re-entry and reset.');
 })().catch(e=>{console.error(e);process.exitCode=1});

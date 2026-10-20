@@ -1,0 +1,37 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const BASE='https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/';
+const species=['hydrangea','lavender','rapeseed','buckwheat','marigold','camellia'];
+const variants=species.flatMap((s,i)=>Array.from({length:i<4?3:2},(_,n)=>{const tone=String.fromCharCode(97+n),bud=BASE+s+'_'+tone+'_bud.png',open=BASE+s+'_'+tone+'_open.png';return{id:s+'-'+tone,species:s,tone,name:s,ready:true,route:'PNG_STATE_PAIR',transparent:true,bud,open,frames:[bud,open],frameCount:2,fps:0,duration:0,width:100,height:100,petalColor:'#d92f56'}}));
+const manifest={format:'jeju-png-state-pairs-v1',mode:'PNG_STATE_PAIR',defaultVariants:Object.fromEntries(species.map(s=>[s,'a'])),variants};
+let frame,now=0;
+const ctx={globalAlpha:1,tx:0,ty:0,ellipses:[],stack:[],save(){this.stack.push([this.globalAlpha,this.tx,this.ty])},restore(){[this.globalAlpha,this.tx,this.ty]=this.stack.pop()},resetTransform(){this.tx=this.ty=0},clearRect(){this.ellipses=[]},translate(x,y){this.tx+=x;this.ty+=y},ellipse(){this.ellipses.push({x:this.tx,y:this.ty,alpha:this.globalAlpha})}};
+for(const name of ['scale','rotate','fillRect','drawImage','beginPath','fill'])ctx[name]=()=>{};
+class Element{
+ constructor(){this.dataset={};this.style={};this.children=[];this.classList={add(){}};this.hidden=false}
+ append(x){this.children.push(x)} replaceChildren(){this.children=[]} setAttribute(k,v){this[k]=v} addEventListener(){} getContext(){return ctx} getBoundingClientRect(){return{width:1000,height:300}} click(){this.onclick?.()}
+}
+const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,new Element());return nodes.get(id)};
+class Image{constructor(){this.naturalWidth=this.naturalHeight=100}set src(s){this.source=s;queueMicrotask(()=>this.onload?.())}}
+const document={baseURI:'https://example.test/player.html?embedded=1',hidden:false,body:new Element(),getElementById:get,createElement:()=>new Element(),addEventListener(){}};
+const window={document,devicePixelRatio:1,jejuFinalCatalog:{backgrounds:[{src:BASE+'background.png'}]},jejuPlayerArt:{displaySrc:s=>s},jejuPngPairs:require('../docs/png-state-pairs.js'),jejuAmbient:{cleanProject:p=>p,currentAsset:a=>a,atmosphereKind:()=>null},matchMedia:()=>({matches:false,addEventListener(){}}),addEventListener(){}};window.parent=window;
+const sandbox={window,document,location:new URL(document.baseURI),URL,URLSearchParams,Image,performance:{now:()=>now},requestAnimationFrame:fn=>{frame=fn;return 1},cancelAnimationFrame(){frame=null},fetch:async()=>({ok:true,json:async()=>manifest}),setTimeout,clearTimeout,console};
+vm.runInNewContext(fs.readFileSync(require.resolve('../docs/player.js'),'utf8'),sandbox);
+const advance=ms=>{now=ms;const fn=frame;frame=null;assert(fn);fn(ms)};
+(async()=>{
+ const api=window.jejuExhibition;
+ await api.load({format:'jeju-maze-wall-v1',oilAssetVersion:14,name:'Test',width:1000,height:300,assets:[{id:'flower',group:'flowers',species:'camellia',src:BASE+'camellia_a_open.png'}],objects:[{id:'flower1',assetId:'flower',x:400,y:150,w:100,h:100,r:0,opacity:.8}],background:BASE+'background.png'});
+ api.setActive(true);
+ const button=get('flowers').children[0];assert(button);assert.equal(api.state().activeBlooms,0);
+ button.onpointerenter({pointerType:'touch'});assert.equal(api.state().activeBlooms,0,'touch entry alone must not activate');
+ button.onpointerenter({pointerType:'mouse'});assert.equal(api.state().activeBlooms,1);assert.equal(get('scene').dataset.petals,'24','PNG preview must emit petals');
+ const initial=ctx.ellipses.map(x=>({...x}));assert.equal(initial.length,24);
+ button.onpointerenter({pointerType:'mouse'});button.click();assert.equal(get('scene').dataset.petals,'24','one active flower cannot create duplicate bursts');
+ advance(7000);assert.equal(ctx.ellipses.length,24);ctx.ellipses.forEach((p,i)=>{assert(p.x<initial[i].x);assert(p.y<initial[i].y);assert.equal(p.alpha,.8)});
+ advance(8500);ctx.ellipses.forEach(p=>assert(Math.abs(p.alpha-.4)<1e-9,'half opacity halfway through final three seconds'));
+ advance(9999);assert.equal(ctx.ellipses.length,24);ctx.ellipses.forEach(p=>assert(p.alpha<.00001));
+ advance(10000);assert.equal(get('scene').dataset.petals,'0','particles expire at exactly ten seconds');
+ advance(31000);assert.equal(api.state().activeBlooms,0);assert.equal(button.dataset.state,'idle');
+ button.click();assert.equal(get('scene').dataset.petals,'24','touch/keyboard click remains available after reset');
+ api.reset();assert.equal(get('scene').dataset.petals,'0');assert.equal(api.state().activeBlooms,0);
+ console.log('PASS:mouse hover, touch/click, duplicate guard, left/up travel, final3s smooth fade,10s expiry, re-entry and reset.');
+})().catch(e=>{console.error(e);process.exitCode=1});

@@ -136,7 +136,7 @@
     if(!running()||active.has(o.id))return;
     const a=assets.get(o.assetId),v=a?.variants?.get(o.id),button=buttons.get(o.id);if(!v?.ready){status(`${o.name||a?.name||'이 꽃'} · 이 색상의 개화 영상이 아직 준비되지 않았습니다.`);return}
     for(const key of [...frameFailures])if(key.includes(`/flower-blooms/${v.id}/`))frameFailures.delete(key);
-    active.set(o.id,{variant:v,touchedAt:clock,from:0,display:null,error:false});rememberSequence(v);if(v.route!=='PNG_STATE_PAIR')scatter(o,v);
+    active.set(o.id,{variant:v,touchedAt:clock,from:0,display:null,error:false});rememberSequence(v);scatter(o,v);
     button.dataset.state='opening';button.setAttribute('aria-pressed','true');status(v.route==='PNG_STATE_PAIR'?`${v.name||o.name||a.name} · 만개 PNG 상태 · 30초 후 봉오리 상태 복귀 · 개화 영상 미포함`:`${v.name||o.name||a.name} · 꽃이 피어납니다. 30초 뒤 천천히 봉오리로 닫힙니다.`);
     prefetch(v,0,false);paint();wake();
   }
@@ -191,10 +191,10 @@
     for(const {o,im,scope} of drawables)drawObject(o,im,scope,1,false,false);
     for(const [i,actor] of actors.entries())if(actor.kind!=='cloud'&&actor.kind!=='mist')drawActor(actor,i);
     petals=petals.filter(p=>clock-p.start<p.life);ctx.save();ctx.filter=filter('flowers');
-    for(const p of petals){const t=clock-p.start,u=t/p.life;
+    for(const p of petals){const t=clock-p.start,fade=Math.max(0,Math.min(1,(t-(p.life-3))/3));
       // Integrated gusts vary the flight speed without reversing the left/up wind.
       const gust=(frequency,phase)=>t+p.turbulence*(Math.sin(t*frequency+phase)-Math.sin(phase))/frequency;
-      ctx.save();ctx.globalAlpha=p.opacity*(1-u)*(1-u)*(1+2*u);ctx.translate(p.x+p.vx*gust(p.frequency,p.phase),p.y+p.vy*gust(p.frequency*.73,p.phase+1.7)-project.height*.0006*t*t);ctx.rotate(p.rotation+t*p.spin+p.turbulence*Math.sin(t*p.frequency+p.phase));if(p.texture){ctx.drawImage(p.texture,-p.size,-p.size,p.size*2,p.size*2)}else{ctx.fillStyle=p.color;ctx.beginPath();ctx.ellipse(0,0,p.size*.6,p.size,0,0,Math.PI*2);ctx.fill();}ctx.restore()}ctx.restore();
+      ctx.save();ctx.globalAlpha=p.opacity*(1-fade*fade*(3-2*fade));ctx.translate(p.x+p.vx*gust(p.frequency,p.phase),p.y+p.vy*gust(p.frequency*.73,p.phase+1.7)-project.height*.0006*t*t);ctx.rotate(p.rotation+t*p.spin+p.turbulence*Math.sin(t*p.frequency+p.phase));if(p.texture){ctx.drawImage(p.texture,-p.size,-p.size,p.size*2,p.size*2)}else{ctx.fillStyle=p.color;ctx.beginPath();ctx.ellipse(0,0,p.size*.6,p.size,0,0,Math.PI*2);ctx.fill();}ctx.restore()}ctx.restore();
     canvas.dataset.petals=String(petals.length);
   }
   function disposeBackground(video){if(video?.tagName==='VIDEO'){video.pause();video.removeAttribute('src');video.load()}}

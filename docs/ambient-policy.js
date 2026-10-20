@@ -19,8 +19,8 @@
     const source=[asset.id,asset.src,asset.frames?.[0]].join(' ');
     return /cloud/.test(source)?'cloud':/mist|fog/.test(source)?'mist':null;
   }
-  function driftPose(object,kind,time,width){
-    if(!['cloud','mist'].includes(kind)||object.motion==='stationary')return object;
+  function driftPose(object,kind,time,width,asset){
+    if(!['cloud','mist'].includes(kind)||object.motion==='stationary'||asset?.loopInPlace)return object;
     const span=width+object.w*2+40,speed=span/(kind==='cloud'?540:900);
     return {...object,x:((object.x+object.w+20-time*speed*(object.motion==='right'?-1:1))%span+span)%span-object.w-20};
   }

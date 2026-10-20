@@ -5,7 +5,8 @@ const variants=species.flatMap((s,i)=>Array.from({length:i<4?3:2},(_,n)=>{const 
 const manifest={format:'jeju-png-state-pairs-v1',mode:'PNG_STATE_PAIR',defaultVariants:Object.fromEntries(species.map(s=>[s,'a'])),variants};
 let frame,now=0;
 const ctx={globalAlpha:1,tx:0,ty:0,ellipses:[],stack:[],save(){this.stack.push([this.globalAlpha,this.tx,this.ty])},restore(){[this.globalAlpha,this.tx,this.ty]=this.stack.pop()},resetTransform(){this.tx=this.ty=0},clearRect(){this.ellipses=[]},translate(x,y){this.tx+=x;this.ty+=y},ellipse(){this.ellipses.push({x:this.tx,y:this.ty,alpha:this.globalAlpha})}};
-for(const name of ['scale','rotate','fillRect','drawImage','beginPath','fill'])ctx[name]=()=>{};
+for(const name of ['scale','rotate','fillRect','beginPath','fill'])ctx[name]=()=>{};
+const draws=[];ctx.drawImage=im=>draws.push({source:im.source,x:ctx.tx,y:ctx.ty});
 class Element{
  constructor(){this.dataset={};this.style={};this.children=[];this.classList={add(){}};this.hidden=false}
  append(x){this.children.push(x)} replaceChildren(){this.children=[]} setAttribute(k,v){this[k]=v} addEventListener(){} getContext(){return ctx} getBoundingClientRect(){return{width:1000,height:300}} click(){this.onclick?.()}
@@ -14,7 +15,7 @@ const nodes=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,new Element());ret
 class Image{constructor(){this.naturalWidth=this.naturalHeight=100}set src(s){this.source=s;queueMicrotask(()=>this.onload?.())}}
 const document={baseURI:'https://example.test/player.html?embedded=1',hidden:false,body:new Element(),getElementById:get,createElement:()=>new Element(),addEventListener(){}};
 const window={document,devicePixelRatio:1,jejuFinalCatalog:{backgrounds:[{src:BASE+'background.png'}]},jejuPlayerArt:{displaySrc:s=>s},jejuPngPairs:require('../docs/png-state-pairs.js'),jejuAmbient:{cleanProject:p=>p,currentAsset:a=>a,atmosphereKind:()=>null},matchMedia:()=>({matches:false,addEventListener(){}}),addEventListener(){}};window.parent=window;
-const sandbox={window,document,location:new URL(document.baseURI),URL,URLSearchParams,Image,performance:{now:()=>now},requestAnimationFrame:fn=>{frame=fn;return 1},cancelAnimationFrame(){frame=null},fetch:async()=>({ok:true,json:async()=>manifest}),setTimeout,clearTimeout,console};
+const sandbox={window,document,location:new URL(document.baseURI),URL,URLSearchParams,Image,performance:{now:()=>now},requestAnimationFrame:fn=>{frame=fn;return 1},cancelAnimationFrame(){frame=null},createImageBitmap:async blob=>({source:blob.src,width:100,height:100,close(){}}),fetch:async src=>({ok:true,json:async()=>manifest,blob:async()=>({src})}),setTimeout,clearTimeout,console};
 vm.runInNewContext(fs.readFileSync(require.resolve('../docs/player.js'),'utf8'),sandbox);
 const advance=ms=>{now=ms;const fn=frame;frame=null;assert(fn);fn(ms)};
 (async()=>{
@@ -33,5 +34,15 @@ const advance=ms=>{now=ms;const fn=frame;frame=null;assert(fn);fn(ms)};
  advance(31000);assert.equal(api.state().activeBlooms,0);assert.equal(button.dataset.state,'idle');
  button.click();assert.equal(get('scene').dataset.petals,'24','touch/keyboard click remains available after reset');
  api.reset();assert.equal(get('scene').dataset.petals,'0');assert.equal(api.state().activeBlooms,0);
+ const policy=require('../docs/ambient-policy.js'),fixed={x:100,y:50,w:100,motion:'left'};assert.strictEqual(policy.driftPose(fixed,'cloud',20,1000,{loopInPlace:true}),fixed);assert.notEqual(policy.driftPose(fixed,'cloud',20,1000).x,fixed.x);
+ const frames=[0,1,2].map(n=>BASE+'bird/frame_'+n+'.webp');
+ await api.load({format:'jeju-maze-wall-v1',oilAssetVersion:14,width:1000,height:300,assets:[{id:'bird',src:frames[0],frames,fps:2,loopInPlace:true}],objects:[{id:'bird1',assetId:'bird',x:100,y:50,w:100,h:100,r:0,opacity:1,motion:'left'}],background:BASE+'background.png'});
+ api.setActive(true);await new Promise(setImmediate);
+ draws.length=0;advance(now+500);assert(draws.some(d=>d.source===frames[1]),'oil editor must play the second sequence frame at the declared FPS');
+ const pose=draws.find(d=>d.source===frames[1]);await new Promise(setImmediate);draws.length=0;advance(now+1000);
+ const wrapped=draws.find(d=>d.source===frames[0]);assert(wrapped,'sequence must wrap to the first frame');assert.equal(wrapped.x,pose.x);assert.equal(wrapped.y,pose.y);assert.equal(api.state().activeBlooms,0);
+ await api.load({format:'jeju-maze-wall-v1',oilAssetVersion:14,width:1000,height:300,assets:[{id:'grass',category:'grass',src:frames[0],frames,fps:2,loopInPlace:true},{id:'flower',group:'flowers',species:'camellia',src:BASE+'camellia_a_open.png'}],objects:[{id:'grass1',assetId:'grass',x:100,y:50,w:100,h:100,r:0,opacity:1},{id:'flower1',assetId:'flower',x:100,y:50,w:100,h:100,r:0,opacity:1}],background:BASE+'background.png'});
+ draws.length=0;api.reset();const grassIndex=draws.findIndex(d=>d.source===frames[0]),flowerIndex=draws.findIndex(d=>d.source===BASE+'camellia_a_bud.png');assert(grassIndex>=0&&flowerIndex>grassIndex,'animated grass must keep its saved layer behind the flower');
+ console.log('PASS:oil actor sequence advances, wraps and remains in place without changing saved motion.');
  console.log('PASS:mouse hover, touch/click, duplicate guard, left/up travel, final3s smooth fade,10s expiry, re-entry and reset.');
 })().catch(e=>{console.error(e);process.exitCode=1});

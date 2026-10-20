@@ -154,10 +154,11 @@
     const x=((o.x+o.w+20+time*speed*offset)%span+span)%span-o.w-20;
     return {...o,x,y:o.y+Math.sin(time/8+index*2)*project.height*.018};
   }
-  function drawActor(actor,index){
+  function drawActor(actor,index,paintNow=true){
     const o=actorPose(actor.object,actor.kind,clock,index),frames=actor.frames,frame=reduced.matches?0:Math.floor(clock*actor.fps)%frames.length;
-    const src=frames[frame],hit=cachedFrame('small:'+src);if(hit)actor.display='small:'+src;const im=hit||cachedFrame(actor.display)||actor.first;drawObject(o,im,'decor',1,(actor.kind==='cloud'||actor.kind==='mist')&&!assets.get(actor.object.assetId)?.sourceDriveId&&!assets.get(actor.object.assetId)?.lightingBaked);
-    if(!reduced.matches&&frames.length>1)for(let i=0;i<Math.min(12,frames.length);i++)requestFrame(frames[(frame+i)%frames.length],true).catch(()=>{});
+    const src=frames[frame],hit=cachedFrame('small:'+src);if(hit)actor.display='small:'+src;const im=hit||cachedFrame(actor.display)||actor.first;if(paintNow)drawObject(o,im,'decor',1,(actor.kind==='cloud'||actor.kind==='mist')&&!assets.get(actor.object.assetId)?.sourceDriveId&&!assets.get(actor.object.assetId)?.lightingBaked);
+    if(!reduced.matches&&frames.length>1)for(let i=0;i<Math.min(12,frames.length,Math.max(2,Math.floor(64/Math.max(1,actors.length))));i++)requestFrame(frames[(frame+i)%frames.length],true).catch(()=>{});
+    return {o,im,scope:'decor'};
   }
   function drawBackground(im,alpha=1){
     const iw=im?.videoWidth||im?.naturalWidth,ih=im?.videoHeight||im?.naturalHeight;if(!iw||!ih)return;
@@ -168,7 +169,7 @@
     drawBackground(bg);if(bgNext&&bgFadeAt!==null)drawBackground(bgNext,Math.min(1,(clock-bgFadeAt)/2));
     for(const [i,actor] of actors.entries())if(actor.kind==='cloud'||actor.kind==='mist')drawActor(actor,i);
     const drawables=[];let depthRank=0;for(const o of window.jejuSpace?.ordered(project.objects,assets,project.height,project.gardenSpace,cameraView)||project.objects){
-      depthRank++;const a=assets.get(o.assetId),type=flowerSpecies(a);if(actorKind(a))continue;
+      depthRank++;const a=assets.get(o.assetId),type=flowerSpecies(a);if(actorKind(a)){if(a.category==='grass'){const actor=actors.find(x=>x.object.id===o.id);if(actor)drawables.push(drawActor(actor,0,false))}continue;}
       if(!type){drawables.push({o,im:a.still,scope:'decor'});continue}
       const v=a.variants.get(o.id);if(!v?.ready)continue;
       const pose=window.jejuSpace?.pose(o,a,project.height,project.gardenSpace,cameraView)||o,button=buttons.get(o.id);if(button&&project.gardenSpace?.spatial){Object.assign(button.style,{left:pose.x/project.width*100+'%',top:pose.y/project.height*100+'%',width:pose.w/project.width*100+'%',height:pose.h/project.height*100+'%',transform:window.jejuSpace?.transform(pose)||`rotate(${o.r}deg)`,zIndex:depthRank});if(pose.plane)button.dataset.camera=String(clock)}
@@ -189,7 +190,7 @@
     }
     for(const {o,im} of drawables)window.jejuSpace?.castShadow(ctx,o,assets.get(o.assetId),im,project.height,project.gardenSpace,cameraView);
     for(const {o,im,scope} of drawables)drawObject(o,im,scope,1,false,false);
-    for(const [i,actor] of actors.entries())if(actor.kind!=='cloud'&&actor.kind!=='mist')drawActor(actor,i);
+    for(const [i,actor] of actors.entries())if(actor.kind!=='cloud'&&actor.kind!=='mist'&&assets.get(actor.object.assetId)?.category!=='grass')drawActor(actor,i);
     petals=petals.filter(p=>clock-p.start<p.life);ctx.save();ctx.filter=filter('flowers');
     for(const p of petals){const t=clock-p.start,fade=Math.max(0,Math.min(1,(t-(p.life-3))/3));
       // Integrated gusts vary the flight speed without reversing the left/up wind.
@@ -237,7 +238,7 @@
   }
   async function mapLimit(items,fn){let cursor=0;await Promise.all(Array.from({length:Math.min(4,items.length)},async()=>{while(cursor<items.length){const index=cursor++;await fn(items[index],index)}}))}
   async function loadActors(next,map){
-    if(next.oilAssetVersion===14){const result=[];for(const o of next.objects){const a=map.get(o.assetId),kind=actorKind(a);if(kind){result.push({object:o,kind,frames:[a.src],fps:0,first:await image(a.src)})}}return result}
+    if(next.oilAssetVersion===14){const result=[];for(const o of next.objects){const a=map.get(o.assetId),kind=actorKind(a);if(kind){const frames=a.frames||[a.src];result.push({object:a.loopInPlace?{...o,motion:'stationary'}:o,kind,frames,fps:a.frames?a.fps:0,first:await image(frames[0])})}}return result}
 
     if(!actorManifestTask)actorManifestTask=fetch('/assets/animations/manifest.json?v=center-size-v51-20261020').then(r=>{if(!r.ok)throw Error('새·나비·구름 목록을 읽지 못했습니다.');return r.json()}).catch(e=>{actorManifestTask=null;throw e});
     const rawList=await actorManifestTask;if(!Array.isArray(rawList))throw Error('배경 배우 목록 형식 오류');const list=rawList.filter(a=>!window.jejuAmbient.isRetired(a));

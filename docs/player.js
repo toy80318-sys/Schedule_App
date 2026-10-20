@@ -69,7 +69,7 @@
     return data;
   }
   async function getManifest(){
-    if(!manifestTask)manifestTask=fetch('https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/bloom-manifest.json?v=14').then(r=>{if(!r.ok)throw Error('색상별 개화 영상 목록을 읽지 못했습니다.');return r.json()}).then(data=>bloomManifest=validateManifest(data)).catch(e=>{manifestTask=null;throw e});
+    if(!manifestTask)manifestTask=fetch('https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/bloom-manifest_v18.json?v=18').then(r=>{if(!r.ok)throw Error('색상별 개화 영상 목록을 읽지 못했습니다.');return r.json()}).then(data=>bloomManifest=validateManifest(data)).catch(e=>{manifestTask=null;throw e});
     return manifestTask;
   }
   function normalizeVariant(type,requested,asset={}){

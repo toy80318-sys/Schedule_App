@@ -1,0 +1,14 @@
+{
+  "originalPNGBytes": 76218291,
+  "webPBytes": 12730770,
+  "reductionPercent": 83.3,
+  "sceneBytes": {
+    "sunset": 1000032,
+    "day": 1060754,
+    "night": 1103844,
+    "morning": 1059136
+  },
+  "supabaseProject": "lixkizqprsbnsnozwbpa",
+  "bucket": "jeju-maze-v14",
+  "files": 213
+}

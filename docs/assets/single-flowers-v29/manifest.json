@@ -27,7 +27,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/01_全193帧_v30.jpg",
       "note": "봉오리·만개 두 이미지를 다시 입력해 새로 생성했습니다. 193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 2,
@@ -45,7 +47,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/02_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 3,
@@ -63,7 +67,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/03_全193帧_v30.jpg",
       "note": "봉오리·만개 두 이미지를 다시 입력해 새로 생성했습니다. 193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 4,
@@ -81,7 +87,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/04_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 5,
@@ -104,7 +112,9 @@
         29,
         78
       ],
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 6,
@@ -122,7 +132,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/06_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 7,
@@ -140,7 +152,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/07_全193帧_v30.jpg",
       "note": "봉오리·만개 두 이미지를 다시 입력해 새로 생성했습니다. 193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 8,
@@ -158,7 +172,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/08_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 9,
@@ -176,7 +192,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/09_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 10,
@@ -194,7 +212,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/10_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 11,
@@ -212,7 +232,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/11_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 12,
@@ -230,7 +252,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/12_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 13,
@@ -248,7 +272,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/13_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 14,
@@ -266,7 +292,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/14_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 15,
@@ -284,7 +312,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/15_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     },
     {
       "index": 16,
@@ -302,7 +332,9 @@
       "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/16_全193帧_v30.jpg",
       "note": "193프레임 모음과 확대 구간 검토에서 새 줄기·잎·그림자·떠다니는 물체는 발견되지 않았습니다. 사용자 컨펌 전입니다.",
       "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
-      "upscaleApproved": false
+      "upscaleApproved": false,
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "naturalOpeningCriterion": "Existing attached petals must physically unfold from the bud. Reject melting, rubber inflation, topology replacement, merged buds, sudden appearance and dissolve-to-end. Absence of extra objects is a separate check."
     }
   ]
 }

@@ -1,0 +1,817 @@
+{
+  "version": 32,
+  "localPackage": "20261022_메이즈랜드_원본소스/Unity_라이팅세트_v32",
+  "scenes": [
+    {
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "theme": "sunset",
+      "name": "노을 · 레드",
+      "folder": "BG01_Sunset_LT01_AmberLeft",
+      "lightingDescription": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
+      "lightingBasis": "Existing v23 lighting records referenced integrated oil v21. No pixels relit by this packaging step.",
+      "unityLightingVerified": false,
+      "flowerIds": [
+        "F01",
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "backgroundFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_Background_Hallasan_4096_v19.png",
+      "lightingReferenceFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_Reference_IntegratedOil_v21.png"
+    },
+    {
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "theme": "day",
+      "name": "낮 · 옐로우",
+      "folder": "BG02_Day_LT02_IvoryUpperLeft",
+      "lightingDescription": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
+      "lightingBasis": "Existing v23 lighting records referenced integrated oil v21. No pixels relit by this packaging step.",
+      "unityLightingVerified": false,
+      "flowerIds": [
+        "F05",
+        "F06",
+        "F07",
+        "F08"
+      ],
+      "backgroundFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_Background_Hallasan_4096_v19.png",
+      "lightingReferenceFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_Reference_IntegratedOil_v21.png"
+    },
+    {
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "theme": "night",
+      "name": "밤 · 퍼플",
+      "folder": "BG03_Night_LT03_SilverUpperRight",
+      "lightingDescription": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
+      "lightingBasis": "Existing v23 lighting records referenced integrated oil v21. No pixels relit by this packaging step.",
+      "unityLightingVerified": false,
+      "flowerIds": [
+        "F09",
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "backgroundFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_Background_Hallasan_4096_v19.png",
+      "lightingReferenceFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_Reference_IntegratedOil_v21.png"
+    },
+    {
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "theme": "morning",
+      "name": "아침 · 블루",
+      "folder": "BG04_Morning_LT04_GoldLeft",
+      "lightingDescription": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
+      "lightingBasis": "Existing v23 lighting records referenced integrated oil v21. No pixels relit by this packaging step.",
+      "unityLightingVerified": false,
+      "flowerIds": [
+        "F13",
+        "F14",
+        "F15",
+        "F16"
+      ],
+      "backgroundFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_Background_Hallasan_4096_v19.png",
+      "lightingReferenceFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_Reference_IntegratedOil_v21.png"
+    }
+  ],
+  "flowers": [
+    {
+      "index": 1,
+      "flowerId": "F01",
+      "sourceAssetId": "oil-sunset-flowers-01",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "theme": "sunset",
+      "name": "노을 · 레드 · 동백꽃 A · 진홍",
+      "species": "Camellia",
+      "color": "Crimson",
+      "variant": "A",
+      "lightingDescription": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
+      "files": {
+        "BudInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F01_Camellia_Crimson_A_Bud_InputKey00FFFF_v22.png",
+        "BudAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F01_Camellia_Crimson_A_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F01_Camellia_Crimson_A_Bloom_InputKey00FFFF_v23.png",
+        "BloomAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F01_Camellia_Crimson_A_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_Key00FFFF_Review_v30.mp4",
+      "videoFilename": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_Key00FFFF_Review_v30.mp4",
+      "keyColor": "#00FFFF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        37,
+        594,
+        463
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 2,
+      "flowerId": "F02",
+      "sourceAssetId": "oil-sunset-flowers-02",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "theme": "sunset",
+      "name": "노을 · 레드 · 동백꽃 B · 빨강",
+      "species": "Camellia",
+      "color": "Red",
+      "variant": "B",
+      "lightingDescription": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
+      "files": {
+        "BudInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F02_Camellia_Red_B_Bud_InputKey00FFFF_v22.png",
+        "BudAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F02_Camellia_Red_B_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F02_Camellia_Red_B_Bloom_InputKey00FFFF_v23.png",
+        "BloomAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F02_Camellia_Red_B_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_Key00FFFF_Review_v29.mp4",
+      "videoFilename": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_Key00FFFF_Review_v29.mp4",
+      "keyColor": "#00FFFF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        16,
+        582,
+        442
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 3,
+      "flowerId": "F03",
+      "sourceAssetId": "oil-sunset-flowers-03",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "theme": "sunset",
+      "name": "노을 · 레드 · 메밀꽃 A · 붉은 분홍",
+      "species": "Buckwheat",
+      "color": "RedPink",
+      "variant": "A",
+      "lightingDescription": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
+      "files": {
+        "BudInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bud_InputKey00FFFF_v22.png",
+        "BudAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bloom_InputKey00FFFF_v23.png",
+        "BloomAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_Key00FFFF_Review_v30.mp4",
+      "videoFilename": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_Key00FFFF_Review_v30.mp4",
+      "keyColor": "#00FFFF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        68,
+        571,
+        454
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 4,
+      "flowerId": "F04",
+      "sourceAssetId": "oil-sunset-flowers-04",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "theme": "sunset",
+      "name": "노을 · 레드 · 메밀꽃 B · 붉은 분홍",
+      "species": "Buckwheat",
+      "color": "RedPink",
+      "variant": "B",
+      "lightingDescription": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
+      "files": {
+        "BudInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bud_InputKey00FFFF_v22.png",
+        "BudAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bloom_InputKey00FFFF_v23.png",
+        "BloomAlpha": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_Key00FFFF_Review_v29.mp4",
+      "videoFilename": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_Key00FFFF_Review_v29.mp4",
+      "keyColor": "#00FFFF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        21,
+        77,
+        531,
+        433
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 5,
+      "flowerId": "F05",
+      "sourceAssetId": "oil-day-flowers-01",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "theme": "day",
+      "name": "낮 · 옐로우 · 금잔화 A · 황금노랑",
+      "species": "Calendula",
+      "color": "GoldYellow",
+      "variant": "A",
+      "lightingDescription": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
+      "files": {
+        "BudInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bud_InputKey0000FF_v22.png",
+        "BudAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bloom_InputKey0000FF_v22.png",
+        "BloomAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F05_Calendula_GoldYellow_A_BudToBloom_Key0000FF_RejectKey_v31.mp4",
+      "videoFilename": "ML_BG02_LT02_F05_Calendula_GoldYellow_A_BudToBloom_Key0000FF_RejectKey_v31.mp4",
+      "keyColor": "#0000FF",
+      "qualityStatus": "BACKGROUND_REVIEW_REQUIRED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        16,
+        631,
+        419
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 6,
+      "flowerId": "F06",
+      "sourceAssetId": "oil-day-flowers-02",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "theme": "day",
+      "name": "낮 · 옐로우 · 금잔화 B · 황금노랑",
+      "species": "Calendula",
+      "color": "GoldYellow",
+      "variant": "B",
+      "lightingDescription": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
+      "files": {
+        "BudInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bud_InputKey0000FF_v22.png",
+        "BudAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bloom_InputKey0000FF_v22.png",
+        "BloomAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_Key0000FF_Review_v29.mp4",
+      "videoFilename": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_Key0000FF_Review_v29.mp4",
+      "keyColor": "#0000FF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        24,
+        575,
+        424
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 7,
+      "flowerId": "F07",
+      "sourceAssetId": "oil-day-flowers-03",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "theme": "day",
+      "name": "낮 · 옐로우 · 유채꽃 A · 레몬노랑",
+      "species": "Rapeseed",
+      "color": "LemonYellow",
+      "variant": "A",
+      "lightingDescription": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
+      "files": {
+        "BudInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bud_InputKey0000FF_v22.png",
+        "BudAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bloom_InputKey0000FF_v23.png",
+        "BloomAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_Key0000FF_Review_v30.mp4",
+      "videoFilename": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_Key0000FF_Review_v30.mp4",
+      "keyColor": "#0000FF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        42,
+        541,
+        455
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 8,
+      "flowerId": "F08",
+      "sourceAssetId": "oil-day-flowers-04",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "theme": "day",
+      "name": "낮 · 옐로우 · 유채꽃 B · 선명한 노랑",
+      "species": "Rapeseed",
+      "color": "Yellow",
+      "variant": "B",
+      "lightingDescription": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
+      "files": {
+        "BudInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bud_InputKey0000FF_v22.png",
+        "BudAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bloom_InputKey0000FF_v23.png",
+        "BloomAlpha": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F08_Rapeseed_Yellow_B_BudToBloom_Key0000FF_Review_v29.mp4",
+      "videoFilename": "ML_BG02_LT02_F08_Rapeseed_Yellow_B_BudToBloom_Key0000FF_Review_v29.mp4",
+      "keyColor": "#0000FF",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        26,
+        450,
+        501
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 9,
+      "flowerId": "F09",
+      "sourceAssetId": "oil-night-flowers-01",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "theme": "night",
+      "name": "밤 · 퍼플 · 라벤더 A · 연보라",
+      "species": "Lavender",
+      "color": "LightPurple",
+      "variant": "A",
+      "lightingDescription": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
+      "files": {
+        "BudInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F09_Lavender_LightPurple_A_Bud_InputKeyFFFF00_v22.png",
+        "BudAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F09_Lavender_LightPurple_A_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F09_Lavender_LightPurple_A_Bloom_InputKeyFFFF00_v23.png",
+        "BloomAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F09_Lavender_LightPurple_A_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "videoFilename": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "keyColor": "#FFFF00",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        17,
+        261,
+        523
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 10,
+      "flowerId": "F10",
+      "sourceAssetId": "oil-night-flowers-02",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "theme": "night",
+      "name": "밤 · 퍼플 · 라벤더 B · 짙은 보라",
+      "species": "Lavender",
+      "color": "DeepPurple",
+      "variant": "B",
+      "lightingDescription": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
+      "files": {
+        "BudInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bud_InputKeyFFFF00_v22.png",
+        "BudAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bud_SourceAlpha_v14.png",
+        "BloomInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bloom_InputKeyFFFF00_v23.png",
+        "BloomAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bloom_SourceAlpha_v23.png"
+      },
+      "videoFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "videoFilename": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "keyColor": "#FFFF00",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        18,
+        399,
+        494
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 11,
+      "flowerId": "F11",
+      "sourceAssetId": "oil-night-flowers-03",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "theme": "night",
+      "name": "밤 · 퍼플 · 수국 A · 라일락",
+      "species": "Hydrangea",
+      "color": "Lilac",
+      "variant": "A",
+      "lightingDescription": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
+      "files": {
+        "BudInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bud_InputKeyFFFF00_v22.png",
+        "BudAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bud_SourceAlpha_v18.png",
+        "BloomInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bloom_InputKeyFFFF00_v22.png",
+        "BloomAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "videoFilename": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "keyColor": "#FFFF00",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        21,
+        16,
+        563,
+        443
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 12,
+      "flowerId": "F12",
+      "sourceAssetId": "oil-night-flowers-04",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "theme": "night",
+      "name": "밤 · 퍼플 · 수국 B · 보라",
+      "species": "Hydrangea",
+      "color": "Purple",
+      "variant": "B",
+      "lightingDescription": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
+      "files": {
+        "BudInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F12_Hydrangea_Purple_B_Bud_InputKeyFFFF00_v22.png",
+        "BudAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F12_Hydrangea_Purple_B_Bud_SourceAlpha_v18.png",
+        "BloomInput": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F12_Hydrangea_Purple_B_Bloom_InputKeyFFFF00_v22.png",
+        "BloomAlpha": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F12_Hydrangea_Purple_B_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "videoFilename": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_KeyFFFF00_Review_v29.mp4",
+      "keyColor": "#FFFF00",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        18,
+        16,
+        621,
+        448
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 13,
+      "flowerId": "F13",
+      "sourceAssetId": "oil-morning-flowers-01",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "theme": "morning",
+      "name": "아침 · 블루 · 수국 A · 하늘색",
+      "species": "Hydrangea",
+      "color": "SkyBlue",
+      "variant": "A",
+      "lightingDescription": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
+      "files": {
+        "BudInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bud_InputKeyFF8000_v22.png",
+        "BudAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bud_SourceAlpha_v18.png",
+        "BloomInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bloom_InputKeyFF8000_v22.png",
+        "BloomAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "videoFilename": "ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "keyColor": "#FF8000",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        25,
+        28,
+        592,
+        470
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 14,
+      "flowerId": "F14",
+      "sourceAssetId": "oil-morning-flowers-02",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "theme": "morning",
+      "name": "아침 · 블루 · 수국 B · 파랑",
+      "species": "Hydrangea",
+      "color": "Blue",
+      "variant": "B",
+      "lightingDescription": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
+      "files": {
+        "BudInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F14_Hydrangea_Blue_B_Bud_InputKeyFF8000_v22.png",
+        "BudAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F14_Hydrangea_Blue_B_Bud_SourceAlpha_v18.png",
+        "BloomInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F14_Hydrangea_Blue_B_Bloom_InputKeyFF8000_v22.png",
+        "BloomAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F14_Hydrangea_Blue_B_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "videoFilename": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "keyColor": "#FF8000",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        18,
+        53,
+        587,
+        462
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 15,
+      "flowerId": "F15",
+      "sourceAssetId": "oil-morning-flowers-03",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "theme": "morning",
+      "name": "아침 · 블루 · 수국 C · 코발트블루",
+      "species": "Hydrangea",
+      "color": "CobaltBlue",
+      "variant": "C",
+      "lightingDescription": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
+      "files": {
+        "BudInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bud_InputKeyFF8000_v22.png",
+        "BudAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bud_SourceAlpha_v18.png",
+        "BloomInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bloom_InputKeyFF8000_v22.png",
+        "BloomAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bloom_SourceAlpha_v14.png"
+      },
+      "videoFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "videoFilename": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "keyColor": "#FF8000",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        16,
+        18,
+        629,
+        456
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    },
+    {
+      "index": 16,
+      "flowerId": "F16",
+      "sourceAssetId": "oil-morning-flowers-04",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "theme": "morning",
+      "name": "아침 · 블루 · 수국 D · 흰색",
+      "species": "Hydrangea",
+      "color": "CoolWhite",
+      "variant": "D",
+      "lightingDescription": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
+      "files": {
+        "BudInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bud_InputKeyFF8000_v22.png",
+        "BudAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bud_SourceAlpha_v18.png",
+        "BloomInput": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bloom_InputKeyFF8000_v22.png",
+        "BloomAlpha": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bloom_SourceAlpha_v17.png"
+      },
+      "videoFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "videoFilename": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_KeyFF8000_Review_v29.mp4",
+      "keyColor": "#FF8000",
+      "qualityStatus": "NO_EXTRA_OBJECT_OBSERVED",
+      "naturalOpeningStatus": "NOT_FINAL_APPROVED_REQUIRES_PETAL_ATTACHMENT_CONTINUITY",
+      "finalApproved": false,
+      "referenceFile": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_Reference_IntegratedOil_v21.png",
+      "sourceEditorAnchor": {
+        "x": 0.5,
+        "y": 1,
+        "origin": "top-left"
+      },
+      "sourceEditorVisibleBounds": [
+        34,
+        38,
+        580,
+        448
+      ],
+      "canonicalInputCanvas": [
+        1024,
+        1024
+      ],
+      "videoCanvas": [
+        960,
+        960
+      ],
+      "nativeAlphaFrameAlignment": "Native alpha canvases vary; use exactInput canvas for generation and align alpha sources separately before sprite-state switching"
+    }
+  ],
+  "finalApproved": false
+}

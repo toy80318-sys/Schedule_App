@@ -1,5 +1,8 @@
 {
-  "version": 30,
+  "version": 31,
+  "replacedInThisRevision": [
+    5
+  ],
   "upscaleSubmitted": false,
   "regeneratedIndices": [
     1,
@@ -87,15 +90,20 @@
       "keyColor": "#0000FF",
       "status": "BACKGROUND_REVIEW_REQUIRED",
       "upscaleStatus": "WAITING_USER_APPROVAL",
-      "video": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/05_marigold_bud_to_bloom_720p_v30.mp4",
+      "video": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/05_marigold_bud_to_bloom_720p_v31.mp4",
       "width": 960,
       "height": 960,
       "fps": 24.0,
       "frameCount": 193,
-      "contact": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/05_개화8시점_v30.jpg",
-      "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/05_全193帧_v30.jpg",
-      "note": "재생성본에서도 2–5초에 파란 키 배경이 옅어집니다. 추가 물체는 발견되지 않았지만 단색 조건 불합격으로 전시·업스케일 대상에서 제외했습니다. 추가 1회 생성 승인 대기.",
-      "reviewMethod": "193-frame thumbnail atlas plus 8 larger time samples and all-frame border/envelope flags; not native-resolution visual inspection of every pixel or Unity approval",
+      "contact": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/05_개화8시점_v31.jpg",
+      "allFrames": "https://toy80318-sys.github.io/Schedule_App/assets/single-flowers-v29/05_全193帧_v31.jpg",
+      "note": "별도 승인받은 추가 1회(8크레딧)로 다시 생성했습니다. 전 구간에서 추가 물체는 발견되지 않았지만, 중간 파란 배경의 밝기 변화가 남아 단색 조건 불합격·전시 및 업스케일 사용 제외입니다. 승인된 1회는 소진했으며 추가 유료 생성은 중단했습니다.",
+      "reviewMethod": "All193 thumbnail frames,8 larger samples,and measured background median RGB across193frames; native video decode complete; no Unity verification",
+      "keyMedianRangeRGB": [
+        2,
+        29,
+        78
+      ],
       "upscaleApproved": false
     },
     {

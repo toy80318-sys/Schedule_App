@@ -1,0 +1,250 @@
+[
+  {
+    "key": "sunset_grass",
+    "theme": "sunset",
+    "category": "grass",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_grass_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_grass_chroma_magenta_v27.png"
+  },
+  {
+    "key": "day_grass",
+    "theme": "day",
+    "category": "grass",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_grass_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_grass_chroma_magenta_v27.png"
+  },
+  {
+    "key": "night_grass",
+    "theme": "night",
+    "category": "grass",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_grass_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_grass_chroma_magenta_v27.png"
+  },
+  {
+    "key": "morning_grass",
+    "theme": "morning",
+    "category": "grass",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_grass_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_grass_chroma_magenta_v27.png"
+  },
+  {
+    "key": "sunset_rock",
+    "theme": "sunset",
+    "category": "rock",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_rock_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_rock_chroma_magenta_v27.png"
+  },
+  {
+    "key": "sunset_bud",
+    "theme": "sunset",
+    "category": "bud",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_bud_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_bud_chroma_cyan_v27.png"
+  },
+  {
+    "key": "day_bud",
+    "theme": "day",
+    "category": "bud",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_bud_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_bud_chroma_magenta_v27.png"
+  },
+  {
+    "key": "night_bud",
+    "theme": "night",
+    "category": "bud",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_bud_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_bud_chroma_green_v27.png"
+  },
+  {
+    "key": "morning_bud",
+    "theme": "morning",
+    "category": "bud",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_bud_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_bud_chroma_magenta_v27.png"
+  },
+  {
+    "key": "sunset_open",
+    "theme": "sunset",
+    "category": "open",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_open_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/sunset_open_chroma_cyan_v27.png"
+  },
+  {
+    "key": "day_rock",
+    "theme": "day",
+    "category": "rock",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_rock_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_rock_chroma_magenta_v27.png"
+  },
+  {
+    "key": "night_rock",
+    "theme": "night",
+    "category": "rock",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_rock_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_rock_chroma_magenta_v27.png"
+  },
+  {
+    "key": "morning_rock",
+    "theme": "morning",
+    "category": "rock",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "REVIEW_CANDIDATE",
+    "fps": 24,
+    "seconds": 12,
+    "frameCount": 288,
+    "loopMethod": "periodic local wind deformation of generated image with native alpha; not AI generated video",
+    "creditsSpent": 0,
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_rock_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_rock_chroma_magenta_v27.png"
+  },
+  {
+    "key": "morning_open",
+    "theme": "morning",
+    "category": "open",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_open_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/morning_open_chroma_magenta_v27.png"
+  },
+  {
+    "key": "day_open",
+    "theme": "day",
+    "category": "open",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_open_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/day_open_chroma_magenta_v27.png"
+  },
+  {
+    "key": "night_open",
+    "theme": "night",
+    "category": "open",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "nativeAlphaPreserved": true,
+    "videoStatus": "PENDING_BUD_OPEN_PAIR_AND_COST",
+    "alphaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_open_alpha_1920x1080_v27.png",
+    "chromaPNG": "https://toy80318-sys.github.io/Schedule_App/assets/oil-sources-v27/night_open_chroma_green_v27.png"
+  }
+]

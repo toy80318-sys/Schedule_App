@@ -5,7 +5,7 @@
     1254
   ],
   "bloomCount": 16,
-  "budCount": 0,
+  "budCount": 16,
   "generator": "Built-in image_gen",
   "videoGenerationCount": 0,
   "entries": [
@@ -23,7 +23,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG01_LT01_F01_Camellia_Crimson_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "a77661c67074a348e38b4046556ecefc5fe2e80cd564ff731cf1a893e53aaa23",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 2,
@@ -39,7 +42,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG01_LT01_F02_Camellia_Red_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "3683bef5b420ca8dd2304514e25038a14cca60a779de29e4e1807e469bff1ca7",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 3,
@@ -55,7 +61,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "2b49ee1f38dd78d254c3318fe51139726550c3c6bf7269f39996e65d402a7605",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 4,
@@ -71,7 +80,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "65af6e8b302a5d622419f074e2f6bd647ee8d814393d9bab4f5ed1180a8933dc",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 5,
@@ -87,7 +99,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "4932b5828c36c16a2e41edfd620b53ea0efbe2cf4e2ffc014017c7940d9bb10a",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 6,
@@ -103,7 +118,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "20864245abf921279e7ac942faced7d6cc240145174b1bf45d264e7f0d405618",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 7,
@@ -119,7 +137,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "b9cf7cbaf7020b2cb7e6514f1fd7c1d89935b5102e3f6fd9c8bd529b19b33ac8",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 8,
@@ -135,7 +156,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "63e08406b94a6b1f64da3b4b81fec2512ef68f1d56faa157d7aa6518f9b4181b",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 9,
@@ -151,7 +175,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG03_LT03_F09_Lavender_LightPurple_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "932cfdd1700324a6e4feda36f5ffe942fad20e9fbce91c7d8eb847110470247a",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 10,
@@ -167,7 +194,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "c185f51bfb382d098eb269ebd0230e9d1dcb10534c2705ac235673b3a7d80ee9",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 11,
@@ -183,7 +213,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "9fe9c08a5fe9477875a56710a95cadc21a3ef1b8d253080b938885f4ae0f8a1e",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 12,
@@ -199,7 +232,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG03_LT03_F12_Hydrangea_Purple_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "d044a671e541bdb610df7a9ef32e3dfe458e04ccc79433314e68a2bf23866036",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 13,
@@ -215,7 +251,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "e93c1a16f20a9d028b83a560593f0a7d1ab153b1aa6e6cedc842643c91b5c27e",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 14,
@@ -231,7 +270,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG04_LT04_F14_Hydrangea_Blue_B_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "09763aa9f7bd9e44326e1562b678a6d2079a81f4ee9bf80cbeb2be81a02b993c",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 15,
@@ -247,7 +289,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "7c89d4e29a74da2b2b24faad2b532cc4d14ff6883ebc35c47ace5e71ff961a8c",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     },
     {
       "index": 16,
@@ -263,7 +308,10 @@
       "style": "Broad gestural abstract oil, user requested3x abstraction",
       "videoGenerated": false,
       "videoOpeningSecondsRequested": 3,
-      "videoApproved": false
+      "videoApproved": false,
+      "bud": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bud_AbstractOil3x_v43.png",
+      "budSHA256": "0762d5e240d62803353867051fad62c4dc6ca1ef0905ea8bcfabc03488f0e8f8",
+      "pairVideoReadiness": "NOT_APPROVED_REQUIRES_ALIGNMENT_AND_MOTION_REVIEW"
     }
   ]
 }

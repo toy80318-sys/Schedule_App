@@ -1,0 +1,1316 @@
+{
+  "version": 38,
+  "date": "2026-10-22",
+  "purpose": "720p/std generation review; native output960x960 except excluded wrong-preview17. Not a final exhibition release.",
+  "allFlowerVideosUseExactBudAndFullBloomInputs": true,
+  "acceptedBackendInputAudit": "48submitted references verified against actual submitted image pixels; wrong-preview17/18 explicitly rejected.",
+  "flowerPlayback": "One-way bud-to-bloom only; never reverse, close or loop. Hold final frame.",
+  "nativeRGBAFrameCount": 2788,
+  "assets": [
+    {
+      "index": 1,
+      "id": "F01",
+      "name": "노을 · 레드 · 동백꽃 A · 진홍",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_Key00FFFF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_003656_4c9f7c2b-7a9f-45c1-81f8-8ba17a710367.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "Cyan background varies and develops a gradient, with corner channel ranges26,12,14. Anatomy not final approved. No automatic paid retry.",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "4c9f7c2b-7a9f-45c1-81f8-8ba17a710367",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG01_LT01_F01_Camellia_Crimson_A_Bud_InputKey00FFFF_v22.png",
+          "SHA256": "47c8d1d109ce62b6bd38934c7c17f858b42b403ee0784accfe9f21d92cba1cc2"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG01_LT01_F01_Camellia_Crimson_A_Bloom_InputKey00FFFF_v23.png",
+          "SHA256": "8eb6390552594293dcf8275373e06114083b904aa9cf86d766c5ec97057a0897"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 83,
+          "sha256": "7898d5d29eff316b9f73eb11e1381ae9bd001ac225e7652c4e277ac079299ef0"
+        },
+        {
+          "file": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 84,
+          "lastFrame": 141,
+          "sha256": "7efc5539d1f68c9189d53207983f0fec21c04d110484e88a62412ec82c654d27"
+        },
+        {
+          "file": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 142,
+          "lastFrame": 193,
+          "sha256": "73a689f81ad70a18002cf8637005ddc40bf075b77fb566835877d1df0761bdad"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG01_LT01_F01_Camellia_Crimson_A_BudToBloom_UniformKey00FFFF_Derived_v38.mp4"
+    },
+    {
+      "index": 2,
+      "id": "F02",
+      "name": "노을 · 레드 · 동백꽃 B · 빨강",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_Key00FFFF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011411_d53ae541-c443-45b6-8e69-2f4ef612797b.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "d53ae541-c443-45b6-8e69-2f4ef612797b",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG01_LT01_F02_Camellia_Red_B_Bud_InputKey00FFFF_v22.png",
+          "SHA256": "75310b78ba6c47511dd8a316093391d87b2e3db5ebf7268aba3eda44061b468c"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG01_LT01_F02_Camellia_Red_B_Bloom_InputKey00FFFF_v23.png",
+          "SHA256": "ebf7336aa576bd03156c46e4771b59f6980c4f34652ea275fadc6431aa6b98cc"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 83,
+          "sha256": "622aafc1e21639322cb5d06fa36f2d404284d1a230b6a15eca625835169b8c9c"
+        },
+        {
+          "file": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 84,
+          "lastFrame": 140,
+          "sha256": "d1164f6dfc2a9d90c0cf10c7d81e3fe82979256251f36b23b607956a10fb566f"
+        },
+        {
+          "file": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 141,
+          "lastFrame": 193,
+          "sha256": "c1b1ff79e07a01d8eae0d843e4b7a424f3f02834396eccdc21c0487cfd900637"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG01_LT01_F02_Camellia_Red_B_BudToBloom_UniformKey00FFFF_Derived_v38.mp4"
+    },
+    {
+      "index": 3,
+      "id": "F03",
+      "name": "노을 · 레드 · 메밀꽃 A · 붉은 분홍",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_Key00FFFF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_35fd58c1-c726-4186-a053-ed7dafff1b56.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "개화 16시점 확인 · 원본 키 배경 밝기 변화 있음 · 전 구간 형태/알파 검수 중 · 전시 승인 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "35fd58c1-c726-4186-a053-ed7dafff1b56",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bud_InputKey00FFFF_v22.png",
+          "SHA256": "8e0614fa3d177be7d50ab0ca6e5cc5428a8361ec2c62dde50c737375137c0c46"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_Bloom_InputKey00FFFF_v23.png",
+          "SHA256": "1dd286e171e19c949bdd8c7bc1ed4c4b5f68df16a3751935f1a50c87cd6b141e"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 67,
+          "sha256": "f48c6f5b82d900762dc17b30655fb9079e1c710cab8db70c577afeb064d6ae07"
+        },
+        {
+          "file": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 68,
+          "lastFrame": 137,
+          "sha256": "d24429daf3a829fb5dfa228ee20ade5444e9bd61166112b82efc2ddbfa75cebd"
+        },
+        {
+          "file": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 138,
+          "lastFrame": 193,
+          "sha256": "8eba3bf44e1f7e57f8e91795413fb8229e5deecb75611aaad1a7bb998e83de5e"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG01_LT01_F03_Buckwheat_RedPink_A_BudToBloom_UniformKey00FFFF_Derived_v38.mp4"
+    },
+    {
+      "index": 4,
+      "id": "F04",
+      "name": "노을 · 레드 · 메밀꽃 B · 붉은 분홍",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_Key00FFFF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011411_c7fcd516-61ca-4597-8007-84c8b453984f.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "c7fcd516-61ca-4597-8007-84c8b453984f",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bud_InputKey00FFFF_v22.png",
+          "SHA256": "0607cfcd363d3cdf8baebf04a265bfa31a5cffb9df14a09e3989cec1b4b5627b"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_Bloom_InputKey00FFFF_v23.png",
+          "SHA256": "93be24cf8155481c1a12e128fa72311e06d352c537b41ddf6c01e8fbd2eb8ac7"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG01_Sunset_LT01_AmberLeft/ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 65,
+          "sha256": "cfb0f5e1ce22340bd83477446c9bed4aab26a0f9a720170022ab856ec7ab6bfe"
+        },
+        {
+          "file": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 66,
+          "lastFrame": 128,
+          "sha256": "56a20bd762627a5dd0ae12e0a297c24ad70e957cc232070f40538cb4d9ec9a07"
+        },
+        {
+          "file": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 129,
+          "lastFrame": 185,
+          "sha256": "c22adee1685a96a1f77d3fe9dcfe097fdb4d4ee50aa0da84cec30ac15d43f91d"
+        },
+        {
+          "file": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_AIAlpha_v38_Candidate_Part04.zip",
+          "firstFrame": 186,
+          "lastFrame": 193,
+          "sha256": "865facefa8439f86889dab77443b00d5adbb2a38ec9569b75d655f1e40a76153"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG01_LT01_F04_Buckwheat_RedPink_B_BudToBloom_UniformKey00FFFF_Derived_v38.mp4"
+    },
+    {
+      "index": 5,
+      "id": "F05",
+      "name": "낮 · 옐로우 · 금잔화 A · 황금노랑",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG02_LT02_F05_Calendula_GoldYellow_A_BudToBloom_Key0000FF_12s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_002933_b201e441-e0fe-4218-bafc-1a5a7d1f2381.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 289,
+      "status": "REJECTED",
+      "review": "불합격: 파란 키 배경이 변하고, 중간 약 4초에 꽃받침에서 입력에 없는 긴 초록 고리가 생깁니다. 전시·알파 납품에서 제외하며 유료 자동 재시도하지 않습니다.",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "b201e441-e0fe-4218-bafc-1a5a7d1f2381",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bud_InputKey0000FF_v22.png",
+          "SHA256": "be1ab23a31323c961b0cddc623b8ba0f255e7c21d9df3eb173cf62bb884ad2d0"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG02_LT02_F05_Calendula_GoldYellow_A_Bloom_InputKey0000FF_v22.png",
+          "SHA256": "8498d672475e7c09ff853795ca21b2eff7a80bc44d5f1d8868025e63b3e0efa3"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "F06",
+      "name": "낮 · 옐로우 · 금잔화 B · 황금노랑",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_Key0000FF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010554_cd8da63b-04f3-4baf-9eef-e51b43a97468.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "개화 16시점 확인 · 원본 키 배경 밝기 변화 있음 · 전 구간 형태/알파 검수 중 · 전시 승인 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "cd8da63b-04f3-4baf-9eef-e51b43a97468",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bud_InputKey0000FF_v22.png",
+          "SHA256": "a508676cbf1066a09471335896b16491a98e26092005c47eb5e34472c2695c02"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_Bloom_InputKey0000FF_v22.png",
+          "SHA256": "35500e01c3aeb29b928633945626b91ad9ad28d661939bb94c69ba651a9bfd95"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 86,
+          "sha256": "64094e29dd174cfcae8990cb6cad187cd02ec1c262551441c60ccb37bdfcdbbf"
+        },
+        {
+          "file": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 87,
+          "lastFrame": 139,
+          "sha256": "2cf53fbf05008cdbe46151f25662e3aa70dd87be609b2931281a08b4b0422bd5"
+        },
+        {
+          "file": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 140,
+          "lastFrame": 193,
+          "sha256": "3b0bc3646150393587ac69e8868cd0a95340bd0ca41f309cd898e947759f3632"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG02_LT02_F06_Calendula_GoldYellow_B_BudToBloom_UniformKey0000FF_Derived_v38.mp4"
+    },
+    {
+      "index": 7,
+      "id": "F07",
+      "name": "낮 · 옐로우 · 유채꽃 A · 레몬노랑",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_Key0000FF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_9ee83814-dde6-4555-a75d-d7db1f0a588d.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "개화 16시점 확인 · 원본 키 배경 밝기 변화 있음 · 전 구간 형태/알파 검수 중 · 전시 승인 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "9ee83814-dde6-4555-a75d-d7db1f0a588d",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bud_InputKey0000FF_v22.png",
+          "SHA256": "e35e8c2c988176ca5e15278730f20d76dc56b321be36a1a8ba381a1a88713581"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_Bloom_InputKey0000FF_v23.png",
+          "SHA256": "c455cca38f3a80ff8d037a94d99efbf705ae3fc6c2235fd88bcc7bc5f0d26ac5"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 70,
+          "sha256": "0ee35b91e01e63af3fb300a42631d314749c222380792823615779a228c1aeed"
+        },
+        {
+          "file": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 71,
+          "lastFrame": 127,
+          "sha256": "40948e2843020d8a348a1bb6cbda2cf7f4a596aed342023f4eaf756fae90b614"
+        },
+        {
+          "file": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 128,
+          "lastFrame": 181,
+          "sha256": "4808eae7d2704ece89effb202684a812221d80faf353ad1e4e4b16c26e9e2918"
+        },
+        {
+          "file": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_AIAlpha_v38_Candidate_Part04.zip",
+          "firstFrame": 182,
+          "lastFrame": 193,
+          "sha256": "bbda86adc9092ca52a1ec734e3005f07eb059df8f2bf799ad51b2eb12b8b7351"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BudToBloom_UniformKey0000FF_Derived_v38.mp4"
+    },
+    {
+      "index": 8,
+      "id": "F08",
+      "name": "낮 · 옐로우 · 유채꽃 B · 선명한 노랑",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG02_LT02_F08_Rapeseed_Yellow_B_BudToBloom_Key0000FF_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012024_8a62c485-8e73-4e9c-a138-2a54ef99fec5.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REJECTED",
+      "review": "불합격: 약2.5–5.5초에 작은 유채 봉오리들이 큰 단일 꽃으로 합쳐진 뒤 다시 여러 꽃으로 바뀝니다. 전시·알파 납품에서 제외. 자동 유료 재시도하지 않습니다.",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "8a62c485-8e73-4e9c-a138-2a54ef99fec5",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bud_InputKey0000FF_v22.png",
+          "SHA256": "02c2cca947c1b9e1ae7e1050fd77963e085bafad62611844f635ee22282460ea"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG02_LT02_F08_Rapeseed_Yellow_B_Bloom_InputKey0000FF_v23.png",
+          "SHA256": "6b8a2222b56606c93826fe7fa8d43c1fbd784bbb880bd38d5afdb2ff5319ab13"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "F09",
+      "name": "밤 · 퍼플 · 라벤더 A · 연보라",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_KeyFFFF00_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_df5428c6-1e83-4f5f-8d13-15959c65c04e.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "개화 16시점 확인 · 원본 키 배경 밝기 변화 있음 · 전 구간 형태/알파 검수 중 · 전시 승인 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "df5428c6-1e83-4f5f-8d13-15959c65c04e",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG03_LT03_F09_Lavender_LightPurple_A_Bud_InputKeyFFFF00_v22.png",
+          "SHA256": "0f79c6206cba15df3f87652b1f7372608107573660316e12e50e0ddc62b5660e"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG03_LT03_F09_Lavender_LightPurple_A_Bloom_InputKeyFFFF00_v23.png",
+          "SHA256": "cd1721ea8970b83bff86f7ef3b56b26d79f700a3a2a80af6b37e9da0b1f96830"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 99,
+          "sha256": "df4bba77aefd03c1e19bb2164736843c912a0931d5ff343ed61d50ff17f3f4ae"
+        },
+        {
+          "file": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 100,
+          "lastFrame": 184,
+          "sha256": "f0166edae8ed9f2280e494d963de3611e204f1d1eda1f2665f524dd2f39875c4"
+        },
+        {
+          "file": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 185,
+          "lastFrame": 193,
+          "sha256": "64f396ce86c9a1c7b2c67623e6fa6c0fc26f71f4377a5fa802aa3e730c39a5c2"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG03_LT03_F09_Lavender_LightPurple_A_BudToBloom_UniformKeyFFFF00_Derived_v38.mp4"
+    },
+    {
+      "index": 10,
+      "id": "F10",
+      "name": "밤 · 퍼플 · 라벤더 B · 짙은 보라",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_KeyFFFF00_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011412_4a8bd350-0bc8-44b6-99ea-89fefec3e1f5.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "4a8bd350-0bc8-44b6-99ea-89fefec3e1f5",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bud_InputKeyFFFF00_v22.png",
+          "SHA256": "b1a2ed208a14a1f22284a86173933f11479c8297d4fda9feeda21bf837fee907"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_Bloom_InputKeyFFFF00_v23.png",
+          "SHA256": "ae3934c6593ae6cbb3bcc4cb3a38e0ce96ae8f583eb9536565edc706ee090704"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 86,
+          "sha256": "34a5988b7f327803f3f3904a4ef423ec6972f6e70bdf80f59b209204cb577e01"
+        },
+        {
+          "file": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 87,
+          "lastFrame": 166,
+          "sha256": "dba6573d7f85031d17f9bec36d013ceebb5ef1ec0ae864f2f7b392357b8b6d54"
+        },
+        {
+          "file": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 167,
+          "lastFrame": 193,
+          "sha256": "bebe4c4b7e618c1da41dd56d825ccc810d3c7d4a1efadfd912021da2a965bdff"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG03_LT03_F10_Lavender_DeepPurple_B_BudToBloom_UniformKeyFFFF00_Derived_v38.mp4"
+    },
+    {
+      "index": 11,
+      "id": "F11",
+      "name": "밤 · 퍼플 · 수국 A · 라일락",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_KeyFFFF00_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010920_4660537b-3dd9-4b0d-8dc7-a0613e8f60a1.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "개화 16시점 확인 · 원본 키 배경 밝기 변화 있음 · 전 구간 형태/알파 검수 중 · 전시 승인 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "4660537b-3dd9-4b0d-8dc7-a0613e8f60a1",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bud_InputKeyFFFF00_v22.png",
+          "SHA256": "ebb9895cd0393ab9266fa9400b424ff8b7b65eea19dbf98d6c87fa86249737dd"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_Bloom_InputKeyFFFF00_v22.png",
+          "SHA256": "d49fd13ba6ef7ad3fd289c8faabb095a236ca9c84f7a75c99a4be5755e8ce1eb"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 104,
+          "sha256": "65134997fc4b714398a810654512593f9f374062fdaa9afa4ed0af64c470b443"
+        },
+        {
+          "file": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 105,
+          "lastFrame": 171,
+          "sha256": "b8372183ccd345a30887704b82141ef991ab8428dbd90fa7248a3eb56c69f44a"
+        },
+        {
+          "file": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 172,
+          "lastFrame": 193,
+          "sha256": "42e611842f5feac5768a390148f5de5848bffbb5cf4aee429dfe7daba6073628"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG03_LT03_F11_Hydrangea_Lilac_A_BudToBloom_UniformKeyFFFF00_Derived_v38.mp4"
+    },
+    {
+      "index": 12,
+      "id": "F12",
+      "name": "밤 · 퍼플 · 수국 B · 보라",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_KeyFFFF00_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011411_8e24fec5-8eb5-4ec2-ba09-b1159556e4e8.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "8e24fec5-8eb5-4ec2-ba09-b1159556e4e8",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG03_LT03_F12_Hydrangea_Purple_B_Bud_InputKeyFFFF00_v22.png",
+          "SHA256": "2de907da5438a7f308c6ccd4d273e880339771deb62612becb1a4624ee5ee173"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG03_LT03_F12_Hydrangea_Purple_B_Bloom_InputKeyFFFF00_v22.png",
+          "SHA256": "4b66dd7451346fa252fe6e0bf6aca80b2a7f8a1abe042442e67b593575bd0cc0"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 103,
+          "sha256": "c064d1a21e61e70879232aee4b46712e48a7a741e9be574c00b5c64e012cd90b"
+        },
+        {
+          "file": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 104,
+          "lastFrame": 174,
+          "sha256": "6d6002ecbc85ac32e1e84e2ee213b2563d1f2d7332d4d7e9afa2431385b2aa94"
+        },
+        {
+          "file": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 175,
+          "lastFrame": 193,
+          "sha256": "76415620b1436c770ebdfab000775294d0a03fbd1fe1cc2b49edf9faa806f9f9"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG03_LT03_F12_Hydrangea_Purple_B_BudToBloom_UniformKeyFFFF00_Derived_v38.mp4"
+    },
+    {
+      "index": 13,
+      "id": "F13",
+      "name": "아침 · 블루 · 수국 A · 하늘색",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_BudToBloom_KeyFF8000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_81c704bc-2b10-40a0-88ca-a107c657a84e.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REJECTED",
+      "review": "불합격: 약1.5–5.5초에 작은 수국 봉오리들이 큰 단일 꽃으로 합쳐진 뒤 다시 군집으로 바뀝니다. 알파 납품·전시에서 제외하며 자동 유료 재시도하지 않습니다.",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "81c704bc-2b10-40a0-88ca-a107c657a84e",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bud_InputKeyFF8000_v22.png",
+          "SHA256": "aa7974d13f30bfba95729535f1c240f9a407425f4d979419736d74bb9e2947cb"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_Bloom_InputKeyFF8000_v22.png",
+          "SHA256": "bcef0e321d2cb69c496fe842b1efd3480c11f8de6dfe133271a0875d72e357ba"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "id": "F14",
+      "name": "아침 · 블루 · 수국 B · 파랑",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_KeyFF8000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011412_b3e225f5-4e43-43a7-aaae-fa53a765bc0d.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "b3e225f5-4e43-43a7-aaae-fa53a765bc0d",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG04_LT04_F14_Hydrangea_Blue_B_Bud_InputKeyFF8000_v22.png",
+          "SHA256": "a391f69ac5864e19afc53e2d4cc2a18e21d14c52deb2e54acbbeb64a6ebdb986"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG04_LT04_F14_Hydrangea_Blue_B_Bloom_InputKeyFF8000_v22.png",
+          "SHA256": "c7b8664bc2d3328dede612f8335851f44bed5b12762cc42634bea7ee4cc1613f"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 102,
+          "sha256": "dd8bea2ffc7f95958f59bb560c923eacd51fc45bcbb57791e22576317141abd6"
+        },
+        {
+          "file": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 103,
+          "lastFrame": 166,
+          "sha256": "02c20113b0d32f3e5521053944dedb658c4241f3f43643cfa9d2021f73825518"
+        },
+        {
+          "file": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 167,
+          "lastFrame": 193,
+          "sha256": "ebebe65ed2987e1732a403f0ac593b042dbe0f09c6065bf76f512500451c639d"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG04_LT04_F14_Hydrangea_Blue_B_BudToBloom_UniformKeyFF8000_Derived_v38.mp4"
+    },
+    {
+      "index": 15,
+      "id": "F15",
+      "name": "아침 · 블루 · 수국 C · 코발트블루",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_KeyFF8000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012024_3817fd56-90cc-44ab-a5f6-e7089e64db99.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "3817fd56-90cc-44ab-a5f6-e7089e64db99",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bud_InputKeyFF8000_v22.png",
+          "SHA256": "d99384476ee79de6410f002d029a0d41e7de0cc65e50b7ce9941c76751873668"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_Bloom_InputKeyFF8000_v22.png",
+          "SHA256": "260e5b5a0fb144fb6703a147406243416f87fe269b5793d8f05c977ab9663d09"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 118,
+          "sha256": "ab45a1a32bd6e290e27e888de608740d19bcf2af2263190d6359d58b052aac6f"
+        },
+        {
+          "file": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 119,
+          "lastFrame": 191,
+          "sha256": "13b9e53ebd393fb412a55e4dc7fc35c91c605e8b80c02e919819f856e6a9f3de"
+        },
+        {
+          "file": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 192,
+          "lastFrame": 193,
+          "sha256": "98b4c317b240f1b4ab2bb34a29e41645db1b7ee2ba23dcfacdd895b7d2443b31"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BudToBloom_UniformKeyFF8000_Derived_v38.mp4"
+    },
+    {
+      "index": 16,
+      "id": "F16",
+      "name": "아침 · 블루 · 수국 D · 흰색",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "motion": "ONE_WAY_BUD_TO_FULL_BLOOM",
+      "rawFile": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_KeyFF8000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012024_9469f823-109e-480b-8580-2f46091c927f.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "16시점 형태 검토 · 원본 키 배경 밝기 변화 있음 · 전 구간/AI 알파 검수 중 · 사용자 컨펌 전",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "9469f823-109e-480b-8580-2f46091c927f",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bud_InputKeyFF8000_v22.png",
+          "SHA256": "1cc0d1b0f6a62c69c2d0fa17d245bde25b05832daa72c4b6c9ac61fec17617c8"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_Bloom_InputKeyFF8000_v22.png",
+          "SHA256": "a5538da68ecb2d58f66847e984410c4ac4a2cd3822cae353855ed2cc2e40b43a"
+        }
+      ],
+      "alphaFrameCount": 193,
+      "pngPattern": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_AIAlpha_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_AIAlpha_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 116,
+          "sha256": "0b2fcedf8d87f7c42c809b98ff1dd57acc5bc16416a1ce04c694aae5086bd4c1"
+        },
+        {
+          "file": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_AIAlpha_v38_Candidate_Part02.zip",
+          "firstFrame": 117,
+          "lastFrame": 187,
+          "sha256": "07791bd73cb2945a8406526346be7428e48d0e169f35f8bbcb073bea99d4bdbe"
+        },
+        {
+          "file": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_AIAlpha_v38_Candidate_Part03.zip",
+          "firstFrame": 188,
+          "lastFrame": 193,
+          "sha256": "526060adb76c987c951d4c91d1733dd6d93e818bf17e88fcb70f83af549a3964"
+        }
+      ],
+      "loop": false,
+      "playbackMode": "OnceHoldLast",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_AIAlpha_v38.webm",
+      "uniformKeyDerivedVideo": "ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BudToBloom_UniformKeyFF8000_Derived_v38.mp4"
+    },
+    {
+      "index": 17,
+      "id": "A03",
+      "name": "노을 · 레드 · 노랑 나비",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG01_LT01_A03_Butterfly_InPlaceWingbeats_Key000000_12s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_002932_82f28fd9-a340-4d95-a6cf-3b61603d8859.mp4",
+      "nativeCanvas": [
+        924,
+        996
+      ],
+      "fps": 24,
+      "rawFrameCount": 289,
+      "status": "REJECTED",
+      "review": "불합격: 잘못 연결한 투명 미리보기 입력. 몸의 위치·크기 변화와 추가 부속물이 발생했습니다. 교정한 단색 원본으로 재생성 승인 대기.",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "82f28fd9-a340-4d95-a6cf-3b61603d8859",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "actual_submitted_butterfly_17_start_image.png",
+          "SHA256": "379da999d71a80254a51d797c95b880f0caf296b1cae8c6a0269d78ad85011a4"
+        },
+        {
+          "role": "end_image",
+          "name": "actual_submitted_butterfly_17_end_image.png",
+          "SHA256": "379da999d71a80254a51d797c95b880f0caf296b1cae8c6a0269d78ad85011a4"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "id": "A04",
+      "name": "노을 · 레드 · 파랑 나비",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG01_LT01_A04_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_003656_3b9fe6e4-0950-449e-8f90-18d91aed4e3a.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REJECTED",
+      "review": "불합격: 잘못 연결한 투명 미리보기 입력. 배경에 빛/흰색 화면이 생기고 몸이 이동합니다. 교정한 단색 원본으로 재생성 승인 대기.",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "3b9fe6e4-0950-449e-8f90-18d91aed4e3a",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "actual_submitted_butterfly_18_start_image.png",
+          "SHA256": "f2a9ebcb1df653380435c2f660d1d5de3e3666e72e223b3ce1e050e48572886e"
+        },
+        {
+          "role": "end_image",
+          "name": "actual_submitted_butterfly_18_end_image.png",
+          "SHA256": "f2a9ebcb1df653380435c2f660d1d5de3e3666e72e223b3ce1e050e48572886e"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "id": "A03",
+      "name": "낮 · 옐로우 · 노랑 나비",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG02_LT02_A03_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_004313_61c9e30e-f8ac-4c65-85bf-23bfcc27fd4c.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "검토 중",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "61c9e30e-f8ac-4c65-85bf-23bfcc27fd4c",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG02_LT02_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "b31052a4f41a8c6d3b60ba63e79c8e3167e6d0583ffad9bdef49d783e13c94cb"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG02_LT02_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "b31052a4f41a8c6d3b60ba63e79c8e3167e6d0583ffad9bdef49d783e13c94cb"
+        }
+      ],
+      "alphaFrameCount": 35,
+      "pngPattern": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle35f_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG02_LT02_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle35f_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 35,
+          "sha256": "0898d64f58192c6dfdaa11ae8962e39ff84d53be98cb8638f7ab69e3cdb377b2"
+        }
+      ],
+      "loop": true,
+      "playbackMode": "Loop",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG02_LT02_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle35f_v38.webm",
+      "baseVideo": "ML_BG02_LT02_A03_Butterfly_InPlaceWingbeats_Key000000_Cycle35f_Candidate_v38.mp4",
+      "longVideo": "ML_BG02_LT02_A03_Butterfly_InPlaceWingbeats_Key000000_Loop70s_Candidate_v38.mp4",
+      "sourceFramesZeroBased": [
+        128,
+        163
+      ],
+      "longSeconds": 70
+    },
+    {
+      "index": 20,
+      "id": "A04",
+      "name": "낮 · 옐로우 · 파랑 나비",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG02_LT02_A04_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012149_92cf9c4a-4b80-4756-9bc1-a453195cf0c5.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "검토 중",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "92cf9c4a-4b80-4756-9bc1-a453195cf0c5",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG02_LT02_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "698b7771ab73d5dead1e79674a743ef9a16420d4f737ced057469a53f408d75f"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG02_LT02_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "698b7771ab73d5dead1e79674a743ef9a16420d4f737ced057469a53f408d75f"
+        }
+      ],
+      "alphaFrameCount": 33,
+      "pngPattern": "BG02_Day_LT02_IvoryUpperLeft/ML_BG02_LT02_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle33f_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG02_LT02_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle33f_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 33,
+          "sha256": "deb21a8906fdfe3c467cc7fda3a97f1266b9e8839670b17aca759ace6757082f"
+        }
+      ],
+      "loop": true,
+      "playbackMode": "Loop",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG02_LT02_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle33f_v38.webm",
+      "baseVideo": "ML_BG02_LT02_A04_Butterfly_InPlaceWingbeats_Key000000_Cycle33f_Candidate_v38.mp4",
+      "longVideo": "ML_BG02_LT02_A04_Butterfly_InPlaceWingbeats_Key000000_Loop1452f24fps_Candidate_v38.mp4",
+      "sourceFramesZeroBased": [
+        57,
+        90
+      ],
+      "longSeconds": 60.5
+    },
+    {
+      "index": 21,
+      "id": "A03",
+      "name": "밤 · 퍼플 · 노랑 나비",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG03_LT03_A03_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_108241d0-a8ac-4c39-9e73-043214a1c5d1.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "검토 중",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "108241d0-a8ac-4c39-9e73-043214a1c5d1",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG03_LT03_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "68de13ff07d12837b81458d54f44a33d929fc6524cbbc43c0fbcd124745e088f"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG03_LT03_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "68de13ff07d12837b81458d54f44a33d929fc6524cbbc43c0fbcd124745e088f"
+        }
+      ],
+      "alphaFrameCount": 52,
+      "pngPattern": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle52f_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG03_LT03_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle52f_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 52,
+          "sha256": "76784737a0695fe79f1b846a62584a99c8c235e833bc09523df6147a4b40687c"
+        }
+      ],
+      "loop": true,
+      "playbackMode": "Loop",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG03_LT03_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle52f_v38.webm",
+      "baseVideo": "ML_BG03_LT03_A03_Butterfly_InPlaceWingbeats_Key000000_Cycle52f_Candidate_v38.mp4",
+      "longVideo": "ML_BG03_LT03_A03_Butterfly_InPlaceWingbeats_Key000000_Loop1456f24fps_Candidate_v38.mp4",
+      "sourceFramesZeroBased": [
+        78,
+        130
+      ],
+      "longSeconds": 60.666666666666664
+    },
+    {
+      "index": 22,
+      "id": "A04",
+      "name": "밤 · 퍼플 · 파랑 나비",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG03_LT03_A04_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_b29032ac-02f6-472d-9d1b-b5a3bb23ce09.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "검토 중",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "b29032ac-02f6-472d-9d1b-b5a3bb23ce09",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG03_LT03_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "048047150668264ee25ac199347995584dd831491d77384c1196ec8c273f4f65"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG03_LT03_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "048047150668264ee25ac199347995584dd831491d77384c1196ec8c273f4f65"
+        }
+      ],
+      "alphaFrameCount": 35,
+      "pngPattern": "BG03_Night_LT03_SilverUpperRight/ML_BG03_LT03_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle35f_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG03_LT03_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle35f_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 35,
+          "sha256": "a250b5455175179fae7b3e7e428c457d93a348b9151ae42cdebde53d189c01b3"
+        }
+      ],
+      "loop": true,
+      "playbackMode": "Loop",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG03_LT03_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle35f_v38.webm",
+      "baseVideo": "ML_BG03_LT03_A04_Butterfly_InPlaceWingbeats_Key000000_Cycle35f_Candidate_v38.mp4",
+      "longVideo": "ML_BG03_LT03_A04_Butterfly_InPlaceWingbeats_Key000000_Loop1470f24fps_Candidate_v38.mp4",
+      "sourceFramesZeroBased": [
+        113,
+        148
+      ],
+      "longSeconds": 61.25
+    },
+    {
+      "index": 23,
+      "id": "A03",
+      "name": "아침 · 블루 · 노랑 나비",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG04_LT04_A03_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_46507821-81ad-4124-9397-8d30d6a4d78d.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "검토 중",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "46507821-81ad-4124-9397-8d30d6a4d78d",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG04_LT04_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "234771516ae44d45970cc88e4802200447ba9e860ae0c8140f70b011fb263154"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG04_LT04_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "234771516ae44d45970cc88e4802200447ba9e860ae0c8140f70b011fb263154"
+        }
+      ],
+      "alphaFrameCount": 59,
+      "pngPattern": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle59f_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG04_LT04_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle59f_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 59,
+          "sha256": "bc494a12aaf83bdbd8341bb43b79bfe3880a02506be17c4f9808fcac5620ed2e"
+        }
+      ],
+      "loop": true,
+      "playbackMode": "Loop",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG04_LT04_A03_Butterfly_InPlaceWingbeats_AIAlpha_Cycle59f_v38.webm",
+      "baseVideo": "ML_BG04_LT04_A03_Butterfly_InPlaceWingbeats_Key000000_Cycle59f_Candidate_v38.mp4",
+      "longVideo": "ML_BG04_LT04_A03_Butterfly_InPlaceWingbeats_Key000000_Loop1475f24fps_Candidate_v38.mp4",
+      "sourceFramesZeroBased": [
+        76,
+        135
+      ],
+      "longSeconds": 61.458333333333336
+    },
+    {
+      "index": 24,
+      "id": "A04",
+      "name": "아침 · 블루 · 파랑 나비",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "motion": "IN_PLACE_WINGBEATS_LOOP",
+      "rawFile": "ML_BG04_LT04_A04_Butterfly_InPlaceWingbeats_Key000000_08s_Review_v38.mp4",
+      "rawSourceURL": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_46979e1a-9f5a-41e7-8d44-926880de39aa.mp4",
+      "nativeCanvas": [
+        960,
+        960
+      ],
+      "fps": 24,
+      "rawFrameCount": 193,
+      "status": "REVIEW_CANDIDATE",
+      "review": "검토 중",
+      "approvedForExhibition": false,
+      "userApprovedForUpscale": false,
+      "hardwareVerified": false,
+      "actualInputJob": "46979e1a-9f5a-41e7-8d44-926880de39aa",
+      "inputs": [
+        {
+          "role": "start_image",
+          "name": "ML_BG04_LT04_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "b4025246c556cb92de5f60cf237babac8319556ac954c3e9a9129e913fab80b2"
+        },
+        {
+          "role": "end_image",
+          "name": "ML_BG04_LT04_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
+          "SHA256": "b4025246c556cb92de5f60cf237babac8319556ac954c3e9a9129e913fab80b2"
+        }
+      ],
+      "alphaFrameCount": 65,
+      "pngPattern": "BG04_Morning_LT04_GoldLeft/ML_BG04_LT04_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle65f_v38_%06d.png",
+      "packages": [
+        {
+          "file": "ML_BG04_LT04_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle65f_v38_Candidate_Part01.zip",
+          "firstFrame": 1,
+          "lastFrame": 65,
+          "sha256": "1b2cf98ed793be46b9de08643270fda296466e1d3258bb74204757010e0d8328"
+        }
+      ],
+      "loop": true,
+      "playbackMode": "Loop",
+      "alphaVisualStatus": "FIRST_PASS_PENDING_FINAL_REVIEW",
+      "alphaVideo": "ML_BG04_LT04_A04_Butterfly_InPlaceWingbeats_AIAlpha_Cycle65f_v38.webm",
+      "baseVideo": "ML_BG04_LT04_A04_Butterfly_InPlaceWingbeats_Key000000_Cycle65f_Candidate_v38.mp4",
+      "longVideo": "ML_BG04_LT04_A04_Butterfly_InPlaceWingbeats_Key000000_Loop1495f24fps_Candidate_v38.mp4",
+      "sourceFramesZeroBased": [
+        92,
+        157
+      ],
+      "longSeconds": 62.291666666666664
+    }
+  ]
+}

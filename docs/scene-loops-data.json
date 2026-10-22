@@ -44,13 +44,16 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "REJECTED_KEY_BACKGROUND_VARIATION",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0820e874-fa97-4818-8aea-bf81af767d4c.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0820e874-fa97-4818-8aea-bf81af767d4c.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0820e874-fa97-4818-8aea-bf81af767d4c.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/6abff521-596d-4719-b015-e927f6609252.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/6abff521-596d-4719-b015-e927f6609252.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_003656_4c9f7c2b-7a9f-45c1-81f8-8ba17a710367.mp4",
+      "reviewURL": "generation-v38.html#job-1",
+      "rejected": false
     },
     {
       "id": "F02",
@@ -60,13 +63,16 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/abfed460-afe3-4fdd-938d-1ba8650b69c2.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/abfed460-afe3-4fdd-938d-1ba8650b69c2.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/abfed460-afe3-4fdd-938d-1ba8650b69c2.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c9e8f38b-e87f-41d7-a560-8aa2f3239deb.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c9e8f38b-e87f-41d7-a560-8aa2f3239deb.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011411_d53ae541-c443-45b6-8e69-2f4ef612797b.mp4",
+      "reviewURL": "generation-v38.html#job-2",
+      "rejected": false
     },
     {
       "id": "F03",
@@ -76,13 +82,16 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/393fc2c2-3605-415c-a647-17f4eb06b8c9.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/393fc2c2-3605-415c-a647-17f4eb06b8c9.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/393fc2c2-3605-415c-a647-17f4eb06b8c9.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ee1e9a54-54e8-4128-ba97-0133997c68fb.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ee1e9a54-54e8-4128-ba97-0133997c68fb.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_35fd58c1-c726-4186-a053-ed7dafff1b56.mp4",
+      "reviewURL": "generation-v38.html#job-3",
+      "rejected": false
     },
     {
       "id": "F04",
@@ -92,13 +101,16 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0a83d4f6-7e1c-42a3-8f99-18d908974636.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0a83d4f6-7e1c-42a3-8f99-18d908974636.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0a83d4f6-7e1c-42a3-8f99-18d908974636.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/44d20829-da5b-4ec1-b963-6a471347fec0.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/44d20829-da5b-4ec1-b963-6a471347fec0.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011411_c7fcd516-61ca-4597-8007-84c8b453984f.mp4",
+      "reviewURL": "generation-v38.html#job-4",
+      "rejected": false
     },
     {
       "id": "A03",
@@ -108,10 +120,13 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "pending",
+      "status": "REJECTED_ROOT_SCALE_AND_EXTRA_APPENDAGE",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_002932_82f28fd9-a340-4d95-a6cf-3b61603d8859.mp4",
+      "reviewURL": "generation-v38.html#job-17",
+      "rejected": true
     },
     {
       "id": "A04",
@@ -121,10 +136,13 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "REJECTED_INPUT_ALPHA_PREVIEW_ROOT_AND_BACKGROUND",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_003656_3b9fe6e4-0950-449e-8f90-18d91aed4e3a.mp4",
+      "reviewURL": "generation-v38.html#job-18",
+      "rejected": true
     },
     {
       "id": "A01",
@@ -180,13 +198,16 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "pending",
+      "status": "REJECTED_EXTRA_CALYX_LOOP_AND_KEY_VARIATION",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/14945ee8-71ad-4738-a29d-e3b71d9580c1.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/14945ee8-71ad-4738-a29d-e3b71d9580c1.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/14945ee8-71ad-4738-a29d-e3b71d9580c1.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/5c96d5cc-d3f1-4bbd-9ace-a7f5dab46e31.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/5c96d5cc-d3f1-4bbd-9ace-a7f5dab46e31.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_002933_b201e441-e0fe-4218-bafc-1a5a7d1f2381.mp4",
+      "reviewURL": "generation-v38.html#job-5",
+      "rejected": true
     },
     {
       "id": "F06",
@@ -196,13 +217,16 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e755ac23-64be-4732-b958-0ce14a97eb6f.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e755ac23-64be-4732-b958-0ce14a97eb6f.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e755ac23-64be-4732-b958-0ce14a97eb6f.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/89a7220f-b3f5-4d03-8f51-696193a9a038.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/89a7220f-b3f5-4d03-8f51-696193a9a038.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010554_cd8da63b-04f3-4baf-9eef-e51b43a97468.mp4",
+      "reviewURL": "generation-v38.html#job-6",
+      "rejected": false
     },
     {
       "id": "F07",
@@ -212,13 +236,16 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/3a146142-ea89-46f6-99c3-5e45ea96691d.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/3a146142-ea89-46f6-99c3-5e45ea96691d.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/3a146142-ea89-46f6-99c3-5e45ea96691d.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ae026f4e-e442-46ab-b8f7-6eb797090f4d.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ae026f4e-e442-46ab-b8f7-6eb797090f4d.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_9ee83814-dde6-4555-a75d-d7db1f0a588d.mp4",
+      "reviewURL": "generation-v38.html#job-7",
+      "rejected": false
     },
     {
       "id": "F08",
@@ -228,13 +255,16 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "REJECTED_RAPESEED_FUSED_GIANT_FLOWER",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/574660b0-011e-4c04-a019-c5b324cbd44a.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/574660b0-011e-4c04-a019-c5b324cbd44a.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/574660b0-011e-4c04-a019-c5b324cbd44a.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/b997e046-fc02-4e4c-9396-593c8c57812e.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/b997e046-fc02-4e4c-9396-593c8c57812e.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012024_8a62c485-8e73-4e9c-a138-2a54ef99fec5.mp4",
+      "reviewURL": "generation-v38.html#job-8",
+      "rejected": true
     },
     {
       "id": "A03",
@@ -244,10 +274,13 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "GENERATED_REVIEW_PENDING",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_004313_61c9e30e-f8ac-4c65-85bf-23bfcc27fd4c.mp4",
+      "reviewURL": "generation-v38.html#job-19",
+      "rejected": false
     },
     {
       "id": "A04",
@@ -257,10 +290,13 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "GENERATED_REVIEW_PENDING",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012149_92cf9c4a-4b80-4756-9bc1-a453195cf0c5.mp4",
+      "reviewURL": "generation-v38.html#job-20",
+      "rejected": false
     },
     {
       "id": "A01",
@@ -316,13 +352,16 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8c58418e-7596-4b18-b3aa-6c857ce22f24.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8c58418e-7596-4b18-b3aa-6c857ce22f24.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8c58418e-7596-4b18-b3aa-6c857ce22f24.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/b4b75a05-100f-47ad-820a-447f9ff56cae.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/b4b75a05-100f-47ad-820a-447f9ff56cae.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_df5428c6-1e83-4f5f-8d13-15959c65c04e.mp4",
+      "reviewURL": "generation-v38.html#job-9",
+      "rejected": false
     },
     {
       "id": "F10",
@@ -332,13 +371,16 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/1a306cac-57af-485b-ab81-05afecdb53f8.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/1a306cac-57af-485b-ab81-05afecdb53f8.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/1a306cac-57af-485b-ab81-05afecdb53f8.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/040f4ade-c681-4da3-b366-023a2c91fe6f.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/040f4ade-c681-4da3-b366-023a2c91fe6f.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011412_4a8bd350-0bc8-44b6-99ea-89fefec3e1f5.mp4",
+      "reviewURL": "generation-v38.html#job-10",
+      "rejected": false
     },
     {
       "id": "F11",
@@ -348,13 +390,16 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/68b6b1ff-c9a6-4af4-9e0c-0bee6d4e1db8.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/68b6b1ff-c9a6-4af4-9e0c-0bee6d4e1db8.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/68b6b1ff-c9a6-4af4-9e0c-0bee6d4e1db8.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/73ed88f7-608a-4c33-8e9e-41308df37413.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/73ed88f7-608a-4c33-8e9e-41308df37413.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010920_4660537b-3dd9-4b0d-8dc7-a0613e8f60a1.mp4",
+      "reviewURL": "generation-v38.html#job-11",
+      "rejected": false
     },
     {
       "id": "F12",
@@ -364,13 +409,16 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e80b1454-0215-4094-bd3a-7f31d65bd1c6.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e80b1454-0215-4094-bd3a-7f31d65bd1c6.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e80b1454-0215-4094-bd3a-7f31d65bd1c6.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/868ca53c-e02a-4e58-952d-12b1ffbf4577.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/868ca53c-e02a-4e58-952d-12b1ffbf4577.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011411_8e24fec5-8eb5-4ec2-ba09-b1159556e4e8.mp4",
+      "reviewURL": "generation-v38.html#job-12",
+      "rejected": false
     },
     {
       "id": "A03",
@@ -380,10 +428,13 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "GENERATED_REVIEW_PENDING",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_108241d0-a8ac-4c39-9e73-043214a1c5d1.mp4",
+      "reviewURL": "generation-v38.html#job-21",
+      "rejected": false
     },
     {
       "id": "A04",
@@ -393,10 +444,13 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "GENERATED_REVIEW_PENDING",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_b29032ac-02f6-472d-9d1b-b5a3bb23ce09.mp4",
+      "reviewURL": "generation-v38.html#job-22",
+      "rejected": false
     },
     {
       "id": "A01",
@@ -452,13 +506,16 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "REJECTED_HYDRANGEA_FUSED_GIANT_FLOWER",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ac22c34f-471d-4e19-b1e3-bdc6d6974093.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ac22c34f-471d-4e19-b1e3-bdc6d6974093.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ac22c34f-471d-4e19-b1e3-bdc6d6974093.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8e166d86-64fe-4630-a932-1398a3d0af3a.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8e166d86-64fe-4630-a932-1398a3d0af3a.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_010919_81c704bc-2b10-40a0-88ca-a107c657a84e.mp4",
+      "reviewURL": "generation-v38.html#job-13",
+      "rejected": true
     },
     {
       "id": "F14",
@@ -468,13 +525,16 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/24a83745-f33b-41de-a1fb-c7d031c8a564.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/24a83745-f33b-41de-a1fb-c7d031c8a564.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/24a83745-f33b-41de-a1fb-c7d031c8a564.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/6a565032-7c12-4e98-9c64-3507bc06a295.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/6a565032-7c12-4e98-9c64-3507bc06a295.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_011412_b3e225f5-4e43-43a7-aaae-fa53a765bc0d.mp4",
+      "reviewURL": "generation-v38.html#job-14",
+      "rejected": false
     },
     {
       "id": "F15",
@@ -484,13 +544,16 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c104bb45-c6fa-4188-a98f-a51d865b9527.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c104bb45-c6fa-4188-a98f-a51d865b9527.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c104bb45-c6fa-4188-a98f-a51d865b9527.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/9ff29982-0d81-4071-9a3e-10ebc25b3bad.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/9ff29982-0d81-4071-9a3e-10ebc25b3bad.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012024_3817fd56-90cc-44ab-a5f6-e7089e64db99.mp4",
+      "reviewURL": "generation-v38.html#job-15",
+      "rejected": false
     },
     {
       "id": "F16",
@@ -500,13 +563,16 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "SAMPLE_MOTION_CHECKED_FULL_QA_PENDING",
       "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/d9133c65-0105-4071-b556-e16e910e2a4b.png",
       "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/d9133c65-0105-4071-b556-e16e910e2a4b.png",
       "finalApproved": false,
       "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
       "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/d9133c65-0105-4071-b556-e16e910e2a4b.png",
-      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e851623a-7dd5-406a-b081-d3022be7d779.png"
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e851623a-7dd5-406a-b081-d3022be7d779.png",
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012024_9469f823-109e-480b-8580-2f46091c927f.mp4",
+      "reviewURL": "generation-v38.html#job-16",
+      "rejected": false
     },
     {
       "id": "A03",
@@ -516,10 +582,13 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "GENERATED_REVIEW_PENDING",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_46507821-81ad-4124-9397-8d30d6a4d78d.mp4",
+      "reviewURL": "generation-v38.html#job-23",
+      "rejected": false
     },
     {
       "id": "A04",
@@ -529,10 +598,13 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "PREPARED_NOT_SUBMITTED",
+      "status": "GENERATED_REVIEW_PENDING",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
-      "finalApproved": false
+      "finalApproved": false,
+      "newRawVideo": "https://d8j0ntlcm91z4.cloudfront.net/user_2xZlZahS1eCrqikAaNsVqFuZd36/hf_20261022_012150_46979e1a-9f5a-41e7-8d44-926880de39aa.mp4",
+      "reviewURL": "generation-v38.html#job-24",
+      "rejected": false
     },
     {
       "id": "A01",

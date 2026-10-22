@@ -21,15 +21,16 @@
       const card = document.createElement('article'); card.className = 'card';
       const title = document.createElement('h2'); title.textContent = item.id + ' · ' + item.name;
       const badge = document.createElement('span'); badge.className = 'badge' + (item.category === 'cloud' ? '' : ' pending');
-      badge.textContent = item.category === 'cloud' ? '기존 60초 루프 · 검토용' : '입력 이미지 준비 · 새 영상 생성 전';
+      badge.textContent = item.category === 'cloud' ? '기존 60초 루프 · 검토용' : item.newRawVideo ? (item.rejected ? '불합격 · 재제작 승인 대기' : '새 영상 생성 · 검수·컨펌 전') : '입력 이미지 준비 · 새 영상 생성 전';
       const stage = document.createElement('div'); stage.className = 'stage';
       const media = document.createElement(item.category === 'cloud' ? 'video' : 'img');
       if (item.category === 'cloud') {
         media.src = item.alphaVideo; media.poster = item.sourceAlpha; media.controls = true; media.muted = true; media.loop = true; media.playsInline = true; media.preload = 'none'; media.setAttribute('aria-label', item.name + ' 구름 알파 루프');
-      } else { media.src = item.preview; media.alt = item.name + ' 루프 생성 입력'; media.loading = 'lazy'; }
+      } else { media.src = item.preview; media.alt = item.name + (item.category === 'flower' ? ' 봉오리 생성 입력' : ' 루프 생성 입력'); media.loading = 'lazy'; }
       stage.append(media);
       const info = document.createElement('p'); info.className = 'small'; info.textContent = item.backgroundId + ' / ' + item.lightingId + ' · ' + item.lighting;
       const links = document.createElement('p'); links.className = 'links'; links.append(link('원본 입력 PNG', item.input));
+      if (item.reviewURL) links.append(link('새 영상·검수 상태', item.reviewURL));
       if (item.category === 'cloud') {
         const toggle = document.createElement('button'); toggle.type = 'button'; toggle.textContent = '단색 영상으로 보기';
         toggle.onclick = () => { const solid = toggle.textContent === '단색 영상으로 보기'; media.pause(); media.src = solid ? item.solidVideo : item.alphaVideo; toggle.textContent = solid ? '알파 영상으로 보기' : '단색 영상으로 보기'; };
@@ -38,8 +39,8 @@
       } else card.append(title, badge, stage, info, links);
       grid.append(card);
     }
-    const ready = items.filter(i => i.category === 'cloud').length;
-    document.getElementById('count').textContent = `${items.length}종 · 영상 ${ready}종 / 입력 준비 ${items.length - ready}종`;
+    const ready = items.filter(i => i.category === 'cloud' || i.newRawVideo).length;
+    document.getElementById('count').textContent = `${items.length}종 · 검토 영상 ${ready}종 / 입력만 ${items.length - ready}종`;
     message.textContent = scene ? scene.name + '에 맞는 라이팅의 소스입니다.' : '배경과 요소를 선택하면 필요한 소스만 볼 수 있습니다.';
     const url = new URL(location.href); url.searchParams.set('theme', theme.value); url.searchParams.set('kind', kind.value); history.replaceState(null, '', url);
   }

@@ -3,7 +3,7 @@
   if (new URLSearchParams(location.search).get('embed') === '1') return;
   const page = location.pathname.split('/').pop() || 'index.html';
   const pages = [
-    ['library.html', '자료실'], ['all-images.html', '전체 이미지'],
+    ['library.html', '자료실'], ['abstract-flowers-v43.html', '새 유화 꽃'], ['all-images.html', '전체 이미지'],
     ['oil-art.html', '통합 유화'], ['lighting-sets.html', '배경·조명'],
     ['single-flowers.html', '꽃 개화'], ['scene-loops.html', '배경별 루프'],
     ['oil-sources.html', 'PNG·추가 소스'], ['editor.html', '에디터'], ['index.html', '전시 보기']

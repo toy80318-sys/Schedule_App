@@ -1,0 +1,228 @@
+{
+  "version": 40,
+  "date": "2026-10-22",
+  "generatedCount": 5,
+  "finalApprovedCount": 0,
+  "automaticPaidRetry": false,
+  "flowerRule": "Exact generated bud and full-bloom stills as actual inputs. Existing attached petals must unfold continuously; no melting, fusion, replacement or dissolve.",
+  "olderFlowerCandidatesRequireStrictReview": true,
+  "entries": [
+    {
+      "index": 5,
+      "id": "F05",
+      "name": "낮 · 옐로우 · 금잔화 A · 황금노랑",
+      "category": "flower",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "jobId": "15d7c098-c5d0-40e7-aa4c-b278f0e1dcec",
+      "frameCount": 193,
+      "nativeOutputCanvas": [
+        960,
+        960
+      ],
+      "actualDuration": 8.041667,
+      "sourceFile": "ML_BG02_LT02_F05_Calendula_GoldYellow_A_BudToBloom_Key0000FF_08s_Retry1_Review_v40.mp4",
+      "sourceSHA256": "d6cbf9706e3ad49d3a888da9ade8630d269136d1c7288c1db90e9672f4a60bc8",
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "05_start_image.png",
+          "sha256": "be1ab23a31323c961b0cddc623b8ba0f255e7c21d9df3eb173cf62bb884ad2d0"
+        },
+        {
+          "role": "end_image",
+          "file": "05_end_image.png",
+          "sha256": "8498d672475e7c09ff853795ca21b2eff7a80bc44d5f1d8868025e63b3e0efa3"
+        }
+      ],
+      "review": {
+        "status": "REJECTED_PETAL_CONTINUITY",
+        "note": "약 3.5–5.5초에 안쪽 꽃잎이 고리·가로띠처럼 이어져 보입니다. 붙어 있던 개별 꽃잎이 정상적으로 벌어지는 동작으로 승인할 수 없습니다. 키 배경의 색·밝기도 바뀝니다.",
+        "criticalSeconds": [
+          3.5,
+          5.5
+        ],
+        "finalApproved": false,
+        "editorApplicationAllowed": false,
+        "upscaleAllowed": false,
+        "all193SourceFrameContactReviewed": true,
+        "petalContinuityCropReviewed": true,
+        "alphaSequenceCreatedThisRetry": false
+      }
+    },
+    {
+      "index": 8,
+      "id": "F08",
+      "name": "낮 · 옐로우 · 유채꽃 B · 선명한 노랑",
+      "category": "flower",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "jobId": "5e977005-a0e6-4064-ba9e-2681131ec3a5",
+      "frameCount": 193,
+      "nativeOutputCanvas": [
+        960,
+        960
+      ],
+      "actualDuration": 8.041667,
+      "sourceFile": "ML_BG02_LT02_F08_Rapeseed_Yellow_B_BudToBloom_Key0000FF_08s_Retry1_Review_v40.mp4",
+      "sourceSHA256": "99c4c92042f83e46e545bf9884c043ad8b97c301aa94fadeaf8eb6af0175caf3",
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "08_start_image.png",
+          "sha256": "02c2cca947c1b9e1ae7e1050fd77963e085bafad62611844f635ee22282460ea"
+        },
+        {
+          "role": "end_image",
+          "file": "08_end_image.png",
+          "sha256": "6b8a2222b56606c93826fe7fa8d43c1fbd784bbb880bd38d5afdb2ff5319ab13"
+        }
+      ],
+      "review": {
+        "status": "HOLD_RAW_KEY_AND_FINAL_REVIEW",
+        "note": "큰 꽃 하나로 합쳐지던 오류는 보이지 않으며, 개별 봉오리에서 작은 꽃잎이 벌어집니다. 그러나 파란 배경의 밝기·색이 바뀌어 원본 키 영상은 불합격입니다. 꽃잎·꽃받침 연결부를 확대 비교한 1차 후보이며 최종 전시 승인 전입니다.",
+        "criticalSeconds": [
+          3.5,
+          6.0
+        ],
+        "finalApproved": false,
+        "editorApplicationAllowed": false,
+        "upscaleAllowed": false,
+        "all193SourceFrameContactReviewed": true,
+        "petalContinuityCropReviewed": true,
+        "alphaSequenceCreatedThisRetry": false
+      }
+    },
+    {
+      "index": 13,
+      "id": "F13",
+      "name": "아침 · 블루 · 수국 A · 하늘색",
+      "category": "flower",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "jobId": "86fac75c-0091-4823-8b31-38d3c2f39b92",
+      "frameCount": 193,
+      "nativeOutputCanvas": [
+        960,
+        960
+      ],
+      "actualDuration": 8.041667,
+      "sourceFile": "ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_BudToBloom_KeyFF8000_08s_Retry1_Review_v40.mp4",
+      "sourceSHA256": "8de8a56a85e4688a97a4aa9f2badf6ffa07a7fe7e21a1def3ae2baf141d67dcb",
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "13_start_image.png",
+          "sha256": "aa7974d13f30bfba95729535f1c240f9a407425f4d979419736d74bb9e2947cb"
+        },
+        {
+          "role": "end_image",
+          "file": "13_end_image.png",
+          "sha256": "bcef0e321d2cb69c496fe842b1efd3480c11f8de6dfe133271a0875d72e357ba"
+        }
+      ],
+      "review": {
+        "status": "REJECTED_EXTRA_STEM_AND_DISCONNECTION",
+        "note": "약 1.5–5.8초에 입력에 없던 긴 줄기가 자라고, 약 6.4–7초에 연결부가 끊어져 아래로 빠집니다. 흰 봉오리와 파란 꽃의 개별 조직 연속성도 승인하지 않았습니다. 키 배경의 색·밝기도 바뀝니다.",
+        "criticalSeconds": [
+          1.5,
+          7.0
+        ],
+        "finalApproved": false,
+        "editorApplicationAllowed": false,
+        "upscaleAllowed": false,
+        "all193SourceFrameContactReviewed": true,
+        "petalContinuityCropReviewed": true,
+        "alphaSequenceCreatedThisRetry": false
+      }
+    },
+    {
+      "index": 17,
+      "id": "A03",
+      "name": "노을 · 레드 · 노랑 나비",
+      "category": "butterfly",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "jobId": "73f6db06-d587-47bb-aa7b-606f352fdf8e",
+      "frameCount": 193,
+      "nativeOutputCanvas": [
+        960,
+        960
+      ],
+      "actualDuration": 8.041667,
+      "sourceFile": "ML_BG01_LT01_A03_Butterfly_InPlaceWingbeats_Key000000_08s_Retry1_Review_v40.mp4",
+      "sourceSHA256": "bea5e18a503da7f84dc96b662dc2a01311df76d7e792ddcfe5aa189f502b2d63",
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "17_start_image.png",
+          "sha256": "837eaf2f6d58633324d30c56778e46ba9dcc82d4eb9f03e6b20caab90681e988"
+        },
+        {
+          "role": "end_image",
+          "file": "17_end_image.png",
+          "sha256": "837eaf2f6d58633324d30c56778e46ba9dcc82d4eb9f03e6b20caab90681e988"
+        }
+      ],
+      "review": {
+        "status": "HOLD_LOOP_BOUNDARY_REVIEW",
+        "note": "검증한 검정 단색 원본으로 새로 생성했습니다. 전체 193프레임에서 머리 기준점 변화는 가로·세로 각 1px 범위입니다. 검정 배경은 유지됩니다. 반복 경계·정상 속도 10회·알파 검수는 아직 완료하지 않았습니다.",
+        "criticalSeconds": null,
+        "finalApproved": false,
+        "editorApplicationAllowed": false,
+        "upscaleAllowed": false,
+        "all193SourceFrameContactReviewed": true,
+        "petalContinuityCropReviewed": false,
+        "alphaSequenceCreatedThisRetry": false,
+        "headAnchorRangeXY": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "id": "A04",
+      "name": "노을 · 레드 · 파랑 나비",
+      "category": "butterfly",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "jobId": "4436a97d-fc09-4b2f-aaf3-e1b9c16ddcd5",
+      "frameCount": 193,
+      "nativeOutputCanvas": [
+        960,
+        960
+      ],
+      "actualDuration": 8.041667,
+      "sourceFile": "ML_BG01_LT01_A04_Butterfly_InPlaceWingbeats_Key000000_08s_Retry1_Review_v40.mp4",
+      "sourceSHA256": "7baf8c02e397290d9e0bfe333bf6281a07bde7cd27a4b37cfcb8054da5de27d6",
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "18_start_image.png",
+          "sha256": "361cf929048393fc4f227659f0bc3ee1bc286cd3891646b91fc8157090233c23"
+        },
+        {
+          "role": "end_image",
+          "file": "18_end_image.png",
+          "sha256": "361cf929048393fc4f227659f0bc3ee1bc286cd3891646b91fc8157090233c23"
+        }
+      ],
+      "review": {
+        "status": "HOLD_LOOP_BOUNDARY_REVIEW",
+        "note": "검증한 검정 단색 원본으로 새로 생성했습니다. 전체 193프레임에서 머리 기준점 좌표 변화는 0px입니다. 검정 배경은 유지됩니다. 반복 경계·정상 속도 10회·알파 검수는 아직 완료하지 않았습니다.",
+        "criticalSeconds": null,
+        "finalApproved": false,
+        "editorApplicationAllowed": false,
+        "upscaleAllowed": false,
+        "all193SourceFrameContactReviewed": true,
+        "petalContinuityCropReviewed": false,
+        "alphaSequenceCreatedThisRetry": false,
+        "headAnchorRangeXY": [
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

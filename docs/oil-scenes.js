@@ -2,7 +2,7 @@
  'use strict';
  const E=window.jejuEditor,data=window.jejuFinalCatalog;
  const panel=document.createElement('section');panel.style.cssText='padding:12px;border:1px solid #6da699;border-radius:10px;margin-bottom:12px;background:#173b32';
- const title=document.createElement('h3');title.textContent='통합 유화 기준 배치 · 4가지 조명';
+ const title=document.createElement('h3');title.textContent='추상 유화 v44 배치 · 4가지 조명';
  const note=document.createElement('p');note.className='note';note.textContent='통합 유화처럼 작은 꽃을 풍성하게 배치하고, 잎·풀·현무암의 크기와 겹침을 맞췄습니다. 배경을 선택하면 이전 작업을 저장본에 보관하고 새 배치를 엽니다.';
  panel.append(title,note);
  async function applyScene(scene){await E.ready;await E.useSample(structuredClone(scene.project));E.notice(scene.name+' · 통합 유화 기준 배치를 열었습니다. 이전 배치는 저장본에 보관했습니다.')}
@@ -12,7 +12,7 @@
  await E.ready;
  await window.jejuHandoff.ready;
  const requested=new URL(location.href);
- if(requested.searchParams.get('layout')==='39'){
+ if(['39','44'].includes(requested.searchParams.get('layout'))){
   const scene=data.scenes.find(s=>s.id===requested.searchParams.get('scene'));
   if(scene){try{await applyScene(scene);requested.searchParams.delete('layout');requested.searchParams.delete('scene');history.replaceState(null,'',requested.href)}catch(error){E.notice('새 배치를 열지 못했습니다: '+error.message)}}
  }

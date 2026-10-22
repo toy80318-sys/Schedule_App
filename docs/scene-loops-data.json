@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "date": "2026-10-22",
   "scenes": [
     {
@@ -44,10 +44,13 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F01_Camellia_Crimson_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F01_Camellia_Crimson_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0820e874-fa97-4818-8aea-bf81af767d4c.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0820e874-fa97-4818-8aea-bf81af767d4c.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0820e874-fa97-4818-8aea-bf81af767d4c.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/6abff521-596d-4719-b015-e927f6609252.png"
     },
     {
       "id": "F02",
@@ -57,10 +60,13 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F02_Camellia_Red_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F02_Camellia_Red_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/abfed460-afe3-4fdd-938d-1ba8650b69c2.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/abfed460-afe3-4fdd-938d-1ba8650b69c2.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/abfed460-afe3-4fdd-938d-1ba8650b69c2.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c9e8f38b-e87f-41d7-a560-8aa2f3239deb.png"
     },
     {
       "id": "F03",
@@ -70,10 +76,13 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F03_Buckwheat_RedPink_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F03_Buckwheat_RedPink_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/393fc2c2-3605-415c-a647-17f4eb06b8c9.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/393fc2c2-3605-415c-a647-17f4eb06b8c9.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/393fc2c2-3605-415c-a647-17f4eb06b8c9.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ee1e9a54-54e8-4128-ba97-0133997c68fb.png"
     },
     {
       "id": "F04",
@@ -83,10 +92,13 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F04_Buckwheat_RedPink_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_F04_Buckwheat_RedPink_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0a83d4f6-7e1c-42a3-8f99-18d908974636.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0a83d4f6-7e1c-42a3-8f99-18d908974636.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/0a83d4f6-7e1c-42a3-8f99-18d908974636.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/44d20829-da5b-4ec1-b963-6a471347fec0.png"
     },
     {
       "id": "A03",
@@ -96,7 +108,7 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "pending",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -109,7 +121,7 @@
       "lightingId": "LT01",
       "theme": "sunset",
       "lighting": "왼쪽 낮은 주황·앰버빛 / 보라·푸른 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG01_LT01_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -168,10 +180,13 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F05_Calendula_GoldYellow_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F05_Calendula_GoldYellow_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "pending",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/14945ee8-71ad-4738-a29d-e3b71d9580c1.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/14945ee8-71ad-4738-a29d-e3b71d9580c1.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/14945ee8-71ad-4738-a29d-e3b71d9580c1.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/5c96d5cc-d3f1-4bbd-9ace-a7f5dab46e31.png"
     },
     {
       "id": "F06",
@@ -181,10 +196,13 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F06_Calendula_GoldYellow_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F06_Calendula_GoldYellow_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e755ac23-64be-4732-b958-0ce14a97eb6f.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e755ac23-64be-4732-b958-0ce14a97eb6f.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e755ac23-64be-4732-b958-0ce14a97eb6f.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/89a7220f-b3f5-4d03-8f51-696193a9a038.png"
     },
     {
       "id": "F07",
@@ -194,10 +212,13 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F07_Rapeseed_LemonYellow_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/3a146142-ea89-46f6-99c3-5e45ea96691d.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/3a146142-ea89-46f6-99c3-5e45ea96691d.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/3a146142-ea89-46f6-99c3-5e45ea96691d.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ae026f4e-e442-46ab-b8f7-6eb797090f4d.png"
     },
     {
       "id": "F08",
@@ -207,10 +228,13 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F08_Rapeseed_Yellow_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_F08_Rapeseed_Yellow_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/574660b0-011e-4c04-a019-c5b324cbd44a.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/574660b0-011e-4c04-a019-c5b324cbd44a.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/574660b0-011e-4c04-a019-c5b324cbd44a.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/b997e046-fc02-4e4c-9396-593c8c57812e.png"
     },
     {
       "id": "A03",
@@ -220,7 +244,7 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -233,7 +257,7 @@
       "lightingId": "LT02",
       "theme": "day",
       "lighting": "왼쪽 위 밝은 아이보리 햇빛 / 하늘색 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG02_LT02_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -292,10 +316,13 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F09_Lavender_LightPurple_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F09_Lavender_LightPurple_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8c58418e-7596-4b18-b3aa-6c857ce22f24.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8c58418e-7596-4b18-b3aa-6c857ce22f24.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8c58418e-7596-4b18-b3aa-6c857ce22f24.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/b4b75a05-100f-47ad-820a-447f9ff56cae.png"
     },
     {
       "id": "F10",
@@ -305,10 +332,13 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F10_Lavender_DeepPurple_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F10_Lavender_DeepPurple_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/1a306cac-57af-485b-ab81-05afecdb53f8.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/1a306cac-57af-485b-ab81-05afecdb53f8.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/1a306cac-57af-485b-ab81-05afecdb53f8.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/040f4ade-c681-4da3-b366-023a2c91fe6f.png"
     },
     {
       "id": "F11",
@@ -318,10 +348,13 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F11_Hydrangea_Lilac_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F11_Hydrangea_Lilac_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/68b6b1ff-c9a6-4af4-9e0c-0bee6d4e1db8.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/68b6b1ff-c9a6-4af4-9e0c-0bee6d4e1db8.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/68b6b1ff-c9a6-4af4-9e0c-0bee6d4e1db8.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/73ed88f7-608a-4c33-8e9e-41308df37413.png"
     },
     {
       "id": "F12",
@@ -331,10 +364,13 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F12_Hydrangea_Purple_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_F12_Hydrangea_Purple_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e80b1454-0215-4094-bd3a-7f31d65bd1c6.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e80b1454-0215-4094-bd3a-7f31d65bd1c6.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e80b1454-0215-4094-bd3a-7f31d65bd1c6.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/868ca53c-e02a-4e58-952d-12b1ffbf4577.png"
     },
     {
       "id": "A03",
@@ -344,7 +380,7 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -357,7 +393,7 @@
       "lightingId": "LT03",
       "theme": "night",
       "lighting": "오른쪽 위 은빛 달빛 / 코발트·인디고 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG03_LT03_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -416,10 +452,13 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F13_Hydrangea_SkyBlue_A_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ac22c34f-471d-4e19-b1e3-bdc6d6974093.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ac22c34f-471d-4e19-b1e3-bdc6d6974093.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/ac22c34f-471d-4e19-b1e3-bdc6d6974093.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/8e166d86-64fe-4630-a932-1398a3d0af3a.png"
     },
     {
       "id": "F14",
@@ -429,10 +468,13 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F14_Hydrangea_Blue_B_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F14_Hydrangea_Blue_B_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/24a83745-f33b-41de-a1fb-c7d031c8a564.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/24a83745-f33b-41de-a1fb-c7d031c8a564.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/24a83745-f33b-41de-a1fb-c7d031c8a564.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/6a565032-7c12-4e98-9c64-3507bc06a295.png"
     },
     {
       "id": "F15",
@@ -442,10 +484,13 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F15_Hydrangea_CobaltBlue_C_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c104bb45-c6fa-4188-a98f-a51d865b9527.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c104bb45-c6fa-4188-a98f-a51d865b9527.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/c104bb45-c6fa-4188-a98f-a51d865b9527.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/9ff29982-0d81-4071-9a3e-10ebc25b3bad.png"
     },
     {
       "id": "F16",
@@ -455,10 +500,13 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "AWAITING_MOTION_CHOICE_AND_COST_APPROVAL",
-      "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BloomIdleLoop_Anchor1024_v36.png",
-      "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_F16_Hydrangea_CoolWhite_D_BloomIdleLoop_Anchor1024_v36.png",
-      "finalApproved": false
+      "status": "PREPARED_NOT_SUBMITTED",
+      "input": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/d9133c65-0105-4071-b556-e16e910e2a4b.png",
+      "preview": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/d9133c65-0105-4071-b556-e16e910e2a4b.png",
+      "finalApproved": false,
+      "motion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+      "budInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/d9133c65-0105-4071-b556-e16e910e2a4b.png",
+      "bloomInput": "https://d2ol7oe51mr4n9.cloudfront.net/user_35VFwD64uZv5x1wQCJwBivXwH45/e851623a-7dd5-406a-b081-d3022be7d779.png"
     },
     {
       "id": "A03",
@@ -468,7 +516,7 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A03_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -481,7 +529,7 @@
       "lightingId": "LT04",
       "theme": "morning",
       "lighting": "왼쪽 낮은 금빛·복숭아빛 / 푸른 보랏빛 그림자",
-      "status": "AWAITING_COST_APPROVAL",
+      "status": "PREPARED_NOT_SUBMITTED",
       "input": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "preview": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v37/ML_BG04_LT04_A04_Butterfly_InPlaceLoop_Anchor1024_SrcV25.png",
       "finalApproved": false
@@ -532,5 +580,7 @@
         249
       ]
     }
-  ]
+  ],
+  "flowerMotion": "ONE_WAY_BUD_TO_BLOOM_ONLY",
+  "approvedBudgetCredits": 288
 }

@@ -3,9 +3,9 @@
   if (new URLSearchParams(location.search).get('embed') === '1') return;
   const page = location.pathname.split('/').pop() || 'index.html';
   const pages = [
-    ['library.html', '자료실'], ['abstract-world-v44.html', '추상 유화 전체'], ['all-images.html', '전체 이미지'],
+    ['index.html', '메인'], ['library.html', '자료실'], ['abstract-world-v44.html', '추상 유화 전체'], ['all-images.html', '전체 이미지'],
     ['oil-art.html', '통합 유화'], ['lighting-sets.html', '배경·조명'],
-    ['oil-sources.html', 'PNG·추가 소스'], ['editor.html', '에디터'], ['index.html', '전시 보기'], ['old.html', '올드']
+    ['oil-sources.html', 'PNG·추가 소스'], ['editor.html', '에디터'], ['old.html', '올드']
   ];
   const oldPages = ['all-images-old.html', 'abstract-flowers-v43.html', 'single-flowers.html', 'scene-loops.html',
     'generation-v38.html', 'generation-v40.html', 'production.html', 'ambient-loops.html', 'ambient-inplace.html', 'cloud-sample.html'];

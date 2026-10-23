@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>메이즈랜드 · 요소 분리와 재조합</title><link rel="stylesheet" href="site-nav.css?v=45"><link rel="stylesheet" href="layers.css?v=52"><script defer src="site-nav.js?v=layers52-20261024-r1"></script><script defer src="layers.js?v=52-r1"></script></head>
+<body><main><header><p class="eyebrow">MAZELAND JEJU · 2026.10.24 · LAYERS</p><h1>하나의 정원, 다섯 겹의 풍경.</h1><p>배경·꽃·풀·현무암·빛 입자를 분리하고, 통합본의 위치에 맞춰 다시 겹쳤습니다.</p><nav id="themes" aria-label="배경 시간대"></nav></header>
+<div class="title-row"><div><h2 id="scene-title">요소를 불러오는 중입니다.</h2><p id="lighting"></p></div><a id="zip" class="button" hidden download>이 배경의 PNG·배치 좌표 ZIP ↓</a></div>
+<p id="status" role="status" aria-live="polite"></p>
+<section aria-label="원본과 재조합 비교"><div class="comparison"><figure><figcaption>원본 통합 이미지</figcaption><a id="reference-link"><img id="reference" class="wide" alt="원본 통합 이미지"></a></figure><figure><figcaption>분리된 PNG를 겹친 재조합</figcaption><div id="composition"><div id="canvas" class="canvas checker" role="group" aria-label="분리된 요소의 재조합"><div id="ghost" aria-hidden="true"></div></div></div></figure></div>
+<div class="controls"><div id="toggles" aria-label="합성할 요소 선택"></div><div class="buttons"><button id="all-on" type="button">모두 겹치기</button><button id="background-only" type="button">배경만 보기</button><button id="enlarge" type="button">합성 크게보기</button></div><label class="overlay-control">원본을 겹쳐 비교 <input id="overlay" type="range" min="0" max="100" value="0"><output id="overlay-value">0%</output></label></div></section>
+<section><h2>배경만 있는 이미지</h2><a id="background-link"><img id="background" class="wide" alt="꽃·풀·현무암·파티클을 제외한 배경" loading="lazy"></a><p><a id="background-download" download>배경 원본 PNG ↓</a></p></section>
+<section><h2>분리된 요소</h2><p>꽃 레이어에는 꽃 자체의 줄기와 잎이 포함됩니다. 풀·현무암·파티클은 각각 독립된 투명 PNG입니다.</p><div id="cards" class="cards"></div><p><a href="assets/scene-layers-v52/layers-manifest_v52.json" download>4개 배경의 레이어·배치 좌표 JSON ↓</a> · <a href="abstract-world-v44.html">기존 통합 이미지와 개별 소스 보기 →</a></p></section>
+<footer>원본 구도를 기준으로 AI 분리·보완한 이미지입니다. 미세한 붓결과 가려진 부분은 원본과 차이가 있습니다. 파티클은 정지 이미지 레이어입니다.</footer>
+</main><script defer src="image-preview.js"></script></body></html>

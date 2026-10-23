@@ -1,0 +1,207 @@
+{
+  "mode": "built-in image_gen edit",
+  "date": "2026-10-24",
+  "scope": "Four lighting themes, each clean background + transparent flowering plants, nonflowering grass, basalt and particles. Full-frame layers for actual browser reassembly.",
+  "jobs": [
+    {
+      "id": "BG01",
+      "light": "LT01",
+      "key": "Sunset",
+      "label": "노을",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51.png",
+      "kind": "Background",
+      "transparent": false,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Background\nProduce ONLY the opaque CLEAN BACKGROUND PLATE: same sky, cloud shapes, Hallasan mountain silhouette, sun or moon, layered distant ridges, mist and spacious open ground. REMOVE every foreground flower, its stems and leaves, all distinctive near grass tufts/leaf clusters, every near basalt stone, and all added luminous particle motes/glints from the air and ground. Inpaint the revealed lower foreground with a quiet continuous painterly meadow/earth surface in the same perspective and local lighting; no separate near plants or rocks. Keep the original background details above the flower bed as closely as possible. No white blank areas. Fully opaque background. This must let near flowers, grass and rocks be added as independent layers later."
+    },
+    {
+      "id": "BG01",
+      "light": "LT01",
+      "key": "Sunset",
+      "label": "노을",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51.png",
+      "kind": "Flowers",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Flowers\nProduce ONLY the foreground FLOWERING PLANTS on TRUE TRANSPARENT ALPHA: retain all the original small flower heads, their attached stems and species-specific leaves, in the exact original positions across the lower3/7 of the canvas with slightly higher side groups. Keep flower heads small, their anatomy, color and number. Include the flowering plants' own foliage to maintain a natural planted shape. REMOVE the entire sky, mountain, distant landscape, ground surface, all separate ornamental grass clumps and every basalt rock, plus all free floating particles. Where a rock or grass masked a plant, extend just enough natural plant stem/leaf behind the occlusion for clean overlap later, not a different arrangement. No bottom soil slab, no opaque horizontal green rectangular band. Upper sky and all gaps between leaves must be genuinely transparent. Keep all flowers in place, not floating individual flowers centered on canvas."
+    },
+    {
+      "id": "BG01",
+      "light": "LT01",
+      "key": "Sunset",
+      "label": "노을",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51.png",
+      "kind": "Grass",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Grass\nProduce ONLY the separate near GRASS / NON-FLOWERING UNDERGROWTH clumps on TRUE TRANSPARENT ALPHA, preserving their positions, shapes, olive/jade/blue-green color and directional highlights from the source. These are narrow curving grass blades and low ground foliage along the bottom and between plants, especially the lowest 15–25% of frame. EXCLUDE ALL flowers, flower heads, the broad foliage belonging directly to flowering plants, every basalt rock, all sky, all distant landscape and ground/soil. The top60% of the canvas must be transparent. Make airy separated irregular tufts and low connecting blades, NOT a solid green hedge, carpet, soil strip or horizontal box. Any cut gaps between blades must have true transparency. Do not move or magnify these clumps."
+    },
+    {
+      "id": "BG01",
+      "light": "LT01",
+      "key": "Sunset",
+      "label": "노을",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51.png",
+      "kind": "Basalt",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Basalt\nProduce ONLY the foreground BASALT ROCKS on TRUE TRANSPARENT ALPHA. Preserve exactly the same rock positions, apparent sizes, charcoal porous texture, contours, warm/cool light and colored reflected highlights as the source; rocks mostly at the lower left, lower right and a few between plants near bottom. Remove ALL plants, flowers, leaves, grass, soil surface, terrain, mountains, sky, motes and glow particles. Small contact-shadow softness at the rock bases is allowed, but no large background shadow slab. Keep transparent gaps and original full canvas positions. Complete small rock edges previously occluded by grass so the rocks can be stacked in front of the plant layers. No new rocks, no centering an isolated rock at middle."
+    },
+    {
+      "id": "BG01",
+      "light": "LT01",
+      "key": "Sunset",
+      "label": "노을",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51.png",
+      "kind": "Particles",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Particles\nProduce ONLY the floating LIGHT PARTICLE layer on TRUE TRANSPARENT ALPHA. Retain the source's scattered suspended gold/ivory/cyan/lilac glowing pinpoints and tiny star glints at their original canvas x/y positions; also a few tiny near-plant glints visible in the source. Make only isolated tiny luminous cores with soft translucent halos, with alpha fading smoothly to zero between motes. REMOVE ALL landscape, sky colors, mountains, cloud shapes, sun/moon, flowers, grass, rocks, stems, foliage and ground. Almost the entire canvas should be fully transparent; sparse points and glows only, not a sheet of grey/black fog, no opaque black background, no broad cloudy overlays. The brightest sparkle cores may be white but should retain source colored halos. Do not invent flower- or butterfly-shaped particles. No giant central flare. This is a sparse overlay, keep points in place."
+    },
+    {
+      "id": "BG02",
+      "light": "LT02",
+      "key": "Day",
+      "label": "낮",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51.png",
+      "kind": "Background",
+      "transparent": false,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Background\nProduce ONLY the opaque CLEAN BACKGROUND PLATE: same sky, cloud shapes, Hallasan mountain silhouette, sun or moon, layered distant ridges, mist and spacious open ground. REMOVE every foreground flower, its stems and leaves, all distinctive near grass tufts/leaf clusters, every near basalt stone, and all added luminous particle motes/glints from the air and ground. Inpaint the revealed lower foreground with a quiet continuous painterly meadow/earth surface in the same perspective and local lighting; no separate near plants or rocks. Keep the original background details above the flower bed as closely as possible. No white blank areas. Fully opaque background. This must let near flowers, grass and rocks be added as independent layers later."
+    },
+    {
+      "id": "BG02",
+      "light": "LT02",
+      "key": "Day",
+      "label": "낮",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51.png",
+      "kind": "Flowers",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Flowers\nProduce ONLY the foreground FLOWERING PLANTS on TRUE TRANSPARENT ALPHA: retain all the original small flower heads, their attached stems and species-specific leaves, in the exact original positions across the lower3/7 of the canvas with slightly higher side groups. Keep flower heads small, their anatomy, color and number. Include the flowering plants' own foliage to maintain a natural planted shape. REMOVE the entire sky, mountain, distant landscape, ground surface, all separate ornamental grass clumps and every basalt rock, plus all free floating particles. Where a rock or grass masked a plant, extend just enough natural plant stem/leaf behind the occlusion for clean overlap later, not a different arrangement. No bottom soil slab, no opaque horizontal green rectangular band. Upper sky and all gaps between leaves must be genuinely transparent. Keep all flowers in place, not floating individual flowers centered on canvas."
+    },
+    {
+      "id": "BG02",
+      "light": "LT02",
+      "key": "Day",
+      "label": "낮",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51.png",
+      "kind": "Grass",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Grass\nProduce ONLY the separate near GRASS / NON-FLOWERING UNDERGROWTH clumps on TRUE TRANSPARENT ALPHA, preserving their positions, shapes, olive/jade/blue-green color and directional highlights from the source. These are narrow curving grass blades and low ground foliage along the bottom and between plants, especially the lowest 15–25% of frame. EXCLUDE ALL flowers, flower heads, the broad foliage belonging directly to flowering plants, every basalt rock, all sky, all distant landscape and ground/soil. The top60% of the canvas must be transparent. Make airy separated irregular tufts and low connecting blades, NOT a solid green hedge, carpet, soil strip or horizontal box. Any cut gaps between blades must have true transparency. Do not move or magnify these clumps."
+    },
+    {
+      "id": "BG02",
+      "light": "LT02",
+      "key": "Day",
+      "label": "낮",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51.png",
+      "kind": "Basalt",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Basalt\nProduce ONLY the foreground BASALT ROCKS on TRUE TRANSPARENT ALPHA. Preserve exactly the same rock positions, apparent sizes, charcoal porous texture, contours, warm/cool light and colored reflected highlights as the source; rocks mostly at the lower left, lower right and a few between plants near bottom. Remove ALL plants, flowers, leaves, grass, soil surface, terrain, mountains, sky, motes and glow particles. Small contact-shadow softness at the rock bases is allowed, but no large background shadow slab. Keep transparent gaps and original full canvas positions. Complete small rock edges previously occluded by grass so the rocks can be stacked in front of the plant layers. No new rocks, no centering an isolated rock at middle."
+    },
+    {
+      "id": "BG02",
+      "light": "LT02",
+      "key": "Day",
+      "label": "낮",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51.png",
+      "kind": "Particles",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Particles\nProduce ONLY the floating LIGHT PARTICLE layer on TRUE TRANSPARENT ALPHA. Retain the source's scattered suspended gold/ivory/cyan/lilac glowing pinpoints and tiny star glints at their original canvas x/y positions; also a few tiny near-plant glints visible in the source. Make only isolated tiny luminous cores with soft translucent halos, with alpha fading smoothly to zero between motes. REMOVE ALL landscape, sky colors, mountains, cloud shapes, sun/moon, flowers, grass, rocks, stems, foliage and ground. Almost the entire canvas should be fully transparent; sparse points and glows only, not a sheet of grey/black fog, no opaque black background, no broad cloudy overlays. The brightest sparkle cores may be white but should retain source colored halos. Do not invent flower- or butterfly-shaped particles. No giant central flare. This is a sparse overlay, keep points in place."
+    },
+    {
+      "id": "BG03",
+      "light": "LT03",
+      "key": "Night",
+      "label": "밤",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51.png",
+      "kind": "Background",
+      "transparent": false,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Background\nProduce ONLY the opaque CLEAN BACKGROUND PLATE: same sky, cloud shapes, Hallasan mountain silhouette, sun or moon, layered distant ridges, mist and spacious open ground. REMOVE every foreground flower, its stems and leaves, all distinctive near grass tufts/leaf clusters, every near basalt stone, and all added luminous particle motes/glints from the air and ground. Inpaint the revealed lower foreground with a quiet continuous painterly meadow/earth surface in the same perspective and local lighting; no separate near plants or rocks. Keep the original background details above the flower bed as closely as possible. No white blank areas. Fully opaque background. This must let near flowers, grass and rocks be added as independent layers later."
+    },
+    {
+      "id": "BG03",
+      "light": "LT03",
+      "key": "Night",
+      "label": "밤",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51.png",
+      "kind": "Flowers",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Flowers\nProduce ONLY the foreground FLOWERING PLANTS on TRUE TRANSPARENT ALPHA: retain all the original small flower heads, their attached stems and species-specific leaves, in the exact original positions across the lower3/7 of the canvas with slightly higher side groups. Keep flower heads small, their anatomy, color and number. Include the flowering plants' own foliage to maintain a natural planted shape. REMOVE the entire sky, mountain, distant landscape, ground surface, all separate ornamental grass clumps and every basalt rock, plus all free floating particles. Where a rock or grass masked a plant, extend just enough natural plant stem/leaf behind the occlusion for clean overlap later, not a different arrangement. No bottom soil slab, no opaque horizontal green rectangular band. Upper sky and all gaps between leaves must be genuinely transparent. Keep all flowers in place, not floating individual flowers centered on canvas."
+    },
+    {
+      "id": "BG03",
+      "light": "LT03",
+      "key": "Night",
+      "label": "밤",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51.png",
+      "kind": "Grass",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Grass\nProduce ONLY the separate near GRASS / NON-FLOWERING UNDERGROWTH clumps on TRUE TRANSPARENT ALPHA, preserving their positions, shapes, olive/jade/blue-green color and directional highlights from the source. These are narrow curving grass blades and low ground foliage along the bottom and between plants, especially the lowest 15–25% of frame. EXCLUDE ALL flowers, flower heads, the broad foliage belonging directly to flowering plants, every basalt rock, all sky, all distant landscape and ground/soil. The top60% of the canvas must be transparent. Make airy separated irregular tufts and low connecting blades, NOT a solid green hedge, carpet, soil strip or horizontal box. Any cut gaps between blades must have true transparency. Do not move or magnify these clumps."
+    },
+    {
+      "id": "BG03",
+      "light": "LT03",
+      "key": "Night",
+      "label": "밤",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51.png",
+      "kind": "Basalt",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Basalt\nProduce ONLY the foreground BASALT ROCKS on TRUE TRANSPARENT ALPHA. Preserve exactly the same rock positions, apparent sizes, charcoal porous texture, contours, warm/cool light and colored reflected highlights as the source; rocks mostly at the lower left, lower right and a few between plants near bottom. Remove ALL plants, flowers, leaves, grass, soil surface, terrain, mountains, sky, motes and glow particles. Small contact-shadow softness at the rock bases is allowed, but no large background shadow slab. Keep transparent gaps and original full canvas positions. Complete small rock edges previously occluded by grass so the rocks can be stacked in front of the plant layers. No new rocks, no centering an isolated rock at middle."
+    },
+    {
+      "id": "BG03",
+      "light": "LT03",
+      "key": "Night",
+      "label": "밤",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51.png",
+      "kind": "Particles",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Particles\nProduce ONLY the floating LIGHT PARTICLE layer on TRUE TRANSPARENT ALPHA. Retain the source's scattered suspended gold/ivory/cyan/lilac glowing pinpoints and tiny star glints at their original canvas x/y positions; also a few tiny near-plant glints visible in the source. Make only isolated tiny luminous cores with soft translucent halos, with alpha fading smoothly to zero between motes. REMOVE ALL landscape, sky colors, mountains, cloud shapes, sun/moon, flowers, grass, rocks, stems, foliage and ground. Almost the entire canvas should be fully transparent; sparse points and glows only, not a sheet of grey/black fog, no opaque black background, no broad cloudy overlays. The brightest sparkle cores may be white but should retain source colored halos. Do not invent flower- or butterfly-shaped particles. No giant central flare. This is a sparse overlay, keep points in place."
+    },
+    {
+      "id": "BG04",
+      "light": "LT04",
+      "key": "Morning",
+      "label": "아침",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51.png",
+      "kind": "Background",
+      "transparent": false,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Background\nProduce ONLY the opaque CLEAN BACKGROUND PLATE: same sky, cloud shapes, Hallasan mountain silhouette, sun or moon, layered distant ridges, mist and spacious open ground. REMOVE every foreground flower, its stems and leaves, all distinctive near grass tufts/leaf clusters, every near basalt stone, and all added luminous particle motes/glints from the air and ground. Inpaint the revealed lower foreground with a quiet continuous painterly meadow/earth surface in the same perspective and local lighting; no separate near plants or rocks. Keep the original background details above the flower bed as closely as possible. No white blank areas. Fully opaque background. This must let near flowers, grass and rocks be added as independent layers later."
+    },
+    {
+      "id": "BG04",
+      "light": "LT04",
+      "key": "Morning",
+      "label": "아침",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51.png",
+      "kind": "Flowers",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Flowers\nProduce ONLY the foreground FLOWERING PLANTS on TRUE TRANSPARENT ALPHA: retain all the original small flower heads, their attached stems and species-specific leaves, in the exact original positions across the lower3/7 of the canvas with slightly higher side groups. Keep flower heads small, their anatomy, color and number. Include the flowering plants' own foliage to maintain a natural planted shape. REMOVE the entire sky, mountain, distant landscape, ground surface, all separate ornamental grass clumps and every basalt rock, plus all free floating particles. Where a rock or grass masked a plant, extend just enough natural plant stem/leaf behind the occlusion for clean overlap later, not a different arrangement. No bottom soil slab, no opaque horizontal green rectangular band. Upper sky and all gaps between leaves must be genuinely transparent. Keep all flowers in place, not floating individual flowers centered on canvas."
+    },
+    {
+      "id": "BG04",
+      "light": "LT04",
+      "key": "Morning",
+      "label": "아침",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51.png",
+      "kind": "Grass",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Grass\nProduce ONLY the separate near GRASS / NON-FLOWERING UNDERGROWTH clumps on TRUE TRANSPARENT ALPHA, preserving their positions, shapes, olive/jade/blue-green color and directional highlights from the source. These are narrow curving grass blades and low ground foliage along the bottom and between plants, especially the lowest 15–25% of frame. EXCLUDE ALL flowers, flower heads, the broad foliage belonging directly to flowering plants, every basalt rock, all sky, all distant landscape and ground/soil. The top60% of the canvas must be transparent. Make airy separated irregular tufts and low connecting blades, NOT a solid green hedge, carpet, soil strip or horizontal box. Any cut gaps between blades must have true transparency. Do not move or magnify these clumps."
+    },
+    {
+      "id": "BG04",
+      "light": "LT04",
+      "key": "Morning",
+      "label": "아침",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51.png",
+      "kind": "Basalt",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Basalt\nProduce ONLY the foreground BASALT ROCKS on TRUE TRANSPARENT ALPHA. Preserve exactly the same rock positions, apparent sizes, charcoal porous texture, contours, warm/cool light and colored reflected highlights as the source; rocks mostly at the lower left, lower right and a few between plants near bottom. Remove ALL plants, flowers, leaves, grass, soil surface, terrain, mountains, sky, motes and glow particles. Small contact-shadow softness at the rock bases is allowed, but no large background shadow slab. Keep transparent gaps and original full canvas positions. Complete small rock edges previously occluded by grass so the rocks can be stacked in front of the plant layers. No new rocks, no centering an isolated rock at middle."
+    },
+    {
+      "id": "BG04",
+      "light": "LT04",
+      "key": "Morning",
+      "label": "아침",
+      "source": "D:/work/2026/0923_제주 메이즈랜드/20261023_메이즈랜드_원본소스/판타지유화_공중파티클4종_v51/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51.png",
+      "kind": "Particles",
+      "transparent": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. This is a strict LAYER SEPARATION of the attached completed panoramic Jeju fantasy OIL PAINTING, not a redesign. Preserve the EXACT original canvas framing, x/y positions, apparent object sizes, flower count, botanical species, colors, light direction and thick broken brushstrokes. Output one full-width 3:1 landscape PNG at the original framing, target 2172x724. Do not crop to object bounds, zoom, center or rearrange objects: keep empty areas as transparent space at their original canvas coordinates. No labels, text, border, diagram, collage or checkerboard pixels. The objective is to stack separate layers back together at x=0,y=0 without relocating anything.\nREQUESTED LAYER: Particles\nProduce ONLY the floating LIGHT PARTICLE layer on TRUE TRANSPARENT ALPHA. Retain the source's scattered suspended gold/ivory/cyan/lilac glowing pinpoints and tiny star glints at their original canvas x/y positions; also a few tiny near-plant glints visible in the source. Make only isolated tiny luminous cores with soft translucent halos, with alpha fading smoothly to zero between motes. REMOVE ALL landscape, sky colors, mountains, cloud shapes, sun/moon, flowers, grass, rocks, stems, foliage and ground. Almost the entire canvas should be fully transparent; sparse points and glows only, not a sheet of grey/black fog, no opaque black background, no broad cloudy overlays. The brightest sparkle cores may be white but should retain source colored halos. Do not invent flower- or butterfly-shaped particles. No giant central flare. This is a sparse overlay, keep points in place."
+    }
+  ]
+}

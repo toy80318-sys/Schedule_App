@@ -1,0 +1,472 @@
+{
+  "version": 52,
+  "date": "2026-10-24",
+  "generator": "built-in image_gen edit",
+  "sceneCount": 4,
+  "imageCount": 20,
+  "transparentImageCount": 16,
+  "frameConvention": "rect values normalized from top-left, sortingOrder back to front; all untrimmed PNGs preserve original frame. Minor native 1–2 pixel size variation is normalized by the renderer.",
+  "notes": "AI-separated and completed layers, not pixel-identical source masks. Flower layers include their own stems/leaves. Grass is a separate low foreground layer. Still images only.",
+  "scenes": [
+    {
+      "id": "sunset",
+      "name": "노을",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "frame": {
+        "width": 2172,
+        "height": 724
+      },
+      "reference": {
+        "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261023-v49/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51.png",
+        "preview": "assets/air-particles-v51/ML_BG01_LT01_IntegratedBloom_AirParticles_Sunset_v51_preview.webp",
+        "width": 2171,
+        "height": 724
+      },
+      "layers": [
+        {
+          "id": "background",
+          "name": "배경",
+          "file": "ML_BG01_LT01_Background_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG01_LT01_Background_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG01_LT01_Background_v52_preview.webp",
+          "nativeWidth": 2170,
+          "nativeHeight": 725,
+          "transparent": false,
+          "sortingOrder": 0,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "e95a04f1a7f505ff5ca6eed0e59b2ce096bfe5f2eeb108fcc704e6590760508c"
+        },
+        {
+          "id": "flowers",
+          "name": "꽃·꽃의 잎줄기",
+          "file": "ML_BG01_LT01_Flowers_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG01_LT01_Flowers_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG01_LT01_Flowers_v52_preview.webp",
+          "nativeWidth": 2171,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 10,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "ba24d40dc1261197c67be1d736206d8b954699532d5b5a2763208424f2ce95ef"
+        },
+        {
+          "id": "grass",
+          "name": "풀·낮은 잎",
+          "file": "ML_BG01_LT01_Grass_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG01_LT01_Grass_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG01_LT01_Grass_v52_preview.webp",
+          "nativeWidth": 2171,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 20,
+          "rect": [
+            0,
+            0.35,
+            1,
+            0.65
+          ],
+          "opacity": 1,
+          "sha256": "240c3b176dea024d4a4ce9c5171eb0a099ee2997455b1ed00fd9436e7804e985"
+        },
+        {
+          "id": "basalt",
+          "name": "현무암",
+          "file": "ML_BG01_LT01_Basalt_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG01_LT01_Basalt_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG01_LT01_Basalt_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 30,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "68f1b65481ee9ed2bb917bf1d648b264c68d6418094ffa1ae589febadf9f0235"
+        },
+        {
+          "id": "particles",
+          "name": "공중 파티클",
+          "file": "ML_BG01_LT01_Particles_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG01_LT01_Particles_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG01_LT01_Particles_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 40,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "1a5a82563a1e4201fc35729debbb71970ce17a9330052bff53b84fe1faf8ed0e"
+        }
+      ],
+      "zip": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG01_LT01_Layers_v52.zip",
+      "lighting": "왼쪽의 낮은 호박빛 · 동백꽃과 분홍 메밀꽃"
+    },
+    {
+      "id": "day",
+      "name": "낮",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "frame": {
+        "width": 2172,
+        "height": 724
+      },
+      "reference": {
+        "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261023-v49/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51.png",
+        "preview": "assets/air-particles-v51/ML_BG02_LT02_IntegratedBloom_AirParticles_Day_v51_preview.webp",
+        "width": 2171,
+        "height": 724
+      },
+      "layers": [
+        {
+          "id": "background",
+          "name": "배경",
+          "file": "ML_BG02_LT02_Background_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG02_LT02_Background_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG02_LT02_Background_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": false,
+          "sortingOrder": 0,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "cae610c0851d9acd29fc5fc75dfbd88357c886f187ec96bd855f28266845fc12"
+        },
+        {
+          "id": "flowers",
+          "name": "꽃·꽃의 잎줄기",
+          "file": "ML_BG02_LT02_Flowers_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG02_LT02_Flowers_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG02_LT02_Flowers_v52_preview.webp",
+          "nativeWidth": 2173,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 10,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "b755b165f39b2f9011c146c162aa72b89af703b4a6f1caaf5b0a6ef26a07ecd1"
+        },
+        {
+          "id": "grass",
+          "name": "풀·낮은 잎",
+          "file": "ML_BG02_LT02_Grass_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG02_LT02_Grass_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG02_LT02_Grass_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 20,
+          "rect": [
+            0,
+            0.35,
+            1,
+            0.65
+          ],
+          "opacity": 1,
+          "sha256": "83283b711379e81725686d5b7cb36067bcb6e8cdc5bab87a38dd6254f56f814a"
+        },
+        {
+          "id": "basalt",
+          "name": "현무암",
+          "file": "ML_BG02_LT02_Basalt_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG02_LT02_Basalt_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG02_LT02_Basalt_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 30,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "b3089fe1992dc3ea70238a45550f29273f08100a8ed5944a93b7ccbfededbfe9"
+        },
+        {
+          "id": "particles",
+          "name": "공중 파티클",
+          "file": "ML_BG02_LT02_Particles_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG02_LT02_Particles_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG02_LT02_Particles_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 40,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "3551bab130160ce5654c121d62d89388c4d89fd6b0745840ff6183da70dd6e90"
+        }
+      ],
+      "zip": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG02_LT02_Layers_v52.zip",
+      "lighting": "왼쪽 위의 따뜻한 낮빛 · 금잔화와 유채꽃"
+    },
+    {
+      "id": "night",
+      "name": "밤",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "frame": {
+        "width": 2172,
+        "height": 724
+      },
+      "reference": {
+        "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261023-v49/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51.png",
+        "preview": "assets/air-particles-v51/ML_BG03_LT03_IntegratedBloom_AirParticles_Night_v51_preview.webp",
+        "width": 2172,
+        "height": 724
+      },
+      "layers": [
+        {
+          "id": "background",
+          "name": "배경",
+          "file": "ML_BG03_LT03_Background_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG03_LT03_Background_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG03_LT03_Background_v52_preview.webp",
+          "nativeWidth": 2171,
+          "nativeHeight": 724,
+          "transparent": false,
+          "sortingOrder": 0,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "642ada2b2323184bff023c7abc0bd16a576918363d34e077fb51bff3b5dbfc2b"
+        },
+        {
+          "id": "flowers",
+          "name": "꽃·꽃의 잎줄기",
+          "file": "ML_BG03_LT03_Flowers_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG03_LT03_Flowers_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG03_LT03_Flowers_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 10,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "d7b9e3fe1e5942d1f3f25a663273481b2ec9dfc1377560d68f53744b450893cd"
+        },
+        {
+          "id": "grass",
+          "name": "풀·낮은 잎",
+          "file": "ML_BG03_LT03_Grass_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG03_LT03_Grass_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG03_LT03_Grass_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 20,
+          "rect": [
+            0,
+            0.35,
+            1,
+            0.65
+          ],
+          "opacity": 1,
+          "sha256": "78a74c78ee88ac4d4541639064f771deba8be65fcfe24e2647f01af88975e9c6"
+        },
+        {
+          "id": "basalt",
+          "name": "현무암",
+          "file": "ML_BG03_LT03_Basalt_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG03_LT03_Basalt_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG03_LT03_Basalt_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 30,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "657583107f83092afd7936103c63a2be70f1b4887d5b4eca0a90ba9fa7bec577"
+        },
+        {
+          "id": "particles",
+          "name": "공중 파티클",
+          "file": "ML_BG03_LT03_Particles_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG03_LT03_Particles_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG03_LT03_Particles_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 40,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "e9040ae8d0bf9c6331b41721adef3d7cf413648f66b4cf0e2d19e17a91bc683f"
+        }
+      ],
+      "zip": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG03_LT03_Layers_v52.zip",
+      "lighting": "오른쪽 위의 은보라 달빛 · 라벤더와 보라 수국"
+    },
+    {
+      "id": "morning",
+      "name": "아침",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "frame": {
+        "width": 2172,
+        "height": 724
+      },
+      "reference": {
+        "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261023-v49/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51.png",
+        "preview": "assets/air-particles-v51/ML_BG04_LT04_IntegratedBloom_AirParticles_Morning_v51_preview.webp",
+        "width": 2171,
+        "height": 724
+      },
+      "layers": [
+        {
+          "id": "background",
+          "name": "배경",
+          "file": "ML_BG04_LT04_Background_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG04_LT04_Background_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG04_LT04_Background_v52_preview.webp",
+          "nativeWidth": 2170,
+          "nativeHeight": 725,
+          "transparent": false,
+          "sortingOrder": 0,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "846d5b78ff232660831f81b2a4b2b4a6112913b41b254bcbd2d0056957447a42"
+        },
+        {
+          "id": "flowers",
+          "name": "꽃·꽃의 잎줄기",
+          "file": "ML_BG04_LT04_Flowers_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG04_LT04_Flowers_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG04_LT04_Flowers_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 10,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "875a37bff1d0b4bbc35882e29463feca2021de3fff5d3d7dc0f2cae906947f4c"
+        },
+        {
+          "id": "grass",
+          "name": "풀·낮은 잎",
+          "file": "ML_BG04_LT04_Grass_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG04_LT04_Grass_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG04_LT04_Grass_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 20,
+          "rect": [
+            0,
+            0.35,
+            1,
+            0.65
+          ],
+          "opacity": 1,
+          "sha256": "ed7e612bc81739d6c40f77bcbee71360f35eb821a40f037ac86895b379d473a2"
+        },
+        {
+          "id": "basalt",
+          "name": "현무암",
+          "file": "ML_BG04_LT04_Basalt_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG04_LT04_Basalt_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG04_LT04_Basalt_v52_preview.webp",
+          "nativeWidth": 2172,
+          "nativeHeight": 724,
+          "transparent": true,
+          "sortingOrder": 30,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "4880a1892c9feb4e2715cf660e784d6bd0a1afc895ade14900ea436078241686"
+        },
+        {
+          "id": "particles",
+          "name": "공중 파티클",
+          "file": "ML_BG04_LT04_Particles_v52.png",
+          "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG04_LT04_Particles_v52.png",
+          "preview": "assets/scene-layers-v52/ML_BG04_LT04_Particles_v52_preview.webp",
+          "nativeWidth": 2170,
+          "nativeHeight": 725,
+          "transparent": true,
+          "sortingOrder": 40,
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "opacity": 1,
+          "sha256": "db7eb51e347ccadf72d249ab7f70c2ba4b5c4c14e1ee67cd4770f0cd19962a2b"
+        }
+      ],
+      "zip": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261024-v52/ML_BG04_LT04_Layers_v52.zip",
+      "lighting": "왼쪽의 복숭아빛 아침빛 · 스카이블루·코발트·크림화이트 수국"
+    }
+  ]
+}

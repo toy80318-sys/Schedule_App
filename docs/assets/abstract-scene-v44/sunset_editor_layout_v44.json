@@ -7807,9 +7807,9 @@
       "motion": "stationary"
     }
   ],
-  "background": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v44/ML_BG01_LT01_Background_AbstractOil_v44_Wall4096x1006.png",
+  "background": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261023-v49/ML_BG01_LT01_Background_FantasyAbstractOil_Sunset_v47_Wall4096x1006.png",
   "backgroundPlaylist": [
-    "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261022-v44/ML_BG01_LT01_Background_AbstractOil_v44_Wall4096x1006.png"
+    "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261023-v49/ML_BG01_LT01_Background_FantasyAbstractOil_Sunset_v47_Wall4096x1006.png"
   ],
   "reference": null,
   "sceneFilters": {},
@@ -7832,6 +7832,6 @@
     "paidCreditsUsed": 0,
     "imageStyleVersion": 44
   },
-  "backgroundRevision": 44,
+  "backgroundRevision": 47,
   "imageStyleVersion": 44
 }

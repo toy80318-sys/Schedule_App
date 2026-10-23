@@ -46,7 +46,12 @@
   $('all-on').onclick=()=>{$('overlay').value=0;$('overlay').oninput();for(const check of $('toggles').querySelectorAll('input')){check.checked=true;check.onchange();}};
   $('background-only').onclick=()=>{$('overlay').value=0;$('overlay').oninput();for(const check of $('toggles').querySelectorAll('input')){check.checked=check.dataset.layer==='background';check.onchange();}};
   $('overlay').oninput=()=>{$('ghost').style.opacity=$('overlay').value/100;$('overlay-value').value=$('overlay').value+'%';};
-  $('enlarge').onclick=()=>$('composition').requestFullscreen?.();
+  $('enlarge').onclick=()=>{
+    const big=document.createElement('div');big.className='canvas checker';
+    for(const i of $('canvas').querySelectorAll('img'))big.append(i.cloneNode());
+    $('enlarged-stage').replaceChildren(big);$('enlarged').showModal();
+  };
+  $('close-enlarged').onclick=()=>$('enlarged').close();
   fetch('assets/scene-layers-v52/layers-manifest_v52.json').then(r=>{if(!r.ok)throw Error('레이어 목록을 불러오지 못했습니다.');return r.json();}).then(validManifest).then(data=>{
     scenes=data.scenes;for(const s of scenes){const b=document.createElement('button');b.type='button';b.dataset.theme=s.id;b.textContent=s.name;b.onclick=()=>show(s.id);$('themes').append(b);}show(location.hash.slice(1));
   }).catch(error=>{$('status').textContent=error.message;});

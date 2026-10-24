@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>고급3D애니메이션 중간발표 점수·피드백</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#f2f4f7;--surface:#fff;--fg:#151a22;--muted:#5a6475;--line:#d8dde6;--key:#2c4fb8;--key-soft:#e6ecfa;--warm:#b5552a;--warm-soft:#fbeee6;
+--sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0f131a;--surface:#171c25;--fg:#e8ecf2;--muted:#9aa4b5;--line:#2a3240;--key:#86a3ff;--key-soft:#1c2747;--warm:#f0a37b;--warm-soft:#3a251b;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.75}
+.wrap{max-width:900px;margin:0 auto;padding:36px max(16px,env(safe-area-inset-right)) 72px max(16px,env(safe-area-inset-left));display:grid;gap:40px}
+header.top{display:grid;gap:8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--key)}
+h1{margin:0;font-size:clamp(26px,4.6vw,38px);line-height:1.2}
+.lead{margin:0;color:var(--muted);max-width:62ch}
+h2{margin:0 0 14px;font-size:20px}
+.common{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px}
+.ci{background:var(--warm-soft);border-radius:10px;padding:16px 18px}
+.ci h3{margin:0 0 4px;font-size:16px;color:var(--warm)}
+.ci p{margin:0;font-size:15px}
+.search{width:100%;max-width:320px;font:inherit;font-size:16px;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg);margin-bottom:12px}
+.jump{display:flex;flex-wrap:wrap;gap:6px}
+.jump a{font-size:14px;padding:5px 11px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--fg);text-decoration:none}
+.jump a:hover{border-color:var(--key);color:var(--key)}
+.cards{display:grid;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 22px;scroll-margin-top:16px}
+.card:target{border-color:var(--key);box-shadow:0 0 0 3px var(--key-soft)}
+.card header{display:flex;align-items:baseline;gap:10px}
+.card .n{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.card h3{margin:0;font-size:19px}
+.card .score{margin-left:auto;font-family:var(--mono);font-size:22px;color:var(--key)}
+.card .score .lb{font-size:12px;margin:0 2px 0 0}
+.card .score small{font-family:var(--sans);font-size:13px;color:var(--muted);margin-left:2px}
+.card p{margin:8px 0 0;max-width:72ch}
+.hidden{display:none}
+footer{color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<div class="eyebrow">인하대학교 · 2026학년도 2학기 · 8주차</div>
+<h1>고급3D애니메이션 중간발표 점수·피드백</h1>
+<p class="lead">10월 22일 중간발표 중간점수와 피드백입니다. 아래에서 자기 이름을 눌러 확인하세요. 점수는 100점 만점입니다.</p>
+</header>
+<section>
+<h2>학생별 중간점수와 피드백</h2>
+<input class="search" id="q" type="search" placeholder="이름으로 찾기" aria-label="이름으로 찾기">
+<nav class="jump" id="jump"><a href="#s01">김채영</a><a href="#s02">노수경</a><a href="#s03">장지우</a><a href="#s04">서동욱</a><a href="#s05">이서영</a><a href="#s06">김지오</a><a href="#s07">김정민</a><a href="#s08">류은상</a><a href="#s09">박현우</a><a href="#s10">신도근</a><a href="#s11">김태희</a><a href="#s12">한나영</a><a href="#s13">김예성</a><a href="#s14">신수아</a><a href="#s15">곽선민</a><a href="#s16">서정화</a><a href="#s17">소희선</a><a href="#s18">신수연</a><a href="#s19">유채원</a><a href="#s20">윤서연</a><a href="#s21">이지연</a><a href="#s22">최승원</a><a href="#s23">하오령</a><a href="#s24">홍세희</a><a href="#s25">조서현</a><a href="#s26">이채원</a><a href="#s27">서준영</a><a href="#s28">임하준</a><a href="#s29">윤성진</a><a href="#s30">소현서</a><a href="#s31">에이먀찌퓨</a><a href="#s32">지은솔</a></nav>
+</section>
+<section class="cards" id="cards">
+<article class="card" id="s01"><header><span class="n">01</span><h3>김채영</h3><span class="score"><small class="lb">중간점수</small> 87<small>점</small></span></header><p>헬로키티 모델링, 캐릭터, 케이크 모델링, 딸기만 소스로 활용함. 머티리얼, HDRI 활용함. 스튜디오 느낌으로 만듦. 좀 더 다양한 분위기의 라이팅을 넣었으면 더 좋을 뻔했음.</p></article>
+<article class="card" id="s02"><header><span class="n">02</span><h3>노수경</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>마인크래프트 모델링, 눈이 내린 느낌, 그림자가 더 필요함. 모델링이 단순함. 집 모델링 추가 예정임.</p></article>
+<article class="card" id="s03"><header><span class="n">03</span><h3>장지우</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>우사기 캐릭터 귀여운 컨셉, 날아가는 캐릭터 느낌, 배경 요소가 더 필요해 보임. 라이팅을 더 넣을 수 있을 것 같음.</p></article>
+<article class="card" id="s04"><header><span class="n">04</span><h3>서동욱</h3><span class="score"><small class="lb">중간점수</small> 85<small>점</small></span></header><p>고라파덕 새벽에 음식을 꺼내다 들키는 장면 연출 컷, 고라파덕 모델링 진행, 리깅 블로킹 작업 진행함. 라이팅, 카메라 포컬랭스 조절이 필요함.</p></article>
+<article class="card" id="s05"><header><span class="n">05</span><h3>이서영</h3><span class="score"><small class="lb">중간점수</small> 89<small>점</small></span></header><p>서랍 속 비모 모델링, 서랍, 비모 모델링 진행, 에셋 활용해서 배경 오브젝트 다양하게 구성, 다양한 조명 느낌으로 구현.</p></article>
+<article class="card" id="s06"><header><span class="n">06</span><h3>김지오</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>쿠키런 캐릭터, 복숭아맛 쿠키, 만들기 어려운 요소는 AI 모델링으로 생성함, 다양한 라이팅과 카메라 구성이 필요해 보임.</p></article>
+<article class="card" id="s07"><header><span class="n">07</span><h3>김정민</h3><span class="score"><small class="lb">중간점수</small> 86<small>점</small></span></header><p>리스크 오브 레인2 멀티 캐릭터임, 메카닉 캐릭터의 각 요소를 파츠화시켜서 모델링 진행함. 시간이 없어서 UV는 오토로 뜯음. 웨더링 섭페로 작업함. 배경 에셋 소스를 활용해서 배경 구성함, 공사현장 느낌으로 배경 구성함. 로봇 캐릭터의 질감이 금속성 느낌이 더 나면 좋겠음, 웨더링이 더 들어가면 좋겠음.</p></article>
+<article class="card" id="s08"><header><span class="n">08</span><h3>류은상</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>비모 캐릭터와 요리하는 장면 순간포착하여 3D 씬 구성함. UV가 조금 조각이 나 있게 됨. 스케치팹에서 소스 모델링 활용함. 샌드위치 재료 모델링 퀄리티가 낮은 것 같음, 라이팅에 신경을 더 쓰면 좋겠음. 그림자가 거의 느껴지지 않는 것 같음. 일러스트 느낌 버전과 다른 라이팅 느낌을 더 만들면 좋을 것 같음.</p></article>
+<article class="card" id="s09"><header><span class="n">09</span><h3>박현우</h3><span class="score"><small class="lb">중간점수</small> 90<small>점</small></span></header><p>ORDO 모듈형 컨트롤러 디자인을 함. 블렌더로 모델링 진행함. AI로 20x20 픽셀 매트릭스 도구를 만들어서 실제 화면이 구현이 가능하도록 디자인함. 제품에 실제로 적혀 있을 법한 글, 문구 뒤쪽에 삽입, 다양한 모듈들을 모델링함. 8가지 모듈과, 몇 가지 광고 비주얼을 만들어 봄. 실제 제품처럼 광고 이미지 구성함.</p></article>
+<article class="card" id="s10"><header><span class="n">10</span><h3>신도근</h3><span class="score"><small class="lb">중간점수</small> 85<small>점</small></span></header><p>울트라킬 메카닉 캐릭터, 카툰 캐릭터 느낌으로 AI 이미지, 시트 만듦, 원작 라이팅이 그로테스크한 느낌임. 트라이포3D를 활용해서 배경 요소 모델링을 진행함. 섭페의 오토언랩 기능으로 UV 작업함. 라이팅이 필요한 부위는 이미시브 활용, 러프니스를 섭페에서 구현함. 게임 느낌이 많이 강함. 웨더링이 너무 일관적으로 구성된 것이 아쉬움.</p></article>
+<article class="card" id="s11"><header><span class="n">11</span><h3>김태희</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>카카오프렌즈 라이언 베이커리, 라이언 모델링 진행함. 필요한 베이커리 환경 구성함. 베이스 컬러 텍스쳐만 활용해서 너무 단조로워짐, 모델링의 모서리 디테일이 부족해서 아쉬움, 라이팅을 잘 구성해서 많은 문제점을 튀지 않게 최종 퀄리티를 이끌어냄, 라이팅에서 최종 장면에서 그림자 요소가 너무 덜 느껴짐.</p></article>
+<article class="card" id="s12"><header><span class="n">12</span><h3>한나영</h3><span class="score"><small class="lb">중간점수</small> 86<small>점</small></span></header><p>요리 게임 씬 구성, 몬헌 요리 컷신 느낌을 구현하고자 함. 레퍼런스 참고함. 모델링은 단순하게 진행함. 로우폴리 게임 느낌으로 진행함. 실제 게임 그래픽에 대한 이해가 필요함. 스타일라이즈 느낌으로 작업이 됨. 플루이드를 활용해서 김 나는 느낌으로 효과를 추가함. 로우폴리곤 느낌이 너무 티가 나는 상황임. 스타일라이즈라 할지라도 텍스쳐 깨짐이 나지 않게 하는 게 좋을 것 같음.</p></article>
+<article class="card" id="s13"><header><span class="n">13</span><h3>김예성</h3><span class="score"><small class="lb">중간점수</small> 87<small>점</small></span></header><p>포켓몬 보조배터리 광고 이미지들을 넣어 봄. 광고샷 느낌으로 구현함. 조금 더 다양한 라이팅 구성을 더 구현하면 좋을 것 같음. 그럼에도 완성도 있는 렌더링 샷이 나온 것 같음.</p></article>
+<article class="card" id="s14"><header><span class="n">14</span><h3>신수아</h3><span class="score"><small class="lb">중간점수</small> 82<small>점</small></span></header><p>앵무새 장난감, 모델링이 실사에 가까운 느낌의 텍스쳐를 활용해서 퀄리티가 아쉽게 나옴. 오히려 단순한 캐릭터 피규어 느낌으로 구현하는 게 나을 뻔했음. 패브릭 재질이 난이도가 높은데 그것을 사용해서 아쉬운 퀄리티가 된 것 같음. 마야를 처음 다뤄 보았음, 라이팅, 배경 퀄리티를 높여야 하는 상황임. 이후에 앵무새 리깅도 생각해서 작업해 볼 예정임.</p></article>
+<article class="card" id="s15"><header><span class="n">15</span><h3>곽선민</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>어몽어스 게임, 레퍼런스는 실제 게임 맵과 흡사하게 구현함. 연출, 스토리텔링에 집중하려고 했음. 배경, 구성 요소 다양하게 넣었음. 포커스, 스토리텔링, 우주선 조종석 구현을 잘하였음. 질감 표현의 디테일한 구현이 조금 더 필요해 보임, 로우폴리곤의 각진 느낌이 덜 느껴지면 좋겠음.</p></article>
+<article class="card" id="s16"><header><span class="n">16</span><h3>서정화</h3><span class="score"><small class="lb">중간점수</small> 87<small>점</small></span></header><p>오르골 모델링을 직접 진행함. 폴리곤의 각져 보이는 현상이 보임. 다양한 배경 요소를 구성하기 위해 노력함. 에셋 소스를 활용하여 배경을 구성하였음. 좀 더 배경 요소를 더 채워도 좋을 것 같음. 리본의 텍스쳐가 너무 단순한 느낌이었음. 라이팅의 색감이 더 들어가면 좋겠음. 또는 포그라이트 느낌이 들어가면 더 분위기가 좋아졌을 것 같음.</p></article>
+<article class="card" id="s17"><header><span class="n">17</span><h3>소희선</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>리라쿠마 게임보이 모델링, 데스크 위의 요소들로 공간을 잘 채움. 리라쿠마 클로즈업, 게임보이 클로즈업 샷을 잘 넣었으나 지문 느낌이 너무 강하게 표현됨, 각 소스 모델링의 미묘한 퀄리티 차이와 텍스쳐 차이로 일관성이 조금 떨어지게 되어 아쉬움, 그럼에도 적절한 조명, 모델링, 배경 구성으로 전체적으로 완성도 있는 결과물이 나온 것 같음. 더 다양한 라이팅, 마무리 단계의 오브젝트 위치 구성, 쉐도우, 텍스쳐 퀄리티 일관성을 맞췄으면 좋겠음.</p></article>
+<article class="card" id="s18"><header><span class="n">18</span><h3>신수연</h3><span class="score"><small class="lb">중간점수</small> 85<small>점</small></span></header><p>손 전화기, 모델링을 구현하였는데 질감이 너무 가벼운 플라스틱 질감이라 아쉬움이 있음, 실제 레퍼런스 분석해서 질감 수정이 되면 좋겠음, 지금보다 배경 요소가 더 들어가서 완성도를 올려 주면 좋을 것 같음. 조명의 완성도가 더 필요함. 전화기의 웨더링 정도가 다른 요소에 비해 많이 들어가 있어서 밸런스 조절이 필요해 보임.</p></article>
+<article class="card" id="s19"><header><span class="n">19</span><h3>유채원</h3><span class="score"><small class="lb">중간점수</small> 87<small>점</small></span></header><p>놀다가 버려진 레고, 숲에 방치된 레고로 만든 망가진 집을 구현, 레고 브릭링크 스튜디오를 활용함. 조립 설명서를 보다가 좀 더 자유롭게 레고 모델링을 구성함. 오래된 헛간 느낌으로 구현함. 마야로 넘겨 와서 주변 환경 구성했음. AI 모델링을 활용하여 주변 숲 모델링을 진행함. 섭페에서 디테일한 텍스쳐를 수정하여 작업을 진행함. 해골 캐릭터는 더트 스크래치를 많이 넣음. 실제 렌더링에서는 많이 안 보이게 렌더링됨. 포그라이트, 포커스 느낌이 그나마 퀄리티를 올려 준 것 같음. 주변 라이트가 너무 전체적으로 밝아서 핵심 레고 집 모델링이 집중되지 않는 현상이 있음. HDRI가 있는 스카이라이트 값을 줄이고 레고 집, 해골 캐릭터에 집중할 수 있도록 조명 밝기 조절이 필요해 보임.</p></article>
+<article class="card" id="s20"><header><span class="n">20</span><h3>윤서연</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>퍼플 플레이스 게임 레퍼런스로 진행함. 로우폴리곤 게임 자체의 퀄리티가 높지 않아 퀄리티가 조금 걱정되는 프로젝트였음. 머티리얼의 질감이 좀 더 아기자기하고 귀엽게 구현되는 게 좋을 것 같음. (금속성이 너무 강하지 않으면 좋겠음)</p></article>
+<article class="card" id="s21"><header><span class="n">21</span><h3>이지연</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>모뉴먼트 게임 레퍼런스로 활용함. 카메라, 포커스를 활용해서 단순한 구성의 비주얼을 최대한 끌어올린 것이 인상적임. 뒷배경의 허전함이 있는데 뒤쪽에 조금 더 배경 요소를 넣어도 좋을 것 같음. 물결 표현 구현을 잘한 것 같음. 게임 자체의 스타일을 원작에 흡사하게 잘 구현한 것 같음. 텍스쳐 구현을 나름대로 잘 진행한 것 같음. 주인공 캐릭터가 잘 나오면 좋을 것 같음. (클로스 표현)</p></article>
+<article class="card" id="s22"><header><span class="n">22</span><h3>최승원</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>짱구 애니메이션 스노우맨 모델링 구현함. 애니메이션 원작을 구현하는 것 자체가 어려운 프로젝트였음. 울퉁불퉁한 질감을 섭페로 표현함. 눈 질감 표현 노력함. 지하철 배경 요소를 AI로 모델링 요소를 잘 구현하였음. 게이트 모델링을 진행하였음. 메쉬 정리가 조금 필요해 보임. 정리되지 않은 부분에 의해 텍스쳐가 밀리는 현상이 조금 보임. 질감 표현이 리얼함을 지향하지만 실제로는 리얼한 느낌이 잘 표현되지 못해 아쉬움, 나무 질감은 디스맵, 노멀맵이 너무 강한 느낌임, 금속 질감을 좀 더 차분한 느낌으로 구현하면 좋겠음. 라이팅으로 원작과 다른 느낌으로 구현해 봤으면 더 나았을 것 같음.</p></article>
+<article class="card" id="s23"><header><span class="n">23</span><h3>하오령</h3><span class="score"><small class="lb">중간점수</small> 85<small>점</small></span></header><p>화장품 광고 샷 구성. 화장품 광고 샷 중 난이도가 있는 장면으로 구성하고자 한 것 같음. 전체적인 구성이 적절하게 들어갔으나 물방울 느낌, 화장품의 질감, 배경 요소가 아쉬움이 있음. 핑크 색감으로 구성한 것은 좋으나 색감 구현에 있어서 조금 아쉬운 느낌임, 물방울 표현, 투과되는 느낌의 질감 표현이 더 되었다면 좋았을 것 같음. 물방울 표현이 어렵다면 뒤쪽의 물줄기는 빼도 좋을 것 같음.</p></article>
+<article class="card" id="s24"><header><span class="n">24</span><h3>홍세희</h3><span class="score"><small class="lb">중간점수</small> 87<small>점</small></span></header><p>삼성 스마트 스위치 광고 레퍼런스, 캐릭터의 질감 느낌이 좀 더 뽀송한 질감이 되면 좋았을 것 같음, 카메라, 구도 등으로 커버를 잘하였음.</p></article>
+<article class="card" id="s25"><header><span class="n">25</span><h3>조서현</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>화장품 광고 스틸샷, 메인 컬러 연보라색, 자연물로 구성함. 자연물 꽃의 질감이 좀 더 반투과 느낌이 구현되면 좋을 것 같음. 서브 서피스 스캐터링 셰이더 표현이 들어가면 더 뽀송뽀송한 느낌이 구현될 것 같음. 최종 렌더링에서 색번짐, 글로우, 블룸 느낌이 조금 더 들어가면 태양빛 표현이 더 자연스러울 것 같음. 단순한 모델링이지만 전체적인 완성도가 높게 레퍼런스 구성의 반영이 잘 되었음. 제품의 로고나 문구 디테일 구현을 잘한 것 같음.</p></article>
+<article class="card" id="s26"><header><span class="n">26</span><h3>이채원</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>레드불 광고 느낌으로 구성, 장면이 많이 단순해서 아쉬움, 실제 광고에 나타난 캔의 질감, 배경 요소의 표면 디테일이 좀 더 드러났으면 좋았을 것 같음. 텍스쳐가 세로로 조금 늘어난 느낌이 조금 있음. 최종 렌더링이 조금 밝아 보임.</p></article>
+<article class="card" id="s27"><header><span class="n">27</span><h3>서준영</h3><span class="score"><small class="lb">중간점수</small> 87<small>점</small></span></header><p>게임 픽셀아트 느낌을 만들고 싶었음. 블렌더-유니티로 구현함. 픽셀아트 느낌 구현 퀄리티가 조금 아쉬움, 입체감의 표현이 조금 아쉽게 느껴짐, 라이팅 표현의 단순함에 의해 픽셀아트의 퀄리티가 높지 않게 나온 것 같아 아쉬움. 트라이포3D 모델링을 자동 보정하는 기능을 연구 중임. AI 이미지로 아스트라를 이용해 블렌더에서 모델링을 진행함. 어느 정도 수준까지는 괜찮았지만, 디테일이 조금 아쉬움이 있었음. 텍스쳐를 활용해서 좀 더 디테일 구현이 되면 좋겠음. 터레인을 픽셀 느낌으로 뎁스맵을 모델링으로 구현함. 카툰 머티리얼이 단순한 편이라 나무의 잎사귀 표현이 로우폴리곤의 느낌이 너무 강하게 느껴져 아쉬움이 있음. 관련된 퀄리티 있는 픽셀 느낌의 게임 레퍼런스를 더 분석해서 좀 더 디테일 구현이 잘 되면 좋겠음. AO 느낌을 픽셀 쉐도우 느낌으로 더 넣으면 퀄리티가 높아질 수 있을 것 같음.</p></article>
+<article class="card" id="s28"><header><span class="n">28</span><h3>임하준</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>주술회전 료멘 스쿠나 손가락, 스쿠나 손가락 피규어 직접 구매해서 사진 활용, 마야에서 만든 후 지브러시로 넘어가서 모델링을 진행, 이후 섭페에서 텍스쳐 작업함. 배경 요소 소스, AI 모델링 활용 예정. 다양한 툴을 사용해서 복잡한 모델링을 진행하였으나 최종 모델링의 퀄리티와 텍스쳐의 퀄리티가 좋지 않아 아쉬움.</p></article>
+<article class="card" id="s29"><header><span class="n">29</span><h3>윤성진</h3><span class="score"><small class="lb">중간점수</small> 86<small>점</small></span></header><p>2D 캐릭터와 중세 성 느낌의 배경, 라이팅, 블렌더 활용함. 2D 캐릭터 소스, 배경 소스 활용하였고, 창문틀 조명 일부 모델링 진행함. 라이팅 디테일 올리는 데 신경 씀.</p></article>
+<article class="card" id="s30"><header><span class="n">30</span><h3>소현서</h3><span class="score"><small class="lb">중간점수</small> 83<small>점</small></span></header><p>턴테이블 레코더 모델링, 디스크의 디테일이 부족함. 주변 환경의 완성도가 부족함. LP판의 홈 구현에서 디테일이 부족함. 디스맵 오류 수정이 필요해 보임, 라이팅 완성도를 더 올려야 할 것 같음.</p></article>
+<article class="card" id="s31"><header><span class="n">31</span><h3>에이먀찌퓨</h3><span class="score"><small class="lb">중간점수</small> 84<small>점</small></span></header><p>어몽어스 캐릭터 모델링 직접 진행함. AI 모델링으로 칼 등으로 구성함. 섭페에서 다양한 느낌으로 텍스쳐 디테일을 살림, 모델링이 각져 보이는 현상이 있음. 모델링이 로우폴리곤 느낌이 강해서 조금 아쉬움. 각 요소의 머티리얼 질감이 아쉬움, 배경의 완성도가 높지 않아 아쉬움.</p></article>
+<article class="card" id="s32"><header><span class="n">32</span><h3>지은솔</h3><span class="score"><small class="lb">중간점수</small> 88<small>점</small></span></header><p>도형에서 제품으로 구현되는 애니메이션을 기말에 표현하고 싶음. 주전자 모델링, 도형 모델링 두 가지로 구성함. 제품을 보여 주는 샷 구성으로 디테일을 잡을 요소가 많지 않아서 본인의 실력을 보여 줄 요소가 적어서 아쉬움. 전체적으로 깔끔하게 목표로 한 디자인 느낌 구현을 잘하였고, 라이팅도 적절히 잘 표현되었음.</p></article>
+</section>
+<footer>기말 발표 전까지 피드백 내용을 반영해 작업을 보완해 주세요.</footer>
+</div>
+<script>
+document.getElementById("q").addEventListener("input",function(){
+  var q=this.value.trim();
+  document.querySelectorAll(".card").forEach(function(c){c.classList.toggle("hidden",!!q&&c.querySelector("h3").textContent.indexOf(q)<0)});
+  document.querySelectorAll("#jump a").forEach(function(a){a.classList.toggle("hidden",!!q&&a.textContent.indexOf(q)<0)});
+});
+</script>
+</body>
+</html>

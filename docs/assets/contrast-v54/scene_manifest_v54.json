@@ -42,17 +42,18 @@
       "name": "노을 · 레드 · IntegratedBloom",
       "backgroundId": "BG01",
       "lightingId": "LT01",
-      "file": "ML_BG01_LT01_IntegratedBloom_Contrast_Sunset_v54.png",
-      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG01_LT01_IntegratedBloom_Contrast_Sunset_v54.png",
-      "preview": "assets/contrast-v54/ML_BG01_LT01_IntegratedBloom_Contrast_Sunset_v54_preview.webp",
+      "file": "ML_BG01_LT01_IntegratedBloom_Contrast_Sunset_v54r2.png",
+      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG01_LT01_IntegratedBloom_Contrast_Sunset_v54r2.png",
+      "preview": "assets/contrast-v54/ML_BG01_LT01_IntegratedBloom_Contrast_Sunset_v54r2_preview.webp",
       "width": 2172,
       "height": 724,
       "transparent": false,
       "visibleBounds": null,
-      "sha256": "280407b2800eb4bd8df782ed0b01ecfe3ac63249ca920d48067aab11bce19331",
+      "sha256": "50ca919510bd4ed955094d1f7c8cd5846ae60434adfa8a1615ccb2d80f6731b5",
       "styleVersion": 54,
       "airborneParticles": true,
-      "selectiveLuminanceContrast": true
+      "selectiveLuminanceContrast": true,
+      "revision": 2
     },
     {
       "id": "oil-sunset-greenery-01",
@@ -485,17 +486,18 @@
       "name": "낮 · 옐로우 · IntegratedBloom",
       "backgroundId": "BG02",
       "lightingId": "LT02",
-      "file": "ML_BG02_LT02_IntegratedBloom_Contrast_Day_v54.png",
-      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG02_LT02_IntegratedBloom_Contrast_Day_v54.png",
-      "preview": "assets/contrast-v54/ML_BG02_LT02_IntegratedBloom_Contrast_Day_v54_preview.webp",
+      "file": "ML_BG02_LT02_IntegratedBloom_Contrast_Day_v54r2.png",
+      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG02_LT02_IntegratedBloom_Contrast_Day_v54r2.png",
+      "preview": "assets/contrast-v54/ML_BG02_LT02_IntegratedBloom_Contrast_Day_v54r2_preview.webp",
       "width": 2172,
       "height": 724,
       "transparent": false,
       "visibleBounds": null,
-      "sha256": "2eec5ec7426b28b32d6dc09c0563f1b98e35363a59f1312b13035c6a37adeb24",
+      "sha256": "b463d517af7a55fe57d6c1515da6cad6394caeb118d53ece141b7cd1b2179653",
       "styleVersion": 54,
       "airborneParticles": true,
-      "selectiveLuminanceContrast": true
+      "selectiveLuminanceContrast": true,
+      "revision": 2
     },
     {
       "id": "oil-day-greenery-01",
@@ -928,17 +930,18 @@
       "name": "밤 · 퍼플 · IntegratedBloom",
       "backgroundId": "BG03",
       "lightingId": "LT03",
-      "file": "ML_BG03_LT03_IntegratedBloom_Contrast_Night_v54.png",
-      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG03_LT03_IntegratedBloom_Contrast_Night_v54.png",
-      "preview": "assets/contrast-v54/ML_BG03_LT03_IntegratedBloom_Contrast_Night_v54_preview.webp",
+      "file": "ML_BG03_LT03_IntegratedBloom_Contrast_Night_v54r2.png",
+      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG03_LT03_IntegratedBloom_Contrast_Night_v54r2.png",
+      "preview": "assets/contrast-v54/ML_BG03_LT03_IntegratedBloom_Contrast_Night_v54r2_preview.webp",
       "width": 2172,
       "height": 724,
       "transparent": false,
       "visibleBounds": null,
-      "sha256": "d685fb89c5c0dc4511a9a595f4ff3f1b3e0065309f2872dff2dfb57a0af381e4",
+      "sha256": "ca2147d18bf9eb48011f9c4e4e2682683c683d26121bb65b4d6e7246ef8cd5aa",
       "styleVersion": 54,
       "airborneParticles": true,
-      "selectiveLuminanceContrast": true
+      "selectiveLuminanceContrast": true,
+      "revision": 2
     },
     {
       "id": "oil-night-greenery-01",
@@ -1371,17 +1374,18 @@
       "name": "아침 · 블루 · IntegratedBloom",
       "backgroundId": "BG04",
       "lightingId": "LT04",
-      "file": "ML_BG04_LT04_IntegratedBloom_Contrast_Morning_v54.png",
-      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG04_LT04_IntegratedBloom_Contrast_Morning_v54.png",
-      "preview": "assets/contrast-v54/ML_BG04_LT04_IntegratedBloom_Contrast_Morning_v54_preview.webp",
+      "file": "ML_BG04_LT04_IntegratedBloom_Contrast_Morning_v54r2.png",
+      "src": "https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/release-20261025-v54/ML_BG04_LT04_IntegratedBloom_Contrast_Morning_v54r2.png",
+      "preview": "assets/contrast-v54/ML_BG04_LT04_IntegratedBloom_Contrast_Morning_v54r2_preview.webp",
       "width": 2171,
       "height": 724,
       "transparent": false,
       "visibleBounds": null,
-      "sha256": "4ddb205cf0a1b8c90dc6dc7b2f06334430cce7412364a82097202a48577aac1d",
+      "sha256": "49922297feb34a77e8e360d47582dc506ed7f3662a89187139724497c375f1ba",
       "styleVersion": 54,
       "airborneParticles": true,
-      "selectiveLuminanceContrast": true
+      "selectiveLuminanceContrast": true,
+      "revision": 2
     },
     {
       "id": "oil-morning-greenery-01",
@@ -2113,5 +2117,6 @@
   "integratedStyleVersion": 54,
   "backgroundStyleVersion": 47,
   "previousIntegratedBuds": "oil-art-v44-archive.html",
-  "scope": "Four selectively darker-environment integrated stills; prior v47 backgrounds, v52 separated layers and individual sources unchanged."
+  "scope": "Four selectively darker-environment integrated stills; prior v47 backgrounds, v52 separated layers and individual sources unchanged.",
+  "revision": 2
 }

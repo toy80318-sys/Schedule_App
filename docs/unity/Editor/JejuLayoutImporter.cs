@@ -152,6 +152,8 @@ public static class JejuLayoutImporter
         importer.alphaIsTransparency=true;importer.spritePixelsPerUnit=100;importer.mipmapEnabled=false;
         importer.maxTextureSize=8192;importer.textureCompression=TextureImporterCompression.Uncompressed;
         importer.spriteAlignment=(int)SpriteAlignment.Center;importer.spritePivot=new Vector2(.5f,.5f);
+        var settings = new TextureImporterSettings(); importer.ReadTextureSettings(settings);
+        settings.spriteMeshType = SpriteMeshType.FullRect; importer.SetTextureSettings(settings);
         importer.SaveAndReimport();Sprite sprite=AssetDatabase.LoadAssetAtPath<Sprite>(assetPath);
         if (!sprite) throw new InvalidDataException("Sprite import failed: "+assetPath);return sprite;
     }

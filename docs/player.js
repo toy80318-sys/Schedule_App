@@ -54,7 +54,7 @@
     if(data.background&&!safeSource(data.background))throw Error('배경 형식 오류');
     return window.jejuAmbient.cleanProject(JSON.parse(JSON.stringify(data)));
   }
-  function flowerSpecies(a){return a&&SPECIES.find(s=>a.species===s||typeof a.bloomVariant==='string'&&a.bloomVariant.startsWith(`${s}-`)||a.id===`loop-${s}`||a.id.startsWith(`flower-${s}-`)||a.frames?.[0]?.includes(`/animations/${s}/`)||a.src?.includes(`/flower-blooms/${s}-`)||a.src?.includes(`/flowers/flower-${s}-`)||a.src?.includes(`/flowers/recolor_${s}-`))}
+  function flowerSpecies(a){if(a?.stillOnly)return;return a&&SPECIES.find(s=>a.species===s||typeof a.bloomVariant==='string'&&a.bloomVariant.startsWith(`${s}-`)||a.id===`loop-${s}`||a.id.startsWith(`flower-${s}-`)||a.frames?.[0]?.includes(`/animations/${s}/`)||a.src?.includes(`/flower-blooms/${s}-`)||a.src?.includes(`/flowers/flower-${s}-`)||a.src?.includes(`/flowers/recolor_${s}-`))}
   function validateManifest(data){
     if(data?.mode==='PNG_STATE_PAIR')return window.jejuPngPairs.validate(data);
 

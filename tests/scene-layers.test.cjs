@@ -27,5 +27,5 @@ assert(!html.includes('class="canvas checker" role="img"'),'composite must use i
 assert(code.includes("$('ghost').style.opacity='0'"),'reference overlay must start off');
 assert(!code.includes('requestFullscreen'),'enlargement must work without fullscreen permission');
 assert(code.includes('i.cloneNode()')&&code.includes("$('enlarged').showModal()"),'enlargement must display actual layers');
-for(const name of ['abstract-world-v44.html','all-images.html','oil-art.html','library.html','index.html'])assert(fs.readFileSync(path.join(web,name),'utf8').includes('href="layers.html"'));
+for(const name of ['abstract-world-v44.html','all-images.html','oil-art.html','library.html','index.html'])assert(fs.readFileSync(path.join(web,name),'utf8').includes('href="layers-v55.html"'));
 console.log('PASS: four scenes,20 original PNGs,16 RGBA layers,4 ZIPs,coordinates/source hashes,invalid manifest rejection,and discoverable page links.');

@@ -1,5 +1,7 @@
 # 제주 메이즈랜드 유화 정원
 
+2026-10-27 v63: 에디터 상단의 **화면 전체 파티클 뿌리기**로 현재 배경 조명의 입자 72개를 벽면 전체에 추가합니다. 크기·불투명도·위치가 자연스럽게 달라지고, 한 그룹으로 선택되어 수정할 수 있습니다. 한 번의 실행 취소로 배치를 되돌립니다. 기존 배치와 저장 파일 형식을 유지하며 전시 보기와 Unity 전달에 일반 PNG 객체로 포함됩니다. 움직임을 새로 생성하는 기능은 아닙니다.
+
 공유 자료실: https://toy80318-sys.github.io/Schedule_App/library.html
 전체 이미지·소스: https://toy80318-sys.github.io/Schedule_App/all-images.html#gardens
 배경별 루프: https://toy80318-sys.github.io/Schedule_App/scene-loops.html

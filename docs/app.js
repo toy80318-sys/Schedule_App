@@ -269,6 +269,16 @@
   };
   function rotateSelection(degrees){const items=members();if(!items.length)return;const b=bounds(items),cx=(b.x+b.right)/2,cy=(b.y+b.bottom)/2,angle=degrees*Math.PI/180;snapshot();items.forEach(o=>{if(items.length>1){const x=o.x+o.w/2-cx,y=o.y+o.h/2-cy;o.x=cx+x*Math.cos(angle)-y*Math.sin(angle)-o.w/2;o.y=cy+x*Math.sin(angle)+y*Math.cos(angle)-o.h/2}o.r+=degrees});refresh()}
   $('rotateLeft').onclick=()=>rotateSelection(-5);$('rotateRight').onclick=()=>rotateSelection(5);
+  function randomizeRotations(degrees){
+    const items=members();if(!items.length)return;
+    snapshot();for(const o of items){
+      const root=isFlower(o)?window.jejuSpace.rootPoint(o):null;
+      o.r+=(Math.random()*2-1)*degrees;
+      if(root){const angle=o.r*Math.PI/180;o.x=root.x+Math.sin(angle)*o.h/2-o.w/2;o.y=root.y-Math.cos(angle)*o.h/2-o.h/2}
+    }
+    refresh();
+  }
+  for(const degrees of [5,10])$('randomRotate'+degrees).onclick=()=>randomizeRotations(degrees);
   $('flipX').onclick=()=>{const items=members();if(!items.length)return;snapshot();const b=bounds(items);items.forEach(o=>{if(items.length>1){o.x=b.x+b.right-o.x-o.w;o.r=-o.r}o.flipX=!o.flipX});refresh()};
   function syncFlowerChoices(id){for(const button of $(id+'Cards').children)button.setAttribute('aria-pressed',String(button.dataset.species===$(id).value))}
   function buildFlowerChoices(){for(const id of ['replaceFrom','replaceTo']){const host=$(id+'Cards');host.replaceChildren();for(const [key,name] of species){const asset=builtins.find(a=>a.species===key),button=document.createElement('button'),im=document.createElement('img'),label=document.createElement('span');button.type='button';button.className='flower-choice';button.dataset.species=key;button.setAttribute('aria-label',name);im.src=displaySrc(asset.src,'thumb');im.alt=name;im.loading='lazy';im.decoding='async';label.textContent=name;button.append(im,label);button.onclick=()=>{$(id).value=key;syncFlowerChoices(id);if(id==='replaceTo')buildColorChoices()};host.append(button)}syncFlowerChoices(id)}}

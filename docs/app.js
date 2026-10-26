@@ -83,7 +83,7 @@
   }
   function toneCSS(t){const parts=[];if(t.brightness!==100)parts.push(`brightness(${t.brightness}%)`);if(t.contrast!==100)parts.push(`contrast(${t.contrast}%)`);if(t.saturation!==100)parts.push(`saturate(${t.saturation}%)`);if(t.warmth)parts.push(`sepia(${Math.abs(t.warmth)*.25}%)`, `hue-rotate(${t.warmth<0?180:0}deg)`);return parts.join(' ')}
   function filterCSS(scope){return [toneCSS(sceneFilters[scope]||neutralTone()),toneCSS(sceneFilters.scene),scope==='background'?window.jejuBackgroundGrade?.css(sceneFilters.backgroundGrade,'jeju-editor-background-grade'):''].filter(Boolean).join(' ')||'none'}
-  function objectFilterCSS(o,a){return [filterCSS(a?.group==='flowers'?'flowers':'decor'),a?.group==='flowers'?window.jejuFlowerHue?.css(o.flowerHue):''].filter(v=>v&&v!=='none').join(' ')||'none'}
+  function objectFilterCSS(o,a){return [['particle','butterfly'].includes(a?.category)?toneCSS(sceneFilters.scene):filterCSS(a?.group==='flowers'?'flowers':'decor'),a?.group==='flowers'?window.jejuFlowerHue?.css(o.flowerHue):''].filter(v=>v&&v!=='none').join(' ')||'none'}
   function syncFilterControls(){const tone=sceneFilters[$('toneScope').value||'scene'];for(const key of Object.keys(tone)){ $('tone_'+key).value=tone[key];$('toneValue_'+key).textContent=tone[key]+(key==='warmth'?'':'%')} }
   function applySceneFilters(){if(wallBackground)wallBackground.style.filter=filterCSS('background');for(const o of objects){const im=wallNodes.get(o.id)?.firstElementChild;if(im){const a=assets.find(a=>a.id===o.assetId),tone=objectFilterCSS(o,a),light=window.jejuSpace?.lighting(o,a,H,gardenSpace,spaceView).brightness??1;im.style.filter=[tone==='none'?'':tone,light===1?'':`brightness(${light})`].filter(Boolean).join(' ')||'none'}}syncFilterControls()}
   function historyState(){return JSON.stringify({objects,sceneFilters,gardenSpace,background})}
@@ -102,9 +102,14 @@
     night:{name:'달빛과 별밤',scene:[92,94,90,-18],flowers:[72,90,84,-30],decor:[70,90,84,-22]}
   };
   function backgroundBlendPreset(src){const path=(src||'').toLowerCase();return /night|starry|milkyway/.test(path)?'night':/sunset|evening|close1|close3/.test(path)?'sunset':/morning/.test(path)?'morning':/forest|close2/.test(path)?'forest':'natural'}
-  $('tonePreset').value='auto';$('toneAmount').value=100;
+  function applySceneHarmony(checkpoint=true,amount=1){
+    const key=window.jejuSceneHarmony.theme(background,window.jejuWhole62?.scenes||[]);if(!key){notice('색감을 맞출 배경을 먼저 선택해 주세요.');return false}
+    if(checkpoint)snapshot();sceneFilters=normalizeFilters(window.jejuSceneHarmony.filters(key,amount));applySceneFilters();scheduleSave();document.dispatchEvent(new Event('jeju-editor-change'));if(checkpoint)notice(window.jejuSceneHarmony.presets[key].name+' · 배경과 꽃·풀·돌 색감을 맞췄습니다.');return true;
+  }
+  $('applySceneHarmony').onclick=()=>applySceneHarmony();
+  $('tonePreset').value='fantasy';$('toneAmount').value=100;
   $('toneAmount').oninput=()=>{$('toneAmountValue').textContent=$('toneAmount').value+'%'};
-  $('toneNatural').onclick=()=>{const selected=$('tonePreset').value,key=selected==='auto'?backgroundBlendPreset(background):selected,preset=blendPresets[key]||blendPresets.natural,raw=+$('toneAmount').value,amount=Number.isFinite(raw)?clamp(raw,0,100)/100:1;snapshot();sceneFilters=neutralFilters();for(const scope of ['scene','flowers','decor'])Object.keys(neutralTone()).forEach((name,i)=>{const base=name==='warmth'?0:100;sceneFilters[scope][name]=Math.round(base+(preset[scope][i]-base)*amount)});applySceneFilters();scheduleSave();notice(`배경·꽃·풀에 '${preset.name}' 색감을 ${Math.round(amount*100)}% 적용했습니다.`)};
+  $('toneNatural').onclick=()=>{const selected=$('tonePreset').value,key=selected==='auto'?backgroundBlendPreset(background):selected,preset=blendPresets[key]||blendPresets.natural,raw=+$('toneAmount').value,amount=Number.isFinite(raw)?clamp(raw,0,100)/100:1;if(selected==='fantasy'){applySceneHarmony(true,amount);return}snapshot();sceneFilters=neutralFilters();for(const scope of ['scene','flowers','decor'])Object.keys(neutralTone()).forEach((name,i)=>{const base=name==='warmth'?0:100;sceneFilters[scope][name]=Math.round(base+(preset[scope][i]-base)*amount)});applySceneFilters();scheduleSave();notice(`배경·꽃·풀에 '${preset.name}' 색감을 ${Math.round(amount*100)}% 적용했습니다.`)};
 
   const notice=s=>{const e=$('toast');e.textContent=s;e.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.style.display='none',2600)};
   let autosaveReady=false,saveTimer;
@@ -572,7 +577,7 @@
 
   window.jejuEditor={W,H,uid,db,setGuides:visible=>{gridVisible=guidesVisible=visible;$('gridToggle').textContent=visible?'50cm 격자 숨기기':'50cm 격자 보이기';$('seqGuide').textContent=visible?'L/C/R 가이드 숨기기':'L/C/R 가이드 보이기';renderWall()},projectedObject:(o,a,height=H)=>window.jejuSpace?.pose(o,a,height,gardenSpace)||o,storeCurrent,restoreCurrent,updateSavedLayouts,objectVariant,currentFlowerAsset,notice,image,tintedFlowerSrc,displaySrc,drawBackground,backgroundDrawable,download,downloadName,isFlower,filterCSS,objectFilterCSS,
     getBackgroundGrade:()=>window.jejuBackgroundGrade.normalize(sceneFilters.backgroundGrade),setBackgroundGrade:(value,checkpoint=true)=>{if(checkpoint)snapshot();sceneFilters.backgroundGrade=window.jejuBackgroundGrade.normalize(value);applySceneFilters();scheduleSave();document.dispatchEvent(new CustomEvent('jeju-editor-change'));},
-    state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace}),selected:()=>members(),registerCatalog,replaceSelection,useSample,varyFlowerDirections,halfDefaultFlowers,fillForeground,applyContrastAdditions,
+    state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace}),selected:()=>members(),registerCatalog,replaceSelection,useSample,varyFlowerDirections,halfDefaultFlowers,fillForeground,applyContrastAdditions,applySceneHarmony,
     selectObject:id=>{const o=objects.find(o=>o.id===id);if(!o)throw Error('요소를 찾지 못했습니다.');selected=o.id;selectedIds=new Set([o.id]);refresh()},
     addAsset:a=>addObject(assets.find(x=>x.id===a.id)||a,W/2,H/2),
     setBackground:src=>{if(!backgroundChoices.some(([value])=>value===src))throw Error('등록된 배경을 선택하세요.');snapshot();applyBackground(src)},

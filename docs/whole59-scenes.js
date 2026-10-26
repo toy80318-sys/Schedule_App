@@ -1,6 +1,6 @@
 (async()=>{
  'use strict';
- const E=window.jejuEditor,data=window.jejuWhole59;if(!E||!data)return;
+ const E=window.jejuEditor,data=window.jejuWhole59;if(!E||!data||(window.jejuWhole60&&new URL(location.href).searchParams.get('objects')!=='59'))return;
  
  function unchanged(state,scene){
   if(!state||state.background!==scene.project.background||state.objects.length!==scene.project.objects.length||state.gardenSpace?.enabled!==false)return false;

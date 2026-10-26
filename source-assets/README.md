@@ -1,6 +1,12 @@
-# Current production sources: complete independent objects v59
+# Current production sources: abstract four-color gardens v60
 
-Use `whole-objects-v59/` for the current editor and Unity composition: 88 complete RGBA game-style objects plus4 background-only plates. Each sprite has transparent safety margins and a matching BG/LT lighting identifier. Move and resize the complete sprite; do not cut visible regions from an integrated scene.
+`whole-objects-v60/` contains16 newly generated abstract oil flower sprites,4 darker background plates,4 actual recompositions and4 complete Unity packages. Each theme has4 flower colors and different silhouettes. Visible placed plant heights stay within570-627mm (maximum ratio1.10), including rotation. The72 unchanged props keep their v59 source URLs and matching BG/LT lighting. Current manifest: `docs/assets/whole-objects-v60/manifest_v60.json`.
+
+These are static fully-open flowers. New bud images and opening videos have not been produced or linked. Existing edited layouts are preserved; explicitly opening a v60 scene backs up current work before replacement. The previous complete-object gallery remains in Old.
+
+# Previous complete independent objects v59
+
+`whole-objects-v59/` preserves the previous editor and Unity composition: 88 complete RGBA game-style objects plus4 background-only plates. Each sprite has transparent safety margins and a matching BG/LT lighting identifier. Move and resize the complete sprite; do not cut visible regions from an integrated scene.
 
 `source-cutouts-v56/` and `source-contrast-v57/` are archived visible-region cutouts. They are not the current standalone object assets.
 

@@ -43,7 +43,7 @@
   const clamp=(n,min,max)=>Math.max(min,Math.min(max,n));
   const neutralTone=()=>({brightness:100,contrast:100,saturation:100,warmth:0});
   const neutralFilters=()=>({scene:neutralTone(),background:neutralTone(),flowers:neutralTone(),decor:neutralTone()});
-  function normalizeFilters(value){const out=neutralFilters();for(const scope of Object.keys(out))for(const key of Object.keys(out[scope])){const v=value?.[scope]?.[key];if(typeof v==='number'&&Number.isFinite(v))out[scope][key]=clamp(v,key==='warmth'?-100:0,key==='warmth'?100:200)}return out}
+  function normalizeFilters(value){const out=neutralFilters();for(const scope of Object.keys(out))for(const key of Object.keys(out[scope])){const v=value?.[scope]?.[key];if(typeof v==='number'&&Number.isFinite(v))out[scope][key]=clamp(v,key==='warmth'?-100:0,key==='warmth'?100:200)}if(value?.backgroundGrade)out.backgroundGrade=window.jejuBackgroundGrade.normalize(value.backgroundGrade);return out}
   let sceneFilters=neutralFilters(),gardenSpace=window.jejuSpace?.normalize()||{enabled:false};
   let spaceView,lightGizmo,shadowLayer,lightGizmoVisible=false;
   const updateSpaceView=()=>spaceView=window.jejuSpace?.view(objects,assets,W,H,{...gardenSpace,cameraOrbit:false});
@@ -69,7 +69,7 @@
     for(const [id,shadow] of shadows)if(!ids.has(id)){shadow.remove();shadows.delete(id)}renderLightGizmo();
   }
   function toneCSS(t){const parts=[];if(t.brightness!==100)parts.push(`brightness(${t.brightness}%)`);if(t.contrast!==100)parts.push(`contrast(${t.contrast}%)`);if(t.saturation!==100)parts.push(`saturate(${t.saturation}%)`);if(t.warmth)parts.push(`sepia(${Math.abs(t.warmth)*.25}%)`, `hue-rotate(${t.warmth<0?180:0}deg)`);return parts.join(' ')}
-  function filterCSS(scope){return [toneCSS(sceneFilters[scope]||neutralTone()),toneCSS(sceneFilters.scene)].filter(Boolean).join(' ')||'none'}
+  function filterCSS(scope){return [toneCSS(sceneFilters[scope]||neutralTone()),toneCSS(sceneFilters.scene),scope==='background'?window.jejuBackgroundGrade?.css(sceneFilters.backgroundGrade,'jeju-editor-background-grade'):''].filter(Boolean).join(' ')||'none'}
   function syncFilterControls(){const tone=sceneFilters[$('toneScope').value||'scene'];for(const key of Object.keys(tone)){ $('tone_'+key).value=tone[key];$('toneValue_'+key).textContent=tone[key]+(key==='warmth'?'':'%')} }
   function applySceneFilters(){if(wallBackground)wallBackground.style.filter=filterCSS('background');for(const o of objects){const im=wallNodes.get(o.id)?.firstElementChild;if(im){const a=assets.find(a=>a.id===o.assetId),tone=filterCSS(isFlower(o)?'flowers':'decor'),light=window.jejuSpace?.lighting(o,a,H,gardenSpace,spaceView).brightness??1;im.style.filter=[tone==='none'?'':tone,light===1?'':`brightness(${light})`].filter(Boolean).join(' ')||'none'}}syncFilterControls()}
   function historyState(){return JSON.stringify({objects,sceneFilters,gardenSpace,background})}
@@ -508,6 +508,7 @@
   }
 
   window.jejuEditor={W,H,uid,db,projectedObject:(o,a,height=H)=>window.jejuSpace?.pose(o,a,height,gardenSpace)||o,storeCurrent,restoreCurrent,updateSavedLayouts,objectVariant,currentFlowerAsset,notice,image,tintedFlowerSrc,displaySrc,drawBackground,backgroundDrawable,download,downloadName,isFlower,filterCSS,
+    getBackgroundGrade:()=>window.jejuBackgroundGrade.normalize(sceneFilters.backgroundGrade),setBackgroundGrade:(value,checkpoint=true)=>{if(checkpoint)snapshot();sceneFilters.backgroundGrade=window.jejuBackgroundGrade.normalize(value);applySceneFilters();scheduleSave();document.dispatchEvent(new CustomEvent('jeju-editor-change'));},
     state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace}),selected:()=>members(),registerCatalog,replaceSelection,useSample,
     selectObject:id=>{const o=objects.find(o=>o.id===id);if(!o)throw Error('요소를 찾지 못했습니다.');selected=o.id;selectedIds=new Set([o.id]);refresh()},
     addAsset:a=>addObject(assets.find(x=>x.id===a.id)||a,W/2,H/2),
@@ -520,7 +521,7 @@
   function exhibitionMessage(message){$('exhibitionFrame').contentWindow?.postMessage(message,location.origin)}
   function sendExhibitionProject(){if(exhibitionReady&&exhibitionActive){exhibitionMessage({type:'jeju-exhibition-project',project:window.jejuEditor.project()});exhibitionMessage({type:'jeju-exhibition-active',active:!document.hidden})}}
   let exhibitionTemplateTask;
-  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=fantasy50-20261023').then(response=>{if(!response.ok)throw Error('전시 화면을 불러오지 못했습니다. 전시 탭을 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('전시 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
+  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=bggrade57-20261026').then(response=>{if(!response.ok)throw Error('전시 화면을 불러오지 못했습니다. 전시 탭을 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('전시 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
   async function switchWorkspace(exhibition){
     const request=++workspaceRequest,frame=$('exhibitionFrame');let template;
     if(exhibition)try{await bloomReady;while(pendingObjectAdds.size)await Promise.allSettled([...pendingObjectAdds]);if(!frame.getAttribute('srcdoc'))template=await exhibitionTemplate()}catch(err){if(request!==workspaceRequest)return;$('exhibitionStatus').hidden=false;$('exhibitionStatus').textContent=err.message;return}

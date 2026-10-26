@@ -12,7 +12,8 @@ for(const e of latest.filter(e=>e.styleVersion===54)){
 assert(read('oil-art-v51-archive.html').includes('IntegratedBloom_AirParticles_'));
 for(const name of ['all-images.html','oil-art.html','abstract-world-v44.html','oil-gallery.html','oil-sources.html','lighting-sets.html']){
  const html=read(name);assert(!html.includes('IntegratedBud_AbstractOil_v44'));assert(!html.includes('IntegratedBloom_AbstractOil_v44'));
- for(const e of latest){assert(html.includes(e.preview),name+' missing '+e.id);assert(fs.existsSync(require.resolve('../docs/'+e.preview)));assert(html.includes(e.src),name+' must link original PNG '+e.id);}
+ const current=JSON.parse(read('assets/source-contrast-v57/manifest_v57.json'));
+ for(const scene of current.scenes){const bg=scene.assets.find(a=>a.category==='background');for(const e of [{id:scene.id,preview:scene.recomposed,src:scene.integratedSrc},bg]){assert(html.includes(e.preview),name+' missing '+e.id);assert(fs.existsSync(require.resolve('../docs/'+e.preview)));assert(html.includes(e.src),name+' must link original PNG '+e.id);}}
  assert(html.includes('oil-art-v44-archive.html'),'prior pair must remain discoverable');
 }
 assert(read('oil-art-v44-archive.html').includes('IntegratedBud_AbstractOil_v44'));

@@ -24,8 +24,8 @@
   }
   function render(){
     const text=$('catalogSearch').value.trim().toLowerCase(),category=$('catalogCategory').value;
-    const items=[...data.assets].sort((a,b)=>(b.imageStyleVersion||0)-(a.imageStyleVersion||0)).filter(a=>(!category||a.category===category)&&`${a.name} ${a.code||''} ${a.sourceName||''}`.toLowerCase().includes(text));list.replaceChildren();
-    $('catalogCount').textContent=`${items.length}개 / 전체 ${data.assets.length}개 · 조명별 원본 PNG`;
+    const items=[...data.assets].sort((a,b)=>(b.imageStyleVersion||0)-(a.imageStyleVersion||0)).filter(a=>!a.catalogHidden&&(!category||a.category===category)&&`${a.name} ${a.code||''} ${a.sourceName||''}`.toLowerCase().includes(text));list.replaceChildren();
+    $('catalogCount').textContent=`${items.length}개 / 전체 ${data.assets.filter(a=>!a.catalogHidden).length}개 · 조명별 원본 PNG`;
     for(const a of items){const b=button('',()=>select(a).catch(fail));b.className='catalog-card';b.dataset.asset=a.id;b.setAttribute('aria-label',a.name);b.setAttribute('aria-pressed',String(chosen?.id===a.id));const im=document.createElement('img');im.src=a.thumb||a.poster||a.src;im.alt='';im.loading='lazy';const name=document.createElement('span');name.textContent=a.name;const tag=document.createElement('small');tag.textContent=a.referenceOnly?'참고용':a.qualityStatus==='source-warning'?'원본 주의':labels[a.category]||a.category;b.append(im,name,tag);list.append(b)}
   }
   function placed(){
@@ -33,8 +33,8 @@
     for(const o of state.objects){const b=button(`${selected.has(o.id)?'✓ ':''}${o.name||o.assetId}`,()=>{E.selectObject(o.id);const a=data.assets.find(a=>a.id===o.assetId);if(a)select(a).catch(fail)});b.dataset.object=o.id;b.setAttribute('aria-pressed',String(selected.has(o.id)));target.append(b)}
     const first=E.selected()[0],asset=state.assets.find(a=>a.id===first?.assetId);$('catalogMotion').disabled=!first||!['cloud','mist','bird','butterfly'].includes(asset?.category);$('catalogMotion').value=first?.motion||asset?.motion||'stationary';
   }
-  function sample(){return structuredClone(window.jejuCutout56?.scenes[0].project||window.jejuLayer55?.scenes[0].project||data.scenes[0].project)}
-  $('openFinalCatalog').onclick=()=>{host.showModal();render();placed();if(!chosen)select(data.assets.find(a=>a.imageStyleVersion===(window.jejuCutout56?56:55)&&a.category==='flower')||data.assets.find(a=>a.category==='flower')||data.assets[0]).catch(fail)};
+  function sample(){return structuredClone(window.jejuCutout57?.scenes[0].project||window.jejuCutout56?.scenes[0].project||window.jejuLayer55?.scenes[0].project||data.scenes[0].project)}
+  $('openFinalCatalog').onclick=()=>{host.showModal();render();placed();if(!chosen)select(data.assets.find(a=>a.imageStyleVersion===(window.jejuCutout57?57:window.jejuCutout56?56:55)&&a.category==='flower')||data.assets.find(a=>a.category==='flower')||data.assets[0]).catch(fail)};
   $('catalogClose').onclick=()=>host.close();host.addEventListener('close',()=>{loadToken++;stop()});$('catalogSearch').oninput=render;$('catalogCategory').onchange=render;
   $('catalogPlay').onclick=()=>{if(playing){stop();return}if(frame>=chosen.frames.length-1)frame=0;playing=true;last=performance.now()-frame*1000/(chosen.fps||30);$('catalogPlay').textContent='일시정지';raf=requestAnimationFrame(tick)};
   seek.oninput=()=>{stop();frame=Number(seek.value);showFrame()};$('catalogStart').onclick=()=>{stop();frame=0;showFrame()};$('catalogEnd').onclick=()=>{stop();frame=chosen.frames.length-1;showFrame()};
@@ -47,5 +47,5 @@
   for(const [id,name] of Object.entries(labels)){const option=document.createElement('option');option.value=id;option.textContent=name;$('catalogCategory').append(option)}
   const originals=$('catalogSources');for(const f of data.sourceFiles){const row=document.createElement('li'),a=document.createElement('a');a.textContent=f.relativePath;a.href=f.stablePreviewUrl||`https://drive.google.com/file/d/${encodeURIComponent(f.id)}/view`;a.target='_blank';a.rel='noopener';row.append(a);originals.append(row)}
   function openLinked(){const linked=data.assets.find(a=>a.id===new URLSearchParams(location.hash.slice(1)).get('asset'));if(linked){$('catalogCategory').value=linked.category;host.showModal();render();placed();select(linked).catch(fail)}}
-  E.ready.then(()=>{E.registerCatalog(data);$('openFinalCatalog').disabled=false;openLinked();window.addEventListener('hashchange',openLinked);$('catalogSummary').textContent=`${window.jejuCutout56?'v56 통합본 직접 분리 · ':window.jejuLayer55?'v55 분리 소스40종 · ':''}판타지 배경 · 기존 개별 꽃 6종 / 조명·형태 16개 · 배경 ${data.backgrounds.length}종 · 배치 요소 ${data.assets.length}개 · 원본 PNG ${data.sourceFiles.length}장`}).catch(fail);
+  E.ready.then(()=>{E.registerCatalog(data);$('openFinalCatalog').disabled=false;openLinked();window.addEventListener('hashchange',openLinked);$('catalogSummary').textContent=`${window.jejuCutout57?'v57 배경 대비·분리 합성 · ':window.jejuCutout56?'v56 통합본 직접 분리 · ':window.jejuLayer55?'v55 분리 소스40종 · ':''}판타지 배경 · 기존 개별 꽃 6종 / 조명·형태 16개 · 배경 ${data.backgrounds.length}종 · 배치 요소 ${data.assets.filter(a=>!a.catalogHidden).length}개 · 원본 PNG ${data.sourceFiles.length}장`}).catch(fail);
 })();

@@ -8,7 +8,7 @@
  async function open(scene){await E.ready;await E.useSample(structuredClone(scene.project));E.notice(scene.name+' · 원본 분리 배치를 열었습니다. 원래 배치로 돌아가려면 이 시간대 버튼을 다시 누르세요.')}
  for(const s of data.scenes){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=s.name+' · 원본 분리';b.style.margin='3px';b.onclick=async()=>{b.disabled=true;try{await open(s)}catch(e){E.notice(e.message)}finally{b.disabled=false}};panel.append(b)}
  const a=document.createElement('a');a.className='btn';a.href='source-cutouts.html';a.target='_blank';a.rel='noopener';a.textContent='원본·레이어 비교 / PNG·Unity ZIP';panel.append(a);
- document.getElementById('items').parentElement.prepend(panel);
+ if(!window.jejuCutout57||new URL(location.href).searchParams.get('layers')==='56')document.getElementById('items').parentElement.prepend(panel);
  await E.ready;await window.jejuHandoff.ready;
  const u=new URL(location.href);
  if(u.searchParams.get('layers')==='56'){

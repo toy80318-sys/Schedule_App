@@ -1,0 +1,9 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>Background grading rendering proof</title><script src="/docs/background-grade.js"></script><body><h1>배경 색보정 렌더링 검증</h1><p id="status">검증 중</p><canvas id="source" width="320" height="80"></canvas><canvas id="graded" width="320" height="80"></canvas><pre id="report"></pre><script>
+requestAnimationFrame(()=>{
+ const G=window.jejuBackgroundGrade,colors=[[31,128,240],[128,128,128],[230,50,30],[20,90,70]],s=document.getElementById('source'),ctx=s.getContext('2d'),out=document.getElementById('graded'),c=out.getContext('2d'),grade={hue:25,exposure:.4,brightness:91,curve:[0,45,120,205,255]};
+ colors.forEach((v,i)=>{ctx.fillStyle='rgb('+v.join(',')+')';ctx.fillRect(i*80,0,80,80)});
+ c.filter=G.css(grade,'proof-background-grade');c.drawImage(s,0,0);
+ const results=colors.map((v,i)=>{const actual=[...c.getImageData(i*80+40,40,1,1).data].slice(0,3),expected=G.pixel(v,grade);return{input:v,actual,expected,maxError:Math.max(...actual.map((n,k)=>Math.abs(n-expected[k])))}});
+ document.getElementById('status').textContent=results.every(r=>r.maxError<=3)?'PASS: SVG 곡선 필터가 Canvas PNG에도 동일하게 적용됩니다.':'FAIL: SVG/Canvas 보정 결과 확인 필요';document.getElementById('report').textContent=JSON.stringify(results,null,2);
+});
+</script></body></html>

@@ -1,0 +1,1154 @@
+{
+  "format": "jeju-unity-v1",
+  "version": 1,
+  "name": "낮 · 옐로우 · v57 배경 대비·분리 합성",
+  "units": "meters",
+  "widthMm": 14165,
+  "heightMm": 3480,
+  "defaultFps": 30,
+  "assets": [
+    {
+      "id": "cut57-day-001_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_001_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-001_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-002_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_002_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-002_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-003_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 03",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_003_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-003_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-004_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 04",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_004_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-004_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-005_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 05",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_005_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-005_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-006_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 06",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_006_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-006_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-007_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 07",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_007_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-007_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-008_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 08",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_008_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-008_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-009_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 09",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_009_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-009_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-010_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 10",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_010_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-010_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-011_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 11",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_011_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-011_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-012_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 12",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_012_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-012_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-013_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 13",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_013_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-013_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-014_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 14",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_014_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-014_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-015_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 15",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_015_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-015_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-016_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 16",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_016_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-016_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-017_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 17",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_017_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-017_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-018_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 18",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_018_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-018_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-019_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 19",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_019_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-019_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-020_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 20",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_020_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-020_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-021_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 21",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_021_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-021_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-022_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 22",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_022_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-022_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-023_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 23",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_023_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-023_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-024_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 24",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_024_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-024_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-025_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 25",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_025_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-025_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-026_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 26",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_026_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-026_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-027_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 27",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_027_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-027_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-028_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 28",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_028_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-028_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-029_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 29",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_029_flower_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-029_flower",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-030_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_030_decor_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-030_decor",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-031_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 03",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_031_decor_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-031_decor",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-032_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 04",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_032_decor_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-032_decor",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-033_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 05",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_033_decor_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-033_decor",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-034_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 01 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_034_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-034_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-035_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 02 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_035_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-035_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-036_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 03 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_036_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-036_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-037_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 04 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_037_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-037_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-038_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 05 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_038_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-038_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-039_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 06 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_039_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-039_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-040_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 07 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_040_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-040_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-041_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 08 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_041_grass_SourceCut_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-041_grass",
+      "quality": "v57-still-source"
+    },
+    {
+      "id": "cut57-day-particles",
+      "name": "낮 · 옐로우 · v57 투명 빛 입자",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG02_LT02_Particles_Transparent_v57.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut57-day-particles",
+      "quality": "v57-still-source"
+    }
+  ],
+  "objects": [
+    {
+      "id": "cut57-day-001_flower-object",
+      "assetId": "cut57-day-001_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 01",
+      "xMeters": -6.37010009765625,
+      "yMeters": -0.6676341948310138,
+      "widthMeters": 0.691650390625,
+      "heightMeters": 0.5673161033797216,
+      "rotationZ": 0,
+      "sortingOrder": 0,
+      "opacity": 1,
+      "editorXmm": 366.57470703125,
+      "editorYmm": 2123.976143141153
+    },
+    {
+      "id": "cut57-day-002_flower-object",
+      "assetId": "cut57-day-002_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 02",
+      "xMeters": -5.52628662109375,
+      "yMeters": -0.2974950298210737,
+      "widthMeters": 0.5118212890625,
+      "heightMeters": 0.42202783300198804,
+      "rotationZ": 0,
+      "sortingOrder": 1,
+      "opacity": 1,
+      "editorXmm": 1300.302734375,
+      "editorYmm": 1826.4811133200797
+    },
+    {
+      "id": "cut57-day-003_flower-object",
+      "assetId": "cut57-day-003_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 03",
+      "xMeters": -4.741263427734375,
+      "yMeters": -0.802544731610338,
+      "widthMeters": 0.51873779296875,
+      "heightMeters": 0.5465606361829026,
+      "rotationZ": 0,
+      "sortingOrder": 2,
+      "opacity": 1,
+      "editorXmm": 2081.86767578125,
+      "editorYmm": 2269.2644135188866
+    },
+    {
+      "id": "cut57-day-004_flower-object",
+      "assetId": "cut57-day-004_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 04",
+      "xMeters": -4.222525634765625,
+      "yMeters": -0.8682703777335985,
+      "widthMeters": 0.58790283203125,
+      "heightMeters": 0.5258051689860834,
+      "rotationZ": 0,
+      "sortingOrder": 3,
+      "opacity": 1,
+      "editorXmm": 2566.02294921875,
+      "editorYmm": 2345.3677932405567
+    },
+    {
+      "id": "cut57-day-005_flower-object",
+      "assetId": "cut57-day-005_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 05",
+      "xMeters": -5.20812744140625,
+      "yMeters": -0.9685884691848907,
+      "widthMeters": 0.6501513671875,
+      "heightMeters": 0.5465606361829026,
+      "rotationZ": 0,
+      "sortingOrder": 4,
+      "opacity": 1,
+      "editorXmm": 1549.296875,
+      "editorYmm": 2435.3081510934394
+    },
+    {
+      "id": "cut57-day-006_flower-object",
+      "assetId": "cut57-day-006_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 06",
+      "xMeters": -5.74761474609375,
+      "yMeters": -1.1726838966202786,
+      "widthMeters": 0.44265625,
+      "heightMeters": 0.47045725646123265,
+      "rotationZ": 0,
+      "sortingOrder": 5,
+      "opacity": 1,
+      "editorXmm": 1113.55712890625,
+      "editorYmm": 2677.4552683896623
+    },
+    {
+      "id": "cut57-day-007_flower-object",
+      "assetId": "cut57-day-007_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 07",
+      "xMeters": -5.536661376953125,
+      "yMeters": -1.4805566600397615,
+      "widthMeters": 0.67090087890625,
+      "heightMeters": 0.5188866799204771,
+      "rotationZ": 0,
+      "sortingOrder": 6,
+      "opacity": 1,
+      "editorXmm": 1210.38818359375,
+      "editorYmm": 2961.113320079523
+    },
+    {
+      "id": "cut57-day-008_flower-object",
+      "assetId": "cut57-day-008_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 08",
+      "xMeters": -4.734346923828125,
+      "yMeters": -1.4840159045725645,
+      "widthMeters": 0.56023681640625,
+      "heightMeters": 0.5119681908548708,
+      "rotationZ": 0,
+      "sortingOrder": 7,
+      "opacity": 1,
+      "editorXmm": 2068.03466796875,
+      "editorYmm": 2968.031809145129
+    },
+    {
+      "id": "cut57-day-009_flower-object",
+      "assetId": "cut57-day-009_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 09",
+      "xMeters": -4.14990234375,
+      "yMeters": -1.5670377733598408,
+      "widthMeters": 0.7331494140625,
+      "heightMeters": 0.3459244532803181,
+      "rotationZ": 0,
+      "sortingOrder": 8,
+      "opacity": 1,
+      "editorXmm": 2566.02294921875,
+      "editorYmm": 3134.075546719682
+    },
+    {
+      "id": "cut57-day-010_flower-object",
+      "assetId": "cut57-day-010_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 10",
+      "xMeters": -3.517042236328125,
+      "yMeters": -1.428667992047714,
+      "widthMeters": 0.69856689453125,
+      "heightMeters": 0.6226640159045725,
+      "rotationZ": 0,
+      "sortingOrder": 9,
+      "opacity": 1,
+      "editorXmm": 3216.17431640625,
+      "editorYmm": 2857.3359840954276
+    },
+    {
+      "id": "cut57-day-011_flower-object",
+      "assetId": "cut57-day-011_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 11",
+      "xMeters": -2.998304443359375,
+      "yMeters": -1.1968986083499007,
+      "widthMeters": 0.71239990234375,
+      "heightMeters": 0.5188866799204771,
+      "rotationZ": 0,
+      "sortingOrder": 10,
+      "opacity": 1,
+      "editorXmm": 3727.99560546875,
+      "editorYmm": 2677.4552683896623
+    },
+    {
+      "id": "cut57-day-012_flower-object",
+      "assetId": "cut57-day-012_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 12",
+      "xMeters": -2.6421044921875,
+      "yMeters": -1.2522465208747513,
+      "widthMeters": 0.470322265625,
+      "heightMeters": 0.5603976143141154,
+      "rotationZ": 0,
+      "sortingOrder": 11,
+      "opacity": 1,
+      "editorXmm": 4205.234375,
+      "editorYmm": 2712.0477137176936
+    },
+    {
+      "id": "cut57-day-013_flower-object",
+      "assetId": "cut57-day-013_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 13",
+      "xMeters": -1.870914306640625,
+      "yMeters": -1.0343141153081514,
+      "widthMeters": 0.65706787109375,
+      "heightMeters": 0.6226640159045725,
+      "rotationZ": 0,
+      "sortingOrder": 12,
+      "opacity": 1,
+      "editorXmm": 4883.0517578125,
+      "editorYmm": 2462.982107355865
+    },
+    {
+      "id": "cut57-day-014_flower-object",
+      "assetId": "cut57-day-014_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 14",
+      "xMeters": -1.815582275390625,
+      "yMeters": -1.3560238568588467,
+      "widthMeters": 0.65706787109375,
+      "heightMeters": 0.574234592445328,
+      "rotationZ": 0,
+      "sortingOrder": 13,
+      "opacity": 1,
+      "editorXmm": 4938.3837890625,
+      "editorYmm": 2808.906560636183
+    },
+    {
+      "id": "cut57-day-015_flower-object",
+      "assetId": "cut57-day-015_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 15",
+      "xMeters": -1.262261962890625,
+      "yMeters": -1.5774155069582505,
+      "widthMeters": 0.61556884765625,
+      "heightMeters": 0.32516898608349903,
+      "rotationZ": 0,
+      "sortingOrder": 14,
+      "opacity": 1,
+      "editorXmm": 5512.45361328125,
+      "editorYmm": 3154.831013916501
+    },
+    {
+      "id": "cut57-day-016_flower-object",
+      "assetId": "cut57-day-016_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 16",
+      "xMeters": -1.0098095703125,
+      "yMeters": -0.48775347912524847,
+      "widthMeters": 0.5671533203125,
+      "heightMeters": 0.5258051689860834,
+      "rotationZ": 0,
+      "sortingOrder": 15,
+      "opacity": 1,
+      "editorXmm": 5789.11376953125,
+      "editorYmm": 1964.8508946322067
+    },
+    {
+      "id": "cut57-day-017_flower-object",
+      "assetId": "cut57-day-017_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 17",
+      "xMeters": -0.632860107421875,
+      "yMeters": -0.6987673956262425,
+      "widthMeters": 0.60173583984375,
+      "heightMeters": 0.5188866799204771,
+      "rotationZ": 0,
+      "sortingOrder": 16,
+      "opacity": 1,
+      "editorXmm": 6148.77197265625,
+      "editorYmm": 2179.324055666004
+    },
+    {
+      "id": "cut57-day-018_flower-object",
+      "assetId": "cut57-day-018_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 18",
+      "xMeters": -0.193662109375,
+      "yMeters": -1.134632206759443,
+      "widthMeters": 0.7331494140625,
+      "heightMeters": 0.574234592445328,
+      "rotationZ": 0,
+      "sortingOrder": 17,
+      "opacity": 1,
+      "editorXmm": 6522.26318359375,
+      "editorYmm": 2587.514910536779
+    },
+    {
+      "id": "cut57-day-019_flower-object",
+      "assetId": "cut57-day-019_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 19",
+      "xMeters": 0.183287353515625,
+      "yMeters": -0.816381709741551,
+      "widthMeters": 0.67090087890625,
+      "heightMeters": 0.5465606361829026,
+      "rotationZ": 0,
+      "sortingOrder": 18,
+      "opacity": 1,
+      "editorXmm": 6930.3369140625,
+      "editorYmm": 2283.1013916500997
+    },
+    {
+      "id": "cut57-day-020_flower-object",
+      "assetId": "cut57-day-020_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 20",
+      "xMeters": 1.068599853515625,
+      "yMeters": -1.0446918489065604,
+      "widthMeters": 0.60173583984375,
+      "heightMeters": 0.5050497017892644,
+      "rotationZ": 0,
+      "sortingOrder": 19,
+      "opacity": 1,
+      "editorXmm": 7850.23193359375,
+      "editorYmm": 2532.166998011928
+    },
+    {
+      "id": "cut57-day-021_flower-object",
+      "assetId": "cut57-day-021_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 21",
+      "xMeters": 1.428258056640625,
+      "yMeters": -0.8821073558648115,
+      "widthMeters": 0.49107177734375,
+      "heightMeters": 0.49813121272365807,
+      "rotationZ": 0,
+      "sortingOrder": 20,
+      "opacity": 1,
+      "editorXmm": 8265.22216796875,
+      "editorYmm": 2373.0417495029824
+    },
+    {
+      "id": "cut57-day-022_flower-object",
+      "assetId": "cut57-day-022_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 22",
+      "xMeters": 2.265155029296875,
+      "yMeters": -0.8371371769383701,
+      "widthMeters": 0.51873779296875,
+      "heightMeters": 0.477375745526839,
+      "rotationZ": 0,
+      "sortingOrder": 21,
+      "opacity": 1,
+      "editorXmm": 9088.2861328125,
+      "editorYmm": 2338.4493041749506
+    },
+    {
+      "id": "cut57-day-023_flower-object",
+      "assetId": "cut57-day-023_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 23",
+      "xMeters": 2.9464306640625,
+      "yMeters": -1.452882703777336,
+      "widthMeters": 0.6501513671875,
+      "heightMeters": 0.574234592445328,
+      "rotationZ": 0,
+      "sortingOrder": 22,
+      "opacity": 1,
+      "editorXmm": 9703.85498046875,
+      "editorYmm": 2905.765407554672
+    },
+    {
+      "id": "cut57-day-024_flower-object",
+      "assetId": "cut57-day-024_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 24",
+      "xMeters": 3.849034423828125,
+      "yMeters": -1.0135586481113317,
+      "widthMeters": 0.57406982421875,
+      "heightMeters": 0.5119681908548708,
+      "rotationZ": 0,
+      "sortingOrder": 23,
+      "opacity": 1,
+      "editorXmm": 10644.49951171875,
+      "editorYmm": 2497.5745526838964
+    },
+    {
+      "id": "cut57-day-025_flower-object",
+      "assetId": "cut57-day-025_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 25",
+      "xMeters": 4.284774169921875,
+      "yMeters": -0.9789662027833004,
+      "widthMeters": 0.57406982421875,
+      "heightMeters": 0.5949900596421471,
+      "rotationZ": 0,
+      "sortingOrder": 24,
+      "opacity": 1,
+      "editorXmm": 11080.2392578125,
+      "editorYmm": 2421.471172962227
+    },
+    {
+      "id": "cut57-day-026_flower-object",
+      "assetId": "cut57-day-026_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 26",
+      "xMeters": 4.886510009765625,
+      "yMeters": -1.1484691848906563,
+      "widthMeters": 0.69856689453125,
+      "heightMeters": 0.5603976143141154,
+      "rotationZ": 0,
+      "sortingOrder": 25,
+      "opacity": 1,
+      "editorXmm": 11619.7265625,
+      "editorYmm": 2608.2703777335987
+    },
+    {
+      "id": "cut57-day-027_flower-object",
+      "assetId": "cut57-day-027_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 27",
+      "xMeters": 5.42945556640625,
+      "yMeters": -0.8890258449304176,
+      "widthMeters": 0.691650390625,
+      "heightMeters": 0.4566202783300199,
+      "rotationZ": 0,
+      "sortingOrder": 26,
+      "opacity": 1,
+      "editorXmm": 12166.13037109375,
+      "editorYmm": 2400.7157057654076
+    },
+    {
+      "id": "cut57-day-028_flower-object",
+      "assetId": "cut57-day-028_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 28",
+      "xMeters": 5.543577880859375,
+      "yMeters": -0.5569383697813122,
+      "widthMeters": 0.50490478515625,
+      "heightMeters": 0.44278330019880713,
+      "rotationZ": 0,
+      "sortingOrder": 27,
+      "opacity": 1,
+      "editorXmm": 12373.62548828125,
+      "editorYmm": 2075.5467196819086
+    },
+    {
+      "id": "cut57-day-029_flower-object",
+      "assetId": "cut57-day-029_flower",
+      "name": "낮 · 옐로우 · 원본 꽃·주변 잎 영역 29",
+      "xMeters": 6.387391357421875,
+      "yMeters": -1.3318091451292249,
+      "widthMeters": 0.78156494140625,
+      "heightMeters": 0.6088270377733599,
+      "rotationZ": 0,
+      "sortingOrder": 28,
+      "opacity": 1,
+      "editorXmm": 13079.10888671875,
+      "editorYmm": 2767.395626242545
+    },
+    {
+      "id": "cut57-day-030_decor-object",
+      "assetId": "cut57-day-030_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 01",
+      "xMeters": -5.66461669921875,
+      "yMeters": -1.3733200795228624,
+      "widthMeters": 2.8357666015625,
+      "heightMeters": 0.7333598409542743,
+      "rotationZ": 0,
+      "sortingOrder": 29,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 2746.6401590457253
+    },
+    {
+      "id": "cut57-day-031_decor-object",
+      "assetId": "cut57-day-031_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 03",
+      "xMeters": 0.2904931640625,
+      "yMeters": -1.5289860834990059,
+      "widthMeters": 1.4801318359375,
+      "heightMeters": 0.42202783300198804,
+      "rotationZ": 0,
+      "sortingOrder": 30,
+      "opacity": 1,
+      "editorXmm": 6632.92724609375,
+      "editorYmm": 3057.9721669980117
+    },
+    {
+      "id": "cut57-day-032_decor-object",
+      "assetId": "cut57-day-032_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 04",
+      "xMeters": 3.70724609375,
+      "yMeters": -1.428667992047714,
+      "widthMeters": 1.0928076171875,
+      "heightMeters": 0.6226640159045725,
+      "rotationZ": 0,
+      "sortingOrder": 31,
+      "opacity": 1,
+      "editorXmm": 10243.34228515625,
+      "editorYmm": 2857.3359840954276
+    },
+    {
+      "id": "cut57-day-033_decor-object",
+      "assetId": "cut57-day-033_decor",
+      "name": "낮 · 옐로우 · 현무암·주변 잎 05",
+      "xMeters": 5.668074951171875,
+      "yMeters": -1.4425049701789265,
+      "widthMeters": 2.82885009765625,
+      "heightMeters": 0.5949900596421471,
+      "rotationZ": 0,
+      "sortingOrder": 32,
+      "opacity": 1,
+      "editorXmm": 11336.14990234375,
+      "editorYmm": 2885.009940357853
+    },
+    {
+      "id": "cut57-day-034_grass-object",
+      "assetId": "cut57-day-034_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 01 · 풀·잎·가려진 꽃",
+      "xMeters": -6.1971875,
+      "yMeters": -0.5846123260437378,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.310775347912525,
+      "rotationZ": 0,
+      "sortingOrder": 33,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 1169.2246520874753
+    },
+    {
+      "id": "cut57-day-035_grass-object",
+      "assetId": "cut57-day-035_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 02 · 풀·잎·가려진 꽃",
+      "xMeters": -4.4265625,
+      "yMeters": -0.6537972166998011,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.172405566600397,
+      "rotationZ": 0,
+      "sortingOrder": 34,
+      "opacity": 1,
+      "editorXmm": 1770.625,
+      "editorYmm": 1307.5944333996024
+    },
+    {
+      "id": "cut57-day-036_grass-object",
+      "assetId": "cut57-day-036_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 03 · 풀·잎·가려진 꽃",
+      "xMeters": -2.6559375,
+      "yMeters": -0.6918489065606364,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0963021868787277,
+      "rotationZ": 0,
+      "sortingOrder": 35,
+      "opacity": 1,
+      "editorXmm": 3541.25,
+      "editorYmm": 1383.6978131212725
+    },
+    {
+      "id": "cut57-day-037_grass-object",
+      "assetId": "cut57-day-037_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 04 · 풀·잎·가려진 꽃",
+      "xMeters": -0.8853125,
+      "yMeters": -0.7056858846918492,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0686282306163024,
+      "rotationZ": 0,
+      "sortingOrder": 36,
+      "opacity": 1,
+      "editorXmm": 5311.875,
+      "editorYmm": 1411.371769383698
+    },
+    {
+      "id": "cut57-day-038_grass-object",
+      "assetId": "cut57-day-038_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 05 · 풀·잎·가려진 꽃",
+      "xMeters": 0.8853125,
+      "yMeters": -0.7056858846918492,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0686282306163024,
+      "rotationZ": 0,
+      "sortingOrder": 37,
+      "opacity": 1,
+      "editorXmm": 7082.5,
+      "editorYmm": 1411.371769383698
+    },
+    {
+      "id": "cut57-day-039_grass-object",
+      "assetId": "cut57-day-039_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 06 · 풀·잎·가려진 꽃",
+      "xMeters": 2.6559375,
+      "yMeters": -0.6918489065606364,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0963021868787277,
+      "rotationZ": 0,
+      "sortingOrder": 38,
+      "opacity": 1,
+      "editorXmm": 8853.125,
+      "editorYmm": 1383.6978131212725
+    },
+    {
+      "id": "cut57-day-040_grass-object",
+      "assetId": "cut57-day-040_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 07 · 풀·잎·가려진 꽃",
+      "xMeters": 4.4265625,
+      "yMeters": -0.6537972166998011,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.172405566600397,
+      "rotationZ": 0,
+      "sortingOrder": 39,
+      "opacity": 1,
+      "editorXmm": 10623.75,
+      "editorYmm": 1307.5944333996024
+    },
+    {
+      "id": "cut57-day-041_grass-object",
+      "assetId": "cut57-day-041_grass",
+      "name": "낮 · 옐로우 · 원본 전경 연결부 08 · 풀·잎·가려진 꽃",
+      "xMeters": 6.1971875,
+      "yMeters": -0.5846123260437378,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.310775347912525,
+      "rotationZ": 0,
+      "sortingOrder": 40,
+      "opacity": 1,
+      "editorXmm": 12394.375,
+      "editorYmm": 1169.2246520874753
+    },
+    {
+      "id": "cut57-day-particles-object",
+      "assetId": "cut57-day-particles",
+      "name": "낮 · 옐로우 · v57 투명 빛 입자",
+      "xMeters": 0.0,
+      "yMeters": 0.0,
+      "widthMeters": 14.165,
+      "heightMeters": 3.48,
+      "rotationZ": 0,
+      "sortingOrder": 41,
+      "opacity": 0.62,
+      "editorXmm": 0,
+      "editorYmm": 0
+    }
+  ],
+  "styles": [],
+  "background": {
+    "image": "ML_BG02_LT02_Background_SourceCut_v57.png",
+    "fit": "cover",
+    "widthPixels": 4096,
+    "heightPixels": 1006
+  }
+}

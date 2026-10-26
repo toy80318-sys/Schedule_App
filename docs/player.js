@@ -125,7 +125,7 @@
     for(let n=0;n<ahead;n++){const i=frame+(closing?-n:n);if(i>=0&&i<v.frames.length)requestFrame(v.frames[i]).catch(()=>{})}
   }
   function toneCSS(t={}){const v=(key,def,min,max)=>finite(t?.[key],min,max)?t[key]:def,b=v('brightness',100,0,200),c=v('contrast',100,0,200),s=v('saturation',100,0,200),w=v('warmth',0,-100,100);return [b!==100?`brightness(${b}%)`:'',c!==100?`contrast(${c}%)`:'',s!==100?`saturate(${s}%)`:'',w?`sepia(${Math.abs(w)*.25}%) hue-rotate(${w<0?180:0}deg)`:''].filter(Boolean).join(' ')}
-  function filter(scope){return [toneCSS(project?.sceneFilters?.[scope]),toneCSS(project?.sceneFilters?.scene)].filter(Boolean).join(' ')||'none'}
+  function filter(scope){return [toneCSS(project?.sceneFilters?.[scope]),toneCSS(project?.sceneFilters?.scene),scope==='background'?window.jejuBackgroundGrade?.css(project?.sceneFilters?.backgroundGrade,'jeju-player-background-grade'):''].filter(Boolean).join(' ')||'none'}
   function scatter(o,v){
     o=window.jejuSpace?.pose(o,assets.get(o.assetId),project.height,project.gardenSpace,cameraView)||o;
     const texture=v.petalTexture&&stills.get('petal:'+v.id);const angle=o.r*Math.PI/180,m=o.plane||[Math.cos(angle),Math.sin(angle),-Math.sin(angle),Math.cos(angle)],count=reduced.matches?5:24;

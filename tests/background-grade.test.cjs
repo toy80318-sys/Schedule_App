@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),fs=require('fs'),G=require('../docs/background-grade.js');
+assert.deepEqual(G.normalize(),{hue:0,exposure:0,brightness:100,curve:[0,64,128,192,255]});assert(G.neutral());
+assert.deepEqual(G.normalize({hue:Infinity,exposure:99,brightness:-1,curve:[NaN,80,null,200,999]}),{hue:0,exposure:3,brightness:0,curve:[0,80,128,200,255]});
+const identity=G.table();identity.forEach((v,i)=>assert(Math.abs(v-i/255)<1e-12));
+assert.deepEqual(G.pixel([31,128,240],{}),[31,128,240]);assert(G.pixel([128,128,128],{exposure:1})[0]>170);assert(G.pixel([128,128,128],{exposure:-1})[0]<100);
+assert.deepEqual(G.pixel([50,100,150],{brightness:0}),[0,0,0]);assert(G.pixel([255,0,0],{hue:120})[1]>100);
+const curve=G.curveTable([0,35,110,220,255]);for(let i=1;i<256;i++)assert(curve[i]>=curve[i-1]-1e-12);assert.equal(curve[0],0);assert.equal(curve[255],1);assert(curve[64]<identity[64]);
+assert(G.table({curve:[255,192,128,64,0]}).every(v=>Number.isFinite(v)&&v>=0&&v<=1));assert.throws(()=>G.css({hue:10},'unsafe")'));
+const app=fs.readFileSync(require.resolve('../docs/app.js'),'utf8'),player=fs.readFileSync(require.resolve('../docs/player.js'),'utf8');
+assert(app.includes("scope==='background'?window.jejuBackgroundGrade?.css"));assert(player.includes("scope==='background'?window.jejuBackgroundGrade?.css"));assert(app.includes('out.backgroundGrade=window.jejuBackgroundGrade.normalize(value.backgroundGrade)'));assert(app.includes('sceneFilters.backgroundGrade=window.jejuBackgroundGrade.normalize(value)'));
+for(const file of ['editor.html','player.html','player-embed.txt'])assert(fs.readFileSync(require.resolve('../docs/'+file),'utf8').includes('background-grade.js'));
+console.log('PASS: neutral identity,validated bounds,linear-light EV,hue rotation,smooth curve/brightness,background-only rendering and saved-grade integration.');

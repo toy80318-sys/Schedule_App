@@ -6,8 +6,8 @@ function navigation(page,search=''){
  const body=new El('body');vm.runInNewContext(read('site-nav.js'),{document:{body,createElement:t=>new El(t),documentElement:new El('html')},location:{pathname:'/Schedule_App/'+page,search,href:'https://example.test/'+page},URLSearchParams,ResizeObserver:class{observe(){}}});
  return {bar:body.children[0],notice:nodes[0]};
 }
-const latest=['library.html','abstract-world-v44.html','all-images.html','oil-art.html','layers-v55.html','lighting-sets.html','oil-sources.html','editor.html','index.html'];
-const old=['layers.html','all-images-old.html','abstract-flowers-v43.html','single-flowers.html','scene-loops.html','generation-v38.html','generation-v40.html','production.html','ambient-loops.html','ambient-inplace.html','cloud-sample.html','oil-art-v21-archive.html','oil-gallery-v26-archive.html','oil-sources-v27-archive.html','lighting-sets-v32-archive.html','index-v19-archive.html','index-v44-archive.html','oil-art-v44-archive.html','oil-art-v49-archive.html','oil-art-v51-archive.html'];
+const latest=['library.html','abstract-world-v44.html','all-images.html','oil-art.html','source-cutouts.html','lighting-sets.html','oil-sources.html','editor.html','index.html'];
+const old=['layers-v55.html','layers.html','all-images-old.html','abstract-flowers-v43.html','single-flowers.html','scene-loops.html','generation-v38.html','generation-v40.html','production.html','ambient-loops.html','ambient-inplace.html','cloud-sample.html','oil-art-v21-archive.html','oil-gallery-v26-archive.html','oil-sources-v27-archive.html','lighting-sets-v32-archive.html','index-v19-archive.html','index-v44-archive.html','oil-art-v44-archive.html','oil-art-v49-archive.html','oil-art-v51-archive.html'];
 for(const page of [...latest,'old.html',...old]){
  const n=navigation(page),links=n.bar.children[0].children;
  assert.equal(links.length,latest.length+1);assert.equal(links.at(-1).textContent,'올드');
@@ -27,4 +27,4 @@ for(const file of ['all-images.html','all-images-old.html']){
  }
  assert.equal(keys.length,file==='all-images.html'?9:4);
 }
-console.log('PASS: Old archive covers20 pages, current menu stays current, earlier deep links redirect, both image tab routers show one section, and embedded player stays unchanged.');
+console.log('PASS: Old archive covers21 pages, current menu stays current, earlier deep links redirect, both image tab routers show one section, and embedded player stays unchanged.');

@@ -1,0 +1,965 @@
+{
+  "format": "jeju-unity-v1",
+  "version": 1,
+  "name": "노을 · 레드 · v56 통합본 직접 분리",
+  "units": "meters",
+  "widthMm": 14165,
+  "heightMm": 3480,
+  "defaultFps": 30,
+  "assets": [
+    {
+      "id": "cut56-sunset-001_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_001_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-001_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-002_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_002_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-002_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-003_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 03",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_003_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-003_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-004_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 04",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_004_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-004_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-005_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 05",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_005_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-005_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-006_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 06",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_006_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-006_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-007_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 07",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_007_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-007_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-008_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 08",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_008_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-008_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-009_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 09",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_009_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-009_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-010_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 10",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_010_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-010_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-011_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 11",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_011_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-011_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-012_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 12",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_012_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-012_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-013_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 13",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_013_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-013_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-014_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 14",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_014_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-014_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-015_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 15",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_015_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-015_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-016_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 16",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_016_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-016_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-017_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 17",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_017_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-017_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-018_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 18",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_018_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-018_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-019_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 19",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_019_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-019_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-020_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 20",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_020_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-020_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-021_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_021_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-021_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-022_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_022_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-022_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-023_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 03",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_023_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-023_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-024_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 04",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_024_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-024_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-025_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 05",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_025_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-025_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-026_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 01 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_026_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-026_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-027_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 02 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_027_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-027_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-028_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 03 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_028_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-028_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-029_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 04 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_029_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-029_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-030_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 05 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_030_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-030_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-031_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 06 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_031_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-031_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-032_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 07 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_032_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-032_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-033_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 08 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_033_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-033_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-034_particle",
+      "name": "노을 · 레드 · 원본 빛 입자 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_034_particle_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-034_particle",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-sunset-035_particle",
+      "name": "노을 · 레드 · 원본 빛 입자 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG01_LT01_035_particle_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-sunset-035_particle",
+      "quality": "visible-source-cutout-still"
+    }
+  ],
+  "objects": [
+    {
+      "id": "cut56-sunset-001_flower-object",
+      "assetId": "cut56-sunset-001_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 01",
+      "xMeters": -6.297476806640625,
+      "yMeters": -0.19371769383697804,
+      "widthMeters": 0.54640380859375,
+      "heightMeters": 0.44970178926441357,
+      "rotationZ": 0,
+      "sortingOrder": 0,
+      "opacity": 1,
+      "editorXmm": 511.8212890625,
+      "editorYmm": 1708.8667992047713
+    },
+    {
+      "id": "cut56-sunset-002_flower-object",
+      "assetId": "cut56-sunset-002_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 02",
+      "xMeters": -4.762012939453125,
+      "yMeters": -0.4254870775347911,
+      "widthMeters": 0.64323486328125,
+      "heightMeters": 0.5949900596421471,
+      "rotationZ": 0,
+      "sortingOrder": 1,
+      "opacity": 1,
+      "editorXmm": 1998.86962890625,
+      "editorYmm": 1867.9920477137175
+    },
+    {
+      "id": "cut56-sunset-003_flower-object",
+      "assetId": "cut56-sunset-003_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 03",
+      "xMeters": -4.817344970703125,
+      "yMeters": -0.8371371769383695,
+      "widthMeters": 0.60173583984375,
+      "heightMeters": 0.44970178926441357,
+      "rotationZ": 0,
+      "sortingOrder": 2,
+      "opacity": 1,
+      "editorXmm": 1964.287109375,
+      "editorYmm": 2352.286282306163
+    },
+    {
+      "id": "cut56-sunset-004_flower-object",
+      "assetId": "cut56-sunset-004_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 04",
+      "xMeters": -5.412164306640625,
+      "yMeters": -1.0585288270377735,
+      "widthMeters": 0.57406982421875,
+      "heightMeters": 0.5465606361829026,
+      "rotationZ": 0,
+      "sortingOrder": 3,
+      "opacity": 1,
+      "editorXmm": 1383.30078125,
+      "editorYmm": 2525.248508946322
+    },
+    {
+      "id": "cut56-sunset-005_flower-object",
+      "assetId": "cut56-sunset-005_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 05",
+      "xMeters": -2.424234619140625,
+      "yMeters": -1.3594831013916497,
+      "widthMeters": 0.74006591796875,
+      "heightMeters": 0.5949900596421471,
+      "rotationZ": 0,
+      "sortingOrder": 4,
+      "opacity": 1,
+      "editorXmm": 4288.232421875,
+      "editorYmm": 2801.9880715705763
+    },
+    {
+      "id": "cut56-sunset-006_flower-object",
+      "assetId": "cut56-sunset-006_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 06",
+      "xMeters": -2.119908447265625,
+      "yMeters": -0.705685884691849,
+      "widthMeters": 0.54640380859375,
+      "heightMeters": 0.5188866799204771,
+      "rotationZ": 0,
+      "sortingOrder": 5,
+      "opacity": 1,
+      "editorXmm": 4689.3896484375,
+      "editorYmm": 2186.2425447316105
+    },
+    {
+      "id": "cut56-sunset-007_flower-object",
+      "assetId": "cut56-sunset-007_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 07",
+      "xMeters": -1.2034716796875,
+      "yMeters": -0.6503379721669981,
+      "widthMeters": 0.6224853515625,
+      "heightMeters": 0.4912127236580517,
+      "rotationZ": 0,
+      "sortingOrder": 6,
+      "opacity": 1,
+      "editorXmm": 5567.78564453125,
+      "editorYmm": 2144.731610337972
+    },
+    {
+      "id": "cut56-sunset-008_flower-object",
+      "assetId": "cut56-sunset-008_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 08",
+      "xMeters": -0.079539794921875,
+      "yMeters": -0.9132405566600398,
+      "widthMeters": 0.56023681640625,
+      "heightMeters": 0.574234592445328,
+      "rotationZ": 0,
+      "sortingOrder": 7,
+      "opacity": 1,
+      "editorXmm": 6722.841796875,
+      "editorYmm": 2366.123260437376
+    },
+    {
+      "id": "cut56-sunset-009_flower-object",
+      "assetId": "cut56-sunset-009_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 09",
+      "xMeters": 0.87839599609375,
+      "yMeters": -0.9858846918489064,
+      "widthMeters": 0.71931640625,
+      "heightMeters": 0.553479125248509,
+      "rotationZ": 0,
+      "sortingOrder": 8,
+      "opacity": 1,
+      "editorXmm": 7601.23779296875,
+      "editorYmm": 2449.145129224652
+    },
+    {
+      "id": "cut56-sunset-010_flower-object",
+      "assetId": "cut56-sunset-010_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 10",
+      "xMeters": 1.836331787109375,
+      "yMeters": -1.106958250497018,
+      "widthMeters": 0.62940185546875,
+      "heightMeters": 0.5465606361829026,
+      "rotationZ": 0,
+      "sortingOrder": 9,
+      "opacity": 1,
+      "editorXmm": 8604.130859375,
+      "editorYmm": 2573.6779324055665
+    },
+    {
+      "id": "cut56-sunset-011_flower-object",
+      "assetId": "cut56-sunset-011_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 11",
+      "xMeters": 2.472650146484375,
+      "yMeters": -1.4563419483101392,
+      "widthMeters": 0.78156494140625,
+      "heightMeters": 0.5673161033797216,
+      "rotationZ": 0,
+      "sortingOrder": 10,
+      "opacity": 1,
+      "editorXmm": 9164.36767578125,
+      "editorYmm": 2912.6838966202786
+    },
+    {
+      "id": "cut56-sunset-012_flower-object",
+      "assetId": "cut56-sunset-012_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 12",
+      "xMeters": 3.0570947265625,
+      "yMeters": -1.2557057654075543,
+      "widthMeters": 0.5948193359375,
+      "heightMeters": 0.5673161033797216,
+      "rotationZ": 0,
+      "sortingOrder": 11,
+      "opacity": 1,
+      "editorXmm": 9842.18505859375,
+      "editorYmm": 2712.0477137176936
+    },
+    {
+      "id": "cut56-sunset-013_flower-object",
+      "assetId": "cut56-sunset-013_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 13",
+      "xMeters": 3.835201416015625,
+      "yMeters": -1.0723658051689862,
+      "widthMeters": 0.58790283203125,
+      "heightMeters": 0.43586481113320075,
+      "rotationZ": 0,
+      "sortingOrder": 12,
+      "opacity": 1,
+      "editorXmm": 10623.75,
+      "editorYmm": 2594.4333996023856
+    },
+    {
+      "id": "cut56-sunset-014_flower-object",
+      "assetId": "cut56-sunset-014_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 14",
+      "xMeters": 4.2743994140625,
+      "yMeters": -0.8682703777335983,
+      "widthMeters": 0.580986328125,
+      "heightMeters": 0.5811530815109344,
+      "rotationZ": 0,
+      "sortingOrder": 13,
+      "opacity": 1,
+      "editorXmm": 11066.40625,
+      "editorYmm": 2317.693836978131
+    },
+    {
+      "id": "cut56-sunset-015_flower-object",
+      "assetId": "cut56-sunset-015_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 15",
+      "xMeters": 5.1873779296875,
+      "yMeters": -0.43932405566600397,
+      "widthMeters": 0.636318359375,
+      "heightMeters": 0.5396421471172963,
+      "rotationZ": 0,
+      "sortingOrder": 14,
+      "opacity": 1,
+      "editorXmm": 11951.71875,
+      "editorYmm": 1909.5029821073558
+    },
+    {
+      "id": "cut56-sunset-016_flower-object",
+      "assetId": "cut56-sunset-016_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 16",
+      "xMeters": 5.681907958984375,
+      "yMeters": -0.49467196819085485,
+      "widthMeters": 0.44957275390625,
+      "heightMeters": 0.47045725646123265,
+      "rotationZ": 0,
+      "sortingOrder": 15,
+      "opacity": 1,
+      "editorXmm": 12539.62158203125,
+      "editorYmm": 1999.4433399602385
+    },
+    {
+      "id": "cut56-sunset-017_flower-object",
+      "assetId": "cut56-sunset-017_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 17",
+      "xMeters": 6.159146728515625,
+      "yMeters": -0.16950298210735576,
+      "widthMeters": 0.58790283203125,
+      "heightMeters": 0.5258051689860834,
+      "rotationZ": 0,
+      "sortingOrder": 16,
+      "opacity": 1,
+      "editorXmm": 12947.6953125,
+      "editorYmm": 1646.600397614314
+    },
+    {
+      "id": "cut56-sunset-018_flower-object",
+      "assetId": "cut56-sunset-018_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 18",
+      "xMeters": 6.816214599609375,
+      "yMeters": -0.20063618290258434,
+      "widthMeters": 0.53257080078125,
+      "heightMeters": 0.5050497017892644,
+      "rotationZ": 0,
+      "sortingOrder": 17,
+      "opacity": 1,
+      "editorXmm": 13632.42919921875,
+      "editorYmm": 1688.1113320079521
+    },
+    {
+      "id": "cut56-sunset-019_flower-object",
+      "assetId": "cut56-sunset-019_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 19",
+      "xMeters": 6.7505078125,
+      "yMeters": -0.7921669980119287,
+      "widthMeters": 0.580986328125,
+      "heightMeters": 0.49813121272365807,
+      "rotationZ": 0,
+      "sortingOrder": 18,
+      "opacity": 1,
+      "editorXmm": 13542.5146484375,
+      "editorYmm": 2283.1013916500997
+    },
+    {
+      "id": "cut56-sunset-020_flower-object",
+      "assetId": "cut56-sunset-020_flower",
+      "name": "노을 · 레드 · 원본 꽃·주변 잎 영역 20",
+      "xMeters": 5.6023681640625,
+      "yMeters": -1.0170178926441351,
+      "widthMeters": 0.6224853515625,
+      "heightMeters": 0.6157455268389662,
+      "rotationZ": 0,
+      "sortingOrder": 19,
+      "opacity": 1,
+      "editorXmm": 12373.62548828125,
+      "editorYmm": 2449.145129224652
+    },
+    {
+      "id": "cut56-sunset-021_decor-object",
+      "assetId": "cut56-sunset-021_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 01",
+      "xMeters": -5.66461669921875,
+      "yMeters": -1.3733200795228624,
+      "widthMeters": 2.8357666015625,
+      "heightMeters": 0.7333598409542743,
+      "rotationZ": 0,
+      "sortingOrder": 20,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 2746.6401590457253
+    },
+    {
+      "id": "cut56-sunset-022_decor-object",
+      "assetId": "cut56-sunset-022_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 02",
+      "xMeters": -4.1360693359375,
+      "yMeters": -1.5601192842942346,
+      "widthMeters": 0.221328125,
+      "heightMeters": 0.3597614314115308,
+      "rotationZ": 0,
+      "sortingOrder": 21,
+      "opacity": 1,
+      "editorXmm": 2835.7666015625,
+      "editorYmm": 3120.238568588469
+    },
+    {
+      "id": "cut56-sunset-023_decor-object",
+      "assetId": "cut56-sunset-023_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 03",
+      "xMeters": 0.287034912109375,
+      "yMeters": -1.5289860834990059,
+      "widthMeters": 1.48704833984375,
+      "heightMeters": 0.42202783300198804,
+      "rotationZ": 0,
+      "sortingOrder": 22,
+      "opacity": 1,
+      "editorXmm": 6626.0107421875,
+      "editorYmm": 3057.9721669980117
+    },
+    {
+      "id": "cut56-sunset-024_decor-object",
+      "assetId": "cut56-sunset-024_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 04",
+      "xMeters": 3.648455810546875,
+      "yMeters": -1.3906163021868787,
+      "widthMeters": 1.21038818359375,
+      "heightMeters": 0.6987673956262426,
+      "rotationZ": 0,
+      "sortingOrder": 23,
+      "opacity": 1,
+      "editorXmm": 10125.76171875,
+      "editorYmm": 2781.2326043737576
+    },
+    {
+      "id": "cut56-sunset-025_decor-object",
+      "assetId": "cut56-sunset-025_decor",
+      "name": "노을 · 레드 · 현무암·주변 잎 05",
+      "xMeters": 5.668074951171875,
+      "yMeters": -1.411371769383698,
+      "widthMeters": 2.82885009765625,
+      "heightMeters": 0.6572564612326044,
+      "rotationZ": 0,
+      "sortingOrder": 24,
+      "opacity": 1,
+      "editorXmm": 11336.14990234375,
+      "editorYmm": 2822.743538767396
+    },
+    {
+      "id": "cut56-sunset-026_grass-object",
+      "assetId": "cut56-sunset-026_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 01 · 풀·잎·가려진 꽃",
+      "xMeters": -6.1971875,
+      "yMeters": -0.5846123260437378,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.310775347912525,
+      "rotationZ": 0,
+      "sortingOrder": 25,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 1169.2246520874753
+    },
+    {
+      "id": "cut56-sunset-027_grass-object",
+      "assetId": "cut56-sunset-027_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 02 · 풀·잎·가려진 꽃",
+      "xMeters": -4.4265625,
+      "yMeters": -0.6537972166998011,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.172405566600397,
+      "rotationZ": 0,
+      "sortingOrder": 26,
+      "opacity": 1,
+      "editorXmm": 1770.625,
+      "editorYmm": 1307.5944333996024
+    },
+    {
+      "id": "cut56-sunset-028_grass-object",
+      "assetId": "cut56-sunset-028_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 03 · 풀·잎·가려진 꽃",
+      "xMeters": -2.6559375,
+      "yMeters": -0.6918489065606364,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0963021868787277,
+      "rotationZ": 0,
+      "sortingOrder": 27,
+      "opacity": 1,
+      "editorXmm": 3541.25,
+      "editorYmm": 1383.6978131212725
+    },
+    {
+      "id": "cut56-sunset-029_grass-object",
+      "assetId": "cut56-sunset-029_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 04 · 풀·잎·가려진 꽃",
+      "xMeters": -0.8853125,
+      "yMeters": -0.7056858846918492,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0686282306163024,
+      "rotationZ": 0,
+      "sortingOrder": 28,
+      "opacity": 1,
+      "editorXmm": 5311.875,
+      "editorYmm": 1411.371769383698
+    },
+    {
+      "id": "cut56-sunset-030_grass-object",
+      "assetId": "cut56-sunset-030_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 05 · 풀·잎·가려진 꽃",
+      "xMeters": 0.8853125,
+      "yMeters": -0.7056858846918492,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0686282306163024,
+      "rotationZ": 0,
+      "sortingOrder": 29,
+      "opacity": 1,
+      "editorXmm": 7082.5,
+      "editorYmm": 1411.371769383698
+    },
+    {
+      "id": "cut56-sunset-031_grass-object",
+      "assetId": "cut56-sunset-031_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 06 · 풀·잎·가려진 꽃",
+      "xMeters": 2.6559375,
+      "yMeters": -0.6918489065606364,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0963021868787277,
+      "rotationZ": 0,
+      "sortingOrder": 30,
+      "opacity": 1,
+      "editorXmm": 8853.125,
+      "editorYmm": 1383.6978131212725
+    },
+    {
+      "id": "cut56-sunset-032_grass-object",
+      "assetId": "cut56-sunset-032_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 07 · 풀·잎·가려진 꽃",
+      "xMeters": 4.4265625,
+      "yMeters": -0.6537972166998011,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.172405566600397,
+      "rotationZ": 0,
+      "sortingOrder": 31,
+      "opacity": 1,
+      "editorXmm": 10623.75,
+      "editorYmm": 1307.5944333996024
+    },
+    {
+      "id": "cut56-sunset-033_grass-object",
+      "assetId": "cut56-sunset-033_grass",
+      "name": "노을 · 레드 · 원본 전경 연결부 08 · 풀·잎·가려진 꽃",
+      "xMeters": 6.1971875,
+      "yMeters": -0.5846123260437378,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.310775347912525,
+      "rotationZ": 0,
+      "sortingOrder": 32,
+      "opacity": 1,
+      "editorXmm": 12394.375,
+      "editorYmm": 1169.2246520874753
+    },
+    {
+      "id": "cut56-sunset-034_particle-object",
+      "assetId": "cut56-sunset-034_particle",
+      "name": "노을 · 레드 · 원본 빛 입자 01",
+      "xMeters": -2.12336669921875,
+      "yMeters": 0.7887077534791251,
+      "widthMeters": 4.2467333984375,
+      "heightMeters": 0.9201590457256461,
+      "rotationZ": 0,
+      "sortingOrder": 33,
+      "opacity": 1,
+      "editorXmm": 2835.7666015625,
+      "editorYmm": 491.2127236580517
+    },
+    {
+      "id": "cut56-sunset-035_particle-object",
+      "assetId": "cut56-sunset-035_particle",
+      "name": "노을 · 레드 · 원본 빛 입자 02",
+      "xMeters": 3.54125,
+      "yMeters": 0.8267594433399602,
+      "widthMeters": 7.0825,
+      "heightMeters": 0.9962624254473161,
+      "rotationZ": 0,
+      "sortingOrder": 34,
+      "opacity": 1,
+      "editorXmm": 7082.5,
+      "editorYmm": 415.1093439363817
+    }
+  ],
+  "styles": [],
+  "background": {
+    "image": "ML_BG01_LT01_Background_SourceCut_v56.png",
+    "fit": "cover",
+    "widthPixels": 4096,
+    "heightPixels": 1006
+  }
+}

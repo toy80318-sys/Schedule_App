@@ -3,12 +3,12 @@
  const E=window.jejuEditor,data=window.jejuFinalCatalog;
  const panel=document.createElement('section');panel.style.cssText='padding:12px;border:1px solid #6da699;border-radius:10px;margin-bottom:12px;background:#173b32';
  const title=document.createElement('h3');title.textContent='이전 v44 요소 배치 · 4가지 조명';
- const note=document.createElement('p');note.className='note';note.textContent='이전 개별 요소를 사용한 배치입니다. 최신 소스는 v55 분리 PNG 패널에서 여세요. 배경을 선택하면 이전 작업을 저장본에 보관하고 새 배치를 엽니다.';
+ const note=document.createElement('p');note.className='note';note.textContent='이전 개별 요소를 사용한 배치입니다. 최신 원본 분리는 v56 패널에서 여세요. 배경을 선택하면 이전 작업을 저장본에 보관하고 새 배치를 엽니다.';
  panel.append(title,note);
  async function applyScene(scene){await E.ready;await E.useSample(structuredClone(scene.project));E.notice(scene.name+' · 통합 유화 기준 배치를 열었습니다. 이전 배치는 저장본에 보관했습니다.')}
  for(const scene of data.scenes){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=scene.name;b.style.margin='3px';b.onclick=async()=>{b.disabled=true;try{await applyScene(scene)}catch(error){E.notice(error.message)}finally{b.disabled=false}};panel.append(b)}
  const link=document.createElement('a');link.className='btn';link.href='oil-art.html';link.target='_blank';link.rel='noopener';link.textContent='기준 통합 유화 보기';panel.append(link);
- document.getElementById('items').before(panel);
+ if(!window.jejuCutout56||['39','44'].includes(new URL(location.href).searchParams.get('layout')))document.getElementById('items').before(panel);
  await E.ready;
  await window.jejuHandoff.ready;
  const requested=new URL(location.href);

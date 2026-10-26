@@ -1,0 +1,965 @@
+{
+  "format": "jeju-unity-v1",
+  "version": 1,
+  "name": "밤 · 퍼플 · v56 통합본 직접 분리",
+  "units": "meters",
+  "widthMm": 14165,
+  "heightMm": 3480,
+  "defaultFps": 30,
+  "assets": [
+    {
+      "id": "cut56-night-001_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_001_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-001_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-002_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_002_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-002_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-003_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 03",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_003_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-003_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-004_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 04",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_004_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-004_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-005_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 05",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_005_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-005_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-006_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 06",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_006_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-006_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-007_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 07",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_007_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-007_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-008_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 08",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_008_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-008_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-009_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 09",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_009_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-009_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-010_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 10",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_010_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-010_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-011_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 11",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_011_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-011_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-012_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 12",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_012_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-012_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-013_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 13",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_013_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-013_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-014_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 14",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_014_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-014_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-015_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 15",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_015_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-015_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-016_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 16",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_016_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-016_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-017_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 17",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_017_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-017_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-018_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 18",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_018_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-018_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-019_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 19",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_019_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-019_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-020_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 20",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_020_flower_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-020_flower",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-021_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_021_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-021_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-022_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_022_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-022_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-023_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 03",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_023_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-023_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-024_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 04",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_024_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-024_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-025_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 05",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_025_decor_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-025_decor",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-026_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 01 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_026_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-026_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-027_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 02 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_027_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-027_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-028_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 03 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_028_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-028_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-029_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 04 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_029_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-029_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-030_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 05 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_030_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-030_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-031_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 06 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_031_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-031_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-032_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 07 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_032_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-032_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-033_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 08 · 풀·잎·가려진 꽃",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_033_grass_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-033_grass",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-034_particle",
+      "name": "밤 · 퍼플 · 원본 빛 입자 01",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_034_particle_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-034_particle",
+      "quality": "visible-source-cutout-still"
+    },
+    {
+      "id": "cut56-night-035_particle",
+      "name": "밤 · 퍼플 · 원본 빛 입자 02",
+      "kind": "sprite",
+      "frames": [
+        "ML_BG03_LT03_035_particle_SourceCut_v56.png"
+      ],
+      "fps": 0,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "sourceAssetId": "cut56-night-035_particle",
+      "quality": "visible-source-cutout-still"
+    }
+  ],
+  "objects": [
+    {
+      "id": "cut56-night-001_flower-object",
+      "assetId": "cut56-night-001_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 01",
+      "xMeters": -6.242144775390625,
+      "yMeters": -0.5258051689860835,
+      "widthMeters": 0.78156494140625,
+      "heightMeters": 0.6987673956262426,
+      "rotationZ": 0,
+      "sortingOrder": 0,
+      "opacity": 1,
+      "editorXmm": 449.57275390625,
+      "editorYmm": 1916.4214711729624
+    },
+    {
+      "id": "cut56-night-002_flower-object",
+      "assetId": "cut56-night-002_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 02",
+      "xMeters": -5.55395263671875,
+      "yMeters": -0.5292644135188865,
+      "widthMeters": 0.636318359375,
+      "heightMeters": 0.5673161033797216,
+      "rotationZ": 0,
+      "sortingOrder": 1,
+      "opacity": 1,
+      "editorXmm": 1210.38818359375,
+      "editorYmm": 1985.6063618290257
+    },
+    {
+      "id": "cut56-night-003_flower-object",
+      "assetId": "cut56-night-003_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 03",
+      "xMeters": -4.305523681640625,
+      "yMeters": -0.5292644135188865,
+      "widthMeters": 0.65706787109375,
+      "heightMeters": 0.6226640159045725,
+      "rotationZ": 0,
+      "sortingOrder": 2,
+      "opacity": 1,
+      "editorXmm": 2448.4423828125,
+      "editorYmm": 1957.9324055666002
+    },
+    {
+      "id": "cut56-night-004_flower-object",
+      "assetId": "cut56-night-004_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 04",
+      "xMeters": -3.9147412109375,
+      "yMeters": -0.3217097415506957,
+      "widthMeters": 0.6224853515625,
+      "heightMeters": 0.6365009940357853,
+      "rotationZ": 0,
+      "sortingOrder": 3,
+      "opacity": 1,
+      "editorXmm": 2856.51611328125,
+      "editorYmm": 1743.459244532803
+    },
+    {
+      "id": "cut56-night-005_flower-object",
+      "assetId": "cut56-night-005_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 05",
+      "xMeters": -2.87034912109375,
+      "yMeters": -0.6295825049701789,
+      "widthMeters": 0.6224853515625,
+      "heightMeters": 0.5880715705765407,
+      "rotationZ": 0,
+      "sortingOrder": 4,
+      "opacity": 1,
+      "editorXmm": 3900.908203125,
+      "editorYmm": 2075.5467196819086
+    },
+    {
+      "id": "cut56-night-006_flower-object",
+      "assetId": "cut56-night-006_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 06",
+      "xMeters": -2.237489013671875,
+      "yMeters": -1.030854870775348,
+      "widthMeters": 0.76773193359375,
+      "heightMeters": 0.629582504970179,
+      "rotationZ": 0,
+      "sortingOrder": 5,
+      "opacity": 1,
+      "editorXmm": 4461.14501953125,
+      "editorYmm": 2456.0636182902585
+    },
+    {
+      "id": "cut56-night-007_flower-object",
+      "assetId": "cut56-night-007_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 07",
+      "xMeters": -0.87839599609375,
+      "yMeters": -0.7644930417495029,
+      "widthMeters": 0.7331494140625,
+      "heightMeters": 0.6780119284294234,
+      "rotationZ": 0,
+      "sortingOrder": 6,
+      "opacity": 1,
+      "editorXmm": 5837.529296875,
+      "editorYmm": 2165.4870775347913
+    },
+    {
+      "id": "cut56-night-008_flower-object",
+      "assetId": "cut56-night-008_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 08",
+      "xMeters": 0.432281494140625,
+      "yMeters": -0.8648111332007952,
+      "widthMeters": 0.64323486328125,
+      "heightMeters": 0.6987673956262426,
+      "rotationZ": 0,
+      "sortingOrder": 7,
+      "opacity": 1,
+      "editorXmm": 7193.1640625,
+      "editorYmm": 2255.427435387674
+    },
+    {
+      "id": "cut56-night-009_flower-object",
+      "assetId": "cut56-night-009_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 09",
+      "xMeters": 1.549296875,
+      "yMeters": -0.975506958250497,
+      "widthMeters": 0.6501513671875,
+      "heightMeters": 0.5880715705765407,
+      "rotationZ": 0,
+      "sortingOrder": 8,
+      "opacity": 1,
+      "editorXmm": 8306.72119140625,
+      "editorYmm": 2421.471172962227
+    },
+    {
+      "id": "cut56-night-010_flower-object",
+      "assetId": "cut56-night-010_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 10",
+      "xMeters": 2.62135498046875,
+      "yMeters": -0.7229821073558649,
+      "widthMeters": 0.663984375,
+      "heightMeters": 0.6365009940357853,
+      "rotationZ": 0,
+      "sortingOrder": 9,
+      "opacity": 1,
+      "editorXmm": 9371.86279296875,
+      "editorYmm": 2144.731610337972
+    },
+    {
+      "id": "cut56-night-011_flower-object",
+      "assetId": "cut56-night-011_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 11",
+      "xMeters": 3.786785888671875,
+      "yMeters": -0.5327236580516899,
+      "widthMeters": 0.69856689453125,
+      "heightMeters": 0.6157455268389662,
+      "rotationZ": 0,
+      "sortingOrder": 10,
+      "opacity": 1,
+      "editorXmm": 10520.00244140625,
+      "editorYmm": 1964.8508946322067
+    },
+    {
+      "id": "cut56-night-012_flower-object",
+      "assetId": "cut56-night-012_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 12",
+      "xMeters": 5.173544921875,
+      "yMeters": -0.6987673956262427,
+      "widthMeters": 0.71931640625,
+      "heightMeters": 0.8094632206759443,
+      "rotationZ": 0,
+      "sortingOrder": 11,
+      "opacity": 1,
+      "editorXmm": 11896.38671875,
+      "editorYmm": 2034.0357852882705
+    },
+    {
+      "id": "cut56-night-013_flower-object",
+      "assetId": "cut56-night-013_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 13",
+      "xMeters": 6.07960693359375,
+      "yMeters": -0.8544333996023857,
+      "widthMeters": 0.663984375,
+      "heightMeters": 0.5673161033797216,
+      "rotationZ": 0,
+      "sortingOrder": 12,
+      "opacity": 1,
+      "editorXmm": 12830.11474609375,
+      "editorYmm": 2310.775347912525
+    },
+    {
+      "id": "cut56-night-014_flower-object",
+      "assetId": "cut56-night-014_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 14",
+      "xMeters": 6.387391357421875,
+      "yMeters": -0.44970178926441357,
+      "widthMeters": 0.65706787109375,
+      "heightMeters": 0.574234592445328,
+      "rotationZ": 0,
+      "sortingOrder": 13,
+      "opacity": 1,
+      "editorXmm": 13141.357421875,
+      "editorYmm": 1902.5844930417495
+    },
+    {
+      "id": "cut56-night-015_flower-object",
+      "assetId": "cut56-night-015_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 15",
+      "xMeters": -6.657135009765625,
+      "yMeters": 0.020755467196818925,
+      "widthMeters": 0.42190673828125,
+      "heightMeters": 0.975506958250497,
+      "rotationZ": 0,
+      "sortingOrder": 14,
+      "opacity": 1,
+      "editorXmm": 214.41162109375,
+      "editorYmm": 1231.4910536779325
+    },
+    {
+      "id": "cut56-night-016_flower-object",
+      "assetId": "cut56-night-016_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 16",
+      "xMeters": -5.619659423828125,
+      "yMeters": -0.04497017892644135,
+      "widthMeters": 0.40807373046875,
+      "heightMeters": 0.5949900596421471,
+      "rotationZ": 0,
+      "sortingOrder": 15,
+      "opacity": 1,
+      "editorXmm": 1258.8037109375,
+      "editorYmm": 1487.4751491053678
+    },
+    {
+      "id": "cut56-night-017_flower-object",
+      "assetId": "cut56-night-017_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 17",
+      "xMeters": -4.88996826171875,
+      "yMeters": -0.7333598409542743,
+      "widthMeters": 0.4288232421875,
+      "heightMeters": 0.8371371769383698,
+      "rotationZ": 0,
+      "sortingOrder": 16,
+      "opacity": 1,
+      "editorXmm": 1978.1201171875,
+      "editorYmm": 2054.7912524850894
+    },
+    {
+      "id": "cut56-night-018_flower-object",
+      "assetId": "cut56-night-018_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 18",
+      "xMeters": -1.3694677734375,
+      "yMeters": -0.4289463220675943,
+      "widthMeters": 0.4564892578125,
+      "heightMeters": 0.8509741550695826,
+      "rotationZ": 0,
+      "sortingOrder": 17,
+      "opacity": 1,
+      "editorXmm": 5484.78759765625,
+      "editorYmm": 1743.459244532803
+    },
+    {
+      "id": "cut56-night-019_flower-object",
+      "assetId": "cut56-night-019_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 19",
+      "xMeters": 1.621920166015625,
+      "yMeters": -0.3701391650099402,
+      "widthMeters": 0.44957275390625,
+      "heightMeters": 0.7333598409542743,
+      "rotationZ": 0,
+      "sortingOrder": 18,
+      "opacity": 1,
+      "editorXmm": 8479.6337890625,
+      "editorYmm": 1743.459244532803
+    },
+    {
+      "id": "cut56-night-020_flower-object",
+      "assetId": "cut56-night-020_flower",
+      "name": "밤 · 퍼플 · 원본 꽃·주변 잎 영역 20",
+      "xMeters": 4.841552734375,
+      "yMeters": -0.5327236580516896,
+      "widthMeters": 0.4288232421875,
+      "heightMeters": 0.823300198807157,
+      "rotationZ": 0,
+      "sortingOrder": 19,
+      "opacity": 1,
+      "editorXmm": 11709.64111328125,
+      "editorYmm": 1861.0735586481112
+    },
+    {
+      "id": "cut56-night-021_decor-object",
+      "assetId": "cut56-night-021_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 01",
+      "xMeters": -5.66461669921875,
+      "yMeters": -1.3733200795228624,
+      "widthMeters": 2.8357666015625,
+      "heightMeters": 0.7333598409542743,
+      "rotationZ": 0,
+      "sortingOrder": 20,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 2746.6401590457253
+    },
+    {
+      "id": "cut56-night-022_decor-object",
+      "assetId": "cut56-night-022_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 02",
+      "xMeters": -4.1360693359375,
+      "yMeters": -1.5601192842942346,
+      "widthMeters": 0.221328125,
+      "heightMeters": 0.3597614314115308,
+      "rotationZ": 0,
+      "sortingOrder": 21,
+      "opacity": 1,
+      "editorXmm": 2835.7666015625,
+      "editorYmm": 3120.238568588469
+    },
+    {
+      "id": "cut56-night-023_decor-object",
+      "assetId": "cut56-night-023_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 03",
+      "xMeters": 0.287034912109375,
+      "yMeters": -1.5289860834990059,
+      "widthMeters": 1.48704833984375,
+      "heightMeters": 0.42202783300198804,
+      "rotationZ": 0,
+      "sortingOrder": 22,
+      "opacity": 1,
+      "editorXmm": 6626.0107421875,
+      "editorYmm": 3057.9721669980117
+    },
+    {
+      "id": "cut56-night-024_decor-object",
+      "assetId": "cut56-night-024_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 04",
+      "xMeters": 3.648455810546875,
+      "yMeters": -1.3906163021868787,
+      "widthMeters": 1.21038818359375,
+      "heightMeters": 0.6987673956262426,
+      "rotationZ": 0,
+      "sortingOrder": 23,
+      "opacity": 1,
+      "editorXmm": 10125.76171875,
+      "editorYmm": 2781.2326043737576
+    },
+    {
+      "id": "cut56-night-025_decor-object",
+      "assetId": "cut56-night-025_decor",
+      "name": "밤 · 퍼플 · 현무암·주변 잎 05",
+      "xMeters": 5.668074951171875,
+      "yMeters": -1.394075546719682,
+      "widthMeters": 2.82885009765625,
+      "heightMeters": 0.6918489065606362,
+      "rotationZ": 0,
+      "sortingOrder": 24,
+      "opacity": 1,
+      "editorXmm": 11336.14990234375,
+      "editorYmm": 2788.1510934393636
+    },
+    {
+      "id": "cut56-night-026_grass-object",
+      "assetId": "cut56-night-026_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 01 · 풀·잎·가려진 꽃",
+      "xMeters": -6.1971875,
+      "yMeters": -0.37359840954274376,
+      "widthMeters": 1.770625,
+      "heightMeters": 1.8887475149105368,
+      "rotationZ": 0,
+      "sortingOrder": 25,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 1169.2246520874753
+    },
+    {
+      "id": "cut56-night-027_grass-object",
+      "assetId": "cut56-night-027_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 02 · 풀·잎·가려진 꽃",
+      "xMeters": -4.4265625,
+      "yMeters": -0.6537972166998011,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.172405566600397,
+      "rotationZ": 0,
+      "sortingOrder": 26,
+      "opacity": 1,
+      "editorXmm": 1770.625,
+      "editorYmm": 1307.5944333996024
+    },
+    {
+      "id": "cut56-night-028_grass-object",
+      "assetId": "cut56-night-028_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 03 · 풀·잎·가려진 꽃",
+      "xMeters": -2.6559375,
+      "yMeters": -0.6918489065606364,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0963021868787277,
+      "rotationZ": 0,
+      "sortingOrder": 27,
+      "opacity": 1,
+      "editorXmm": 3541.25,
+      "editorYmm": 1383.6978131212725
+    },
+    {
+      "id": "cut56-night-029_grass-object",
+      "assetId": "cut56-night-029_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 04 · 풀·잎·가려진 꽃",
+      "xMeters": -0.8853125,
+      "yMeters": -0.7056858846918492,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0686282306163024,
+      "rotationZ": 0,
+      "sortingOrder": 28,
+      "opacity": 1,
+      "editorXmm": 5311.875,
+      "editorYmm": 1411.371769383698
+    },
+    {
+      "id": "cut56-night-030_grass-object",
+      "assetId": "cut56-night-030_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 05 · 풀·잎·가려진 꽃",
+      "xMeters": 0.8853125,
+      "yMeters": -0.7056858846918492,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0686282306163024,
+      "rotationZ": 0,
+      "sortingOrder": 29,
+      "opacity": 1,
+      "editorXmm": 7082.5,
+      "editorYmm": 1411.371769383698
+    },
+    {
+      "id": "cut56-night-031_grass-object",
+      "assetId": "cut56-night-031_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 06 · 풀·잎·가려진 꽃",
+      "xMeters": 2.6559375,
+      "yMeters": -0.6918489065606364,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.0963021868787277,
+      "rotationZ": 0,
+      "sortingOrder": 30,
+      "opacity": 1,
+      "editorXmm": 8853.125,
+      "editorYmm": 1383.6978131212725
+    },
+    {
+      "id": "cut56-night-032_grass-object",
+      "assetId": "cut56-night-032_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 07 · 풀·잎·가려진 꽃",
+      "xMeters": 4.4265625,
+      "yMeters": -0.6537972166998011,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.172405566600397,
+      "rotationZ": 0,
+      "sortingOrder": 31,
+      "opacity": 1,
+      "editorXmm": 10623.75,
+      "editorYmm": 1307.5944333996024
+    },
+    {
+      "id": "cut56-night-033_grass-object",
+      "assetId": "cut56-night-033_grass",
+      "name": "밤 · 퍼플 · 원본 전경 연결부 08 · 풀·잎·가려진 꽃",
+      "xMeters": 6.1971875,
+      "yMeters": -0.4808349900596422,
+      "widthMeters": 1.770625,
+      "heightMeters": 2.1032206759443337,
+      "rotationZ": 0,
+      "sortingOrder": 32,
+      "opacity": 1,
+      "editorXmm": 12394.375,
+      "editorYmm": 1169.2246520874753
+    },
+    {
+      "id": "cut56-night-034_particle-object",
+      "assetId": "cut56-night-034_particle",
+      "name": "밤 · 퍼플 · 원본 빛 입자 01",
+      "xMeters": -3.5550830078125,
+      "yMeters": 0.8267594433399602,
+      "widthMeters": 7.054833984375,
+      "heightMeters": 0.9962624254473161,
+      "rotationZ": 0,
+      "sortingOrder": 33,
+      "opacity": 1,
+      "editorXmm": 0.0,
+      "editorYmm": 415.1093439363817
+    },
+    {
+      "id": "cut56-night-035_particle-object",
+      "assetId": "cut56-night-035_particle",
+      "name": "밤 · 퍼플 · 원본 빛 입자 02",
+      "xMeters": 3.468626708984375,
+      "yMeters": 0.8302186878727634,
+      "widthMeters": 6.92342041015625,
+      "heightMeters": 0.9893439363817098,
+      "rotationZ": 0,
+      "sortingOrder": 34,
+      "opacity": 1,
+      "editorXmm": 7089.41650390625,
+      "editorYmm": 415.1093439363817
+    }
+  ],
+  "styles": [],
+  "background": {
+    "image": "ML_BG03_LT03_Background_SourceCut_v56.png",
+    "fit": "cover",
+    "widthPixels": 4096,
+    "heightPixels": 1006
+  }
+}

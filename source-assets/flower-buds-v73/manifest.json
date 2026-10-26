@@ -1,0 +1,1211 @@
+{
+  "version": 73,
+  "date": "2026-10-27",
+  "count": 40,
+  "imageCount": 80,
+  "videoSubmittedCount": 0,
+  "quotedVideoCreditsPerItem": 3.75,
+  "quotedVideoCreditsTotal": 150,
+  "images": [
+    {
+      "index": 1,
+      "id": "whole62-sunset-flower-F01",
+      "name": "노을 · 동백꽃 · 크림슨 · 추상 유화",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F01_camellia_F01_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "1ddb0d73fdcc1005a0cdb33d5de7ee32d351632789917aaa461c71b1ce1bf944",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F01_camellia_F01_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "32369734f0b03bb75a8db55f59c82b1ac0b0c39a16ef11be9c9a4c8ae0704762",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 2,
+      "id": "whole62-sunset-flower-F02",
+      "name": "노을 · 동백꽃 · 코랄 · 추상 유화",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F02_camellia_F02_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "6c26a180bd67dd119c1774ee3f985e3d946d7d4ecef5ea6d6f0c8b20025a5c3f",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F02_camellia_F02_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "7e51ab7422b9db08d576daa34cabc571eafea3851ee84582e6f92367e26304a5",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 3,
+      "id": "whole62-sunset-flower-F03",
+      "name": "노을 · 메밀꽃 · 블러시 핑크 · 추상 유화",
+      "theme": "sunset",
+      "species": "buckwheat",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F03_buckwheat_F03_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "89afe6660342cbf66d8520a4fe673c9b8cec2527df8c923ab5d566580e512563",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F03_buckwheat_F03_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "3c33b9fa3a64c5b7aa332f97e662e96d27583ff1596fb0a993cff1fba21c42f1",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 4,
+      "id": "whole62-sunset-flower-F04",
+      "name": "노을 · 메밀꽃 · 따뜻한 아이보리 · 추상 유화",
+      "theme": "sunset",
+      "species": "buckwheat",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F04_buckwheat_F04_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "b5340812a15e8a4b4f36fb5d82596fb96fd55217052d37695f5dedad41936c16",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F04_buckwheat_F04_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "ed7df408604e44d1fd79c16aff869491f29cfe5f75cd018eb863bf66622ace85",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 5,
+      "id": "whole62-sunset-flower-V05",
+      "name": "노을 · 넓은 꽃잎 · 비스듬한 동백 · 블러시 핑크",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F05_camellia_V05_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "eca67f8b7c21f62a4524ef30da3d3478f47f84406f0881c4597e7f70de2f5657",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F05_camellia_V05_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "ecd0ca59a275e116167bd862f9e77947b4229adaa8c4f415b386ca1ed5d58a58",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 6,
+      "id": "whole62-sunset-flower-V06",
+      "name": "노을 · 가느다란 방사형 · 코랄 금잔화 · 코랄",
+      "theme": "sunset",
+      "species": "marigold",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F06_marigold_V06_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "fc269db581fa4ccb5f4e5d3734f383de58e4e5fd361e631b3d83861926edf2fb",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F06_marigold_V06_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "fd29ca6f40d13e7bd584c94157687725903207ac4b13bebd9ca38adb841a9143",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 7,
+      "id": "whole62-day-flower-F05",
+      "name": "낮 · 금잔화 · 골든 옐로우 · 추상 유화",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F07_marigold_F05_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "f6ccf89948ee30d7647f996889abd2d3a9c5587a14aa823b59bff981c5d38fe6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F07_marigold_F05_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "36d37b6915302719582e10dfa3cf600af1b67417157dc0057006576a6b9756a6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 8,
+      "id": "whole62-day-flower-F06",
+      "name": "낮 · 금잔화 · 애프리콧 · 추상 유화",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F08_marigold_F06_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "9a3483e003aedd69aa650b9ef6610d5d3aa50e1cad6cb8afe48762fb22102577",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F08_marigold_F06_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "f85ff1abc78bbf9fdc9b48436769cd50bdc1a12dee9e27f762cc4c2b1cfd26c7",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 9,
+      "id": "whole62-day-flower-F07",
+      "name": "낮 · 유채꽃 · 레몬 · 추상 유화",
+      "theme": "day",
+      "species": "rapeseed",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F09_rapeseed_F07_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "dd87db401dcfd2b94d3c24fae476d6955fa263e63a283431abfab47819892cc3",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F09_rapeseed_F07_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "2ba3f7540e60ab99fd8aea378f7c2617b5bae16b09bb6bf5fd09e79083f16155",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 10,
+      "id": "whole62-day-flower-F08",
+      "name": "낮 · 유채꽃 · 페일 크림 · 추상 유화",
+      "theme": "day",
+      "species": "rapeseed",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F10_rapeseed_F08_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "a73e5b2b7a628e7aefd429de6a395ca0abcba9ee6848cb8d84ce229d964ddd11",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F10_rapeseed_F08_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "4dc3bc3d6a200ebeaf72b1b11cd79c21d5965f77d3d535853f6e93167bcc82b6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 11,
+      "id": "whole62-day-flower-V05",
+      "name": "낮 · 작은 꽃 · 성긴 메밀 · 페일 크림",
+      "theme": "day",
+      "species": "buckwheat",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F11_buckwheat_V05_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "7c14744a006f02606bf8358641fbed9bbb13d89646c0b065f56073132f860fe3",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F11_buckwheat_V05_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "40bd0921ab9b862a0c6f615fbc31daf73a36e74bed6c40a48f06dd589d33ccf3",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 12,
+      "id": "whole62-day-flower-V06",
+      "name": "낮 · 낮은 각도 · 펼쳐진 금잔화 · 골든 옐로우",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F12_marigold_V06_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "691f64112ba629bdf9a4901709d19ef8b82eccab4d4367f4a1e9458619f49285",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F12_marigold_V06_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "467de261468983e87fa00bb33f7157f178c2f6d3010d7a3bca9c555df32f11ee",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 13,
+      "id": "whole62-night-flower-F09",
+      "name": "밤 · 라벤더 · 딥 바이올렛 · 추상 유화",
+      "theme": "night",
+      "species": "lavender",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F13_lavender_F09_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "c427fc1d92025503ef6aea6793579fdb6f334050664b87c128d6bb2966030033",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F13_lavender_F09_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "0cab199e9c5c2326eeb1734f67b8148512da6eaf1daf5a1be964bdd23934eaea",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 14,
+      "id": "whole62-night-flower-F10",
+      "name": "밤 · 라벤더 · 라일락 · 추상 유화",
+      "theme": "night",
+      "species": "lavender",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F14_lavender_F10_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "883e5cf862a92f2cc2ca8d02a133d25755c32250ef44204ab212ff0b2b00b8c7",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F14_lavender_F10_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "16f59de379dde181ffddf74f8288e4fd5112ddec8c9ae83ec20732819e4b2451",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 15,
+      "id": "whole62-night-flower-F11",
+      "name": "밤 · 수국 · 페리윙클 · 추상 유화",
+      "theme": "night",
+      "species": "hydrangea",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F15_hydrangea_F11_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "a30385f61e7df5061ee12f7ba597bc9cab0561c43d7e00e6be9ec9537c0f7472",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F15_hydrangea_F11_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "4193f69b577d8217f828047d239056a07fd72980018e919a0c1888cbc27fd599",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 16,
+      "id": "whole62-night-flower-F12",
+      "name": "밤 · 수국 · 라벤더 핑크 · 추상 유화",
+      "theme": "night",
+      "species": "hydrangea",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F16_hydrangea_F12_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "da18f715afd1330389e06410099d81b0759133244509101a35a19240fd859f80",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F16_hydrangea_F12_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "d8dd23fd52f90488eb65e94fbaf8ca2d377d8f5525a0a8b9a6ebcfe041f8756d",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 17,
+      "id": "whole62-night-flower-V05",
+      "name": "밤 · 단순한 꽃잎 · 달빛 동백 · 라벤더 핑크",
+      "theme": "night",
+      "species": "camellia",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F17_camellia_V05_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "a7bc4d5bd1abb771d4642426cc522c000baaf839f89fb507ae7eb3c347f6f8a4",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F17_camellia_V05_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "7344ce8a97d5b05e77610ee09ea2b1ead4cb9cfe17c272f99d23930f6d9d9d35",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 18,
+      "id": "whole62-night-flower-V06",
+      "name": "밤 · 성긴 꽃송이 · 납작한 수국 · 페리윙클",
+      "theme": "night",
+      "species": "hydrangea",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F18_hydrangea_V06_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "97b1c7503f227809fc7449fdf97f2f056fa0c1081ef6e240b055e68d79f1f191",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F18_hydrangea_V06_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "63a4fbe6a6c10250d501052bb21b01feb5a8aa820b009c0e932e2514321a3c31",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 19,
+      "id": "whole62-morning-flower-F13",
+      "name": "아침 · 수국 · 스카이블루 · 추상 유화",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F19_hydrangea_F13_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "deaf496cf4cc673b1ad28ecd9e1d814dd0c8f3941f2143ef6cfca2f157422fb9",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F19_hydrangea_F13_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "8e559993cb6a2b92bb3999f93eb979a46cc88a6bb1ea29d4c44dd19cfd186d46",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 20,
+      "id": "whole62-morning-flower-F14",
+      "name": "아침 · 수국 · 코발트 · 추상 유화",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F20_hydrangea_F14_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "053ca5fad6c217eca0cc8af0ca8529d753a322860843be786fbb69f99be1b88c",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F20_hydrangea_F14_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "f3b019e9cb610d06f173b586a431e0b2bc519e32355015dce098173fbb817ce0",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 21,
+      "id": "whole62-morning-flower-F15",
+      "name": "아침 · 수국 · 페일 라벤더 · 추상 유화",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F21_hydrangea_F15_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "ef94dcbdef874926ed268159570a32eb4d8da23a2b0dba77322ae1364dfcba91",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F21_hydrangea_F15_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "7e6e58ac9bfede56e1296808771f9b0ffbf19dcdba74d0ce56fa5d445c680c76",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 22,
+      "id": "whole62-morning-flower-F16",
+      "name": "아침 · 수국 · 블루 아이보리 · 추상 유화",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F22_hydrangea_F16_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "4f0e440ce3328c3cb4036afb42ba58cb9f470809674e7a9b9864a888921e5268",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F22_hydrangea_F16_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "e2ee9289d14c6818c2ffc551ea9f5c617ab1c4baec020dbe2acb2573fdfd1ac6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 23,
+      "id": "whole62-morning-flower-V05",
+      "name": "아침 · 가느다란 꽃대 · 하늘빛 라벤더 · 스카이블루",
+      "theme": "morning",
+      "species": "lavender",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F23_lavender_V05_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "24579659245d246e5981be67ede48c04dbf8117389302f4d5e71d490a0e8446b",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F23_lavender_V05_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "e9e339aacd36f0da9e97d72989a8564c7bea9f766826cdc9935373cf1eea3a62",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 24,
+      "id": "whole62-morning-flower-V06",
+      "name": "아침 · 작은 꽃 · 푸른 아이보리 메밀 · 블루 아이보리",
+      "theme": "morning",
+      "species": "buckwheat",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F24_buckwheat_V06_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "53a014ff41da36a06abc1fa4ea562a579ee3a91fe8e26776715c9559783988f1",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F24_buckwheat_V06_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "0e5cc4d0b8c05bac64e06ca6c739a16b17c691a46c33ec05b70e98c5a6dd9727",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 25,
+      "id": "add68-day1",
+      "name": "낮 · 금잔화 · 가까운 색상 1",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F25_marigold_day1_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "ca1014f18f31d0c6d008ca086c11535fe60df59483668ecdccba295229f070e3",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F25_marigold_day1_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "de897760a5e4da56e0927ece8419291259ba5e98eadcd37b8ae3dabe3d75bd76",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 26,
+      "id": "add68-day2",
+      "name": "낮 · 금잔화 · 가까운 색상 2",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F26_marigold_day2_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "5a5885203e2e891813fba11e982e63f573537d34e0fb97eec6b132a9821ac6f0",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F26_marigold_day2_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "7b702bca52f64fdd45a7972191925765ffa9f553100a51b85c8329de4e2843a6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 27,
+      "id": "add68-day3",
+      "name": "낮 · 금잔화 · 가까운 색상 3",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F27_marigold_day3_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "accbb1e49285ba6a9e834194d0eff8aafab92846324c500bfb65052da33d7593",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F27_marigold_day3_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "d648c3012b48db7804a770e877bf88e7fc90a59464efc7dc5f5a544a8b748abb",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 28,
+      "id": "add68-day4",
+      "name": "낮 · 금잔화 · 가까운 색상 4",
+      "theme": "day",
+      "species": "marigold",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "keyHex": "0000FF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F28_marigold_day4_AbstractOil_Bud_Key0000FF_v73.png",
+          "sha256": "22a09a3eca2626952bdc2d91e8efcdfafc1a2ba4d057ef4a3cab5f73f8a755a5",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG02_LT02_F28_marigold_day4_AbstractOil_Bloom_Key0000FF_v73.png",
+          "sha256": "446dc03afc4dd9661f2394451215624d80c568a837a6b5af09614d715d9891e0",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 29,
+      "id": "add68-morning1",
+      "name": "아침 · 수국 · 가까운 색상 1",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F29_hydrangea_morning1_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "e601ff0111a6cf41b9839f975d4d810e315da4413ef2433e22a46ba1876d4561",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F29_hydrangea_morning1_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "c813d28f1492d59eaa97f0cf608704ab4fbe134c20281e36564555ad1d9a90c2",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 30,
+      "id": "add68-morning2",
+      "name": "아침 · 수국 · 가까운 색상 2",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F30_hydrangea_morning2_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "68bf00d3208d319a1bb04edd25da3d728c2f7db5bbd58cbb021eef0f036c9509",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F30_hydrangea_morning2_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "87356476cef12139d44ffa1c819ad5ce2dddb9e4ceec49bcb77bddb1dd9e2e85",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 31,
+      "id": "add68-morning3",
+      "name": "아침 · 수국 · 가까운 색상 3",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F31_hydrangea_morning3_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "6dbc7fb4fd61469c184f3f7db3e1a8d80c2daa03326fd1afc42dd688ef6bd2d6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F31_hydrangea_morning3_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "1bfe536001cf017d074a63b993059ba53b78f213472045c31b488ebb1d0936a4",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 32,
+      "id": "add68-morning4",
+      "name": "아침 · 수국 · 가까운 색상 4",
+      "theme": "morning",
+      "species": "hydrangea",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "keyHex": "FF8000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F32_hydrangea_morning4_AbstractOil_Bud_KeyFF8000_v73.png",
+          "sha256": "51d34c380682e2756fee070808851156f204f18a5ab13133baad9e075ac2fa00",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG04_LT04_F32_hydrangea_morning4_AbstractOil_Bloom_KeyFF8000_v73.png",
+          "sha256": "4e48854cd68b40d7648dff7fa8fb688d0eee64d58b0acdc856a25b1bc4cdf58c",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 33,
+      "id": "add68-night1",
+      "name": "밤 · 라벤더 · 가까운 색상 1",
+      "theme": "night",
+      "species": "lavender",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F33_lavender_night1_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "720f34a7fb7b1438979c20e5fb025f0c059f3c78bc7cf1af6be5381c346f8ed2",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F33_lavender_night1_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "bb311fc70146a6bc61b2c6e9b9031f71dc277926f416c69cbc51c79c72b42dd8",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 34,
+      "id": "add68-night2",
+      "name": "밤 · 라벤더 · 가까운 색상 2",
+      "theme": "night",
+      "species": "lavender",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F34_lavender_night2_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "2d43f1670c2663dc5261ae6d072636992ca0ebe53c1fb3a087bd70c4000d65f3",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F34_lavender_night2_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "4e9f1ccaf2150ab800aa93babbd2a9767fa08e3e3768662ff5b678c61a920dd6",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 35,
+      "id": "add68-night3",
+      "name": "밤 · 라벤더 · 가까운 색상 3",
+      "theme": "night",
+      "species": "lavender",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F35_lavender_night3_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "8182646cb07ca1c9e20035ffe094f311723ffb1b186891551328a77e43c2c917",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F35_lavender_night3_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "5ad334de48417de48eed3870e0fc679a16aa1d2c8d77a0caee6c1d5402bff791",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 36,
+      "id": "add68-night4",
+      "name": "밤 · 라벤더 · 가까운 색상 4",
+      "theme": "night",
+      "species": "lavender",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "keyHex": "FFD000",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F36_lavender_night4_AbstractOil_Bud_KeyFFD000_v73.png",
+          "sha256": "f88eb0f9d584dfd8dd77ae550a4294784699fc152eafe92397b5e48f886f3d00",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG03_LT03_F36_lavender_night4_AbstractOil_Bloom_KeyFFD000_v73.png",
+          "sha256": "4f979cdf352a64474a07695628035e84f755e46ad889feec5d9183d4f2b2418c",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 37,
+      "id": "add68-sunset1",
+      "name": "노을 · 동백꽃 · 가까운 색상 1",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F37_camellia_sunset1_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "e574a3cfb19b1b9a8c942ade692e51e45604c6edf8584bde8d8e9e5c387a66f2",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F37_camellia_sunset1_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "047177ced1f5ae07fd2a3a406cca35ed289983e899b724efe6c0719e5f1490d1",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 38,
+      "id": "add68-sunset2",
+      "name": "노을 · 동백꽃 · 가까운 색상 2",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F38_camellia_sunset2_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "612e379aa23886ca07326219e75b9dc532dd659eaeabe2c232e9824f5370a4fc",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F38_camellia_sunset2_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "051ca6908ebb4b3b380863be656265217103febf62d1d54b14a40f65b322b36c",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 39,
+      "id": "add68-sunset3",
+      "name": "노을 · 동백꽃 · 가까운 색상 3",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F39_camellia_sunset3_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "295c16019029b58961db424056762eec054289994345501f6aad1dbe9d594115",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F39_camellia_sunset3_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "0e15804082631e48404f95b504d783cb325f13d21a59128f23fae77dd4d8c2dd",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    },
+    {
+      "index": 40,
+      "id": "add68-sunset4",
+      "name": "노을 · 동백꽃 · 가까운 색상 4",
+      "theme": "sunset",
+      "species": "camellia",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "keyHex": "00FFFF",
+      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "duration": 3,
+      "inputs": {
+        "bud": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F40_camellia_sunset4_AbstractOil_Bud_Key00FFFF_v73.png",
+          "sha256": "948ceb23eec0360994c21b9ca3a4719edcfc964abcb8cc886eee448a161d1ada",
+          "resolution": [
+            1254,
+            1254
+          ]
+        },
+        "bloom": {
+          "url": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-buds-v73/ML_BG01_LT01_F40_camellia_sunset4_AbstractOil_Bloom_Key00FFFF_v73.png",
+          "sha256": "61ea87d9eaf7518e177b8fe8f68fc273a15d249f671c4d3b6d28cf933a0ce714",
+          "resolution": [
+            1254,
+            1254
+          ]
+        }
+      }
+    }
+  ]
+}

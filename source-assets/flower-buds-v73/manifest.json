@@ -4,8 +4,8 @@
   "count": 40,
   "imageCount": 80,
   "videoSubmittedCount": 0,
-  "quotedVideoCreditsPerItem": 3.75,
-  "quotedVideoCreditsTotal": 150,
+  "quotedVideoCreditsPerItem": 3,
+  "quotedVideoCreditsTotal": 120,
   "images": [
     {
       "index": 1,
@@ -16,7 +16,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -46,7 +46,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -76,7 +76,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -106,7 +106,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -136,7 +136,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -166,7 +166,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -196,7 +196,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -226,7 +226,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -256,7 +256,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -286,7 +286,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -316,7 +316,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -346,7 +346,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -376,7 +376,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -406,7 +406,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -436,7 +436,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -466,7 +466,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -496,7 +496,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -526,7 +526,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -556,7 +556,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -586,7 +586,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -616,7 +616,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -646,7 +646,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -676,7 +676,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -706,7 +706,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -736,7 +736,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -766,7 +766,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -796,7 +796,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -826,7 +826,7 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyHex": "0000FF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -856,7 +856,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -886,7 +886,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -916,7 +916,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -946,7 +946,7 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyHex": "FF8000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -976,7 +976,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1006,7 +1006,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1036,7 +1036,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1066,7 +1066,7 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyHex": "FFD000",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1096,7 +1096,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1126,7 +1126,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1156,7 +1156,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1186,7 +1186,7 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyHex": "00FFFF",
-      "videoStatus": "NOT_SUBMITTED_NEW_COST_APPROVAL_PENDING",
+      "videoStatus": "NOT_SUBMITTED_480P_COST_APPROVAL_PENDING",
       "duration": 3,
       "inputs": {
         "bud": {
@@ -1207,5 +1207,18 @@
         }
       }
     }
-  ]
+  ],
+  "videoWorkflow": {
+    "preview": {
+      "model": "wan3_0",
+      "duration": 3,
+      "resolution": "480p",
+      "generate_audio": false,
+      "enable_thinking": false,
+      "aspect_ratio": "1:1",
+      "count": 1
+    },
+    "upscaleOnlyAfterUserQualityApproval": true,
+    "upscaleSource": "APPROVED_480P_CLIP"
+  }
 }

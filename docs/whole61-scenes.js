@@ -1,6 +1,6 @@
 (async()=>{
  'use strict';
- const E=window.jejuEditor,data=window.jejuWhole61;if(!E||!data||['59','60'].includes(new URL(location.href).searchParams.get('objects')))return;
+ const E=window.jejuEditor,data=window.jejuWhole61;if(!E||!data||['59','60'].includes(new URL(location.href).searchParams.get('objects'))||window.jejuWhole62&&new URL(location.href).searchParams.get('objects')!=='61')return;
  
  function unchanged(state,scene){
   if(!state||state.background!==scene.project.background||state.objects.length!==scene.project.objects.length||state.gardenSpace?.enabled!==false)return false;

@@ -1,4 +1,8 @@
-# Current production sources: dark bush and basalt contrast gardens v61
+# Current production sources: varied abstract flowers v62
+
+`whole-objects-v62/` adds8 complete, fully-open abstract-oil flower designs. Each BG/LT set now uses6 designs across3 of the established flower species, retaining4 palette colors. Of128 flower placements per scene,48 use the new designs and80 use the prior designs; every planting clump includes at least3 designs. Visible plant-height ratio stays<=1.10. Existing dark bushes, basalt, atmospheric props and background lighting retain their source hashes and geometry. Current manifest: `docs/assets/whole-objects-v62/manifest_v62.json`. Each complete Unity ZIP contains27 source PNGs and matching recomposition/editor/Unity layouts. Static PNG only; no new bud pairs, opening videos or Unity runtime validation.
+
+# Previous dark bush and basalt contrast gardens v61
 
 `whole-objects-v61/` adds8 complete abstract-oil backdrop props: one dark bush and one dark basalt outcrop for each BG/LT lighting set. Each scene has20 rear prop instances, all behind every flower, and128 unchanged v60 flowers arranged in16 loose shallow-depth clumps. The four flower colors and maximum1.10 visible size ratio remain. Manifest: `docs/assets/whole-objects-v61/manifest_v61.json`. Each complete Unity ZIP contains all25 source PNGs, the actual recomposition and matching editor/Unity layouts. The remaining92 images retain their original v59/v60 source URLs and hashes.
 

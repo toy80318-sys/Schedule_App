@@ -32,7 +32,7 @@
  }
  const api={entries,packageSources};if(typeof module==='object'&&module.exports){module.exports=api;return}root.jejuSourceDownload=api;
  const E=root.jejuEditor,catalog=root.jejuFinalCatalog;if(!E||!catalog)return;
- const toolbar=document.createElement('div');toolbar.id='sourceDownloadToolbar';toolbar.style.cssText='display:flex;align-items:center;gap:8px;padding:6px 12px;flex-wrap:wrap;background:#132f2b';
+ const toolbar=document.createElement('div');toolbar.id='sourceDownloadToolbar';toolbar.style.cssText='display:flex;align-items:center;gap:8px;padding:6px 12px;flex-wrap:wrap;flex-shrink:0;background:#132f2b';
  const status=document.createElement('output');status.id='sourceDownloadStatus';status.setAttribute('aria-live','polite');status.style.fontSize='12px';const buttons=[];
  for(const [newOnly,label] of [[true,'새 이미지'],[false,'전체 원본']]){
   const items=entries(catalog,newOnly),button=document.createElement('button');button.className='btn';button.textContent=`${label} ${items.length}종 ZIP`;button.type='button';buttons.push(button);toolbar.append(button);

@@ -16,8 +16,8 @@ const scene=manifest.scenes[0],asset=scene.assets.find(a=>a.category==='particle
 assert.equal(findParticle({background:'custom',assets:[asset],objects:[{assetId:asset.id}]},[]),asset);
 const code=fs.readFileSync('docs/particle-scatter.js','utf8'),button={disabled:false,addEventListener(type,fn){this.click=fn}},notices=[],inserts=[];
 const E={ready:Promise.resolve(),state:()=>({...scene.project,assets:manifest.assets}),uid:()=>String(++id),W:14165,H:3480,image:async()=>{},insert:(...args)=>inserts.push(args),notice:s=>notices.push(s)};
-vm.runInNewContext(code,{window:{jejuEditor:E,jejuWhole62:manifest},document:{getElementById:()=>button},console});
+vm.runInNewContext(code,{window:{jejuEditor:E,jejuWhole62:manifest},document:{getElementById:id=>id==='scatterParticles'?button:null},console});
 (async()=>{await button.click();assert.equal(inserts.length,1,'one insert means one undo checkpoint');assert.equal(inserts[0][0].length,72);assert.equal(inserts[0][1].length,0);assert.equal(button.disabled,false);
  E.image=async()=>{throw Error('image failed')};await button.click();assert.equal(inserts.length,1,'failed image load must not alter the layout');assert.equal(button.disabled,false);assert(notices.at(-1).includes('image failed'));
  const changed={...scene.project,assets:manifest.assets};E.state=()=>changed;E.image=async()=>{E.state=()=>({...changed,background:'other'})};await button.click();assert.equal(inserts.length,1,'switching backgrounds during loading must not insert incorrectly lit particles');assert(notices.at(-1).includes('배경이 변경'));
- const html=fs.readFileSync('docs/editor.html','utf8');assert(html.includes('id="scatterParticles"'));assert(html.includes('particle-scatter.js?v=63'));console.log('PASS: full-screen coverage, four lighting themes, one undo, image failure protection');})();
+ const html=fs.readFileSync('docs/editor.html','utf8');assert(html.includes('id="scatterParticles"'));assert(html.includes('particle-scatter.js?v=72'));console.log('PASS: full-screen coverage, four lighting themes, one undo, image failure protection');})();

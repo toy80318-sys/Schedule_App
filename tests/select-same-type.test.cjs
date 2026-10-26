@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const app=fs.readFileSync('docs/app.js','utf8'),start=app.indexOf('function selectSameType('),end=app.indexOf('function syncSelection(',start);
+assert(start>0&&end>start,'same-type selection exists');
+const objects=[{id:'a',assetId:'flower1',groupId:'bed'},{id:'b',assetId:'flower1',groupId:'other'},{id:'c',assetId:'flower2',groupId:'bed'},{id:'d',assetId:'stone'},{id:'e',assetId:'flower1',flipX:true,r:15}];
+const original=JSON.stringify(objects);let rendered=0,notices=[];
+const context={objects,selected:'c',selectedIds:new Set(['c','d']),drag:{mode:'move'},refresh:()=>rendered++,notice:s=>notices.push(s),document:{elementsFromPoint:()=>[]},els:{view:{},wall:{contains:()=>true},layers:{contains:()=>false}}};
+context.current=()=>objects.find(o=>o.id===context.selected);
+vm.createContext(context);vm.runInContext(app.slice(start,end),context);
+context.selectSameType(objects[0]);assert.deepEqual([...context.selectedIds],['a','b','e']);assert.equal(context.selected,'a');assert.equal(JSON.stringify(objects),original);assert.equal(rendered,1);
+const node={dataset:{id:'b'},classList:{contains:c=>c==='obj'}};let prevented=0;
+const target={closest:selector=>selector.includes('handle')?null:node},event={ctrlKey:true,metaKey:false,button:0,target,clientX:10,clientY:20,preventDefault:()=>prevented++};
+context.selectSameTypeFromEvent(event);assert.equal(prevented,1);assert.equal(context.drag,null);assert.equal(context.selected,'b');
+const calls=rendered;context.selectSameTypeFromEvent({...event,ctrlKey:false});context.selectSameTypeFromEvent({...event,button:2});context.selectSameTypeFromEvent({...event,target:{closest:()=>({})}});assert.equal(rendered,calls,'normal double click, right click and light gizmo stay unchanged');
+context.document.elementsFromPoint=()=>[node];context.selectSameTypeFromEvent({...event,target:{closest:()=>null},ctrlKey:false,metaKey:true});assert.equal(rendered,calls+1,'selection overlay resolves underlying object and Command works');
+context.els.wall.contains=()=>false;context.els.layers.contains=()=>true;node.classList.contains=c=>c==='layer';context.selectSameTypeFromEvent(event);assert.equal(rendered,calls+2,'outliner objects use the same selection rule');
+context.selected='c';context.selectSameTypeFromEvent({...event,target:{closest:s=>s==='.group-box .handle'?{}:null}});assert.deepEqual([...context.selectedIds],['c'],'resize handle covering a small object selects the original object, not objects behind it');
+assert.equal(JSON.stringify(objects),original);assert(app.includes("els.view.addEventListener('dblclick',selectSameTypeFromEvent)"));assert(app.includes("if(e.detail===2&&e.button===0&&(e.ctrlKey||e.metaKey))"));assert(app.includes('e.stopPropagation();selectSameTypeFromEvent(e)}},true)'));
+console.log('PASS: exact asset instances across groups/transforms, replaces selection, resize-overlay/outliner, Ctrl/Command guard, light gizmo ignored, no layout mutation');

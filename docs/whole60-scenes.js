@@ -1,6 +1,6 @@
 (async()=>{
  'use strict';
- const E=window.jejuEditor,data=window.jejuWhole60;if(!E||!data||new URL(location.href).searchParams.get('objects')==='59')return;
+ const E=window.jejuEditor,data=window.jejuWhole60;if(!E||!data||new URL(location.href).searchParams.get('objects')==='59'||window.jejuWhole61&&new URL(location.href).searchParams.get('objects')!=='60')return;
  
  function unchanged(state,scene){
   if(!state||state.background!==scene.project.background||state.objects.length!==scene.project.objects.length||state.gardenSpace?.enabled!==false)return false;

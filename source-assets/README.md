@@ -1,6 +1,12 @@
-# Current production sources: abstract four-color gardens v60
+# Current production sources: dark bush and basalt contrast gardens v61
 
-`whole-objects-v60/` contains16 newly generated abstract oil flower sprites,4 darker background plates,4 actual recompositions and4 complete Unity packages. Each theme has4 flower colors and different silhouettes. Visible placed plant heights stay within570-627mm (maximum ratio1.10), including rotation. The72 unchanged props keep their v59 source URLs and matching BG/LT lighting. Current manifest: `docs/assets/whole-objects-v60/manifest_v60.json`.
+`whole-objects-v61/` adds8 complete abstract-oil backdrop props: one dark bush and one dark basalt outcrop for each BG/LT lighting set. Each scene has20 rear prop instances, all behind every flower, and128 unchanged v60 flowers arranged in16 loose shallow-depth clumps. The four flower colors and maximum1.10 visible size ratio remain. Manifest: `docs/assets/whole-objects-v61/manifest_v61.json`. Each complete Unity ZIP contains all25 source PNGs, the actual recomposition and matching editor/Unity layouts. The remaining92 images retain their original v59/v60 source URLs and hashes.
+
+These are static PNG compositions. No new flower animation, Unity execution or physical exhibition validation is implied. Previous edited layouts are preserved and backed up before an explicit scene import.
+
+# Previous abstract four-color gardens v60
+
+`whole-objects-v60/` contains16 newly generated abstract oil flower sprites,4 darker background plates,4 actual recompositions and4 complete Unity packages. Each theme has4 flower colors and different silhouettes. Visible placed plant heights stay within570-627mm (maximum ratio1.10), including rotation. The72 unchanged props keep their v59 source URLs and matching BG/LT lighting. Previous manifest: `docs/assets/whole-objects-v60/manifest_v60.json`.
 
 These are static fully-open flowers. New bud images and opening videos have not been produced or linked. Existing edited layouts are preserved; explicitly opening a v60 scene backs up current work before replacement. The previous complete-object gallery remains in Old.
 

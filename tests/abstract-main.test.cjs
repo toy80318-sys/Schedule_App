@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const read=n=>fs.readFileSync(require.resolve('../docs/'+n),'utf8');
-const sceneManifest=JSON.parse(read('assets/whole-objects-v60/manifest_v60.json'));
+const sceneManifest=JSON.parse(read('assets/whole-objects-v61/manifest_v61.json'));
 const mainCode=[...read('index.html').matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('const scenes='));
 function main(search=''){
  const elements=new Map(),urls=[],classes=[];const get=id=>{if(!elements.has(id))elements.set(id,{children:[],style:{},parentElement:{style:{}},append(v){this.children.push(v)},setAttribute(k,v){this[k]=v}});return elements.get(id)};
@@ -18,4 +18,4 @@ const context={window:{jejuAmbient:{atmosphereKind:()=>null}},currentPreviews:ne
 const register=vm.runInNewContext(registerCode+'registerCatalog',context);assert.equal(register(catalog),80);assert.equal(JSON.stringify(objects),original,'catalog refresh must preserve saved positions');
 for(const src of ['https://example.test/untrusted.png','https://toy80318-sys.github.io/Schedule_App/assets/abstract-flowers-v43/fake.png','https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/../fake.png'])assert.throws(()=>register({assets:[{id:'bad',src,category:'flower'}],backgrounds:[]}));
 assert(read('site-nav.js').includes("['index.html', '메인']"));
-console.log('PASS: all4 main scenes use v60 abstract gardens, embed/theme/fallback behavior,legacy catalog, trusted registration and saved-layout protection.');
+console.log('PASS: all4 main scenes use v61 contrast gardens, embed/theme/fallback behavior,legacy catalog, trusted registration and saved-layout protection.');

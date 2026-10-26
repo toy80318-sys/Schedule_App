@@ -247,6 +247,14 @@
     refresh();
   }
   for(const amount of [5,10])$('randomSize'+amount).onclick=()=>randomizeSizes(amount);
+  function varyFlowerDirections(checkpoint=true){
+    const chosen=members().filter(isFlower),items=chosen.length?chosen:objects.filter(isFlower);
+    if(!items.length){notice('방향을 바꿀 꽃이 없습니다.');return 0}
+    if(checkpoint)snapshot();
+    items.forEach((o,i)=>Object.assign(o,window.jejuFlowerDirections(o,i)));
+    refresh();if(checkpoint)notice(`${items.length}개 꽃을 좌향·정면·우향으로 섞었습니다. 줄기 아래 위치와 크기는 유지했습니다.`);return items.length;
+  }
+  $('varyFlowerDirections').onclick=()=>varyFlowerDirections();
   $('randomFlowerColor').onclick=async()=>{
     const button=$('randomFlowerColor');if(button.disabled)return;
     const plan=members().flatMap(o=>{const current=objectVariant(o,assets.find(a=>a.id===o.assetId)),choices=window.jejuFlowerTones.similar(current,[...bloomVariants.values()]),v=choices[Math.floor(Math.random()*choices.length)],asset=v&&assets.find(a=>a.id==='flower-'+v.id);return asset?[{o,current,v,asset}]:[]});
@@ -510,7 +518,7 @@
 
   window.jejuEditor={W,H,uid,db,setGuides:visible=>{gridVisible=guidesVisible=visible;$('gridToggle').textContent=visible?'50cm 격자 숨기기':'50cm 격자 보이기';$('seqGuide').textContent=visible?'L/C/R 가이드 숨기기':'L/C/R 가이드 보이기';renderWall()},projectedObject:(o,a,height=H)=>window.jejuSpace?.pose(o,a,height,gardenSpace)||o,storeCurrent,restoreCurrent,updateSavedLayouts,objectVariant,currentFlowerAsset,notice,image,tintedFlowerSrc,displaySrc,drawBackground,backgroundDrawable,download,downloadName,isFlower,filterCSS,
     getBackgroundGrade:()=>window.jejuBackgroundGrade.normalize(sceneFilters.backgroundGrade),setBackgroundGrade:(value,checkpoint=true)=>{if(checkpoint)snapshot();sceneFilters.backgroundGrade=window.jejuBackgroundGrade.normalize(value);applySceneFilters();scheduleSave();document.dispatchEvent(new CustomEvent('jeju-editor-change'));},
-    state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace}),selected:()=>members(),registerCatalog,replaceSelection,useSample,
+    state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace}),selected:()=>members(),registerCatalog,replaceSelection,useSample,varyFlowerDirections,
     selectObject:id=>{const o=objects.find(o=>o.id===id);if(!o)throw Error('요소를 찾지 못했습니다.');selected=o.id;selectedIds=new Set([o.id]);refresh()},
     addAsset:a=>addObject(assets.find(x=>x.id===a.id)||a,W/2,H/2),
     setBackground:src=>{if(!backgroundChoices.some(([value])=>value===src))throw Error('등록된 배경을 선택하세요.');snapshot();applyBackground(src)},

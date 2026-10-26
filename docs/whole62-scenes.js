@@ -15,7 +15,7 @@
  function sync(){const state=E.state?.();if(!state)return;const scene=data.scenes.find(s=>s.project.background===state.background);for(const b of buttons)b.setAttribute('aria-pressed',String(b.dataset.scene===scene?.id));const registered=state.objects.length>0&&state.objects.every(o=>/^whole62-/.test(o.assetId));for(const id of ['clusterTheme','clusterCount','autoCluster']){const el=document.getElementById(id);if(el){el.hidden=registered;el.style.display=registered?'none':''}}if(!opening)status.textContent=scene?scene.name+' · 원본 PNG · '+state.objects.length+'개 레이어':'기존 작업 보존 · 시간대를 누르면 백업 후 다양한 꽃·대비 정원을 엽니다.'}
  async function open(scene){
   if(opening)return;opening=true;buttons.forEach(b=>b.disabled=true);status.textContent='기존 작업 백업 · 완성형 객체 불러오는 중…';
-  try{await E.ready;await E.useSample(structuredClone(scene.project));E.setGuides?.(false);await Promise.all([...document.querySelectorAll('#wall .bg,#wall .obj>img')].map(im=>im.decode()));E.notice(scene.name+' · 여섯 가지 꽃 디자인을 섞고 어두운 덤불·현무암 대비를 유지했습니다. 이전 작업은 저장본에 보관했습니다.')}
+  try{await E.ready;await E.useSample(structuredClone(scene.project));E.varyFlowerDirections(false);E.setGuides?.(false);await Promise.all([...document.querySelectorAll('#wall .bg,#wall .obj>img')].map(im=>im.decode()));E.notice(scene.name+' · 여섯 가지 꽃 디자인을 섞고 어두운 덤불·현무암 대비를 유지했습니다. 이전 작업은 저장본에 보관했습니다.')}
   finally{opening=false;buttons.forEach(b=>b.disabled=false);sync()}
  }
  for(const s of data.scenes){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=s.name.split(' · ')[0]+' 다양한 꽃';b.dataset.scene=s.id;b.onclick=()=>open(s).catch(e=>E.notice(e.message));buttons.push(b);panel.append(b)}
@@ -28,7 +28,7 @@
   if(s)try{await open(s);u.searchParams.delete('objects');u.searchParams.delete('scene');history.replaceState(null,'',u.href)}catch(e){E.notice('기존 작업을 보호하기 위해 불러오기를 중단했습니다: '+e.message)}
  }else if(!u.searchParams.has('layers')&&!u.searchParams.has('objects')&&!u.searchParams.has('layout')){
   // Upgrade only untouched previous cutouts; the existing backup path protects all saved work.
-  const old=[...(window.jejuWhole61?.scenes||[]),...(window.jejuWhole60?.scenes||[]),...(window.jejuWhole59?.scenes||[]),...(window.jejuCutout57?.scenes||[]),...(window.jejuCutout56?.scenes||[])].find(s=>unchanged(E.state?.(),s));
+  const old=[...data.scenes,...(window.jejuWhole61?.scenes||[]),...(window.jejuWhole60?.scenes||[]),...(window.jejuWhole59?.scenes||[]),...(window.jejuCutout57?.scenes||[]),...(window.jejuCutout56?.scenes||[])].find(s=>unchanged(E.state?.(),s));
   if(old)try{await open(data.scenes.find(s=>s.id===old.id))}catch(e){E.notice('이전 배치를 유지했습니다: '+e.message)}
  }
  if(E.state?.().objects.every(o=>/^whole62-/.test(o.assetId)))E.setGuides?.(false);sync();

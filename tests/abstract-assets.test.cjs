@@ -8,7 +8,7 @@ for(const bad of ['https://example.test/flower.png',manifest.variants[0].bud.rep
 }
 const sandbox={window:{}};vm.runInNewContext(fs.readFileSync(require.resolve('../docs/catalog-data.js'),'utf8'),sandbox);
 const c=sandbox.window.jejuFinalCatalog;assert.equal(c.assets.length,84);assert.equal(c.version,50);
-const app=fs.readFileSync(require.resolve('../docs/app.js'),'utf8'),previewCode=app.match(/  const currentPreviews=.*\r?\n  const displaySrc=.*\r?\n/)[0];
+const app=fs.readFileSync(require.resolve('../docs/app.js'),'utf8'),previewCode=app.match(/  const currentPreviews=.*\r?\n  const sourceRegistered=.*\r?\n  const displaySrc=.*\r?\n/)[0];
 const preview=vm.runInNewContext(previewCode+'displaySrc',{window:{jejuFinalCatalog:c},optimizedImages:{},lightPreview:false});
 for(const a of c.assets)assert.equal(preview(a.src),a.thumb,'new asset must use its published preview: '+a.id);
 assert.equal(preview('https://example.test/original.png'),'https://example.test/original.png');

@@ -144,7 +144,7 @@
     if(!im)return;const iw=im.videoWidth||im.naturalWidth||im.width,ih=im.videoHeight||im.naturalHeight||im.height;if(!iw||!ih)return;
     const a=assets.get(o.assetId),lighting=window.jejuSpace?.lighting(o,a,project.height,project.gardenSpace,cameraView).brightness??1;if(cast)window.jejuSpace?.castShadow(ctx,o,a,im,project.height,project.gardenSpace,cameraView);o=window.jejuSpace?.pose(o,a,project.height,project.gardenSpace,cameraView)||o;if(window.jejuSpace?.ground(a))window.jejuSpace.shadow(ctx,o);
     const tone=[filter(scope)==='none'?'':filter(scope),lighting===1?'':`brightness(${lighting})`].filter(Boolean).join(' ')||'none';ctx.save();ctx.filter=neutral?(tone==='none'?'grayscale(1)':tone+' grayscale(1)'):tone;ctx.globalAlpha=o.opacity*opacity;ctx.translate(o.x+o.w/2,o.y+o.h/2);if(window.jejuSpace)window.jejuSpace.orient(ctx,o);else ctx.rotate(o.r*Math.PI/180);if(o.flipX)ctx.scale(-1,1);
-    const ratio=Math.min(o.w/iw,o.h/ih),w=iw*ratio,h=ih*ratio;ctx.drawImage(im,-w/2,scope==='flowers'?o.h/2-h:-h/2,w,h);ctx.restore();
+    const ratio=Math.min(o.w/iw,o.h/ih),w=a.sourceRect?.length===4?o.w:iw*ratio,h=a.sourceRect?.length===4?o.h:ih*ratio;ctx.drawImage(im,-w/2,scope==='flowers'?o.h/2-h:-h/2,w,h);ctx.restore();
   }
   const actorKind=a=>{const source=[a.id,a.src,a.frames?.[0]].join(' ');return window.jejuAmbient.atmosphereKind(a)||(/butterfly/.test(source)?'butterfly':/bird/.test(source)?'bird':a.frames&&!a.flowerAnimation&&!flowerSpecies(a)?'loop':null)};
   function actorPose(o,kind,time,index=0){
@@ -162,7 +162,7 @@
   }
   function drawBackground(im,alpha=1){
     const iw=im?.videoWidth||im?.naturalWidth,ih=im?.videoHeight||im?.naturalHeight;if(!iw||!ih)return;
-    const r=Math.max(project.width/iw,project.height/ih);ctx.save();ctx.globalAlpha=alpha;ctx.filter=filter('background');ctx.drawImage(im,(project.width-iw*r)/2,(project.height-ih*r)/2,iw*r,ih*r);ctx.restore();
+    const r=Math.max(project.width/iw,project.height/ih);ctx.save();ctx.globalAlpha=alpha;ctx.filter=filter('background');if(project.backgroundFit==='fill')ctx.drawImage(im,0,0,project.width,project.height);else ctx.drawImage(im,(project.width-iw*r)/2,(project.height-ih*r)/2,iw*r,ih*r);ctx.restore();
   }
   function paint(){
     if(!project)return;cameraView=window.jejuSpace?.view(project.objects,assets,project.width,project.height,{...project.gardenSpace,cameraOrbit:!reduced.matches&&project.gardenSpace?.cameraOrbit},clock);ctx.resetTransform();ctx.clearRect(0,0,canvas.width,canvas.height);ctx.scale(canvas.width/project.width,canvas.height/project.height);ctx.fillStyle='#1c3029';ctx.fillRect(0,0,project.width,project.height);
@@ -170,7 +170,7 @@
     for(const [i,actor] of actors.entries())if(actor.kind==='cloud'||actor.kind==='mist')drawActor(actor,i);
     const drawables=[];let depthRank=0;for(const o of window.jejuSpace?.ordered(project.objects,assets,project.height,project.gardenSpace,cameraView)||project.objects){
       depthRank++;const a=assets.get(o.assetId),type=flowerSpecies(a);if(actorKind(a)){if(a.category==='grass'){const actor=actors.find(x=>x.object.id===o.id);if(actor)drawables.push(drawActor(actor,0,false))}continue;}
-      if(!type){drawables.push({o,im:a.still,scope:'decor'});continue}
+      if(!type){drawables.push({o,im:a.still,scope:a.group==='flowers'?'flowers':'decor'});continue}
       const v=a.variants.get(o.id);if(!v?.ready)continue;
       const pose=window.jejuSpace?.pose(o,a,project.height,project.gardenSpace,cameraView)||o,button=buttons.get(o.id);if(button&&project.gardenSpace?.spatial){Object.assign(button.style,{left:pose.x/project.width*100+'%',top:pose.y/project.height*100+'%',width:pose.w/project.width*100+'%',height:pose.h/project.height*100+'%',transform:window.jejuSpace?.transform(pose)||`rotate(${o.r}deg)`,zIndex:depthRank});if(pose.plane)button.dataset.camera=String(clock)}
       const anim=active.get(o.id);let im=a.buds.get(v.id);

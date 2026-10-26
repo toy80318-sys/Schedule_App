@@ -1,18 +1,34 @@
 (async()=>{
  'use strict';
  const E=window.jejuEditor,data=window.jejuCutout57;if(!E||!data)return;
- const panel=document.createElement('section');panel.id='cutout57-scenes';panel.style.cssText='padding:14px;border:2px solid #b1d9ac;border-radius:10px;margin-bottom:12px;background:#234b3d';
- const title=document.createElement('h3');title.textContent='최신 v57 · 배경 대비·분리 합성';
- const note=document.createElement('p');note.className='note';note.textContent='배경은 어둡게, 꽃과 현무암의 색은 유지해 분리 소스로 다시 합성했습니다. 꽃 군집·현무암·빛 입자·전경 연결부를 클릭해 이동·크기·겹침을 수정하세요. 겹친 꽃과 풀은 일부 함께 묶여 있으며, 가려진 바닥은 AI 복원본입니다. 선택 시 기존 작업을 백업합니다.';
- panel.append(title,note);
- async function open(scene){await E.ready;await E.useSample(structuredClone(scene.project));E.notice(scene.name+' · 분리 합성 배치를 열었습니다. 원래 배치로 돌아가려면 이 시간대 버튼을 다시 누르세요.')}
- for(const s of data.scenes){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=s.name+' · 분리 합성';b.style.margin='3px';b.onclick=async()=>{b.disabled=true;try{await open(s)}catch(e){E.notice(e.message)}finally{b.disabled=false}};panel.append(b)}
- const a=document.createElement('a');a.className='btn';a.href='source-cutouts.html';a.target='_blank';a.rel='noopener';a.textContent='원본·레이어 비교 / PNG·Unity ZIP';panel.append(a);
- document.getElementById('items').parentElement.prepend(panel);
+ function unchanged(state,scene){
+  if(!state||state.background!==scene.project.background||state.objects.length!==scene.project.objects.length||state.gardenSpace?.enabled!==false)return false;
+  const assetMap=new Map(state.assets.map(a=>[a.id,a]));
+  if(!scene.project.objects.every((base,i)=>{const o=state.objects[i];return o?.assetId===base.assetId&&['x','y','w','h','r','opacity','z'].every(k=>Math.abs((o[k]||0)-(base[k]||0))<1e-6)&&!o.flipX&&!o.rx&&!o.ry&&!o.groupId&&!o.flowerColor&&assetMap.get(o.assetId)?.src===scene.assets.find(a=>a.id===o.assetId)?.src}))return false;
+  return ['scene','background','flowers','decor'].every(scope=>['brightness','contrast','saturation','warmth'].every(k=>(state.sceneFilters?.[scope]?.[k]??(k==='warmth'?0:100))===(k==='warmth'?0:100)))&&(!state.sceneFilters?.backgroundGrade||window.jejuBackgroundGrade.neutral(state.sceneFilters.backgroundGrade));
+ }
+ const panel=document.createElement('section');panel.id='cutout57-scenes';panel.className='precision-scenes';panel.setAttribute('aria-label','통합본 정밀 배치');
+ panel.style.cssText='position:absolute;top:62px;left:12px;right:12px;z-index:5;display:flex;align-items:center;gap:6px;overflow-x:auto;padding:6px 9px;background:#18392fef;border:1px solid #8eb6a3;border-radius:9px';
+ const title=document.createElement('strong');title.textContent='통합본 정밀 배치';title.style.whiteSpace='nowrap';panel.append(title);
+ const buttons=[],status=document.createElement('output');status.setAttribute('role','status');status.style.cssText='font-size:12px;white-space:nowrap;color:#c0dacb';let opening=false;
+ function sync(){const state=E.state?.();if(!state)return;const scene=data.scenes.find(s=>s.project.background===state.background);for(const b of buttons)b.setAttribute('aria-pressed',String(b.dataset.scene===scene?.id));const registered=state.objects.length>0&&state.objects.every(o=>/^cut57-/.test(o.assetId));for(const id of ['clusterTheme','clusterCount','autoCluster']){const el=document.getElementById(id);if(el){el.hidden=registered;el.style.display=registered?'none':''}}if(!opening)status.textContent=scene?scene.name+' · 원본 PNG · '+state.objects.length+'개 레이어':'기존 작업 보존 · 시간대를 누르면 백업 후 통합본 배치를 엽니다.'}
+ async function open(scene){
+  if(opening)return;opening=true;buttons.forEach(b=>b.disabled=true);status.textContent='기존 작업 백업 · 원본 이미지 불러오는 중…';
+  try{await E.ready;await E.useSample(structuredClone(scene.project));E.setGuides?.(false);await Promise.all([...document.querySelectorAll('#wall .bg,#wall .obj>img')].map(im=>im.decode()));E.notice(scene.name+' · 통합본의 원본 이미지·좌표·겹침·투명도를 적용했습니다. 이전 작업은 저장본에 보관했습니다.')}
+  finally{opening=false;buttons.forEach(b=>b.disabled=false);sync()}
+ }
+ for(const s of data.scenes){const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=s.name.split(' · ')[0]+' 정밀 배치';b.dataset.scene=s.id;b.onclick=()=>open(s).catch(e=>E.notice(e.message));buttons.push(b);panel.append(b)}
+ const link=document.createElement('a');link.className='btn';link.href='source-cutouts.html';link.target='_blank';link.rel='noopener';link.textContent='통합본·소스 비교';panel.append(link,status);document.getElementById('view').parentElement.append(panel);
+ document.addEventListener('jeju-editor-change',sync);
  await E.ready;await window.jejuHandoff.ready;
  const u=new URL(location.href);
  if(u.searchParams.get('layers')==='57'){
   const s=data.scenes.find(s=>s.id===u.searchParams.get('scene'));
   if(s)try{await open(s);u.searchParams.delete('layers');u.searchParams.delete('scene');history.replaceState(null,'',u.href)}catch(e){E.notice('기존 작업을 보호하기 위해 불러오기를 중단했습니다: '+e.message)}
+ }else if(!u.searchParams.has('layers')&&!u.searchParams.has('layout')){
+  // Upgrade only untouched previous cutouts; the existing backup path protects all saved work.
+  const old=window.jejuCutout56?.scenes.find(s=>unchanged(E.state?.(),s));
+  if(old)try{await open(data.scenes.find(s=>s.id===old.id))}catch(e){E.notice('이전 배치를 유지했습니다: '+e.message)}
  }
+ if(E.state?.().objects.every(o=>/^cut57-/.test(o.assetId)))E.setGuides?.(false);sync();
 })();

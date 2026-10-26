@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const read=n=>fs.readFileSync(require.resolve('../docs/'+n),'utf8');
-const sceneManifest=JSON.parse(read('assets/source-contrast-v57/manifest_v57.json'));
+const sceneManifest=JSON.parse(read('assets/whole-objects-v59/manifest_v59.json'));
 const mainCode=[...read('index.html').matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('const scenes='));
 function main(search=''){
  const elements=new Map(),urls=[],classes=[];const get=id=>{if(!elements.has(id))elements.set(id,{children:[],style:{},parentElement:{style:{}},append(v){this.children.push(v)},setAttribute(k,v){this[k]=v}});return elements.get(id)};

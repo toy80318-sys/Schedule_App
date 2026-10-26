@@ -17,14 +17,14 @@ for(const page of [...latest,'old.html',...old]){
 assert(!navigation('player.html','?embed=1').bar);
 for(const page of old)assert(read('old.html').includes('href="'+page+'"'),page+' must be discoverable in Old');
 for(const page of old)assert(!read('library.html').includes('href="'+page),page+' must leave the current library');
-for(const file of ['all-images.html','all-images-old.html']){
+for(const file of ['all-images-v58-archive.html','all-images-old.html']){
  const html=read(file),keys=[...html.matchAll(/<main[^>]*data-page="([^"]+)"/g)].map(m=>m[1]);
  const code=[...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('function showPage'));
  for(const hash of ['',...keys.map(k=>'#'+k),'#unknown','#real']){
   const mains=keys.map(k=>({dataset:{page:k}})),location={hash,search:'',replace(url){this.redirect=url}},document={title:'',body:{classList:{add(){}}},querySelectorAll:s=>s==='main[data-page]'?mains:[]};
   vm.runInNewContext(code,{document,location,URLSearchParams,window:{addEventListener(){}}});
-  if(file==='all-images.html'&&hash==='#real')assert.equal(location.redirect,'all-images-old.html#real');else assert.equal(mains.filter(m=>!m.hidden).length,1);
+  if(file==='all-images-v58-archive.html'&&hash==='#real')assert.equal(location.redirect,'all-images-old.html#real');else assert.equal(mains.filter(m=>!m.hidden).length,1);
  }
- assert.equal(keys.length,file==='all-images.html'?9:4);
+ assert.equal(keys.length,file==='all-images-v58-archive.html'?9:4);
 }
 console.log('PASS: Old archive covers21 pages, current menu stays current, earlier deep links redirect, both image tab routers show one section, and embedded player stays unchanged.');

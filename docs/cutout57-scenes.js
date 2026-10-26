@@ -1,6 +1,7 @@
 (async()=>{
  'use strict';
  const E=window.jejuEditor,data=window.jejuCutout57;if(!E||!data)return;
+ if(window.jejuWhole59&&new URL(location.href).searchParams.get('layers')!=='57')return;
  function unchanged(state,scene){
   if(!state||state.background!==scene.project.background||state.objects.length!==scene.project.objects.length||state.gardenSpace?.enabled!==false)return false;
   const assetMap=new Map(state.assets.map(a=>[a.id,a]));

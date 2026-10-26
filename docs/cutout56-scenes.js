@@ -1,6 +1,7 @@
 (async()=>{
  'use strict';
  const E=window.jejuEditor,data=window.jejuCutout56;if(!E||!data)return;
+ if(window.jejuWhole59&&new URL(location.href).searchParams.get('layers')!=='56')return;
  const panel=document.createElement('section');panel.id='cutout56-scenes';panel.style.cssText='padding:14px;border:2px solid #b1d9ac;border-radius:10px;margin-bottom:12px;background:#234b3d';
  const title=document.createElement('h3');title.textContent='현재 통합본 그대로 · 원본 분리 v56';
  const note=document.createElement('p');note.className='note';note.textContent='통합본의 보이는 픽셀을 직접 분리했습니다. 꽃 군집·현무암·빛 입자·전경 연결부를 클릭해 이동·크기·겹침을 수정하세요. 겹친 꽃과 풀은 일부 함께 묶여 있으며, 가려진 바닥은 AI 복원본입니다. 선택 시 기존 작업을 백업합니다.';

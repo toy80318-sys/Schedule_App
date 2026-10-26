@@ -1,3 +1,11 @@
+# Current production sources: complete independent objects v59
+
+Use `whole-objects-v59/` for the current editor and Unity composition: 88 complete RGBA game-style objects plus4 background-only plates. Each sprite has transparent safety margins and a matching BG/LT lighting identifier. Move and resize the complete sprite; do not cut visible regions from an integrated scene.
+
+`source-cutouts-v56/` and `source-contrast-v57/` are archived visible-region cutouts. They are not the current standalone object assets.
+
+Flower animation requires generated closed-bud and fully-open images of the SAME plant as its actual two inputs, followed by full-clip shape/artifact review. v59 delivers static complete-object PNGs and layouts; no new flower video or unapproved bud candidate is linked.
+
 # 메이즈랜드 추상 유화 원본 v44
 
 `abstract-scene-v44`에는 새로 그린 PNG76장, 가로 출력12장, 배경별 원본 ZIP4개가 있습니다. 기존 v43 꽃32장은 각 배경 ZIP에도 포함됩니다.

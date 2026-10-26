@@ -4,7 +4,7 @@
   const page = location.pathname.split('/').pop() || 'index.html';
   const pages = [
     ['index.html', '메인'], ['library.html', '자료실'], ['abstract-world-v44.html', '추상 유화 전체'], ['all-images.html', '전체 이미지'],
-    ['oil-art.html', '통합 유화'], ['source-cutouts.html', '통합본 분리·수정'], ['lighting-sets.html', '배경·조명'],
+    ['oil-art.html', '통합 유화'], ['source-cutouts.html', '완성형 객체·배치'], ['lighting-sets.html', '배경·조명'],
     ['oil-sources.html', 'PNG·추가 소스'], ['editor.html', '에디터'], ['old.html', '올드']
   ];
   const oldPages = ['layers-v55.html', 'layers.html', 'all-images-old.html', 'abstract-flowers-v43.html', 'single-flowers.html', 'scene-loops.html',

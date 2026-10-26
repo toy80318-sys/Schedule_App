@@ -1,6 +1,7 @@
 (async()=>{
  'use strict';
  const E=window.jejuEditor,data=window.jejuLayer55;if(!E||!data)return;
+ if(window.jejuWhole59&&new URL(location.href).searchParams.get('layers')!=='55')return;
  const panel=document.createElement('section');panel.id='layer55-scenes';panel.style.cssText='padding:12px;border:1px solid #a9c9a4;border-radius:10px;margin-bottom:12px;background:#203e35';
  const title=document.createElement('h3');title.textContent='이전 v55 · 새 꽃으로 재구성한 배치';
  const note=document.createElement('p');note.className='note';note.textContent='개별 꽃·풀·현무암·공중 입자·발광 유리 나비를 실제 레이어로 쌓습니다. 선택하면 현재 작업을 백업하고 새 배치를 엽니다. 꽃·나비는 정지 이미지입니다. 개별 요소는 빈 곳을 눌러 선택을 해제한 뒤 Ctrl/⌘+클릭으로 선택할 수 있습니다.';

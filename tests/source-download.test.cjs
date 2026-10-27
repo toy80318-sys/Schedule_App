@@ -1,8 +1,11 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),api=require('../docs/source-download');
 (async()=>{
  const c={window:{}};for(const file of ['catalog-data','whole59-data','whole60-data','whole61-data','whole62-data','additions68-data'])vm.runInNewContext(fs.readFileSync('docs/'+file+'.js','utf8'),c);
+ vm.runInNewContext(fs.readFileSync('docs/set-review-catalog.js','utf8'),c);
  const all=api.entries(c.window.jejuFinalCatalog),fresh=api.entries(c.window.jejuFinalCatalog,true);assert.equal(all.length,132);assert.equal(fresh.length,24);assert.equal(new Set(all.map(a=>a.file)).size,132);assert(fresh.every(a=>a.completeObject&&a.stillOnly));
- vm.runInNewContext(fs.readFileSync('docs/set-review-elements.js','utf8'),c);const withV05=api.entries(c.window.jejuFinalCatalog);assert.equal(withV05.length,252);assert.equal(withV05.filter(a=>a.setReviewVersion==='V05').length,120);assert.equal(api.entries(c.window.jejuFinalCatalog,true).length,24);assert.equal(new Set(withV05.map(a=>a.file)).size,252);
+ vm.runInNewContext(fs.readFileSync('docs/set-review-elements.js','utf8'),c);const withV05=api.entries(c.window.jejuFinalCatalog);assert.equal(withV05.length,252);assert.equal(withV05.filter(a=>a.setReviewVersion==='V05'&&a.category!=='background').length,120);assert.equal(api.entries(c.window.jejuFinalCatalog,true).length,24);assert.equal(new Set(withV05.map(a=>a.file)).size,252);
+ vm.runInNewContext(fs.readFileSync('docs/flower-shape-catalog.js','utf8'),c);const current=api.entries(c.window.jejuFinalCatalog);assert.equal(current.length,264);assert.equal(new Set(current.map(a=>a.file)).size,264);
+ assert.equal(withV05.filter(a=>a.category==='background').length,4);assert(withV05.filter(a=>a.category==='background').every(a=>/BG0[1-4]-B04-V05\.png$/.test(a.file)));
  assert.throws(()=>api.entries({assets:[{...fresh[0],file:'../bad.png'}]}),/목록/);assert.throws(()=>api.entries({assets:[{...fresh[0],src:'https://evil.example/a.png'}]}),/목록/);
  const bytes=Uint8Array.from([137,80,78,71,13,10,26,10,0,1,2]),hash=crypto.createHash('sha256').update(bytes).digest('hex'),items=fresh.slice(0,5).map(a=>({...a,sha256:hash}));let packed,progress=[];
  await api.packageSources(items,async()=>({ok:true,arrayBuffer:async()=>bytes.buffer}),files=>{packed=files;return new Blob(['ZIP'])},(...n)=>progress.push(n),crypto.webcrypto);

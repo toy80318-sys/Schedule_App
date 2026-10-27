@@ -1,4 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const crypto=require('node:crypto');
 const read=file=>fs.readFileSync('docs/'+file,'utf8'),code=read('set-review-catalog.js'),context={window:{}};vm.createContext(context);
 for(const file of ['catalog-data.js','layer55-data.js','cutout56-data.js','cutout57-data.js','whole59-data.js','whole60-data.js','whole61-data.js','whole62-data.js','additions68-data.js'])vm.runInContext(read(file),context);
 const catalog=context.window.jejuFinalCatalog,old=structuredClone(catalog),otherAssets=JSON.stringify(catalog.assets.filter(a=>a.category!=='background')),otherSources=JSON.stringify(catalog.sourceFiles.filter(f=>!catalog.assets.some(a=>a.id===f.id&&a.category==='background')));
@@ -8,6 +9,7 @@ assert.equal(JSON.stringify(catalog.assets.filter(a=>a.category!=='background'))
 assert.equal(JSON.stringify(catalog.sourceFiles.filter(f=>!catalog.backgrounds.some(a=>a.id===f.id))),otherSources,'other source downloads remain identical');
 for(const [i,theme] of ['sunset','day','night','morning'].entries()){
  const bg=catalog.backgrounds[i];assert.equal(bg.id,`BG0${i+1}-B04-V05`);assert.equal(bg.theme,theme);assert.equal(bg.catalogHidden,false);assert(bg.stillOnly);assert.equal(bg.preview,'assets/set-review-v01/preview/'+bg.id+'.webp');
+ assert.equal(bg.file,bg.id+'.png');assert.equal(bg.sha256,crypto.createHash('sha256').update(fs.readFileSync('source-assets/set-review-v01/'+bg.file)).digest('hex'));assert.equal(bg.width,2172);assert.equal(bg.height,724);
  assert.deepEqual(JSON.parse(JSON.stringify(catalog.sourceFiles.find(f=>f.id===bg.id))),{id:bg.id,relativePath:bg.id+'.png',stablePreviewUrl:bg.src});
  for(const a of old.assets.filter(a=>a.category==='background'&&a.theme===theme)){assert.equal(catalog.backgroundReplacements[a.src],bg.src);assert.equal(catalog.backgroundAliases[a.src],bg.src);}
  for(const f of old.sourceFiles.filter(f=>f.id===`whole62-${theme}-background`))assert.equal(catalog.backgroundReplacements[f.stablePreviewUrl],bg.src);

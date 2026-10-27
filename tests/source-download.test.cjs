@@ -13,6 +13,6 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
  let zipped=false;await assert.rejects(api.packageSources([{...items[0],sha256:'0'.repeat(64)}],async()=>({ok:true,arrayBuffer:async()=>bytes.buffer}),()=>{zipped=true},()=>{},crypto.webcrypto),/검증/);assert.equal(zipped,false);
  let calls=0;await api.packageSources([items[0]],async()=>++calls===1?{ok:false,status:503}:{ok:true,arrayBuffer:async()=>bytes.buffer},()=>new Blob(['ZIP']),()=>{},crypto.webcrypto);assert.equal(calls,2);
  await assert.rejects(api.packageSources(items,async()=>({ok:false}),()=>{zipped=true},()=>{},crypto.webcrypto),/다운로드 실패/);assert.equal(zipped,false);
- const html=fs.readFileSync('docs/editor.html','utf8');assert(html.includes('data-tab="latest"'));assert(html.includes('source-download.js?v=85'));assert(html.indexOf('source-download.js')>html.indexOf('handoff.js'));
+ const html=fs.readFileSync('docs/editor.html','utf8');assert(html.includes('data-tab="latest"'));assert(html.includes('source-download.js?v=86'));assert(html.indexOf('source-download.js')>html.indexOf('handoff.js'));
  console.log('PASS:24 new/132 complete original sources, trusted filenames/hosts, byte hash validation, metadata ZIP, no partial download on failure');
 })().catch(error=>{console.error(error);process.exitCode=1});

@@ -47,6 +47,7 @@
     dialog.showModal();
   }
   document.querySelectorAll('main img, main [role="img"]').forEach(target => {
+    if (target.getAttribute('data-image-navigation') === 'true') return;
     target.dataset.imagePreview = '';
     target.tabIndex = 0;
     target.title = '클릭하여 크게 보기 · Enter 키로도 열 수 있습니다';

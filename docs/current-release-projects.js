@@ -6,7 +6,7 @@
   return project;
  }
  async function load(theme,release,fetcher,renderer,cryptoAPI,image){
-  const scene=release.scenes.find(s=>s.id===theme);if(!scene||scene.project!=='assets/current-release-v85/'+theme+'_editor_v85.json')throw Error('배경 시간대를 확인해 주세요.');
+  const scene=release.scenes.find(s=>s.id===theme);if(!scene||scene.project!=='assets/current-release-v'+release.version+'/'+theme+'_editor_v'+release.version+'.json')throw Error('배경 시간대를 확인해 주세요.');
   const response=await fetcher(scene.project);if(!response.ok)throw Error('최신 배치를 불러오지 못했습니다.');const text=await response.text();if(text.length>12*1024*1024)throw Error('배치 파일이 너무 큽니다.');
   const hash=Array.from(new Uint8Array(await cryptoAPI.subtle.digest('SHA-256',new TextEncoder().encode(text.replace(/\r\n/g,'\n')))),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==scene.projectSha256)throw Error('최신 배치의 원본 서명이 다릅니다.');
   const project=validate(JSON.parse(text),scene,release,renderer);await Promise.all([project.background,...project.assets.map(a=>a.src)].map(image));return project;

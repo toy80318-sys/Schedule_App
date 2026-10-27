@@ -120,7 +120,7 @@
     const choice=selectedProjectChoice(set),prefix=choice.version?choice.version+' ':'';
     $('projectDownload').href=choice.path;$('projectDownload').textContent=prefix+'에디터 배치 JSON ↓';$('unityLayoutDownload').hidden=!choice.unityLayout;
     if(choice.unityLayout)$('unityLayoutDownload').href=choice.unityLayout;$('unityLayoutDownload').textContent=prefix+'Unity 좌표 참고 JSON ↓';
-    $('layoutVersionNote').textContent=choice.version==='V85'?'최신 꽃 v83·공중 요소 v84와 밝은 배경을 사용하는 예시 배치입니다. 통합 유화 v84는 미술·배치 참고 시안이며 오른쪽 PNG 합성과 픽셀 단위로 같다는 뜻은 아닙니다.':choice.version==='V06'?'유사색 V06 배치 · V05 원본 PNG. 시간대별 12종 유사색을 중심으로 꽃 320개를 배치하고 전체 24종 원본을 유지합니다. 환경 요소 36개와 보이는 꽃 크기·뿌리 접점·초점은 유지합니다.':choice.version==='V05'?'V05 · 그림체만 추상 유화로 변경했습니다. V04와 같은 크기·개수(꽃 320개 + 환경 요소 36개)를 유지하며 같은 PNG로 통합본을 조립합니다.':choice.version==='V04'?'V04 기본 배치 · 꽃 크기는 V01의 50%, 개수는 4배입니다. 꽃 320개 + 환경 요소 36개 = 총 356개.':choice.version==='V01'?'V01 이전 배치 · 꽃 80개 + 환경 요소 36개 = 총 116개. 기존 배치 파일은 그대로 보존합니다.':choice.label;
+    $('layoutVersionNote').textContent=['V85','V86'].includes(choice.version)?'최신 꽃 v83·공중 요소 v84와 밝은 배경을 사용하는 예시 배치입니다. 통합 유화 v84는 미술·배치 참고 시안이며 오른쪽 PNG 합성과 픽셀 단위로 같다는 뜻은 아닙니다.':choice.version==='V06'?'유사색 V06 배치 · V05 원본 PNG. 시간대별 12종 유사색을 중심으로 꽃 320개를 배치하고 전체 24종 원본을 유지합니다. 환경 요소 36개와 보이는 꽃 크기·뿌리 접점·초점은 유지합니다.':choice.version==='V05'?'V05 · 그림체만 추상 유화로 변경했습니다. V04와 같은 크기·개수(꽃 320개 + 환경 요소 36개)를 유지하며 같은 PNG로 통합본을 조립합니다.':choice.version==='V04'?'V04 기본 배치 · 꽃 크기는 V01의 50%, 개수는 4배입니다. 꽃 320개 + 환경 요소 36개 = 총 356개.':choice.version==='V01'?'V01 이전 배치 · 꽃 80개 + 환경 요소 36개 = 총 116개. 기존 배치 파일은 그대로 보존합니다.':choice.label;
   }
   function fillProjectVersions(set){const select=$('layoutVersion');select.replaceChildren(...projectChoices(set).map(c=>new Option(c.label,c.id)));select.value='current';syncProjectLinks(set);}
   async function readProject(set,choice=selectedProjectChoice(set)){
@@ -157,7 +157,7 @@
     const set=manifest.backgrounds.find(s=>s.id===id)||manifest.backgrounds[0];selected=set;showCategory(tab);
     for(const b of $('backgroundTabs').children){const active=b.dataset.theme===set.id;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
     $('reviewContent').setAttribute('aria-labelledby','background-tab-'+set.id);$('setCode').textContent=[set.projectVersion&&set.projectVersion+' 배치',(manifest.assetVersion||manifest.version)+' PNG',set.code].filter(Boolean).join(' · ');$('setTitle').textContent=set.label+' 세트';$('setSummary').textContent=`꽃 ${set.flowers.filter(a=>a.src).length} / ${(set.flowerDesigns?.length||6)*4}장 · 환경 요소 ${set.environment.filter(a=>a.src).length}장 · 통합 ${set.integrated.length}개 버전`;
-    $('openSetElements').href='editor.html?v=85&'+(set.projectVersion==='V85'?'currentSet=':'setV05=')+set.id;
+    $('openSetElements').href='editor.html?v=85&'+(['V85','V86'].includes(set.projectVersion)?'currentSet=':'setV05=')+set.id;
     fillProjectVersions(set);
     fillReference(set);fillRenderBackground(set);fillBackgrounds(set);fillFlowers(set);fillEnvironment(set);showScreenshot(set);document.title='메이즈랜드 · '+set.label+' 버전 비교';status('loadStatus','원본은 보존됩니다. 검토 상태와 메모는 이 브라우저에 저장되며, 검증 기준 JSON으로 내보낼 수 있습니다.');renderProject();
   }
@@ -190,7 +190,7 @@
   bindTabKeyboard($('backgroundTabs'),'[role=tab]');bindTabKeyboard(document.querySelector('.category-tabs'),'[role=tab]');window.addEventListener('hashchange',route);
   window.JejuSetReview={validateManifest,getAudit:audit};
   (async()=>{
-    try{const response=await fetch('assets/current-release-v85/set-review.json?v=85');if(!response.ok)throw Error('세트 목록을 불러오지 못했습니다.');manifest=validateManifest(await response.json());$('releaseVersion').textContent=(manifest.colorHarmonyVersion?manifest.colorHarmonyVersion+' 배치 · ':'')+(manifest.assetVersion||manifest.version)+' PNG · '+(manifest.date||'2026.10.28');
+    try{const response=await fetch('assets/current-release-v86/set-review.json?v=86');if(!response.ok)throw Error('세트 목록을 불러오지 못했습니다.');manifest=validateManifest(await response.json());$('releaseVersion').textContent=(manifest.colorHarmonyVersion?manifest.colorHarmonyVersion+' 배치 · ':'')+(manifest.assetVersion||manifest.version)+' PNG · '+(manifest.date||'2026.10.28');
       for(const set of manifest.backgrounds){const b=el('button','',set.code+' '+set.label);b.type='button';b.role='tab';b.id='background-tab-'+set.id;b.dataset.theme=set.id;b.setAttribute('aria-selected','false');b.setAttribute('aria-controls','reviewContent');b.tabIndex=-1;b.onclick=()=>navigate(set.id,category);$('backgroundTabs').append(b);}
       $('reviewContent').hidden=false;route();
     }catch(error){status('loadStatus',error.message+' 페이지를 새로 고쳐 다시 확인해 주세요.',true);}

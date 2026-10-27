@@ -15,6 +15,7 @@ function element(tag, attrs = {}) {
   };
 }
 const imageTarget=element('IMG',{alt:'아침 봉오리'});
+const navigationTarget=element('IMG',{'data-image-navigation':'true'});
 imageTarget.currentSrc='https://example.test/preview.webp';
 imageTarget.link={protocol:'https:',href:'https://example.test/original.png'};
 const tile=element('DIV',{'aria-label':'코발트 수국 만개'});
@@ -30,7 +31,7 @@ const document={head:{append(){}},body:{style:{overflow:'auto'},append(value){di
     });
     return value;
   },
-  querySelectorAll(){return [imageTarget,tile]},
+  querySelectorAll(){return [imageTarget,tile,navigationTarget]},
   addEventListener(type,handler){listeners[type]=handler}
 };
 const css={backgroundImage:'url("flower-sheet.webp")',backgroundPosition:'100% 0%',backgroundSize:'200% 200%',backgroundColor:'transparent',filter:'saturate(1.2)'};
@@ -42,6 +43,7 @@ function click(target,extras={}) {
   return prevented;
 }
 assert.equal(imageTarget.tabIndex,0);
+assert.equal(navigationTarget.dataset.imagePreview,undefined,'navigation artwork keeps its destination link');
 assert.equal(click(imageTarget),true);
 assert.equal(dialog.open,true);
 assert.equal(image.src,imageTarget.link.href);

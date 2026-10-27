@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const read=n=>fs.readFileSync(require.resolve('../docs/'+n),'utf8');
-const sceneManifest=JSON.parse(read('assets/current-release-v85/manifest.json'));
+const sceneManifest=JSON.parse(read('assets/current-release-v86/manifest.json'));
 const mainCode=[...read('index.html').matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('const scenes='));
 function main(search=''){
  const elements=new Map(),urls=[],classes=[];const get=id=>{if(!elements.has(id))elements.set(id,{children:[],style:{},parentElement:{style:{}},append(v){this.children.push(v)},setAttribute(k,v){this[k]=v}});return elements.get(id)};
@@ -18,5 +18,5 @@ const context={window:{jejuFinalCatalog:catalog,jejuAmbient:{atmosphereKind:()=>
 const planner=app.slice(app.indexOf('function brightBackgroundProject('),app.indexOf('async function startupText('));
 const filterBefore=JSON.stringify(context.sceneFilters);const register=vm.runInNewContext(planner+registerCode+'registerCatalog',context);assert.equal(register(catalog),80);assert.equal(JSON.stringify(context.sceneFilters),filterBefore);assert.equal(JSON.stringify(objects),original,'catalog refresh must preserve saved positions');
 for(const src of ['https://example.test/untrusted.png','https://toy80318-sys.github.io/Schedule_App/assets/abstract-flowers-v43/fake.png','https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/../fake.png'])assert.throws(()=>register({assets:[{id:'bad',src,category:'flower'}],backgrounds:[]}));
-assert(read('site-nav.js').includes("['index.html', '메인']"));
+assert(read('site-nav.js').includes("['index.html','정원 보기']"));
 console.log('PASS: all4 main scenes use current v84 integrated gardens, embed/theme/fallback behavior,legacy catalog, trusted registration and saved-layout protection.');

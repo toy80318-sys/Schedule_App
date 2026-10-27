@@ -186,7 +186,7 @@ def main():
         PUBLIC / "manifest.json": encoded(manifest),
         PUBLIC / "prompts.json": encoded(prompt_set),
         ROOT / "docs/atmosphere84-catalog.js": catalog_script(manifest),
-        ROOT / "docs/atmosphere-assets.html": gallery(manifest),
+        ROOT / "docs/atmosphere-assets-v84-archive.html": gallery(manifest),
     }
     if args.check:
         for path, content in generated.items():

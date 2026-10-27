@@ -70,6 +70,6 @@ function setup(input,options={}){
   assert.throws(()=>t.set('https://example.test/custom.png'),/등록된 배경/);assert.equal(t.plan({...saved(),background:'constructor'}),null,'replacement lookup ignores inherited keys');
   assert.equal((app.match(/oilAssetVersion:14,backgroundDefaultVersion/g)||[]).length,4,'current, named, file and exhibition exports persist the receipt');
   assert(app.includes('gardenSpace,backgroundDefaultVersion}),selected:'));
-  const html=read('editor.html');assert(html.indexOf('set-review-renderer.js')<html.indexOf('app.js?v=bright83r1'));assert(html.includes('whole62-scenes.js?v=80'));
+  const html=read('editor.html');assert(html.indexOf('set-review-renderer.js')<html.indexOf('app.js?v=atmosphere84'));assert(html.includes('whole62-scenes.js?v=80'));
   console.log('PASS: four-theme exact-source/alias migration, original backup bytes and commit order, geometry/focus/group filters preserved, neutral background, removed choices/imports/undo/API migrate while custom/none/bright filters stay intact, legacy backups, signed356-object fresh default and all download/hash/image/backup/save failure gates.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

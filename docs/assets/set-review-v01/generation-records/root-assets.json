@@ -1,0 +1,320 @@
+[
+  {
+    "id": "BG03-F01-C01-V01",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "name": "달빛 · 둥근 수국 · 페리윙클",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Create ONE complete independent transparent PNG flower plant sprite for the supplied Jeju garden art. Supporting reference is the integrated MOONLIGHT garden; match its hand-painted impasto oil / soft fantastical storybook flower design, pastel lighting, rich but loose painterly brushwork. Subject: one rounded mophead hydrangea flower cluster with layered overlapping four-petal florets, single sturdy stem and two broad serrated leaves. Petal color is delicate PERIWINKLE BLUE with pale lavender edge highlights. Green leaves remain sage-green with soft moonlit pale edges; no recoloring leaves purple. Small readable whole plant, attached healthy flower head/stem/leaves, natural slightly varied petal spacing. Center the whole independent plant in a square 1024x1024 transparent canvas with at least 70 px clear margin on EVERY side including stem bottom and flower tips. Entire flower, entire stem and every leaf must be within canvas, no clipping. Camera near frontal, complete plant silhouette for separate placement. No soil, ground patch, pot, rock, scenery, opaque backdrop, checkerboard pattern, text, watermark, or floor shadow. TRUE alpha transparency. Make it look like a flower design from the integrated reference while isolated on transparency, not a cropped fragment taken from that image."
+  },
+  {
+    "id": "BG03-F01-C02-V01",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "name": "달빛 · 둥근 수국 · 라일락",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to soft LILAC PURPLE. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F01-C03-V01",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "name": "달빛 · 둥근 수국 · 라벤더 핑크",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C03-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to delicate LAVENDER PINK. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F01-C04-V01",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "name": "달빛 · 둥근 수국 · 블루 아이보리",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C04-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to pale BLUE IVORY with gentle periwinkle shadows. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F02-C01-V01",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "name": "달빛 · 성긴 수국 · 페리윙클",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Create ONE complete independent transparent PNG flower plant sprite for the supplied Jeju garden art. Supporting reference is the integrated MOONLIGHT garden; match its hand-painted impasto oil / soft fantastical storybook flower design, pastel lighting, rich but loose painterly brushwork. Subject: one airy flat hydrangea flower head with separated delicate four-petal florets and elegant open gaps, attached stem and two small broad leaves. Petal color is delicate PERIWINKLE BLUE with pale lavender edge highlights. Green leaves remain sage-green with soft moonlit pale edges; no recoloring leaves purple. Small readable whole plant, attached healthy flower head/stem/leaves, natural slightly varied petal spacing. Center the whole independent plant in a square 1024x1024 transparent canvas with at least 70 px clear margin on EVERY side including stem bottom and flower tips. Entire flower, entire stem and every leaf must be within canvas, no clipping. Camera near frontal, complete plant silhouette for separate placement. No soil, ground patch, pot, rock, scenery, opaque backdrop, checkerboard pattern, text, watermark, or floor shadow. TRUE alpha transparency. Make it look like a flower design from the integrated reference while isolated on transparency, not a cropped fragment taken from that image."
+  },
+  {
+    "id": "BG03-F02-C02-V01",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "name": "달빛 · 성긴 수국 · 라일락",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to soft LILAC PURPLE. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F02-C03-V01",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "name": "달빛 · 성긴 수국 · 라벤더 핑크",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C03-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to delicate LAVENDER PINK. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F02-C04-V01",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "name": "달빛 · 성긴 수국 · 블루 아이보리",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C04-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to pale BLUE IVORY with gentle periwinkle shadows. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F03-C01-V01",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "name": "달빛 · 곧은 라벤더 · 페리윙클",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Create ONE complete independent transparent PNG flower plant sprite for the supplied Jeju garden art. Supporting reference is the integrated MOONLIGHT garden; match its hand-painted impasto oil / soft fantastical storybook flower design, pastel lighting, rich but loose painterly brushwork. Subject: one small complete upright lavender plant, three slender clearly separated lavender flower spikes with small individual petals along their stalks, fine narrow leaves. Petal color is delicate PERIWINKLE BLUE with pale lavender edge highlights. Green leaves remain sage-green with soft moonlit pale edges; no recoloring leaves purple. Small readable whole plant, attached healthy flower head/stem/leaves, natural slightly varied petal spacing. Center the whole independent plant in a square 1024x1024 transparent canvas with at least 70 px clear margin on EVERY side including stem bottom and flower tips. Entire flower, entire stem and every leaf must be within canvas, no clipping. Camera near frontal, complete plant silhouette for separate placement. No soil, ground patch, pot, rock, scenery, opaque backdrop, checkerboard pattern, text, watermark, or floor shadow. TRUE alpha transparency. Make it look like a flower design from the integrated reference while isolated on transparency, not a cropped fragment taken from that image."
+  },
+  {
+    "id": "BG03-F03-C02-V01",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "name": "달빛 · 곧은 라벤더 · 라일락",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to soft LILAC PURPLE. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F03-C03-V01",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "name": "달빛 · 곧은 라벤더 · 라벤더 핑크",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C03-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to delicate LAVENDER PINK. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F03-C04-V01",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "name": "달빛 · 곧은 라벤더 · 블루 아이보리",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C04-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to pale BLUE IVORY with gentle periwinkle shadows. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F04-C01-V01",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "name": "달빛 · 휘어진 라벤더 · 페리윙클",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Create ONE complete independent transparent PNG flower plant sprite for the supplied Jeju garden art. Supporting reference is the integrated MOONLIGHT garden; match its hand-painted impasto oil / soft fantastical storybook flower design, pastel lighting, rich but loose painterly brushwork. Subject: one small complete graceful lavender plant, two softly arching flower spikes leaning slightly sideways, loose alternating small blossoms and narrow attached leaves. Petal color is delicate PERIWINKLE BLUE with pale lavender edge highlights. Green leaves remain sage-green with soft moonlit pale edges; no recoloring leaves purple. Small readable whole plant, attached healthy flower head/stem/leaves, natural slightly varied petal spacing. Center the whole independent plant in a square 1024x1024 transparent canvas with at least 70 px clear margin on EVERY side including stem bottom and flower tips. Entire flower, entire stem and every leaf must be within canvas, no clipping. Camera near frontal, complete plant silhouette for separate placement. No soil, ground patch, pot, rock, scenery, opaque backdrop, checkerboard pattern, text, watermark, or floor shadow. TRUE alpha transparency. Make it look like a flower design from the integrated reference while isolated on transparency, not a cropped fragment taken from that image."
+  },
+  {
+    "id": "BG03-F04-C02-V01",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "name": "달빛 · 휘어진 라벤더 · 라일락",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to soft LILAC PURPLE. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F04-C03-V01",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "name": "달빛 · 휘어진 라벤더 · 라벤더 핑크",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C03-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to delicate LAVENDER PINK. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F04-C04-V01",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "name": "달빛 · 휘어진 라벤더 · 블루 아이보리",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C04-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to pale BLUE IVORY with gentle periwinkle shadows. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F05-C01-V01",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "name": "달빛 · 활짝 핀 동백 · 페리윙클",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Create ONE complete independent transparent PNG flower plant sprite for the supplied Jeju garden art. Supporting reference is the integrated MOONLIGHT garden; match its hand-painted impasto oil / soft fantastical storybook flower design, pastel lighting, rich but loose painterly brushwork. Subject: one fully open pastel camellia flower with broad five to eight expressive rounded layered petals and a delicate yellow stamen center, attached short curved stem and three glossy deep sage leaves. Petal color is delicate PERIWINKLE BLUE with pale lavender edge highlights. Green leaves remain sage-green with soft moonlit pale edges; no recoloring leaves purple. Small readable whole plant, attached healthy flower head/stem/leaves, natural slightly varied petal spacing. Center the whole independent plant in a square 1024x1024 transparent canvas with at least 70 px clear margin on EVERY side including stem bottom and flower tips. Entire flower, entire stem and every leaf must be within canvas, no clipping. Camera near frontal, complete plant silhouette for separate placement. No soil, ground patch, pot, rock, scenery, opaque backdrop, checkerboard pattern, text, watermark, or floor shadow. TRUE alpha transparency. Make it look like a flower design from the integrated reference while isolated on transparency, not a cropped fragment taken from that image."
+  },
+  {
+    "id": "BG03-F05-C02-V01",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "name": "달빛 · 활짝 핀 동백 · 라일락",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to soft LILAC PURPLE. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F05-C03-V01",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "name": "달빛 · 활짝 핀 동백 · 라벤더 핑크",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C03-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to delicate LAVENDER PINK. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F05-C04-V01",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "name": "달빛 · 활짝 핀 동백 · 블루 아이보리",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C04-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to pale BLUE IVORY with gentle periwinkle shadows. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F06-C01-V01",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "name": "달빛 · 옆을 향한 동백 · 페리윙클",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Create ONE complete independent transparent PNG flower plant sprite for the supplied Jeju garden art. Supporting reference is the integrated MOONLIGHT garden; match its hand-painted impasto oil / soft fantastical storybook flower design, pastel lighting, rich but loose painterly brushwork. Subject: one three-quarter side-view cupped camellia flower with overlapping rounded petals and visible central stamens, gracefully bent attached stem, two dark sage leaves. Petal color is delicate PERIWINKLE BLUE with pale lavender edge highlights. Green leaves remain sage-green with soft moonlit pale edges; no recoloring leaves purple. Small readable whole plant, attached healthy flower head/stem/leaves, natural slightly varied petal spacing. Center the whole independent plant in a square 1024x1024 transparent canvas with at least 70 px clear margin on EVERY side including stem bottom and flower tips. Entire flower, entire stem and every leaf must be within canvas, no clipping. Camera near frontal, complete plant silhouette for separate placement. No soil, ground patch, pot, rock, scenery, opaque backdrop, checkerboard pattern, text, watermark, or floor shadow. TRUE alpha transparency. Make it look like a flower design from the integrated reference while isolated on transparency, not a cropped fragment taken from that image."
+  },
+  {
+    "id": "BG03-F06-C02-V01",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "name": "달빛 · 옆을 향한 동백 · 라일락",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to soft LILAC PURPLE. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F06-C03-V01",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "name": "달빛 · 옆을 향한 동백 · 라벤더 핑크",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C03-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to delicate LAVENDER PINK. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG03-F06-C04-V01",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "name": "달빛 · 옆을 향한 동백 · 블루 아이보리",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C04-V01.png",
+    "generationPrompt": "Use case: precise-object-edit. COLOR VARIANT of this exact isolated oil-painted flower plant. Change ONLY flower PETAL color to pale BLUE IVORY with gentle periwinkle shadows. Preserve identical flower design, number/shape of petal heads, shape and positions of every stem and green leaf, plant scale, image canvas, frontal camera and hand-painted oil texture. Keep yellow/cream stamens readable. Leaves and stems stay natural sage green with soft moonlit edges, do not recolor them with the petals. One complete independent flower plant PNG with TRUE alpha transparency, generous empty transparent margins all around, whole attached flower heads/stems/leaves, no cropping. No soil, floor, pot, landscape, new objects, text, watermark or opaque backdrop. The source plant is the fixed design: this is one of four CLOSE color-family options for that same design, NOT a new species or silhouette."
+  },
+  {
+    "id": "BG04-F01-C01-V01",
+    "design": "F01",
+    "designLabel": "둥근 하늘빛 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "name": "아침 · 둥근 하늘빛 수국 · 스카이블루",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F01-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Generate ONE complete isolated transparent flower plant inspired by the supplied integrated Jeju MORNING garden. Subject: one round mophead hydrangea head composed of many individually painted four-petal florets, sturdy stem, two serrated sage-green leaves. Match the reference's soft hand-painted impasto oil/storybook style, loose gestural petal textures and bright delicate morning light. Petal color SKY BLUE, pale blue ivory and delicate periwinkle highlights. Sage green leaves and attached stems remain naturally green. Entire flower head(s), connected stem and every leaf must be whole and inside the canvas, no clipped ends, no detached fragments. Center the plant in a square 1024x1024 canvas occupying at most 80% of the canvas width and height; leave at least 80px EMPTY TRANSPARENT margin on all four sides. The full stem bottom visible. TRUE alpha transparency, no soil, pot, ground patch, floor shadow, landscape, other objects, checkerboard pattern, text, or watermark. Use the reference only for flower design/style and lighting; never extract a cropped region from it."
+  },
+  {
+    "id": "BG04-F02-C01-V01",
+    "design": "F02",
+    "designLabel": "납작한 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "name": "아침 · 납작한 수국 · 스카이블루",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F02-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Generate ONE complete isolated transparent flower plant inspired by the supplied integrated Jeju MORNING garden. Subject: one airy flatter hydrangea flower head with delicate separated four-petal florets and open irregular silhouette, thin connected stem, two broad leaves. Match the reference's soft hand-painted impasto oil/storybook style, loose gestural petal textures and bright delicate morning light. Petal color SKY BLUE, pale blue ivory and delicate periwinkle highlights. Sage green leaves and attached stems remain naturally green. Entire flower head(s), connected stem and every leaf must be whole and inside the canvas, no clipped ends, no detached fragments. Center the plant in a square 1024x1024 canvas occupying at most 80% of the canvas width and height; leave at least 80px EMPTY TRANSPARENT margin on all four sides. The full stem bottom visible. TRUE alpha transparency, no soil, pot, ground patch, floor shadow, landscape, other objects, checkerboard pattern, text, or watermark. Use the reference only for flower design/style and lighting; never extract a cropped region from it."
+  },
+  {
+    "id": "BG04-F03-C01-V01",
+    "design": "F03",
+    "designLabel": "두 송이 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "name": "아침 · 두 송이 수국 · 스카이블루",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F03-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Generate ONE complete isolated transparent flower plant inspired by the supplied integrated Jeju MORNING garden. Subject: one whole small hydrangea plant with two gently overlapping small flower heads at slightly different heights on connected stems, elegant natural branching and three leaves. Match the reference's soft hand-painted impasto oil/storybook style, loose gestural petal textures and bright delicate morning light. Petal color SKY BLUE, pale blue ivory and delicate periwinkle highlights. Sage green leaves and attached stems remain naturally green. Entire flower head(s), connected stem and every leaf must be whole and inside the canvas, no clipped ends, no detached fragments. Center the plant in a square 1024x1024 canvas occupying at most 80% of the canvas width and height; leave at least 80px EMPTY TRANSPARENT margin on all four sides. The full stem bottom visible. TRUE alpha transparency, no soil, pot, ground patch, floor shadow, landscape, other objects, checkerboard pattern, text, or watermark. Use the reference only for flower design/style and lighting; never extract a cropped region from it."
+  },
+  {
+    "id": "BG04-F04-C01-V01",
+    "design": "F04",
+    "designLabel": "비스듬한 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "name": "아침 · 비스듬한 수국 · 스카이블루",
+    "category": "flower",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F04-C01-V01.png",
+    "generationPrompt": "Use case: illustration-story. Generate ONE complete isolated transparent flower plant inspired by the supplied integrated Jeju MORNING garden. Subject: one gently tilted three-quarter side-view hydrangea head with a looser crescent silhouette of tiny four-petal florets, curved connected stem, two broad serrated leaves. Match the reference's soft hand-painted impasto oil/storybook style, loose gestural petal textures and bright delicate morning light. Petal color SKY BLUE, pale blue ivory and delicate periwinkle highlights. Sage green leaves and attached stems remain naturally green. Entire flower head(s), connected stem and every leaf must be whole and inside the canvas, no clipped ends, no detached fragments. Center the plant in a square 1024x1024 canvas occupying at most 80% of the canvas width and height; leave at least 80px EMPTY TRANSPARENT margin on all four sides. The full stem bottom visible. TRUE alpha transparency, no soil, pot, ground patch, floor shadow, landscape, other objects, checkerboard pattern, text, or watermark. Use the reference only for flower design/style and lighting; never extract a cropped region from it."
+  },
+  {
+    "id": "BG03-E02-V01",
+    "designLabel": "작은 나무",
+    "name": "달빛 · 작은 나무",
+    "category": "tree",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-E02-V01.png",
+    "generationPrompt": "One COMPLETE independent small Jeju garden tree, soft hand-painted impasto oil / storybook style matching the provided flower garden. Graceful short natural trunk with a full airy rounded sage-green canopy, softly irregular branches, luminous moonlit pale lavender and silver highlights. Entire canopy, all branch tips, complete trunk and small root ends visible, centered with generous 10% transparent margin around all four sides, no clipping. A small decorative background tree for a beautiful fantastical flower garden, not a tall forest. Square canvas, TRUE alpha transparency. No soil patch, grass mound, pot, rock, scenery, people, text, watermark, floor shadow or checkerboard."
+  },
+  {
+    "id": "BG04-E02-V01",
+    "designLabel": "작은 나무",
+    "name": "아침 · 작은 나무",
+    "category": "tree",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-E02-V01.png",
+    "generationPrompt": "One COMPLETE independent small Jeju garden tree, soft hand-painted impasto oil / storybook style matching the provided flower garden. Graceful short natural trunk with a full airy rounded sage-green canopy, softly irregular branches, soft bright early sunshine with pale gold highlights. Entire canopy, all branch tips, complete trunk and small root ends visible, centered with generous 10% transparent margin around all four sides, no clipping. A small decorative background tree for a beautiful fantastical flower garden, not a tall forest. Square canvas, TRUE alpha transparency. No soil patch, grass mound, pot, rock, scenery, people, text, watermark, floor shadow or checkerboard."
+  }
+]

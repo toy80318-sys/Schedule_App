@@ -1,0 +1,46 @@
+[
+  {
+    "id": "BG01-E02-V01",
+    "theme": "sunset",
+    "name": "노을 · 작은 나무",
+    "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-E02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit / lighting-weather. Image 1 is a STYLE/DESIGN reference of one entire small tree. Make a complete independent small sage-green garden tree in the same hand-painted soft impasto oil/storybook style, with a naturally branching visible brown trunk, a rounded airy leafy canopy, attached small branch tips and short visible root ends. Match a beautiful BRIGHT PEACH-GOLD SUNSET garden: gentle peach-gold rim light from upper left, readable sage and olive green leaves, subtle warm brown trunk. Small leaf flowers from the reference may remain extremely sparse but do not make the tree a dense bouquet. Output a new standalone whole tree, no landscape. CRITICAL FRAMING: square 1024x1024 transparent canvas with the ENTIRE tree confined to the central 740 x 820 pixels: at least 100 pixels of EMPTY TRANSPARENT MARGIN at top, bottom, left and right. Preserve full crown, every branch tip and clean root ends; never auto-trim the canvas to the foliage. NO cropping, NO ground/soil/grass mound, no pot, no floor shadow, no black/white background, no text or watermark. Genuinely transparent alpha all around and between branches.",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "id": "BG02-E02-V01",
+    "theme": "day",
+    "name": "낮 · 작은 나무",
+    "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-E02-V01.png",
+    "generationPrompt": "Use case: precise-object-edit / lighting-weather. Image 1 is a STYLE/DESIGN reference of one entire small tree. Make a complete independent small sage-green garden tree in the same hand-painted soft impasto oil/storybook style, with a naturally branching visible brown trunk, a rounded airy leafy canopy, attached small branch tips and short visible root ends. Match a beautiful BRIGHT SUNNY DAY garden: soft fresh warm-gold sunlight from upper left, light sage and emerald leaves with delicate mint highlights, warm natural brown trunk, never dark indigo. Small leaf flowers from the reference may remain extremely sparse but do not make the tree a dense bouquet. Output one standalone whole tree, no landscape. CRITICAL FRAMING: square 1024x1024 transparent canvas with the ENTIRE tree confined to the central 740 x 820 pixels: at least 100 pixels of EMPTY TRANSPARENT MARGIN at top, bottom, left and right. Preserve full crown, every branch tip and clean root ends; never auto-trim the canvas to the foliage. NO cropping, NO ground/soil/grass mound, no pot, no floor shadow, no black/white background, no text or watermark. Genuinely transparent alpha all around and between branches.",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "id": "BG04-F05-C01-V01",
+    "theme": "morning",
+    "design": "F05",
+    "designLabel": "가는 라벤더",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "name": "아침 · 가는 라벤더 · 스카이블루",
+    "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C01-V01.png",
+    "generationPrompt": "Use case: precise-object-edit / lighting-weather. Image 1 is the DESIGN TARGET of a plant with THREE UPRIGHT FLOWER SPIKES. Preserve this narrow vertical three-spike structure, attached green stems and tapering green leaves, but refine the flowers to LAVENDER-LIKE delicate spaced small florets on slim upright spikes, NOT hydrangea or rounded mophead clusters. Change petals to soft SKY BLUE, with gentle pale-ivory highlights, and lighting to bright soft MORNING light: faint warm-gold rim from upper left and clean natural sage green foliage. The central spike is tallest and two side spikes slightly shorter. Plenty of visible fine stem between small flower whorls; no large flat five-petal flower heads, no spherical clusters. One connected complete plant with slender narrow green leaves and clean finished stem bottom. Match the same expressive soft hand-painted oil/storybook texture; flower spikes remain sharp, not defocused. Square 1024x1024, entire plant confined to central 740 x 820 pixels, all tip/leaf/stem ends fully visible with at least 100px EMPTY TRANSPARENT MARGIN on all four sides, do not auto-crop/trim. GENUINE ALPHA TRANSPARENCY all around and between stems. No soil, ground, pot, rock, cast shadow, background color, border, text or watermark.",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  },
+  {
+    "id": "BG04-F06-C01-V01",
+    "theme": "morning",
+    "design": "F06",
+    "designLabel": "흰꽃 가지",
+    "color": "C01",
+    "colorLabel": "블루 아이보리",
+    "name": "아침 · 흰꽃 가지 · 블루 아이보리",
+    "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG01-F05-C01-V01.png",
+    "generationPrompt": "Use case: precise-object-edit / lighting-weather. Image 1 is a design/style reference for an attached BRANCHING SPRAY of small flowers, NOT a hydrangea target. Produce one complete AIRY BUCKWHEAT-LIKE FLOWER SPRAY: very thin connected branching green stems, each ending in only a few TINY delicate ivory five-petal blossoms with a subtle pale blue-ivory tint and warm little centers. Make blossoms much smaller and more widely separated than the reference: each floret about 15-25px across on a 1024 canvas, clearly separated tiny stars, with abundant transparent negative space among sprigs. Four or five slender lateral branches, little triangular or narrow green leaves, visible fine connected stems and cleanly finished stem bottom. NO hydrangea, NO large balls/mopheads, no dense rounded floral clusters, no large broad petals. Palette BLUE IVORY petals with natural fresh sage green leaves, bright soft morning light from upper left, delicate pale gold edge lighting. Same rich but softly gestural hand-painted impasto oil/storybook sprite style, sharp focal plant. Square 1024x1024, entire plant confined to central 740 x 820 pixels, all tip/leaf/stem ends fully visible with at least 100px EMPTY TRANSPARENT MARGIN on all four sides, do not auto-crop/trim. GENUINE ALPHA TRANSPARENCY all around and between branches. No soil, ground, pot, rocks, floor shadow, colored/black/white background, border, text or watermark.",
+    "tool": "built-in image_gen",
+    "transparent_background": true
+  }
+]

@@ -1,0 +1,7 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const player=fs.readFileSync('docs/player.js','utf8'),code=player.slice(player.indexOf('  function safeRoot('),player.indexOf('  function flowerSpecies('));
+const api=vm.runInNewContext(code+';({safeRoot,safeSource,validate})',{URL,ownOrigin:'https://toy80318-sys.github.io',finite:(n,a,b)=>typeof n==='number'&&Number.isFinite(n)&&n>=a&&n<=b,window:{jejuAmbient:require('../docs/ambient-policy.js')}});
+for(const source of ['assets/set-review-v01/PNG/BG01-B01-V01.png','/assets/legacy.png','https://toy80318-sys.github.io/Schedule_App/assets/a.png'])assert(api.safeSource(source),source);
+for(const source of ['../secret.png','assets/../secret.png','assets/%2e%2e/secret.png','//evil.test/a.png','file:///secret.png','javascript:alert(1)','https://user:pass@example.com/a.png'])assert(!api.safeSource(source),source);
+for(const theme of ['sunset','day','night','morning']){const project=JSON.parse(fs.readFileSync('docs/assets/set-review-v01/'+theme+'_editor.json','utf8')),before=JSON.stringify(project),result=api.validate(project);assert.equal(result.objects.length,116);assert.equal(JSON.stringify(project),before);assert(result.assets.every(a=>api.safeSource(a.src)));assert(api.safeSource(result.background));}
+console.log('PASS: actual exhibition validator accepts all four new complete PNG projects and background selections, rejects traversal/unsafe schemes, and preserves imported layouts.');

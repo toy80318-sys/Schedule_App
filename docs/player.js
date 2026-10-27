@@ -23,7 +23,7 @@
   const running=()=>enabled&&!document.hidden;
   const message=(type,extra={})=>{if(window.parent!==window)window.parent.postMessage({type,...extra},ownOrigin)};
   function safeRoot(s){
-    if(typeof s!=='string'||!/^\/assets\/[A-Za-z0-9_./-]+(?:\?[A-Za-z0-9_.=&-]+)?$/.test(s))return false;
+    if(typeof s!=='string'||!/^\/?assets\/[A-Za-z0-9_./-]+(?:\?[A-Za-z0-9_.=&-]+)?$/.test(s))return false;
     return !s.split('?')[0].split('/').some(part=>part==='.'||part==='..');
   }
   function safeSource(s){

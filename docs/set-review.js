@@ -151,6 +151,7 @@
     const set=manifest.backgrounds.find(s=>s.id===id)||manifest.backgrounds[0];selected=set;showCategory(tab);
     for(const b of $('backgroundTabs').children){const active=b.dataset.theme===set.id;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
     $('reviewContent').setAttribute('aria-labelledby','background-tab-'+set.id);$('setCode').textContent=[manifest.assetVersion||manifest.version,set.code].filter(Boolean).join(' · ');$('setTitle').textContent=set.label+' 세트';$('setSummary').textContent=`꽃 ${set.flowers.filter(a=>a.src).length} / 24장 · 환경 요소 ${set.environment.filter(a=>a.src).length}장 · 통합 ${set.integrated.length}개 버전`;
+    $('openSetElements').href='editor.html?v=elements78&setV05='+set.id;
     fillProjectVersions(set);
     fillReference(set);fillRenderBackground(set);fillBackgrounds(set);fillFlowers(set);fillEnvironment(set);showScreenshot(set);document.title='메이즈랜드 · '+set.label+' 버전 비교';status('loadStatus','원본은 보존됩니다. 검토 상태와 메모는 이 브라우저에 저장되며, 검증 기준 JSON으로 내보낼 수 있습니다.');renderProject();
   }

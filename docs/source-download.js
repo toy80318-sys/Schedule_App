@@ -26,7 +26,7 @@
     files[i]={name:'PNG/'+a.file,bytes};progress(++completed,items.length);
    }
   }))}catch(error){controller.abort();throw error}
-  const manifest={format:'jeju-source-png-v1',version:70,generatedAt:new Date().toISOString(),count:items.length,assets:items.map(a=>({id:a.id,name:a.name,file:'PNG/'+a.file,backgroundId:a.backgroundId,lightingId:a.lightingId,theme:a.theme,group:a.group,species:a.species,width:a.width,height:a.height,transparent:a.transparent,sha256:a.sha256,source:a.src,stillOnly:a.stillOnly}))};
+  const manifest={format:'jeju-source-png-v1',version:78,generatedAt:new Date().toISOString(),count:items.length,assets:items.map(a=>({id:a.id,name:a.name,file:'PNG/'+a.file,backgroundId:a.backgroundId,lightingId:a.lightingId,theme:a.theme,group:a.group,species:a.species,width:a.width,height:a.height,transparent:a.transparent,completeObject:a.completeObject,lightingBaked:a.lightingBaked,setReviewVersion:a.setReviewVersion,category:a.category,design:a.design,color:a.color,sha256:a.sha256,source:a.src,stillOnly:a.stillOnly}))};
   files.push({name:'sources.json',bytes:new Blob([JSON.stringify(manifest,null,2)],{type:'application/json'})},{name:'README.txt',bytes:new Blob(['제주 메이즈랜드 원본 PNG\nPNG 폴더에 원본을 모았습니다. 파일명의 BG는 배경, LT는 조명입니다.\nsources.json에서 종류·해상도·배경·조명·원본 해시를 확인하세요.\n이 ZIP은 정지 이미지 원본이며 편집 배치나 새 개화 영상을 포함하지 않습니다.\n'])});
   return zip(files);
  }
@@ -37,7 +37,7 @@
  for(const [newOnly,label] of [[true,'새 이미지'],[false,'전체 원본']]){
   const items=entries(catalog,newOnly),button=document.createElement('button');button.className='btn';button.textContent=`${label} ${items.length}종 ZIP`;button.type='button';buttons.push(button);toolbar.append(button);
   button.onclick=async()=>{buttons.forEach(b=>b.disabled=true);status.textContent=`원본 확인 중 0 / ${items.length}`;
-   try{await E.ready;const blob=await packageSources(items,fetch.bind(root),root.jejuHandoff.zip,(done,count)=>{status.textContent=`원본 확인 중 ${done} / ${count}`},root.crypto);E.download(blob,`Mazeland_${newOnly?'New24':'All132'}_OriginalPNG_v70.zip`);status.textContent=`완료 · ${items.length}종 · ${(blob.size/1048576).toFixed(1)}MB`;E.notice('원본 PNG ZIP을 내려받았습니다.');}
+   try{await E.ready;const blob=await packageSources(items,fetch.bind(root),root.jejuHandoff.zip,(done,count)=>{status.textContent=`원본 확인 중 ${done} / ${count}`},root.crypto);E.download(blob,`Mazeland_${newOnly?'New':'All'}${items.length}_OriginalPNG_v78.zip`);status.textContent=`완료 · ${items.length}종 · ${(blob.size/1048576).toFixed(1)}MB`;E.notice('원본 PNG ZIP을 내려받았습니다.');}
    catch(error){status.textContent='실패 · '+error.message;E.notice(error.message)}finally{buttons.forEach(b=>b.disabled=false)}
   };
  }

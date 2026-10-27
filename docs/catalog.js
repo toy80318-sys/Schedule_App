@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const data=window.jejuFinalCatalog,E=window.jejuEditor,$=id=>document.getElementById(id);
-  const labels={flower:'꽃 · 만개 PNG',petal:'꽃잎',background:'배경 PNG',cloud:'구름',mist:'안개',bird:'새',butterfly:'나비',grass:'잎 · 잎줄기 · 풀',decor:'현무암',cluster:'군집 이미지',particle:'빛 입자',reference:'참고 자료'};
+  const labels={tree:'나무',basalt:'현무암 돌',leaf:'잎 가지',flower:'꽃 · 만개 PNG',petal:'꽃잎',background:'배경 PNG',cloud:'구름',mist:'안개',bird:'새',butterfly:'나비',grass:'잎 · 잎줄기 · 풀',decor:'현무암',cluster:'군집 이미지',particle:'빛 입자',reference:'참고 자료'};
   let chosen=null,frame=0,playing=false,last=0,raf=0,loadToken=0;
   const host=$('finalCatalog'),list=$('catalogCards'),media=$('catalogMedia'),seek=$('catalogSeek');
   const button=(text,fn)=>{const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=text;b.onclick=fn;return b};

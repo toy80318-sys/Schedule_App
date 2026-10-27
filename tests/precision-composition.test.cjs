@@ -12,6 +12,8 @@ for(const scene of old.scenes){
  }
 }
 assert(app.includes("setFlowerImage(im,src);im.style.objectFit=a.sourceRect?.length===4?'fill':'contain'"));assert(app.includes("dw=a.sourceRect?.length===4?display.w"));assert(app.includes("wallBackground.style.objectFit=sourceRegistered.has(background)?'fill':'cover'"));assert(app.includes("const data={name:$('saveName').value,objects"));assert(app.includes('await applyProject(await loadBrightDefault(),{startup:true})'));assert(controller.includes('await E.useSample(')&&controller.includes('b.onclick=()=>open(s)'));assert(read('editor.html').includes('cutout57-scenes.js'));
-const player=read('player.js');assert(player.includes("w=a.sourceRect?.length===4?o.w"));assert(player.includes("project.backgroundFit==='fill'"));assert(player.includes("scope:a.group==='flowers'?'flowers':'decor'"));
+const player=read('player.js');assert(player.includes("w=a.sourceRect?.length===4?o.w"));assert(player.includes("project.backgroundFit==='fill'"));assert(player.includes("scope:touchFlower(a)?'flowers':'decor'"));
 assert(read('editor.html').includes('border:0;outline:2px solid #7a8796'));
 console.log('PASS: native PNG precision, registered object/background fit, correct flower tone scope, saved names and edited-layout migration protection for all4 scenes.');
+
+const touchCode=player.slice(player.indexOf("  const touchFlower="),player.indexOf("  const plant="));const touch=vm.runInNewContext(touchCode+";touchFlower",{flowerSpecies:a=>a?.species==='camellia'?'camellia':null});for(const a of [{group:'flowers',stillOnly:true},{category:'flower'},{species:'camellia'}])assert(touch(a));for(const a of [{category:'grass'},{category:'basalt'},{category:'cloud'}])assert(!touch(a));

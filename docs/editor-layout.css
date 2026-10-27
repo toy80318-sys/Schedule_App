@@ -1,0 +1,36 @@
+.editor-organized main{grid-template-columns:220px minmax(0,1fr) 320px;grid-template-rows:minmax(0,1fr) 180px}
+.editor-organized>header{gap:8px;padding:0 12px;overflow-x:auto}
+.editor-organized>header strong{font-size:14px}
+.editor-organized>header .btn{padding:7px 10px}
+.editor-organized .panel.left{width:auto}
+.editor-organized .work{margin-right:0}
+.editor-organized .worktop{max-width:calc(100% - 24px);overflow:auto}
+.editor-organized .right{position:static;width:auto;display:flex;flex-direction:column;padding:0;overflow:hidden;box-shadow:none}
+.editor-tool-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:10px;border-bottom:1px solid #3e5156;background:#16262c;flex-shrink:0}
+.editor-tool-tabs button{border:1px solid #40565d;background:#20343b;color:#c4d6d7;border-radius:7px;padding:9px 3px;cursor:pointer;font:12px/1.4 system-ui}
+.editor-tool-tabs button[aria-selected=true]{background:#88d2c6;border-color:#88d2c6;color:#132f2e;font-weight:700}
+#editorToolPanels{overflow:auto;min-height:0;padding:10px;flex:1}
+#editorToolPanels [role=tabpanel][hidden]{display:none}
+.editor-tool-card{margin-bottom:10px;border:1px solid #3b4f58;border-radius:9px;background:#18272e}
+.editor-tool-card>summary{padding:11px 12px;font-weight:650;color:#d9e7e5;cursor:pointer}
+.editor-tool-card[open]>summary{border-bottom:1px solid #324952}
+.editor-tool-body{padding:12px}
+.editor-tool-body>.group{margin:0}
+.editor-tool-body>.group>h3:first-child{display:none}
+.editor-tool-body .actions{gap:7px}
+.editor-tool-body .actions>.btn{font-size:12px;padding:8px 5px;min-width:0;white-space:normal}
+.editor-tool-field{display:block;color:#b4c9cc;font-size:12px;margin-bottom:10px}
+.editor-tool-field input,.editor-tool-field select{display:block;width:100%;max-width:100%;margin-top:5px}
+.editor-tool-body #whole62-scenes{position:static!important;display:flex!important;flex-wrap:wrap;overflow:visible!important;padding:0!important;border:0!important;background:none!important}
+.editor-tool-body #whole62-scenes strong{display:none}
+.editor-tool-body #whole62-scenes output{white-space:normal!important}
+.editor-tool-body #sourceDownloadToolbar{padding:0!important;background:none!important;display:grid!important;grid-template-columns:1fr}
+.editor-tool-body #sourceDownloadToolbar button{white-space:normal}
+.editor-organized .palette .palbar{overflow-x:auto;flex-shrink:0;white-space:nowrap}
+.editor-organized .palette .items{flex:1}
+.editor-organized .status{max-width:calc(100% - 24px)}
+.editor-tools-hidden main{grid-template-columns:220px minmax(0,1fr) 0}
+.editor-tools-hidden .right{display:none}
+.editor-tool-tabs button:focus-visible,.editor-tool-card>summary:focus-visible{outline:3px solid #f3d18c;outline-offset:2px}
+@media(max-width:1050px){.editor-organized main{grid-template-columns:180px minmax(0,1fr) 300px}.editor-tools-hidden main{grid-template-columns:180px minmax(0,1fr) 0}.editor-organized>header strong{display:none}}
+@media(max-width:760px){.editor-organized main,.editor-tools-hidden main{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) 170px}.editor-organized .left{display:none}.editor-organized .palette{grid-column:1}.editor-organized .right{position:fixed;z-index:20;right:0;top:calc(58px + var(--maze-nav-height,59px));bottom:0;width:min(330px,90vw);box-shadow:-10px 0 25px #0008}.editor-organized .worktop{top:8px}.editor-organized>header{gap:5px}.editor-organized>header .btn{padding:7px}.editor-organized .work{margin:0}}

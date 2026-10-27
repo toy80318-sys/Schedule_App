@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{spawnSync}=require('node:child_process');
-const root=path.resolve(__dirname,'..'),web=path.join(root,'docs'),out=path.join(web,'assets/set-review-v01'),read=p=>JSON.parse(fs.readFileSync(path.join(out,p),'utf8')),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const root=path.resolve(__dirname,'..'),web=path.join(root,'docs'),out=path.join(web,'assets/set-review-v01'),read=p=>JSON.parse(fs.readFileSync(path.join(out,['manifest.json','asset-audit.json','source-count-hashes.json'].includes(p)?'archive-v05':'',p),'utf8')),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const manifest=read('manifest.json'),audit=read('asset-audit.json'),proof=read('source-count-hashes.json');
 assert.equal(manifest.assetVersion,'V05');assert.equal(manifest.counts.totalPngs,276);assert.equal(manifest.counts.activePngs,156);assert.equal(audit.technicalPassed,276);assert.equal(proof.preservation.sourceCount,148);assert.equal(proof.preservation.layoutCount,16);
 for(const item of proof.files)assert.equal(hash(path.join(root,'source-assets/set-review-v01',item.id+'.png')),item.sha256);
@@ -16,7 +16,7 @@ for(const scene of manifest.backgrounds){
  current.objects.forEach((o,i)=>{assert.equal(unity.objects[i].widthMeters,o.w/1000);assert.equal(unity.objects[i].yMeters,(current.height/2-o.y-o.h/2)/1000)});
 }
 const python=spawnSync('python',['-c',`import build_abstract_v05 as v, build_set_review as b
-for scene in b.read_json(b.OUT/'manifest.json')['backgrounds']:
+for scene in b.read_json(b.OUT/'archive-v05/manifest.json')['backgrounds']:
  old_scene=next(s for s in b.read_json(v.ARCHIVE/'manifest.json')['backgrounds'] if s['id']==scene['id'])
  old_assets={a['id']:a for a in old_scene['flowers']+old_scene['environment']};new_assets={a['id']:a for a in scene['flowers']+scene['environment']}
  old={o['id']:o for o in b.read_json(b.OUT/(scene['id']+'_editor_v04.json'))['objects']}
@@ -28,7 +28,7 @@ for scene in b.read_json(b.OUT/'manifest.json')['backgrounds']:
    x=source['verification']['visibleBounds'];y=target['verification']['visibleBounds']
    assert abs(a[size]*(x[j]-x[i])/source[dim]-o[size]*(y[j]-y[i])/target[dim])<1e-7
 v.build(check=True)
-scene=b.read_json(b.OUT/'manifest.json')['backgrounds'][0];aid=scene['integrated'][-1]['id'];info=b.inspect_png(b.PNG/(aid+'.png'),False)
+scene=b.read_json(b.OUT/'archive-v05/manifest.json')['backgrounds'][0];aid=scene['integrated'][-1]['id'];info=b.inspect_png(b.PNG/(aid+'.png'),False)
 capture=next(a for a in b.read_json(b.OUT/'generation-records/v05-assembly-captures.json')['exports'] if a['id']==aid)
 sources={a['id']:a['sha256'] for a in scene['flowers']+scene['environment']+[scene['backgrounds'][-1]]};project=b.WEB/scene['project']
 for key in ['imageSha256','projectSha256','rendererSha256','rendererDependencies','renderComplete','sourcePngs']:

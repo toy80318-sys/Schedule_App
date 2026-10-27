@@ -33,7 +33,7 @@
   }
   let exhibitionActive=false,exhibitionReady=false,workspaceRequest=0;
   const pendingObjectAdds=new Set();
-  let objects=[],selected=null,selectedIds=new Set(),background=window.jejuFinalCatalog?.backgrounds?.[0]?.src||'/assets/background/background-14165x3480.webp',reference=null,tab='all',scale=1,panX=0,panY=0,drag=null,space=false,history=[],future=[],fileTarget=null,toastTimer;
+  let objects=[],selected=null,selectedIds=new Set(),background=window.jejuFinalCatalog?.backgrounds?.find(a=>a.id==='BG01-B04-V05')?.src||window.jejuFinalCatalog?.backgrounds?.[0]?.src||'/assets/background/background-14165x3480.webp',reference=null,tab='all',scale=1,panX=0,panY=0,drag=null,space=false,history=[],future=[],fileTarget=null,toastTimer;
   const uid=()=>crypto.randomUUID?.()||`${Date.now()}-${Math.random()}`;
   const current=()=>objects.find(o=>o.id===selected);
   const members=()=>objects.filter(o=>selectedIds.has(o.id));
@@ -112,14 +112,14 @@
   $('toneNatural').onclick=()=>{const selected=$('tonePreset').value,key=selected==='auto'?backgroundBlendPreset(background):selected,preset=blendPresets[key]||blendPresets.natural,raw=+$('toneAmount').value,amount=Number.isFinite(raw)?clamp(raw,0,100)/100:1;if(selected==='fantasy'){applySceneHarmony(true,amount);return}snapshot();sceneFilters={...neutralFilters(),...(sceneFilters.focus?{focus:sceneFilters.focus}:{})};for(const scope of ['scene','flowers','decor'])Object.keys(neutralTone()).forEach((name,i)=>{const base=name==='warmth'?0:100;sceneFilters[scope][name]=Math.round(base+(preset[scope][i]-base)*amount)});applySceneFilters();scheduleSave();notice(`배경·꽃·풀에 '${preset.name}' 색감을 ${Math.round(amount*100)}% 적용했습니다.`)};
 
   const notice=s=>{const e=$('toast');e.textContent=s;e.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.style.display='none',2600)};
-  let autosaveReady=false,saveTimer;
+  let autosaveReady=false,saveTimer,backgroundDefaultVersion=0;
   const db=()=>new Promise((resolve,reject)=>{const request=indexedDB.open('jeju-maze-wall-editor',1);request.onupgradeneeded=()=>request.result.createObjectStore('projects');request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error)});
 
   let savedAssetRefs=[];
   async function storeCurrent(){
     const refs=assets.map(a=>({id:a.id,src:a.src,frames:a.frames,previewSrc:a.previewSrc,fps:a.fps,name:a.name}));
     const assetsChanged=refs.length!==savedAssetRefs.length||refs.some((a,i)=>Object.keys(a).some(k=>a[k]!==savedAssetRefs[i]?.[k]));
-    const data={name:$('saveName').value,objects,background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,assetRecord:'current-assets'};const database=await db();
+    const data={name:$('saveName').value,objects,background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,backgroundDefaultVersion,assetRecord:'current-assets'};const database=await db();
     await new Promise((resolve,reject)=>{const tx=database.transaction('projects','readwrite'),store=tx.objectStore('projects');if(assetsChanged)store.put(assets,'current-assets');store.put(data,'current');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});database.close();if(assetsChanged)savedAssetRefs=refs;
   }
   async function readCurrent(){const database=await db();const data=await new Promise((resolve,reject)=>{const tx=database.transaction('projects','readonly'),store=tx.objectStore('projects'),request=store.get('current');request.onsuccess=()=>{const data=request.result;if(data?.assetRecord){const assetRequest=store.get(data.assetRecord);assetRequest.onsuccess=()=>{data.assets=assetRequest.result||[];resolve(data)};assetRequest.onerror=()=>reject(assetRequest.error)}else resolve(data)};request.onerror=()=>reject(request.error)});database.close();return data}
@@ -136,9 +136,58 @@
   $('savedLayouts').onchange=()=>{$('deleteSaved').disabled=!$('savedLayouts').value;if($('savedLayouts').value)$('saveName').value=$('savedLayouts').selectedOptions[0].textContent};
   function scheduleSave(){if(!autosaveReady)return;clearTimeout(saveTimer);saveTimer=setTimeout(()=>storeCurrent().catch(()=>{}),900)}
   async function migrateLongStems(data){data.flowerAssetVersion=2}
-  async function applyProject(data){data=window.jejuAmbient.cleanProject(data);assets=[...builtins,...(data.assets||[]).filter(a=>!builtins.some(b=>b.id===a.id)).map(currentFlowerAsset)];objects=data.objects||[];objects.forEach(o=>{o.baseW||=o.w;o.baseH||=o.h;o.aspect||=o.w/o.h});await migrateLongStems(data);$('saveName').value=data.name||'불러온 배치';background=window.jejuFinalCatalog?.backgroundAliases?.[data.background?.split('?')[0]]||data.background||null;reference=data.reference||null;sceneFilters=normalizeFilters(data.sceneFilters);gardenSpace=window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false};selected=null;selectedIds.clear();history=[];future=[];$('reference').src=reference||'';$('reference').classList.toggle('hidden',!reference);renderPalette();refresh()}
-  async function restoreCurrent(){try{const data=await readCurrent();if(data?.oilAssetVersion===14){await applyProject(data);autosaveReady=true;return true}if(data){const key='named:유화 v14 교체 전 백업 '+new Date().toLocaleString('ko-KR');await namedStore('write',key,{...data,name:key.slice(6),savedAt:new Date().toISOString()})}await applyProject(structuredClone(window.jejuWhole62?.scenes[0].project||window.jejuWhole61?.scenes[0].project||window.jejuWhole60?.scenes[0].project||window.jejuWhole59?.scenes[0].project||window.jejuCutout57?.scenes[0].project||window.jejuFinalCatalog.scenes[0].project));await storeCurrent();autosaveReady=true;return true}catch(error){autosaveReady=false;notice('저장본을 보호하기 위해 자동 교체를 중단했습니다: '+error.message);throw error}}
-  $('saveCurrent').onclick=async()=>{const name=$('saveName').value.trim();if(!name){$('saveName').focus();notice('저장할 배치 이름을 입력해 주세요.');return}clearTimeout(saveTimer);try{const data={name,assets,objects,background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,savedAt:new Date().toISOString()};await namedStore('write',`named:${name}`,data);await storeCurrent();await updateSavedLayouts(`named:${name}`);notice(`“${name}” 배치를 저장했습니다.`)}catch{notice('저장에 실패했습니다. 프로젝트 파일로 저장해 주세요.')}};
+  async function applyProject(data,options={}){backgroundDefaultVersion=Number.isInteger(data.backgroundDefaultVersion)?data.backgroundDefaultVersion:0;if(!options.startup)backgroundDefaultVersion=Math.max(80,backgroundDefaultVersion);data=window.jejuAmbient.cleanProject(data);assets=[...builtins,...(data.assets||[]).filter(a=>!builtins.some(b=>b.id===a.id)).map(currentFlowerAsset)];objects=data.objects||[];objects.forEach(o=>{o.baseW||=o.w;o.baseH||=o.h;o.aspect||=o.w/o.h});await migrateLongStems(data);$('saveName').value=data.name||'불러온 배치';background=window.jejuFinalCatalog?.backgroundAliases?.[data.background?.split('?')[0]]||data.background||null;reference=data.reference||null;sceneFilters=normalizeFilters(data.sceneFilters);gardenSpace=window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false};selected=null;selectedIds.clear();history=[];future=[];$('reference').src=reference||'';$('reference').classList.toggle('hidden',!reference);renderPalette();refresh()}
+  function brightBackgroundProject(data){
+    if(Number.isInteger(data.backgroundDefaultVersion)&&data.backgroundDefaultVersion>=80)return null;
+    const catalog=window.jejuFinalCatalog,base=typeof data.background==='string'?data.background.split(/[?#]/)[0]:data.background,source=catalog.backgroundAliases?.[base]||base;
+    const old=catalog.backgrounds.find(a=>a.src===source&&a.id===`whole62-${a.theme}-background`&&a.backgroundTreatment==='subdued_background_only');
+    if(!old)return null;
+    const code={sunset:'BG01',day:'BG02',night:'BG03',morning:'BG04'}[old.theme],target=catalog.backgrounds.find(a=>a.id===code+'-B04-V05');
+    if(!target?.src)throw Error('같은 시간대의 밝은 기본 배경이 등록되어 있지 않습니다.');
+    const project=structuredClone(data);project.background=target.src;project.backgroundDefaultVersion=80;
+    project.sceneFilters={...(project.sceneFilters||{}),scene:neutralTone(),background:neutralTone(),backgroundGrade:window.jejuBackgroundGrade.normalize()};
+    return project;
+  }
+  async function startupText(path){const response=await fetch(path);if(!response.ok)throw Error('밝은 기본 배치 파일을 내려받지 못했습니다.');return response.text();}
+  async function startupHash(text){return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text.replace(/\r\n/g,'\n')))),v=>v.toString(16).padStart(2,'0')).join('');}
+  async function loadBrightDefault(){
+    const registry=window.jejuSetReviewElements,text=await startupText('assets/set-review-v01/manifest.json?v=80');
+    if(!/^[a-f0-9]{64}$/.test(registry?.manifestSha256||'')||await startupHash(text)!==registry.manifestSha256)throw Error('밝은 기본 배치의 요소 목록 서명이 다릅니다.');
+    const manifest=JSON.parse(text),scene=manifest.backgrounds?.find(s=>s.id==='sunset');
+    const ref=scene?.integrated?.slice().reverse().find(a=>a.sourceProject===scene.project&&a.construction==='same-png-layout-render');
+    if(manifest.format!=='jeju-set-review-v1'||manifest.assetVersion!=='V05'||scene?.projectVersion!=='V06'||scene.project!=='assets/set-review-v01/sunset_editor_v06.json'||ref?.version!=='V06'||!/^[a-f0-9]{64}$/.test(ref?.sourceProjectSha256||'')||!Array.isArray(registry.assets)||registry.assets.length!==120)throw Error('밝은 V06 기본 배치가 아직 준비되지 않았습니다.');
+    const projectText=await startupText(scene.project+'?v=80');if(await startupHash(projectText)!==ref.sourceProjectSha256)throw Error('밝은 기본 배치와 통합본의 서명이 다릅니다.');
+    const project=window.JejuSetRenderer.validate(JSON.parse(projectText)),expected=new Map([...scene.flowers,...scene.environment].map(a=>[a.id,a])),registered=new Map(registry.assets.map(a=>[a.id,a]));
+    const bg=scene.backgrounds.find(a=>a.id==='BG01-B04-V05');
+    if(project.width!==W||project.height!==H||project.setReviewVersion!=='V06'||project.sourcePngVersion!=='V05'||project.assets.length!==30||project.objects.length!==356||expected.size!==30||project.background!==bg?.src||project.backgroundFit!=='fill')throw Error('밝은 기본 배치의 크기 또는 요소 구성이 다릅니다.');
+    for(const a of project.assets){const source=expected.get(a.id),current=registered.get(a.id);if(!source||!current||a.theme!=='sunset'||a.src!==source.src||a.src!==current.src||a.sha256!==source.sha256||a.sha256!==current.sha256||!a.completeObject||!a.stillOnly||!a.lightingBaked||a.sourceRect!==undefined)throw Error('밝은 기본 배치의 독립 PNG 정보가 다릅니다.');}
+    const flowers=new Set(project.assets.filter(a=>a.group==='flowers').map(a=>a.id));if(project.objects.filter(o=>flowers.has(o.assetId)).length!==320)throw Error('밝은 기본 배치의 꽃 개수가 다릅니다.');
+    try{await Promise.all([project.background,...project.assets.map(a=>a.src)].map(image));}catch{throw Error('밝은 기본 배경과 꽃 PNG를 준비하지 못했습니다.');}
+    return{...project,backgroundDefaultVersion:80};
+  }
+  async function restoreCurrent(){
+    let data;autosaveReady=false;clearTimeout(saveTimer);
+    try{
+      data=await readCurrent();
+      if(data){
+        if(!Array.isArray(data.objects)||!Array.isArray(data.assets))throw Error('저장된 배치 형식을 확인할 수 없어 자동 교체를 중단했습니다.');
+        const migrated=brightBackgroundProject(data),legacy=data.oilAssetVersion!==14;
+        if(migrated)try{await image(migrated.background);}catch{throw Error('밝은 배경 원본을 준비하지 못해 기존 화면을 유지합니다.');}
+        if(migrated||legacy){const key='named:'+(migrated?'밝은 배경 적용 전 ':'유화 v14 교체 전 ')+new Date().toLocaleString('ko-KR')+' · '+uid();await namedStore('write',key,structuredClone(data));}
+        const project=migrated||structuredClone(data);if(legacy)project.backgroundDefaultVersion=80;
+        await applyProject(project,{startup:true});
+        if(migrated){history.push(JSON.stringify({objects:data.objects,background:window.jejuFinalCatalog.backgroundAliases?.[data.background?.split('?')[0]]||data.background,sceneFilters:normalizeFilters(data.sceneFilters),gardenSpace:window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false}}));syncUndo();}
+        if(migrated||legacy)await storeCurrent();autosaveReady=true;
+        if(migrated)notice('꽃 배치를 보존하고 밝은 기본 배경을 적용했습니다. 이전 화면은 저장본에 보관했습니다.');
+        return true;
+      }
+      await applyProject(await loadBrightDefault(),{startup:true});await storeCurrent();autosaveReady=true;return true;
+    }catch(error){
+      if(data&&Array.isArray(data.objects)&&Array.isArray(data.assets))try{await applyProject(structuredClone(data),{startup:true});}catch{}
+      autosaveReady=false;notice('저장본을 보호하기 위해 자동 교체를 중단했습니다: '+error.message);throw error;
+    }
+  }
+  $('saveCurrent').onclick=async()=>{const name=$('saveName').value.trim();if(!name){$('saveName').focus();notice('저장할 배치 이름을 입력해 주세요.');return}clearTimeout(saveTimer);try{const data={name,assets,objects,background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,backgroundDefaultVersion,savedAt:new Date().toISOString()};await namedStore('write',`named:${name}`,data);await storeCurrent();await updateSavedLayouts(`named:${name}`);notice(`“${name}” 배치를 저장했습니다.`)}catch{notice('저장에 실패했습니다. 프로젝트 파일로 저장해 주세요.')}};
   $('loadCurrent').onclick=async()=>{const key=$('savedLayouts').value;if(!key){const ok=await restoreCurrent();notice(ok?'자동 저장된 최근 작업을 불러왔습니다.':'저장된 배치가 없습니다.');return}try{const data=await namedStore('read',key);if(!data)throw Error('저장본 없음');clearTimeout(saveTimer);await applyProject(data);$('saveName').value=data.name||key.slice(6);notice(`“${$('saveName').value}” 배치를 불러왔습니다.`)}catch{notice('선택한 배치를 불러오지 못했습니다.')}};
   $('deleteSaved').onclick=async()=>{const key=$('savedLayouts').value;if(!key)return;if(!confirm(`“${key.slice(6)}” 저장본을 삭제할까요?`))return;try{await namedStore('delete',key);await updateSavedLayouts('');notice('선택한 저장본을 삭제했습니다.')}catch{notice('저장본을 삭제하지 못했습니다.')}};
   function snapshot(){history.push(historyState());if(history.length>70)history.shift();future=[];syncUndo()}
@@ -239,7 +288,7 @@
     $('activeBackgroundName').textContent=backgroundChoices.find(([src])=>src===background)?.[1]||(background?'불러온 배경 이미지':'배경 없음');
     for(const card of $('backgroundGalleryCards').children)card.setAttribute('aria-pressed',String(card.dataset.background===background));
   }
-  function applyBackground(src){background=src;renderWall();scheduleSave();notice(src?'배경을 교체했습니다.':'배경을 제거했습니다.')}
+  function applyBackground(src){backgroundDefaultVersion=80;background=src;renderWall();scheduleSave();notice(src?'배경을 교체했습니다.':'배경을 제거했습니다.')}
   function openBackgroundGallery(){
     const host=$('backgroundGalleryCards');if(!host.children.length)for(const [src,name] of backgroundChoices){const button=document.createElement('button'),im=document.createElement('img'),label=document.createElement('span');button.type='button';button.className='background-card';button.dataset.background=src;button.setAttribute('aria-label',name);im.src=backgroundPreview(src);im.alt=name;im.loading='lazy';im.decoding='async';label.textContent=name;button.append(im,label);button.onclick=()=>{applyBackground(src);$('backgroundGallery').close()};host.append(button)}
     syncBackgroundSelect();$('backgroundGallery').showModal();
@@ -420,7 +469,7 @@
   window.addEventListener('keydown',e=>{if(e.code==='Space'&&!/INPUT|TEXTAREA|SELECT|BUTTON|A/.test(document.activeElement.tagName)){space=true;e.preventDefault()}if(e.key==='Escape'){selected=null;selectedIds.clear();refresh()}const editing=/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName),mod=e.ctrlKey||e.metaKey,key=e.key.toLowerCase();if(!editing&&(e.key==='Delete'||e.key==='Backspace'))remove();if(!editing&&mod&&key==='c'){e.preventDefault();copySelection()}if(!editing&&mod&&key==='v'){e.preventDefault();pasteSelection()}if(!editing&&mod&&key==='d'){e.preventDefault();cloneObjects(members(),100,e.shiftKey)}if(!editing&&mod&&key==='g'){e.preventDefault();e.shiftKey?$('ungroup').click():$('makeGroup').click()}if(mod&&key==='z'){e.preventDefault();e.shiftKey?$('redo').click():$('undo').click()}if(mod&&key==='s'){e.preventDefault();save()}});window.addEventListener('keyup',e=>{if(e.code==='Space')space=false});window.addEventListener('blur',()=>{space=false;drag=null});
   function download(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),30000)}
   function downloadName(extension,suffix='',value=$('saveName').value){const ending='.'+extension;let name=value.trim().replace(/[\\/:*?"<>|\x00-\x1f]/g,'_').replace(/[. ]+$/g,'');if(name.toLowerCase().endsWith(ending))name=name.slice(0,-ending.length).replace(/[. ]+$/g,'');name=name.slice(0,180).replace(/[\uD800-\uDBFF]$/,'')||'꽃군집 프로젝트';if(/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(name))name='_'+name;return name+suffix+ending}
-  function save(){const name=$('saveName').value.trim()||'꽃군집 프로젝트';const data={name,format:'jeju-maze-wall-v1',width:W,height:H,assets,objects,background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,groupStyles:window.jejuHandoff?.getLibrary()};download(new Blob([JSON.stringify(data)],{type:'application/json'}),downloadName('json'));notice(`“${name}” 프로젝트 파일을 저장했습니다.`)}
+  function save(){const name=$('saveName').value.trim()||'꽃군집 프로젝트';const data={name,format:'jeju-maze-wall-v1',width:W,height:H,assets,objects,background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,backgroundDefaultVersion,groupStyles:window.jejuHandoff?.getLibrary()};download(new Blob([JSON.stringify(data)],{type:'application/json'}),downloadName('json'));notice(`“${name}” 프로젝트 파일을 저장했습니다.`)}
   $('saveProject').onclick=save;$('loadProject').onclick=()=>$('projectFile').click();$('projectFile').onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(data.format!=='jeju-maze-wall-v1'||data.width!==W||data.height!==H||!Array.isArray(data.objects)||!Array.isArray(data.assets))throw Error('형식이 맞지 않습니다.');await applyProject(data);fit();notice('프로젝트를 열었습니다.')}catch(err){notice('프로젝트 파일을 열 수 없습니다: '+err.message)}e.target.value=''};
   const image=src=>new Promise((res,rej)=>{const im=new Image();im.crossOrigin='anonymous';im.onload=()=>res(im);im.onerror=rej;im.src=src});
   // The three templates contain only transforms and asset IDs from the user's saved layouts.
@@ -589,7 +638,7 @@
     getFocus:()=>window.jejuFocus.normalize(sceneFilters.focus),setFocus:(value,checkpoint=true)=>{if(checkpoint)snapshot();sceneFilters.focus=window.jejuFocus.normalize(value);applySceneFilters();scheduleSave();document.dispatchEvent(new CustomEvent('jeju-editor-change'));},
     setObjectBlur:(value,checkpoint=true)=>{const items=members();if(!items.length)return;if(typeof value!=='number'||!Number.isFinite(value))return;if(checkpoint)snapshot();for(const o of items)o.blur=clamp(value,0,40);applySceneFilters();scheduleSave();document.dispatchEvent(new CustomEvent('jeju-editor-change'));},
     brightenBackground:()=>{const key=window.jejuSceneHarmony.theme(background,window.jejuWhole62?.scenes||[]);if(!key){notice('먼저 정원 배경을 선택해 주세요.');return}snapshot();const f=window.jejuSceneHarmony.filters(key);sceneFilters.background=f.background;sceneFilters.backgroundGrade=f.backgroundGrade;applySceneFilters();scheduleSave();document.dispatchEvent(new CustomEvent('jeju-editor-change'));notice('배경만 조금 밝고 색감이 풍부하게 보정했습니다.');},
-    state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace}),selected:()=>members(),registerCatalog,replaceSelection,useSample,varyFlowerDirections,halfDefaultFlowers,fillForeground,applyContrastAdditions,applySceneHarmony,
+    state:()=>({assets,objects,background,reference,sceneFilters,gardenSpace,backgroundDefaultVersion}),selected:()=>members(),registerCatalog,replaceSelection,useSample,varyFlowerDirections,halfDefaultFlowers,fillForeground,applyContrastAdditions,applySceneHarmony,
     selectGroupObjects:(groupId,assetId=null)=>{const chosen=objects.filter(o=>o.groupId===groupId&&(!assetId||o.assetId===assetId));if(!chosen.length)return;selectedIds=new Set(chosen.map(o=>o.id));selected=chosen.at(-1).id;refresh()},
     changeGroupDensity:(increase,groupId,assetId=null)=>{const group=window.jejuGroupDensity.selectedGroup(objects,members());if(!group||group.id!==groupId)return;const change=window.jejuGroupDensity.change(objects,groupId,assetId,increase,uid);if(!change.count)return; snapshot();objects=change.objects;const chosen=objects.filter(o=>o.groupId===groupId);selectedIds=new Set(chosen.map(o=>o.id));selected=chosen.at(-1).id;refresh();notice(`${group.name} · ${change.count}개 ${increase?'추가':'삭제'} (${change.before} → ${change.after}개)`);return change.count},
     selectObject:id=>{const o=objects.find(o=>o.id===id);if(!o)throw Error('요소를 찾지 못했습니다.');selected=o.id;selectedIds=new Set([o.id]);refresh()},
@@ -606,7 +655,7 @@
       snapshot();objects=P.apply(objects,items,assets,groupId,replaceGround);selectedIds=new Set(items.map(o=>o.id));selected=items.at(-1).id;refresh();notice(`${items.length}개 요소의 PCG 꽃밭을 적용했습니다.`);
     },
     insert:(items,extraAssets)=>{snapshot();assets.push(...extraAssets.map(currentFlowerAsset));objects.push(...items);selectedIds=new Set(items.map(o=>o.id));selected=items.at(-1)?.id;renderPalette();refresh()},
-    project:()=>({format:'jeju-maze-wall-v1',name:$('saveName').value.trim()||'꽃군집 프로젝트',width:W,height:H,editableActors:true,backgroundPlaylist:assets.some(a=>a.completeObject&&objects.some(o=>o.assetId===a.id))?(background?[background]:[]):window.jejuFinalCatalog?.backgrounds?.map(a=>a.src),assets:assets.filter(a=>objects.some(o=>o.assetId===a.id)),backgroundFit:sourceRegistered.has(background)?'fill':'cover',objects:objects.map(o=>{const v=objectVariant(o,assets.find(a=>a.id===o.assetId));return v?{...o,flowerVariant:v.id,flowerColor:v.tone}:o}),background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14})};
+    project:()=>({format:'jeju-maze-wall-v1',name:$('saveName').value.trim()||'꽃군집 프로젝트',width:W,height:H,editableActors:true,backgroundPlaylist:assets.some(a=>a.completeObject&&objects.some(o=>o.assetId===a.id))?(background?[background]:[]):window.jejuFinalCatalog?.backgrounds?.map(a=>a.src),assets:assets.filter(a=>objects.some(o=>o.assetId===a.id)),backgroundFit:sourceRegistered.has(background)?'fill':'cover',objects:objects.map(o=>{const v=objectVariant(o,assets.find(a=>a.id===o.assetId));return v?{...o,flowerVariant:v.id,flowerColor:v.tone}:o}),background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14,backgroundDefaultVersion})};
   function exhibitionMessage(message){$('exhibitionFrame').contentWindow?.postMessage(message,location.origin)}
   function sendExhibitionProject(){if(exhibitionReady&&exhibitionActive){exhibitionMessage({type:'jeju-exhibition-project',project:window.jejuEditor.project()});exhibitionMessage({type:'jeju-exhibition-active',active:!document.hidden})}}
   let exhibitionTemplateTask;

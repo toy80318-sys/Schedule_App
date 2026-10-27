@@ -2,7 +2,7 @@
   "format": "jeju-set-review-audit-v1",
   "date": "2026-10-27",
   "technicalOnly": true,
-  "technicalPassed": 276,
+  "technicalPassed": 280,
   "visualMatch": "pending_manual_review",
   "alphaThreshold": 8,
   "files": [
@@ -10173,6 +10173,158 @@
       "previewHeight": 295,
       "previewBytes": 119714,
       "previewSha256": "e0089e48739144a01046a4df2a96a9e5bd7e7d4f57a689e874771ce0d90eb240"
+    },
+    {
+      "id": "BG01-I06-V06",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG01-I06-V06.png",
+      "width": 4096,
+      "height": 1006,
+      "bytes": 9415837,
+      "sha256": "6ac6fd20b116ee0c52c3e8581e54e2250d69b4d35d9e5df2cf5c3b3614030cdd",
+      "verification": {
+        "alpha": false,
+        "borderClear": false,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          0,
+          0,
+          4096,
+          1006
+        ],
+        "transparentMarginsPx": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fullyTransparentFraction": 0.0,
+        "lowAlphaPixelsBelowThreshold": 0,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "preview": "assets/set-review-v01/preview/BG01-I06-V06.webp",
+      "previewWidth": 1200,
+      "previewHeight": 295,
+      "previewBytes": 115292,
+      "previewSha256": "b8afe9fcdc2b3bcee558e5f973c9c8c0095f9c25d822b5c348f209dad060978e"
+    },
+    {
+      "id": "BG02-I06-V06",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG02-I06-V06.png",
+      "width": 4096,
+      "height": 1006,
+      "bytes": 9417820,
+      "sha256": "ce0bfcbc3e8477ed7f45638eca0eddcaed3f1232beecaca123263104ee3f62b0",
+      "verification": {
+        "alpha": false,
+        "borderClear": false,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          0,
+          0,
+          4096,
+          1006
+        ],
+        "transparentMarginsPx": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fullyTransparentFraction": 0.0,
+        "lowAlphaPixelsBelowThreshold": 0,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "preview": "assets/set-review-v01/preview/BG02-I06-V06.webp",
+      "previewWidth": 1200,
+      "previewHeight": 295,
+      "previewBytes": 125612,
+      "previewSha256": "7a354edf3d4315b30b6ccf368acbe97650a5c91801ffaca6c8c49de8e5cdae61"
+    },
+    {
+      "id": "BG03-I06-V06",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-I06-V06.png",
+      "width": 4096,
+      "height": 1006,
+      "bytes": 9435705,
+      "sha256": "d8f5ab576575ae7d62c8d45f507409f355fa0a4c04fdf2506f134ff0ecef3b8e",
+      "verification": {
+        "alpha": false,
+        "borderClear": false,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          0,
+          0,
+          4096,
+          1006
+        ],
+        "transparentMarginsPx": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fullyTransparentFraction": 0.0,
+        "lowAlphaPixelsBelowThreshold": 0,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "preview": "assets/set-review-v01/preview/BG03-I06-V06.webp",
+      "previewWidth": 1200,
+      "previewHeight": 295,
+      "previewBytes": 125172,
+      "previewSha256": "7330f91e0aaa378ed96d6f5ef7a446d03351a1bdae0e44f3474a8b22c5b0c75f"
+    },
+    {
+      "id": "BG04-I06-V06",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-I06-V06.png",
+      "width": 4096,
+      "height": 1006,
+      "bytes": 9490002,
+      "sha256": "67fadc56f56db3627b1aadb0878d8955415bd5bb0f9d945eb52fd6e317584ebb",
+      "verification": {
+        "alpha": false,
+        "borderClear": false,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          0,
+          0,
+          4096,
+          1006
+        ],
+        "transparentMarginsPx": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fullyTransparentFraction": 0.0,
+        "lowAlphaPixelsBelowThreshold": 0,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "preview": "assets/set-review-v01/preview/BG04-I06-V06.webp",
+      "previewWidth": 1200,
+      "previewHeight": 295,
+      "previewBytes": 119086,
+      "previewSha256": "ac5f93ee2b7012ee144c758c703a0e5616e62f9b5557d08cc7b0df385b72c93e"
     }
   ]
 }

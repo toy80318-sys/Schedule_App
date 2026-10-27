@@ -26,8 +26,8 @@
  if(u.searchParams.get('objects')==='62'){
   const s=data.scenes.find(s=>s.id===u.searchParams.get('scene'));
   if(s)try{await open(s);u.searchParams.delete('objects');u.searchParams.delete('scene');history.replaceState(null,'',u.href)}catch(e){E.notice('기존 작업을 보호하기 위해 불러오기를 중단했습니다: '+e.message)}
- }else if(!u.searchParams.has('layers')&&!u.searchParams.has('objects')&&!u.searchParams.has('layout')){
-  // Upgrade only untouched previous cutouts; the existing backup path protects all saved work.
+ }else if(E.state?.().backgroundDefaultVersion===undefined&&!u.searchParams.has('layers')&&!u.searchParams.has('objects')&&!u.searchParams.has('layout')){
+  // The bright-background startup owns migration, including failures and explicit saved choices.
   const old=[...data.scenes,...(window.jejuWhole61?.scenes||[]),...(window.jejuWhole60?.scenes||[]),...(window.jejuWhole59?.scenes||[]),...(window.jejuCutout57?.scenes||[]),...(window.jejuCutout56?.scenes||[])].find(s=>unchanged(E.state?.(),s));
   if(old)try{await open(data.scenes.find(s=>s.id===old.id))}catch(e){E.notice('이전 배치를 유지했습니다: '+e.message)}
  }

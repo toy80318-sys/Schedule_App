@@ -1633,6 +1633,53 @@
           "sourceProjectSha256": "76ab34dbbe2b47fd6c8b0988499a7ac540405d5b9cc968ed8e853ce636030139",
           "sourceProjectTextEncoding": "UTF-8 LF",
           "captureProof": "assets/set-review-v01/generation-records/v05-assembly-captures.json"
+        },
+        {
+          "id": "BG01-I06-V06",
+          "version": "V06",
+          "name": "노을 피치 코랄 · 실제 PNG 조립 통합본",
+          "sourceProject": "assets/set-review-v01/sunset_editor_v06.json",
+          "renderWidth": 4096,
+          "captureProof": "assets/set-review-v01/generation-records/v06-assembly-captures.json",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG01-I06-V06.png",
+          "construction": "same-png-layout-render",
+          "sourceProjectSha256": "2462f5fd2bcf712d820b6c8f39cf76de5d5c30aab833eb389e1118281e67f563",
+          "sourceProjectTextEncoding": "UTF-8 LF",
+          "generationPrompt": "Actual shared Canvas renderer export of the preserved V05 PNG assets and V06 neighboring-color layout. No generated or recolored flower pixels.",
+          "width": 4096,
+          "height": 1006,
+          "bytes": 9415837,
+          "sha256": "6ac6fd20b116ee0c52c3e8581e54e2250d69b4d35d9e5df2cf5c3b3614030cdd",
+          "verification": {
+            "alpha": false,
+            "borderClear": false,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": [
+              0,
+              0,
+              4096,
+              1006
+            ],
+            "transparentMarginsPx": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "fullyTransparentFraction": 0.0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG01-I06-V06.webp",
+          "previewWidth": 1200,
+          "previewHeight": 295,
+          "previewBytes": 115292,
+          "previewSha256": "b8afe9fcdc2b3bcee558e5f973c9c8c0095f9c25d822b5c348f209dad060978e"
         }
       ],
       "backgrounds": [
@@ -1759,20 +1806,81 @@
           "previewSha256": "706c36f7de9caf29db56f9e890a011608e27383deec71e6719600f29cd5bc57d"
         }
       ],
-      "project": "assets/set-review-v01/sunset_editor_v05.json",
-      "unityLayout": "assets/set-review-v01/sunset_unity_v05.json",
+      "project": "assets/set-review-v01/sunset_editor_v06.json",
+      "unityLayout": "assets/set-review-v01/sunset_unity_v06.json",
       "legacyProject": "assets/set-review-v01/sunset_editor.json",
       "legacyUnityLayout": "assets/set-review-v01/sunset_unity.json",
-      "projectVersion": "V05",
+      "projectVersion": "V06",
       "legacyProjectVersion": "V01",
-      "projectLabel": "V05 · 추상 유화 · V04 크기·개수 유지",
+      "projectLabel": "V06 · 노을 피치 코랄 · 인접 2색",
       "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.",
       "previousProject": "assets/set-review-v01/sunset_editor_v04.json",
       "previousUnityLayout": "assets/set-review-v01/sunset_unity_v04.json",
       "previousProjectVersion": "V04",
-      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치"
+      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치",
+      "sourcePngVersion": "V05",
+      "projectVersions": [
+        {
+          "id": "current",
+          "path": "assets/set-review-v01/sunset_editor_v06.json",
+          "unityLayout": "assets/set-review-v01/sunset_unity_v06.json",
+          "version": "V06",
+          "label": "V06 · 노을 피치 코랄 · 인접 2색"
+        },
+        {
+          "id": "v05",
+          "path": "assets/set-review-v01/sunset_editor_v05.json",
+          "unityLayout": "assets/set-review-v01/sunset_unity_v05.json",
+          "version": "V05",
+          "label": "V05 · 이전 4색 배치"
+        },
+        {
+          "id": "v04",
+          "path": "assets/set-review-v01/sunset_editor_v04.json",
+          "unityLayout": "assets/set-review-v01/sunset_unity_v04.json",
+          "version": "V04",
+          "label": "V04 · 이전 그림체 · 같은 배치"
+        },
+        {
+          "id": "v01",
+          "path": "assets/set-review-v01/sunset_editor.json",
+          "unityLayout": "assets/set-review-v01/sunset_unity.json",
+          "version": "V01",
+          "label": "V01 · 이전 배치"
+        }
+      ],
+      "flowerPalette": {
+        "name": "노을 피치 코랄",
+        "designs": {
+          "F01": [
+            "C04",
+            "C01"
+          ],
+          "F02": [
+            "C04",
+            "C03"
+          ],
+          "F03": [
+            "C03",
+            "C01"
+          ],
+          "F04": [
+            "C04",
+            "C03"
+          ],
+          "F05": [
+            "C01",
+            "C03"
+          ],
+          "F06": [
+            "C03",
+            "C01"
+          ]
+        },
+        "primaryShare": 0.75
+      }
     },
     {
       "id": "day",
@@ -3403,6 +3511,53 @@
           "sourceProjectSha256": "f3a12c4b89239bb28aa4807583c2e45ed08603dd035b68d128271ed644f68793",
           "sourceProjectTextEncoding": "UTF-8 LF",
           "captureProof": "assets/set-review-v01/generation-records/v05-assembly-captures.json"
+        },
+        {
+          "id": "BG02-I06-V06",
+          "version": "V06",
+          "name": "낮 버터 레몬 · 실제 PNG 조립 통합본",
+          "sourceProject": "assets/set-review-v01/day_editor_v06.json",
+          "renderWidth": 4096,
+          "captureProof": "assets/set-review-v01/generation-records/v06-assembly-captures.json",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG02-I06-V06.png",
+          "construction": "same-png-layout-render",
+          "sourceProjectSha256": "f575d7699ef55248ae84f3458e314218d81d0e8215213162781c9ea99dacbd8e",
+          "sourceProjectTextEncoding": "UTF-8 LF",
+          "generationPrompt": "Actual shared Canvas renderer export of the preserved V05 PNG assets and V06 neighboring-color layout. No generated or recolored flower pixels.",
+          "width": 4096,
+          "height": 1006,
+          "bytes": 9417820,
+          "sha256": "ce0bfcbc3e8477ed7f45638eca0eddcaed3f1232beecaca123263104ee3f62b0",
+          "verification": {
+            "alpha": false,
+            "borderClear": false,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": [
+              0,
+              0,
+              4096,
+              1006
+            ],
+            "transparentMarginsPx": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "fullyTransparentFraction": 0.0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG02-I06-V06.webp",
+          "previewWidth": 1200,
+          "previewHeight": 295,
+          "previewBytes": 125612,
+          "previewSha256": "7a354edf3d4315b30b6ccf368acbe97650a5c91801ffaca6c8c49de8e5cdae61"
         }
       ],
       "backgrounds": [
@@ -3529,20 +3684,81 @@
           "previewSha256": "8b2aa40ba1c45864d4d6bf32ce53034d2cda8a43298402ba0d5effd137ad8ca5"
         }
       ],
-      "project": "assets/set-review-v01/day_editor_v05.json",
-      "unityLayout": "assets/set-review-v01/day_unity_v05.json",
+      "project": "assets/set-review-v01/day_editor_v06.json",
+      "unityLayout": "assets/set-review-v01/day_unity_v06.json",
       "legacyProject": "assets/set-review-v01/day_editor.json",
       "legacyUnityLayout": "assets/set-review-v01/day_unity.json",
-      "projectVersion": "V05",
+      "projectVersion": "V06",
       "legacyProjectVersion": "V01",
-      "projectLabel": "V05 · 추상 유화 · V04 크기·개수 유지",
+      "projectLabel": "V06 · 낮 버터 레몬 · 인접 2색",
       "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.",
       "previousProject": "assets/set-review-v01/day_editor_v04.json",
       "previousUnityLayout": "assets/set-review-v01/day_unity_v04.json",
       "previousProjectVersion": "V04",
-      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치"
+      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치",
+      "sourcePngVersion": "V05",
+      "projectVersions": [
+        {
+          "id": "current",
+          "path": "assets/set-review-v01/day_editor_v06.json",
+          "unityLayout": "assets/set-review-v01/day_unity_v06.json",
+          "version": "V06",
+          "label": "V06 · 낮 버터 레몬 · 인접 2색"
+        },
+        {
+          "id": "v05",
+          "path": "assets/set-review-v01/day_editor_v05.json",
+          "unityLayout": "assets/set-review-v01/day_unity_v05.json",
+          "version": "V05",
+          "label": "V05 · 이전 4색 배치"
+        },
+        {
+          "id": "v04",
+          "path": "assets/set-review-v01/day_editor_v04.json",
+          "unityLayout": "assets/set-review-v01/day_unity_v04.json",
+          "version": "V04",
+          "label": "V04 · 이전 그림체 · 같은 배치"
+        },
+        {
+          "id": "v01",
+          "path": "assets/set-review-v01/day_editor.json",
+          "unityLayout": "assets/set-review-v01/day_unity.json",
+          "version": "V01",
+          "label": "V01 · 이전 배치"
+        }
+      ],
+      "flowerPalette": {
+        "name": "낮 버터 레몬",
+        "designs": {
+          "F01": [
+            "C03",
+            "C01"
+          ],
+          "F02": [
+            "C03",
+            "C02"
+          ],
+          "F03": [
+            "C04",
+            "C02"
+          ],
+          "F04": [
+            "C02",
+            "C03"
+          ],
+          "F05": [
+            "C03",
+            "C04"
+          ],
+          "F06": [
+            "C03",
+            "C04"
+          ]
+        },
+        "primaryShare": 0.75
+      }
     },
     {
       "id": "night",
@@ -5173,6 +5389,53 @@
           "sourceProjectSha256": "fa7a0502a9df01d45a565f872c4954e4628012c81342517357a9d4bfb4d1018b",
           "sourceProjectTextEncoding": "UTF-8 LF",
           "captureProof": "assets/set-review-v01/generation-records/v05-assembly-captures.json"
+        },
+        {
+          "id": "BG03-I06-V06",
+          "version": "V06",
+          "name": "달빛 페리윙클 라일락 · 실제 PNG 조립 통합본",
+          "sourceProject": "assets/set-review-v01/night_editor_v06.json",
+          "renderWidth": 4096,
+          "captureProof": "assets/set-review-v01/generation-records/v06-assembly-captures.json",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-I06-V06.png",
+          "construction": "same-png-layout-render",
+          "sourceProjectSha256": "57d0d288c6ece73bc7b110b5e74d21440a9a8e5d3f82752d9a23779038e3a375",
+          "sourceProjectTextEncoding": "UTF-8 LF",
+          "generationPrompt": "Actual shared Canvas renderer export of the preserved V05 PNG assets and V06 neighboring-color layout. No generated or recolored flower pixels.",
+          "width": 4096,
+          "height": 1006,
+          "bytes": 9435705,
+          "sha256": "d8f5ab576575ae7d62c8d45f507409f355fa0a4c04fdf2506f134ff0ecef3b8e",
+          "verification": {
+            "alpha": false,
+            "borderClear": false,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": [
+              0,
+              0,
+              4096,
+              1006
+            ],
+            "transparentMarginsPx": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "fullyTransparentFraction": 0.0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG03-I06-V06.webp",
+          "previewWidth": 1200,
+          "previewHeight": 295,
+          "previewBytes": 125172,
+          "previewSha256": "7330f91e0aaa378ed96d6f5ef7a446d03351a1bdae0e44f3474a8b22c5b0c75f"
         }
       ],
       "backgrounds": [
@@ -5299,20 +5562,81 @@
           "previewSha256": "37dcc0f93e9041ec0379c904ac1592cec0992f74e0976f6a6ebc4efb2aa4f89e"
         }
       ],
-      "project": "assets/set-review-v01/night_editor_v05.json",
-      "unityLayout": "assets/set-review-v01/night_unity_v05.json",
+      "project": "assets/set-review-v01/night_editor_v06.json",
+      "unityLayout": "assets/set-review-v01/night_unity_v06.json",
       "legacyProject": "assets/set-review-v01/night_editor.json",
       "legacyUnityLayout": "assets/set-review-v01/night_unity.json",
-      "projectVersion": "V05",
+      "projectVersion": "V06",
       "legacyProjectVersion": "V01",
-      "projectLabel": "V05 · 추상 유화 · V04 크기·개수 유지",
+      "projectLabel": "V06 · 달빛 페리윙클 라일락 · 인접 2색",
       "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.",
       "previousProject": "assets/set-review-v01/night_editor_v04.json",
       "previousUnityLayout": "assets/set-review-v01/night_unity_v04.json",
       "previousProjectVersion": "V04",
-      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치"
+      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치",
+      "sourcePngVersion": "V05",
+      "projectVersions": [
+        {
+          "id": "current",
+          "path": "assets/set-review-v01/night_editor_v06.json",
+          "unityLayout": "assets/set-review-v01/night_unity_v06.json",
+          "version": "V06",
+          "label": "V06 · 달빛 페리윙클 라일락 · 인접 2색"
+        },
+        {
+          "id": "v05",
+          "path": "assets/set-review-v01/night_editor_v05.json",
+          "unityLayout": "assets/set-review-v01/night_unity_v05.json",
+          "version": "V05",
+          "label": "V05 · 이전 4색 배치"
+        },
+        {
+          "id": "v04",
+          "path": "assets/set-review-v01/night_editor_v04.json",
+          "unityLayout": "assets/set-review-v01/night_unity_v04.json",
+          "version": "V04",
+          "label": "V04 · 이전 그림체 · 같은 배치"
+        },
+        {
+          "id": "v01",
+          "path": "assets/set-review-v01/night_editor.json",
+          "unityLayout": "assets/set-review-v01/night_unity.json",
+          "version": "V01",
+          "label": "V01 · 이전 배치"
+        }
+      ],
+      "flowerPalette": {
+        "name": "달빛 페리윙클 라일락",
+        "designs": {
+          "F01": [
+            "C01",
+            "C02"
+          ],
+          "F02": [
+            "C01",
+            "C02"
+          ],
+          "F03": [
+            "C01",
+            "C02"
+          ],
+          "F04": [
+            "C01",
+            "C02"
+          ],
+          "F05": [
+            "C01",
+            "C02"
+          ],
+          "F06": [
+            "C01",
+            "C02"
+          ]
+        },
+        "primaryShare": 0.75
+      }
     },
     {
       "id": "morning",
@@ -6943,6 +7267,53 @@
           "sourceProjectSha256": "9847fcb9595cfd28bfa2e21840949c6db2c5fec8e3daf3b6deca305c890244f4",
           "sourceProjectTextEncoding": "UTF-8 LF",
           "captureProof": "assets/set-review-v01/generation-records/v05-assembly-captures.json"
+        },
+        {
+          "id": "BG04-I06-V06",
+          "version": "V06",
+          "name": "아침 스카이블루 라벤더 · 실제 PNG 조립 통합본",
+          "sourceProject": "assets/set-review-v01/morning_editor_v06.json",
+          "renderWidth": 4096,
+          "captureProof": "assets/set-review-v01/generation-records/v06-assembly-captures.json",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-I06-V06.png",
+          "construction": "same-png-layout-render",
+          "sourceProjectSha256": "55f4f44b09af617e31872fb3d2e3c67b8d04213081a81c929ac8ed647441a93b",
+          "sourceProjectTextEncoding": "UTF-8 LF",
+          "generationPrompt": "Actual shared Canvas renderer export of the preserved V05 PNG assets and V06 neighboring-color layout. No generated or recolored flower pixels.",
+          "width": 4096,
+          "height": 1006,
+          "bytes": 9490002,
+          "sha256": "67fadc56f56db3627b1aadb0878d8955415bd5bb0f9d945eb52fd6e317584ebb",
+          "verification": {
+            "alpha": false,
+            "borderClear": false,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": [
+              0,
+              0,
+              4096,
+              1006
+            ],
+            "transparentMarginsPx": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "fullyTransparentFraction": 0.0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG04-I06-V06.webp",
+          "previewWidth": 1200,
+          "previewHeight": 295,
+          "previewBytes": 119086,
+          "previewSha256": "ac5f93ee2b7012ee144c758c703a0e5616e62f9b5557d08cc7b0df385b72c93e"
         }
       ],
       "backgrounds": [
@@ -7069,20 +7440,81 @@
           "previewSha256": "a3fe95898c0c7ec2b8ca5cc77c48457b80c0e67bfb3bcc3fb52f8c8f4bd13579"
         }
       ],
-      "project": "assets/set-review-v01/morning_editor_v05.json",
-      "unityLayout": "assets/set-review-v01/morning_unity_v05.json",
+      "project": "assets/set-review-v01/morning_editor_v06.json",
+      "unityLayout": "assets/set-review-v01/morning_unity_v06.json",
       "legacyProject": "assets/set-review-v01/morning_editor.json",
       "legacyUnityLayout": "assets/set-review-v01/morning_unity.json",
-      "projectVersion": "V05",
+      "projectVersion": "V06",
       "legacyProjectVersion": "V01",
-      "projectLabel": "V05 · 추상 유화 · V04 크기·개수 유지",
+      "projectLabel": "V06 · 아침 스카이블루 라벤더 · 인접 2색",
       "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.",
       "previousProject": "assets/set-review-v01/morning_editor_v04.json",
       "previousUnityLayout": "assets/set-review-v01/morning_unity_v04.json",
       "previousProjectVersion": "V04",
-      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치"
+      "previousProjectLabel": "V04 · 이전 그림체 · 같은 배치",
+      "sourcePngVersion": "V05",
+      "projectVersions": [
+        {
+          "id": "current",
+          "path": "assets/set-review-v01/morning_editor_v06.json",
+          "unityLayout": "assets/set-review-v01/morning_unity_v06.json",
+          "version": "V06",
+          "label": "V06 · 아침 스카이블루 라벤더 · 인접 2색"
+        },
+        {
+          "id": "v05",
+          "path": "assets/set-review-v01/morning_editor_v05.json",
+          "unityLayout": "assets/set-review-v01/morning_unity_v05.json",
+          "version": "V05",
+          "label": "V05 · 이전 4색 배치"
+        },
+        {
+          "id": "v04",
+          "path": "assets/set-review-v01/morning_editor_v04.json",
+          "unityLayout": "assets/set-review-v01/morning_unity_v04.json",
+          "version": "V04",
+          "label": "V04 · 이전 그림체 · 같은 배치"
+        },
+        {
+          "id": "v01",
+          "path": "assets/set-review-v01/morning_editor.json",
+          "unityLayout": "assets/set-review-v01/morning_unity.json",
+          "version": "V01",
+          "label": "V01 · 이전 배치"
+        }
+      ],
+      "flowerPalette": {
+        "name": "아침 스카이블루 라벤더",
+        "designs": {
+          "F01": [
+            "C01",
+            "C03"
+          ],
+          "F02": [
+            "C01",
+            "C03"
+          ],
+          "F03": [
+            "C01",
+            "C03"
+          ],
+          "F04": [
+            "C01",
+            "C03"
+          ],
+          "F05": [
+            "C01",
+            "C03"
+          ],
+          "F06": [
+            "C04",
+            "C03"
+          ]
+        },
+        "primaryShare": 0.75
+      }
     }
   ],
   "guide": "assets/set-review-v01/AI_검증가이드.md",
@@ -7097,9 +7529,9 @@
     "flowerPngs": 96,
     "environmentPngs": 24,
     "backgroundPngs": 16,
-    "integratedPngs": 20,
-    "totalPngs": 276,
-    "activePngs": 156
+    "integratedPngs": 24,
+    "totalPngs": 280,
+    "activePngs": 160
   },
   "generationRecords": [
     {
@@ -7169,8 +7601,13 @@
     {
       "name": "extra-master-prompts.json",
       "src": "assets/set-review-v01/generation-records/extra-master-prompts.json"
+    },
+    {
+      "name": "v06-assembly-captures.json",
+      "src": "assets/set-review-v01/generation-records/v06-assembly-captures.json"
     }
   ],
   "sourceProof": "assets/set-review-v01/source-count-hashes.json",
-  "assetVersion": "V05"
+  "assetVersion": "V05",
+  "colorHarmonyVersion": "V06"
 }

@@ -15,7 +15,10 @@ for(const change of [
   value=>value.backgrounds[0].integrated[0].src='data:text/html,unsafe',
   value=>value.backgrounds[0].flowers.push({id:'unsafe',src:'https://user:secret@example.com/a.png'}),
   value=>value.backgrounds[0].backgrounds[0].id='sunset-I01',
-  value=>value.backgrounds[0].environment=null
+  value=>value.backgrounds[0].environment=null,
+  value=>value.backgrounds[0].projectVersions=[{id:'current',version:'V06',label:'bad',path:'javascript:alert(1)'}],
+  value=>value.backgrounds[0].projectVersions=[{id:'current',version:'V06',label:'bad',path:'assets/wrong.json'}],
+  value=>value.backgrounds[0].projectVersions=[{id:'current',version:'V01',label:'ok',path:value.backgrounds[0].project},{id:'current',version:'V01',label:'duplicate',path:value.backgrounds[0].project}]
 ]){const value=fixture();change(value);assert.throws(()=>validate(value));}
 
 const storageCode='let manual={};'+extract('  try{const saved','  const el=')+';manual';
@@ -25,6 +28,7 @@ assert.equal(vm.runInNewContext(storageCode,{localStorage:{getItem:()=>'{"ok":{"
 const asset={id:'BG04-F01-C02-V01',sha256:'flower-v1',src:'assets/flower.png'},I02={id:'BG04-I02',version:'V02',src:'assets/I02.png',sha256:'reference-2'},I01={id:'BG04-I01',version:'V01',src:'assets/I01.png',sha256:'reference-1'};
 const I03={id:'BG04-I03',version:'V03',src:'assets/I03.png',sha256:'reference-3'};
 const I04={id:'BG04-I04',version:'V04',src:'assets/I04.png',sha256:'reference-4'};
+const I05={id:'BG04-I05-V05',version:'V05',src:'assets/I05.png',sha256:'reference-5'},I06={id:'BG04-I06-V06',version:'V06',src:'assets/I06.png',sha256:'reference-6'};
 const manual={'BG04-F01-C02-V01|flower-v1':{status:'확인',comment:'legacy review without a reference'}},context={manual,manualKey:'test',referenceEntry:I02,localStorage:{setItem(){}},status(){}};
 vm.createContext(context);
 const review=vm.runInContext(extract('  function reviewKey','  function structuralCheck')+';({reviewKey,manualReview,saveReview})',context);
@@ -48,6 +52,10 @@ assert.equal(review.manualReview(asset).status,'미검토','the V04 target start
 review.saveReview(asset,{status:'확인',comment:'matches I04'});
 context.referenceEntry=I02;
 assert.equal(review.manualReview(asset).status,'확인','V04 review does not change the I02 review');
+context.referenceEntry=I05;review.saveReview(asset,{status:'확인',comment:'V05 composition reviewed'});
+context.referenceEntry=I06;assert.equal(review.manualReview(asset).status,'미검토','V06 reference cannot inherit V05 approval of the same PNG');
+context.referenceEntry=I05;assert.equal(review.manualReview(asset).status,'확인','V05 approval remains separately available');
+context.referenceEntry=I02;
 assert.equal(review.manualReview({...asset,sha256:'flower-v2'}).status,'미검토','asset hash changes invalidate approval');
 assert.equal(review.manualReview(asset,{...I02,sha256:'new-reference-content'}).status,'미검토','reference hash changes invalidate approval');
 const pathReference={id:'path-only-I02',src:'assets/reference-a.png'};
@@ -69,6 +77,7 @@ const optionList=()=>({options:[],value:'',replaceChildren(...items){this.option
 const referenceSelect=optionList();let referenceRefreshes=0;
 const fillReference=vm.runInNewContext(extract('  function fillReference','  function showReference')+';fillReference',{$:()=>referenceSelect,Option,showReference:()=>referenceRefreshes++});
 fillReference({integrated:[I01,I02,I03,I04]});assert.equal(referenceSelect.options.length,4);assert.equal(referenceSelect.value,'3','appended I04 is selected as the newest integrated reference');assert.equal(referenceRefreshes,1);
+fillReference({integrated:[I01,I02,I03,I04,I05,I06]});assert.equal(referenceSelect.options.length,6);assert.equal(referenceSelect.value,'5','new I06 is automatically selected without losing older integrated versions');
 const backgroundSelect=optionList(),fillBackgroundChoices=vm.runInNewContext(extract('  function fillRenderBackground','  async function signature')+';fillRenderBackground',{$:()=>backgroundSelect,Option});
 fillBackgroundChoices({backgrounds:[{version:'V01',name:'sharp',src:'assets/B01.png'},{version:'V02',name:'soft',src:'assets/B02.png'},{version:'V03',name:'revised',src:'assets/B03.png'}]});
 assert.equal(backgroundSelect.options.length,4,'all three background versions plus preserve-project option remain selectable');assert.equal(backgroundSelect.options[3].value,'assets/B03.png');
@@ -87,6 +96,10 @@ assert.equal(layoutUI.projectChoices({project:'assets/only.json'}).length,1,'old
 const v05Set={...layoutSet,projectVersion:'V05',projectLabel:'V05',previousProject:layoutSet.project,previousUnityLayout:layoutSet.unityLayout,previousProjectVersion:'V04'};
 layoutUI.fillProjectVersions(v05Set);assert.equal(layoutNodes.layoutVersion.options.length,3);assert(layoutNodes.layoutVersionNote.textContent.includes('그림체만'));assert(layoutNodes.layoutVersionNote.textContent.includes('320개'));
 layoutNodes.layoutVersion.value='previous';layoutUI.syncProjectLinks(v05Set);assert.equal(layoutNodes.projectDownload.href,layoutSet.project);
+const v06Set={...v05Set,project:'assets/sunset_editor_v06.json',projectVersion:'V06',projectVersions:[{id:'current',path:'assets/sunset_editor_v06.json',unityLayout:'assets/sunset_unity_v06.json',version:'V06',label:'유사색 V06 배치 · V05 원본 PNG'},{id:'v05',path:'assets/sunset_editor_v05.json',unityLayout:'assets/sunset_unity_v05.json',version:'V05',label:'V05'},{id:'v04',path:layoutSet.project,unityLayout:layoutSet.unityLayout,version:'V04',label:'V04'},{id:'v01',path:layoutSet.legacyProject,unityLayout:layoutSet.legacyUnityLayout,version:'V01',label:'V01'}]};
+layoutUI.fillProjectVersions(v06Set);assert.equal(layoutNodes.layoutVersion.options.length,4);assert(layoutNodes.layoutVersionNote.textContent.includes('12종 유사색'));assert(layoutNodes.layoutVersionNote.textContent.includes('전체 24종 원본'));
+for(const choice of v06Set.projectVersions){layoutNodes.layoutVersion.value=choice.id;layoutUI.syncProjectLinks(v06Set);assert.equal(layoutNodes.projectDownload.href,choice.path);assert.equal(layoutNodes.unityLayoutDownload.href,choice.unityLayout);}
+assert(layoutNodes.layoutVersionNote.textContent.includes('116개'),'V01 description is version-based for the new history ID');
 assert(source.includes("$('layoutVersion').onchange=()=>{if(!selected)return;uploads.delete(selected.id)"),'explicit layout selection clears only the active theme upload before rendering that default');
 
 const slots=vm.runInNewContext(extract('  function flowerSlots','  function fillFlowers')+';flowerSlots');
@@ -104,6 +117,11 @@ for(const set of manifest.backgrounds){
   assert.equal(assets.length,30+set.backgrounds.length+set.integrated.length);
 }
 assert(source.includes('category:assetCategory(a)'),'audit records must use the tested category classifier');
+const auditSet={...manifest.backgrounds[0],projectVersion:'V06',sourcePngVersion:'V05',flowerPalette:{name:'가까운 색',designs:{F01:['C01','C02']},primaryShare:.75}};
+const auditContext={selected:auditSet,manifest:{...manifest,colorHarmonyVersion:'V06'},referenceEntry:I06,currentProjectSource:null,currentReport:null,imageFailures:new Map(),labels:{grass:'풀',tree:'나무',butterfly:'나비',cloud:'구름',basalt:'돌',leaf:'잎'},screenshots:new Map(),flowerSlots:()=>[],assetCategory:a=>classify(a,auditSet),structuralCheck:()=>({state:'verified'}),manualReview:()=>({status:'미검토'})};
+const audit=vm.runInNewContext(extract('  function audit',"  $('integratedVersion').onchange")+';audit',auditContext)();
+assert.equal(audit.sourcePngVersion,'V05');assert.equal(audit.projectVersion,'V06');assert.equal(audit.colorHarmonyVersion,'V06');assert.equal(audit.targetReference.id,I06.id);
+assert.equal(JSON.stringify(audit.flowerPalette),JSON.stringify(auditSet.flowerPalette),'AI audit retains the exact primary/secondary color policy and75percent target');
 for(const id of [...source.matchAll(/\$\('([^']+)'\)/g)].map(match=>match[1]))assert(html.includes('id="'+id+'"'),'missing HTML element '+id);
 assert(fs.readFileSync(path.join(web,'set-review.css'),'utf8').includes('object-fit:contain'),'comparison frames preserve the source aspect ratios');
 assert(source.includes('if(token!==renderToken)return'),'older renders cannot replace the latest selected set');
@@ -114,5 +132,5 @@ assert(source.includes('if(token!==renderToken)return'),'older renders cannot re
   assert.equal(current.path,layoutSet.project);assert.equal(current.version,'V04');assert.equal(legacy.path,layoutSet.legacyProject);assert.equal(legacy.version,'V01');assert.notEqual(current.sha256,legacy.sha256);
   assert.equal(await readProject(layoutSet,choices[0]),current);assert.equal(fetched.length,2,'latest and legacy projects are cached by path without overwriting one another');
   const uploaded={name:'custom.json',path:null,project:{objects:[]}};uploads.set(layoutSet.id,uploaded);assert.equal(await readProject(layoutSet,choices[1]),uploaded,'user uploads remain available until an explicit default selection');
-  console.log('PASS: I01–I04 reference-bound reviews, latest/legacy layout selection and path caches, uploads preserved, safe metadata,24 flower/6 environment slots with manifest-driven art counts and complete UI wiring.');
+  console.log('PASS: I01–I06 reference-bound reviews, four layout versions/path caches, V06 palette/source audit, uploads preserved, safe metadata,24 flower/6 environment slots with manifest-driven art counts and complete UI wiring.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

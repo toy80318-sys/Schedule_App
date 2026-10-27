@@ -4,7 +4,7 @@
  for(const target of [document.querySelector('#proceduralTools .pcg-actions'),document.getElementById('varyFlowerDirections')?.parentElement]){
   if(!target)continue;const button=document.createElement('button');button.className='btn';button.type='button';button.dataset.flowerShapes='';button.disabled=true;button.onclick=async()=>{controls.forEach(b=>b.disabled=true);try{await E.varyFlowerShapes()}catch(error){E.notice(error.message)}finally{controls.forEach(b=>b.disabled=false)}};target.append(button);controls.push(button);
  }
- const link=document.createElement('a');link.className='btn';link.href='flower-shapes.html?v=83';link.target='_blank';link.rel='noopener';link.textContent='배경 조화 · 꽃 48종 비교';document.querySelector('#proceduralTools .pcg-actions')?.after(link);
+ const link=document.createElement('a');link.className='btn';link.href='source-cutouts.html?category=flower&v=20261028-v86r1';link.target='_blank';link.rel='noopener';link.textContent='배경 조화 · 꽃 48종 비교';document.querySelector('#proceduralTools .pcg-actions')?.after(link);
  function sync(){const count=E.selected().length;for(const b of controls)b.textContent=(count?'선택한':'전체')+' 꽃 형태·방향 섞기'}
  document.addEventListener('jeju-editor-change',sync);E.ready.then(()=>{sync();controls.forEach(b=>b.disabled=false)});
  const toolbar=document.getElementById('sourceDownloadToolbar'),button=document.createElement('button'),status=document.createElement('output');button.className='btn';button.textContent='배경 조화 꽃 '+catalog.assets.length+'종 ZIP';button.type='button';status.setAttribute('aria-live','polite');

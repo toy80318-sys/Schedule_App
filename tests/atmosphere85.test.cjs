@@ -1,0 +1,27 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),{spawnSync}=require('node:child_process');
+const read=file=>fs.readFileSync('docs/'+file,'utf8'),manifest=JSON.parse(read('assets/atmosphere-v85/manifest.json'));
+assert.equal(manifest.version,85);assert.equal(manifest.count,12);assert.equal(manifest.assets.length,12);assert.equal(new Set(manifest.assets.map(a=>a.id)).size,12);
+const originals=JSON.parse(read('assets/atmosphere-v84/manifest.json')).assets,base='https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/';let previewBytes=0;
+for(const kind of ['cloud','butterfly','particle'])assert.equal(manifest.assets.filter(a=>a.category===kind).length,4);
+const fileFor=url=>{assert(url.startsWith(base));return url.slice(base.length)};
+const header=file=>{const bytes=fs.readFileSync(file);assert.equal(bytes[25],6,'sequence PNGs contain actual RGBA channels');return[bytes.readUInt32BE(16),bytes.readUInt32BE(20)]};
+for(const a of manifest.assets){
+ const old=originals.find(o=>o.id===a.baseAssetId);assert(old);for(const key of ['src','file','sha256','width','height'])assert.equal(a[key],old[key],'original PNG metadata remains exact');
+ assert.equal(a.atmosphereVersion,85);assert.equal(a.stillOnly,false);assert.equal(a.loopInPlace,true);assert.equal(a.motion,'stationary');assert.equal(a.frames.length,150);assert.equal(a.previewFrames.length,150);assert.equal(a.fps,30);assert.equal(a.duration,5);assert.equal(a.loopWidth,480);assert.equal(a.loopHeight,480);
+ assert.equal(a.previewWidth,128);assert.equal(a.previewHeight,128);assert.equal(a.alphaMethod,'source-rgba-periodic-flow');assert.equal(a.preservedOriginalAlpha,false);assert.equal(a.sourceAlphaDerivedByResampling,true);assert(a.motionDerivation&&a.loopReview.passed&&a.loopReview.loopReviewPassed&&a.loopReview.allFramesReviewed&&a.loopReview.alphaReviewPassed);
+ assert.match(a.nativeVideo.sha256,/^[a-f0-9]{64}$/i);assert(a.nativeVideo.width>0&&a.nativeVideo.height>0&&a.nativeVideo.seconds>0);assert([4,5].includes(a.requestedSeconds));assert.equal(a.requestedResolution,'480p');assert.match(a.loopVideo,/\/alpha\.webm$/);assert.match(a.keyVideo,/\/key\.mp4$/);
+ for(let i=0;i<150;i++){assert.match(a.frames[i],new RegExp('/frames/frame_'+String(i).padStart(4,'0')+'\\.png$'));assert.match(a.previewFrames[i],new RegExp('/preview_frames/frame_'+String(i).padStart(4,'0')+'\\.png$'));const size=header(fileFor(a.previewFrames[i]));assert.deepEqual(size,[128,128]);previewBytes+=size[0]*size[1]*4;}
+ for(const i of [0,149]){const path=fileFor(a.frames[i]);assert.deepEqual(header(path),[480,480]);assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex'),a.loopHashes.frames[i]);}
+ assert.equal(crypto.createHash('sha256').update(fs.readFileSync(fileFor(a.loopVideo))).digest('hex'),a.loopHashes.alphaWebM);assert.equal(crypto.createHash('sha256').update(fs.readFileSync(fileFor(a.keyVideo))).digest('hex'),a.loopHashes.keyMP4);
+}
+assert.equal(previewBytes,12*150*128*128*4);assert.equal(previewBytes/1024/1024,112.5,'all 12 real preview sets stay at 112.5 MiB of decoded RGBA pixels');
+const context={window:{}};vm.createContext(context);
+for(const file of ['catalog-data.js','layer55-data.js','cutout56-data.js','cutout57-data.js','whole59-data.js','whole60-data.js','whole61-data.js','whole62-data.js','additions68-data.js','set-review-catalog.js','set-review-elements.js','flower-shape-catalog.js','scene-flower-catalog.js','atmosphere84-catalog.js'])vm.runInContext(read(file),context);
+const catalog=context.window.jejuFinalCatalog,before=JSON.stringify(catalog),api=require('../docs/source-download'),sourceCount=api.entries(catalog).length,code=read('atmosphere85-catalog.js');assert.equal(sourceCount,312);
+vm.runInContext(code,context);assert.equal(JSON.stringify({...catalog,assets:catalog.assets.slice(0,-12)}),before,'registration preserves every original asset, source entry, background, alias and saved scene');assert.equal(api.entries(catalog).length,312);assert.equal(api.entries(catalog).filter(a=>a.atmosphereVersion===85).length,0,'loop aliases do not replace the original PNG ZIP records');
+const after=JSON.stringify(catalog);vm.runInContext(code,context);assert.equal(JSON.stringify(catalog),after,'registration is idempotent');
+for(const[file,runtime]of[['editor.html','app.js'],['player.html','player.js']]){const html=read(file);assert(html.includes('atmosphere84-catalog.js?v=84'));assert(html.indexOf('atmosphere85-catalog.js?v=85')<html.indexOf('src="'+runtime));}
+const app=read('app.js');assert(app.includes("tab==='atmosphere85'&&a.atmosphereVersion===85"));assert(read('editor.html').includes('5초 루프 12종'));assert(read('editor.html').includes('atmosphere-loops.html?v=85'));assert(app.includes('sequenceSrc(a,true)'));assert(read('atmosphere-loops.html').includes('파생 소스'));
+assert(!/[A-Z]:\\/i.test(JSON.stringify(manifest)),'public manifest does not expose Windows paths');assert(!Object.keys(manifest).some(k=>/account|balance|ledger|profile/i.test(k)));
+const check=spawnSync('python',['tools/build-atmosphere85.py','--check'],{encoding:'utf8'});assert.equal(check.status,0,check.stderr||check.stdout);
+console.log('PASS: 12 accepted derived loops, real 128px preview budget, preserved 480px frames/source hashes, separate native provenance, unchanged 312 PNG sources and scene data, runtime order and reproducible media ZIP.');

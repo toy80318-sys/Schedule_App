@@ -1,0 +1,1 @@
+(()=>{'use strict';const release=window.jejuCurrentRelease,catalog=window.jejuFinalCatalog;if(!release||!catalog)return;for(const a of release.assets)if(!catalog.assets.some(old=>old.id===a.id))catalog.assets.push({...a});catalog.currentSourceIds=release.assets.map(a=>a.id);catalog.currentReleaseVersion=release.version;})();

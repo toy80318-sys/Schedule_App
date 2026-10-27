@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const data=window.jejuFinalCatalog,E=window.jejuEditor,$=id=>document.getElementById(id);
+  const current=window.jejuCurrentRelease,data=current?{...window.jejuFinalCatalog,assets:current.assets,sourceFiles:current.assets.map(a=>({id:a.id,relativePath:a.file,stablePreviewUrl:a.src}))}:window.jejuFinalCatalog,E=window.jejuEditor,$=id=>document.getElementById(id);
   const labels={tree:'나무',basalt:'현무암 돌',leaf:'잎 가지',flower:'꽃 · 만개 PNG',petal:'꽃잎',background:'배경 PNG',cloud:'구름',mist:'안개',bird:'새',butterfly:'나비',grass:'잎 · 잎줄기 · 풀',decor:'현무암',cluster:'군집 이미지',particle:'빛 입자',reference:'참고 자료'};
   let chosen=null,frame=0,playing=false,last=0,raf=0,loadToken=0;
   const host=$('finalCatalog'),list=$('catalogCards'),media=$('catalogMedia'),seek=$('catalogSeek');
@@ -41,11 +41,11 @@
   $('catalogAdd').onclick=async()=>{try{if(chosen.category==='background')E.setBackground(chosen.src);else await E.addAsset(chosen);placed()}catch(e){fail(e)}};
   $('catalogReplace').onclick=()=>{try{const n=E.replaceSelection(chosen);E.notice(`${n}개 요소를 교체했습니다. 위치·크기·그룹을 유지했습니다.`);placed()}catch(e){fail(e)}};
   $('catalogMotion').onchange=()=>{try{E.setMotion($('catalogMotion').value)}catch(e){fail(e)}};
-  $('catalogSample').onclick=async()=>{try{const backup=await E.useSample(sample());E.notice(backup?'이전 작업을 저장하고 통합 시안을 열었습니다.':'통합 시안을 열었습니다.');host.close()}catch(e){fail(e)}};
+  $('catalogSample').onclick=async()=>{try{const theme=current?.scenes.find(s=>s.background.src===E.state().background)?.id||'sunset',project=current?await window.jejuCurrentProjects.load(theme,current,fetch.bind(window),window.JejuSetRenderer,window.crypto,E.image):sample();const backup=await E.useSample(project);E.notice(backup?'이전 작업을 저장하고 최신 소스 배치를 열었습니다.':'최신 소스 배치를 열었습니다.');host.close()}catch(e){fail(e)}};
   $('catalogExhibition').onclick=()=>{host.close();E.openExhibition()};
   document.addEventListener('jeju-editor-change',()=>{if(host.open)placed()});
   for(const [id,name] of Object.entries(labels)){const option=document.createElement('option');option.value=id;option.textContent=name;$('catalogCategory').append(option)}
   const originals=$('catalogSources');for(const f of data.sourceFiles){const row=document.createElement('li'),a=document.createElement('a');a.textContent=f.relativePath;a.href=f.stablePreviewUrl||`https://drive.google.com/file/d/${encodeURIComponent(f.id)}/view`;a.target='_blank';a.rel='noopener';row.append(a);originals.append(row)}
   function openLinked(){const linked=data.assets.find(a=>a.id===new URLSearchParams(location.hash.slice(1)).get('asset'));if(linked){$('catalogCategory').value=linked.category;host.showModal();render();placed();select(linked).catch(fail)}}
-  E.ready.then(()=>{E.registerCatalog(data);$('openFinalCatalog').disabled=false;openLinked();window.addEventListener('hashchange',openLinked);$('catalogSummary').textContent=`${window.jejuSceneHarmony?'v71 배경·꽃 색감 조화 · 꽃 기본 50% · ':window.jejuAdditions68?'v69 꽃 기본 50% · 새 4색·어두운 후경 · ':window.jejuWhole62?'v62 다양한 꽃 6가지 디자인 · ':window.jejuWhole61?'v61 어두운 덤불·현무암 대비 · ':window.jejuWhole60?'v60 추상 유화 꽃 4색 · ':window.jejuWhole59?'v59 완성형 독립 객체 · ':window.jejuCutout57?'v57 배경 대비·분리 합성 · ':window.jejuCutout56?'v56 통합본 직접 분리 · ':window.jejuLayer55?'v55 분리 소스40종 · ':''}판타지 배경 · 꽃 6종 / 현재 디자인 ${data.assets.filter(a=>!a.catalogHidden&&a.group==='flowers').length}개 · 배경 ${data.backgrounds.length}종 · 배치 요소 ${data.assets.filter(a=>!a.catalogHidden).length}개 · 원본 PNG ${data.sourceFiles.length}장`}).catch(fail);
+  E.ready.then(()=>{E.registerCatalog(data);$('openFinalCatalog').disabled=false;openLinked();window.addEventListener('hashchange',openLinked);$('catalogSummary').textContent=`${current?'v85 최신 소스 · ':window.jejuSceneHarmony?'v71 배경·꽃 색감 조화 · 꽃 기본 50% · ':window.jejuAdditions68?'v69 꽃 기본 50% · 새 4색·어두운 후경 · ':window.jejuWhole62?'v62 다양한 꽃 6가지 디자인 · ':window.jejuWhole61?'v61 어두운 덤불·현무암 대비 · ':window.jejuWhole60?'v60 추상 유화 꽃 4색 · ':window.jejuWhole59?'v59 완성형 독립 객체 · ':window.jejuCutout57?'v57 배경 대비·분리 합성 · ':window.jejuCutout56?'v56 통합본 직접 분리 · ':window.jejuLayer55?'v55 분리 소스40종 · ':''}판타지 배경 · 꽃 6종 / 현재 디자인 ${data.assets.filter(a=>!a.catalogHidden&&a.group==='flowers').length}개 · 배경 ${data.backgrounds.length}종 · 배치 요소 ${data.assets.filter(a=>!a.catalogHidden).length}개 · 원본 PNG ${data.sourceFiles.length}장`}).catch(fail);
 })();

@@ -12,7 +12,7 @@ for(const e of latest.filter(e=>e.styleVersion===54)){
 assert(read('oil-art-v51-archive.html').includes('IntegratedBloom_AirParticles_'));
 for(const name of ['all-images.html','oil-art.html','abstract-world-v44.html','oil-gallery.html','oil-sources.html','lighting-sets.html']){
  const html=read(name);assert(!html.includes('IntegratedBud_AbstractOil_v44'));assert(!html.includes('IntegratedBloom_AbstractOil_v44'));
- assert(html.includes('whole62-data.js')&&html.includes('whole62-viewer.js'),name+' must render latest independent assets');
+ assert(html.includes('current-release.js')&&html.includes('current-release-viewer.js'),name+' must render latest independent assets');
  assert(html.includes('old.html'),'earlier versions remain discoverable');
 }
 assert(read('oil-art-v44-archive.html').includes('IntegratedBud_AbstractOil_v44'));

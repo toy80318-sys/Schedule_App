@@ -1,14 +1,14 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const read=n=>fs.readFileSync(require.resolve('../docs/'+n),'utf8');
-const sceneManifest=JSON.parse(read('assets/whole-objects-v62/manifest_v62.json'));
+const sceneManifest=JSON.parse(read('assets/current-release-v85/manifest.json'));
 const mainCode=[...read('index.html').matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('const scenes='));
 function main(search=''){
  const elements=new Map(),urls=[],classes=[];const get=id=>{if(!elements.has(id))elements.set(id,{children:[],style:{},parentElement:{style:{}},append(v){this.children.push(v)},setAttribute(k,v){this[k]=v}});return elements.get(id)};
- const sandbox={URL,URLSearchParams,location:{search,href:'https://example.test/Schedule_App/'+search},history:{replaceState(a,b,u){urls.push(String(u))}},document:{getElementById:get,createElement:()=>({dataset:{},setAttribute(k,v){this[k]=v}}),body:{classList:{add:v=>classes.push(v)}},documentElement:{requestFullscreen(){}},exitFullscreen(){}}};
+ const sandbox={window:{jejuCurrentRelease:sceneManifest},URL,URLSearchParams,location:{search,href:'https://example.test/Schedule_App/'+search},history:{replaceState(a,b,u){urls.push(String(u))}},document:{getElementById:get,createElement:()=>({dataset:{},setAttribute(k,v){this[k]=v}}),body:{classList:{add:v=>classes.push(v)}},documentElement:{requestFullscreen(){}},exitFullscreen(){}}};
  vm.runInNewContext(mainCode,sandbox);return {get,urls,classes};
 }
 let page=main('?embed=1&theme=night');assert(page.classes.includes('embed'));assert(page.get('garden').alt.includes('추상 유화'));
-for(const b of page.get('themes').children){b.onclick();const e=sceneManifest.scenes.find(e=>e.id===b.dataset.theme);assert.equal(page.get('garden').src,e.recomposed);assert.equal(page.get('garden').parentElement.style.aspectRatio,'4096/1006');assert.equal(b['aria-pressed'],'true');assert(page.urls.at(-1).includes('theme='+b.dataset.theme));}
+for(const b of page.get('themes').children){b.onclick();const e=sceneManifest.scenes.find(e=>e.id===b.dataset.theme);assert.equal(page.get('garden').src,e.integrated.src);assert.equal(page.get('garden').parentElement.style.aspectRatio,'2169/725');assert.equal(b['aria-pressed'],'true');assert(page.urls.at(-1).includes('theme='+b.dataset.theme));}
 page=main('?theme=unknown');assert(page.get('garden').src.includes('BG01'));assert(!read('index.html').includes('_20261021_v19'));assert(read('index-v19-archive.html').includes('_20261021_v19'));
 const catalogSandbox={window:{}};vm.runInNewContext(read('catalog-data.js'),catalogSandbox);const catalog=catalogSandbox.window.jejuFinalCatalog;
 assert.equal(catalog.sourceFiles.length,104);assert(catalog.sourceFiles.every(f=>/\.png$/.test(f.relativePath)&&/\/(?:release-20261022-v44|release-20261023-v49|release-20261025-v54|abstract-flowers-v43)\//.test(f.stablePreviewUrl)));
@@ -19,4 +19,4 @@ const planner=app.slice(app.indexOf('function brightBackgroundProject('),app.ind
 const filterBefore=JSON.stringify(context.sceneFilters);const register=vm.runInNewContext(planner+registerCode+'registerCatalog',context);assert.equal(register(catalog),80);assert.equal(JSON.stringify(context.sceneFilters),filterBefore);assert.equal(JSON.stringify(objects),original,'catalog refresh must preserve saved positions');
 for(const src of ['https://example.test/untrusted.png','https://toy80318-sys.github.io/Schedule_App/assets/abstract-flowers-v43/fake.png','https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/../fake.png'])assert.throws(()=>register({assets:[{id:'bad',src,category:'flower'}],backgrounds:[]}));
 assert(read('site-nav.js').includes("['index.html', '메인']"));
-console.log('PASS: all4 main scenes use v62 varied-flower gardens, embed/theme/fallback behavior,legacy catalog, trusted registration and saved-layout protection.');
+console.log('PASS: all4 main scenes use current v84 integrated gardens, embed/theme/fallback behavior,legacy catalog, trusted registration and saved-layout protection.');

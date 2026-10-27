@@ -138,7 +138,8 @@ document.querySelector('#backdrop').addEventListener('change',event=>{const valu
             .replace("__ZIP_ATTRIBUTE__", "" if local else "download")
             .replace("__ZIP_LABEL__", "PNG 원본 폴더 열기" if local else "12종 PNG ZIP 받기")
             .replace("__MANIFEST__", "manifest.json" if local else "assets/atmosphere-v84/manifest.json")
-            .replace("__EDITOR__", EDITOR)).encode("utf-8")
+            .replace("__EDITOR__", EDITOR)
+            .replace("</head>", ('' if local else '<link rel="stylesheet" href="site-nav.css?v=45"><script defer src="site-nav.js?v=85"></script>')+'</head>')).encode("utf-8")
 
 
 README = """제주 메이즈랜드 · 움직임 요소 PNG V84

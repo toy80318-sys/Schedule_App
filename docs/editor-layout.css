@@ -34,3 +34,5 @@
 .editor-tool-tabs button:focus-visible,.editor-tool-card>summary:focus-visible{outline:3px solid #f3d18c;outline-offset:2px}
 @media(max-width:1050px){.editor-organized main{grid-template-columns:180px minmax(0,1fr) 300px}.editor-tools-hidden main{grid-template-columns:180px minmax(0,1fr) 0}.editor-organized>header strong{display:none}}
 @media(max-width:760px){.editor-organized main,.editor-tools-hidden main{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) 170px}.editor-organized .left{display:none}.editor-organized .palette{grid-column:1}.editor-organized .right{position:fixed;z-index:20;right:0;top:calc(58px + var(--maze-nav-height,59px));bottom:0;width:min(330px,90vw);box-shadow:-10px 0 25px #0008}.editor-organized .worktop{top:8px}.editor-organized>header{gap:5px}.editor-organized>header .btn{padding:7px}.editor-organized .work{margin:0}}
+
+.editor-tool-card:has(#autoCluster[hidden]),.editor-tool-field:has(>select[hidden]){display:none}

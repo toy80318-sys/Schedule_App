@@ -2,25 +2,27 @@
 (()=>{
  'use strict';const E=window.jejuEditor;if(!E)return;
  const sections=[
-  {id:'selection',label:'선택 · 밀도',entries:[
-   {title:'그룹 만들기',controls:['makeGroup','ungroup']},
+  {id:'groups',label:'그룹',entries:[
+   {title:'그룹 만들기 · 해제',controls:['makeGroup','ungroup'],open:true},
    {group:'groupDensityTools',open:true},
+   {group:'styleRegister',title:'그룹 스타일 · A/B/C/D 라이브러리'},
+   {title:'그룹 파일 저장',controls:['saveSelectedGroup']},
+   {title:'자동 군집 배치',controls:['clusterTheme','clusterCount','autoCluster']},
+   {group:'mixSavedFlowers',title:'저장된 그룹 색상 혼합'}]},
+  {id:'placement',label:'배치 · 편집',entries:[
    {title:'선택 오브젝트 편집',controls:['duplicate','copyObjects','pasteObjects','flipX','remove'],open:true},
-   {group:'undo',title:'키보드 단축키'}]},
-  {id:'placement',label:'배치 · 변형',entries:[
    {group:'propX',open:true},
    {group:'nudgeStep'},
    {group:'normalizeFlowers'},
    {title:'겹침 · 레이어 순서',controls:['layerUp','layerDown','layerUp10','layerDown10','layerUp30','layerDown30','layerFront','layerBack']},
    {title:'꽃 방향 · 하단 채우기',controls:['varyFlowerDirections','fillForeground']},
-   {title:'자동 군집 배치',controls:['clusterTheme','clusterCount','autoCluster']}]},
+   {group:'undo',title:'키보드 단축키'}]},
   {id:'color',label:'배경 · 색상',entries:[
    {group:'openBgGalleryRight',open:true},
    {node:'whole62-scenes',title:'시간대별 정원 불러오기'},
    {title:'배경 · 전체 색보정',controls:['openBackgroundGrade','openTonePanel','applySceneHarmony'],open:true},
    {title:'선택한 꽃 색상',controls:['randomFlowerColor','randomFlowerHue5','randomFlowerHue10'],help:'선택한 꽃의 색상만 바꿉니다. Hue 5%·10%는 각각 ±5°·±10° 범위입니다.'},
-   {group:'replaceFlowers'},
-   {group:'mixSavedFlowers'}]},
+   {group:'replaceFlowers'}]},
   {id:'effects',label:'효과 · 공간',entries:[
    {title:'파티클 · 블러',controls:['scatterSkyParticles','scatterParticles','openFocusBlur'],open:true},
    {group:'applySpatial'},
@@ -28,8 +30,8 @@
    {group:'seqImport'}]},
   {id:'files',label:'소스 · 저장',entries:[
    {title:'배치 이름 · 저장본',controls:['saveName','saveCurrent','savedLayouts','loadCurrent','deleteSaved'],open:true},
-   {title:'프로젝트 · 이미지 파일',controls:['loadProject','saveSelectedGroup','exportPng']},
-   {group:'styleRegister'},
+   {title:'프로젝트 · 이미지 파일',controls:['loadProject','exportPng']},
+   {node:'unityDelivery',title:'Unity 개발자 전달'},
    {node:'sourceDownloadToolbar',title:'원본 소스 ZIP 다운로드',open:true}]}
  ];
  function mount(){
@@ -59,9 +61,9 @@
   const toggle=document.createElement('button');toggle.type='button';toggle.className='btn';toggle.id='editorToolToggle';toggle.textContent='도구';toggle.setAttribute('aria-controls',right.id);header.append(toggle);
   function toggleTools(hidden){document.body.classList.toggle('editor-tools-hidden',hidden);toggle.setAttribute('aria-expanded',String(!hidden));requestAnimationFrame(()=>$('fit').click())}
   toggle.onclick=()=>toggleTools(!document.body.classList.contains('editor-tools-hidden'));
-  const leftFooter=document.querySelector('.panel.left').lastElementChild;leftFooter.replaceChildren();const editGroup=document.createElement('button');editGroup.type='button';editGroup.className='btn primary';editGroup.textContent='선택 그룹 · 밀도 편집';editGroup.onclick=()=>{activate('selection');toggleTools(false)};leftFooter.append(editGroup);
+  const leftFooter=document.querySelector('.panel.left').lastElementChild;leftFooter.replaceChildren();const editGroup=document.createElement('button');editGroup.type='button';editGroup.className='btn primary';editGroup.textContent='그룹 도구 열기';editGroup.onclick=()=>{activate('groups');toggleTools(false)};leftFooter.append(editGroup);
   for(const p of document.querySelectorAll('#properties .note'))if(p.textContent.startsWith('색상 변화 강도:'))p.hidden=true;
-  document.body.append(legacy);document.body.classList.add('editor-organized');activate('selection');toggleTools(matchMedia('(max-width:760px)').matches);
+  document.body.append(legacy);document.body.classList.add('editor-organized');activate('groups');toggleTools(matchMedia('(max-width:760px)').matches);
   const fileCopy=document.createElement('button');fileCopy.className='btn';fileCopy.type='button';fileCopy.textContent='프로젝트 파일 저장';fileCopy.onclick=()=>$('saveProject').click();panelById.get('files').querySelectorAll('.editor-tool-body')[1].prepend(fileCopy);
   window.jejuEditorLayout={sections,activate};
  }

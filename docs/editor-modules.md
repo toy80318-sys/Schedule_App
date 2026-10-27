@@ -26,3 +26,5 @@ PCG 설정은 생성된 일반 오브젝트의 `procedural.params`에 저장됩�
 게임 모드는 기존 `exhibitionTab` / `exhibitionFrame`과 `jeju-exhibition-*` 메시지를 그대로 사용합니다. `app.js`는 편집 준비와 이미지 추가가 끝난 뒤 현재 `E.project()`를 iframe으로 전달하고, 편집 복귀나 브라우저 비활성 시 게임 실행을 중단하도록 알립니다. 꽃잎 흩날림·살랑임·터치 상태는 `player.js`의 일시적인 게임 상태이며 에디터 객체·실행 취소·저장 JSON을 바꾸지 않습니다. 에디터의 드래그·선택 입력 경로에는 게임 반응을 추가하지 않습니다. 새 개화 영상은 포함하지 않습니다. 연결 회귀 검사는 `node tests/editor-game-bridge.test.cjs`로 실행합니다.
 
 게임 분위기 v82는 `player.js`에서 앞·초점면·뒤의 세 깊이 입자, 제한된 구름 이동, 뿌리를 고정한 꽃·풀의 서로 다른 흔들림을 처리합니다. `player.html`의 `#atmosphereControls`는 `#viewport` 안의 `#stage` 바깥에 두어 독립 화면과 iframe 모두에서 보이고 꽃 터치 입력과 분리됩니다. `atmosphereRichness`·`atmosphereFocus`·`atmosphereWind`는 게임 실행 설정이며 에디터 배치·PNG 원본·저장 JSON을 변경하지 않습니다. `build_player_embed.py`로 같은 조절판과 의존성을 iframe 템플릿에 재현하며 `tests/game-embed.test.cjs`에서 구조와 버전 일치를 확인합니다. 실제 개화 애니메이션은 별도 제작 범위입니다.
+
+밝은 배경 전용 v83은 `set-review-catalog.js`가 선택 목록·배경 카드·원본 링크를 최신 4종으로 등록하고 `backgroundReplacements`에 삭제된 등록 URL의 정확한 대응표를 만듭니다. `app.js`는 자동 복원·파일/저장본 불러오기·배경 API·실행 취소에서 이를 사용하며 사용자 배경 URL은 추측하지 않습니다. 시작 교체는 새 이미지 준비와 이전 작업 백업 커밋을 확인한 뒤 진행합니다. 실패 복구 경로만 이전 URL을 그대로 보존합니다.

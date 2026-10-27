@@ -7,7 +7,7 @@
   morning:{name:'아침 · 푸른 꽃과 여명',background:[105,104,120,0],flowers:[106,102,108,0],decor:[90,103,91,1],grade:{hue:1,exposure:.04,brightness:100,curve:[0,62,130,200,253]}}
  };
  const neutral=()=>({brightness:100,contrast:100,saturation:100,warmth:0});
- function theme(background,scenes=[]){const src=(background||'').split('?')[0],scene=scenes.find(s=>s.project.background.split('?')[0]===src);if(scene&&presets[scene.id])return scene.id;const n=src.match(/ML_BG0([1-4])_LT0\1_/);return n?['sunset','day','night','morning'][+n[1]-1]:null}
+ function theme(background,scenes=[]){const src=(background||'').split(/[?#]/)[0],scene=scenes.find(s=>s.project.background.split('?')[0]===src);if(scene&&presets[scene.id])return scene.id;const n=src.match(/ML_BG0([1-4])_LT0\1_|BG0([1-4])-B04-V05\.png$/);return n?['sunset','day','night','morning'][+(n[1]||n[2])-1]:null}
  function filters(key,amount=1){
   const p=presets[key];if(!p)throw Error('현재 배경의 색보정 기준을 찾지 못했습니다.');amount=Number.isFinite(amount)?Math.max(0,Math.min(1,amount)):1;
   const out={scene:neutral()};for(const scope of ['background','flowers','decor']){out[scope]=neutral();Object.keys(out[scope]).forEach((k,i)=>{const base=k==='warmth'?0:100;out[scope][k]=Math.round(base+(p[scope][i]-base)*amount)})}

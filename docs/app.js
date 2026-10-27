@@ -87,7 +87,7 @@
   function syncFilterControls(){const tone=sceneFilters[$('toneScope').value||'scene'];for(const key of Object.keys(tone)){ $('tone_'+key).value=tone[key];$('toneValue_'+key).textContent=tone[key]+(key==='warmth'?'':'%')} }
   function applySceneFilters(){if(wallBackground){wallBackground.style.filter=filterCSS('background');wallBackground.style.transform=`scale(${window.jejuFocus?.backgroundScale(sceneFilters.focus)||1})`}for(const o of objects){const im=wallNodes.get(o.id)?.firstElementChild;if(im){const a=assets.find(a=>a.id===o.assetId),tone=objectFilterCSS(o,a),light=window.jejuSpace?.lighting(o,a,H,gardenSpace,spaceView).brightness??1;im.style.filter=[tone==='none'?'':tone,light===1?'':`brightness(${light})`].filter(Boolean).join(' ')||'none'}}syncFilterControls()}
   function historyState(){return JSON.stringify({objects,sceneFilters,gardenSpace,background})}
-  function restoreHistory(text){const value=JSON.parse(text);objects=value.objects;sceneFilters=normalizeFilters(value.sceneFilters);gardenSpace=window.jejuSpace?.normalize(value.gardenSpace)||{enabled:false};if('background' in value)background=value.background}
+  function restoreHistory(text){let value=JSON.parse(text);value=brightBackgroundProject(value)||value;objects=value.objects;sceneFilters=normalizeFilters(value.sceneFilters);gardenSpace=window.jejuSpace?.normalize(value.gardenSpace)||{enabled:false};if('background' in value)background=value.background;if(value.backgroundDefaultVersion===83)backgroundDefaultVersion=83}
   $('openTonePanel').onclick=$('openTonePanelRight').onclick=()=>{syncFilterControls();$('toneDialog').showModal()};
   $('closeTonePanel').onclick=()=>$('toneDialog').close();
   $('toneScope').onchange=syncFilterControls;
@@ -136,15 +136,13 @@
   $('savedLayouts').onchange=()=>{$('deleteSaved').disabled=!$('savedLayouts').value;if($('savedLayouts').value)$('saveName').value=$('savedLayouts').selectedOptions[0].textContent};
   function scheduleSave(){if(!autosaveReady)return;clearTimeout(saveTimer);saveTimer=setTimeout(()=>storeCurrent().catch(()=>{}),900)}
   async function migrateLongStems(data){data.flowerAssetVersion=2}
-  async function applyProject(data,options={}){backgroundDefaultVersion=Number.isInteger(data.backgroundDefaultVersion)?data.backgroundDefaultVersion:0;if(!options.startup)backgroundDefaultVersion=Math.max(80,backgroundDefaultVersion);data=window.jejuAmbient.cleanProject(data);assets=[...builtins,...(data.assets||[]).filter(a=>!builtins.some(b=>b.id===a.id)).map(currentFlowerAsset)];objects=data.objects||[];objects.forEach(o=>{o.baseW||=o.w;o.baseH||=o.h;o.aspect||=o.w/o.h});await migrateLongStems(data);$('saveName').value=data.name||'불러온 배치';background=window.jejuFinalCatalog?.backgroundAliases?.[data.background?.split('?')[0]]||data.background||null;reference=data.reference||null;sceneFilters=normalizeFilters(data.sceneFilters);gardenSpace=window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false};selected=null;selectedIds.clear();history=[];future=[];$('reference').src=reference||'';$('reference').classList.toggle('hidden',!reference);renderPalette();refresh()}
+  async function applyProject(data,options={}){const migrated=options.preserveBackground?null:brightBackgroundProject(data);if(migrated&&!options.startup)await image(migrated.background);data=migrated||structuredClone(data);backgroundDefaultVersion=Number.isInteger(data.backgroundDefaultVersion)?data.backgroundDefaultVersion:0;if(!options.startup)backgroundDefaultVersion=Math.max(83,backgroundDefaultVersion);data=window.jejuAmbient.cleanProject(data);assets=[...builtins,...(data.assets||[]).filter(a=>!builtins.some(b=>b.id===a.id)).map(currentFlowerAsset)];objects=data.objects||[];objects.forEach(o=>{o.baseW||=o.w;o.baseH||=o.h;o.aspect||=o.w/o.h});await migrateLongStems(data);$('saveName').value=data.name||'불러온 배치';background=options.preserveBackground?data.background||null:window.jejuFinalCatalog?.backgroundAliases?.[data.background?.split(/[?#]/)[0]]||data.background||null;reference=data.reference||null;sceneFilters=normalizeFilters(data.sceneFilters);gardenSpace=window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false};selected=null;selectedIds.clear();history=[];future=[];$('reference').src=reference||'';$('reference').classList.toggle('hidden',!reference);renderPalette();refresh()}
   function brightBackgroundProject(data){
-    if(Number.isInteger(data.backgroundDefaultVersion)&&data.backgroundDefaultVersion>=80)return null;
-    const catalog=window.jejuFinalCatalog,base=typeof data.background==='string'?data.background.split(/[?#]/)[0]:data.background,source=catalog.backgroundAliases?.[base]||base;
-    const old=catalog.backgrounds.find(a=>a.src===source&&a.id===`whole62-${a.theme}-background`&&a.backgroundTreatment==='subdued_background_only');
-    if(!old)return null;
-    const code={sunset:'BG01',day:'BG02',night:'BG03',morning:'BG04'}[old.theme],target=catalog.backgrounds.find(a=>a.id===code+'-B04-V05');
+    const catalog=window.jejuFinalCatalog,base=typeof data.background==='string'?data.background.split(/[?#]/)[0]:data.background,replacements=catalog.backgroundReplacements;
+    if(!Object.hasOwn(replacements||{},base))return null;
+    const target=catalog.backgrounds.find(a=>a.src===replacements[base]);
     if(!target?.src)throw Error('같은 시간대의 밝은 기본 배경이 등록되어 있지 않습니다.');
-    const project=structuredClone(data);project.background=target.src;project.backgroundDefaultVersion=80;
+    const project=structuredClone(data);project.background=target.src;project.backgroundDefaultVersion=83;
     project.sceneFilters={...(project.sceneFilters||{}),scene:neutralTone(),background:neutralTone(),backgroundGrade:window.jejuBackgroundGrade.normalize()};
     return project;
   }
@@ -163,7 +161,7 @@
     for(const a of project.assets){const source=expected.get(a.id),current=registered.get(a.id);if(!source||!current||a.theme!=='sunset'||a.src!==source.src||a.src!==current.src||a.sha256!==source.sha256||a.sha256!==current.sha256||!a.completeObject||!a.stillOnly||!a.lightingBaked||a.sourceRect!==undefined)throw Error('밝은 기본 배치의 독립 PNG 정보가 다릅니다.');}
     const flowers=new Set(project.assets.filter(a=>a.group==='flowers').map(a=>a.id));if(project.objects.filter(o=>flowers.has(o.assetId)).length!==320)throw Error('밝은 기본 배치의 꽃 개수가 다릅니다.');
     try{await Promise.all([project.background,...project.assets.map(a=>a.src)].map(image));}catch{throw Error('밝은 기본 배경과 꽃 PNG를 준비하지 못했습니다.');}
-    return{...project,backgroundDefaultVersion:80};
+    return{...project,backgroundDefaultVersion:83};
   }
   async function restoreCurrent(){
     let data;autosaveReady=false;clearTimeout(saveTimer);
@@ -174,16 +172,16 @@
         const migrated=brightBackgroundProject(data),legacy=data.oilAssetVersion!==14;
         if(migrated)try{await image(migrated.background);}catch{throw Error('밝은 배경 원본을 준비하지 못해 기존 화면을 유지합니다.');}
         if(migrated||legacy){const key='named:'+(migrated?'밝은 배경 적용 전 ':'유화 v14 교체 전 ')+new Date().toLocaleString('ko-KR')+' · '+uid();await namedStore('write',key,structuredClone(data));}
-        const project=migrated||structuredClone(data);if(legacy)project.backgroundDefaultVersion=80;
+        const project=migrated||structuredClone(data);if(legacy)project.backgroundDefaultVersion=83;
         await applyProject(project,{startup:true});
-        if(migrated){history.push(JSON.stringify({objects:data.objects,background:window.jejuFinalCatalog.backgroundAliases?.[data.background?.split('?')[0]]||data.background,sceneFilters:normalizeFilters(data.sceneFilters),gardenSpace:window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false}}));syncUndo();}
+        if(migrated){history.push(JSON.stringify({objects:data.objects,background:data.background,sceneFilters:normalizeFilters(data.sceneFilters),gardenSpace:window.jejuSpace?.normalize(data.gardenSpace)||{enabled:false}}));syncUndo();}
         if(migrated||legacy)await storeCurrent();autosaveReady=true;
         if(migrated)notice('꽃 배치를 보존하고 밝은 기본 배경을 적용했습니다. 이전 화면은 저장본에 보관했습니다.');
         return true;
       }
       await applyProject(await loadBrightDefault(),{startup:true});await storeCurrent();autosaveReady=true;return true;
     }catch(error){
-      if(data&&Array.isArray(data.objects)&&Array.isArray(data.assets))try{await applyProject(structuredClone(data),{startup:true});}catch{}
+      if(data&&Array.isArray(data.objects)&&Array.isArray(data.assets))try{await applyProject(structuredClone(data),{startup:true,preserveBackground:true});}catch{}
       autosaveReady=false;notice('저장본을 보호하기 위해 자동 교체를 중단했습니다: '+error.message);throw error;
     }
   }
@@ -288,7 +286,7 @@
     $('activeBackgroundName').textContent=backgroundChoices.find(([src])=>src===background)?.[1]||(background?'불러온 배경 이미지':'배경 없음');
     for(const card of $('backgroundGalleryCards').children)card.setAttribute('aria-pressed',String(card.dataset.background===background));
   }
-  function applyBackground(src){backgroundDefaultVersion=80;background=src;renderWall();scheduleSave();notice(src?'배경을 교체했습니다.':'배경을 제거했습니다.')}
+  function applyBackground(src){const migrated=brightBackgroundProject({background:src,sceneFilters});backgroundDefaultVersion=83;background=migrated?.background||src;if(migrated)sceneFilters=normalizeFilters(migrated.sceneFilters);renderWall();scheduleSave();notice(src?'배경을 교체했습니다.':'배경을 제거했습니다.')}
   function openBackgroundGallery(){
     const host=$('backgroundGalleryCards');if(!host.children.length)for(const [src,name] of backgroundChoices){const button=document.createElement('button'),im=document.createElement('img'),label=document.createElement('span');button.type='button';button.className='background-card';button.dataset.background=src;button.setAttribute('aria-label',name);im.src=backgroundPreview(src);im.alt=name;im.loading='lazy';im.decoding='async';label.textContent=name;button.append(im,label);button.onclick=()=>{applyBackground(src);$('backgroundGallery').close()};host.append(button)}
     syncBackgroundSelect();$('backgroundGallery').showModal();
@@ -619,7 +617,7 @@
     for(const a of latest){if(!a.id||!(a.src?.startsWith('https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/')||currentPreviews.has(a.src))||a.src.includes('..'))throw Error('최종 요소 경로 오류');const previous=builtins.find(b=>b.id===a.id);if(previous)Object.assign(previous,currentFlowerAsset(a));else builtins.push(currentFlowerAsset(a));}
     for(const a of latest){for(const alias of a.legacyAssetIds||[]){if(alias===a.id)continue;const value={...a,id:alias,catalogHidden:true};const old=builtins.find(b=>b.id===alias);if(old)Object.assign(old,value);else builtins.push(value)}}
     const map=new Map(builtins.map(a=>[a.id,a]));assets=assets.map(a=>map.has(a.id)?{...map.get(a.id)}:currentFlowerAsset(a));for(const a of builtins)if(!assets.some(x=>x.id===a.id))assets.push({...a});
-    if(data.backgrounds.length){backgroundChoices.splice(0,backgroundChoices.length,...data.backgrounds.map(a=>[a.src,a.name]));for(const a of data.backgrounds.filter(a=>a.kind==='video'))backgroundVideos[a.src]={name:a.name,poster:a.poster||a.thumb,thumb:a.thumb,fallbackSrc:a.fallbackSrc,revision:a.revision||''};const sel=$('backgroundSelect');sel.replaceChildren();for(const [value,label] of [['none','배경 없음'],...backgroundChoices,['custom','직접 불러온 배경']]){const option=document.createElement('option');option.value=value;option.textContent=label;sel.append(option)}$('backgroundGalleryCards').replaceChildren();background=data.backgroundAliases?.[background?.split('?')[0]]||background;}
+    if(data.backgrounds.length){backgroundChoices.splice(0,backgroundChoices.length,...data.backgrounds.map(a=>[a.src,a.name]));for(const a of data.backgrounds.filter(a=>a.kind==='video'))backgroundVideos[a.src]={name:a.name,poster:a.poster||a.thumb,thumb:a.thumb,fallbackSrc:a.fallbackSrc,revision:a.revision||''};const sel=$('backgroundSelect');sel.replaceChildren();for(const [value,label] of [['none','배경 없음'],...backgroundChoices,['custom','직접 불러온 배경']]){const option=document.createElement('option');option.value=value;option.textContent=label;sel.append(option)}$('backgroundGalleryCards').replaceChildren();const migrated=brightBackgroundProject({background,sceneFilters});background=migrated?.background||data.backgroundAliases?.[background?.split(/[?#]/)[0]]||background;if(migrated){sceneFilters=normalizeFilters(migrated.sceneFilters);backgroundDefaultVersion=83;}}
     for(const o of objects){const a=assets.find(a=>a.id===o.assetId);if(window.jejuAmbient.atmosphereKind(a)){if(!o.motion)o.motion=a.motion||'stationary';if(/구름.*루프/.test(o.name||'')&&a.sourceDriveId)o.name=a.name}}
     renderPalette();refresh();return latest.length;
   }
@@ -643,7 +641,7 @@
     changeGroupDensity:(increase,groupId,assetId=null)=>{const group=window.jejuGroupDensity.selectedGroup(objects,members());if(!group||group.id!==groupId)return;const change=window.jejuGroupDensity.change(objects,groupId,assetId,increase,uid);if(!change.count)return; snapshot();objects=change.objects;const chosen=objects.filter(o=>o.groupId===groupId);selectedIds=new Set(chosen.map(o=>o.id));selected=chosen.at(-1).id;refresh();notice(`${group.name} · ${change.count}개 ${increase?'추가':'삭제'} (${change.before} → ${change.after}개)`);return change.count},
     selectObject:id=>{const o=objects.find(o=>o.id===id);if(!o)throw Error('요소를 찾지 못했습니다.');selected=o.id;selectedIds=new Set([o.id]);refresh()},
     addAsset:a=>addObject(assets.find(x=>x.id===a.id)||a,W/2,H/2),
-    setBackground:src=>{if(!backgroundChoices.some(([value])=>value===src))throw Error('등록된 배경을 선택하세요.');snapshot();applyBackground(src)},
+    setBackground:src=>{const target=brightBackgroundProject({background:src})?.background||src;if(!backgroundChoices.some(([value])=>value===target))throw Error('등록된 배경을 선택하세요.');snapshot();applyBackground(src)},
     setMotion:motion=>{if(!['stationary','left','right'].includes(motion))throw Error('이동 방향 오류');snapshot();for(const o of members())o.motion=motion;refresh()},
     openExhibition:()=>switchWorkspace(true),
     center:()=>{const r=els.view.getBoundingClientRect();return{x:(r.width/2-panX)/scale,y:(r.height/2-panY)/scale}},
@@ -666,7 +664,7 @@
   function exhibitionMessage(message){$('exhibitionFrame').contentWindow?.postMessage(message,location.origin)}
   function sendExhibitionProject(){if(exhibitionReady&&exhibitionActive){exhibitionMessage({type:'jeju-exhibition-project',project:window.jejuEditor.project()});exhibitionMessage({type:'jeju-exhibition-active',active:!document.hidden})}}
   let exhibitionTemplateTask;
-  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=game82r1').then(response=>{if(!response.ok)throw Error('게임 화면을 불러오지 못했습니다. 게임 모드를 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('게임 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
+  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=bright83').then(response=>{if(!response.ok)throw Error('게임 화면을 불러오지 못했습니다. 게임 모드를 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('게임 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
   async function switchWorkspace(exhibition){
     const request=++workspaceRequest,frame=$('exhibitionFrame');let template;
     if(exhibition)try{await bloomReady;while(pendingObjectAdds.size)await Promise.allSettled([...pendingObjectAdds]);if(!frame.getAttribute('srcdoc'))template=await exhibitionTemplate()}catch(err){if(request!==workspaceRequest)return;$('exhibitionStatus').hidden=false;$('exhibitionStatus').textContent=err.message;return}

@@ -84,6 +84,9 @@ layoutNodes.layoutVersion.value='legacy';layoutUI.syncProjectLinks(layoutSet);
 assert.equal(layoutNodes.projectDownload.href,layoutSet.legacyProject);assert.equal(layoutNodes.unityLayoutDownload.href,layoutSet.legacyUnityLayout);
 assert(layoutNodes.layoutVersionNote.textContent.includes('116개'));
 assert.equal(layoutUI.projectChoices({project:'assets/only.json'}).length,1,'older manifests without a legacy project retain one valid default');
+const v05Set={...layoutSet,projectVersion:'V05',projectLabel:'V05',previousProject:layoutSet.project,previousUnityLayout:layoutSet.unityLayout,previousProjectVersion:'V04'};
+layoutUI.fillProjectVersions(v05Set);assert.equal(layoutNodes.layoutVersion.options.length,3);assert(layoutNodes.layoutVersionNote.textContent.includes('그림체만'));assert(layoutNodes.layoutVersionNote.textContent.includes('320개'));
+layoutNodes.layoutVersion.value='previous';layoutUI.syncProjectLinks(v05Set);assert.equal(layoutNodes.projectDownload.href,layoutSet.project);
 assert(source.includes("$('layoutVersion').onchange=()=>{if(!selected)return;uploads.delete(selected.id)"),'explicit layout selection clears only the active theme upload before rendering that default');
 
 const slots=vm.runInNewContext(extract('  function flowerSlots','  function fillFlowers')+';flowerSlots');

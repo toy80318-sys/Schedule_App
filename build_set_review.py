@@ -50,7 +50,7 @@ def read_json(path):
 
 
 def write_json(path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
 
 
 def preserve_layout(path,value):
@@ -400,6 +400,8 @@ def build(check=False):
         prepare_sources()
     metadata = generation_metadata()
     prior=read_json(OUT/'manifest.json') if (OUT/'manifest.json').is_file() else None
+    if not check and prior and prior.get('assetVersion')=='V05':
+        raise ValueError('V05 이후에는 build_abstract_v05.py를 사용하세요. 현재 세트 목록을 보호했습니다.')
     preserved_sources={a['id']:a['sha256'] for s in prior['backgrounds'] for group in ['flowers','environment','backgrounds','integrated'] for a in s[group] if a['version'] in ['V01','V02','V03']} if prior else {}
     layout_paths=[OUT/f'{theme}_{kind}.json' for theme,*_ in THEMES for kind in ['editor','unity']]
     preserved_layouts={path.name:digest(path) for path in layout_paths if path.is_file()}
@@ -408,6 +410,8 @@ def build(check=False):
         expected += [f'{code}-F{f:02}-C{c:02}-V01' for f in range(1, 7) for c in range(1, 5)]
         expected += [f'{code}-{eid}-V01' for eid, *_ in ENV]
         expected += [f'{code}-{kind}-{version}' for kind,version,*_ in art_variants(theme)]
+    if check and prior:
+        expected=list(dict.fromkeys(expected+[a['id'] for s in prior['backgrounds'] for group in ['flowers','environment','backgrounds','integrated'] for a in s[group]]))
     missing = [aid for aid in expected if not (PNG / f'{aid}.png').is_file()]
     if missing:
         raise ValueError(f'생성이 완료되지 않은 PNG {len(missing)}장:\n' + '\n'.join(missing))

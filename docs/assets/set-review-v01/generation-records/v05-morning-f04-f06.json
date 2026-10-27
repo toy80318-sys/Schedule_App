@@ -1,0 +1,538 @@
+{
+  "version": "V05",
+  "intent": "Style-only revision; current V04 320-flower placement and sizing are maintained by layout owner.",
+  "notes": [
+    "F06 C01 retains corrected prior blue-ivory palette; do not relabel its ivory petals skyblue.",
+    "12% transparent border is prompt guidance. Technical acceptance uses complete silhouette with meaningful-alpha threshold8 and minimum8px margin, not automated perceptual-match approval."
+  ],
+  "assets": [
+    {
+      "id": "BG04-F04-C01-V05",
+      "version": "V05",
+      "design": "비스듬한 수국",
+      "color": "스카이블루",
+      "referenceIds": [
+        "BG04-F04-C01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: the ONE entire angled hydrangea flower sprig, sloping slightly right, dome of four-petal florets, two broad attached green leaves, connected branching green stem ending fully visible. Preserve this exact plant design, pose, number of heads, source flower skyblue palette, green foliage, and soft golden morning light from upper left. Change ONLY painting style to strong ABSTRACT OIL: much larger broad impasto palette-knife strokes, bold simplified petal and leaf color planes, chunky tactile paint edges and confident expressive marks. Recognizable separate petals and attached stems, no microdetail illustration. Entire independent complete plant, no cropped stem or leaf tips. Center plant inside middle76% of square with12% fully transparent margin each side, genuine transparent RGBA background. No soil, pot, shadow, scenery, other plants, text, frame. Retain source bloom scale relative to stem and leaf proportions; no new heads or extra blossoms.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-fed100f9-3a5e-4d9b-9696-cf018573bc4c.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "a03890c7f2560d65e185b8b996a14b2eedc2be3ba7a8a991027c7ef214eb3206",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1703055,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          126,
+          84,
+          1172,
+          1203
+        ],
+        "margins": [
+          126,
+          84,
+          82,
+          51
+        ],
+        "minimumMargin": 51,
+        "fullyTransparentRatio": 0.5847336370504338,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F04-C02-V05",
+      "version": "V05",
+      "design": "비스듬한 수국",
+      "color": "코발트블루",
+      "referenceIds": [
+        "BG04-F04-C02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: the ONE entire angled hydrangea flower sprig, sloping slightly right, dome of four-petal florets, two broad attached green leaves, connected branching green stem ending fully visible. Preserve this exact plant design, pose, number of heads, source flower cobalt blue palette, green foliage, and soft golden morning light from upper left. Change ONLY painting style to strong ABSTRACT OIL: much larger broad impasto palette-knife strokes, bold simplified petal and leaf color planes, chunky tactile paint edges and confident expressive marks. Recognizable separate petals and attached stems, no microdetail illustration. Entire independent complete plant, no cropped stem or leaf tips. Center plant inside middle76% of square with12% fully transparent margin each side, genuine transparent RGBA background. No soil, pot, shadow, scenery, other plants, text, frame. Retain source bloom scale relative to stem and leaf proportions; no new heads or extra blossoms.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-552c803a-72b4-4d84-9ce4-027c258fcfc7.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "1ea3ff42ffc2fc28304bf7ba0caa753c5833334fecc5d18673bca233c2c01ce4",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1852374,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          91,
+          62,
+          1204,
+          1216
+        ],
+        "margins": [
+          91,
+          62,
+          50,
+          38
+        ],
+        "minimumMargin": 38,
+        "fullyTransparentRatio": 0.5366075766478687,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F04-C03-V05",
+      "version": "V05",
+      "design": "비스듬한 수국",
+      "color": "페일 라벤더",
+      "referenceIds": [
+        "BG04-F04-C03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: the ONE entire angled hydrangea flower sprig, sloping slightly right, dome of four-petal florets, two broad attached green leaves, connected branching green stem ending fully visible. Preserve this exact plant design, pose, number of heads, source flower pale lavender palette, green foliage, and soft golden morning light from upper left. Change ONLY painting style to strong ABSTRACT OIL: much larger broad impasto palette-knife strokes, bold simplified petal and leaf color planes, chunky tactile paint edges and confident expressive marks. Recognizable separate petals and attached stems, no microdetail illustration. Entire independent complete plant, no cropped stem or leaf tips. Center plant inside middle76% of square with12% fully transparent margin each side, genuine transparent RGBA background. No soil, pot, shadow, scenery, other plants, text, frame. Retain source bloom scale relative to stem and leaf proportions; no new heads or extra blossoms.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-724f247b-2f31-4b6e-a2a6-d0ec524e367d.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "0bf0fbe0380ec0297dcaffb2f3aedaa9ef6c331f686deb88fd16edb1cce154d4",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2049622,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          59,
+          55,
+          1233,
+          1240
+        ],
+        "margins": [
+          59,
+          55,
+          21,
+          14
+        ],
+        "minimumMargin": 14,
+        "fullyTransparentRatio": 0.49203887273643004,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F04-C04-V05",
+      "version": "V05",
+      "design": "비스듬한 수국",
+      "color": "블루 아이보리",
+      "referenceIds": [
+        "BG04-F04-C04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: the ONE entire angled hydrangea flower sprig, sloping slightly right, dome of four-petal florets, two broad attached green leaves, connected branching green stem ending fully visible. Preserve this exact plant design, pose, number of heads, source flower blue ivory palette, green foliage, and soft golden morning light from upper left. Change ONLY painting style to strong ABSTRACT OIL: much larger broad impasto palette-knife strokes, bold simplified petal and leaf color planes, chunky tactile paint edges and confident expressive marks. Recognizable separate petals and attached stems, no microdetail illustration. Entire independent complete plant, no cropped stem or leaf tips. Center plant inside middle76% of square with12% fully transparent margin each side, genuine transparent RGBA background. No soil, pot, shadow, scenery, other plants, text, frame. Retain source bloom scale relative to stem and leaf proportions; no new heads or extra blossoms.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-c10119b7-8517-451b-8cfa-4e11eb16caa7.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "eb19a6692db78fc5a86416598b8b4a5c56c28a61e6c2c6f1c2b6d98010c14eb1",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1829772,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          70,
+          65,
+          1202,
+          1223
+        ],
+        "margins": [
+          70,
+          65,
+          52,
+          31
+        ],
+        "minimumMargin": 31,
+        "fullyTransparentRatio": 0.5341770767356262,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F05-C01-V05",
+      "version": "V05",
+      "design": "가는 라벤더",
+      "color": "스카이블루",
+      "referenceIds": [
+        "BG04-F05-C01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire lavender-like plant with exactly THREE slender upright flower spikes, middle spike tallest, left/right shorter, tiny spaced florets and slim pointed green leaves, all three stems connected at visible base. Preserve this narrow spiky design, relative proportions, pose, source skyblue petal palette, sage-green foliage and soft golden morning rim light. Apply strong ABSTRACT OIL medium, much larger palette-knife strokes and bold impasto petal/leaf planes, simplified confident chunky brushmarks, no fine illustration microdetail. Preserve readable narrow stems and connected florets, never make rounded hydrangea heads. One independent complete uncut plant on actual transparent RGBA. Center entire plant inside middle76% of square,12% completely clear transparent margin ALL sides, all tips and bottom stalk end visible. No ground patch, soil, pot, scenery, cast shadow, text, border, or detached pieces. Change style only.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-cd6cc15b-64aa-416b-8d0a-279d5a099bda.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "476b4cb7ffeef32120ec13a3035c41ff2c7dec1a8e54a476580b8c6e5fab32be",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1626715,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          219,
+          48,
+          1064,
+          1216
+        ],
+        "margins": [
+          219,
+          48,
+          190,
+          38
+        ],
+        "minimumMargin": 38,
+        "fullyTransparentRatio": 0.6516722246387319,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F05-C02-V05",
+      "version": "V05",
+      "design": "가는 라벤더",
+      "color": "코발트블루",
+      "referenceIds": [
+        "BG04-F05-C02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire lavender-like plant with exactly THREE slender upright flower spikes, middle spike tallest, left/right shorter, tiny spaced florets and slim pointed green leaves, all three stems connected at visible base. Preserve this narrow spiky design, relative proportions, pose, source cobalt blue petal palette, sage-green foliage and soft golden morning rim light. Apply strong ABSTRACT OIL medium, much larger palette-knife strokes and bold impasto petal/leaf planes, simplified confident chunky brushmarks, no fine illustration microdetail. Preserve readable narrow stems and connected florets, never make rounded hydrangea heads. One independent complete uncut plant on actual transparent RGBA. Center entire plant inside middle76% of square,12% completely clear transparent margin ALL sides, all tips and bottom stalk end visible. No ground patch, soil, pot, scenery, cast shadow, text, border, or detached pieces. Change style only.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-28b6550b-bcb3-4549-8e4c-93bd8812d5c3.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "263a9d4644f717ad2e8a1001ebe726a12fd63f041e0f7f72997487feccf83de9",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1529889,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          226,
+          41,
+          1075,
+          1205
+        ],
+        "margins": [
+          226,
+          41,
+          179,
+          49
+        ],
+        "minimumMargin": 41,
+        "fullyTransparentRatio": 0.6754780237530175,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F05-C03-V05",
+      "version": "V05",
+      "design": "가는 라벤더",
+      "color": "페일 라벤더",
+      "referenceIds": [
+        "BG04-F05-C03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire lavender-like plant with exactly THREE slender upright flower spikes, middle spike tallest, left/right shorter, tiny spaced florets and slim pointed green leaves, all three stems connected at visible base. Preserve this narrow spiky design, relative proportions, pose, source pale lavender petal palette, sage-green foliage and soft golden morning rim light. Apply strong ABSTRACT OIL medium, much larger palette-knife strokes and bold impasto petal/leaf planes, simplified confident chunky brushmarks, no fine illustration microdetail. Preserve readable narrow stems and connected florets, never make rounded hydrangea heads. One independent complete uncut plant on actual transparent RGBA. Center entire plant inside middle76% of square,12% completely clear transparent margin ALL sides, all tips and bottom stalk end visible. No ground patch, soil, pot, scenery, cast shadow, text, border, or detached pieces. Change style only.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-00da598c-85d2-4d82-91f5-650882d936fa.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "c584c48f25f8514d1622a4701e18e6fdb22c895a1da2a13b30935c69fd22c9e8",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1499618,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          228,
+          66,
+          1056,
+          1203
+        ],
+        "margins": [
+          228,
+          66,
+          198,
+          51
+        ],
+        "minimumMargin": 51,
+        "fullyTransparentRatio": 0.6803313924945755,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F05-C04-V05",
+      "version": "V05",
+      "design": "가는 라벤더",
+      "color": "블루 아이보리",
+      "referenceIds": [
+        "BG04-F05-C04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire lavender-like plant with exactly THREE slender upright flower spikes, middle spike tallest, left/right shorter, tiny spaced florets and slim pointed green leaves, all three stems connected at visible base. Preserve this narrow spiky design, relative proportions, pose, source blue ivory petal palette, sage-green foliage and soft golden morning rim light. Apply strong ABSTRACT OIL medium, much larger palette-knife strokes and bold impasto petal/leaf planes, simplified confident chunky brushmarks, no fine illustration microdetail. Preserve readable narrow stems and connected florets, never make rounded hydrangea heads. One independent complete uncut plant on actual transparent RGBA. Center entire plant inside middle76% of square,12% completely clear transparent margin ALL sides, all tips and bottom stalk end visible. No ground patch, soil, pot, scenery, cast shadow, text, border, or detached pieces. Change style only.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-dc3e7dbf-d77c-480d-a8cf-4595a03dd9ba.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "64bfd17ba6ad94c2a31ec9adfa9befa4526264f276cacd170cfee7462c33601e",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1379490,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          229,
+          72,
+          1052,
+          1206
+        ],
+        "margins": [
+          229,
+          72,
+          202,
+          48
+        ],
+        "minimumMargin": 48,
+        "fullyTransparentRatio": 0.6963127879143995,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F06-C01-V05",
+      "version": "V05",
+      "design": "흰꽃 가지",
+      "color": "블루 아이보리",
+      "referenceIds": [
+        "BG04-F06-C01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire airy buckwheat-like tiny flower spray, numerous small five-petal flowers and buds on openly branching connected slender green stems, scattered small pointed green leaves, one continuous main stalk. Preserve exact basic branch pattern, pose, open airy negative spaces, small blossom scale relative to branches, reference ivory petals with delicate pale blue shadows, green leaves, soft golden morning light. Change ONLY painting style to strong ABSTRACT OIL: substantially larger thick palette-knife strokes, bold simple petal and leaf planes, visible impasto paint ridges. Remain airy tiny blossoms, never rounded mophead hydrangea. Every flower connects to branch, every branch to stem; whole uncut plant, visible bottom stem end and complete outer tips. Isolated genuine transparent RGBA, centered in middle76% square with12% clear transparent margin all sides. No soil, pot, scene, shadow, background, text or frame. One independent complete plant.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-ec79e393-d7ab-4625-aa90-d654549b8f5d.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "8f99c40a98c4b3242205e494a89e34518a453ee6e6b59f5f4e45e6929c631304",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1179651,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          219,
+          62,
+          1134,
+          1209
+        ],
+        "margins": [
+          219,
+          62,
+          120,
+          45
+        ],
+        "minimumMargin": 45,
+        "fullyTransparentRatio": 0.7372859799200772,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F06-C02-V05",
+      "version": "V05",
+      "design": "흰꽃 가지",
+      "color": "코발트블루",
+      "referenceIds": [
+        "BG04-F06-C02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire airy buckwheat-like tiny flower spray, numerous small five-petal flowers and buds on openly branching connected slender green stems, scattered small pointed green leaves, one continuous main stalk. Preserve exact basic branch pattern, pose, open airy negative spaces, small blossom scale relative to branches, reference cobalt-blue petals with ivory highlights, green leaves, soft golden morning light. Change ONLY painting style to strong ABSTRACT OIL: substantially larger thick palette-knife strokes, bold simple petal and leaf planes, visible impasto paint ridges. Remain airy tiny blossoms, never rounded mophead hydrangea. Every flower connects to branch, every branch to stem; whole uncut plant, visible bottom stem end and complete outer tips. Isolated genuine transparent RGBA, centered in middle76% square with12% clear transparent margin all sides. No soil, pot, scene, shadow, background, text or frame. One independent complete plant.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-13c0b04f-9983-4972-a1a4-1a025d1c22ad.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "0a2d65c7da971a74bc4130edbdf6ea037fa752c1797b3cb98b99d642f9bf440a",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1266250,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          207,
+          46,
+          1130,
+          1230
+        ],
+        "margins": [
+          207,
+          46,
+          124,
+          24
+        ],
+        "minimumMargin": 24,
+        "fullyTransparentRatio": 0.7259557295442463,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F06-C03-V05",
+      "version": "V05",
+      "design": "흰꽃 가지",
+      "color": "페일 라벤더",
+      "referenceIds": [
+        "BG04-F06-C03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire airy buckwheat-like tiny flower spray, numerous small five-petal flowers and buds on openly branching connected slender green stems, scattered small pointed green leaves, one continuous main stalk. Preserve exact basic branch pattern, pose, open airy negative spaces, small blossom scale relative to branches, reference pale lavender petals with ivory highlights, green leaves, soft golden morning light. Change ONLY painting style to strong ABSTRACT OIL: substantially larger thick palette-knife strokes, bold simple petal and leaf planes, visible impasto paint ridges. Remain airy tiny blossoms, never rounded mophead hydrangea. Every flower connects to branch, every branch to stem; whole uncut plant, visible bottom stem end and complete outer tips. Isolated genuine transparent RGBA, centered in middle76% square with12% clear transparent margin all sides. No soil, pot, scene, shadow, background, text or frame. One independent complete plant.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-a55bbc72-1620-4df2-b103-865633c37c3f.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "e72967f80b2c4452d3a97b55453653a3bb3fb11e2cd3848d7dfbb396072d1526",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1274322,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          191,
+          47,
+          1150,
+          1231
+        ],
+        "margins": [
+          191,
+          47,
+          104,
+          23
+        ],
+        "minimumMargin": 23,
+        "fullyTransparentRatio": 0.7184632779571082,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-F06-C04-V05",
+      "version": "V05",
+      "design": "흰꽃 가지",
+      "color": "블루 아이보리",
+      "referenceIds": [
+        "BG04-F06-C04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: ONE entire airy buckwheat-like tiny flower spray, numerous small five-petal flowers and buds on openly branching connected slender green stems, scattered small pointed green leaves, one continuous main stalk. Preserve exact basic branch pattern, pose, open airy negative spaces, small blossom scale relative to branches, reference blue-ivory petals with pale skyblue shadows, green leaves, soft golden morning light. Change ONLY painting style to strong ABSTRACT OIL: substantially larger thick palette-knife strokes, bold simple petal and leaf planes, visible impasto paint ridges. Remain airy tiny blossoms, never rounded mophead hydrangea. Every flower connects to branch, every branch to stem; whole uncut plant, visible bottom stem end and complete outer tips. Isolated genuine transparent RGBA, centered in middle76% square with12% clear transparent margin all sides. No soil, pot, scene, shadow, background, text or frame. One independent complete plant.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-6fd621cb-7eb0-4260-89ad-4c5c31c1c48b.png",
+      "pixelProcessing": "byte-identical copy of native tool output; no resizing, crop, recolor or alpha editing",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Entire plant and source design/color lighting individually inspected; all flower/stem/leaf connections retained; strong broad impasto style",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "6d69c2a1afeda5890f363570f5d032abd92f2c53750a8ea452a52d8bc69739d3",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1370273,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          193,
+          42,
+          1167,
+          1212
+        ],
+        "margins": [
+          193,
+          42,
+          87,
+          42
+        ],
+        "minimumMargin": 42,
+        "fullyTransparentRatio": 0.6751931299904103,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    }
+  ]
+}

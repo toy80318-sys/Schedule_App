@@ -1,0 +1,1128 @@
+{
+  "version": "V05",
+  "intent": "Strong abstract oil style only; retain current V04 flower sizes and 320-flower placement. Background and environment assets generated separately for exact-image reassembly.",
+  "technicalAcceptance": {
+    "meaningfulAlphaThreshold": 8,
+    "minimumBorderPx": 8,
+    "requestedMarginPercent": 12,
+    "note": "12% is generation framing guidance; measured complete silhouettes with at least8px meaningful-alpha margin meet technical acceptance. Technical checks do not prove perceptual match or Unity runtime."
+  },
+  "assets": [
+    {
+      "id": "BG01-B04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-B03-V03"
+      ],
+      "generationPrompt": "Use case: style-transfer. Asset type: panoramic garden backdrop, no foreground flower objects. Image 1 edit target: retain this exact sunset peach-gold composition, mountain positions, layered cloud sea, pink distant ridges, horizon and time-of-day illumination. Change style substantially to STRONG ABSTRACT OIL PAINTING: broad visible palette-knife slabs, big impasto color planes, simplified expressive ridges, bold thick brushstroke marks, far less fine illustration detail. Keep the sky and existing illumination luminous and beautiful. Darken lower/middle mountain rock and soil planes modestly toward basalt charcoal and warm umber, with colored reflected highlights, never a flat black silhouette. Make the full lower 20–25 percent a generously open dark near-black basalt-derived earth and porous stone surface, broken painterly charcoal/umber texture with restrained time-of-day highlights; enough room for separately composited flower roots. Preserve airy depth and bright cloud shapes above. Do not draw individual flowers or plants on the foreground soil. The only botanical color in distance may remain simplified pink ridge color planes. Keep full wide 3:1 panorama, all landscape fills rectangle, no border, no text, no watermark. This is backdrop only, no integrated flower scene.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": false,
+      "generatedOriginalFilename": "exec-768f2d41-f71b-4a87-a120-53d92ad4c27c.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Retains luminous time-of-day sky and landscape composition; stronger impasto, dark open basalt soil at lower edge; no foreground flower objects.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "b0ce96d33d35da3759df1302975cd022c0d76b5868c75497eeae394b33d83533",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 3081240,
+      "technicalReview": {
+        "status": "pass",
+        "opaqueBackdrop": true,
+        "nativeDimensionsPreserved": true
+      }
+    },
+    {
+      "id": "BG02-B04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-B03-V03"
+      ],
+      "generationPrompt": "Use case: style-transfer. Asset type: panoramic garden backdrop, no foreground flower objects. Image 1 edit target: retain this exact day blue-sky sunlight composition, mountain positions, layered cloud sea, pink distant ridges, horizon and time-of-day illumination. Change style substantially to STRONG ABSTRACT OIL PAINTING: broad visible palette-knife slabs, big impasto color planes, simplified expressive ridges, bold thick brushstroke marks, far less fine illustration detail. Keep the sky and existing illumination luminous and beautiful. Darken lower/middle mountain rock and soil planes modestly toward basalt charcoal and warm umber, with colored reflected highlights, never a flat black silhouette. Make the full lower 20–25 percent a generously open dark near-black basalt-derived earth and porous stone surface, broken painterly charcoal/umber texture with restrained time-of-day highlights; enough room for separately composited flower roots. Preserve airy depth and bright cloud shapes above. Do not draw individual flowers or plants on the foreground soil. The only botanical color in distance may remain simplified pink ridge color planes. Keep full wide 3:1 panorama, all landscape fills rectangle, no border, no text, no watermark. This is backdrop only, no integrated flower scene.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": false,
+      "generatedOriginalFilename": "exec-4187d557-7858-42ca-b324-975db3e73a47.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Retains luminous time-of-day sky and landscape composition; stronger impasto, dark open basalt soil at lower edge; no foreground flower objects.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "737572241559ca26307d8055c3687e5ba1153947043f8cebf01503ee33dad450",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 3048028,
+      "technicalReview": {
+        "status": "pass",
+        "opaqueBackdrop": true,
+        "nativeDimensionsPreserved": true
+      }
+    },
+    {
+      "id": "BG03-B04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-B03-V03"
+      ],
+      "generationPrompt": "Use case: style-transfer. Asset type: panoramic garden backdrop, no foreground flower objects. Image 1 edit target: retain this exact luminous moonlit blue night composition, mountain positions, layered cloud sea, pink distant ridges, horizon and time-of-day illumination. Change style substantially to STRONG ABSTRACT OIL PAINTING: broad visible palette-knife slabs, big impasto color planes, simplified expressive ridges, bold thick brushstroke marks, far less fine illustration detail. Keep the sky and existing illumination luminous and beautiful. Darken lower/middle mountain rock and soil planes modestly toward basalt charcoal and warm umber, with colored reflected highlights, never a flat black silhouette. Make the full lower 20–25 percent a generously open dark near-black basalt-derived earth and porous stone surface, broken painterly charcoal/umber texture with restrained time-of-day highlights; enough room for separately composited flower roots. Preserve airy depth and bright cloud shapes above. Do not draw individual flowers or plants on the foreground soil. The only botanical color in distance may remain simplified pink ridge color planes. Keep full wide 3:1 panorama, all landscape fills rectangle, no border, no text, no watermark. This is backdrop only, no integrated flower scene.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": false,
+      "generatedOriginalFilename": "exec-2c4dda63-df90-4929-b0e6-bd802f72db73.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Retains luminous time-of-day sky and landscape composition; stronger impasto, dark open basalt soil at lower edge; no foreground flower objects.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "74a1ca8783f7927e731a5490ff64fcbba76d4c044678aafce816d6f122bda24a",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 2998259,
+      "technicalReview": {
+        "status": "pass",
+        "opaqueBackdrop": true,
+        "nativeDimensionsPreserved": true
+      }
+    },
+    {
+      "id": "BG04-B04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-B03-V03"
+      ],
+      "generationPrompt": "Use case: style-transfer. Asset type: panoramic garden backdrop, no foreground flower objects. Image 1 edit target: retain this exact fresh golden morning composition, mountain positions, layered cloud sea, pink distant ridges, horizon and time-of-day illumination. Change style substantially to STRONG ABSTRACT OIL PAINTING: broad visible palette-knife slabs, big impasto color planes, simplified expressive ridges, bold thick brushstroke marks, far less fine illustration detail. Keep the sky and existing illumination luminous and beautiful. Darken lower/middle mountain rock and soil planes modestly toward basalt charcoal and warm umber, with colored reflected highlights, never a flat black silhouette. Make the full lower 20–25 percent a generously open dark near-black basalt-derived earth and porous stone surface, broken painterly charcoal/umber texture with restrained time-of-day highlights; enough room for separately composited flower roots. Preserve airy depth and bright cloud shapes above. Do not draw individual flowers or plants on the foreground soil. The only botanical color in distance may remain simplified pink ridge color planes. Keep full wide 3:1 panorama, all landscape fills rectangle, no border, no text, no watermark. This is backdrop only, no integrated flower scene.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": false,
+      "generatedOriginalFilename": "exec-959c3ad1-e865-4f84-8812-33e8c8897cf6.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Retains luminous time-of-day sky and landscape composition; stronger impasto, dark open basalt soil at lower edge; no foreground flower objects.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "75dd372084d3e54aaf29e0be616eb09408a4f0c134d2e026e2d84a8409fc4240",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "bytes": 3107544,
+      "technicalReview": {
+        "status": "pass",
+        "opaqueBackdrop": true,
+        "nativeDimensionsPreserved": true
+      }
+    },
+    {
+      "id": "BG01-E01-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-E01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, one complete ornamental grass clump asset. Preserve its recognizable full fountain-like silhouette, connected root base, flowing strap leaves and plumes, and peach-gold sunset rimlight. Repaint substantially as STRONG ABSTRACT OIL PAINTING: broad palette-knife strokes, thick impasto, simplified confident color planes, no fine photographic microdetail. Grass foliage should be calm muted sage green with reference time-of-day highlights, not neon. Isolated ONE entire clump with every outer leaf tip and root end visible. Center subject and fit the entire object into middle 76% of square canvas, providing at least12% completely transparent margin on ALL four sides. Actual transparent RGBA background. No soil, no ground patch, no pot, no scene, no border, no text, no drop shadow outside object. Do not crop or detach any leaves. Preserve source shape and light; change painting style only and mute green.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-efea2c5c-5a5e-4df2-a656-53327c22e627.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "c50ebbe3de7dd4dac257cf270c9bc022a09f371c8b82eb58eed9439d474aa7df",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2302890,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          63,
+          72,
+          1233,
+          1223
+        ],
+        "margins": [
+          63,
+          72,
+          21,
+          31
+        ],
+        "minimumMargin": 21,
+        "fullyTransparentRatio": 0.46508207229687965,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG02-E01-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-E01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, one complete ornamental grass clump asset. Preserve its recognizable full fountain-like silhouette, connected root base, flowing strap leaves and plumes, and fresh golden daytime rimlight. Repaint substantially as STRONG ABSTRACT OIL PAINTING: broad palette-knife strokes, thick impasto, simplified confident color planes, no fine photographic microdetail. Grass foliage should be calm muted sage green with reference time-of-day highlights, not neon. Isolated ONE entire clump with every outer leaf tip and root end visible. Center subject and fit the entire object into middle 76% of square canvas, providing at least12% completely transparent margin on ALL four sides. Actual transparent RGBA background. No soil, no ground patch, no pot, no scene, no border, no text, no drop shadow outside object. Do not crop or detach any leaves. Preserve source shape and light; change painting style only and mute green.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-c9778ffb-82b3-4536-99e2-1078a63456d1.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "0974a3ba7bc86f5f8aef5a86d727b263782dc449fa5a2fa607039f8632534301",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2201979,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          75,
+          95,
+          1186,
+          1189
+        ],
+        "margins": [
+          75,
+          95,
+          68,
+          65
+        ],
+        "minimumMargin": 65,
+        "fullyTransparentRatio": 0.4673230669831022,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG03-E01-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-E01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, one complete ornamental grass clump asset. Preserve its recognizable full fountain-like silhouette, connected root base, flowing strap leaves and plumes, and cool luminous lavender-blue moonlight. Repaint substantially as STRONG ABSTRACT OIL PAINTING: broad palette-knife strokes, thick impasto, simplified confident color planes, no fine photographic microdetail. Grass foliage should be calm muted sage green with reference time-of-day highlights, not neon. Isolated ONE entire clump with every outer leaf tip and root end visible. Center subject and fit the entire object into middle 76% of square canvas, providing at least12% completely transparent margin on ALL four sides. Actual transparent RGBA background. No soil, no ground patch, no pot, no scene, no border, no text, no drop shadow outside object. Do not crop or detach any leaves. Preserve source shape and light; change painting style only and mute green.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-07093bb0-f582-4585-8255-367be359100c.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "908ebcc7d5485cb06b19ad62a5c5ab2ec600e6ab09c9ee28eb5218c063e6f61e",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2329151,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          92,
+          117,
+          1201,
+          1196
+        ],
+        "margins": [
+          92,
+          117,
+          53,
+          58
+        ],
+        "minimumMargin": 53,
+        "fullyTransparentRatio": 0.4885292105135973,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-E01-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-E01-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, one complete ornamental grass clump asset. Preserve its recognizable full fountain-like silhouette, connected root base, flowing strap leaves and plumes, and soft warm golden morning rimlight. Repaint substantially as STRONG ABSTRACT OIL PAINTING: broad palette-knife strokes, thick impasto, simplified confident color planes, no fine photographic microdetail. Grass foliage should be calm muted sage green with reference time-of-day highlights, not neon. Isolated ONE entire clump with every outer leaf tip and root end visible. Center subject and fit the entire object into middle 76% of square canvas, providing at least12% completely transparent margin on ALL four sides. Actual transparent RGBA background. No soil, no ground patch, no pot, no scene, no border, no text, no drop shadow outside object. Do not crop or detach any leaves. Preserve source shape and light; change painting style only and mute green.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-679369d0-930e-412c-8b44-76a05cb05379.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "37099846835571c716058f508db71f78be8717bf0258e3ff5ee26716750dbb63",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2183230,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          83,
+          116,
+          1183,
+          1185
+        ],
+        "margins": [
+          83,
+          116,
+          71,
+          69
+        ],
+        "minimumMargin": 69,
+        "fullyTransparentRatio": 0.49212408649578127,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG01-E02-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-E02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is EDIT TARGET, the ONE complete small tree. Keep its silhouette, intertwined trunk, attached spreading branches, sage-green canopy with small scattered blossoms, all fine root ends, and peach-gold sunset light. Change the medium to MUCH STRONGER ABSTRACT OIL: large bold impasto palette-knife strokes, broad simplified leaf color planes, chunky confident trunk brushmarks. Preserve species/pose/color and recognizable tree architecture; do not convert into detailed fantasy illustration. Entire tree on actual transparent RGBA, safely isolated, no scene. Fit every root and canopy tip comfortably inside centered middle76% of square, with12% clear transparent margin on each side. No soil patch, pot, ground, shadow, background, text, border. One complete connected tree.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-3f89212a-f6c1-4df2-8508-4cdc7502647d.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "136cf4803af707624b350e0e92b09c0c74ec90a72df4b0bff7c32907394f7c5f",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2139578,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          49,
+          102,
+          1219,
+          1206
+        ],
+        "margins": [
+          49,
+          102,
+          35,
+          48
+        ],
+        "minimumMargin": 35,
+        "fullyTransparentRatio": 0.5144558147580056,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG02-E02-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-E02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is EDIT TARGET, the ONE complete small tree. Keep its silhouette, intertwined trunk, attached spreading branches, sage-green canopy with small scattered blossoms, all fine root ends, and warm daytime light. Change the medium to MUCH STRONGER ABSTRACT OIL: large bold impasto palette-knife strokes, broad simplified leaf color planes, chunky confident trunk brushmarks. Preserve species/pose/color and recognizable tree architecture; do not convert into detailed fantasy illustration. Entire tree on actual transparent RGBA, safely isolated, no scene. Fit every root and canopy tip comfortably inside centered middle76% of square, with12% clear transparent margin on each side. No soil patch, pot, ground, shadow, background, text, border. One complete connected tree.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-7dbd6a13-2f36-4028-8c52-9cf1079c2f15.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "91ed0b5947f826e478e8180a91f3651e6535e4512ba15470a4541165073b81f2",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2064307,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          66,
+          73,
+          1190,
+          1206
+        ],
+        "margins": [
+          66,
+          73,
+          64,
+          48
+        ],
+        "minimumMargin": 48,
+        "fullyTransparentRatio": 0.5397146992463033,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG03-E02-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-E02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is EDIT TARGET, the ONE complete small tree. Keep its silhouette, intertwined trunk, attached spreading branches, sage-green canopy with small scattered blossoms, all fine root ends, and luminous lavender-blue moonlight. Change the medium to MUCH STRONGER ABSTRACT OIL: large bold impasto palette-knife strokes, broad simplified leaf color planes, chunky confident trunk brushmarks. Preserve species/pose/color and recognizable tree architecture; do not convert into detailed fantasy illustration. Entire tree on actual transparent RGBA, safely isolated, no scene. Fit every root and canopy tip comfortably inside centered middle76% of square, with12% clear transparent margin on each side. No soil patch, pot, ground, shadow, background, text, border. One complete connected tree.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-f12176f1-a531-4706-83db-d66f33693875.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "909db735399393c2d75952195b194e665ce7d03a35680fa9e273634646cf5328",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2286566,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          39,
+          79,
+          1230,
+          1202
+        ],
+        "margins": [
+          39,
+          79,
+          24,
+          52
+        ],
+        "minimumMargin": 24,
+        "fullyTransparentRatio": 0.49201152802260834,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-E02-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-E02-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 is EDIT TARGET, the ONE complete small tree. Keep its silhouette, intertwined trunk, attached spreading branches, sage-green canopy with small scattered blossoms, all fine root ends, and fresh golden morning light. Change the medium to MUCH STRONGER ABSTRACT OIL: large bold impasto palette-knife strokes, broad simplified leaf color planes, chunky confident trunk brushmarks. Preserve species/pose/color and recognizable tree architecture; do not convert into detailed fantasy illustration. Entire tree on actual transparent RGBA, safely isolated, no scene. Fit every root and canopy tip comfortably inside centered middle76% of square, with12% clear transparent margin on each side. No soil patch, pot, ground, shadow, background, text, border. One complete connected tree.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-e1577a62-f12e-492b-97c0-e391fe47dbde.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "d1628a7dbfd9c505ffa47dda64c2627a8e9051782a663ef1c67435f10e79d98c",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2432275,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          29,
+          26,
+          1238,
+          1231
+        ],
+        "margins": [
+          29,
+          26,
+          16,
+          23
+        ],
+        "minimumMargin": 16,
+        "fullyTransparentRatio": 0.4463057927550499,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG01-E03-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-E03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one entire fanciful butterfly flying right with uplifted wings. Preserve exact recognizable outline, wing pose, anatomy, connected slender legs, body and two antennae, reference blue/lilac/ivory/gold wing color distribution and peach-gold sunset light. Repaint with strong ABSTRACT OIL PAINTING: BIG thick palette-knife marks, bold simplified impasto wing color patches and painterly edges, fewer tiny details; keep beautiful recognizable butterfly and current glow restrained to actual wing edges. Center entire animal within middle76% of square canvas, all wing tips, antenna tips and feet visible,12% clear transparent safety margin every side. Genuine transparent RGBA background. No scene, shadow, flower, supporting branch, ground, frame, text. Do not crop. One independent complete butterfly PNG asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-1f9d3a00-1233-4c28-a644-25b388d0ca07.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "d5b194ce686a77f0dbf7e35ffe87b5781211ce7458ba405d53e3a523f9c2d15b",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1905168,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          166,
+          79,
+          1210,
+          1180
+        ],
+        "margins": [
+          166,
+          79,
+          44,
+          74
+        ],
+        "minimumMargin": 44,
+        "fullyTransparentRatio": 0.5512382703896177,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG02-E03-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-E03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one entire fanciful butterfly flying right with uplifted wings. Preserve exact recognizable outline, wing pose, anatomy, connected slender legs, body and two antennae, reference blue/lilac/ivory/gold wing color distribution and bright daytime gold light. Repaint with strong ABSTRACT OIL PAINTING: BIG thick palette-knife marks, bold simplified impasto wing color patches and painterly edges, fewer tiny details; keep beautiful recognizable butterfly and current glow restrained to actual wing edges. Center entire animal within middle76% of square canvas, all wing tips, antenna tips and feet visible,12% clear transparent safety margin every side. Genuine transparent RGBA background. No scene, shadow, flower, supporting branch, ground, frame, text. Do not crop. One independent complete butterfly PNG asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-24f1bae5-28a9-42d9-9d6d-627aaad6517a.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "8426b12b9ad5f7a65f34903c00ec075c4585645a5b962ff1e52d4debae13aa90",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1956324,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          101,
+          63,
+          1227,
+          1176
+        ],
+        "margins": [
+          101,
+          63,
+          27,
+          78
+        ],
+        "minimumMargin": 27,
+        "fullyTransparentRatio": 0.5428453510170962,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG03-E03-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-E03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one entire fanciful butterfly flying right with uplifted wings. Preserve exact recognizable outline, wing pose, anatomy, connected slender legs, body and two antennae, reference blue/lilac/ivory/gold wing color distribution and blue-violet luminous moonlight. Repaint with strong ABSTRACT OIL PAINTING: BIG thick palette-knife marks, bold simplified impasto wing color patches and painterly edges, fewer tiny details; keep beautiful recognizable butterfly and current glow restrained to actual wing edges. Center entire animal within middle76% of square canvas, all wing tips, antenna tips and feet visible,12% clear transparent safety margin every side. Genuine transparent RGBA background. No scene, shadow, flower, supporting branch, ground, frame, text. Do not crop. One independent complete butterfly PNG asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-950f48b0-6b16-4ac3-88b0-87709462604b.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "23d6097415b455e1473e487f639f1e4ab208a55d78a40c539123aa86b4ce502e",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1751860,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          117,
+          98,
+          1220,
+          1148
+        ],
+        "margins": [
+          117,
+          98,
+          34,
+          106
+        ],
+        "minimumMargin": 34,
+        "fullyTransparentRatio": 0.6235052616316782,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-E03-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-E03-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one entire fanciful butterfly flying right with uplifted wings. Preserve exact recognizable outline, wing pose, anatomy, connected slender legs, body and two antennae, reference blue/lilac/ivory/gold wing color distribution and soft morning golden light. Repaint with strong ABSTRACT OIL PAINTING: BIG thick palette-knife marks, bold simplified impasto wing color patches and painterly edges, fewer tiny details; keep beautiful recognizable butterfly and current glow restrained to actual wing edges. Center entire animal within middle76% of square canvas, all wing tips, antenna tips and feet visible,12% clear transparent safety margin every side. Genuine transparent RGBA background. No scene, shadow, flower, supporting branch, ground, frame, text. Do not crop. One independent complete butterfly PNG asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-88241007-84bf-462b-a9fe-73fedfcbebcb.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "c37867e920a096b9a8c19566c34070ee869a264caf856db50c8352e70c38998d",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1934580,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          164,
+          75,
+          1212,
+          1192
+        ],
+        "margins": [
+          164,
+          75,
+          42,
+          62
+        ],
+        "minimumMargin": 42,
+        "fullyTransparentRatio": 0.5673824622452173,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG01-E04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-E04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one independent full billowing cloud asset. Preserve outline, volume and peach-orange gold highlights and purple sunset shadow. Repaint into substantially STRONGER ABSTRACT OIL: large chunky confident impasto palette-knife slabs, broad simplified color planes, thick visible paint ridges, no fine microdetail. Keep light beautiful bright cloud. Fit ENTIRE cloud and every wispy edge in centered middle76% square with12% transparent margin ALL sides. Actual transparent RGBA background; no sky rectangle, no scene, no text, border, sun, moon or other objects. One complete connected cloud shape, not cropped.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-873e095c-9ee0-46dd-bb78-add14aa8b00c.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "de768167d3cef9d4d7b4e642679e45e404bfd6e5b1e18204dcf1bb083da000e9",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1577572,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          39,
+          197,
+          1234,
+          1096
+        ],
+        "margins": [
+          39,
+          197,
+          20,
+          158
+        ],
+        "minimumMargin": 20,
+        "fullyTransparentRatio": 0.5519301552416637,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG02-E04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-E04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one independent full billowing cloud asset. Preserve outline, volume and ivory gold highlight and pale skyblue daytime shadow. Repaint into substantially STRONGER ABSTRACT OIL: large chunky confident impasto palette-knife slabs, broad simplified color planes, thick visible paint ridges, no fine microdetail. Keep light beautiful bright cloud. Fit ENTIRE cloud and every wispy edge in centered middle76% square with12% transparent margin ALL sides. Actual transparent RGBA background; no sky rectangle, no scene, no text, border, sun, moon or other objects. One complete connected cloud shape, not cropped.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-d3cb2210-bf96-4fbf-8037-627d75fbe151.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "4815e5dbd36429817484b5a13ac053c6adfe66610ad2609dccb1271eaa386568",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1515101,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          62,
+          164,
+          1209,
+          1113
+        ],
+        "margins": [
+          62,
+          164,
+          45,
+          141
+        ],
+        "minimumMargin": 45,
+        "fullyTransparentRatio": 0.5338826441193603,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG03-E04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-E04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one independent full billowing cloud asset. Preserve outline, volume and luminous blue-lavender moonlit shadow and ivory glints. Repaint into substantially STRONGER ABSTRACT OIL: large chunky confident impasto palette-knife slabs, broad simplified color planes, thick visible paint ridges, no fine microdetail. Keep light beautiful bright cloud. Fit ENTIRE cloud and every wispy edge in centered middle76% square with12% transparent margin ALL sides. Actual transparent RGBA background; no sky rectangle, no scene, no text, border, sun, moon or other objects. One complete connected cloud shape, not cropped.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-d27af675-202c-4fdf-9662-95dd122e9338.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "8db9cacff4ac4eb6ab950cf483e525cc87e6f8ad2dd4fc2c914504066a5d426d",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1598498,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          34,
+          194,
+          1221,
+          1126
+        ],
+        "margins": [
+          34,
+          194,
+          33,
+          128
+        ],
+        "minimumMargin": 33,
+        "fullyTransparentRatio": 0.5706911726176395,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-E04-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-E04-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET: one independent full billowing cloud asset. Preserve outline, volume and gentle peach ivory morning highlight and periwinkle shadow. Repaint into substantially STRONGER ABSTRACT OIL: large chunky confident impasto palette-knife slabs, broad simplified color planes, thick visible paint ridges, no fine microdetail. Keep light beautiful bright cloud. Fit ENTIRE cloud and every wispy edge in centered middle76% square with12% transparent margin ALL sides. Actual transparent RGBA background; no sky rectangle, no scene, no text, border, sun, moon or other objects. One complete connected cloud shape, not cropped.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-cbf706c8-1d47-4014-88a2-14bdbebc900c.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "69ef218f7ff1dfc80982c188eab410b0bc1351a480f7c9b37973ade7719e2905",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1522070,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          48,
+          200,
+          1215,
+          1115
+        ],
+        "margins": [
+          48,
+          200,
+          39,
+          139
+        ],
+        "minimumMargin": 39,
+        "fullyTransparentRatio": 0.5476510254903607,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG01-E05-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-E05-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, ONE complete porous basalt boulder, keep exact squat asymmetrical rounded silhouette and pore placement and peach-gold sunset edge lighting. Make the underlying stone unmistakably MATTE BLACK CHARCOAL Jeju basalt, deep charcoal/black umber body occupying most of rock, restrained reference-colored highlights on upper-left ridges only. Strong ABSTRACT OIL painting medium: large palette-knife impasto planes, thick expressive brushmark edges, simplified chunky porous cavities, no shiny jewel finish, no finely rendered microtexture. Entire independent stone centered in square with12% clear transparency on every side; actual transparent RGBA. No soil patch, ground, grass, flower, cast shadow, scene or text. Complete uncut single object; retain source shape.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-75dfabc3-ee9f-49b2-81d5-2ecfa4843b94.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "e05bbaa0bdeaf8a39ba5e78ffd74affc978ff4da2a28145deb0c7b1a6cacc4e0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1363008,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          92,
+          302,
+          1161,
+          1053
+        ],
+        "margins": [
+          92,
+          302,
+          93,
+          201
+        ],
+        "minimumMargin": 92,
+        "fullyTransparentRatio": 0.6272578466610197,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG02-E05-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-E05-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, ONE complete porous basalt boulder, keep exact squat asymmetrical rounded silhouette and pore placement and gold daytime edge lighting. Make the underlying stone unmistakably MATTE BLACK CHARCOAL Jeju basalt, deep charcoal/black umber body occupying most of rock, restrained reference-colored highlights on upper-left ridges only. Strong ABSTRACT OIL painting medium: large palette-knife impasto planes, thick expressive brushmark edges, simplified chunky porous cavities, no shiny jewel finish, no finely rendered microtexture. Entire independent stone centered in square with12% clear transparency on every side; actual transparent RGBA. No soil patch, ground, grass, flower, cast shadow, scene or text. Complete uncut single object; retain source shape.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-62eb4be8-a9fe-483f-b323-73c3f7e95931.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "28377b5dd62ae5ca8d0778ea6740878bf14b247633fd31855d764d21e184952d",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1466211,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          147,
+          300,
+          1140,
+          1042
+        ],
+        "margins": [
+          147,
+          300,
+          114,
+          212
+        ],
+        "minimumMargin": 114,
+        "fullyTransparentRatio": 0.6392011273653178,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG03-E05-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-E05-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, ONE complete porous basalt boulder, keep exact squat asymmetrical rounded silhouette and pore placement and cool lavender-blue moonlight glints. Make the underlying stone unmistakably MATTE BLACK CHARCOAL Jeju basalt, deep charcoal/black umber body occupying most of rock, restrained reference-colored highlights on upper-left ridges only. Strong ABSTRACT OIL painting medium: large palette-knife impasto planes, thick expressive brushmark edges, simplified chunky porous cavities, no shiny jewel finish, no finely rendered microtexture. Entire independent stone centered in square with12% clear transparency on every side; actual transparent RGBA. No soil patch, ground, grass, flower, cast shadow, scene or text. Complete uncut single object; retain source shape.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-65953d38-7796-4ba1-8742-518023969706.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "9dbb4a9516fea5757aad678f1dfbc1adc066b8b52085eb6e0657c72d9345c08a",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1551563,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          109,
+          267,
+          1170,
+          1077
+        ],
+        "margins": [
+          109,
+          267,
+          84,
+          177
+        ],
+        "minimumMargin": 84,
+        "fullyTransparentRatio": 0.5983131491189915,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-E05-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-E05-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, ONE complete porous basalt boulder, keep exact squat asymmetrical rounded silhouette and pore placement and soft peach gold morning edge lighting. Make the underlying stone unmistakably MATTE BLACK CHARCOAL Jeju basalt, deep charcoal/black umber body occupying most of rock, restrained reference-colored highlights on upper-left ridges only. Strong ABSTRACT OIL painting medium: large palette-knife impasto planes, thick expressive brushmark edges, simplified chunky porous cavities, no shiny jewel finish, no finely rendered microtexture. Entire independent stone centered in square with12% clear transparency on every side; actual transparent RGBA. No soil patch, ground, grass, flower, cast shadow, scene or text. Complete uncut single object; retain source shape.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-0a1a6e88-5bc3-4e20-9e7b-aeb4cd172b52.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "8274d354a40f5bb2dba877e2b2076bace31a998c4af60be370bb6ac957865cbb",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1338355,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          130,
+          289,
+          1155,
+          1060
+        ],
+        "margins": [
+          130,
+          289,
+          99,
+          194
+        ],
+        "minimumMargin": 99,
+        "fullyTransparentRatio": 0.64272477990685,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG01-E06-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG01-E06-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, one complete single leaf with attached short petiole. Preserve EXACT basic outline and number of leaves, orientation, center vein and stalk connections, reference green/sage/blue color arrangement and peach-gold sunset side light. Change style to STRONG ABSTRACT OIL, large bold impasto palette-knife slabs, simplified graphic color planes following veins, thick tactile paint brushmarks, substantially larger marks and less microdetail. Keep calm sage foliage green and time-of-day colored highlights. Entire leaf or connected sprig isolated on genuine transparent RGBA, middle76% of square, at least12% clear transparent safe area on every side. No background, soil, pot, scene, cast shadow, text or border. Complete tips and petiole visible, no clipping, no disconnected fragments. One independent complete asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-7af76991-5948-464b-8a06-66b5d09e6d02.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "0556cccc4ed44f9696fac848833eb5b657b337713577e911022bfe66919ef835",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1511387,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          226,
+          161,
+          1156,
+          1110
+        ],
+        "margins": [
+          226,
+          161,
+          98,
+          144
+        ],
+        "minimumMargin": 98,
+        "fullyTransparentRatio": 0.6145349236510154,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG02-E06-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG02-E06-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, one complete single leaf with attached short petiole. Preserve EXACT basic outline and number of leaves, orientation, center vein and stalk connections, reference green/sage/blue color arrangement and gentle gold daytime light. Change style to STRONG ABSTRACT OIL, large bold impasto palette-knife slabs, simplified graphic color planes following veins, thick tactile paint brushmarks, substantially larger marks and less microdetail. Keep calm sage foliage green and time-of-day colored highlights. Entire leaf or connected sprig isolated on genuine transparent RGBA, middle76% of square, at least12% clear transparent safe area on every side. No background, soil, pot, scene, cast shadow, text or border. Complete tips and petiole visible, no clipping, no disconnected fragments. One independent complete asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-c0f0ae59-ab0e-4d20-9183-293d84ffe74f.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "139b4947682d54d193b6ea7110f02d090db48d851f090acddaafe164879d12d8",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1527761,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          129,
+          69,
+          1203,
+          1202
+        ],
+        "margins": [
+          129,
+          69,
+          51,
+          52
+        ],
+        "minimumMargin": 51,
+        "fullyTransparentRatio": 0.6474134444419007,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG03-E06-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG03-E06-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, one complete three-leaf connected sprig. Preserve EXACT basic outline and number of leaves, orientation, center vein and stalk connections, reference green/sage/blue color arrangement and cool lavender-blue moonlight. Change style to STRONG ABSTRACT OIL, large bold impasto palette-knife slabs, simplified graphic color planes following veins, thick tactile paint brushmarks, substantially larger marks and less microdetail. Keep calm sage foliage green and time-of-day colored highlights. Entire leaf or connected sprig isolated on genuine transparent RGBA, middle76% of square, at least12% clear transparent safe area on every side. No background, soil, pot, scene, cast shadow, text or border. Complete tips and petiole visible, no clipping, no disconnected fragments. One independent complete asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-05a4189e-5867-4c85-a25f-29632233e5cf.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "440031d555e11c90a774614cbaddd33c7ddae1064ea69e51f21b449512a3b4a6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1158686,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          215,
+          55,
+          1111,
+          1214
+        ],
+        "margins": [
+          215,
+          55,
+          143,
+          40
+        ],
+        "minimumMargin": 40,
+        "fullyTransparentRatio": 0.7269738431914207,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    },
+    {
+      "id": "BG04-E06-V05",
+      "version": "V05",
+      "referenceIds": [
+        "BG04-E06-V01"
+      ],
+      "generationPrompt": "Use case: style-transfer. Image 1 EDIT TARGET, one complete single leaf with attached short petiole. Preserve EXACT basic outline and number of leaves, orientation, center vein and stalk connections, reference green/sage/blue color arrangement and fresh warm golden morning light. Change style to STRONG ABSTRACT OIL, large bold impasto palette-knife slabs, simplified graphic color planes following veins, thick tactile paint brushmarks, substantially larger marks and less microdetail. Keep calm sage foliage green and time-of-day colored highlights. Entire leaf or connected sprig isolated on genuine transparent RGBA, middle76% of square, at least12% clear transparent safe area on every side. No background, soil, pot, scene, cast shadow, text or border. Complete tips and petiole visible, no clipping, no disconnected fragments. One independent complete asset.",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "generatedOriginalFilename": "exec-68d94b09-3716-4ba0-a681-b9b9dff54696.png",
+      "pixelProcessing": "byte-identical copy from native image-generation output; no crop, resize or alpha edits",
+      "visualReview": {
+        "status": "pass_asset_review",
+        "scope": "Full silhouette and attached parts visually inspected; preserves source identity, color family and lighting with larger abstract oil marks.",
+        "reassemblyMatch": "pending_browser_composite_review"
+      },
+      "sha256": "07ffcf05e9a0ffaf8b9f34b17074c0f814440d14d2038e8daa017660d0eaf912",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1743678,
+      "technicalReview": {
+        "status": "pass",
+        "alphaThreshold": 8,
+        "alphaBounds": [
+          176,
+          97,
+          1144,
+          1157
+        ],
+        "margins": [
+          176,
+          97,
+          110,
+          97
+        ],
+        "minimumMargin": 97,
+        "fullyTransparentRatio": 0.581026202595077,
+        "completeSilhouetteTechnical": true,
+        "doesNotProveVisualMatch": true
+      }
+    }
+  ]
+}

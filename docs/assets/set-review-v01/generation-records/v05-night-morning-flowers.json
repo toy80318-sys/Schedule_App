@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "BG03-F01-C01-V05",
+    "name": "달빛 · 둥근 수국 · 페리윙클 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "sourceId": "BG03-F01-C01-V01",
+    "referenceIds": [
+      "BG03-F01-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F01-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F01-C01-V01, 둥근 수국, petal color 페리윙클. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페리윙클, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F01-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "e8288a041e3a88857171a02e934796bf7c636af8722c93e39ec7db801bd6f86f",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        84,
+        46,
+        1207,
+        1234
+      ],
+      "transparentMarginsPx": [
+        84,
+        46,
+        47,
+        20
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "a1a8d45862e5e900a1ca47258bf5d65d69527da36c0d03119b9a33076cb44494",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F01-C02-V05",
+    "name": "달빛 · 둥근 수국 · 라일락 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "sourceId": "BG03-F01-C02-V01",
+    "referenceIds": [
+      "BG03-F01-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F01-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F01-C02-V01, 둥근 수국, petal color 라일락. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라일락, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F01-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "74e065f0fbeed115418565b8d7cb8c775555dd44c486928a5d8473816baa0f03",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        78,
+        74,
+        1195,
+        1221
+      ],
+      "transparentMarginsPx": [
+        78,
+        74,
+        59,
+        33
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "1ff5cc25cc4b56f9288a2bcc0d469a7da82edd6e368d8f59ffb9fe96bba0767c",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F01-C03-V05",
+    "name": "달빛 · 둥근 수국 · 라벤더 핑크 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "sourceId": "BG03-F01-C03-V01",
+    "referenceIds": [
+      "BG03-F01-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F01-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F01-C03-V01, 둥근 수국, petal color 라벤더 핑크. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라벤더 핑크, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F01-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "2530386463f8f4d8834d40af0a6ebdc7a834cb1486424334a8f7e834187ebd18",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        80,
+        82,
+        1188,
+        1222
+      ],
+      "transparentMarginsPx": [
+        80,
+        82,
+        66,
+        32
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "9c39bb2e9b7801217fc1673c339666dc88f98ee21020cea15fc8d78cde540388",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F01-C04-V05",
+    "name": "달빛 · 둥근 수국 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG03-F01-C04-V01",
+    "referenceIds": [
+      "BG03-F01-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F01-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F01-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F01-C04-V01, 둥근 수국, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F01-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "123be7ac0cb8845e1ebfe68011e25d409c03c6ed086386e1cd76c49d543ec59d",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        55,
+        44,
+        1214,
+        1234
+      ],
+      "transparentMarginsPx": [
+        55,
+        44,
+        40,
+        20
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "7bf219a33ea26e4be08829a12b0f87b538887667e81be5547fea13f1b1687594",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F02-C01-V05",
+    "name": "달빛 · 성긴 수국 · 페리윙클 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "sourceId": "BG03-F02-C01-V01",
+    "referenceIds": [
+      "BG03-F02-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F02-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F02-C01-V01, 성긴 수국, petal color 페리윙클. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat airy open hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페리윙클, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F02-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "8f4cb62ac7b40b14ee8ea279e4ae4b4a93f86181302fa45443e5aebb6e4605ad",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        79,
+        66,
+        1234,
+        1221
+      ],
+      "transparentMarginsPx": [
+        79,
+        66,
+        20,
+        33
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "2cecc46a64534ec16dc5eb7f89a0798b1a294e03061cebc5ddd1e024218356e6",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F02-C02-V05",
+    "name": "달빛 · 성긴 수국 · 라일락 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "sourceId": "BG03-F02-C02-V01",
+    "referenceIds": [
+      "BG03-F02-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F02-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F02-C02-V01, 성긴 수국, petal color 라일락. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat airy open hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라일락, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F02-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "3e043310f2152b93a4cabf8e7a427e147b54122d952035a105ce1ff3c2d697dd",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        64,
+        35,
+        1246,
+        1234
+      ],
+      "transparentMarginsPx": [
+        64,
+        35,
+        8,
+        20
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "b84e9036f88cb6b9bc514a51f091426aab2e8f3cc3377455053acb6fab42e9d3",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F02-C03-V05",
+    "name": "달빛 · 성긴 수국 · 라벤더 핑크 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "sourceId": "BG03-F02-C03-V01",
+    "referenceIds": [
+      "BG03-F02-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F02-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F02-C03-V01, 성긴 수국, petal color 라벤더 핑크. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat airy open hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라벤더 핑크, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F02-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. NON-NEGOTIABLE SAFETY FRAMING: the earlier attempt touched the right canvas edge. This is a NEW full-plant redraw, center the ENTIRE plant at a SMALLER occupied size: ALL opaque/painted content, including faint brush tips, must remain inside the central 72% width and 72% height. Leave at least14% completely transparent empty margin left/right/top/bottom. Preserve the plant's internal proportions and pose; do not crop any part. No stray paint outside that central area.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "b19a7e198a47ab109b75b22fb1b8ee527ab6742ff0b466ef7f0b7a4da0742e04",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        115,
+        115,
+        1190,
+        1197
+      ],
+      "transparentMarginsPx": [
+        115,
+        115,
+        64,
+        57
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "7ff72c314aade44ddd74eebdb1c3ea252cd927b8dad1cdbe5ad05fb625f3455a",
+    "generationAttempts": 2
+  },
+  {
+    "id": "BG03-F02-C04-V05",
+    "name": "달빛 · 성긴 수국 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "성긴 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG03-F02-C04-V01",
+    "referenceIds": [
+      "BG03-F02-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F02-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F02-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F02-C04-V01, 성긴 수국, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat airy open hydrangea flower head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F02-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "afb78780bc99e252c035e47922d9812b5fd2bfb7173915d4063a088bfab8e670",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        49,
+        64,
+        1242,
+        1243
+      ],
+      "transparentMarginsPx": [
+        49,
+        64,
+        12,
+        11
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "0b8e08fa0346f0c13f44b521f710ad096056d422a0b9afc67291112460b9a5c6",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F03-C01-V05",
+    "name": "달빛 · 곧은 라벤더 · 페리윙클 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "sourceId": "BG03-F03-C01-V01",
+    "referenceIds": [
+      "BG03-F03-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F03-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F03-C01-V01, 곧은 라벤더, petal color 페리윙클. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: thin straight upright lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페리윙클, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F03-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "46c18b115a8e9381bc677f6ba7b5eb359f76be5855d6e86e299e6fc2d3d2d2a7",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        169,
+        48,
+        1110,
+        1232
+      ],
+      "transparentMarginsPx": [
+        169,
+        48,
+        144,
+        22
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "8b5d778ee7e82e3855866fa9d90919d8a76b476cb2343304c011a2b3b9ff30f9",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F03-C02-V05",
+    "name": "달빛 · 곧은 라벤더 · 라일락 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "sourceId": "BG03-F03-C02-V01",
+    "referenceIds": [
+      "BG03-F03-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F03-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F03-C02-V01, 곧은 라벤더, petal color 라일락. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: thin straight upright lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라일락, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F03-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "2c59f91e15835adbf566872a73b0281d519e38ee2068c217a82ef5bffac15b60",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        168,
+        42,
+        1105,
+        1231
+      ],
+      "transparentMarginsPx": [
+        168,
+        42,
+        149,
+        23
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "1ebd05b13b3a7f2252bca6a249d4a47111623927c8cf1290b0e2327eafb6d7fa",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F03-C03-V05",
+    "name": "달빛 · 곧은 라벤더 · 라벤더 핑크 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "sourceId": "BG03-F03-C03-V01",
+    "referenceIds": [
+      "BG03-F03-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F03-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F03-C03-V01, 곧은 라벤더, petal color 라벤더 핑크. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: thin straight upright lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라벤더 핑크, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F03-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "617b3f205fdaab6e4ed6336aab59ccb81be545a24bb24318512c6deeee952e80",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        160,
+        36,
+        1131,
+        1234
+      ],
+      "transparentMarginsPx": [
+        160,
+        36,
+        123,
+        20
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "d5dc7afbd22e2a163f6bfa2aa27295c9ab36a80279c54f18a3ff123ae2062ba9",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F03-C04-V05",
+    "name": "달빛 · 곧은 라벤더 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "곧은 라벤더",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG03-F03-C04-V01",
+    "referenceIds": [
+      "BG03-F03-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F03-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F03-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F03-C04-V01, 곧은 라벤더, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: thin straight upright lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F03-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "6b893b77041df96805a2d8811eafae8c3bc7ec95ec69d53c64d77b23bec9429b",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        173,
+        66,
+        1106,
+        1220
+      ],
+      "transparentMarginsPx": [
+        173,
+        66,
+        148,
+        34
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "c9e27c55fbf29993e66a320981ea0e8695d6f961db26e44780653eccfb7304bc",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F04-C01-V05",
+    "name": "달빛 · 휘어진 라벤더 · 페리윙클 · 추상 유화 V05",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "sourceId": "BG03-F04-C01-V01",
+    "referenceIds": [
+      "BG03-F04-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F04-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F04-C01-V01, 휘어진 라벤더, petal color 페리윙클. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: gently curved graceful lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페리윙클, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F04-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "a86e5fa6b9d23da0148cec2178dbb810121492dcfb253b6e31a71b7ced93686b",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        288,
+        56,
+        1090,
+        1208
+      ],
+      "transparentMarginsPx": [
+        288,
+        56,
+        164,
+        46
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "6e7459acd35ba0374c2f72168ea051aef72367e65617161fc04487fdce5185ee",
+    "generationAttempts": 2
+  },
+  {
+    "id": "BG03-F04-C02-V05",
+    "name": "달빛 · 휘어진 라벤더 · 라일락 · 추상 유화 V05",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "sourceId": "BG03-F04-C02-V01",
+    "referenceIds": [
+      "BG03-F04-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F04-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F04-C02-V01, 휘어진 라벤더, petal color 라일락. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: gently curved graceful lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라일락, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F04-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "f154e75abcd8fa1aa06bb913ff9dec9aa94a820614384edaf686597d4bdecdb5",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        211,
+        33,
+        1146,
+        1244
+      ],
+      "transparentMarginsPx": [
+        211,
+        33,
+        108,
+        10
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "c5f85330a212da3eef0004769190214bbb0c912b49ec5f88d6292327a2e1b865",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F04-C03-V05",
+    "name": "달빛 · 휘어진 라벤더 · 라벤더 핑크 · 추상 유화 V05",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "sourceId": "BG03-F04-C03-V01",
+    "referenceIds": [
+      "BG03-F04-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F04-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F04-C03-V01, 휘어진 라벤더, petal color 라벤더 핑크. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: gently curved graceful lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라벤더 핑크, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F04-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "d35b5c26b7544eaef13789e7b85065527ed8149b985b894ee70145ddbdc413cd",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        225,
+        30,
+        1142,
+        1240
+      ],
+      "transparentMarginsPx": [
+        225,
+        30,
+        112,
+        14
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "0560f2c6ca28b6ae88eca37c4ef0ce6927a918142ee47d21d3a7cb8f7cbbf413",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F04-C04-V05",
+    "name": "달빛 · 휘어진 라벤더 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F04",
+    "designLabel": "휘어진 라벤더",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG03-F04-C04-V01",
+    "referenceIds": [
+      "BG03-F04-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F04-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F04-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F04-C04-V01, 휘어진 라벤더, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: gently curved graceful lavender-like flower spikes; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F04-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "f4886c3d01331e3950f94fce44373959f93d64ec350e6a985bc84cfd3e8e52df",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        213,
+        36,
+        1166,
+        1240
+      ],
+      "transparentMarginsPx": [
+        213,
+        36,
+        88,
+        14
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "1445b89da29e6676223fb7abe2a18a8d36ee11f445077cba335626e1f03eaa1c",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F05-C01-V05",
+    "name": "달빛 · 활짝 핀 동백 · 페리윙클 · 추상 유화 V05",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "sourceId": "BG03-F05-C01-V01",
+    "referenceIds": [
+      "BG03-F05-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F05-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F05-C01-V01, 활짝 핀 동백, petal color 페리윙클. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a fully open front-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페리윙클, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F05-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "9583a2250b8c9f976b5941a9d0d7e89088d4cc7505e211aafef6c7bd97c0c347",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        32,
+        58,
+        1222,
+        1219
+      ],
+      "transparentMarginsPx": [
+        32,
+        58,
+        32,
+        35
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "654e908aa1509b992a2fc98d946770826ef17050275bd6b8ce751063e51c21ea",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F05-C02-V05",
+    "name": "달빛 · 활짝 핀 동백 · 라일락 · 추상 유화 V05",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "sourceId": "BG03-F05-C02-V01",
+    "referenceIds": [
+      "BG03-F05-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F05-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F05-C02-V01, 활짝 핀 동백, petal color 라일락. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a fully open front-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라일락, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F05-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "cce63053ad95742af3c3bba121f47e4559b543808d1487d421e987f00ad729a3",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        42,
+        79,
+        1208,
+        1206
+      ],
+      "transparentMarginsPx": [
+        42,
+        79,
+        46,
+        48
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "d309563c5121c07b189aaf28dd252819fa00519f06427f0a5dee24942d4d2ff9",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F05-C03-V05",
+    "name": "달빛 · 활짝 핀 동백 · 라벤더 핑크 · 추상 유화 V05",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "sourceId": "BG03-F05-C03-V01",
+    "referenceIds": [
+      "BG03-F05-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F05-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F05-C03-V01, 활짝 핀 동백, petal color 라벤더 핑크. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a fully open front-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라벤더 핑크, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F05-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "4163b613117e6df2aa475f2e0a224e432d951315a6553ece33403dcf912e7b48",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        33,
+        66,
+        1224,
+        1216
+      ],
+      "transparentMarginsPx": [
+        33,
+        66,
+        30,
+        38
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "a23ea5ba696fb738d303821aeb0f6c21f15edb4a0cd688ba71ffa484c0b32574",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F05-C04-V05",
+    "name": "달빛 · 활짝 핀 동백 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F05",
+    "designLabel": "활짝 핀 동백",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG03-F05-C04-V01",
+    "referenceIds": [
+      "BG03-F05-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F05-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F05-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F05-C04-V01, 활짝 핀 동백, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a fully open front-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F05-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "81d178da7211d16b722ebca8470e7c13a13b9748985d7e78a3bb8a65c3fffbb7",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        79,
+        100,
+        1171,
+        1174
+      ],
+      "transparentMarginsPx": [
+        79,
+        100,
+        83,
+        80
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "e96365ddb145790d54e4cc37378c568f6627a9d3e65cd6805237d16ee93b5a87",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F06-C01-V05",
+    "name": "달빛 · 옆을 향한 동백 · 페리윙클 · 추상 유화 V05",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C01",
+    "colorLabel": "페리윙클",
+    "sourceId": "BG03-F06-C01-V01",
+    "referenceIds": [
+      "BG03-F06-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F06-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F06-C01-V01, 옆을 향한 동백, petal color 페리윙클. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a side-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페리윙클, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F06-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "58db4ac6f3b020d71078b677b5be89cb887586943fe5ffd54d8e8f7b08322919",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        102,
+        130,
+        1139,
+        1190
+      ],
+      "transparentMarginsPx": [
+        102,
+        130,
+        115,
+        64
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "e7e156867f35058950bf47591700a2ecfcf911d2c83100999d5ecb5b17c152ef",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F06-C02-V05",
+    "name": "달빛 · 옆을 향한 동백 · 라일락 · 추상 유화 V05",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C02",
+    "colorLabel": "라일락",
+    "sourceId": "BG03-F06-C02-V01",
+    "referenceIds": [
+      "BG03-F06-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F06-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F06-C02-V01, 옆을 향한 동백, petal color 라일락. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a side-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라일락, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F06-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "dca01361c4436fb799cf6722705d5aa067d31ee6a84bd339edb66593fa9e0d8e",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        79,
+        113,
+        1171,
+        1201
+      ],
+      "transparentMarginsPx": [
+        79,
+        113,
+        83,
+        53
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "2f4e449799888619203960ea7159fb92d2cc1f75478e7c061aa36e7b3a10b336",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F06-C03-V05",
+    "name": "달빛 · 옆을 향한 동백 · 라벤더 핑크 · 추상 유화 V05",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C03",
+    "colorLabel": "라벤더 핑크",
+    "sourceId": "BG03-F06-C03-V01",
+    "referenceIds": [
+      "BG03-F06-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F06-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F06-C03-V01, 옆을 향한 동백, petal color 라벤더 핑크. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a side-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 라벤더 핑크, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F06-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "80f1f32bde1763d6c7957a779f6109846366b00b9adf076554b5dbdd2a4d34e6",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        94,
+        124,
+        1172,
+        1190
+      ],
+      "transparentMarginsPx": [
+        94,
+        124,
+        82,
+        64
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "13171b14f0c247b83468ef85dd7da31e59fb9ad03e9d7c420f8f86fa0259ff83",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG03-F06-C04-V05",
+    "name": "달빛 · 옆을 향한 동백 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F06",
+    "designLabel": "옆을 향한 동백",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG03-F06-C04-V01",
+    "referenceIds": [
+      "BG03-F06-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG03-F06-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-F06-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG03-F06-C04-V01, 옆을 향한 동백, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: a side-facing camellia bloom; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original soft bright moonlit lavender light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG03-F06-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "1e4f1f0cc9697fb58f2bbb492f36e2df6379bfb4d11ac8dd1a4da2f83c198660",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        113,
+        151,
+        1154,
+        1177
+      ],
+      "transparentMarginsPx": [
+        113,
+        151,
+        100,
+        77
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "92b4302ca3d8831b69d2f6e48bf40effa346d1de650822b0b6a2e91ddbd3d14a",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F01-C01-V05",
+    "name": "아침 · 둥근 하늘빛 수국 · 스카이블루 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 하늘빛 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "sourceId": "BG04-F01-C01-V01",
+    "referenceIds": [
+      "BG04-F01-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F01-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F01-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F01-C01-V01, 둥근 하늘빛 수국, petal color 스카이블루. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded sky-blue hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 스카이블루, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F01-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "5971ea1d35c9d69fb7fa5c600581500f1702b6e103936ab46319287c35aa4747",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        200,
+        99,
+        1111,
+        1217
+      ],
+      "transparentMarginsPx": [
+        200,
+        99,
+        143,
+        37
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "628202d1ecf62390c36716af8b93872e0901bb3f535720af30c92373b3f68359",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F01-C02-V05",
+    "name": "아침 · 둥근 하늘빛 수국 · 코발트블루 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 하늘빛 수국",
+    "color": "C02",
+    "colorLabel": "코발트블루",
+    "sourceId": "BG04-F01-C02-V01",
+    "referenceIds": [
+      "BG04-F01-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F01-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F01-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F01-C02-V01, 둥근 하늘빛 수국, petal color 코발트블루. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded sky-blue hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 코발트블루, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F01-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "5256362ae67262800b96d1a3f74f11c23b904f8ad94fe9b14d2db94a20df97b1",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        206,
+        105,
+        1088,
+        1218
+      ],
+      "transparentMarginsPx": [
+        206,
+        105,
+        166,
+        36
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "559ce2ba9d1d66706be591be3eb05cb6497a1c068c39d1af35ff8c0d006f8998",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F01-C03-V05",
+    "name": "아침 · 둥근 하늘빛 수국 · 페일 라벤더 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 하늘빛 수국",
+    "color": "C03",
+    "colorLabel": "페일 라벤더",
+    "sourceId": "BG04-F01-C03-V01",
+    "referenceIds": [
+      "BG04-F01-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F01-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F01-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F01-C03-V01, 둥근 하늘빛 수국, petal color 페일 라벤더. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded sky-blue hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페일 라벤더, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F01-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "ff116d74e897a51792e957d70aec1e0c131aaa605ce307c5e24b236eac762805",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        169,
+        67,
+        1139,
+        1214
+      ],
+      "transparentMarginsPx": [
+        169,
+        67,
+        115,
+        40
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "4ca68cd5b7e30541d4cbae411f722d12b4ea9a3ec0b79b18d4d79358fcd07ea9",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F01-C04-V05",
+    "name": "아침 · 둥근 하늘빛 수국 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F01",
+    "designLabel": "둥근 하늘빛 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG04-F01-C04-V01",
+    "referenceIds": [
+      "BG04-F01-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F01-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F01-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F01-C04-V01, 둥근 하늘빛 수국, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one rounded sky-blue hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F01-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "07574256ca19a9b720e90009bf8fc2691e408dc062a1ee3e8a5355212a002a67",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        197,
+        114,
+        1094,
+        1199
+      ],
+      "transparentMarginsPx": [
+        197,
+        114,
+        160,
+        55
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "0ddc924858fc092b983ae6c24553f2cc946f1aedf6a5d439e06b3ee571760692",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F02-C01-V05",
+    "name": "아침 · 납작한 수국 · 스카이블루 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "납작한 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "sourceId": "BG04-F02-C01-V01",
+    "referenceIds": [
+      "BG04-F02-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F02-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F02-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F02-C01-V01, 납작한 수국, petal color 스카이블루. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat open hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 스카이블루, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F02-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "ec4aaab6fa8169fd982dd09b071d35ada3e3873fe83656ef43afa78d0cd55b3d",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        133,
+        150,
+        1187,
+        1202
+      ],
+      "transparentMarginsPx": [
+        133,
+        150,
+        67,
+        52
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "603ede2197685e23f27a14f17276b1c6373bfb582b9bb79d70f5f150cfa921ec",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F02-C02-V05",
+    "name": "아침 · 납작한 수국 · 코발트블루 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "납작한 수국",
+    "color": "C02",
+    "colorLabel": "코발트블루",
+    "sourceId": "BG04-F02-C02-V01",
+    "referenceIds": [
+      "BG04-F02-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F02-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F02-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F02-C02-V01, 납작한 수국, petal color 코발트블루. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat open hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 코발트블루, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F02-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "feecfc1b3659f4075546ee423ef2b711138856b9536f31abf31a2fc5bda383c0",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        117,
+        116,
+        1204,
+        1194
+      ],
+      "transparentMarginsPx": [
+        117,
+        116,
+        50,
+        60
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "8cf2657259c2a8ccd4d6edaa02cadbd564590620276f18939797c2c1b2706ce8",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F02-C03-V05",
+    "name": "아침 · 납작한 수국 · 페일 라벤더 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "납작한 수국",
+    "color": "C03",
+    "colorLabel": "페일 라벤더",
+    "sourceId": "BG04-F02-C03-V01",
+    "referenceIds": [
+      "BG04-F02-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F02-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F02-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F02-C03-V01, 납작한 수국, petal color 페일 라벤더. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat open hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페일 라벤더, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F02-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "3ac349891d7b6a63297bb37e2117154471afa267672cee10cc85bdf481014e9e",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        107,
+        130,
+        1209,
+        1206
+      ],
+      "transparentMarginsPx": [
+        107,
+        130,
+        45,
+        48
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "9bc0dcae6d21b544b3d6897dfffebacd191bd22efb052ee2292fc1facd569da3",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F02-C04-V05",
+    "name": "아침 · 납작한 수국 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F02",
+    "designLabel": "납작한 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG04-F02-C04-V01",
+    "referenceIds": [
+      "BG04-F02-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F02-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F02-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F02-C04-V01, 납작한 수국, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: one flat open hydrangea head; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F02-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "a954432750986b04ae9cec975263022cb81f127ee9c429563043a6737f4535c8",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        112,
+        107,
+        1229,
+        1209
+      ],
+      "transparentMarginsPx": [
+        112,
+        107,
+        25,
+        45
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "07fcaac2eac24ec645924622168ecbe0f891f13f88028e1c769aa6c1058f96df",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F03-C01-V05",
+    "name": "아침 · 두 송이 수국 · 스카이블루 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "두 송이 수국",
+    "color": "C01",
+    "colorLabel": "스카이블루",
+    "sourceId": "BG04-F03-C01-V01",
+    "referenceIds": [
+      "BG04-F03-C01-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F03-C01-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F03-C01-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F03-C01-V01, 두 송이 수국, petal color 스카이블루. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: two attached hydrangea heads with the master's original branching; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 스카이블루, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F03-C01-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "c9805041168de396853aba93e96122aa7d218866e54f9a4741f2d82b0e1b9862",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        143,
+        136,
+        1159,
+        1188
+      ],
+      "transparentMarginsPx": [
+        143,
+        136,
+        95,
+        66
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "5edf2c0255e7858d25093b53683ad9eb1c6f8590b6fd64b92b3c0ee33476f1a2",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F03-C02-V05",
+    "name": "아침 · 두 송이 수국 · 코발트블루 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "두 송이 수국",
+    "color": "C02",
+    "colorLabel": "코발트블루",
+    "sourceId": "BG04-F03-C02-V01",
+    "referenceIds": [
+      "BG04-F03-C02-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F03-C02-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F03-C02-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F03-C02-V01, 두 송이 수국, petal color 코발트블루. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: two attached hydrangea heads with the master's original branching; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 코발트블루, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F03-C02-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "21c4be02f688b2d06950f83c962846055a9e5fd36d198c8a60cdbd4bc595b550",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        110,
+        93,
+        1194,
+        1188
+      ],
+      "transparentMarginsPx": [
+        110,
+        93,
+        60,
+        66
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "93a607b940f484d0ff4bb8605f7e349fab32f147008bb7978361f3aa62ef44a7",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F03-C03-V05",
+    "name": "아침 · 두 송이 수국 · 페일 라벤더 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "두 송이 수국",
+    "color": "C03",
+    "colorLabel": "페일 라벤더",
+    "sourceId": "BG04-F03-C03-V01",
+    "referenceIds": [
+      "BG04-F03-C03-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F03-C03-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F03-C03-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F03-C03-V01, 두 송이 수국, petal color 페일 라벤더. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: two attached hydrangea heads with the master's original branching; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 페일 라벤더, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F03-C03-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "05cb9b1faa2acdfc3df7304659aee50ec598cf2d4f0ba1fe4f074940e71fa419",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        117,
+        83,
+        1175,
+        1186
+      ],
+      "transparentMarginsPx": [
+        117,
+        83,
+        79,
+        68
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "06e4987df5fdce24b1df8397154eec8fb086e2a40580b4ae8e8ac4bc2dc92dfb",
+    "generationAttempts": 1
+  },
+  {
+    "id": "BG04-F03-C04-V05",
+    "name": "아침 · 두 송이 수국 · 블루 아이보리 · 추상 유화 V05",
+    "design": "F03",
+    "designLabel": "두 송이 수국",
+    "color": "C04",
+    "colorLabel": "블루 아이보리",
+    "sourceId": "BG04-F03-C04-V01",
+    "referenceIds": [
+      "BG04-F03-C04-V01"
+    ],
+    "reference": "source-assets/set-review-v01/BG04-F03-C04-V01.png",
+    "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-F03-C04-V05.png",
+    "tool": "built-in image_gen",
+    "mode": "RGBA",
+    "transparentBackground": true,
+    "generationPrompt": "Use case: style-transfer / precise-object-edit.\nINPUT is the edit target: the existing complete independent flower plant sprite BG04-F03-C04-V01, 두 송이 수국, petal color 블루 아이보리. Produce ONE independent full-plant PNG asset.\nCHANGE ONLY THE PICTURE STYLE to a MUCH MORE ABSTRACT, BEAUTIFUL, FANTASTICAL IMPASTO OIL PAINTING. Use broad expressive palette-knife and brush marks about THREE TIMES LARGER than the reference's strokes. Simplify petals into bold luminous color planes, rounded thick soft paint, confident sweeping marks and restrained warm highlights. Each petal should be conveyed with only a few large paint strokes. Leaves should become a few broad graceful green brush shapes, NOT tiny detailed veins. Rich abstract painterly form, elegant magical garden art, emphatically more abstract and less fussy than the original. The flower design must still read clearly.\nKEEP: two attached hydrangea heads with the master's original branching; same number of heads/spikes, same pose/orientation and branching, recognizable same silhouette, original petal HUE 블루 아이보리, green leaves/stems, the original fresh bright morning light treatment, center/stamen color, and all connections from blooms through leaves to stem base. Do not add or remove flower heads. Reinterpret surfaces in large strokes without replacing the plant with a different design.\nComposition: whole complete individual plant centered, true TRANSPARENT RGBA background, square canvas at least 1000 pixels on each edge. Keep roughly12% clean empty transparent margins on EVERY side; absolutely no meaningful paint in the outer 8-pixel border. Every stem bottom and leaf tip fully inside frame. Do not add a background, soil, pot, ground plane, pedestal, drop-shadow patch or unrelated objects. A flower asset must be ONE independently usable full object, never a sheet/grid/collage and never a cut-off fragment from a scene.\nREMOVE: photographic detail, fine leaf-vein networks, tiny petal striations, microtexture, photorealism, shiny CGI/3D rendering, outlines and sharp artificial highlights. No text, numbering, logos, border or watermark. BG04-F03-C04-V05 is metadata only, never printed. Preserve actual transparency; do not paint a checkerboard or colored backdrop. SAFETY FRAMING IS CRITICAL: keep ALL painted content and faint brush tips inside the CENTRAL72% of the square canvas, leaving at least14% true empty transparency on EACH side. This includes the uppermost flower spike and lowermost stem base. Preserve internal plant proportions and pose; make the whole plant smaller within the canvas rather than cutting any part. No stray paint specks beyond that safe center.",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "2d6db404ebb1852167d36b10a15f798cf05a5f5bbdb5167c49f39836da984e63",
+    "verification": {
+      "alpha": true,
+      "borderClear": true,
+      "complete": true,
+      "technicalOnly": true,
+      "alphaThreshold": 8,
+      "borderPixels": 8,
+      "visibleBounds": [
+        130,
+        115,
+        1155,
+        1185
+      ],
+      "transparentMarginsPx": [
+        130,
+        115,
+        99,
+        69
+      ],
+      "visualMatch": "pending_manual_review",
+      "visualInspection": {
+        "method": "contact-sheet review",
+        "scope": "whole flower silhouette, petal color, stem attachment and visible framing",
+        "result": "no obvious clipping or detached flower head observed",
+        "composedSceneMatch": "pending"
+      }
+    },
+    "sourceSha256": "8407bd05afa209b9325417e94bf557f32c0d32c0b02bbf7955f99426826da985",
+    "generationAttempts": 1
+  }
+]

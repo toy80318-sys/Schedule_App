@@ -21,7 +21,7 @@
         for(const a of set[field]){if(typeof a.id!=='string'||!a.id||ids.has(a.id)||a.src&&!safeURL(a.src))throw Error('이미지 번호 또는 경로가 올바르지 않습니다.');ids.add(a.id);}
       }
       if(!set.integrated.length||!set.backgrounds.length||!safeURL(set.project)||set.unityLayout&&!safeURL(set.unityLayout))throw Error('통합 시안·배경·배치 파일의 연결이 빠져 있습니다.');
-      for(const field of ['legacyProject','legacyUnityLayout'])if(set[field]&&!safeURL(set[field]))throw Error('이전 배치 파일의 연결이 올바르지 않습니다.');
+      for(const field of ['legacyProject','legacyUnityLayout','previousProject','previousUnityLayout'])if(set[field]&&!safeURL(set[field]))throw Error('이전 배치 파일의 연결이 올바르지 않습니다.');
     }
     return value;
   }
@@ -97,6 +97,7 @@
   function showReference(refreshReviews=false){
     if(!selected)return;referenceEntry=selected.integrated[Number($('integratedVersion').value)]||selected.integrated[0];
     $('referenceTitle').textContent=[referenceEntry.id,referenceEntry.name].filter(Boolean).join(' · ');$('referenceImage').src=referenceEntry.src;$('referenceImage').alt=selected.label+' · '+(referenceEntry.name||'AI 통합 시안');$('referenceDownload').href=referenceEntry.src;
+    $('referenceBadge').textContent=referenceEntry.construction==='same-png-layout-render'?'분리 PNG 조립 통합본':'AI 통합 시안';
     $('referenceImage').onerror=()=>status('loadStatus','통합 시안 이미지를 불러오지 못했습니다. 원본 연결을 확인해 주세요.',true);
     if(refreshReviews){fillBackgrounds(selected);fillFlowers(selected);fillEnvironment(selected);}
   }
@@ -104,6 +105,7 @@
   async function signature(text){if(!crypto.subtle)return null;return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text))),b=>b.toString(16).padStart(2,'0')).join('');}
   function projectChoices(set){
     const choices=[{id:'current',path:set.project,unityLayout:set.unityLayout,version:set.projectVersion,label:set.projectLabel||'최신 기본 배치'}];
+    if(set.previousProject)choices.push({id:'previous',path:set.previousProject,unityLayout:set.previousUnityLayout,version:set.previousProjectVersion,label:set.previousProjectLabel||'이전 그림체 배치'});
     if(set.legacyProject)choices.push({id:'legacy',path:set.legacyProject,unityLayout:set.legacyUnityLayout,version:set.legacyProjectVersion||'V01',label:set.legacyProjectLabel||'V01 · 이전 배치'});
     return choices;
   }
@@ -112,7 +114,7 @@
     const choice=selectedProjectChoice(set),prefix=choice.version?choice.version+' ':'';
     $('projectDownload').href=choice.path;$('projectDownload').textContent=prefix+'에디터 배치 JSON ↓';$('unityLayoutDownload').hidden=!choice.unityLayout;
     if(choice.unityLayout)$('unityLayoutDownload').href=choice.unityLayout;$('unityLayoutDownload').textContent=prefix+'Unity 좌표 참고 JSON ↓';
-    $('layoutVersionNote').textContent=choice.version==='V04'?'V04 기본 배치 · 꽃 크기는 V01의 50%, 개수는 4배입니다. 꽃 320개 + 환경 요소 36개 = 총 356개.':choice.id==='legacy'?'V01 이전 배치 · 꽃 80개 + 환경 요소 36개 = 총 116개. 기존 배치 파일은 그대로 보존합니다.':choice.label;
+    $('layoutVersionNote').textContent=choice.version==='V05'?'V05 · 그림체만 추상 유화로 변경했습니다. V04와 같은 크기·개수(꽃 320개 + 환경 요소 36개)를 유지하며 같은 PNG로 통합본을 조립합니다.':choice.version==='V04'?'V04 기본 배치 · 꽃 크기는 V01의 50%, 개수는 4배입니다. 꽃 320개 + 환경 요소 36개 = 총 356개.':choice.id==='legacy'?'V01 이전 배치 · 꽃 80개 + 환경 요소 36개 = 총 116개. 기존 배치 파일은 그대로 보존합니다.':choice.label;
   }
   function fillProjectVersions(set){const select=$('layoutVersion');select.replaceChildren(...projectChoices(set).map(c=>new Option(c.label,c.id)));select.value='current';syncProjectLinks(set);}
   async function readProject(set,choice=selectedProjectChoice(set)){
@@ -127,10 +129,10 @@
     if(!selected)return;const token=++renderToken,set=selected;currentProject=null;currentProjectSource=null;currentReport={complete:false,pending:true,missing:[],warnings:[]};$('downloadRender').disabled=true;status('renderStatus','배치 파일의 독립 PNG를 합성하고 있습니다…');$('canvasEmpty').hidden=false;$('canvasEmpty').textContent='배치 이미지 합성 중…';
     try{
       if(!window.JejuSetRenderer)throw Error('합성 도구를 불러오지 못했습니다.');const entry=await readProject(set);if(token!==renderToken)return;
-      const temp=document.createElement('canvas'),report=await window.JejuSetRenderer.render(temp,entry.project,{width:1800,backgroundOverride:$('renderBackground').value||undefined});if(token!==renderToken)return;
+      const temp=document.createElement('canvas'),report=await window.JejuSetRenderer.render(temp,entry.project,{width:4096,backgroundOverride:$('renderBackground').value||undefined});if(token!==renderToken)return;
       const canvas=$('layoutCanvas');canvas.width=temp.width;canvas.height=temp.height;canvas.getContext('2d').drawImage(temp,0,0);$('canvasEmpty').hidden=true;currentProject=entry.project;currentProjectSource=entry;currentReport=report;$('projectName').textContent=entry.name;$('downloadRender').disabled=false;
       const count=report.renderedObjects??0,total=report.totalObjects??entry.project.objects.length;
-      status('renderStatus',report.complete?`${count}개 요소 합성 완료 · 원본 배치 ${entry.project.width} × ${entry.project.height} · 실제 Unity 실행 검증 전`:`${count} / ${total}개 합성 · 누락 또는 오류가 있어 완성본으로 판정하지 않습니다.`,!report.complete);renderIssues();
+      status('renderStatus',report.complete?`${count}개 요소 합성 완료 · 소스 ${new Set(entry.project.objects.map(o=>o.assetId)).size}종 재사용 · 원본 배치 ${entry.project.width} × ${entry.project.height} · 실제 Unity 실행 검증 전`:`${count} / ${total}개 합성 · 누락 또는 오류가 있어 완성본으로 판정하지 않습니다.`,!report.complete);renderIssues();
     }catch(error){if(token!==renderToken)return;currentReport={complete:false,missing:[],warnings:[],error:error.message};currentProject=null;currentProjectSource=null;$('canvasEmpty').textContent='배치 이미지를 합성하지 못했습니다.';status('renderStatus',error.message,true);renderIssues();}
   }
   function renderIssues(){
@@ -148,7 +150,7 @@
   function showSet(id,tab=category){
     const set=manifest.backgrounds.find(s=>s.id===id)||manifest.backgrounds[0];selected=set;showCategory(tab);
     for(const b of $('backgroundTabs').children){const active=b.dataset.theme===set.id;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
-    $('reviewContent').setAttribute('aria-labelledby','background-tab-'+set.id);$('setCode').textContent=[manifest.version,set.code].filter(Boolean).join(' · ');$('setTitle').textContent=set.label+' 세트';$('setSummary').textContent=`꽃 ${set.flowers.filter(a=>a.src).length} / 24장 · 환경 요소 ${set.environment.filter(a=>a.src).length}장 · 통합 ${set.integrated.length}개 버전`;
+    $('reviewContent').setAttribute('aria-labelledby','background-tab-'+set.id);$('setCode').textContent=[manifest.assetVersion||manifest.version,set.code].filter(Boolean).join(' · ');$('setTitle').textContent=set.label+' 세트';$('setSummary').textContent=`꽃 ${set.flowers.filter(a=>a.src).length} / 24장 · 환경 요소 ${set.environment.filter(a=>a.src).length}장 · 통합 ${set.integrated.length}개 버전`;
     fillProjectVersions(set);
     fillReference(set);fillRenderBackground(set);fillBackgrounds(set);fillFlowers(set);fillEnvironment(set);showScreenshot(set);document.title='메이즈랜드 · '+set.label+' 버전 비교';status('loadStatus','원본은 보존됩니다. 검토 상태와 메모는 이 브라우저에 저장되며, 검증 기준 JSON으로 내보낼 수 있습니다.');renderProject();
   }
@@ -159,7 +161,7 @@
   function assetCategory(a,set=selected){return set.integrated.includes(a)?'integrated':set.backgrounds.includes(a)?'background':a.category||'flower';}
   function audit(){
     if(!selected)return null;const assets=[...selected.integrated,...selected.backgrounds,...selected.flowers,...selected.environment];
-    return{format:'jeju-set-review-audit-v1',generatedAt:new Date().toISOString(),setVersion:manifest.version,generationGuide:'assets/set-review-v01/AI_검증가이드.md',background:{id:selected.id,code:selected.code,label:selected.label},targetReference:referenceEntry?{id:referenceEntry.id,version:referenceEntry.version,src:referenceEntry.src,sha256:referenceEntry.sha256||null}:null,project:currentProjectSource?{name:currentProjectSource.name,version:currentProjectSource.version||null,src:currentProjectSource.path||null,sha256:currentProjectSource.sha256,width:currentProject?.width,height:currentProject?.height,backgroundOverride:$('renderBackground').value||null}:null,expected:{flowerDesigns:6,colorsPerDesign:4,totalFlowers:24,environmentCategories:Object.keys(labels)},missingFlowerSlots:flowerSlots(selected),missingEnvironmentCategories:Object.keys(labels).filter(key=>!selected.environment.some(a=>a.category===key&&a.src)),failedImageLoads:[...imageFailures].filter(([id])=>assets.some(a=>a.id===id)).map(([id,src])=>({id,src})),assets:assets.map(a=>({id:a.id,version:a.version||manifest.version,src:a.src,sha256:a.sha256||null,design:a.design,color:a.color,category:assetCategory(a),verification:a.verification||null,generationPrompt:a.generationPrompt||null,generationReference:a.generationReference||a.reference||null,generationRecords:a.generationRecords||null,structuralCheck:structuralCheck(a),visualMatch:manualReview(a),reference:referenceEntry?.src})),webComposite:currentReport||{complete:false,notRun:true},unityScreenshot:screenshots.has(selected.id)?{name:screenshots.get(selected.id).name,userSupplied:true,runtimeConditionsVerified:false}:null,reviewInstructions:['지정한 통합 시안과 꽃 디자인·꽃잎 형태·가까운 4색·크기·배치·명도·앞뒤 초점을 비교한다.','각 PNG는 다른 요소를 잘라낸 조각이 아닌, 온전한 한 개체와 투명 여백을 가져야 한다.','구조 검사와 시각적 일치 검토를 구분하고 미검토·수정필요인 요소를 완료로 판정하지 않는다.','Unity 전달 배치의 웹 합성을 실제 Unity 실행 결과로 판정하지 않는다.'],limits:['정지 이미지의 비교·제작 기준이며 개화 영상 검증을 포함하지 않음','미검토인 시각적 일치는 자동 확정하지 않음','업로드한 Unity 캡처의 출처·실행 조건은 별도 확인 필요']};
+    return{format:'jeju-set-review-audit-v1',generatedAt:new Date().toISOString(),setVersion:manifest.assetVersion||manifest.version,generationGuide:'assets/set-review-v01/AI_검증가이드.md',background:{id:selected.id,code:selected.code,label:selected.label},targetReference:referenceEntry?{id:referenceEntry.id,version:referenceEntry.version,src:referenceEntry.src,sha256:referenceEntry.sha256||null}:null,project:currentProjectSource?{name:currentProjectSource.name,version:currentProjectSource.version||null,src:currentProjectSource.path||null,sha256:currentProjectSource.sha256,width:currentProject?.width,height:currentProject?.height,backgroundOverride:$('renderBackground').value||null}:null,expected:{flowerDesigns:6,colorsPerDesign:4,totalFlowers:24,environmentCategories:Object.keys(labels)},missingFlowerSlots:flowerSlots(selected),missingEnvironmentCategories:Object.keys(labels).filter(key=>!selected.environment.some(a=>a.category===key&&a.src)),failedImageLoads:[...imageFailures].filter(([id])=>assets.some(a=>a.id===id)).map(([id,src])=>({id,src})),assets:assets.map(a=>({id:a.id,version:a.version||manifest.version,src:a.src,sha256:a.sha256||null,design:a.design,color:a.color,category:assetCategory(a),verification:a.verification||null,generationPrompt:a.generationPrompt||null,generationReference:a.generationReference||a.reference||null,generationRecords:a.generationRecords||null,structuralCheck:structuralCheck(a),visualMatch:manualReview(a),reference:referenceEntry?.src})),webComposite:currentReport||{complete:false,notRun:true},unityScreenshot:screenshots.has(selected.id)?{name:screenshots.get(selected.id).name,userSupplied:true,runtimeConditionsVerified:false}:null,reviewInstructions:['지정한 통합 시안과 꽃 디자인·꽃잎 형태·가까운 4색·크기·배치·명도·앞뒤 초점을 비교한다.','각 PNG는 다른 요소를 잘라낸 조각이 아닌, 온전한 한 개체와 투명 여백을 가져야 한다.','구조 검사와 시각적 일치 검토를 구분하고 미검토·수정필요인 요소를 완료로 판정하지 않는다.','Unity 전달 배치의 웹 합성을 실제 Unity 실행 결과로 판정하지 않는다.'],limits:['정지 이미지의 비교·제작 기준이며 개화 영상 검증을 포함하지 않음','미검토인 시각적 일치는 자동 확정하지 않음','업로드한 Unity 캡처의 출처·실행 조건은 별도 확인 필요']};
   }
   $('integratedVersion').onchange=()=>showReference(true);$('openReference').onclick=()=>referenceEntry&&openAsset(referenceEntry,true);$('renderBackground').onchange=renderProject;
   $('layoutVersion').onchange=()=>{if(!selected)return;uploads.delete(selected.id);$('projectFile').value='';syncProjectLinks(selected);renderProject();};
@@ -174,14 +176,14 @@
     try{if(!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>32*1024*1024)throw Error('PNG·JPEG·WebP 형식의 32MB 이하 캡처를 선택해 주세요.');url=URL.createObjectURL(file);const im=new Image();im.src=url;await im.decode();if(im.naturalWidth*im.naturalHeight>100000000)throw Error('캡처 해상도가 너무 큽니다.');const old=screenshots.get(set.id);if(old)URL.revokeObjectURL(old.url);screenshots.set(set.id,{url,name:file.name,width:im.naturalWidth,height:im.naturalHeight});url=null;if(selected.id===set.id)showScreenshot(set);}
     catch(error){$('unityScreenshotStatus').textContent=error.message;}finally{if(url)URL.revokeObjectURL(url);event.target.value='';}
   };
-  $('downloadRender').onclick=()=>{try{$('layoutCanvas').toBlob(blob=>{if(blob)download(blob,selected.code+'_web_composite_'+manifest.version+'.png');else status('renderStatus','합성 PNG 저장에 실패했습니다.',true);},'image/png');}catch(error){status('renderStatus','합성 PNG를 저장하지 못했습니다: '+error.message,true);}};
-  $('downloadAudit').onclick=()=>download(new Blob([JSON.stringify(audit(),null,2)],{type:'application/json'}),selected.code+'_AI_review_'+manifest.version+'.json');
+  $('downloadRender').onclick=()=>{try{$('layoutCanvas').toBlob(blob=>{if(blob)download(blob,selected.code+'_web_composite_'+(currentProject?.setReviewVersion||manifest.assetVersion||manifest.version)+'.png');else status('renderStatus','합성 PNG 저장에 실패했습니다.',true);},'image/png');}catch(error){status('renderStatus','합성 PNG를 저장하지 못했습니다: '+error.message,true);}};
+  $('downloadAudit').onclick=()=>download(new Blob([JSON.stringify(audit(),null,2)],{type:'application/json'}),selected.code+'_AI_review_'+(manifest.assetVersion||manifest.version)+'.json');
   $('closeAssetDialog').onclick=()=>$('assetDialog').close();$('assetDialog').addEventListener('close',()=>document.body.classList.remove('dialog-open'));
   for(const b of document.querySelectorAll('[data-tab]'))b.onclick=()=>selected&&navigate(selected.id,b.dataset.tab);
   bindTabKeyboard($('backgroundTabs'),'[role=tab]');bindTabKeyboard(document.querySelector('.category-tabs'),'[role=tab]');window.addEventListener('hashchange',route);
   window.JejuSetReview={validateManifest,getAudit:audit};
   (async()=>{
-    try{const response=await fetch('assets/set-review-v01/manifest.json?v=4');if(!response.ok)throw Error('세트 목록을 불러오지 못했습니다.');manifest=validateManifest(await response.json());$('releaseVersion').textContent=manifest.version+' · '+(manifest.date||'2026.10.27');
+    try{const response=await fetch('assets/set-review-v01/manifest.json?v=5');if(!response.ok)throw Error('세트 목록을 불러오지 못했습니다.');manifest=validateManifest(await response.json());$('releaseVersion').textContent=(manifest.assetVersion||manifest.version)+' · '+(manifest.date||'2026.10.27');
       for(const set of manifest.backgrounds){const b=el('button','',set.code+' '+set.label);b.type='button';b.role='tab';b.id='background-tab-'+set.id;b.dataset.theme=set.id;b.setAttribute('aria-selected','false');b.setAttribute('aria-controls','reviewContent');b.tabIndex=-1;b.onclick=()=>navigate(set.id,category);$('backgroundTabs').append(b);}
       $('reviewContent').hidden=false;route();
     }catch(error){status('loadStatus',error.message+' 페이지를 새로 고쳐 다시 확인해 주세요.',true);}

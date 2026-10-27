@@ -1,0 +1,1859 @@
+{
+  "version": "V05",
+  "tool": "built-in image_gen",
+  "sourceVersion": "V01",
+  "requestedBrushScale": 3,
+  "requestedTransparentPadding": 0.12,
+  "assets": [
+    {
+      "id": "BG01-F01-C01-V05",
+      "referenceId": "BG01-F01-C01-V01",
+      "code": "BG01",
+      "design": "F01",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F01-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F01-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-99dd1cbb-d27e-4158-ae14-3ce124253781.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5ff1fad6657d4a12ad6293c3b9fc4f4e51c40c7a58606e738f6968f5d6b5a965",
+      "referenceIds": [
+        "BG01-F01-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          37,
+          65,
+          1236,
+          1194
+        ],
+        "marginsPx": [
+          37,
+          65,
+          18,
+          60
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "3d1863d5b4d1483144828ff32bf21746d9e15191fec561ac3aaf53f9a3b35660"
+    },
+    {
+      "id": "BG01-F01-C02-V05",
+      "referenceId": "BG01-F01-C02-V01",
+      "code": "BG01",
+      "design": "F01",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F01-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F01-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-e037363e-58dc-4272-927f-0115eb83942e.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "previousAttempt": {
+        "generatedFilename": "exec-e0c1c559-783b-46d2-8438-4cebd5c06e7d.png",
+        "rejectionReason": "alpha>=8 right margin 3px, minimum8px"
+      },
+      "repairPrompt": "Edit target: this exact coral-pink camellia PNG. Preserve its single attached flower, four leaves, pose, warm golden left lighting and coral/blush palette. Paint it as strong abstract fantasy impasto oil, with broad gestural sweeping petals and a few large olive paint planes for leaves, no fine leaf veins, no tiny parallel texture. Essential framing correction: the ENTIRE plant must fit within the CENTRAL 60% of a square transparent canvas, with at least TWENTY PERCENT EMPTY TRANSPARENT MARGIN on EACH of the four sides. Shrink the plant substantially to ensure every leaf tip, petal and finished stem end is far away from the canvas edges. Do not crop, add or detach any plant parts. One whole plant only. Genuine transparent RGBA background, no ground, pot, shadow, text or background.",
+      "repairReferenceId": "BG01-F01-C02-V05",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8ff3d2cde7133a2de21b92ac2524bfc9b6d375a6f1630b1c6422dbbf60e90e23",
+      "referenceIds": [
+        "BG01-F01-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          149,
+          201,
+          1159,
+          1126
+        ],
+        "marginsPx": [
+          149,
+          201,
+          95,
+          128
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "38fd5624579b8fdbbae62b20ffa2ed45236b194e0c041e9169b59364618338db"
+    },
+    {
+      "id": "BG01-F01-C03-V05",
+      "referenceId": "BG01-F01-C03-V01",
+      "code": "BG01",
+      "design": "F01",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F01-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F01-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-99e79a6f-20d8-4ee9-b969-622219144d10.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8b3d9d727885341f7f680678c446ae192acef007a1ae0511a686404c06086a25",
+      "referenceIds": [
+        "BG01-F01-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          45,
+          74,
+          1238,
+          1198
+        ],
+        "marginsPx": [
+          45,
+          74,
+          16,
+          56
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "862d76826aa64d8b278d58f457afbb41fdfc28d30832a9b59b9309109f8289bb"
+    },
+    {
+      "id": "BG01-F01-C04-V05",
+      "referenceId": "BG01-F01-C04-V01",
+      "code": "BG01",
+      "design": "F01",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F01-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F01-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-ef6fd90d-0348-45e1-b434-8fafd7eed1d3.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b74291e091865fd6446a6619babeb766e0625d235e9c3ee2887b4c7b24a7d70b",
+      "referenceIds": [
+        "BG01-F01-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          41,
+          84,
+          1238,
+          1204
+        ],
+        "marginsPx": [
+          41,
+          84,
+          16,
+          50
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "fceaa27afae0edbe1298aa284dddbe9a2d8db5caffa50f6216578900f067bc74"
+    },
+    {
+      "id": "BG01-F02-C01-V05",
+      "referenceId": "BG01-F02-C01-V01",
+      "code": "BG01",
+      "design": "F02",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F02-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F02-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-ad6a38cf-05ea-4e3b-bd9b-32b7989a4b62.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "1bf64600094a42a87e89c005773667f3d2139aaa37656f471e9599e72bace06e",
+      "referenceIds": [
+        "BG01-F02-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          40,
+          64,
+          1219,
+          1204
+        ],
+        "marginsPx": [
+          40,
+          64,
+          35,
+          50
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "48577e03f5b2ae4f8e6cfa03a29a686fd4616f6910ae283929c32a18b2f8f91b"
+    },
+    {
+      "id": "BG01-F02-C02-V05",
+      "referenceId": "BG01-F02-C02-V01",
+      "code": "BG01",
+      "design": "F02",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F02-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F02-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-1296637b-a0b6-4f9e-b648-3057c2910e2f.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "561f1c5492a8ced568e9d4cacefd07b18bad91304410e87edccb6b8a3d2d682d",
+      "referenceIds": [
+        "BG01-F02-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          42,
+          61,
+          1217,
+          1204
+        ],
+        "marginsPx": [
+          42,
+          61,
+          37,
+          50
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "996bc320267926baf5a31c4c11da85bae8a24e363c521ffd02e144f4835a6378"
+    },
+    {
+      "id": "BG01-F02-C03-V05",
+      "referenceId": "BG01-F02-C03-V01",
+      "code": "BG01",
+      "design": "F02",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F02-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F02-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-2aaabc37-74b0-4b7a-b588-8ce8a08bfd45.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "32c77eab6d53a89b09399b014141e6af686beed90a4de061e75de92d967606ab",
+      "referenceIds": [
+        "BG01-F02-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          43,
+          63,
+          1215,
+          1207
+        ],
+        "marginsPx": [
+          43,
+          63,
+          39,
+          47
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "b9cd2a734ac13347a221115b2d80609b5f9a894f0c295c14db9563fe315e802b"
+    },
+    {
+      "id": "BG01-F02-C04-V05",
+      "referenceId": "BG01-F02-C04-V01",
+      "code": "BG01",
+      "design": "F02",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F02-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use brush marks approximately THREE TIMES BROADER than in the reference: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave approximately TWELVE PERCENT EMPTY TRANSPARENT PADDING on every side, shrink plant within canvas if needed. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F02-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-786c9382-5ccd-49af-a730-5023c1213a4e.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5dc516a0ef1ab4d3ad143ae8e288eac14e9abbe8717b19f186a049962a3b2c4d",
+      "referenceIds": [
+        "BG01-F02-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          49,
+          66,
+          1219,
+          1204
+        ],
+        "marginsPx": [
+          49,
+          66,
+          35,
+          50
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "2c76fabcc025a5faa3d3ab630d19cc8a5e014ab0a6d38902c7ef2e66f9074177"
+    },
+    {
+      "id": "BG01-F03-C01-V05",
+      "referenceId": "BG01-F03-C01-V01",
+      "code": "BG01",
+      "design": "F03",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F03-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F03-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-76a645cd-bc86-4d64-be45-d459eb7c0a46.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0911cdb2ac000aaf065acd74c0dc97aeb40769975e2bde7a10a8bfff402793e4",
+      "referenceIds": [
+        "BG01-F03-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          123,
+          98,
+          1116,
+          1188
+        ],
+        "marginsPx": [
+          123,
+          98,
+          138,
+          66
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "6692a6f988f756aca38cbdf09512b1eb43380542155628134f06e17e3f425fc6"
+    },
+    {
+      "id": "BG01-F03-C02-V05",
+      "referenceId": "BG01-F03-C02-V01",
+      "code": "BG01",
+      "design": "F03",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F03-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F03-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-cafe1593-3e5e-4085-8c03-32a92a6f2fa9.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "bde67821124f0896d6d369ba978227fd82b2b4db5194e08ec324f562c0a3e285",
+      "referenceIds": [
+        "BG01-F03-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          138,
+          91,
+          1138,
+          1205
+        ],
+        "marginsPx": [
+          138,
+          91,
+          116,
+          49
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "5bc840f47c4c8c6df211ed9538621a5b8488a04265771a8509db0f6ca5050597"
+    },
+    {
+      "id": "BG01-F03-C03-V05",
+      "referenceId": "BG01-F03-C03-V01",
+      "code": "BG01",
+      "design": "F03",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F03-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F03-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-ea3bff36-34c3-47f2-b755-179a724680b4.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "bcfe8bcf069b81a457e6caa6f43bb9a30fea2742468d543a60bff3f9807e424e",
+      "referenceIds": [
+        "BG01-F03-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          164,
+          123,
+          1115,
+          1191
+        ],
+        "marginsPx": [
+          164,
+          123,
+          139,
+          63
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "52a3fcd2853524933888ffa63ca884e4035ce56cfce3de0dcc9fd0ea96dbcce9"
+    },
+    {
+      "id": "BG01-F03-C04-V05",
+      "referenceId": "BG01-F03-C04-V01",
+      "code": "BG01",
+      "design": "F03",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F03-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F03-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-945fb786-a71d-4e15-bec3-83de93d3aead.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4f9cb8d86d54c93c089a4e32f06c02ba46a479d51ce74ba6ee6e9245406445fa",
+      "referenceIds": [
+        "BG01-F03-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          143,
+          88,
+          1127,
+          1202
+        ],
+        "marginsPx": [
+          143,
+          88,
+          127,
+          52
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "b321a1b528aa534906f9e514267512b74db2ed34810b36245b67598cde93085a"
+    },
+    {
+      "id": "BG01-F04-C01-V05",
+      "referenceId": "BG01-F04-C01-V01",
+      "code": "BG01",
+      "design": "F04",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F04-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F04-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-97fe8418-eea4-4d93-b2f1-2e324d6f991a.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f3e8eee3d904839e49848c7d5f4a353f152aeb0c3f9f45369ef3884c30b3cb83",
+      "referenceIds": [
+        "BG01-F04-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          96,
+          120,
+          1202,
+          1183
+        ],
+        "marginsPx": [
+          96,
+          120,
+          52,
+          71
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "85e2129defeb2ae2e7c90825d913f87bd046d78895363695953799d717d459ae"
+    },
+    {
+      "id": "BG01-F04-C02-V05",
+      "referenceId": "BG01-F04-C02-V01",
+      "code": "BG01",
+      "design": "F04",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F04-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F04-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-6bba7695-fa7b-4906-825b-c18d99c91b6d.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b45c2f676d1c4a7a77073ad480230ad1a0dc3eea1500d1761a3361d16b4e906c",
+      "referenceIds": [
+        "BG01-F04-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          92,
+          101,
+          1198,
+          1198
+        ],
+        "marginsPx": [
+          92,
+          101,
+          56,
+          56
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "2689bde30814aeeadb7ae6393456366722ca11517cda19b43d29d19162c103e1"
+    },
+    {
+      "id": "BG01-F04-C03-V05",
+      "referenceId": "BG01-F04-C03-V01",
+      "code": "BG01",
+      "design": "F04",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F04-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F04-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-03857453-718d-4771-8758-7f6ecdc50359.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "75addb60a2b7237f06c85386e5a1dbb5d66a3b6e0d634eebc959e287542fc8b7",
+      "referenceIds": [
+        "BG01-F04-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          109,
+          91,
+          1200,
+          1196
+        ],
+        "marginsPx": [
+          109,
+          91,
+          54,
+          58
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "69f2744d8ea339c590ffdcf9286f050725f8638ef9c19392b8db0e6be0c0136f"
+    },
+    {
+      "id": "BG01-F04-C04-V05",
+      "referenceId": "BG01-F04-C04-V01",
+      "code": "BG01",
+      "design": "F04",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F04-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F04-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-4f7ae4cf-246e-4741-9098-423375f235c4.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a13c4e3d12df8d43b71952ff296ebaab2724684b7a43364651284b4a6ff3ec4f",
+      "referenceIds": [
+        "BG01-F04-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          102,
+          138,
+          1171,
+          1200
+        ],
+        "marginsPx": [
+          102,
+          138,
+          83,
+          54
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "8959345a3b158fd43e4daeaef1f55a1d0eaf563b8095acb0bfe912d96e9ba483"
+    },
+    {
+      "id": "BG01-F05-C01-V05",
+      "referenceId": "BG01-F05-C01-V01",
+      "code": "BG01",
+      "design": "F05",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F05-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F05-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-7d5fbc92-6fbb-4db6-a936-2d0df8ac5277.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "26896515dc8595eb14fc8cb627511f570a353e4f7c40c240e3c0fd0f89183eb4",
+      "referenceIds": [
+        "BG01-F05-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          165,
+          83,
+          1101,
+          1185
+        ],
+        "marginsPx": [
+          165,
+          83,
+          153,
+          69
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "1d50fb7546c44ffa794bdc4ffec1b615e65e2efa7300a10cb3ded87858a3001c"
+    },
+    {
+      "id": "BG01-F05-C02-V05",
+      "referenceId": "BG01-F05-C02-V01",
+      "code": "BG01",
+      "design": "F05",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F05-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F05-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-8e5fa368-5005-4853-9218-823873a2c32d.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "59db1f0378ffba0567fef0043e70986171a5ae1f1b4e58a1c475372a600d01bb",
+      "referenceIds": [
+        "BG01-F05-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          196,
+          115,
+          1098,
+          1191
+        ],
+        "marginsPx": [
+          196,
+          115,
+          156,
+          63
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "f5c9eed73428e45f74673c5d57ff3df3fe3aaae1f6b22ea742358ff73051a97f"
+    },
+    {
+      "id": "BG01-F05-C03-V05",
+      "referenceId": "BG01-F05-C03-V01",
+      "code": "BG01",
+      "design": "F05",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F05-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F05-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-c22093b5-ef7a-4e63-9066-d9a3f95c6a46.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ce2c44e1a8a630ef31fe1ada977c01f0c9cab94a524f121345a22d2399d3506e",
+      "referenceIds": [
+        "BG01-F05-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          170,
+          79,
+          1111,
+          1210
+        ],
+        "marginsPx": [
+          170,
+          79,
+          143,
+          44
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "0534af62f7efb30f1665bd3a02a7970514b9551dea37142cae956a4a6a006ec4"
+    },
+    {
+      "id": "BG01-F05-C04-V05",
+      "referenceId": "BG01-F05-C04-V01",
+      "code": "BG01",
+      "design": "F05",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F05-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F05-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-6468ae17-6ba0-482f-8e58-2162e3240a09.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "75fef9871b62116800d0acae52e96a891157bbab25478ffabee4dc09a8146e2b",
+      "referenceIds": [
+        "BG01-F05-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          179,
+          85,
+          1098,
+          1193
+        ],
+        "marginsPx": [
+          179,
+          85,
+          156,
+          61
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "6d06bda5105d3ed530edbedd57339c7a4a8df6070a8e9cd0c7fbbb95ae1b3c5a"
+    },
+    {
+      "id": "BG01-F06-C01-V05",
+      "referenceId": "BG01-F06-C01-V01",
+      "code": "BG01",
+      "design": "F06",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F06-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F06-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-17f8dc9c-b55c-4aee-ad35-4e287042e045.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7d6448ee159b93e4c1e4f5d8500ea4ac0e8eb40ebde02c1e939e7230a91cd041",
+      "referenceIds": [
+        "BG01-F06-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          97,
+          105,
+          1191,
+          1194
+        ],
+        "marginsPx": [
+          97,
+          105,
+          63,
+          60
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "4b78aa06b9e296fd929cde2a16c60912740f1faaf63954769b62282d527242b0"
+    },
+    {
+      "id": "BG01-F06-C02-V05",
+      "referenceId": "BG01-F06-C02-V01",
+      "code": "BG01",
+      "design": "F06",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F06-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F06-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-7940b848-6619-4079-b808-ac9d3f481062.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "814bbde0f640f52d24df1e632659ac6c3f799fd80cfd4f6515863213ea552e23",
+      "referenceIds": [
+        "BG01-F06-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          90,
+          119,
+          1196,
+          1190
+        ],
+        "marginsPx": [
+          90,
+          119,
+          58,
+          64
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "cdf4962b977672f251bf6fc8dd251ae23a2b8864853b541b0e33769c5cde68bb"
+    },
+    {
+      "id": "BG01-F06-C03-V05",
+      "referenceId": "BG01-F06-C03-V01",
+      "code": "BG01",
+      "design": "F06",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F06-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F06-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-daff4f6a-3ac3-4d1d-8a6e-8f58f36e1258.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3765f3eb0f33988dcdc113575a08e7b67c6d913a2b1e883e5c711bba504e722b",
+      "referenceIds": [
+        "BG01-F06-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          116,
+          134,
+          1162,
+          1177
+        ],
+        "marginsPx": [
+          116,
+          134,
+          92,
+          77
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "5db78b9e55595dd067c87eba4b6d27cbb64d43364239fb77dd1df7cea7977163"
+    },
+    {
+      "id": "BG01-F06-C04-V05",
+      "referenceId": "BG01-F06-C04-V01",
+      "code": "BG01",
+      "design": "F06",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG01-F06-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG01-F06-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-5fee7625-f825-4842-ae9d-258fe6e8f8e1.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0e5802735634140b710cc6d12044369c71efbba70f53712da8217a6789db5719",
+      "referenceIds": [
+        "BG01-F06-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          96,
+          112,
+          1194,
+          1181
+        ],
+        "marginsPx": [
+          96,
+          112,
+          60,
+          73
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "be759f9f7018bf30d61aa44a8dc12f067bc8b0579052b3961826927d59bbf557"
+    },
+    {
+      "id": "BG02-F04-C01-V05",
+      "referenceId": "BG02-F04-C01-V01",
+      "code": "BG02",
+      "design": "F04",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F04-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F04-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-56b7db0e-2428-4a16-8c25-12f0989aef0f.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b4e825b92481cb92ffe114fc90fbb30a5f3788a483cdc0be20047b5941960997",
+      "referenceIds": [
+        "BG02-F04-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          116,
+          80,
+          1159,
+          1193
+        ],
+        "marginsPx": [
+          116,
+          80,
+          95,
+          61
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "0ff79ea01328e31c6c6c18f21d98f73592ec905e4073969df01ae0b23c442282"
+    },
+    {
+      "id": "BG02-F04-C02-V05",
+      "referenceId": "BG02-F04-C02-V01",
+      "code": "BG02",
+      "design": "F04",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F04-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F04-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-cf5d3256-1ff9-4133-a2f1-ffb6bd128794.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c6df791a46ccc4a9a2094f6806d5e288fb9c8de2d2f17c988f7ff1fc7c5491c2",
+      "referenceIds": [
+        "BG02-F04-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          109,
+          84,
+          1182,
+          1204
+        ],
+        "marginsPx": [
+          109,
+          84,
+          72,
+          50
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "b442000d6b7bb56051ea1c347f327413668746817caa560927d6fe05f6bf315c"
+    },
+    {
+      "id": "BG02-F04-C03-V05",
+      "referenceId": "BG02-F04-C03-V01",
+      "code": "BG02",
+      "design": "F04",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F04-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F04-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-38ec82f3-7790-4f68-b3cc-b4ee8af33b53.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3ec97233756463bfe9304e672b995bc6f54b20dfb6c7e2078a0ee0d5308e0b42",
+      "referenceIds": [
+        "BG02-F04-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          121,
+          88,
+          1155,
+          1200
+        ],
+        "marginsPx": [
+          121,
+          88,
+          99,
+          54
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "eb6abe7cb52a03a6ecd63379c40519eeec9a9b5fce06b57f610eddd29e84baaf"
+    },
+    {
+      "id": "BG02-F04-C04-V05",
+      "referenceId": "BG02-F04-C04-V01",
+      "code": "BG02",
+      "design": "F04",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F04-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F04-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-fe004185-1316-490b-bb46-d7f5c3045492.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4031a271f8d1c647c0a681ceac3c3a04abbfc105e9887ec824a6f7ba9f77076f",
+      "referenceIds": [
+        "BG02-F04-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          146,
+          100,
+          1174,
+          1194
+        ],
+        "marginsPx": [
+          146,
+          100,
+          80,
+          60
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "8aa4d3936f0ae203e363872698c14278056c1e37da0739dbde14c685020b9384"
+    },
+    {
+      "id": "BG02-F05-C01-V05",
+      "referenceId": "BG02-F05-C01-V01",
+      "code": "BG02",
+      "design": "F05",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F05-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F05-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-23941f06-6981-4351-93c6-4ef1e06f23e1.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "698e12c40a3006368fad38f4d5b8aa8282e66efab39da34b1a323b88b6ef25f9",
+      "referenceIds": [
+        "BG02-F05-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          154,
+          79,
+          1191,
+          1216
+        ],
+        "marginsPx": [
+          154,
+          79,
+          63,
+          38
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "dfe2f2babf840bb5ca9742e862256a484f54de1c2c7185415c609d48a6e749d1"
+    },
+    {
+      "id": "BG02-F05-C02-V05",
+      "referenceId": "BG02-F05-C02-V01",
+      "code": "BG02",
+      "design": "F05",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F05-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F05-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-2e5a2899-6c59-4a7b-a4cd-dd5b3a201bd2.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "722d5d759223e965e8698b6cc3e63edf28b1b1a1d739693cb262b3aed94aff40",
+      "referenceIds": [
+        "BG02-F05-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          154,
+          85,
+          1173,
+          1217
+        ],
+        "marginsPx": [
+          154,
+          85,
+          81,
+          37
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "456fa010a483a6dae26e82700be81dd1abbe389591df998815ea0d69c3b1136f"
+    },
+    {
+      "id": "BG02-F05-C03-V05",
+      "referenceId": "BG02-F05-C03-V01",
+      "code": "BG02",
+      "design": "F05",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F05-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F05-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-c4382c43-ee39-435b-9007-a25350ea61eb.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9d489bd61e07f8e6c8658864d3a4a97efa386093c3134e6cc8ea4187782ca921",
+      "referenceIds": [
+        "BG02-F05-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          166,
+          94,
+          1168,
+          1199
+        ],
+        "marginsPx": [
+          166,
+          94,
+          86,
+          55
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "939d32fb40a1fd3662ff849349966e624b1402ae965846244cd445fa5c0211e6"
+    },
+    {
+      "id": "BG02-F05-C04-V05",
+      "referenceId": "BG02-F05-C04-V01",
+      "code": "BG02",
+      "design": "F05",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F05-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F05-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-99a2c037-0c7b-46da-83f4-0b2e0aa3e0c7.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6dd15f9e9cc47334ef5b302f1f2b4dc4223da33f62db8e55551f807e1dcab7b8",
+      "referenceIds": [
+        "BG02-F05-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          171,
+          80,
+          1174,
+          1203
+        ],
+        "marginsPx": [
+          171,
+          80,
+          80,
+          51
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "7d6cd32a584e84e79612657d67f51cd3b60399b54539418057277cd31660ceb6"
+    },
+    {
+      "id": "BG02-F06-C01-V05",
+      "referenceId": "BG02-F06-C01-V01",
+      "code": "BG02",
+      "design": "F06",
+      "color": "C01",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F06-C01-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F06-C01-V05; output art contains no text.",
+      "generatedFilename": "exec-133d20f8-4e9e-4dae-bd07-60402cd9c6a8.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e3653ed177b95d96b07693751743d3b17b191c7de3f273f438067464df61a870",
+      "referenceIds": [
+        "BG02-F06-C01-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          122,
+          98,
+          1170,
+          1203
+        ],
+        "marginsPx": [
+          122,
+          98,
+          84,
+          51
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "5c6de340b26c68acaf0ffbac705a01b12f6ff6451bfa9f4db76f51a4693ff0cb"
+    },
+    {
+      "id": "BG02-F06-C02-V05",
+      "referenceId": "BG02-F06-C02-V01",
+      "code": "BG02",
+      "design": "F06",
+      "color": "C02",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F06-C02-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F06-C02-V05; output art contains no text.",
+      "generatedFilename": "exec-b9e2692d-a5ec-4623-bb8b-2625ad8efc51.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3edd529e9f74f04068f9d17a4cc76c0bf57601cd5eb01b38d2f8183df269c2fa",
+      "referenceIds": [
+        "BG02-F06-C02-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          98,
+          85,
+          1180,
+          1202
+        ],
+        "marginsPx": [
+          98,
+          85,
+          74,
+          52
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "90fb353df4c8d8ef83318b610bfd49574ededee0f6112c6cd24fc34e16a418ec"
+    },
+    {
+      "id": "BG02-F06-C03-V05",
+      "referenceId": "BG02-F06-C03-V01",
+      "code": "BG02",
+      "design": "F06",
+      "color": "C03",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F06-C03-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F06-C03-V05; output art contains no text.",
+      "generatedFilename": "exec-2d711200-043c-4c60-a730-fe9e804bd25d.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "21ce7975a2b8c3a28c9bcac1143dfd145963a1b0dc547d03f6e614e07b202aca",
+      "referenceIds": [
+        "BG02-F06-C03-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          115,
+          131,
+          1202,
+          1200
+        ],
+        "marginsPx": [
+          115,
+          131,
+          52,
+          54
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "a772f1a5869818c1dbdf8bc0fa24fb30b529622fafe7e4269ded9f3ecf56a216"
+    },
+    {
+      "id": "BG02-F06-C04-V05",
+      "referenceId": "BG02-F06-C04-V01",
+      "code": "BG02",
+      "design": "F06",
+      "color": "C04",
+      "version": "V05",
+      "tool": "built-in image_gen",
+      "route": "style_edit_from_own_V01",
+      "src": "source-assets/set-review-v01/BG02-F06-C04-V05.png",
+      "prompt": "Use case: style-transfer / precise-object-edit.\nThe attached complete transparent plant PNG is the EDIT TARGET. Create the same plant in a MUCH MORE ABSTRACT, BEAUTIFUL FANTASY OIL-PAINTING style.\nThis is a strong style change, not mild smoothing. Use large expressive gestural brush marks THREE TO FIVE TIMES BROADER than in the reference, with almost no fine parallel texture lines: broad sweeping impasto petals, thick soft buttery paint, generous palette-knife planes and expressive broken edges. Simplify each leaf to a few large green/olive color planes; REMOVE visible leaf veins, hairline texture, botanical engraving, photorealistic surface detail and glossy CGI rendering. Shape and light should read as bold painted masses, with deliberate expressive abstraction throughout both flower and leaves. Keep it graceful and luminous, never muddy.\nPreserve exactly this design's recognizable whole-plant silhouette, head count, natural pose/orientation, flower family, petal COLOR FAMILY and lighting direction/temperature. Keep stems and foliage in their original natural green/brown family. Flowers are clearly readable and main heads stay attached to the same stems/leaves; no detached petals or floating fragments. Do not introduce a different flower design or extra branches.\nONE WHOLE INDEPENDENT PLANT on a genuine transparent alpha background. Entire head(s), all leaf tips and cleanly finished stem bottom inside canvas, leave AT LEAST TWELVE TO TWENTY PERCENT EMPTY TRANSPARENT PADDING on every side. The whole plant must occupy only the CENTRAL 65-75% of the square, visibly smaller than the input, with every leaf well away from all four edges. Shrink plant within canvas as necessary. Square canvas, native size at least 1024 pixels. No soil, ground plane, pot, cast floor shadow, backdrop, painted checkerboard, text, label, number, border or watermark. No sprite sheet and no multiple views. This is BG02-F06-C04-V05; output art contains no text.",
+      "generatedFilename": "exec-5f55e189-2b20-4a1b-a8a7-f60ca2e5dc58.png",
+      "visualReview": {
+        "status": "pass",
+        "checks": [
+          "Whole independent plant with finished stem and complete leaf tips",
+          "Flower heads remain attached to stems and foliage",
+          "Reference pose, design family and close color family retained",
+          "Broader expressive impasto petals and simplified leaf color planes",
+          "Genuine transparent PNG without ground or pot"
+        ],
+        "method": "individual source and generated-output inspection plus final theme contact sheet"
+      },
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b2529b407a981e9aaa5f113435692ad6c67b4701ad18a61449c44f5e50a1da7e",
+      "referenceIds": [
+        "BG02-F06-C04-V01"
+      ],
+      "verification": {
+        "rgba": true,
+        "alpha": true,
+        "alphaThreshold": 8,
+        "visibleBounds": [
+          77,
+          98,
+          1189,
+          1196
+        ],
+        "marginsPx": [
+          77,
+          98,
+          65,
+          58
+        ],
+        "borderClear": true,
+        "nativeOutputByteIdentical": true,
+        "complete": true
+      },
+      "referenceSha256": "6314fb162967e828efad9c74b1ed93ede72316be1439ad157888015fd137f739"
+    }
+  ],
+  "status": "complete: 36 individual V05 assets, numeric and visual QA passed",
+  "scope": {
+    "BG01": "F01-F06 x C01-C04 (24)",
+    "BG02": "F04-F06 x C01-C04 (12)",
+    "excludedTransferredScope": "BG02 F01-F03 owned and recorded separately by root"
+  },
+  "actualMinimumVisibleMarginPx": 16,
+  "qaNote": "Requested 12 percent padding is a generation instruction; actual margins measured separately at alpha threshold 8. All assets meet minimum 8px. Native generated bytes preserved."
+}

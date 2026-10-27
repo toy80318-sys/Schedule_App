@@ -1,0 +1,473 @@
+{
+  "version": "V05",
+  "assets": [
+    {
+      "id": "BG02-F01-C01-V05",
+      "generationPrompt": "Use case: style-transfer. Edit this ONE transparent complete flower sprite into a substantially more ABSTRACT, expressive oil painting. Keep the exact established flower design, overall silhouette, front-facing open marigold-like head, connected central stem and leaves, sunny daytime lighting and the SAME petal color of THIS input. Change the picture style only. Use very broad confident gestural palette-knife paint marks, thick soft luminous impasto and large simplified color planes. Each petal should be suggested by a few broad marks instead of many hairline striations. Leaf blades should be masses of sage/olive paint with NO detailed vein network. Simplify the flower center into rich ochre/golden paint daubs. Beautiful, dreamy and painterly, not glossy 3D/photographic, not a fine-texture oil filter. Keep this a single beautiful complete attached flower/plant, with no extra blooms or new objects. Center the WHOLE object, including full stem base and ALL leaf tips, inside the frame with about12% transparent empty margin on every side. Absolutely no touching or clipping image edges, stray painted specks near frame, backdrop, ground patch, shadow rectangle, text or checkerboard. REAL TRANSPARENT RGBA background, do not paint a fake black/white/gray/checkerboard background. Keep same square canvas approx1254x1254.",
+      "referenceIds": [
+        "BG02-F01-C01-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-5e1d8711-74da-4d89-b9aa-e9132a59e502.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1941089,
+      "sha256": "e59bfd2f61fc6d9c69b8211893c66a6650519ab57b6c6ccfc6945de67e43329b",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          114,
+          56,
+          1184,
+          1220
+        ],
+        "transparentMarginsPx": [
+          114,
+          56,
+          70,
+          34
+        ],
+        "fullyTransparentFraction": 0.479968,
+        "lowAlphaPixelsBelowThreshold": 67987,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F01-C02-V05",
+      "generationPrompt": "Use case: style-transfer. Edit this ONE transparent complete flower sprite into a substantially more ABSTRACT, expressive oil painting. Keep the exact established flower design, overall silhouette, front-facing open marigold-like head, connected central stem and leaves, sunny daytime lighting and the SAME petal color of THIS input. Change the picture style only. Use very broad confident gestural palette-knife paint marks, thick soft luminous impasto and large simplified color planes. Each petal should be suggested by a few broad marks instead of many hairline striations. Leaf blades should be masses of sage/olive paint with NO detailed vein network. Simplify the flower center into rich ochre/golden paint daubs. Beautiful, dreamy and painterly, not glossy 3D/photographic, not a fine-texture oil filter. Keep this a single beautiful complete attached flower/plant, with no extra blooms or new objects. Center the WHOLE object, including full stem base and ALL leaf tips, inside the frame with about12% transparent empty margin on every side. Absolutely no touching or clipping image edges, stray painted specks near frame, backdrop, ground patch, shadow rectangle, text or checkerboard. REAL TRANSPARENT RGBA background, do not paint a fake black/white/gray/checkerboard background. Keep same square canvas approx1254x1254.",
+      "referenceIds": [
+        "BG02-F01-C02-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-42b821f3-980a-42b8-b67d-8366512f0c18.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1909262,
+      "sha256": "f0d14dfc41442081d380c9763b1726e6927964cc6b90de8106231db9d2042336",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          104,
+          58,
+          1177,
+          1227
+        ],
+        "transparentMarginsPx": [
+          104,
+          58,
+          77,
+          27
+        ],
+        "fullyTransparentFraction": 0.478113,
+        "lowAlphaPixelsBelowThreshold": 63959,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F01-C03-V05",
+      "generationPrompt": "Use case: style-transfer. Edit this ONE transparent complete flower sprite into a substantially more ABSTRACT, expressive oil painting. Keep the exact established flower design, overall silhouette, front-facing open marigold-like head, connected central stem and leaves, sunny daytime lighting and the SAME petal color of THIS input. Change the picture style only. Use very broad confident gestural palette-knife paint marks, thick soft luminous impasto and large simplified color planes. Each petal should be suggested by a few broad marks instead of many hairline striations. Leaf blades should be masses of sage/olive paint with NO detailed vein network. Simplify the flower center into rich ochre/golden paint daubs. Beautiful, dreamy and painterly, not glossy 3D/photographic, not a fine-texture oil filter. Keep this a single beautiful complete attached flower/plant, with no extra blooms or new objects. Center the WHOLE object, including full stem base and ALL leaf tips, inside the frame with about12% transparent empty margin on every side. Absolutely no touching or clipping image edges, stray painted specks near frame, backdrop, ground patch, shadow rectangle, text or checkerboard. REAL TRANSPARENT RGBA background, do not paint a fake black/white/gray/checkerboard background. Keep same square canvas approx1254x1254.",
+      "referenceIds": [
+        "BG02-F01-C03-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-3e7fcd97-a388-4ecf-b843-9c8d3dd67593.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1944981,
+      "sha256": "d793a9c5c859743efcac78937ec660a77e847b15d402c70773286f3c415bd6cc",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          116,
+          51,
+          1177,
+          1220
+        ],
+        "transparentMarginsPx": [
+          116,
+          51,
+          77,
+          34
+        ],
+        "fullyTransparentFraction": 0.489216,
+        "lowAlphaPixelsBelowThreshold": 74870,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F01-C04-V05",
+      "generationPrompt": "Use case: style-transfer. Edit this ONE transparent complete flower sprite into a substantially more ABSTRACT, expressive oil painting. Keep the exact established flower design, overall silhouette, front-facing open marigold-like head, connected central stem and leaves, sunny daytime lighting and the SAME petal color of THIS input. Change the picture style only. Use very broad confident gestural palette-knife paint marks, thick soft luminous impasto and large simplified color planes. Each petal should be suggested by a few broad marks instead of many hairline striations. Leaf blades should be masses of sage/olive paint with NO detailed vein network. Simplify the flower center into rich ochre/golden paint daubs. Beautiful, dreamy and painterly, not glossy 3D/photographic, not a fine-texture oil filter. Keep this a single beautiful complete attached flower/plant, with no extra blooms or new objects. Center the WHOLE object, including full stem base and ALL leaf tips, inside the frame with about12% transparent empty margin on every side. Absolutely no touching or clipping image edges, stray painted specks near frame, backdrop, ground patch, shadow rectangle, text or checkerboard. REAL TRANSPARENT RGBA background, do not paint a fake black/white/gray/checkerboard background. Keep same square canvas approx1254x1254.",
+      "referenceIds": [
+        "BG02-F01-C04-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-effcc126-6bca-43e9-b58d-76467ea2ecdd.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1983401,
+      "sha256": "828b8977babfcbadb7a8403164a13b5aa9d4c9a2bd0d793c7945741fca28e3c2",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          123,
+          51,
+          1185,
+          1221
+        ],
+        "transparentMarginsPx": [
+          123,
+          51,
+          69,
+          33
+        ],
+        "fullyTransparentFraction": 0.478886,
+        "lowAlphaPixelsBelowThreshold": 73028,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F02-C01-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F02-C01-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-683a7601-89e8-4e26-8b5d-f05c51a173a8.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1592790,
+      "sha256": "94811e6a3ec5fa0131735926d8bb8cd957029e7a376b7ac0c94ba373c0673aa6",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          139,
+          49,
+          1108,
+          1228
+        ],
+        "transparentMarginsPx": [
+          139,
+          49,
+          146,
+          26
+        ],
+        "fullyTransparentFraction": 0.594067,
+        "lowAlphaPixelsBelowThreshold": 57308,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F02-C02-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F02-C02-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-81470969-382e-420c-a3ff-e0a84b0681b8.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1616292,
+      "sha256": "d161c671a168dd712a59bad7876834b8c7743126ea24d35a2bb3cda74e566a09",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          133,
+          53,
+          1110,
+          1226
+        ],
+        "transparentMarginsPx": [
+          133,
+          53,
+          144,
+          28
+        ],
+        "fullyTransparentFraction": 0.5976,
+        "lowAlphaPixelsBelowThreshold": 50925,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F02-C03-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F02-C03-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-80acb287-6557-4121-b161-dd5ebaeec32d.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1627412,
+      "sha256": "acd71f672e8aa8c227b6092d5e82ae85354688ab9b21b1547597bd04b680e8a7",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          145,
+          47,
+          1139,
+          1222
+        ],
+        "transparentMarginsPx": [
+          145,
+          47,
+          115,
+          32
+        ],
+        "fullyTransparentFraction": 0.572509,
+        "lowAlphaPixelsBelowThreshold": 64096,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F02-C04-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F02-C04-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-a138cecf-0c64-436d-aac4-f20b5c1830a7.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1596489,
+      "sha256": "daf95cf2714eede0ac0f8f482ab8ea26b88c523aea215977b61463f2daba99bf",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          141,
+          36,
+          1124,
+          1234
+        ],
+        "transparentMarginsPx": [
+          141,
+          36,
+          130,
+          20
+        ],
+        "fullyTransparentFraction": 0.579773,
+        "lowAlphaPixelsBelowThreshold": 61933,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F03-C01-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F03-C01-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-32f165bb-05b9-4fee-907c-3aec7feac46e.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1866085,
+      "sha256": "71fd325f03640155de48b01a3f271fb1d78c8fe01e653e55ce64f282105ebaa0",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          160,
+          59,
+          1185,
+          1237
+        ],
+        "transparentMarginsPx": [
+          160,
+          59,
+          69,
+          17
+        ],
+        "fullyTransparentFraction": 0.523819,
+        "lowAlphaPixelsBelowThreshold": 91203,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F03-C02-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F03-C02-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-9d553780-5afe-443a-b46c-d14a94900681.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1801474,
+      "sha256": "0c2a47c32a70429b5abb6ef45dfb4a177ff01fbd96e0b3bafd8888bde6dd18b4",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          148,
+          61,
+          1186,
+          1224
+        ],
+        "transparentMarginsPx": [
+          148,
+          61,
+          68,
+          30
+        ],
+        "fullyTransparentFraction": 0.534673,
+        "lowAlphaPixelsBelowThreshold": 63143,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F03-C03-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F03-C03-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-fc4a7499-2f63-4d72-9c60-390812992c31.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1812874,
+      "sha256": "ef1ee68fb8f0a031d33751a1417fbc414a9986e7d1be6885c6bade24f336c382",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          159,
+          63,
+          1178,
+          1233
+        ],
+        "transparentMarginsPx": [
+          159,
+          63,
+          76,
+          21
+        ],
+        "fullyTransparentFraction": 0.536455,
+        "lowAlphaPixelsBelowThreshold": 66456,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    },
+    {
+      "id": "BG02-F03-C04-V05",
+      "generationPrompt": "Use case: style-transfer. Transform this ONE complete transparent flower plant sprite into a MUCH MORE ABSTRACT expressive oil painting, with broad gestural palette-knife strokes and large simplified impasto color planes. Preserve the SAME flower design, number of existing heads/buds, head angle, entire connected stem and leaves, petal color and sunny daylight of THIS input. Change art style only. Retain the clear recognizable silhouette; do not invent a different plant. Paint petals with a few broad confident strokes and thick soft edge breaks, flower center as golden paint daubs, leaves as generous sage/olive paint shapes rather than vein networks. Remove fine hairline textures, photographic veins, glossy CGI smoothness and fussy detail. Beautiful magical painterly garden sprite, not an oil filter. Keep ALL leaf tips, complete stem base and all blooms inside the canvas, centered with generous12-15% empty transparent padding on all sides. No clipping or painted specks at outer edges. No ground, background, frame, text or fake checkerboard. REAL TRANSPARENT RGBA background. Same square approx1254x1254 canvas.",
+      "referenceIds": [
+        "BG02-F03-C04-V01"
+      ],
+      "tool": "built-in image_gen",
+      "generatedFile": "exec-61b92d14-dbd0-471a-a572-87f74a61f371.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1848806,
+      "sha256": "88e0877018ef3139f0680dba1402e2a90b6d5b389e2b3fff8955cf2021cac50e",
+      "verification": {
+        "alpha": true,
+        "borderClear": true,
+        "complete": true,
+        "technicalOnly": true,
+        "status": "technical_pass",
+        "visualMatch": "pending_manual_review",
+        "alphaThreshold": 8,
+        "minimumTransparentMarginPx": 8,
+        "visibleBounds": [
+          145,
+          53,
+          1187,
+          1226
+        ],
+        "transparentMarginsPx": [
+          145,
+          53,
+          67,
+          28
+        ],
+        "fullyTransparentFraction": 0.513047,
+        "lowAlphaPixelsBelowThreshold": 84986,
+        "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+      },
+      "visualReview": "Broad impasto/color planes, original connected whole plant and lighting retained; no clipped edges."
+    }
+  ]
+}

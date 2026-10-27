@@ -5,9 +5,9 @@
   const pages = [
     ['index.html', '메인'], ['library.html', '자료실'], ['abstract-world-v44.html', '추상 유화 전체'], ['all-images.html', '전체 이미지'],
     ['oil-art.html', '통합 유화'], ['set-review.html', '배경별 세트·비교'], ['source-cutouts.html', '완성형 객체·배치'], ['lighting-sets.html', '배경·조명'],
-    ['oil-sources.html', 'PNG·추가 소스'], ['editor.html', '에디터'], ['old.html', '올드']
+    ['flower-shapes.html', '꽃 4변형'], ['oil-sources.html', 'PNG·추가 소스'], ['editor.html', '에디터'], ['old.html', '올드']
   ];
-  const oldPages = ['layers-v55.html', 'layers.html', 'all-images-old.html', 'abstract-flowers-v43.html', 'single-flowers.html', 'scene-loops.html',
+  const oldPages = ['flower-shapes-v80.html', 'layers-v55.html', 'layers.html', 'all-images-old.html', 'abstract-flowers-v43.html', 'single-flowers.html', 'scene-loops.html',
     'generation-v38.html', 'generation-v40.html', 'production.html', 'ambient-loops.html', 'ambient-inplace.html', 'cloud-sample.html'];
   const isOld = oldPages.includes(page) || /-archive\.html$/.test(page);
   const bar = document.createElement('div');

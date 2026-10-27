@@ -28,3 +28,8 @@ PCG 설정은 생성된 일반 오브젝트의 `procedural.params`에 저장됩�
 게임 분위기 v82는 `player.js`에서 앞·초점면·뒤의 세 깊이 입자, 제한된 구름 이동, 뿌리를 고정한 꽃·풀의 서로 다른 흔들림을 처리합니다. `player.html`의 `#atmosphereControls`는 `#viewport` 안의 `#stage` 바깥에 두어 독립 화면과 iframe 모두에서 보이고 꽃 터치 입력과 분리됩니다. `atmosphereRichness`·`atmosphereFocus`·`atmosphereWind`는 게임 실행 설정이며 에디터 배치·PNG 원본·저장 JSON을 변경하지 않습니다. `build_player_embed.py`로 같은 조절판과 의존성을 iframe 템플릿에 재현하며 `tests/game-embed.test.cjs`에서 구조와 버전 일치를 확인합니다. 실제 개화 애니메이션은 별도 제작 범위입니다.
 
 밝은 배경 전용 v83은 `set-review-catalog.js`가 선택 목록·배경 카드·원본 링크를 최신 4종으로 등록하고 `backgroundReplacements`에 삭제된 등록 URL의 정확한 대응표를 만듭니다. `app.js`는 자동 복원·파일/저장본 불러오기·배경 API·실행 취소에서 이를 사용하며 사용자 배경 URL은 추측하지 않습니다. 시작 교체는 새 이미지 준비와 이전 작업 백업 커밋을 확인한 뒤 진행합니다. 실패 복구 경로만 이전 URL을 그대로 보존합니다.
+
+
+## 배경 기준 추상 유화 꽃 v83
+
+`scene-flower-catalog.js`는 통합 장면 4장을 참고해 제작한 꽃 48종(12종 × 4형태)을 등록합니다. 기존 120종 원본과 저장 배치는 유지하며, 이전 형태 12종의 ID는 새 A형 원본으로 연결합니다. PCG 추천은 새 형태를 우선하고 조명이 반전되지 않도록 원본 방향을 사용합니다. `flower-shapes.html`에서 기준 장면·4형태·원본을 비교하고 에디터 ZIP으로 내려받을 수 있습니다. 새 소스는 정지 이미지이며 기존 개화 영상을 연결하지 않습니다.

@@ -1,0 +1,12 @@
+(()=>{'use strict';
+ const $=id=>document.getElementById(id),dialog=$('zoom'),labels={camellia:'동백',marigold:'금잔화',buckwheat:'메밀꽃',canola:'유채꽃',hydrangea:'수국',lavender:'라벤더'},poses={A:'정면 · 밝은 인접색',B:'좌향 · 따뜻한 인접색',C:'우향 · 시원한 인접색',D:'비대칭 · 깊은 인접색'};
+ $('closeZoom').onclick=()=>dialog.close();
+ function picture(a,master=false){const b=document.createElement('button'),im=document.createElement('img');b.className=master?'master-button':'image-button';b.type='button';b.setAttribute('aria-label',a.name+' 확대');im.src=a.src;im.alt=a.name;im.loading='lazy';im.decoding='async';if(master)im.className='master';b.append(im);b.onclick=()=>{$('zoomImage').src=a.src;$('zoomImage').alt=a.name;$('zoomTitle').textContent=a.name;$('zoomOriginal').href=a.src;dialog.showModal()};return b}
+ function link(a){const el=document.createElement('a');el.href=a.src;el.target='_blank';el.rel='noopener';el.textContent='PNG 원본 ↗';return el}
+ (async()=>{try{const r=await fetch('assets/scene-flowers-v83/manifest.json?v=83');if(!r.ok)throw Error('이미지 목록을 불러오지 못했습니다.');const data=await r.json();
+  for(const [theme,label] of [['sunset','노을'],['day','낮'],['night','달빛'],['morning','아침']]){const section=document.createElement('section');section.id=theme;const h=document.createElement('h2');h.textContent=label+' · 배경과 꽃';section.append(h);const master=data.scenes.find(a=>a.theme===theme);section.append(picture(master,true),link(master));
+   for(const kind of [...new Set(data.assets.filter(a=>a.theme===theme).map(a=>a.species))]){const article=document.createElement('article');article.className='flowers';const title=document.createElement('h3');title.textContent=labels[kind]+' · 비슷한 색상, 다른 네 형태';const grid=document.createElement('div');grid.className='variants';
+    for(const a of data.assets.filter(a=>a.theme===theme&&a.species===kind)){const cell=document.createElement('div');cell.className='variant';const name=document.createElement('p');name.textContent=a.shape+' · '+poses[a.shape];const note=document.createElement('p');note.className='meta';note.textContent=a.backgroundId+' / '+a.lightingId+' · '+a.width+'×'+a.height;const file=document.createElement('p');file.className='filename';file.textContent=a.file;cell.append(picture(a),name,note,link(a),file);grid.append(cell)}article.append(title,grid);section.append(article)}$('gallery').append(section)}
+  $('status').textContent='통합 장면 4장 + 꽃 12종 × 4변형 = PNG 48장';
+ }catch(e){$('status').textContent=e.message}})();
+})();

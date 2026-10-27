@@ -14,7 +14,7 @@
  function pools(state){
   const key=theme(state),all=state.assets.filter(a=>a.theme===key&&a.completeObject&&a.ready!==false&&a.src&&!a.legacyFlower&&!a.referenceOnly),unique=list=>[...new Map(list.map(a=>[a.src,a])).values()],version=a=>Number((a.setReviewVersion||'').slice(1))||0;
   const flowers=unique(all.filter(a=>a.group==='flowers')),grass=unique(all.filter(a=>['grass','leaf'].includes(a.category)&&!rear(a))),rocks=unique(all.filter(a=>(['basalt','rock'].includes(a.category)||/-rocks-/.test(a.id))&&!rear(a)));
-  const preferred=list=>{const latest=Math.max(0,...list.map(version));return list.filter(a=>!latest||version(a)===latest).map(a=>a.id)};
+  const preferred=list=>{const style=Math.max(0,...list.map(a=>a.artStyleVersion||0)),latest=Math.max(0,...list.map(version));return list.filter(a=>!a.catalogHidden&&(style?a.artStyleVersion===style:!latest||version(a)===latest)).map(a=>a.id)};
   const props=unique(all.filter(a=>['tree','branch','cloud','butterfly','bird','particle','mist'].includes(a.category)&&/\.(png|webp)(?:[?#]|$)/i.test(a.src)));
   return{theme:key,flowers,grass,rocks,props,preferred:{assetIds:preferred(flowers),grassIds:preferred(grass),rockIds:preferred(rocks),propIds:preferred(props)}};
  }
@@ -36,7 +36,7 @@
   function add(a,x,t,k){
    const factor=(1+(rand()*2-1)*p.variation/100)*(.95+clamp(t,0,1)*.1),w=Math.min(size*factor*(k==='grass'?1.05:k==='rock'?1.25:1),p.shape==='path'?Infinity:area.w*.7),h=w*(Number.isFinite(a.height/a.width)?a.height/a.width:1),r=(rand()*2-1)*p.rotation,angle=r*Math.PI/180,margin=Math.min(area.w/2,w/2+Math.abs(Math.sin(angle))*h);
    const rootX=p.shape==='rectangle'?clamp(area.x+x*area.w,area.x+margin,area.x+area.w-margin):area.x+x*area.w,rootY=area.y+t*area.h;
-   objects.push({id:uid(),assetId:a.id,name:a.name,x:rootX+Math.sin(angle)*h/2-w/2,y:rootY-Math.cos(angle)*h/2-h/2,w,h,baseW:w,baseH:h,aspect:w/h,r,flipX:rand()<.5,opacity:1,motion:'stationary',groupId:id,groupName:name,procedural:meta,...(k==='grass'&&t>.7&&p.nearBlur?{blur:p.nearBlur}:{}),pcgRootY:rootY});
+   objects.push({id:uid(),assetId:a.id,name:a.name,x:rootX+Math.sin(angle)*h/2-w/2,y:rootY-Math.cos(angle)*h/2-h/2,w,h,baseW:w,baseH:h,aspect:w/h,r,flipX:a.artStyleVersion?false:rand()<.5,opacity:1,motion:'stationary',groupId:id,groupName:name,procedural:meta,...(k==='grass'&&t>.7&&p.nearBlur?{blur:p.nearBlur}:{}),pcgRootY:rootY});
   }
   function position(i,total,kind){
    if(p.shape==='path'){const point=C.along(line,distances,(i+.15+rand()*.7)/total*distances.at(-1)),offset=(rand()+rand()-1)*p.spread/2;return{x:(point.x+point.nx*offset-area.x)/area.w,y:(point.y+point.ny*offset-area.y)/area.h}}

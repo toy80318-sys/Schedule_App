@@ -55,7 +55,7 @@
   }
   function card(a,wide=false){
     const article=el('article','asset-card'),button=el('button','asset-image'+(wide?' wide':' checker')),copy=el('div','asset-copy'),im=el('img');
-    button.type='button';button.setAttribute('aria-label',(a.name||a.id)+' 원본 크게 보기');im.alt=a.name||a.id;im.loading='lazy';im.decoding='async';if(a.src)im.src=a.preview||a.src;else button.disabled=true;
+    button.type='button';button.setAttribute('aria-label',(a.name||a.id)+' 원본 크게 보기');im.alt=a.name||a.id;im.loading='lazy';im.decoding='async';if(a.src)im.src=window.jejuWebPreviews?.[a.src]||a.preview||a.src;else button.disabled=true;
     const check=structuralCheck(a),checkNode=el('p','asset-status '+check.state,check.label);
     im.onerror=()=>{imageFailures.set(a.id,a.src);checkNode.className='asset-status failed';checkNode.textContent='이미지 불러오기 실패 · 원본 경로 확인 필요';};
     im.onload=()=>{imageFailures.delete(a.id);const current=structuralCheck(a);checkNode.className='asset-status '+current.state;checkNode.textContent=current.label;};
@@ -157,7 +157,7 @@
     const set=manifest.backgrounds.find(s=>s.id===id)||manifest.backgrounds[0];selected=set;showCategory(tab);
     for(const b of $('backgroundTabs').children){const active=b.dataset.theme===set.id;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;}
     $('reviewContent').setAttribute('aria-labelledby','background-tab-'+set.id);$('setCode').textContent=[set.projectVersion&&set.projectVersion+' 배치',(manifest.assetVersion||manifest.version)+' PNG',set.code].filter(Boolean).join(' · ');$('setTitle').textContent=set.label+' 세트';$('setSummary').textContent=`꽃 ${set.flowers.filter(a=>a.src).length} / ${(set.flowerDesigns?.length||6)*4}장 · 환경 요소 ${set.environment.filter(a=>a.src).length}장 · 통합 ${set.integrated.length}개 버전`;
-    $('openSetElements').href='editor.html?v=20261028-v86r2&'+(['V85','V86'].includes(set.projectVersion)?'currentSet=':'setV05=')+set.id;
+    $('openSetElements').href='editor.html?v=20261028-v87&'+(['V85','V86'].includes(set.projectVersion)?'currentSet=':'setV05=')+set.id;
     fillProjectVersions(set);
     fillReference(set);fillRenderBackground(set);fillBackgrounds(set);fillFlowers(set);fillEnvironment(set);showScreenshot(set);document.title='메이즈랜드 · '+set.label+' 버전 비교';status('loadStatus','원본은 보존됩니다. 검토 상태와 메모는 이 브라우저에 저장되며, 검증 기준 JSON으로 내보낼 수 있습니다.');renderProject();
   }

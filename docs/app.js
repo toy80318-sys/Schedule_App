@@ -4,7 +4,7 @@
   let lightPreview=true;
   const currentPreviews=new Map(window.jejuFinalCatalog.assets.filter(a=>a.imageStyleVersion>=43).map(a=>[a.src,a.imageStyleVersion>=55?a.preview:a.thumb]));
   const sourceRegistered=new Set(window.jejuFinalCatalog.assets.filter(a=>a.completeObject||a.sourceRect?.length===4||a.category==='background'&&a.imageStyleVersion>=56).map(a=>a.src));
-  const displaySrc=(src,kind="preview")=>kind==="preview"&&sourceRegistered.has(src)?src:currentPreviews.get(src)||(src?.startsWith('https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/')&&src.endsWith('.png')?src.replace(/\.png$/,'.webp'):kind==="preview"&&src?.startsWith('/assets/background/')?src:optimizedImages[src?.split("?")[0]]?.[kind==="preview"&&lightPreview?"light":kind]||src);
+  const displaySrc=(src,kind="preview")=>kind==="thumb"&&window.jejuWebPreviews?.[src]||(kind==="preview"&&sourceRegistered.has(src)?src:currentPreviews.get(src)||(src?.startsWith('https://lixkizqprsbnsnozwbpa.supabase.co/storage/v1/object/public/jeju-maze-v14/')&&src.endsWith('.png')?src.replace(/\.png$/,'.webp'):kind==="preview"&&src?.startsWith('/assets/background/')?src:optimizedImages[src?.split("?")[0]]?.[kind==="preview"&&lightPreview?"light":kind]||src));
   const W=14165,H=3480,$=id=>document.getElementById(id);
   const els={view:$('view'),wall:$('wall'),layers:$('layers'),items:$('items'),zoom:$('zoomLabel'),count:$('layerCount')};
   const species=[['hydrangea','수국'],['lavender','라벤더'],['rapeseed','유채꽃'],['buckwheat','메밀꽃'],['marigold','금잔화'],['camellia','동백꽃']];

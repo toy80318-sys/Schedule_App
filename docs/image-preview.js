@@ -34,7 +34,7 @@
       const link = target.closest('a');
       const original = link && /^(https?:|file:)$/.test(link.protocol) && /\.(png|jpe?g|webp|gif|avif|svg)([?#].*)?$/i.test(link.href);
       image.alt = title.textContent;
-      image.src = original ? link.href : target.currentSrc || target.src;
+      image.src = target.getAttribute('data-original-src') || (original ? link.href : target.currentSrc || target.src);
     } else {
       const css = getComputedStyle(target);
       for (const key of ['backgroundImage', 'backgroundPosition', 'backgroundSize', 'backgroundColor', 'filter']) sprite.style[key] = css[key];

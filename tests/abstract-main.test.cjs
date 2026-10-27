@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const read=n=>fs.readFileSync(require.resolve('../docs/'+n),'utf8');
-const sceneManifest=JSON.parse(read('assets/current-release-v86/manifest.json'));
+const sceneManifest=JSON.parse(read('assets/web-v87/collection.json'));
 const mainCode=[...read('index.html').matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('const scenes='));
 function main(search=''){
  const elements=new Map(),urls=[],classes=[];const get=id=>{if(!elements.has(id))elements.set(id,{children:[],style:{},parentElement:{style:{}},append(v){this.children.push(v)},setAttribute(k,v){this[k]=v}});return elements.get(id)};
@@ -8,8 +8,8 @@ function main(search=''){
  vm.runInNewContext(mainCode,sandbox);return {get,urls,classes};
 }
 let page=main('?embed=1&theme=night');assert(page.classes.includes('embed'));assert(page.get('garden').alt.includes('추상 유화'));
-for(const b of page.get('themes').children){b.onclick();const e=sceneManifest.scenes.find(e=>e.id===b.dataset.theme);assert.equal(page.get('garden').src,e.integrated.src);assert.equal(page.get('garden').parentElement.style.aspectRatio,'2169/725');assert.equal(b['aria-pressed'],'true');assert(page.urls.at(-1).includes('theme='+b.dataset.theme));}
-page=main('?theme=unknown');assert(page.get('garden').src.includes('BG01'));assert(!read('index.html').includes('_20261021_v19'));assert(read('index-v19-archive.html').includes('_20261021_v19'));
+for(const b of page.get('themes').children){b.onclick();const e=sceneManifest.scenes.find(e=>e.id===b.dataset.theme);assert.equal(page.get('garden').src,e.integrated.preview);assert.equal(page.get('garden')['data-original-src'],e.integrated.src);assert.equal(page.get('garden').parentElement.style.aspectRatio,'2169/725');assert.equal(b['aria-pressed'],'true');assert(page.urls.at(-1).includes('theme='+b.dataset.theme));}
+page=main('?theme=unknown');assert.equal(page.get('garden').src,sceneManifest.scenes[0].integrated.preview);assert(!read('index.html').includes('_20261021_v19'));assert(read('index-v19-archive.html').includes('_20261021_v19'));
 const catalogSandbox={window:{}};vm.runInNewContext(read('catalog-data.js'),catalogSandbox);const catalog=catalogSandbox.window.jejuFinalCatalog;
 assert.equal(catalog.sourceFiles.length,104);assert(catalog.sourceFiles.every(f=>/\.png$/.test(f.relativePath)&&/\/(?:release-20261022-v44|release-20261023-v49|release-20261025-v54|abstract-flowers-v43)\//.test(f.stablePreviewUrl)));
 const app=read('app.js'),registerCode=app.slice(app.indexOf('function registerCatalog'),app.indexOf('function replaceSelection'));

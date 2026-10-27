@@ -166,7 +166,7 @@
   bindTabKeyboard($('backgroundTabs'),'[role=tab]');bindTabKeyboard(document.querySelector('.category-tabs'),'[role=tab]');window.addEventListener('hashchange',route);
   window.JejuSetReview={validateManifest,getAudit:audit};
   (async()=>{
-    try{const response=await fetch('assets/set-review-v01/manifest.json');if(!response.ok)throw Error('세트 목록을 불러오지 못했습니다.');manifest=validateManifest(await response.json());$('releaseVersion').textContent=manifest.version+' · '+(manifest.date||'2026.10.27');
+    try{const response=await fetch('assets/set-review-v01/manifest.json?v=3');if(!response.ok)throw Error('세트 목록을 불러오지 못했습니다.');manifest=validateManifest(await response.json());$('releaseVersion').textContent=manifest.version+' · '+(manifest.date||'2026.10.27');
       for(const set of manifest.backgrounds){const b=el('button','',set.code+' '+set.label);b.type='button';b.role='tab';b.id='background-tab-'+set.id;b.dataset.theme=set.id;b.setAttribute('aria-selected','false');b.setAttribute('aria-controls','reviewContent');b.tabIndex=-1;b.onclick=()=>navigate(set.id,category);$('backgroundTabs').append(b);}
       $('reviewContent').hidden=false;route();
     }catch(error){status('loadStatus',error.message+' 페이지를 새로 고쳐 다시 확인해 주세요.',true);}

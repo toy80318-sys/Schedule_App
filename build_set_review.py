@@ -35,6 +35,12 @@ ENV = [
     ('E05', 'basalt', '현무암', 'rocks-01'),
     ('E06', 'leaf', '잎 가지', 'greenery-01'),
 ]
+V03_SETS = {'sunset','day','night','morning'}
+BASE_ART = [('I01','V01','꽃 포커스 통합본','integrated'),('I02','V02','전경 환경 블러 통합 시안','integrated'),('B01','V01','밝은 배경 · 선명','backgrounds'),('B02','V02','밝은 배경 · 약한 블러','backgrounds')]
+
+
+def art_variants(theme):
+    return BASE_ART + ([('B03','V03','레퍼런스 추상 유화 배경','backgrounds'),('I03','V03','레퍼런스 추상 유화 통합 시안','integrated')] if theme in V03_SETS else [])
 
 
 def read_json(path):
@@ -43,6 +49,14 @@ def read_json(path):
 
 def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+
+def preserve_layout(path,value):
+    if path.is_file():
+        if read_json(path)!=value:
+            raise ValueError(f'기존 기본 배치를 바꾸지 않기 위해 중단했습니다: {path.name}')
+    else:
+        write_json(path,value)
 
 
 def digest(path):
@@ -299,13 +313,15 @@ def make_unity(project):
     }
 
 
-GUIDE = '''# AI 세트 검증 가이드 · V01
+GUIDE = '''# AI 세트 검증 가이드 · V01 세트 / V03 추가 시안
 
 ## 번호와 비교 순서
 
 - BG01 노을 / BG02 낮 / BG03 달빛 / BG04 아침.
 - I01-V01: 첫 꽃 포커스 통합본. I02-V02: 전경 환경 블러 통합 시안.
 - B01-V01: 선명한 밝은 배경. B02-V02: 약한 블러를 준 밝은 배경.
+- B03-V03: 레퍼런스 추상 유화 배경. I03-V03: 레퍼런스 추상 유화 통합 시안. 기존 V01/V02 뒤에 추가한 비교용 버전이며 꽃 96장·환경 24장과 기존 기본 배치는 변경하지 않습니다.
+- V03은 층층이 겹친 산, 구름 바다, 분홍빛 능선과 넓고 표현적인 임파스토 붓질을 기준으로 봅니다. 밝은 대기·하늘과 하단의 짙은 현무암 흙, 선명한 주인공 꽃·부드러운 원경·흐린 전경의 초점 구분을 함께 확인합니다.
 - F01..F06은 최근 통합 시안에서 가져온 여섯 디자인 방향이며 각각 C01..C04의 가까운 색상을 가집니다. 원래의 식물학적 6종을 뜻하지 않습니다.
 - E01 풀 / E02 나무 / E03 나비 / E04 구름 / E05 현무암 / E06 잎 가지.
 - 같은 BG 번호의 통합본, 배경, 꽃, 환경 요소, 배치 파일만 함께 비교합니다.
@@ -322,7 +338,7 @@ GUIDE = '''# AI 세트 검증 가이드 · V01
 
 ## 통합 시안과 비교
 
-1. I02-V02 옆에 *_editor.json의 웹 합성을 열어 전체 구도부터 비교합니다.
+1. 선택한 통합본(I02-V02 또는 I03-V03) 옆에 *_editor.json의 웹 합성을 열어 전체 구도부터 비교합니다. V03 비교 시 배경 선택에서 B03-V03을 명시적으로 선택합니다. 기본 배치 파일은 기존 B02-V02를 그대로 유지합니다.
 2. F 번호별 꽃 형태, 꽃잎 수와 방향, 줄기 굵기와 길이, 잎의 모양을 기록합니다.
 3. 같은 디자인의 C01..C04가 정말 비슷한 계열의 색 변화인지 검사합니다. 잎·줄기 초록을 꽃잎과 함께 변색시키지 않습니다.
 4. 배경의 밝은 산·하늘과 하단의 짙은 현무암 흙이 유지되는지 확인합니다. 광원 방향과 따뜻함/차가움이 꽃·나무·풀에 이어져야 합니다.
@@ -346,15 +362,22 @@ def build(check=False):
     if not check:
         prepare_sources()
     metadata = generation_metadata()
+    prior=read_json(OUT/'manifest.json') if (OUT/'manifest.json').is_file() else None
+    preserved_sources={a['id']:a['sha256'] for s in prior['backgrounds'] for group in ['flowers','environment','backgrounds','integrated'] for a in s[group] if a['version'] in ['V01','V02']} if prior else {}
+    layout_paths=[OUT/f'{theme}_{kind}.json' for theme,*_ in THEMES for kind in ['editor','unity']]
+    preserved_layouts={path.name:digest(path) for path in layout_paths if path.is_file()}
     expected = []
-    for _, code, *_ in THEMES:
+    for theme, code, *_ in THEMES:
         expected += [f'{code}-F{f:02}-C{c:02}-V01' for f in range(1, 7) for c in range(1, 5)]
         expected += [f'{code}-{eid}-V01' for eid, *_ in ENV]
-        expected += [f'{code}-{kind}' for kind in ['B01-V01', 'B02-V02', 'I01-V01', 'I02-V02']]
+        expected += [f'{code}-{kind}-{version}' for kind,version,*_ in art_variants(theme)]
     missing = [aid for aid in expected if not (PNG / f'{aid}.png').is_file()]
     if missing:
         raise ValueError(f'생성이 완료되지 않은 PNG {len(missing)}장:\n' + '\n'.join(missing))
     inspected = {aid: inspect_png(PNG / f'{aid}.png', '-F' in aid or '-E' in aid) for aid in expected}
+    for aid,sha in preserved_sources.items():
+        if inspected[aid]['sha256']!=sha:
+            raise ValueError(f'기존 V01/V02 원본의 바이트가 달라졌습니다: {aid}')
     held = [aid for aid, info in inspected.items() if not info['verification']['complete']]
     if held:
         raise ValueError('독립 PNG 기술 검수 보류(알파/가장자리 확인 필요):\n' + '\n'.join(held))
@@ -374,11 +397,14 @@ def build(check=False):
                 flowers.append(record)
         env = [asset_record(f'{code}-{eid}-V01', inspected[f'{code}-{eid}-V01'], category=category, name=f'{label} · {name}', theme=theme, origin='generated_independent_png' if eid == 'E02' else 'previous_complete_independent_png') for eid, category, name, _ in ENV]
         scene = {'id': theme, 'code': code, 'label': label, 'palette': colors, 'flowers': flowers, 'environment': env, 'integrated': [], 'backgrounds': [], 'project': f'assets/set-review-v01/{theme}_editor.json', 'unityLayout': f'assets/set-review-v01/{theme}_unity.json', 'unityLayoutLabel':'Unity 좌표 참고 JSON', 'unityLayoutNote':'PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.'}
-        for kind, version, name, group in [('I01','V01','꽃 포커스 통합본','integrated'), ('I02','V02','전경 환경 블러 통합 시안','integrated'), ('B01','V01','밝은 배경 · 선명','backgrounds'), ('B02','V02','밝은 배경 · 약한 블러','backgrounds')]:
+        for kind, version, name, group in art_variants(theme):
             aid = f'{code}-{kind}-{version}'
-            scene[group].append(asset_record(aid, inspected[aid], name=name))
+            record=asset_record(aid, inspected[aid], name=name)
+            if version=='V03' and metadata.get(aid,{}).get('generationPrompt'):
+                record['generationPrompt']=metadata[aid]['generationPrompt']
+            scene[group].append(record)
         scenes.append(scene)
-    manifest = {'format':'jeju-set-review-v1','version':'V01','date':'2026-10-27','flowerDefinition':'최근 통합 시안의 꽃 디자인 6종 × 가까운 계열 4색','backgrounds':scenes,'guide':'assets/set-review-v01/AI_검증가이드.md','audit':'assets/set-review-v01/asset-audit.json','verification':{'technicalOnly':True,'visualMatch':'pending_manual_review','unityRuntime':'not_run'},'counts':{'backgroundSets':4,'flowerPngs':96,'environmentPngs':24,'backgroundPngs':8,'integratedPngs':8,'totalPngs':136}}
+    manifest = {'format':'jeju-set-review-v1','version':'V01','date':'2026-10-27','flowerDefinition':'최근 통합 시안의 꽃 디자인 6종 × 가까운 계열 4색','backgrounds':scenes,'guide':'assets/set-review-v01/AI_검증가이드.md','audit':'assets/set-review-v01/asset-audit.json','verification':{'technicalOnly':True,'visualMatch':'pending_manual_review','unityRuntime':'not_run'},'counts':{'backgroundSets':len(scenes),'flowerPngs':sum(len(s['flowers']) for s in scenes),'environmentPngs':sum(len(s['environment']) for s in scenes),'backgroundPngs':sum(len(s['backgrounds']) for s in scenes),'integratedPngs':sum(len(s['integrated']) for s in scenes),'totalPngs':len(inspected)}}
     manifest['generationRecords']=generation_records(write=not check)
     audit = {'format':'jeju-set-review-audit-v1','date':'2026-10-27','technicalOnly':True,'technicalPassed':len(inspected),'visualMatch':'pending_manual_review','alphaThreshold':8,'files':[{ 'id':aid,'src':RAW+aid+'.png',**info} for aid,info in inspected.items()]}
     manifest['sourceProof']='assets/set-review-v01/source-count-hashes.json'
@@ -393,15 +419,18 @@ def build(check=False):
         return manifest
     for scene in scenes:
         project = make_project(scene)
-        write_json(OUT/f'{scene["id"]}_editor.json',project)
-        write_json(OUT/f'{scene["id"]}_unity.json',make_unity(project))
+        preserve_layout(OUT/f'{scene["id"]}_editor.json',project)
+        preserve_layout(OUT/f'{scene["id"]}_unity.json',make_unity(project))
+    for name,sha in preserved_layouts.items():
+        if digest(OUT/name)!=sha:
+            raise ValueError(f'기존 배치 파일의 바이트가 달라졌습니다: {name}')
     write_json(OUT/'manifest.json',manifest)
     write_json(OUT/'asset-audit.json',audit)
     legacy=[aid for aid in expected if (LEGACY_PNG/f'{aid}.png').is_file()]
     for aid in legacy:
         if digest(LEGACY_PNG/f'{aid}.png')!=inspected[aid]['sha256']:
             raise ValueError(f'이전 원본과 바이트가 다릅니다: {aid}')
-    write_json(OUT/'source-count-hashes.json',{'format':'jeju-source-byte-proof-v1','count':len(inspected),'sourceDirectory':'source-assets/set-review-v01','totalSourceBytes':sum(i['bytes'] for i in inspected.values()),'totalPreviewBytes':sum(i['previewBytes'] for i in inspected.values()),'legacyDocCopiesCompared':len(legacy),'legacyDocCopiesUnchanged':True,'files':[{'id':aid,'src':RAW+aid+'.png','bytes':info['bytes'],'sha256':info['sha256']} for aid,info in inspected.items()]})
+    write_json(OUT/'source-count-hashes.json',{'format':'jeju-source-byte-proof-v1','count':len(inspected),'sourceDirectory':'source-assets/set-review-v01','totalSourceBytes':sum(i['bytes'] for i in inspected.values()),'totalPreviewBytes':sum(i['previewBytes'] for i in inspected.values()),'legacyDocCopiesCompared':len(legacy),'legacyDocCopiesUnchanged':True,'preservation':{'allUnchanged':True,'sourceCount':len(preserved_sources),'layoutCount':len(preserved_layouts),'sourceFiles':[{'id':aid,'sha256':sha} for aid,sha in preserved_sources.items()],'layouts':[{'file':name,'sha256':sha} for name,sha in preserved_layouts.items()]},'files':[{'id':aid,'src':RAW+aid+'.png','bytes':info['bytes'],'sha256':info['sha256']} for aid,info in inspected.items()]})
     (OUT/'AI_검증가이드.md').write_text(GUIDE,encoding='utf-8')
     return manifest
 

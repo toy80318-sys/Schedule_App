@@ -1,10 +1,11 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{spawnSync}=require('node:child_process');
 const renderer=require('../docs/set-review-renderer'),web=path.resolve(__dirname,'../docs'),out=path.join(web,'assets/set-review-v01'),source=path.resolve(__dirname,'../source-assets/set-review-v01'),raw='https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/',read=p=>JSON.parse(fs.readFileSync(path.join(out,p),'utf8'));
 const manifest=read('manifest.json'),audit=read('asset-audit.json'),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
-assert.equal(manifest.format,'jeju-set-review-v1');assert.equal(manifest.version,'V01');assert.equal(manifest.backgrounds.length,4);assert.equal(manifest.counts.flowerPngs,96);assert.equal(manifest.counts.totalPngs,136);assert.equal(audit.technicalPassed,136);assert.equal(audit.visualMatch,'pending_manual_review');
+assert.equal(manifest.format,'jeju-set-review-v1');assert.equal(manifest.version,'V01');assert.equal(manifest.backgrounds.length,4);assert.equal(manifest.counts.flowerPngs,96);assert.equal(manifest.counts.environmentPngs,24);assert.equal(manifest.counts.backgroundPngs,12);assert.equal(manifest.counts.integratedPngs,12);assert.equal(manifest.counts.totalPngs,144);assert.equal(audit.technicalPassed,144);assert.equal(audit.visualMatch,'pending_manual_review');
 const ids=new Set(),flowerHashes=new Set();let count=0;
 for(const scene of manifest.backgrounds){
- assert(['sunset','day','night','morning'].includes(scene.id));assert.equal(scene.flowers.length,24);assert.equal(scene.environment.length,6);assert.equal(scene.backgrounds.length,2);assert.equal(scene.integrated.length,2);
+ assert(['sunset','day','night','morning'].includes(scene.id));assert.equal(scene.flowers.length,24);assert.equal(scene.environment.length,6);assert.equal(scene.backgrounds.length,3);assert.equal(scene.integrated.length,3);
+ assert.deepEqual(scene.backgrounds.map(a=>a.id),[scene.code+'-B01-V01',scene.code+'-B02-V02',scene.code+'-B03-V03']);assert.deepEqual(scene.integrated.map(a=>a.id),[scene.code+'-I01-V01',scene.code+'-I02-V02',scene.code+'-I03-V03']);assert.equal(scene.backgrounds[2].name,'레퍼런스 추상 유화 배경');assert.equal(scene.integrated[2].name,'레퍼런스 추상 유화 통합 시안');
  assert.deepEqual([...new Set(scene.flowers.map(a=>a.design))],['F01','F02','F03','F04','F05','F06']);
  for(let design=1;design<=6;design++){const variants=scene.flowers.filter(a=>a.design==='F'+String(design).padStart(2,'0'));assert.equal(variants.length,4);assert.deepEqual(variants.map(a=>a.color),['C01','C02','C03','C04']);}
  for(const category of ['grass','tree','butterfly','cloud','basalt','leaf'])assert.equal(scene.environment.filter(a=>a.category===category).length,1);
@@ -28,12 +29,16 @@ for(const scene of manifest.backgrounds){
  for(const a of project.assets){const u=unity.assets.find(u=>u.id===a.id);assert.equal(a.src,raw+a.id+'.png');assert.equal(u.frames[0],'PNG/'+path.basename(a.src));assert.equal(u.sha256,a.sha256);assert(fs.existsSync(path.join(source,path.basename(u.frames[0]))));assert(a.preview.startsWith('assets/set-review-v01/preview/'));}
  assert.equal(unity.background.image,'PNG/'+path.basename(project.background));assert(scene.unityLayoutLabel.includes('좌표 참고'));assert(unity.verification.note.includes('blur'));
 }
-assert.equal(count,136);assert.equal(flowerHashes.size,96,'each flower design/color is its own PNG');
-const proof=read('source-count-hashes.json');assert.equal(proof.count,136);assert.equal(proof.files.length,136);assert(proof.legacyDocCopiesUnchanged);assert.equal(proof.totalSourceBytes,proof.files.reduce((n,f)=>n+f.bytes,0));assert(proof.totalPreviewBytes<proof.totalSourceBytes/10);for(const item of proof.files){assert.equal(item.src,raw+item.id+'.png');assert.equal(hash(path.join(source,item.id+'.png')),item.sha256)}
+assert.equal(count,144);assert.equal(flowerHashes.size,96,'each flower design/color is its own PNG');
+const proof=read('source-count-hashes.json');assert.equal(proof.count,144);assert.equal(proof.files.length,144);assert(proof.legacyDocCopiesUnchanged);assert.equal(proof.totalSourceBytes,proof.files.reduce((n,f)=>n+f.bytes,0));assert(proof.totalPreviewBytes<proof.totalSourceBytes/10);for(const item of proof.files){assert.equal(item.src,raw+item.id+'.png');assert.equal(hash(path.join(source,item.id+'.png')),item.sha256)}
+assert(proof.preservation.allUnchanged);assert.equal(proof.preservation.sourceCount,136);assert.equal(proof.preservation.layoutCount,8);assert.equal(proof.preservation.sourceFiles.length,136);assert.equal(proof.preservation.layouts.length,8);for(const item of proof.preservation.sourceFiles){assert(!item.id.endsWith('V03'));assert.equal(hash(path.join(source,item.id+'.png')),item.sha256)}
+const originalLayoutHashes={'sunset_editor.json':'cbdc284f660e4d8d877933002ad9aa7afec756f598d5489688fc23d44830ae56','sunset_unity.json':'217b0d51f8774cd4b8197183c2c514a95aa5450e1821906032eeb271c6503092','day_editor.json':'43fbd1a6143913017199c5c6dfe01bcbb4a08fc31c507e5728afa10f1c61a49c','day_unity.json':'451cbb5fd70af67a83ea84f1936435a618834e4766391c3d61fe328eff3b03d4','night_editor.json':'57c39eb8dd31a3c9420ffff9335aaee3de42121d526a4b2324ba2cd0683db142','night_unity.json':'28fffc59a8e4a5e53546ce1e33905afd384b776ec44959a3b422f9558ec5179a','morning_editor.json':'ebe26d385a810318f5630c1b56f4f11c9d2861d774bc2a462928cc78a47773ce','morning_unity.json':'8920f2ad1f2e92eb0ba6b9ae2232dc0e475f4589b8f74e97e73f42040dfbdd73'};
+for(const [file,sha] of Object.entries(originalLayoutHashes)){assert.equal(hash(path.join(out,file)),sha,'V03 append preserves V01 default file bytes: '+file);assert.equal(proof.preservation.layouts.find(item=>item.file===file)?.sha256,sha)}
 assert(manifest.generationRecords.length>=3);
 function publicRecord(value){if(typeof value==='string')assert(!/^[A-Za-z]:[\\/]/.test(value),'no absolute PC paths in public records');else if(Array.isArray(value))value.forEach(publicRecord);else if(value&&typeof value==='object')for(const [key,item] of Object.entries(value)){assert(!['path','localpath','outputpath'].includes(key.toLowerCase()));publicRecord(item)}}
 for(const record of manifest.generationRecords){assert(record.src.startsWith('assets/set-review-v01/generation-records/'));publicRecord(JSON.parse(fs.readFileSync(path.join(web,record.src),'utf8')))}
 assert(manifest.backgrounds.every(s=>s.flowers.every(a=>typeof a.generationPrompt==='string'&&a.generationPrompt.length>50)));
+const v03Art=manifest.backgrounds.flatMap(s=>[...s.backgrounds,...s.integrated].filter(a=>a.version==='V03'));assert.equal(v03Art.length,8);assert(v03Art.every(a=>typeof a.generationPrompt==='string'&&a.generationPrompt.length>50));
 const corrected=manifest.backgrounds.find(s=>s.id==='morning');assert.equal(corrected.flowers.find(a=>a.design==='F05'&&a.color==='C01').designLabel,'가는 라벤더');assert.equal(corrected.flowers.find(a=>a.design==='F06'&&a.color==='C01').colorLabel,'블루 아이보리');
 const python=spawnSync('python',['build_set_review.py','--check'],{cwd:path.resolve(__dirname,'..'),encoding:'utf8',env:{...process.env,PYTHONUTF8:'1'}});assert.equal(python.status,0,python.stderr||python.stdout);
 const alphaCheck=spawnSync('python',['-c',`from pathlib import Path;from tempfile import TemporaryDirectory;from PIL import Image;import build_set_review as b
@@ -42,8 +47,13 @@ with TemporaryDirectory() as d:
  im.putpixel((0,0),(10,10,10,7));im.save(p);assert b.inspect_png(p,True)['verification']['complete']
  im.putpixel((0,0),(10,10,10,8));im.save(p);assert not b.inspect_png(p,True)['verification']['complete']
  Image.new('RGB',(64,64),'green').save(p);assert not b.inspect_png(p,True)['verification']['complete']
+ guard=Path(d)/'layout.json';guard.write_text('{  "name": "same" }',encoding='utf-8');before=guard.read_bytes();b.preserve_layout(guard,{'name':'same'});assert guard.read_bytes()==before
+ try:b.preserve_layout(guard,{'name':'changed'})
+ except ValueError:pass
+ else:raise AssertionError('changed existing layout must be rejected')
+ assert guard.read_bytes()==before
  old_ref=b.REFERENCES;b.REFERENCES=Path(d)/'absent-original-reference-folder';b.prepare_sources();b.REFERENCES=old_ref
  old=b.OUT;b.OUT=Path(d);records=b.OUT/'generation-records';records.mkdir()
  b.write_json(records/'root-assets.json',[{'id':'BG04-F05-C01-V01','generationPrompt':'outdated'}]);b.write_json(records/'extra-master-prompts.json',[{'id':'BG04-F05-C01-V01','generationPrompt':'corrected'}]);assert b.generation_metadata()['BG04-F05-C01-V01']['generationPrompt']=='corrected';assert len(b.generation_records())==2;b.OUT=old
 `],{cwd:path.resolve(__dirname,'..'),encoding:'utf8',env:{...process.env,PYTHONUTF8:'1'}});assert.equal(alphaCheck.status,0,alphaCheck.stderr);
-console.log('PASS: four versioned sets,96 unique complete flower PNGs,24 independent environment PNGs,16 reference/background PNGs,verified hashes/alpha margins,116-object immutable editor projects,matching Unity coordinates and explicit manual/runtime verification boundaries.');
+console.log('PASS: four V03 appends,96 unique complete flower PNGs,24 independent environment PNGs,24 reference/background PNGs,144 source/preview checks,original136 PNG and8layout hashes preserved,116-object editor projects,matching Unity coordinates and explicit manual/runtime boundaries.');

@@ -1,0 +1,23 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const app=fs.readFileSync('docs/app.js','utf8'),start=app.indexOf('function densityGroup('),end=app.indexOf("$('groupDensityDown').onclick",start);
+assert(start>0&&end>start);
+const source=Array.from({length:20},(_,i)=>({id:'flower'+i,assetId:'flower'+i%4,name:'꽃',groupId:'bed',groupName:'꽃밭',x:i*50,y:300+i%3*10,w:100,h:200,r:i%5,opacity:.8,blur:8,flowerHue:3,z:50,extra:{light:'sunset'}}));
+const other={id:'other',groupId:'other',x:1,y:2,w:10,h:20},plain={id:'plain',x:3,y:4,w:10,h:20};
+const buttons=Object.fromEntries(['groupDensityDown','groupDensityUp','groupDensityStatus'].map(id=>[id,{}]));
+let history=[],renders=0,ids=0,notices=[];
+const c={objects:structuredClone([...source,other,plain]),selectedIds:new Set(['flower0']),selected:'flower0',structuredClone,Math,uid:()=>`copy${++ids}`,$:id=>buttons[id],snapshot:()=>history.push(JSON.stringify(c.objects)),refresh:()=>renders++,notice:s=>notices.push(s),clamp:(n,a,b)=>Math.max(a,Math.min(b,n)),bounds:items=>({x:Math.min(...items.map(o=>o.x)),y:Math.min(...items.map(o=>o.y)),right:Math.max(...items.map(o=>o.x+o.w)),bottom:Math.max(...items.map(o=>o.y+o.h))})};
+c.members=()=>c.objects.filter(o=>c.selectedIds.has(o.id));vm.createContext(c);vm.runInContext(app.slice(start,end),c);
+const before=JSON.stringify(c.objects);c.syncGroupDensity();assert.equal(buttons.groupDensityDown.disabled,false);assert(buttons.groupDensityStatus.textContent.includes('20개'));
+c.changeGroupDensity(false);assert.equal(c.objects.length,20);assert.equal(new Set(c.objects.map(o=>o.id)).size,20);assert.equal(history.length,1);assert.equal(renders,1);assert.equal(c.selectedIds.size,18);assert.equal(JSON.stringify(c.objects.slice(-2)),JSON.stringify([other,plain]));
+assert(c.objects.every(o=>before.includes(JSON.stringify(o))),'survivors retain all fields');
+c.objects=JSON.parse(history.pop());assert.equal(JSON.stringify(c.objects),before,'one undo restores exact original objects/order');c.selectedIds=new Set(['flower0']);
+c.changeGroupDensity(true);assert.equal(c.objects.length,24);assert.equal(c.selectedIds.size,22);assert.equal(history.length,1);assert.equal(c.objects.filter(o=>o.id.startsWith('copy')).length,2);
+const copies=c.objects.filter(o=>o.id.startsWith('copy'));
+for(const copy of copies){const original=source.find(o=>o.id===c.objects[c.objects.indexOf(copy)-1].id);assert(original);assert.equal(copy.w,original.w);assert.equal(copy.h,original.h);for(const key of ['groupId','groupName','blur','flowerHue','z','opacity'])assert.equal(copy[key],original[key]);assert(copy.x>=0&&copy.x<=950);assert(copy.y>=300&&copy.y<=320);assert.notEqual(copy.extra,c.objects[c.objects.indexOf(copy)-1].extra)}
+assert.deepEqual(c.objects.filter(o=>!o.id.startsWith('copy')),JSON.parse(before),'adding does not move existing objects');
+c.objects=[structuredClone(source[0]),other];c.selectedIds=new Set(['flower0']);const checkpoints=history.length;c.changeGroupDensity(false);assert.equal(history.length,checkpoints,'last object protected');c.changeGroupDensity(true);assert.equal(c.objects.length,3,'singleton can grow');
+c.objects=structuredClone([...source.slice(0,19),other,plain]);c.selectedIds=new Set(['flower0','other']);let unchanged=JSON.stringify(c.objects);c.changeGroupDensity(false);assert.equal(JSON.stringify(c.objects),unchanged);c.syncGroupDensity();assert.equal(buttons.groupDensityUp.disabled,true);
+c.selectedIds=new Set();c.changeGroupDensity(true);assert.equal(JSON.stringify(c.objects),unchanged);c.selectedIds=new Set(['plain']);c.changeGroupDensity(false);assert.equal(JSON.stringify(c.objects),unchanged);
+c.selectedIds=new Set(['flower0']);c.changeGroupDensity(false);assert.equal(c.objects.filter(o=>o.groupId==='bed').length,17,'19 rounds to two removals');
+const html=fs.readFileSync('docs/editor.html','utf8');assert(html.includes('id="groupDensityDown"'));assert(html.includes('id="groupDensityUp"'));assert(app.includes('function renderProperties(){syncGroupDensity();'));assert(app.includes("$('groupDensityUp').onclick=()=>changeGroupDensity(true)"));
+console.log('PASS: 10% count rounding, random distinct items, one-group boundary, singleton protection/growth, original properties/order, deep clone, selection, one undo and UI wiring.');

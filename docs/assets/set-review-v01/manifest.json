@@ -1519,6 +1519,37 @@
           "previewBytes": 153504,
           "previewSha256": "3359fcaa1ed7c35987a6efa13a8c793745f199246bef0077f6df05c873300fdc",
           "generationPrompt": "Use case: compositing / stylized-concept. Create ONE finished integrated panoramic fantasy OIL PAINTING, approximately 3:1 ultra-wide, no border, text or watermark.\nImage 1 is the NEW V03 fantasy-landscape EDIT TARGET. Keep its entire distinctive mountain composition: asymmetric ascending layers of rugged ridges, luminous great cumulus CLOUD SEA flowing between mountains, pink woodland ribbons on slopes, and mist. Preserve luminous peach/coral/apricot sunset with low golden sun at far left, warm olive ridges and pink mist. Do NOT replace it with a single postcard Hallasan mountain. Image 2 is ONLY a supporting reference for the foreground FLOWER DESIGN FAMILIES AND PALETTE; ignore its former landscape.\nIntegrate foreground flowers into image 1 as a beautiful coherent garden: coral-red and blush-pink camellias, loose apricot-orange marigolds, and fine ivory flower sprays; peach sunset rim light softly catching painted petal edges. Use irregular airy clumps with some hero blossoms in the foreground focus plane, smaller flowers receding into the view, spaces and height variation. All heads, stems and leaves must be healthy and visibly attached; planting contact with the dark Jeju basalt soil is natural. Preserve readable charcoal-brown volcanic earth and low porous basalt rocks along bottom and in gaps. No floating plants.\nCRITICAL medium/style: semi-abstract, loosely gestural painted OIL; broad generous brush strokes, visible impasto and palette-knife color masses, simplified petal shapes and leaf silhouettes, expressive broken-color marks. Flowers are recognizable from their color and silhouette but NOT photorealistically detailed. NO tiny sharp leaf veins, no polished CGI, plastic 3D blooms, cutout-sticker collage, razor-sharp botanical engraving or mosaic micro-detail.\nFocus hierarchy: the MAIN FLOWER HEADS are the sharpest PAINTED plane, with clear expressive petal marks; distant fantasy mountains/cloud sea are softer, airy and lower-contrast, recognizable broad paint masses. Add a few very near green grass blades, soft leaf shapes and low basalt at the bottom corners, visibly defocused by camera focus, framing rather than hiding flowers. At least 80 percent of main hero flower faces stay clear. Soft atmospheric light is enough: NO big glowing orbs or giant glitter balls.\nComposition: flower garden occupies lower roughly 40 percent, with the layered fantasy landscape and clouds carrying the upper 60 percent. Avoid a flat uniform repeated flower hedge; make natural irregular groupings and depth. Keep whole image bright and beautiful, with darkest values confined to the low soil/rocks. Maintain the new V03 color harmony throughout, one unified painted scene."
+        },
+        {
+          "id": "BG01-I04-V04",
+          "version": "V04",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG01-I04-V04.png",
+          "name": "꽃 크기 50% · 개수 4배 통합 시안",
+          "width": 2171,
+          "height": 724,
+          "bytes": 2914542,
+          "sha256": "4eeccc24d7f50715e21ca452717a08a93f903a0c60cfb64c5692b3b35534317a",
+          "verification": {
+            "alpha": false,
+            "borderClear": null,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": null,
+            "transparentMarginsPx": null,
+            "fullyTransparentFraction": 0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG01-I04-V04.webp",
+          "previewWidth": 1200,
+          "previewHeight": 400,
+          "previewBytes": 158026,
+          "previewSha256": "2cee224451faf61ec3e4cb4bb6d84a7265b0534bea5a7463583cb01a43cc567a",
+          "generationPrompt": "Use case: precise-object-edit.\nThe attached V03 integrated panorama is the EDIT TARGET. Make a NEW V04 by changing ONLY the foreground FLOWER SCALE AND NUMBER.\nMandatory primary change: EVERY individual flower head and its attached plant should be approximately HALF the linear size of its current counterpart (50% width and 50% height). Replace each oversized hero blossom/plant with several smaller complete blossoms/plants; aim for roughly FOUR TIMES as many individual flowers overall. Largest near flower heads should now be about half the current image's largest heads, with many medium/small blossoms instead of a few giant flowers. Do NOT simply add tiny distant flowers while keeping the original giant foreground heads.\nFlower palette and design families remain coral-red, blush-pink and peach camellias, loose apricot-orange marigolds and delicate ivory small flower sprays. Preserve recognizable expressive abstract-oil petal shapes and natural attached stems/leaves. Each flower remains healthy and connected, never detached flower disks or cut paper pieces.\nDistribution: a much fuller and more populous natural garden, irregular clumps, gentle layered height variation and small open gaps, with small flowers flowing across the existing flower-bed area. Approximately 4x the flower count, not a flat uniform tiled hedge. Existing flower-bed overall height, front-to-back placement area and foothill transition stay natural and similar; individual plants are smaller and more numerous. Keep dark basalt soil visible through small planting gaps and along the low edge.\nINVARIANTS — keep unchanged: exact panoramic camera/framing, new V03 asymmetric layered fantasy mountain ridges, cumulus cloud sea, pink woodland ribbons, mist, sun position, sky and mountain lighting/color, broad oil impasto and palette-knife painted style, bright upper/middle values, and the dark Jeju basalt-derived earth and low stones at the bottom. Do not zoom or move the camera, scale the mountain scene, crop or change horizon, add another mountain, or change time of day.\nKeep the near-camera foreground grass/leaves/basalt at the lower corners softly BLURRED exactly as before. Main small flower heads in the focus plane remain the sharpest expressive painted marks; distant flowers and landscape stay softer. Avoid bokeh orbs, glitter, a new black vignette, plastic CGI, photographic leaf veins, text, labels, borders and watermark.\nCanvas: retain EXACT 2172 x 724 pixels, ultra-wide 3:1 composition. Output ONE edited integrated image, no comparison panels."
         }
       ],
       "backgrounds": [
@@ -1614,8 +1645,14 @@
           "generationPrompt": "Use case: lighting-weather / stylized-concept. Edit target: attached V03 fantasy mountain BACKGROUND panorama. Produce one full-bleed ultra-wide panoramic background, approximately 3:1, same composition and framing, no flowers in foreground.\nPrimary change: change ONLY the time-of-day light and palette to a bright luminous SUNSET: pale peach, coral, apricot, cream and blush sky, golden sun low at far left; light pink mist and warm olive/sage mountains; softly warm cream cumulus clouds. No moon, no stars, no dark night blue.\nKEEP the distinctive new V03 composition: multiple asymmetric layered ridges and fantasy rocky peaks climbing diagonally and rhythmically into the distance, luminous cumulus CLOUD SEA between ridges, flowing ribbons of pink woodland on the hills, broad rolling mist, rich aerial depth. Preserve this cascading fairyland mountain range; DO NOT return to a single central postcard Hallasan dome. Grounded landscape, not floating islands.\nArt direction: semi-abstract OIL PAINTING with broad gestural paint masses, visible impasto and softly dragged palette-knife marks, loose generous patches of color, simplified tree masses and rock planes. Everything must feel painted rather than photographed. Avoid sharp leaf veins, tiny repetitive mosaic strokes, sharp CGI stone texture, photorealism and plastic 3D.\nBrightness hierarchy: upper and middle scenery remain luminous, airy, light-filled and colorful; keep mountains readable rather than black silhouettes. Only bottom 15-20 percent is DARK charcoal-brown Jeju basalt-derived SOIL, an undulating horizontal planting foreground with low porous basalt rocks. Dark earth is textured but not pure black, no opaque rectangular strip. Preserve enough clear low ground for separate flowers later. Maintain warm-vs-cool oil color harmony, light mist separating ridges.\nNo foreground flowers, no flower hedge, people, buildings, animals, text, numbers, frame, watermark. One background image only; preserve the new mountain layout and change lighting/colors only."
         }
       ],
-      "project": "assets/set-review-v01/sunset_editor.json",
-      "unityLayout": "assets/set-review-v01/sunset_unity.json",
+      "project": "assets/set-review-v01/sunset_editor_v04.json",
+      "unityLayout": "assets/set-review-v01/sunset_unity_v04.json",
+      "legacyProject": "assets/set-review-v01/sunset_editor.json",
+      "legacyUnityLayout": "assets/set-review-v01/sunset_unity.json",
+      "projectVersion": "V04",
+      "legacyProjectVersion": "V01",
+      "projectLabel": "V04 · 꽃 크기 50% · 개수 4배",
+      "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다."
     },
@@ -3134,6 +3171,37 @@
           "previewBytes": 172990,
           "previewSha256": "d93b111648bd3491b5ce34fc8c388f2e5526b37a8777bda2980efd74516cd345",
           "generationPrompt": "Use case: compositing / stylized-concept. Create ONE finished integrated panoramic fantasy OIL PAINTING, approximately 3:1 ultra-wide, no border, text or watermark.\nImage 1 is the NEW V03 fantasy-landscape EDIT TARGET. Keep its entire distinctive mountain composition: asymmetric ascending layers of rugged ridges, luminous great cumulus CLOUD SEA flowing between mountains, pink woodland ribbons on slopes, and mist. Preserve pale azure and ivory sunny sky, sage and emerald ridges, light pink woodland ribbons and softly warm sun. Do NOT replace it with a single postcard Hallasan mountain. Image 2 is ONLY a supporting reference for the foreground FLOWER DESIGN FAMILIES AND PALETTE; ignore its former landscape.\nIntegrate foreground flowers into image 1 as a beautiful coherent garden: golden-yellow and apricot marigolds, lemon-yellow rapeseed flowers, and fine cream-white blossom branches; soft warm daylight catching expressive petal edges. Use irregular airy clumps with some hero blossoms in the foreground focus plane, smaller flowers receding into the view, spaces and height variation. All heads, stems and leaves must be healthy and visibly attached; planting contact with the dark Jeju basalt soil is natural. Preserve readable charcoal-brown volcanic earth and low porous basalt rocks along bottom and in gaps. No floating plants.\nCRITICAL medium/style: semi-abstract, loosely gestural painted OIL; broad generous brush strokes, visible impasto and palette-knife color masses, simplified petal shapes and leaf silhouettes, expressive broken-color marks. Flowers are recognizable from their color and silhouette but NOT photorealistically detailed. NO tiny sharp leaf veins, no polished CGI, plastic 3D blooms, cutout-sticker collage, razor-sharp botanical engraving or mosaic micro-detail.\nFocus hierarchy: the MAIN FLOWER HEADS are the sharpest PAINTED plane, with clear expressive petal marks; distant fantasy mountains/cloud sea are softer, airy and lower-contrast, recognizable broad paint masses. Add a few very near green grass blades, soft leaf shapes and low basalt at the bottom corners, visibly defocused by camera focus, framing rather than hiding flowers. At least 80 percent of main hero flower faces stay clear. Soft atmospheric light is enough: NO big glowing orbs or giant glitter balls.\nComposition: flower garden occupies lower roughly 40 percent, with the layered fantasy landscape and clouds carrying the upper 60 percent. Avoid a flat uniform repeated flower hedge; make natural irregular groupings and depth. Keep whole image bright and beautiful, with darkest values confined to the low soil/rocks. Maintain the new V03 color harmony throughout, one unified painted scene."
+        },
+        {
+          "id": "BG02-I04-V04",
+          "version": "V04",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG02-I04-V04.png",
+          "name": "꽃 크기 50% · 개수 4배 통합 시안",
+          "width": 2172,
+          "height": 724,
+          "bytes": 3063678,
+          "sha256": "b4a9a751b07b18776f71eb637405de9bd2d90fbecbe16d276dffca75ac12bd83",
+          "verification": {
+            "alpha": false,
+            "borderClear": null,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": null,
+            "transparentMarginsPx": null,
+            "fullyTransparentFraction": 0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG02-I04-V04.webp",
+          "previewWidth": 1200,
+          "previewHeight": 400,
+          "previewBytes": 175896,
+          "previewSha256": "49256c29ce267d6fe1abe288fd02d147d304cb1fc6e162579502a48b1bfdb260",
+          "generationPrompt": "Use case: precise-object-edit.\nThe attached V03 integrated panorama is the EDIT TARGET. Make a NEW V04 by changing ONLY the foreground FLOWER SCALE AND NUMBER.\nMandatory primary change: EVERY individual flower head and its attached plant should be approximately HALF the linear size of its current counterpart (50% width and 50% height). Replace each oversized hero blossom/plant with several smaller complete blossoms/plants; aim for roughly FOUR TIMES as many individual flowers overall. Largest near flower heads should now be about half the current image's largest heads, with many medium/small blossoms instead of a few giant flowers. Do NOT simply add tiny distant flowers while keeping the original giant foreground heads.\nFlower palette and design families remain golden-yellow and apricot marigolds, lemon rapeseed flowers and fine cream-white flowering branches. Preserve recognizable expressive abstract-oil petal shapes and natural attached stems/leaves. Each flower remains healthy and connected, never detached flower disks or cut paper pieces.\nDistribution: a much fuller and more populous natural garden, irregular clumps, gentle layered height variation and small open gaps, with small flowers flowing across the existing flower-bed area. Approximately 4x the flower count, not a flat uniform tiled hedge. Existing flower-bed overall height, front-to-back placement area and foothill transition stay natural and similar; individual plants are smaller and more numerous. Keep dark basalt soil visible through small planting gaps and along the low edge.\nINVARIANTS — keep unchanged: exact panoramic camera/framing, new V03 asymmetric layered fantasy mountain ridges, cumulus cloud sea, pink woodland ribbons, mist, sun position, sky and mountain lighting/color, broad oil impasto and palette-knife painted style, bright upper/middle values, and the dark Jeju basalt-derived earth and low stones at the bottom. Do not zoom or move the camera, scale the mountain scene, crop or change horizon, add another mountain, or change time of day.\nKeep the near-camera foreground grass/leaves/basalt at the lower corners softly BLURRED exactly as before. Main small flower heads in the focus plane remain the sharpest expressive painted marks; distant flowers and landscape stay softer. Avoid bokeh orbs, glitter, a new black vignette, plastic CGI, photographic leaf veins, text, labels, borders and watermark.\nCanvas: retain EXACT 2172 x 724 pixels, ultra-wide 3:1 composition. Output ONE edited integrated image, no comparison panels."
         }
       ],
       "backgrounds": [
@@ -3229,8 +3297,14 @@
           "generationPrompt": "Use case: lighting-weather / stylized-concept. Edit target: attached V03 fantasy mountain BACKGROUND panorama. Produce one full-bleed ultra-wide panoramic background, approximately 3:1, same composition and framing, no flowers in foreground.\nPrimary change: change ONLY the time-of-day light and palette to a bright luminous SUNNY DAY: airy pale azure and ivory sky, soft warm sun high toward upper left; sage and emerald hills, light rose-pink woodland ribbons, ivory-white cumulus cloud sea with pale mint-blue shadows. No moon, no stars, no nocturnal navy.\nKEEP the distinctive new V03 composition: multiple asymmetric layered ridges and fantasy rocky peaks climbing diagonally and rhythmically into the distance, luminous cumulus CLOUD SEA between ridges, flowing ribbons of pink woodland on the hills, broad rolling mist, rich aerial depth. Preserve this cascading fairyland mountain range; DO NOT return to a single central postcard Hallasan dome. Grounded landscape, not floating islands.\nArt direction: semi-abstract OIL PAINTING with broad gestural paint masses, visible impasto and softly dragged palette-knife marks, loose generous patches of color, simplified tree masses and rock planes. Everything must feel painted rather than photographed. Avoid sharp leaf veins, tiny repetitive mosaic strokes, sharp CGI stone texture, photorealism and plastic 3D.\nBrightness hierarchy: upper and middle scenery remain luminous, airy, light-filled and colorful; keep mountains readable rather than black silhouettes. Only bottom 15-20 percent is DARK charcoal-brown Jeju basalt-derived SOIL, an undulating horizontal planting foreground with low porous basalt rocks. Dark earth is textured but not pure black, no opaque rectangular strip. Preserve enough clear low ground for separate flowers later. Maintain warm-vs-cool oil color harmony, light mist separating ridges.\nNo foreground flowers, no flower hedge, people, buildings, animals, text, numbers, frame, watermark. One background image only; preserve the new mountain layout and change lighting/colors only."
         }
       ],
-      "project": "assets/set-review-v01/day_editor.json",
-      "unityLayout": "assets/set-review-v01/day_unity.json",
+      "project": "assets/set-review-v01/day_editor_v04.json",
+      "unityLayout": "assets/set-review-v01/day_unity_v04.json",
+      "legacyProject": "assets/set-review-v01/day_editor.json",
+      "legacyUnityLayout": "assets/set-review-v01/day_unity.json",
+      "projectVersion": "V04",
+      "legacyProjectVersion": "V01",
+      "projectLabel": "V04 · 꽃 크기 50% · 개수 4배",
+      "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다."
     },
@@ -4749,6 +4823,37 @@
           "previewBytes": 163258,
           "previewSha256": "ebcb5fa01171784cebdf332ff9401400db81e514f940a667a1420bc6c424627f",
           "generationPrompt": "Use case: compositing / illustration-story. Create ONE integrated flower-garden panorama using IMAGE1 as the fixed new landscape and IMAGE2 only as a guide to the established foreground flower designs and focus hierarchy.\nPrimary user direction: the supplied fantasy mountain/cloud reference should become an ABSTRACTED OIL PAINTING. Keep the layered ascending misty mountains, luminous cream/cyan cloud sea and pink woodland ribbons of IMAGE1, rather than returning to a single postcard-shaped Hallasan mountain. Preserve the bottom dark charcoal-brown basalt-derived soil and low volcanic stones.\nMake the entire integrated artwork more painterly and abstract: bold loose brushwork, broad soft palette-knife paint strokes, thick luminous impasto, simplified flower forms suggested by expressive overlapping color strokes, broken edges and softened contours. Flowers remain beautiful and legible as hydrangea-like clusters, slender lavender-like spikes and broad open camellia-like blooms. NO glossy 3D petals, NO photographic leaf veins, NO crisp CGI mountains, NO hyper-detailed tiny mosaic texture. It must look like an expressive painting, not a digital scene passed through a filter.\nFlower colors for this luminous moonlight set: lavender-pink and lilac open flowers, sky-blue/periwinkle clusters, delicate ivory-blue small sprays, green-sage leaves. Natural irregular clumps, different head angles and depths, complete attached flowers/stems/leaves. Let the largest near flower heads be the focal points in the lower half, spaced gracefully across the panoramic foreground. Keep the upper mountains/clouds unobstructed.\nThree-plane camera effect expressed painterly: very-near grasses/leaves and low basalt rocks at bottom corners are softly out of focus, main flower heads on the focal plane have the clearest expressive petal edges, the distant mountain and woodland masses are softly blurred and low-contrast but luminous. Do not use an even flat hedge of repeated flowers. Keep main blooms readable and not hidden by foreground blur.\nBright beautiful magical atmosphere, pale blue-hour sky, luminous clouds and fine restrained light specks. Only the bottom soil is dark; do not make the whole image gloomy. Do not add giant neon orbs or a glowing butterfly shape. Same ultra-wide approximately3:1 whole-frame aspect as IMAGE1. No people, buildings, text, borders, watermark or panels."
+        },
+        {
+          "id": "BG03-I04-V04",
+          "version": "V04",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-I04-V04.png",
+          "name": "꽃 크기 50% · 개수 4배 통합 시안",
+          "width": 2171,
+          "height": 724,
+          "bytes": 3101514,
+          "sha256": "51dd5d44643347c4b2cdef9528f518b846628512c505125e4b9e6c09f45e08e1",
+          "verification": {
+            "alpha": false,
+            "borderClear": null,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": null,
+            "transparentMarginsPx": null,
+            "fullyTransparentFraction": 0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG03-I04-V04.webp",
+          "previewWidth": 1200,
+          "previewHeight": 400,
+          "previewBytes": 175826,
+          "previewSha256": "511ac9846b71da26283a655ae46e28d63ad71a398f9854df0e7e333710dc9bda",
+          "generationPrompt": "Use case: precise-object-edit / illustration-story. Edit this exact finished V03 moonlight integrated panoramic painting into a new V04 version. Main requested change ONLY: make every foreground flower plant and flower head approximately HALF its current linear size (50% width and 50% height), and increase the number of flower plants approximately FOURFOLD, so the lower flower garden is richly filled with many smaller individual flowers rather than a few large hero blooms. Existing biggest open pink blooms and blue hydrangea clusters must visibly become half as wide, not merely moved farther away while leaving giant flowers in front. Include many more small attached flowering plants distributed in natural irregular groups across the full lower planting area, including the central opening, without a mechanically repeated hedge. Keep the same six established flower design directions, sky-blue/periwinkle clusters, lilac/pink open blooms, slender lavender spikes and airy ivory sprays, attached stems and sage leaves. Dense but readable.\nKeep the mountains, cloudsea, pink woodland, little moon position, luminous bright blue-hour lighting, sky, underlying charcoal-brown basalt soil/rocks and broad expressive abstract oil paint style of the input intact. Do not change scenery, composition, exposure or palette. Keep the flowers in selective camera focus, with softly defocused distant landscape and VERY NEAR environmental grass/leaf framing at the bottom corners still blurred. Only bottom soil stays dark, scenery remains beautifully bright. The flower bed should now feel like a field of many small flowers. No new large flowers in the near plane. No text, panels, watermark or borders.\nONE full-bleed approximately3:1 panorama, same2172x724 framing as input. Preserve landscape positions. Do not crop."
         }
       ],
       "backgrounds": [
@@ -4844,8 +4949,14 @@
           "generationPrompt": "Use case: style-transfer / illustration-story.\nCreate ONE finished BACKGROUND-ONLY panoramic painting inspired by the attached reference. This is a NEW V03 art direction for a Jeju fantasy flower garden exhibition. Use the reference's layered ascending mountain silhouettes, luminous cumulus cloud sea, pale pink flowering woodland bands, drifting mist and cyan-blue atmosphere, but reinterpret them as a substantially MORE ABSTRACT OIL PAINTING.\nPrimary style requirement: bold loose gestural brushstrokes, thick soft impasto paint, broad palette-knife daubs, broken/lost edges, visible painterly color masses. Landscape forms should be suggested elegantly with a few broad expressive strokes, not rendered as detailed CGI, sharp 3D scenery, tiny mosaic texture, photographic rocks or individually detailed leaves. Refined semi-abstract oil, not a photoreal illustration with an oil filter.\nComposition: ONE full-bleed ultra-wide approximately 3:1 landscape. A beautiful airy sea of pearlescent clouds above overlapping dreamlike volcanic mountain/forest ridges receding through mist. Asymmetric rising ridges and soft wooded slopes inspired by reference, flowing bands of pale pink blossoms on distant slopes. Spacious luminous openings behind where separately rendered flowers will be placed. No typography, borders, panels or watermarks.\nLighting/theme: LUMINOUS BLUE-HOUR / MOONLIGHT version. Pale cobalt, periwinkle, lavender and mint-cyan mist, warm ivory cloud edges, a few delicate star-like paint specks. Much brighter and more beautiful than the dark reference screenshot: upper and middle landscape should remain clearly light-filled and readable, with no large black mountain mass and no broad navy darkness. Preserve fantasy through color and light rather than dark exposure. Subtle bright cyan glow in cloud mist, no glowing butterfly shape or large neon orb.\nGround requirement from user: bottom 15-20% ONLY is deep charcoal-brown Jeju basalt-derived planting soil with low porous basalt stones, recognizable but painted with broad loose oil marks. A natural horizontal undulating planting surface, no straight black strip, no cutaway cross-section. Keep this bottom foreground open enough to place independent flower PNGs later.\nDo NOT include foreground flowers or large sharp plants: this output is the landscape BACKGROUND layer, not the integrated flower artwork. Sparse distant pink flowering-tree color bands are allowed. No people, buildings or animals.\n\nFinal consistency edit:\nUse case: precise-object-edit. Edit IMAGE1 (the new V03 background-only abstract oil panorama). Make ONE TINY CHANGE ONLY: add the small softly painted ivory moon from IMAGE2 near the upper right, at about80% of imagewidth and7% of imageheight. Match IMAGE2's little moon disk scale and warm ivory/lavender paint treatment, about7-8% of imageheight diameter. It is the same moon that appears in the integrated artwork, so the BACKGROUND layer must contain it for consistency.\nKeep all mountains, cloudsea, pinkwoodlandbands, mist, brightbluehourpalette, darkbottomvolcanicsoil, paintmarks and whole3:1panoramic framing of IMAGE1 unchanged. Do NOT copy ANY foreground flowers, grasses, or other objects from IMAGE2. IMAGE2 is ONLY the moon position/appearance guide. This remains a BACKGROUND-ONLY layer with open darkbasalt plantingsoil at bottom. No new objects, no text, no watermark. Preserve loose abstracted impasto oil painting style, soft rounded moonedges, nophotographicmoontexture."
         }
       ],
-      "project": "assets/set-review-v01/night_editor.json",
-      "unityLayout": "assets/set-review-v01/night_unity.json",
+      "project": "assets/set-review-v01/night_editor_v04.json",
+      "unityLayout": "assets/set-review-v01/night_unity_v04.json",
+      "legacyProject": "assets/set-review-v01/night_editor.json",
+      "legacyUnityLayout": "assets/set-review-v01/night_unity.json",
+      "projectVersion": "V04",
+      "legacyProjectVersion": "V01",
+      "projectLabel": "V04 · 꽃 크기 50% · 개수 4배",
+      "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다."
     },
@@ -6364,6 +6475,37 @@
           "previewBytes": 152752,
           "previewSha256": "daff442ee09cdbf94fec3a334534a8ba79e92ea044bdb8775f66701fc36eccb3",
           "generationPrompt": "Use case: compositing / illustration-story. Make ONE finished integrated MORNING flower garden panorama. IMAGE1 is the fixed new V03 fantasy mountain-and-cloud background. IMAGE2 is a guide only to established morning foreground flower designs/palette and focus hierarchy.\nPreserve the NEW asymmetric overlapping ascending ridges, luminous pearl cloud sea, tender pink woodland bands and golden mist fromIMAGE1. Do NOT replace it with a single broad postcard mountain. Whole panorama approx3:1. Bottom soil remains dark charcoal-brown Jeju basalt earth with low porous rocks.\nUse a MORE ABSTRACT OIL PAINTING treatment throughout: broad expressive gestural brushstrokes, thick soft impasto/palette-knife paint, simplified color masses, expressive broken edges. Flowers have recognizable silhouettes but petals suggested by loose strokes and daubs rather than crisp veins/CGI or photoreal 3D detail. Mountains/trees are softly lost in light/mist. No tiny mosaictexture filter.\nForeground flower palette: sky-blue/periwinkle and pale lilac hydrangea-like clusters in irregular clumps, a few slender blue-lavender spikes and airy ivory/blue-ivory tiny flowering branches, green-sage leaves. Main hero flower heads in lowerhalf have clearest painterly petal edges and strong color separation. Mixed sizes and angles, whole natural connected stems/leaves/heads. Avoid flat evenly repeated flower hedge.\nThree-depth camera feeling: soft blurred grasses/leaves and low basalt rocks at very bottom corners in FRONT of the flowers, main flowers in selective focus, luminous distant scenery more softly blurred and low contrast. Keep front environmental framing subtle, not hiding flower heads. Let flowers be the main subject and preserve the dark soil peeking between stems.\nMood is bright, delicate and magical MORNING: pale aqua/ivory sky, warm early sunlight from left, mint-blue slopes and pastel pink flowering ridges. No moon, stars, stormy darkness, opaqueplastic3Dflowers, giantglowingorbs, animals, buildings, text, watermark or borders."
+        },
+        {
+          "id": "BG04-I04-V04",
+          "version": "V04",
+          "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG04-I04-V04.png",
+          "name": "꽃 크기 50% · 개수 4배 통합 시안",
+          "width": 2172,
+          "height": 724,
+          "bytes": 3018541,
+          "sha256": "1fce03e8aeed92121d38055e412564af8105b49998853e328badba161de38832",
+          "verification": {
+            "alpha": false,
+            "borderClear": null,
+            "complete": true,
+            "technicalOnly": true,
+            "status": "technical_pass",
+            "visualMatch": "pending_manual_review",
+            "alphaThreshold": 8,
+            "minimumTransparentMarginPx": 8,
+            "visibleBounds": null,
+            "transparentMarginsPx": null,
+            "fullyTransparentFraction": 0,
+            "lowAlphaPixelsBelowThreshold": 0,
+            "note": "기술 검수만 통과. 형태·연결·색·조명·통합본 유사도는 개별 육안 검수가 필요합니다."
+          },
+          "preview": "assets/set-review-v01/preview/BG04-I04-V04.webp",
+          "previewWidth": 1200,
+          "previewHeight": 400,
+          "previewBytes": 168210,
+          "previewSha256": "b8b839f498d5019870c593dfadac017ceab6bf42795b805c574d6245a2fb01e6",
+          "generationPrompt": "Use case: precise-object-edit / illustration-story. Edit this exact V03 MORNING integrated panorama to V04. Only change flower scale/density: reduce EVERY foreground hydrangea cluster, blossom and whole flowering plant to approximately HALF its current LINEAR width/height, and populate approximately FOUR TIMES as many plants. The big blue and lavender hydrangea heads must visibly be 50% the previous diameter. Fill the lower planting zone gracefully with abundant SMALL individual blooms and flower clumps of the same blue/periwinkle/lilac/ivory designs, natural connected stems/leaves, variable angles and irregular spacing. Keep many fine ivory sprays and slender lavender spikes. Avoid leaving any giant near-camera blooms. Flower bed is richly filled, not a flat hedge or repeated identical cutouts.\nKEEP ALL scenic features in their exact positions: golden sunrise at far left, bright peach/ivory clouds, pale aqua sky, layered volcanic mountains and cloud sea, pink woodland ribbons and illuminated right ridge. Preserve the loose expressive semi-abstract impasto OIL PAINTING style, warm beautiful morning atmosphere, luminous landscape and dark charcoal-brown Jeju basalt earth/low rocks in the bottom. No scenery or palette changes. Keep the main small flowers selectively sharp in the painterly sense, distant scenery softly defocused, and very-near blurred leaves/grasses/environment framing along the bottom/corners. Main flowers remain visible and not obscured. Same approx3:1 full-bleed panoramic framing and canvas as input, no crop, border, text, watermark or panels."
         }
       ],
       "backgrounds": [
@@ -6459,8 +6601,14 @@
           "generationPrompt": "Use case: lighting-weather / style-transfer.\nEdit this new V03 ABSTRACT OIL fantasy background into its MORNING partner, preserving the same ultra-wide3:1 canvas, asymmetric layered ascending mountain/forest ridges, luminous cloud sea, flowing mist and pink woodland bands. This is the new reference-based composition, NOT a single postcard-shaped Hallasan mountain.\nChange only time-of-day palette and related light: pale aqua and cream morning sky, tender peach/ivory clouds, gentle early golden sunlight entering from left, cool mint and sage distant ridges with soft blue-lavender shadows, pale pink flowering woodland ribbons. Remove stars, night sky and moon. Keep the whole upper/middle scene luminous and beautiful.\nPUSH the abstracted oil feel: broad expressive gestural brushstrokes, thick impasto/soft palette-knife daubs, painterly color masses and broken edges. Suggest forest and rock forms with a few strokes instead of detailed CGI/photo scenery or tiny sharp mosaic details.\nPreserve bottom15-20% as dark charcoal-brown Jeju basalt-derived soil with a few low porous basalt stones, loosely painted and readable. Keep foregroundgroundopenforseparateflowerPNGplacement. No foreground flowers, no animals, no buildings, text, watermark or borders."
         }
       ],
-      "project": "assets/set-review-v01/morning_editor.json",
-      "unityLayout": "assets/set-review-v01/morning_unity.json",
+      "project": "assets/set-review-v01/morning_editor_v04.json",
+      "unityLayout": "assets/set-review-v01/morning_unity_v04.json",
+      "legacyProject": "assets/set-review-v01/morning_editor.json",
+      "legacyUnityLayout": "assets/set-review-v01/morning_unity.json",
+      "projectVersion": "V04",
+      "legacyProjectVersion": "V01",
+      "projectLabel": "V04 · 꽃 크기 50% · 개수 4배",
+      "legacyProjectLabel": "V01 · 이전 배치",
       "unityLayoutLabel": "Unity 좌표 참고 JSON",
       "unityLayoutNote": "PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다."
     }
@@ -6477,8 +6625,8 @@
     "flowerPngs": 96,
     "environmentPngs": 24,
     "backgroundPngs": 12,
-    "integratedPngs": 12,
-    "totalPngs": 144
+    "integratedPngs": 16,
+    "totalPngs": 148
   },
   "generationRecords": [
     {
@@ -6500,6 +6648,14 @@
     {
       "name": "v03-sunset-day-prompts.json",
       "src": "assets/set-review-v01/generation-records/v03-sunset-day-prompts.json"
+    },
+    {
+      "name": "v04-root-prompts.json",
+      "src": "assets/set-review-v01/generation-records/v04-root-prompts.json"
+    },
+    {
+      "name": "v04-sunset-day-prompts.json",
+      "src": "assets/set-review-v01/generation-records/v04-sunset-day-prompts.json"
     },
     {
       "name": "day-assets.json",

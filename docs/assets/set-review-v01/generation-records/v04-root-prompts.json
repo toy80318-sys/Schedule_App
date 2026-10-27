@@ -1,0 +1,26 @@
+{
+  "version": "V04",
+  "verificationNote": "Native generated PNGs preserved without resampling. Flower scale/count in AI references is approximate and visually reviewed; exact 0.5 linear scale and fourfold count are verified in the editor layout JSON.",
+  "assets": [
+    {
+      "id": "BG03-I04-V04",
+      "generationPrompt": "Use case: precise-object-edit / illustration-story. Edit this exact finished V03 moonlight integrated panoramic painting into a new V04 version. Main requested change ONLY: make every foreground flower plant and flower head approximately HALF its current linear size (50% width and 50% height), and increase the number of flower plants approximately FOURFOLD, so the lower flower garden is richly filled with many smaller individual flowers rather than a few large hero blooms. Existing biggest open pink blooms and blue hydrangea clusters must visibly become half as wide, not merely moved farther away while leaving giant flowers in front. Include many more small attached flowering plants distributed in natural irregular groups across the full lower planting area, including the central opening, without a mechanically repeated hedge. Keep the same six established flower design directions, sky-blue/periwinkle clusters, lilac/pink open blooms, slender lavender spikes and airy ivory sprays, attached stems and sage leaves. Dense but readable.\nKeep the mountains, cloudsea, pink woodland, little moon position, luminous bright blue-hour lighting, sky, underlying charcoal-brown basalt soil/rocks and broad expressive abstract oil paint style of the input intact. Do not change scenery, composition, exposure or palette. Keep the flowers in selective camera focus, with softly defocused distant landscape and VERY NEAR environmental grass/leaf framing at the bottom corners still blurred. Only bottom soil stays dark, scenery remains beautifully bright. The flower bed should now feel like a field of many small flowers. No new large flowers in the near plane. No text, panels, watermark or borders.\nONE full-bleed approximately3:1 panorama, same2172x724 framing as input. Preserve landscape positions. Do not crop.",
+      "referenceIds": [
+        "BG03-I03-V03"
+      ],
+      "tool": "built-in image_gen",
+      "requestedFlowerScale": 0.5,
+      "requestedCountMultiplier": 4
+    },
+    {
+      "id": "BG04-I04-V04",
+      "generationPrompt": "Use case: precise-object-edit / illustration-story. Edit this exact V03 MORNING integrated panorama to V04. Only change flower scale/density: reduce EVERY foreground hydrangea cluster, blossom and whole flowering plant to approximately HALF its current LINEAR width/height, and populate approximately FOUR TIMES as many plants. The big blue and lavender hydrangea heads must visibly be 50% the previous diameter. Fill the lower planting zone gracefully with abundant SMALL individual blooms and flower clumps of the same blue/periwinkle/lilac/ivory designs, natural connected stems/leaves, variable angles and irregular spacing. Keep many fine ivory sprays and slender lavender spikes. Avoid leaving any giant near-camera blooms. Flower bed is richly filled, not a flat hedge or repeated identical cutouts.\nKEEP ALL scenic features in their exact positions: golden sunrise at far left, bright peach/ivory clouds, pale aqua sky, layered volcanic mountains and cloud sea, pink woodland ribbons and illuminated right ridge. Preserve the loose expressive semi-abstract impasto OIL PAINTING style, warm beautiful morning atmosphere, luminous landscape and dark charcoal-brown Jeju basalt earth/low rocks in the bottom. No scenery or palette changes. Keep the main small flowers selectively sharp in the painterly sense, distant scenery softly defocused, and very-near blurred leaves/grasses/environment framing along the bottom/corners. Main flowers remain visible and not obscured. Same approx3:1 full-bleed panoramic framing and canvas as input, no crop, border, text, watermark or panels.",
+      "referenceIds": [
+        "BG04-I03-V03"
+      ],
+      "tool": "built-in image_gen",
+      "requestedFlowerScale": 0.5,
+      "requestedCountMultiplier": 4
+    }
+  ]
+}

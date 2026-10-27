@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
 import math
@@ -40,7 +41,8 @@ BASE_ART = [('I01','V01','꽃 포커스 통합본','integrated'),('I02','V02','�
 
 
 def art_variants(theme):
-    return BASE_ART + ([('B03','V03','레퍼런스 추상 유화 배경','backgrounds'),('I03','V03','레퍼런스 추상 유화 통합 시안','integrated')] if theme in V03_SETS else [])
+    code=next(code for key,code,*_ in THEMES if key==theme)
+    return BASE_ART + ([('B03','V03','레퍼런스 추상 유화 배경','backgrounds'),('I03','V03','레퍼런스 추상 유화 통합 시안','integrated')] if theme in V03_SETS else []) + ([('I04','V04','꽃 크기 50% · 개수 4배 통합 시안','integrated')] if (PNG/f'{code}-I04-V04.png').is_file() else [])
 
 
 def read_json(path):
@@ -313,7 +315,40 @@ def make_unity(project):
     }
 
 
-GUIDE = '''# AI 세트 검증 가이드 · V01 세트 / V03 추가 시안
+def make_project_v04(base,scene):
+    project=copy.deepcopy(base)
+    flowers={a['id']:a for a in scene['flowers']}
+    objects=[]
+    for index,original in enumerate(project['objects']):
+        asset=flowers.get(original['assetId'])
+        if asset is None:
+            objects.append(original)
+            continue
+        bounds=asset['verification']['visibleBounds']
+        u=(bounds[0]+bounds[2])/2/asset['width']
+        v=bounds[3]/asset['height']
+        angle=math.radians(original['r'])
+        sine,cosine=math.sin(angle),math.cos(angle)
+        flip=-1 if original['flipX'] else 1
+        local_x=(u-.5)*original['w']*flip
+        local_y=(v-.5)*original['h']
+        anchor_x=original['x']+original['w']/2+cosine*local_x-sine*local_y
+        anchor_y=original['y']+original['h']/2+sine*local_x+cosine*local_y
+        width,height=original['w']*.5,original['h']*.5
+        local_x=(u-.5)*width*flip
+        local_y=(v-.5)*height
+        for number in range(4):
+            phase=(index+1)*1.618+number*2.399
+            dx=0 if number==0 else math.cos(phase)*width*.65
+            dy=0 if number==0 else math.sin(phase)*height*.16
+            x=anchor_x+dx-cosine*local_x+sine*local_y-width/2
+            y=anchor_y+dy-sine*local_x-cosine*local_y-height/2
+            objects.append({**original,'id':original['id']+f'-v04-{number}','sourceObjectId':original['id'],'copyIndex':number,'anchorKind':'alpha-bounds-bottom-center','x':max(0,min(project['width']-width,x)),'y':max(0,min(project['height']-height,y)),'w':width,'h':height,'baseW':original['baseW']*.5,'baseH':original['baseH']*.5})
+    project.update({'name':f'{scene["code"]} V04 · {scene["label"]} · 꽃 크기 50% · 개수 4배','setReviewVersion':'V04','background':next(a['src'] for a in scene['backgrounds'] if a['id']==scene['code']+'-B03-V03'),'objects':objects,'densitySpec':{'sourceFlowerCount':80,'flowerScale':.5,'copiesPerFlower':4,'flowerCount':320,'environmentCount':36,'anchor':'alpha-bounds-bottom-center'},'reviewNote':base['reviewNote']+' V04 배치는 기존 꽃의 가로·세로와 기준 크기를 정확히 50%로 줄이고 같은 원본별 개체 수를 4배로 늘렸습니다. AI 통합 시안의 수치는 시각적 근사이며 저장 배치의 수치와 구분합니다.'})
+    return project
+
+
+GUIDE = '''# AI 세트 검증 가이드 · V01 세트 / V04 밀도 배치
 
 ## 번호와 비교 순서
 
@@ -322,6 +357,8 @@ GUIDE = '''# AI 세트 검증 가이드 · V01 세트 / V03 추가 시안
 - B01-V01: 선명한 밝은 배경. B02-V02: 약한 블러를 준 밝은 배경.
 - B03-V03: 레퍼런스 추상 유화 배경. I03-V03: 레퍼런스 추상 유화 통합 시안. 기존 V01/V02 뒤에 추가한 비교용 버전이며 꽃 96장·환경 24장과 기존 기본 배치는 변경하지 않습니다.
 - V03은 층층이 겹친 산, 구름 바다, 분홍빛 능선과 넓고 표현적인 임파스토 붓질을 기준으로 봅니다. 밝은 대기·하늘과 하단의 짙은 현무암 흙, 선명한 주인공 꽃·부드러운 원경·흐린 전경의 초점 구분을 함께 확인합니다.
+- I04-V04는 꽃 크기 50%·개수 4배의 시각적 통합 시안입니다. 정확한 크기·개수는 *_editor_v04.json의 배치 데이터가 기준이며, 생성된 시안 그림의 꽃 수를 정확한 수치로 판정하지 않습니다.
+- V04 배치는 기존 80개 꽃 각각의 w/h와 baseW/baseH를 정확히 0.5로 줄인 4개체씩, 총 꽃 320개와 기존 환경 36개로 구성합니다. 첫 개체는 회전·좌우 반전을 포함한 알파 범위 하단 중심 접점을 유지하고 추가 3개는 가까운 위치에 분산합니다. 환경 요소와 기존 V01 배치 파일은 바꾸지 않습니다.
 - F01..F06은 최근 통합 시안에서 가져온 여섯 디자인 방향이며 각각 C01..C04의 가까운 색상을 가집니다. 원래의 식물학적 6종을 뜻하지 않습니다.
 - E01 풀 / E02 나무 / E03 나비 / E04 구름 / E05 현무암 / E06 잎 가지.
 - 같은 BG 번호의 통합본, 배경, 꽃, 환경 요소, 배치 파일만 함께 비교합니다.
@@ -338,7 +375,7 @@ GUIDE = '''# AI 세트 검증 가이드 · V01 세트 / V03 추가 시안
 
 ## 통합 시안과 비교
 
-1. 선택한 통합본(I02-V02 또는 I03-V03) 옆에 *_editor.json의 웹 합성을 열어 전체 구도부터 비교합니다. V03 비교 시 배경 선택에서 B03-V03을 명시적으로 선택합니다. 기본 배치 파일은 기존 B02-V02를 그대로 유지합니다.
+1. 선택한 통합본(I02-V02, I03-V03 또는 I04-V04) 옆에 배치 버전을 골라 전체 구도부터 비교합니다. 최신 V04 배치는 B03-V03 배경을 쓰며 *_editor_v04.json으로 연결됩니다. 이전 *_editor.json은 B02-V02와 꽃 80개·환경 36개를 그대로 보존합니다.
 2. F 번호별 꽃 형태, 꽃잎 수와 방향, 줄기 굵기와 길이, 잎의 모양을 기록합니다.
 3. 같은 디자인의 C01..C04가 정말 비슷한 계열의 색 변화인지 검사합니다. 잎·줄기 초록을 꽃잎과 함께 변색시키지 않습니다.
 4. 배경의 밝은 산·하늘과 하단의 짙은 현무암 흙이 유지되는지 확인합니다. 광원 방향과 따뜻함/차가움이 꽃·나무·풀에 이어져야 합니다.
@@ -363,7 +400,7 @@ def build(check=False):
         prepare_sources()
     metadata = generation_metadata()
     prior=read_json(OUT/'manifest.json') if (OUT/'manifest.json').is_file() else None
-    preserved_sources={a['id']:a['sha256'] for s in prior['backgrounds'] for group in ['flowers','environment','backgrounds','integrated'] for a in s[group] if a['version'] in ['V01','V02']} if prior else {}
+    preserved_sources={a['id']:a['sha256'] for s in prior['backgrounds'] for group in ['flowers','environment','backgrounds','integrated'] for a in s[group] if a['version'] in ['V01','V02','V03']} if prior else {}
     layout_paths=[OUT/f'{theme}_{kind}.json' for theme,*_ in THEMES for kind in ['editor','unity']]
     preserved_layouts={path.name:digest(path) for path in layout_paths if path.is_file()}
     expected = []
@@ -377,7 +414,7 @@ def build(check=False):
     inspected = {aid: inspect_png(PNG / f'{aid}.png', '-F' in aid or '-E' in aid) for aid in expected}
     for aid,sha in preserved_sources.items():
         if inspected[aid]['sha256']!=sha:
-            raise ValueError(f'기존 V01/V02 원본의 바이트가 달라졌습니다: {aid}')
+            raise ValueError(f'기존 V01/V02/V03 원본의 바이트가 달라졌습니다: {aid}')
     held = [aid for aid, info in inspected.items() if not info['verification']['complete']]
     if held:
         raise ValueError('독립 PNG 기술 검수 보류(알파/가장자리 확인 필요):\n' + '\n'.join(held))
@@ -396,11 +433,11 @@ def build(check=False):
                     record['generationPrompt']=meta['generationPrompt']
                 flowers.append(record)
         env = [asset_record(f'{code}-{eid}-V01', inspected[f'{code}-{eid}-V01'], category=category, name=f'{label} · {name}', theme=theme, origin='generated_independent_png' if eid == 'E02' else 'previous_complete_independent_png') for eid, category, name, _ in ENV]
-        scene = {'id': theme, 'code': code, 'label': label, 'palette': colors, 'flowers': flowers, 'environment': env, 'integrated': [], 'backgrounds': [], 'project': f'assets/set-review-v01/{theme}_editor.json', 'unityLayout': f'assets/set-review-v01/{theme}_unity.json', 'unityLayoutLabel':'Unity 좌표 참고 JSON', 'unityLayoutNote':'PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.'}
+        scene = {'id': theme, 'code': code, 'label': label, 'palette': colors, 'flowers': flowers, 'environment': env, 'integrated': [], 'backgrounds': [], 'project': f'assets/set-review-v01/{theme}_editor_v04.json', 'unityLayout': f'assets/set-review-v01/{theme}_unity_v04.json', 'legacyProject':f'assets/set-review-v01/{theme}_editor.json','legacyUnityLayout':f'assets/set-review-v01/{theme}_unity.json','projectVersion':'V04','legacyProjectVersion':'V01','projectLabel':'V04 · 꽃 크기 50% · 개수 4배','legacyProjectLabel':'V01 · 이전 배치','unityLayoutLabel':'Unity 좌표 참고 JSON', 'unityLayoutNote':'PNG/ 경로는 이 JSON과 함께 내려받은 PNG 폴더 기준입니다. 현재 Unity 임포터는 blur 메타데이터를 적용하지 않으며 실제 Unity 실행은 미검증입니다.'}
         for kind, version, name, group in art_variants(theme):
             aid = f'{code}-{kind}-{version}'
             record=asset_record(aid, inspected[aid], name=name)
-            if version=='V03' and metadata.get(aid,{}).get('generationPrompt'):
+            if version in ['V03','V04'] and metadata.get(aid,{}).get('generationPrompt'):
                 record['generationPrompt']=metadata[aid]['generationPrompt']
             scene[group].append(record)
         scenes.append(scene)
@@ -421,6 +458,11 @@ def build(check=False):
         project = make_project(scene)
         preserve_layout(OUT/f'{scene["id"]}_editor.json',project)
         preserve_layout(OUT/f'{scene["id"]}_unity.json',make_unity(project))
+        current=make_project_v04(project,scene)
+        preserve_layout(OUT/f'{scene["id"]}_editor_v04.json',current)
+        unity=make_unity(current)
+        unity['sourceProject']=f'{scene["id"]}_editor_v04.json'
+        preserve_layout(OUT/f'{scene["id"]}_unity_v04.json',unity)
     for name,sha in preserved_layouts.items():
         if digest(OUT/name)!=sha:
             raise ValueError(f'기존 배치 파일의 바이트가 달라졌습니다: {name}')

@@ -1,0 +1,47 @@
+{
+  "tool": "built-in image_gen",
+  "version": "V04",
+  "date": "2026-10-27",
+  "route": "builtin_imagegen_edit",
+  "requestedDimensions": [
+    2172,
+    724
+  ],
+  "requestedFlowerLinearScale": 0.5,
+  "requestedFlowerCountMultiplier": 4,
+  "verificationNote": "Native generated outputs preserved without resampling. The size/count change is approximate and visually reviewed; these are generated integrated references, not object-count-verified editor renders.",
+  "assets": [
+    {
+      "id": "BG01-I04-V04",
+      "theme": "sunset",
+      "prompt": "Use case: precise-object-edit.\nThe attached V03 integrated panorama is the EDIT TARGET. Make a NEW V04 by changing ONLY the foreground FLOWER SCALE AND NUMBER.\nMandatory primary change: EVERY individual flower head and its attached plant should be approximately HALF the linear size of its current counterpart (50% width and 50% height). Replace each oversized hero blossom/plant with several smaller complete blossoms/plants; aim for roughly FOUR TIMES as many individual flowers overall. Largest near flower heads should now be about half the current image's largest heads, with many medium/small blossoms instead of a few giant flowers. Do NOT simply add tiny distant flowers while keeping the original giant foreground heads.\nFlower palette and design families remain coral-red, blush-pink and peach camellias, loose apricot-orange marigolds and delicate ivory small flower sprays. Preserve recognizable expressive abstract-oil petal shapes and natural attached stems/leaves. Each flower remains healthy and connected, never detached flower disks or cut paper pieces.\nDistribution: a much fuller and more populous natural garden, irregular clumps, gentle layered height variation and small open gaps, with small flowers flowing across the existing flower-bed area. Approximately 4x the flower count, not a flat uniform tiled hedge. Existing flower-bed overall height, front-to-back placement area and foothill transition stay natural and similar; individual plants are smaller and more numerous. Keep dark basalt soil visible through small planting gaps and along the low edge.\nINVARIANTS — keep unchanged: exact panoramic camera/framing, new V03 asymmetric layered fantasy mountain ridges, cumulus cloud sea, pink woodland ribbons, mist, sun position, sky and mountain lighting/color, broad oil impasto and palette-knife painted style, bright upper/middle values, and the dark Jeju basalt-derived earth and low stones at the bottom. Do not zoom or move the camera, scale the mountain scene, crop or change horizon, add another mountain, or change time of day.\nKeep the near-camera foreground grass/leaves/basalt at the lower corners softly BLURRED exactly as before. Main small flower heads in the focus plane remain the sharpest expressive painted marks; distant flowers and landscape stay softer. Avoid bokeh orbs, glitter, a new black vignette, plastic CGI, photographic leaf veins, text, labels, borders and watermark.\nCanvas: retain EXACT 2172 x 724 pixels, ultra-wide 3:1 composition. Output ONE edited integrated image, no comparison panels.",
+      "referenceIds": [
+        "BG01-I03-V03"
+      ],
+      "generationSourceFilename": "exec-fdd75fe6-3068-4b43-b24f-2a378eb43f86.png",
+      "requestedLinearFlowerScale": 0.5,
+      "requestedFlowerCountMultiplier": 4,
+      "src": "source-assets/set-review-v01/BG01-I04-V04.png",
+      "width": 2171,
+      "height": 724,
+      "sha256": "4eeccc24d7f50715e21ca452717a08a93f903a0c60cfb64c5692b3b35534317a",
+      "bytes": 2914542
+    },
+    {
+      "id": "BG02-I04-V04",
+      "theme": "day",
+      "prompt": "Use case: precise-object-edit.\nThe attached V03 integrated panorama is the EDIT TARGET. Make a NEW V04 by changing ONLY the foreground FLOWER SCALE AND NUMBER.\nMandatory primary change: EVERY individual flower head and its attached plant should be approximately HALF the linear size of its current counterpart (50% width and 50% height). Replace each oversized hero blossom/plant with several smaller complete blossoms/plants; aim for roughly FOUR TIMES as many individual flowers overall. Largest near flower heads should now be about half the current image's largest heads, with many medium/small blossoms instead of a few giant flowers. Do NOT simply add tiny distant flowers while keeping the original giant foreground heads.\nFlower palette and design families remain golden-yellow and apricot marigolds, lemon rapeseed flowers and fine cream-white flowering branches. Preserve recognizable expressive abstract-oil petal shapes and natural attached stems/leaves. Each flower remains healthy and connected, never detached flower disks or cut paper pieces.\nDistribution: a much fuller and more populous natural garden, irregular clumps, gentle layered height variation and small open gaps, with small flowers flowing across the existing flower-bed area. Approximately 4x the flower count, not a flat uniform tiled hedge. Existing flower-bed overall height, front-to-back placement area and foothill transition stay natural and similar; individual plants are smaller and more numerous. Keep dark basalt soil visible through small planting gaps and along the low edge.\nINVARIANTS — keep unchanged: exact panoramic camera/framing, new V03 asymmetric layered fantasy mountain ridges, cumulus cloud sea, pink woodland ribbons, mist, sun position, sky and mountain lighting/color, broad oil impasto and palette-knife painted style, bright upper/middle values, and the dark Jeju basalt-derived earth and low stones at the bottom. Do not zoom or move the camera, scale the mountain scene, crop or change horizon, add another mountain, or change time of day.\nKeep the near-camera foreground grass/leaves/basalt at the lower corners softly BLURRED exactly as before. Main small flower heads in the focus plane remain the sharpest expressive painted marks; distant flowers and landscape stay softer. Avoid bokeh orbs, glitter, a new black vignette, plastic CGI, photographic leaf veins, text, labels, borders and watermark.\nCanvas: retain EXACT 2172 x 724 pixels, ultra-wide 3:1 composition. Output ONE edited integrated image, no comparison panels.",
+      "referenceIds": [
+        "BG02-I03-V03"
+      ],
+      "generationSourceFilename": "exec-60701f65-9ae9-4555-af95-141c9957498d.png",
+      "requestedLinearFlowerScale": 0.5,
+      "requestedFlowerCountMultiplier": 4,
+      "src": "source-assets/set-review-v01/BG02-I04-V04.png",
+      "width": 2172,
+      "height": 724,
+      "sha256": "b4a9a751b07b18776f71eb637405de9bd2d90fbecbe16d276dffca75ac12bd83",
+      "bytes": 3063678
+    }
+  ]
+}

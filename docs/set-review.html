@@ -11,7 +11,7 @@
   <script defer src="background-grade.js?v=57"></script>
   <script defer src="flower-hue.js?v=68"></script>
   <script defer src="set-review-renderer.js?v=1"></script>
-  <script defer src="set-review.js?v=3"></script>
+  <script defer src="set-review.js?v=4"></script>
 </head>
 <body>
   <main class="review-page">
@@ -36,16 +36,18 @@
           <figure class="comparison-card"><figcaption><span class="badge secondary">배치 파일 합성</span><strong>Unity 전달 배치의 웹 합성 미리보기</strong></figcaption><div class="comparison-frame checker"><canvas id="layoutCanvas" width="1800" height="442" aria-label="에디터 배치 저장파일을 합성한 이미지"></canvas><p id="canvasEmpty">배치 이미지를 준비하고 있습니다.</p></div><div class="render-meta"><span id="projectName">기본 배치</span><button type="button" id="downloadRender" class="download-link" disabled>합성 PNG 저장 ↓</button></div></figure>
         </div>
         <div class="comparison-controls">
+          <label class="field">배치 버전<select id="layoutVersion"></select></label>
           <label class="upload-button">에디터 배치 저장파일 불러오기<input id="projectFile" type="file" accept=".json,application/json"></label>
-          <button type="button" id="loadDefault" class="quiet-button">이 배경의 기본 배치</button>
+          <button type="button" id="loadDefault" class="quiet-button">선택한 기본 배치 불러오기</button>
           <label class="field">합성에 사용할 배경<select id="renderBackground"><option value="">배치 파일의 배경 유지</option></select></label>
           <a id="projectDownload" class="text-link" download>기본 에디터 배치 JSON ↓</a>
           <a id="unityLayoutDownload" class="text-link" download>Unity 좌표 참고 JSON ↓</a>
         </div>
+        <p id="layoutVersionNote" class="fine-print"></p>
         <p id="renderStatus" class="status" role="status" aria-live="polite"></p>
         <p class="fine-print">불러온 파일은 이 브라우저에서만 읽습니다. 웹 합성 결과는 실제 Unity 실행 화면이 아닙니다. 좌표 참고 JSON은 완성된 Unity 패키지가 아니며, 블러는 이미지에 구워져 있지 않아 Unity에서 별도 적용이 필요합니다.</p>
         <details class="unity-shot"><summary>실제 Unity 실행 화면과도 비교하기</summary><div class="section-heading"><p>Unity에서 저장한 화면을 추가하면 통합 시안·배치 합성·실제 캡처를 함께 확인할 수 있습니다.</p><label class="upload-button secondary">Unity 캡처 이미지 불러오기<input id="unityScreenshotFile" type="file" accept="image/png,image/jpeg,image/webp"></label></div><figure id="unityScreenshotFigure" hidden><img id="unityScreenshot" alt="사용자가 불러온 실제 Unity 실행 캡처"><figcaption id="unityScreenshotName"></figcaption></figure><p id="unityScreenshotStatus" class="fine-print">실제 Unity 캡처가 아직 없습니다.</p></details>
-        <details class="review-details"><summary>비교·검수 결과와 AI 제작 기준</summary><div id="renderIssues"></div><p>통합 시안은 목표 이미지입니다. PNG 구조 검사 통과만으로 시안과의 시각적 일치나 Unity 작동이 확인되지는 않습니다.</p><p>AI 검증 가이드와 제작 메타데이터·프롬프트 기록을 함께 사용하면 번호별 목표 이미지와 재생성 기준을 확인할 수 있습니다.</p><button type="button" id="downloadAudit" class="quiet-button">이 세트의 AI 검증·제작 기준 JSON ↓</button><a class="text-link" href="assets/set-review-v01/manifest.json?v=3" download>전체 세트 목록 JSON ↓</a><a class="text-link" href="assets/set-review-v01/AI_검증가이드.md" target="_blank" rel="noopener">AI 검증·재생성 가이드 ↗</a></details>
+        <details class="review-details"><summary>비교·검수 결과와 AI 제작 기준</summary><div id="renderIssues"></div><p>통합 시안은 목표 이미지입니다. PNG 구조 검사 통과만으로 시안과의 시각적 일치나 Unity 작동이 확인되지는 않습니다.</p><p>AI 검증 가이드와 제작 메타데이터·프롬프트 기록을 함께 사용하면 번호별 목표 이미지와 재생성 기준을 확인할 수 있습니다.</p><button type="button" id="downloadAudit" class="quiet-button">이 세트의 AI 검증·제작 기준 JSON ↓</button><a class="text-link" href="assets/set-review-v01/manifest.json?v=4" download>전체 세트 목록 JSON ↓</a><a class="text-link" href="assets/set-review-v01/AI_검증가이드.md" target="_blank" rel="noopener">AI 검증·재생성 가이드 ↗</a></details>
       </section>
       <section id="panel-backgrounds" class="tab-panel" role="tabpanel" aria-labelledby="tab-backgrounds" hidden><div class="section-heading"><div><h3>네 가지 배경, 같은 기준으로.</h3><p>시간대를 고르면 해당 배경의 원본과 약한 블러 버전을 함께 볼 수 있습니다.</p></div></div><div id="backgroundOverview" class="background-overview"></div><h3 id="backgroundVariantsTitle"></h3><div id="backgroundVariants" class="background-variants"></div></section>
       <section id="panel-flowers" class="tab-panel" role="tabpanel" aria-labelledby="tab-flowers" hidden><div class="section-heading"><div><h3>꽃 디자인 6종 × 가까운 계열 4색</h3><p>최근 통합 시안에 보이는 꽃 디자인을 기준으로 정리했습니다. 각 카드는 한 개체가 온전히 들어 있는 독립 PNG입니다.</p></div><span id="flowerCount" class="count-pill"></span></div><p class="fine-print">체커보드는 투명 영역입니다. 이미지를 누르면 원본을 크게 보고 저장할 수 있습니다. 비어 있는 칸은 제작·검수 미완료로 표시합니다.</p><p id="flowerReviewReference" class="fine-print"></p><div id="flowerMatrix" class="flower-matrix"></div></section>

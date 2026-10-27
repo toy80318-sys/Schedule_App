@@ -10,6 +10,8 @@ for(const change of [
   value=>value.backgrounds.pop(),
   value=>value.backgrounds[1].id='sunset',
   value=>value.backgrounds[0].project='javascript:alert(1)',
+  value=>value.backgrounds[0].legacyProject='javascript:alert(1)',
+  value=>value.backgrounds[0].legacyUnityLayout='https://user:secret@example.com/old.json',
   value=>value.backgrounds[0].integrated[0].src='data:text/html,unsafe',
   value=>value.backgrounds[0].flowers.push({id:'unsafe',src:'https://user:secret@example.com/a.png'}),
   value=>value.backgrounds[0].backgrounds[0].id='sunset-I01',
@@ -22,6 +24,7 @@ assert.equal(vm.runInNewContext(storageCode,{localStorage:{getItem:()=>'{"ok":{"
 
 const asset={id:'BG04-F01-C02-V01',sha256:'flower-v1',src:'assets/flower.png'},I02={id:'BG04-I02',version:'V02',src:'assets/I02.png',sha256:'reference-2'},I01={id:'BG04-I01',version:'V01',src:'assets/I01.png',sha256:'reference-1'};
 const I03={id:'BG04-I03',version:'V03',src:'assets/I03.png',sha256:'reference-3'};
+const I04={id:'BG04-I04',version:'V04',src:'assets/I04.png',sha256:'reference-4'};
 const manual={'BG04-F01-C02-V01|flower-v1':{status:'확인',comment:'legacy review without a reference'}},context={manual,manualKey:'test',referenceEntry:I02,localStorage:{setItem(){}},status(){}};
 vm.createContext(context);
 const review=vm.runInContext(extract('  function reviewKey','  function structuralCheck')+';({reviewKey,manualReview,saveReview})',context);
@@ -40,6 +43,11 @@ context.referenceEntry=I01;
 assert.equal(review.manualReview(asset).status,'미검토','I03 approval must not approve I01');
 context.referenceEntry=I02;
 assert.equal(review.manualReview(asset).status,'확인','I03 review leaves the prior I02 review intact');
+context.referenceEntry=I04;
+assert.equal(review.manualReview(asset).status,'미검토','the V04 target starts without carrying forward earlier approvals');
+review.saveReview(asset,{status:'확인',comment:'matches I04'});
+context.referenceEntry=I02;
+assert.equal(review.manualReview(asset).status,'확인','V04 review does not change the I02 review');
 assert.equal(review.manualReview({...asset,sha256:'flower-v2'}).status,'미검토','asset hash changes invalidate approval');
 assert.equal(review.manualReview(asset,{...I02,sha256:'new-reference-content'}).status,'미검토','reference hash changes invalidate approval');
 const pathReference={id:'path-only-I02',src:'assets/reference-a.png'};
@@ -60,10 +68,23 @@ assert(source.includes("$('integratedVersion').onchange=()=>showReference(true)"
 const optionList=()=>({options:[],value:'',replaceChildren(...items){this.options=[...items];},append(item){this.options.push(item);}}),Option=class{constructor(label,value){this.label=label;this.value=value;}};
 const referenceSelect=optionList();let referenceRefreshes=0;
 const fillReference=vm.runInNewContext(extract('  function fillReference','  function showReference')+';fillReference',{$:()=>referenceSelect,Option,showReference:()=>referenceRefreshes++});
-fillReference({integrated:[I01,I02,I03]});assert.equal(referenceSelect.options.length,3);assert.equal(referenceSelect.value,'2','appended I03 is selected as the newest integrated reference');assert.equal(referenceRefreshes,1);
+fillReference({integrated:[I01,I02,I03,I04]});assert.equal(referenceSelect.options.length,4);assert.equal(referenceSelect.value,'3','appended I04 is selected as the newest integrated reference');assert.equal(referenceRefreshes,1);
 const backgroundSelect=optionList(),fillBackgroundChoices=vm.runInNewContext(extract('  function fillRenderBackground','  async function signature')+';fillRenderBackground',{$:()=>backgroundSelect,Option});
 fillBackgroundChoices({backgrounds:[{version:'V01',name:'sharp',src:'assets/B01.png'},{version:'V02',name:'soft',src:'assets/B02.png'},{version:'V03',name:'revised',src:'assets/B03.png'}]});
 assert.equal(backgroundSelect.options.length,4,'all three background versions plus preserve-project option remain selectable');assert.equal(backgroundSelect.options[3].value,'assets/B03.png');
+
+const layoutNodes={layoutVersion:optionList(),projectDownload:{},unityLayoutDownload:{},layoutVersionNote:{}};
+const layoutUI=vm.runInNewContext(extract('  function projectChoices','  async function readProject')+';({projectChoices,selectedProjectChoice,syncProjectLinks,fillProjectVersions})',{$:id=>layoutNodes[id],Option});
+const layoutSet={id:'sunset',label:'노을',project:'assets/sunset_editor_v04.json',unityLayout:'assets/sunset_unity_v04.json',projectVersion:'V04',projectLabel:'V04 · 꽃 크기 50% · 개수 4배',legacyProject:'assets/sunset_editor.json',legacyUnityLayout:'assets/sunset_unity.json',legacyProjectVersion:'V01',legacyProjectLabel:'V01 · 이전 배치'};
+layoutUI.fillProjectVersions(layoutSet);
+assert.equal(layoutNodes.layoutVersion.options.length,2);assert.equal(layoutNodes.layoutVersion.value,'current');
+assert.equal(layoutNodes.projectDownload.href,layoutSet.project);assert.equal(layoutNodes.unityLayoutDownload.href,layoutSet.unityLayout);
+assert(layoutNodes.layoutVersionNote.textContent.includes('320개')&&layoutNodes.layoutVersionNote.textContent.includes('356개'));
+layoutNodes.layoutVersion.value='legacy';layoutUI.syncProjectLinks(layoutSet);
+assert.equal(layoutNodes.projectDownload.href,layoutSet.legacyProject);assert.equal(layoutNodes.unityLayoutDownload.href,layoutSet.legacyUnityLayout);
+assert(layoutNodes.layoutVersionNote.textContent.includes('116개'));
+assert.equal(layoutUI.projectChoices({project:'assets/only.json'}).length,1,'older manifests without a legacy project retain one valid default');
+assert(source.includes("$('layoutVersion').onchange=()=>{if(!selected)return;uploads.delete(selected.id)"),'explicit layout selection clears only the active theme upload before rendering that default');
 
 const slots=vm.runInNewContext(extract('  function flowerSlots','  function fillFlowers')+';flowerSlots');
 assert.equal(slots({flowers:[]}).length,24);
@@ -83,4 +104,12 @@ assert(source.includes('category:assetCategory(a)'),'audit records must use the 
 for(const id of [...source.matchAll(/\$\('([^']+)'\)/g)].map(match=>match[1]))assert(html.includes('id="'+id+'"'),'missing HTML element '+id);
 assert(fs.readFileSync(path.join(web,'set-review.css'),'utf8').includes('object-fit:contain'),'comparison frames preserve the source aspect ratios');
 assert(source.includes('if(token!==renderToken)return'),'older renders cannot replace the latest selected set');
-console.log('PASS: I01/I02/I03 reference-bound reviews and hash/path invalidation, legacy/malformed review storage, captured card references, safe manifest metadata,24 flower/6 environment slots with manifest-driven art counts and complete UI wiring.');
+(async()=>{
+  const uploads=new Map(),projectCache=new Map(),fetched=[];
+  const readProject=vm.runInNewContext(extract('  async function readProject','  async function renderProject')+';readProject',{uploads,projectCache,selectedProjectChoice:()=>layoutUI.projectChoices(layoutSet)[0],fetch:async src=>({ok:true,text:async()=>{fetched.push(src);return JSON.stringify({name:src,objects:[]});}}),window:{JejuSetRenderer:{validate:value=>value}},signature:async text=>'sha-'+text});
+  const choices=layoutUI.projectChoices(layoutSet),current=await readProject(layoutSet,choices[0]),legacy=await readProject(layoutSet,choices[1]);
+  assert.equal(current.path,layoutSet.project);assert.equal(current.version,'V04');assert.equal(legacy.path,layoutSet.legacyProject);assert.equal(legacy.version,'V01');assert.notEqual(current.sha256,legacy.sha256);
+  assert.equal(await readProject(layoutSet,choices[0]),current);assert.equal(fetched.length,2,'latest and legacy projects are cached by path without overwriting one another');
+  const uploaded={name:'custom.json',path:null,project:{objects:[]}};uploads.set(layoutSet.id,uploaded);assert.equal(await readProject(layoutSet,choices[1]),uploaded,'user uploads remain available until an explicit default selection');
+  console.log('PASS: I01–I04 reference-bound reviews, latest/legacy layout selection and path caches, uploads preserved, safe metadata,24 flower/6 environment slots with manifest-driven art counts and complete UI wiring.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

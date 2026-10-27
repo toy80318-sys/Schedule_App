@@ -125,7 +125,7 @@
     for(let n=0;n<ahead;n++){const i=frame+(closing?-n:n);if(i>=0&&i<v.frames.length)requestFrame(v.frames[i]).catch(()=>{})}
   }
   function toneCSS(t={}){const v=(key,def,min,max)=>finite(t?.[key],min,max)?t[key]:def,b=v('brightness',100,0,200),c=v('contrast',100,0,200),s=v('saturation',100,0,200),w=v('warmth',0,-100,100);return [b!==100?`brightness(${b}%)`:'',c!==100?`contrast(${c}%)`:'',s!==100?`saturate(${s}%)`:'',w?`sepia(${Math.abs(w)*.25}%) hue-rotate(${w<0?180:0}deg)`:''].filter(Boolean).join(' ')}
-  function filter(scope){return [toneCSS(project?.sceneFilters?.[scope]),toneCSS(project?.sceneFilters?.scene),scope==='background'?window.jejuBackgroundGrade?.css(project?.sceneFilters?.backgroundGrade,'jeju-player-background-grade'):''].filter(Boolean).join(' ')||'none'}
+  function filter(scope){return [toneCSS(project?.sceneFilters?.[scope]),toneCSS(project?.sceneFilters?.scene),scope==='background'?window.jejuBackgroundGrade?.css(project?.sceneFilters?.backgroundGrade,'jeju-player-background-grade'):'',scope==='background'?window.jejuFocus?.css(window.jejuFocus.normalize(project?.sceneFilters?.focus).background,project.height,Math.abs(ctx.getTransform().a)):''].filter(Boolean).join(' ')||'none'}
   function scatter(o,v){
     o=window.jejuSpace?.pose(o,assets.get(o.assetId),project.height,project.gardenSpace,cameraView)||o;
     const texture=v.petalTexture&&stills.get('petal:'+v.id);const angle=o.r*Math.PI/180,m=o.plane||[Math.cos(angle),Math.sin(angle),-Math.sin(angle),Math.cos(angle)],count=reduced.matches?5:24;
@@ -143,7 +143,7 @@
   function drawObject(o,im,scope='decor',opacity=1,neutral=false,cast=true){
     if(!im)return;const iw=im.videoWidth||im.naturalWidth||im.width,ih=im.videoHeight||im.naturalHeight||im.height;if(!iw||!ih)return;
     const a=assets.get(o.assetId),lighting=window.jejuSpace?.lighting(o,a,project.height,project.gardenSpace,cameraView).brightness??1;if(cast)window.jejuSpace?.castShadow(ctx,o,a,im,project.height,project.gardenSpace,cameraView);o=window.jejuSpace?.pose(o,a,project.height,project.gardenSpace,cameraView)||o;if(window.jejuSpace?.ground(a))window.jejuSpace.shadow(ctx,o);
-    const baseTone=['particle','butterfly'].includes(a?.category)?toneCSS(project?.sceneFilters?.scene):filter(scope),tone=[baseTone==='none'?'':baseTone,scope==='flowers'?window.jejuFlowerHue?.css(o.flowerHue):'',lighting===1?'':`brightness(${lighting})`].filter(Boolean).join(' ')||'none';ctx.save();ctx.filter=neutral?(tone==='none'?'grayscale(1)':tone+' grayscale(1)'):tone;ctx.globalAlpha=o.opacity*opacity;ctx.translate(o.x+o.w/2,o.y+o.h/2);if(window.jejuSpace)window.jejuSpace.orient(ctx,o);else ctx.rotate(o.r*Math.PI/180);if(o.flipX)ctx.scale(-1,1);
+    const baseTone=['particle','butterfly'].includes(a?.category)?toneCSS(project?.sceneFilters?.scene):filter(scope),tone=[baseTone==='none'?'':baseTone,scope==='flowers'?window.jejuFlowerHue?.css(o.flowerHue):'',lighting===1?'':`brightness(${lighting})`,window.jejuFocus?.css(window.jejuFocus.amount(o,a,project?.sceneFilters?.focus,project.height,project.gardenSpace),project.height,Math.abs(ctx.getTransform().a))].filter(Boolean).join(' ')||'none';ctx.save();ctx.filter=neutral?(tone==='none'?'grayscale(1)':tone+' grayscale(1)'):tone;ctx.globalAlpha=o.opacity*opacity;ctx.translate(o.x+o.w/2,o.y+o.h/2);if(window.jejuSpace)window.jejuSpace.orient(ctx,o);else ctx.rotate(o.r*Math.PI/180);if(o.flipX)ctx.scale(-1,1);
     const ratio=Math.min(o.w/iw,o.h/ih),w=a.sourceRect?.length===4?o.w:iw*ratio,h=a.sourceRect?.length===4?o.h:ih*ratio;ctx.drawImage(im,-w/2,scope==='flowers'?o.h/2-h:-h/2,w,h);ctx.restore();
   }
   const actorKind=a=>{const source=[a.id,a.src,a.frames?.[0]].join(' ');return window.jejuAmbient.atmosphereKind(a)||(/butterfly/.test(source)?'butterfly':/bird/.test(source)?'bird':a.frames&&!a.flowerAnimation&&!flowerSpecies(a)?'loop':null)};
@@ -162,7 +162,7 @@
   }
   function drawBackground(im,alpha=1){
     const iw=im?.videoWidth||im?.naturalWidth,ih=im?.videoHeight||im?.naturalHeight;if(!iw||!ih)return;
-    const r=Math.max(project.width/iw,project.height/ih);ctx.save();ctx.globalAlpha=alpha;ctx.filter=filter('background');if(project.backgroundFit==='fill')ctx.drawImage(im,0,0,project.width,project.height);else ctx.drawImage(im,(project.width-iw*r)/2,(project.height-ih*r)/2,iw*r,ih*r);ctx.restore();
+    const zoom=window.jejuFocus?.backgroundScale(project.sceneFilters?.focus)||1,r=Math.max(project.width/iw,project.height/ih)*zoom,w=project.backgroundFit==='fill'?project.width*zoom:iw*r,h=project.backgroundFit==='fill'?project.height*zoom:ih*r;ctx.save();ctx.globalAlpha=alpha;ctx.filter=filter('background');ctx.drawImage(im,(project.width-w)/2,(project.height-h)/2,w,h);ctx.restore();
   }
   function paint(){
     if(!project)return;cameraView=window.jejuSpace?.view(project.objects,assets,project.width,project.height,{...project.gardenSpace,cameraOrbit:!reduced.matches&&project.gardenSpace?.cameraOrbit},clock);ctx.resetTransform();ctx.clearRect(0,0,canvas.width,canvas.height);ctx.scale(canvas.width/project.width,canvas.height/project.height);ctx.fillStyle='#1c3029';ctx.fillRect(0,0,project.width,project.height);

@@ -1,0 +1,47 @@
+/* Deterministic flower-bed rules, independent of editor rendering and storage. */
+(function(root){
+ 'use strict';
+ const clamp=(n,a,b)=>Math.max(a,Math.min(b,n)),num=(n,d,a,b)=>Number.isFinite(n)?clamp(n,a,b):d;
+ function normalize(p={}){
+  let left=num(p.left,0,0,99),right=num(p.right,100,1,100),top=num(p.top,68,45,99),bottom=num(p.bottom,99,46,100);
+  if(left>right)[left,right]=[right,left];if(top>bottom)[top,bottom]=[bottom,top];right=Math.max(left+1,right);bottom=Math.max(top+1,bottom);
+  return{left,right,top,bottom,density:num(p.density,70,1,100),size:num(p.size,360,80,1000),variation:num(p.variation,10,0,30),rotation:num(p.rotation,10,0,30),clump:num(p.clump,55,0,100),grass:num(p.grass,40,0,100),rocks:num(p.rocks,10,0,30),nearBlur:num(p.nearBlur,0,0,20),seed:Math.floor(num(p.seed,20261027,0,2147483647)),...Object.fromEntries(['assetIds','grassIds','rockIds'].map(key=>[key,[...new Set((Array.isArray(p[key])?p[key]:[]).filter(id=>typeof id==='string'))].slice(0,64)]))};
+ }
+ function random(seed){let s=seed>>>0;return()=>{s+=0x6D2B79F5;let t=Math.imul(s^s>>>15,1|s);t^=t+Math.imul(t^t>>>7,61|t);return((t^t>>>14)>>>0)/4294967296}}
+ function theme(state){const match=(state.background||'').match(/(?:ML_)?BG0([1-4])(?:_|-)/);if(match)return['sunset','day','night','morning'][+match[1]-1];return state.assets.find(a=>a.src===state.background&&a.theme)?.theme||state.objects.map(o=>state.assets.find(a=>a.id===o.assetId)?.theme).find(Boolean)||null}
+ const rear=a=>/rear/i.test(a?.id||'')||/Rear/.test(a?.src||'')||a?.decorType==='branch';
+ function ground(o,a){return o.placementRole!=='contrast_backdrop_v68'&&!rear(a)&&(a?.group==='flowers'||['grass','leaf','basalt','rock'].includes(a?.category)||/-rocks-/.test(a?.id||''))}
+ function pools(state){
+  const key=theme(state),all=state.assets.filter(a=>a.theme===key&&a.completeObject&&a.ready!==false&&a.src&&!a.legacyFlower&&!a.referenceOnly),unique=list=>[...new Map(list.map(a=>[a.src,a])).values()],version=a=>Number((a.setReviewVersion||'').slice(1))||0;
+  const flowers=unique(all.filter(a=>a.group==='flowers')),grass=unique(all.filter(a=>['grass','leaf'].includes(a.category)&&!rear(a))),rocks=unique(all.filter(a=>(['basalt','rock'].includes(a.category)||/-rocks-/.test(a.id))&&!rear(a)));
+  const preferred=list=>{const latest=Math.max(0,...list.map(version));return list.filter(a=>!latest||version(a)===latest).map(a=>a.id)};
+  return{theme:key,flowers,grass,rocks,preferred:{assetIds:preferred(flowers),grassIds:preferred(grass),rockIds:preferred(rocks)}};
+ }
+ function selectedGroup(objects,selected){const id=selected[0]?.groupId;if(!id||selected.some(o=>o.groupId!==id))return null;const o=objects.find(o=>o.groupId===id&&o.procedural?.type==='flower-bed');return o?{id,name:o.groupName,params:normalize(o.procedural.params)}:null}
+ function build(state,input,width,height,uid,groupId=null){
+  if(!Number.isFinite(width)||!Number.isFinite(height)||width<=0||height<=0)throw Error('꽃밭 화면 크기가 올바르지 않습니다.');
+  const p=normalize(input),pool=pools(state),flowers=p.assetIds.map(id=>pool.flowers.find(a=>a.id===id)).filter(Boolean);
+  if(!flowers.length)throw Error('현재 배경에 맞는 꽃을 한 종류 이상 선택해 주세요.');
+  if(!p.grassIds.length)p.grassIds=pool.preferred.grassIds;if(!p.rockIds.length)p.rockIds=pool.preferred.rockIds;
+  const grass=p.grassIds.map(id=>pool.grass.find(a=>a.id===id)).filter(Boolean),rocks=p.rockIds.map(id=>pool.rocks.find(a=>a.id===id)).filter(Boolean);
+  const rand=random(p.seed),area={x:width*p.left/100,y:height*p.top/100,w:width*(p.right-p.left)/100,h:height*(p.bottom-p.top)/100},size=Math.min(p.size,area.w*.6),n=clamp(Math.round(area.w*area.h/(size*size)*p.density/100*1.6),1,600),id=groupId||uid(),name='PCG 꽃밭 · '+p.seed,objects=[],meta={type:'flower-bed',version:1,params:p};
+  for(let i=flowers.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[flowers[i],flowers[j]]=[flowers[j],flowers[i]]}
+  const cols=Math.max(1,Math.ceil(Math.sqrt(n*area.w/area.h))),rows=Math.ceil(n/cols),clusters=Array.from({length:Math.max(2,Math.round(Math.sqrt(n)/2))},(_,i)=>({x:(i+.5)/Math.max(2,Math.round(Math.sqrt(n)/2)),y:.2+rand()*.6}));
+  function add(a,x,t,k){
+   const factor=(1+(rand()*2-1)*p.variation/100)*(.95+t*.1),w=Math.min(size*factor*(k==='grass'?1.05:k==='rock'?1.25:1),area.w*.7),h=w*(Number.isFinite(a.height/a.width)?a.height/a.width:1),r=(rand()*2-1)*p.rotation,angle=r*Math.PI/180,margin=Math.min(area.w/2,w/2+Math.abs(Math.sin(angle))*h);
+   const rootX=clamp(area.x+x*area.w,area.x+margin,area.x+area.w-margin),rootY=area.y+t*area.h;
+   objects.push({id:uid(),assetId:a.id,name:a.name,x:rootX+Math.sin(angle)*h/2-w/2,y:rootY-Math.cos(angle)*h/2-h/2,w,h,baseW:w,baseH:h,aspect:w/h,r,flipX:rand()<.5,opacity:1,motion:'stationary',groupId:id,groupName:name,procedural:meta,...(k==='grass'&&t>.7&&p.nearBlur?{blur:p.nearBlur}:{}),pcgRootY:rootY});
+  }
+  for(let i=0;i<n;i++){const c=clusters[i%clusters.length],mix=p.clump/100,x=(i%cols+.15+rand()*.7)/cols,y=(Math.floor(i/cols)+.15+rand()*.7)/rows;add(flowers[i%flowers.length],clamp(x*(1-mix)+(c.x+(rand()+rand()-1)*.2)*mix,0,1),clamp(y*(1-mix)+(c.y+(rand()+rand()-1)*.3)*mix,0,1),'flower')}
+  for(const [kind,assets,count] of [['rock',rocks,Math.round(n*p.rocks/100)],['grass',grass,Math.round(n*p.grass/100)]])if(assets.length)for(let i=0;i<count;i++)add(assets[i%assets.length],rand(),kind==='rock'?.8+rand()*.2:.15+rand()*.85,kind);
+  objects.sort((a,b)=>a.pcgRootY-b.pcgRootY);objects.forEach(o=>delete o.pcgRootY);
+  return{objects,params:p,flowerCount:n,groupId:id,theme:pool.theme};
+ }
+ function apply(existing,items,assets,groupId=null,replaceGround=false){
+  if(!items.length)return existing;
+  const map=new Map(assets.map(a=>[a.id,a])),remove=o=>groupId?o.groupId===groupId:replaceGround&&ground(o,map.get(o.assetId)),first=existing.findIndex(remove),remaining=existing.filter(o=>!remove(o));
+  const at=first>=0?existing.slice(0,first).filter(o=>!remove(o)).length:remaining.findIndex(o=>['cloud','butterfly','bird','particle'].includes(map.get(o.assetId)?.category));
+  return[...remaining.slice(0,at<0?remaining.length:at),...items,...remaining.slice(at<0?remaining.length:at)];
+ }
+ const api={normalize,random,theme,pools,ground,selectedGroup,build,apply};if(typeof module==='object')module.exports=api;else root.jejuProceduralGarden=api;
+})(typeof window==='object'?window:globalThis);

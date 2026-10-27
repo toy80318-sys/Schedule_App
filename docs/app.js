@@ -598,6 +598,13 @@
     setMotion:motion=>{if(!['stationary','left','right'].includes(motion))throw Error('이동 방향 오류');snapshot();for(const o of members())o.motion=motion;refresh()},
     openExhibition:()=>switchWorkspace(true),
     center:()=>{const r=els.view.getBoundingClientRect();return{x:(r.width/2-panX)/scale,y:(r.height/2-panY)/scale}},
+    applyProcedural:(items,groupId=null,replaceGround=false)=>{
+      const P=window.jejuProceduralGarden,assetIds=new Set(assets.map(a=>a.id)),ids=new Set();
+      if(!Array.isArray(items)||!items.length||items.length>1600)throw Error('꽃밭 요소 수가 올바르지 않습니다.');
+      for(const o of items){if(!o||typeof o.id!=='string'||!o.id||ids.has(o.id)||!assetIds.has(o.assetId)||!['x','y','w','h','r','opacity'].every(k=>Number.isFinite(o[k]))||o.w<=0||o.h<=0||o.opacity<0||o.opacity>1||!o.groupId||o.groupId!==(groupId||items[0].groupId)||o.procedural?.type!=='flower-bed')throw Error('꽃밭 배치 데이터가 올바르지 않습니다.');ids.add(o.id)}
+      if(groupId&&P.selectedGroup(objects,members())?.id!==groupId)throw Error('갱신할 PCG 꽃밭 그룹을 선택해 주세요.');
+      snapshot();objects=P.apply(objects,items,assets,groupId,replaceGround);selectedIds=new Set(items.map(o=>o.id));selected=items.at(-1).id;refresh();notice(`${items.length}개 요소의 PCG 꽃밭을 적용했습니다.`);
+    },
     insert:(items,extraAssets)=>{snapshot();assets.push(...extraAssets.map(currentFlowerAsset));objects.push(...items);selectedIds=new Set(items.map(o=>o.id));selected=items.at(-1)?.id;renderPalette();refresh()},
     project:()=>({format:'jeju-maze-wall-v1',name:$('saveName').value.trim()||'꽃군집 프로젝트',width:W,height:H,editableActors:true,backgroundPlaylist:assets.some(a=>a.completeObject&&objects.some(o=>o.assetId===a.id))?(background?[background]:[]):window.jejuFinalCatalog?.backgrounds?.map(a=>a.src),assets:assets.filter(a=>objects.some(o=>o.assetId===a.id)),backgroundFit:sourceRegistered.has(background)?'fill':'cover',objects:objects.map(o=>{const v=objectVariant(o,assets.find(a=>a.id===o.assetId));return v?{...o,flowerVariant:v.id,flowerColor:v.tone}:o}),background,reference,sceneFilters,gardenSpace,flowerAssetVersion:2,oilAssetVersion:14})};
   function exhibitionMessage(message){$('exhibitionFrame').contentWindow?.postMessage(message,location.origin)}

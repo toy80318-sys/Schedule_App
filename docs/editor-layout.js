@@ -2,6 +2,7 @@
 (()=>{
  'use strict';const E=window.jejuEditor;if(!E)return;
  const sections=[
+  {id:'pcg',label:'꽃밭 PCG',entries:[{node:'proceduralTools',plain:true}]},
   {id:'groups',label:'그룹',entries:[
    {title:'그룹 만들기 · 해제',controls:['makeGroup','ungroup'],open:true},
    {group:'groupDensityTools',open:true},
@@ -39,7 +40,7 @@
   const nav=document.createElement('div');nav.className='editor-tool-tabs';nav.setAttribute('role','tablist');nav.setAttribute('aria-label','편집 도구');
   const panels=document.createElement('div');panels.id='editorToolPanels';right.id='editorToolInspector';
   function card(title,open){const details=document.createElement('details');details.className='editor-tool-card';details.open=!!open;const summary=document.createElement('summary');summary.textContent=title;const body=document.createElement('div');body.className='editor-tool-body';details.append(summary,body);return{details,body}}
-  function activate(id){for(const button of nav.children){const active=button.dataset.tool===id;button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;$(button.getAttribute('aria-controls')).hidden=!active}}
+  function activate(id){document.body.classList.toggle('editor-pcg-active',id==='pcg');document.dispatchEvent(new CustomEvent('jeju-tool-tab',{detail:id}));for(const button of nav.children){const active=button.dataset.tool===id;button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;$(button.getAttribute('aria-controls')).hidden=!active}requestAnimationFrame(()=>$('fit').click())}
   const panelById=new Map();
   for(const section of sections){
    const tab=document.createElement('button');tab.type='button';tab.id='toolTab_'+section.id;tab.dataset.tool=section.id;tab.textContent=section.label;tab.setAttribute('role','tab');tab.setAttribute('aria-controls','toolPanel_'+section.id);
@@ -47,7 +48,7 @@
    tab.onclick=()=>activate(section.id);tab.onkeydown=e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();const tabs=[...nav.children],i=tabs.indexOf(tab),next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[next].click();tabs[next].focus()};
    for(const entry of section.entries){
     if(entry.group){const anchor=$(entry.group),group=groups.find(g=>g===anchor||g.contains(anchor));if(!group||used.has(group))continue;used.add(group);const {details,body}=card(entry.title||group.querySelector('h3')?.textContent||'도구',entry.open);body.append(group);pane.append(details)}
-    else if(entry.node){const node=$(entry.node);if(!node)continue;const {details,body}=card(entry.title,entry.open);body.append(node);pane.append(details)}
+    else if(entry.node){const node=$(entry.node);if(!node)continue;if(groups.includes(node))used.add(node);if(entry.plain){pane.append(node);continue}const {details,body}=card(entry.title,entry.open);body.append(node);pane.append(details)}
     else{const {details,body}=card(entry.title,entry.open),actions=document.createElement('div');actions.className='actions';for(const id of entry.controls){const node=$(id);if(!node)continue;if(node.tagName==='INPUT'||node.tagName==='SELECT'){const label=document.createElement('label');label.className='editor-tool-field';label.textContent=({'saveName':'배치 이름','savedLayouts':'저장된 배치','clusterTheme':'군집 색상','clusterCount':'군집 수'})[id]||node.getAttribute('aria-label')||'';label.append(node);body.append(label)}else actions.append(node)}if(actions.children.length)body.append(actions);if(entry.help){const help=document.createElement('p');help.className='note';help.textContent=entry.help;body.append(help)}pane.append(details)}
    }
   }
@@ -63,7 +64,8 @@
   toggle.onclick=()=>toggleTools(!document.body.classList.contains('editor-tools-hidden'));
   const leftFooter=document.querySelector('.panel.left').lastElementChild;leftFooter.replaceChildren();const editGroup=document.createElement('button');editGroup.type='button';editGroup.className='btn primary';editGroup.textContent='그룹 도구 열기';editGroup.onclick=()=>{activate('groups');toggleTools(false)};leftFooter.append(editGroup);
   for(const p of document.querySelectorAll('#properties .note'))if(p.textContent.startsWith('색상 변화 강도:'))p.hidden=true;
-  document.body.append(legacy);document.body.classList.add('editor-organized');activate('groups');toggleTools(matchMedia('(max-width:760px)').matches);
+  document.body.append(legacy);document.body.classList.add('editor-organized');activate('pcg');toggleTools(matchMedia('(max-width:760px)').matches);
+  const pcgQuick=document.createElement('button');pcgQuick.id='openProcedural';pcgQuick.className='btn primary';pcgQuick.textContent='꽃밭 PCG';pcgQuick.onclick=()=>{activate('pcg');toggleTools(false)};document.querySelector('.worktop').prepend(pcgQuick);
   const fileCopy=document.createElement('button');fileCopy.className='btn';fileCopy.type='button';fileCopy.textContent='프로젝트 파일 저장';fileCopy.onclick=()=>$('saveProject').click();panelById.get('files').querySelectorAll('.editor-tool-body')[1].prepend(fileCopy);
   window.jejuEditorLayout={sections,activate};
  }

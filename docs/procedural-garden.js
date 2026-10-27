@@ -5,7 +5,7 @@
  function normalize(p={}){
   let left=num(p.left,0,0,99),right=num(p.right,100,1,100),top=num(p.top,68,45,99),bottom=num(p.bottom,99,46,100);
   if(left>right)[left,right]=[right,left];if(top>bottom)[top,bottom]=[bottom,top];right=Math.max(left+1,right);bottom=Math.max(top+1,bottom);
-  return{shape:['rectangle','curve','path'].includes(p.shape)?p.shape:'rectangle',planting:['mixed','flowers','grass'].includes(p.planting)?p.planting:'mixed',points:(Array.isArray(p.points)?p.points:[]).filter(v=>Number.isFinite(v?.x)&&Number.isFinite(v?.y)).slice(0,32).map(v=>({x:clamp(v.x,0,100),y:clamp(v.y,0,100)})),smooth:num(p.smooth,70,0,100),spacing:num(p.spacing,260,40,2000),spread:num(p.spread,120,0,1200),left,right,top,bottom,density:num(p.density,70,1,100),size:num(p.size,360,80,1000),variation:num(p.variation,10,0,30),rotation:num(p.rotation,10,0,30),clump:num(p.clump,55,0,100),grass:num(p.grass,40,0,100),rocks:num(p.rocks,10,0,30),nearBlur:num(p.nearBlur,0,0,20),seed:Math.floor(num(p.seed,20261027,0,2147483647)),...Object.fromEntries(['assetIds','grassIds','rockIds'].map(key=>[key,[...new Set((Array.isArray(p[key])?p[key]:[]).filter(id=>typeof id==='string'))].slice(0,64)]))};
+  return{materialsExplicit:p.materialsExplicit===true,shape:['rectangle','curve','path'].includes(p.shape)?p.shape:'rectangle',planting:['mixed','flowers','grass','rocks','props','custom'].includes(p.planting)?p.planting:'mixed',points:(Array.isArray(p.points)?p.points:[]).filter(v=>Number.isFinite(v?.x)&&Number.isFinite(v?.y)).slice(0,32).map(v=>({x:clamp(v.x,0,100),y:clamp(v.y,0,100)})),smooth:num(p.smooth,70,0,100),spacing:num(p.spacing,260,40,2000),spread:num(p.spread,120,0,1200),left,right,top,bottom,density:num(p.density,70,1,100),size:num(p.size,360,80,1000),variation:num(p.variation,10,0,30),rotation:num(p.rotation,10,0,30),clump:num(p.clump,55,0,100),grass:num(p.grass,40,0,100),rocks:num(p.rocks,10,0,30),nearBlur:num(p.nearBlur,0,0,20),seed:Math.floor(num(p.seed,20261027,0,2147483647)),...Object.fromEntries(['assetIds','grassIds','rockIds','propIds'].map(key=>[key,[...new Set((Array.isArray(p[key])?p[key]:[]).filter(id=>typeof id==='string'))].slice(0,64)]))};
  }
  function random(seed){let s=seed>>>0;return()=>{s+=0x6D2B79F5;let t=Math.imul(s^s>>>15,1|s);t^=t+Math.imul(t^t>>>7,61|t);return((t^t>>>14)>>>0)/4294967296}}
  function theme(state){const match=(state.background||'').match(/(?:ML_)?BG0([1-4])(?:_|-)/);if(match)return['sunset','day','night','morning'][+match[1]-1];return state.assets.find(a=>a.src===state.background&&a.theme)?.theme||state.objects.map(o=>state.assets.find(a=>a.id===o.assetId)?.theme).find(Boolean)||null}
@@ -15,15 +15,16 @@
   const key=theme(state),all=state.assets.filter(a=>a.theme===key&&a.completeObject&&a.ready!==false&&a.src&&!a.legacyFlower&&!a.referenceOnly),unique=list=>[...new Map(list.map(a=>[a.src,a])).values()],version=a=>Number((a.setReviewVersion||'').slice(1))||0;
   const flowers=unique(all.filter(a=>a.group==='flowers')),grass=unique(all.filter(a=>['grass','leaf'].includes(a.category)&&!rear(a))),rocks=unique(all.filter(a=>(['basalt','rock'].includes(a.category)||/-rocks-/.test(a.id))&&!rear(a)));
   const preferred=list=>{const latest=Math.max(0,...list.map(version));return list.filter(a=>!latest||version(a)===latest).map(a=>a.id)};
-  return{theme:key,flowers,grass,rocks,preferred:{assetIds:preferred(flowers),grassIds:preferred(grass),rockIds:preferred(rocks)}};
+  const props=unique(all.filter(a=>['tree','branch','cloud','butterfly','bird','particle','mist'].includes(a.category)&&/\.(png|webp)(?:[?#]|$)/i.test(a.src)));
+  return{theme:key,flowers,grass,rocks,props,preferred:{assetIds:preferred(flowers),grassIds:preferred(grass),rockIds:preferred(rocks),propIds:preferred(props)}};
  }
- function selectedGroup(objects,selected){const id=selected[0]?.groupId;if(!id||selected.some(o=>o.groupId!==id))return null;const o=objects.find(o=>o.groupId===id&&o.procedural?.type==='flower-bed');return o?{id,name:o.groupName,params:normalize(o.procedural.params)}:null}
+ function selectedGroup(objects,selected){const id=selected[0]?.groupId;if(!id||selected.some(o=>o.groupId!==id))return null;const o=objects.find(o=>o.groupId===id&&o.procedural?.type==='flower-bed');return o?{id,name:o.groupName,params:Array.isArray(o.procedural.params?.layers)?(typeof module==='object'?require('./procedural-layers'):root.jejuProceduralLayers).normalize(o.procedural.params):normalize(o.procedural.params)}:null}
  function build(state,input,width,height,uid,groupId=null){
   if(!Number.isFinite(width)||!Number.isFinite(height)||width<=0||height<=0)throw Error('꽃밭 화면 크기가 올바르지 않습니다.');
   const p=normalize(input),pool=pools(state),flowers=p.assetIds.map(id=>pool.flowers.find(a=>a.id===id)).filter(Boolean);
-  if(!p.grassIds.length)p.grassIds=pool.preferred.grassIds;if(!p.rockIds.length)p.rockIds=pool.preferred.rockIds;
-  const grass=p.grassIds.map(id=>pool.grass.find(a=>a.id===id)).filter(Boolean),rocks=p.rockIds.map(id=>pool.rocks.find(a=>a.id===id)).filter(Boolean);
-  const main=p.planting==='grass'?grass:flowers;if(!main.length)throw Error(p.planting==='grass'?'현재 배경의 풀·잎 소스를 찾지 못했습니다.':'현재 배경에 맞는 꽃을 한 종류 이상 선택해 주세요.');
+  if(!p.materialsExplicit){if(!p.grassIds.length)p.grassIds=pool.preferred.grassIds;if(!p.rockIds.length)p.rockIds=pool.preferred.rockIds;if(!p.propIds.length)p.propIds=pool.preferred.propIds;}
+  const grass=p.grassIds.map(id=>pool.grass.find(a=>a.id===id)).filter(Boolean),rocks=p.rockIds.map(id=>pool.rocks.find(a=>a.id===id)).filter(Boolean),props=p.propIds.map(id=>pool.props.find(a=>a.id===id)).filter(Boolean);
+  const main=p.planting==='custom'?[...flowers,...grass,...rocks,...props]:p.planting==='grass'?grass:p.planting==='rocks'?rocks:p.planting==='props'?props:flowers.length?flowers:p.planting==='mixed'&&p.materialsExplicit?(grass.length?grass:rocks):flowers;if(!main.length)throw Error('이 라인에 심을 요소를 한 종류 이상 선택해 주세요.');
   if(p.shape!=='rectangle'&&p.points.length<(p.shape==='curve'?3:2))throw Error(p.shape==='curve'?'닫힌 곡선은 제어점 3개 이상을 그려 주세요.':'라인은 제어점 2개 이상을 그려 주세요.');
   const line=p.shape==='rectangle'?null:C.sample(p.points,p.shape==='curve',p.smooth).map(v=>({x:v.x*width/100,y:v.y*height/100})),distances=line?C.lengths(line):null;
   const area=line?C.bounds(line):{x:width*p.left/100,y:height*p.top/100,w:width*(p.right-p.left)/100,h:height*(p.bottom-p.top)/100};
@@ -43,10 +44,10 @@
    if(kind!=='flower'&&kind!=='main')return{x:rand(),y:kind==='rock'?.8+rand()*.2:.15+rand()*.85};
    const c=clusters[i%clusters.length],mix=p.clump/100,x=(i%cols+.15+rand()*.7)/cols,y=(Math.floor(i/cols)+.15+rand()*.7)/rows;return{x:clamp(x*(1-mix)+(c.x+(rand()+rand()-1)*.2)*mix,0,1),y:clamp(y*(1-mix)+(c.y+(rand()+rand()-1)*.3)*mix,0,1)};
   }
-  for(let i=0;i<n;i++){const point=position(i,n,'main');add(main[i%main.length],point.x,point.y,p.planting==='grass'?'grass':'flower')}
-  if(p.planting==='mixed')for(const [kind,assets,count] of [['rock',rocks,Math.round(n*p.rocks/100)],['grass',grass,Math.round(n*p.grass/100)]])if(assets.length)for(let i=0;i<count;i++){const point=position(i,count,kind);add(assets[i%assets.length],point.x,point.y,kind)};
+  for(let i=0;i<n;i++){const point=position(i,n,'main');const a=main[i%main.length],kind=['grass','leaf'].includes(a.category)?'grass':['basalt','rock'].includes(a.category)?'rock':'flower';add(a,point.x,point.y,kind)}
+  if(p.planting==='mixed')for(const [kind,assets,count] of [['rock',rocks,Math.round(n*p.rocks/100)],['grass',grass,Math.round(n*p.grass/100)]])if(assets.length&&assets!==main)for(let i=0;i<count;i++){const point=position(i,count,kind);add(assets[i%assets.length],point.x,point.y,kind)};
   objects.sort((a,b)=>a.pcgRootY-b.pcgRootY);objects.forEach(o=>delete o.pcgRootY);
-  return{objects,params:p,plantCount:n,flowerCount:p.planting==='grass'?0:n,groupId:id,theme:pool.theme};
+  return{objects,params:p,plantCount:n,flowerCount:objects.filter(o=>pool.flowers.some(a=>a.id===o.assetId)).length,groupId:id,theme:pool.theme};
  }
  function apply(existing,items,assets,groupId=null,replaceGround=false){
   if(!items.length)return existing;

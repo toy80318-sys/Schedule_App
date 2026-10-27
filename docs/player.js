@@ -16,7 +16,9 @@
   const embedded=new URLSearchParams(location.search).get('embedded')==='1'||document.body.dataset?.jejuEmbedded==='true',reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
   const assets=new Map(),buttons=new Map(),active=new Map(),stills=new Map(),frameCache=new Map(),framePending=new Map(),frameFailures=new Set(),sequenceCache=new Map(),plantAnchors=new Map(),touches=new Map(),particleSprites=new Map();
   const atmosphere={richness:100,focus:65,wind:50};let ambientParticles=[],cloudCount=0,cloudOffset=0;
-  let project=null,bloomManifest=null,manifestTask,actorManifestTask,actors=[],petals=[],frameQueue=[],decoding=0;
+  let project=null,bloomManifest=null,manifestTask,actorManifestTask,actors=[],petals=[],frameQueue=[],decoding=0,visibleLayers=null;
+  const layerVisible=category=>!visibleLayers||visibleLayers.has(category);
+  function setLayers(categories){const allowed=['background','flower','grass','leaf','tree','basalt','decor','cloud','mist','butterfly','bird','particle'];if(!Array.isArray(categories)||categories.length>allowed.length||categories.some(c=>!allowed.includes(c)))return false;visibleLayers=new Set(categories);$('flowers').hidden=!layerVisible('flower');canvas.dataset.visibleLayers=JSON.stringify(categories);paint();wake();return true;}
   let cameraView,paintCount=0,swayCount=0,lastEmptyTouch=-Infinity;
   let enabled=!embedded,raf=0,last=0,lastPaint=0,clock=0,generation=0,loading=false,bg=null,bgNext=null,bgTask=null,bgIndex=-1,bgChangeAt=180,bgFadeAt=null;
   const status=text=>$('status').textContent=text;
@@ -52,6 +54,7 @@
     const objectIds=new Set();for(const o of data.objects){
       if(typeof o.id!=='string'||!o.id||o.id.length>256||objectIds.has(o.id)||!ids.has(o.assetId)||!finite(o.x,-100000,100000)||!finite(o.y,-100000,100000)||!finite(o.w,1,100000)||!finite(o.h,1,100000)||!finite(o.r,-100000,100000)||!finite(o.opacity,0,1)||['z','rx','ry'].some(k=>o[k]!==undefined&&!finite(o[k],k==='z'?-2000:-60,k==='z'?2000:60)))throw Error('배치 좌표 또는 이미지 참조 오류');objectIds.add(o.id);
     }
+    if(data.backgroundLoop&&(!safeSource(data.backgroundLoop)||!/\.(?:mp4|webm)(?:\?|$)/i.test(data.backgroundLoop)))throw Error('배경 루프 경로가 올바르지 않습니다.');
     if(data.background&&!safeSource(data.background))throw Error('배경 형식 오류');
     return window.jejuAmbient.cleanProject(JSON.parse(JSON.stringify(data)));
   }
@@ -81,7 +84,7 @@
   }
   function ambientPose(p){const time=reduced.matches?0:clock*atmosphere.wind/50;return{x:p.x+Math.sin(time*p.speed+p.phase)*p.rangeX+(breeze(time,p.x)-breeze(0,p.x))*project.height*.008,y:p.y+Math.sin(time*p.speed*.73+p.phase+1)*p.rangeY,time}}
   function drawAtmosphere(layer){
-    if(reduced.matches)return;ctx.save();ctx.filter=toneCSS(project?.sceneFilters?.scene)||'none';
+    if(reduced.matches||!layerVisible('particle'))return;ctx.save();ctx.filter=toneCSS(project?.sceneFilters?.scene)||'none';
     for(const p of ambientParticles){if(p.layer!==layer)continue;const sprite=particleSprite(p);if(!sprite)continue;const pose=ambientPose(p);ctx.save();ctx.globalAlpha=[.28,.57,.3][layer]*(.65+.35*Math.sin(pose.time*.35+p.phase)**2);ctx.translate(pose.x,pose.y);ctx.rotate(p.phase+Math.sin(pose.time*.3+p.phase)*.5);ctx.drawImage(sprite,-p.size,-p.size,p.size*2,p.size*2);ctx.restore()}ctx.restore();
   }
   function particlePose(o,a){if(a?.category!=='particle'||reduced.matches||!atmosphere.wind)return o;const phase=seedOf(o.id)%628/100,time=clock*atmosphere.wind/50;return{...o,x:o.x+(Math.sin(time*.21+phase)-Math.sin(phase))*project.height*.018,y:o.y+(Math.sin(time*.16+phase+1)-Math.sin(phase+1))*project.height*.012,r:o.r+Math.sin(time*.17+phase)*3}}
@@ -199,7 +202,7 @@
     if(petals.length>480)petals.splice(0,petals.length-480);
   }
   function bloom(o,event,source='click'){
-    if(!running()||loading||source==='hover'&&active.has(o.id)||clock-(touches.get(o.id)??-Infinity)<.45)return;
+    if(!running()||loading||!layerVisible('flower')||source==='hover'&&active.has(o.id)||clock-(touches.get(o.id)??-Infinity)<.45)return;
     const a=assets.get(o.assetId),v=a?.variants?.get(o.id),button=buttons.get(o.id);if(!button||button.disabled)return;
     const point=source==='click'&&event?.detail===0?null:touchPoint(event);
     if(!flowerSpecies(a)){
@@ -214,13 +217,13 @@
   }
   function drawObject(o,im,scope='decor',opacity=1,neutral=false,cast=true){
     if(!im)return;const iw=im.videoWidth||im.naturalWidth||im.width,ih=im.videoHeight||im.naturalHeight||im.height;if(!iw||!ih)return;
-    const a=assets.get(o.assetId);o=particlePose(o,a);const lighting=window.jejuSpace?.lighting(o,a,project.height,project.gardenSpace,cameraView).brightness??1;if(cast)window.jejuSpace?.castShadow(ctx,o,a,im,project.height,project.gardenSpace,cameraView);o=window.jejuSpace?.pose(o,a,project.height,project.gardenSpace,cameraView)||o;if(window.jejuSpace?.ground(a))window.jejuSpace.shadow(ctx,o);
+    const a=assets.get(o.assetId);if(!layerVisible(a?.category))return;o=particlePose(o,a);const lighting=window.jejuSpace?.lighting(o,a,project.height,project.gardenSpace,cameraView).brightness??1;if(cast)window.jejuSpace?.castShadow(ctx,o,a,im,project.height,project.gardenSpace,cameraView);o=window.jejuSpace?.pose(o,a,project.height,project.gardenSpace,cameraView)||o;if(window.jejuSpace?.ground(a))window.jejuSpace.shadow(ctx,o);
     const baseTone=['particle','butterfly'].includes(a?.category)?toneCSS(project?.sceneFilters?.scene):filter(scope),tone=[baseTone==='none'?'':baseTone,scope==='flowers'?window.jejuFlowerHue?.css(o.flowerHue):'',lighting===1?'':`brightness(${lighting})`,window.jejuFocus?.css(window.jejuFocus.amount(o,a,project?.sceneFilters?.focus,project.height,project.gardenSpace),project.height,Math.abs(ctx.getTransform().a))].filter(Boolean).join(' ')||'none';ctx.save();ctx.filter=neutral?(tone==='none'?'grayscale(1)':tone+' grayscale(1)'):tone;ctx.globalAlpha=o.opacity*opacity;ctx.translate(o.x+o.w/2,o.y+o.h/2);if(window.jejuSpace)window.jejuSpace.orient(ctx,o);else ctx.rotate(o.r*Math.PI/180);if(o.flipX)ctx.scale(-1,1);
-    const g=plantGeometry(o,a,im),motion=plantMotion(o,a);if(plant(a)){swayCount++;ctx.translate(g.x,g.y);ctx.rotate(motion.angle*Math.PI/180);ctx.scale(motion.scale,motion.scale);ctx.translate(-g.x,-g.y)}ctx.drawImage(im,-g.w/2,g.top,g.w,g.h);ctx.restore();
+    const g=plantGeometry(o,a,im),motion=plantMotion(o,a);if(plant(a)&&!a.loopInPlace){swayCount++;ctx.translate(g.x,g.y);ctx.rotate(motion.angle*Math.PI/180);ctx.scale(motion.scale,motion.scale);ctx.translate(-g.x,-g.y)}ctx.drawImage(im,-g.w/2,g.top,g.w,g.h);ctx.restore();
   }
   const actorKind=a=>{const source=[a.id,a.src,a.frames?.[0]].join(' ');return (['cloud','mist'].includes(a.category)?a.category:null)||window.jejuAmbient.atmosphereKind(a)||(/butterfly/.test(source)?'butterfly':/bird/.test(source)?'bird':a.frames&&!a.flowerAnimation&&!flowerSpecies(a)?'loop':null)};
   function actorPose(o,kind,time,index=0){
-    if(kind==='cloud'||kind==='mist'){cloudCount++;if(reduced.matches||!atmosphere.wind)return o;const phase=seedOf(o.id)%628/100,t=time*atmosphere.wind/50,speed=kind==='cloud'?.018:.011,dx=(Math.sin(t*speed+phase)-Math.sin(phase))*project.width*.025;cloudOffset+=dx;return{...o,x:o.x+dx,y:o.y+(Math.sin(t*speed*.7+phase)-Math.sin(phase))*project.height*.008}}
+    if(kind==='cloud'||kind==='mist'){cloudCount++;if(assets.get(o.assetId)?.loopInPlace||reduced.matches||!atmosphere.wind)return o;const phase=seedOf(o.id)%628/100,t=time*atmosphere.wind/50,speed=kind==='cloud'?.018:.011,dx=(Math.sin(t*speed+phase)-Math.sin(phase))*project.width*.025;cloudOffset+=dx;return{...o,x:o.x+dx,y:o.y+(Math.sin(t*speed*.7+phase)-Math.sin(phase))*project.height*.008}}
     if(reduced.matches||!kind||kind==='loop'||o.motion==='stationary')return o;
     const period=kind==='bird'?105:170,span=project.width+o.w*2+40,speed=span/period,offset=o.motion==='left'?-1:o.motion==='right'?1:o.flipX?-1:1;
     const x=((o.x+o.w+20+time*speed*offset)%span+span)%span-o.w-20;
@@ -233,7 +236,7 @@
     return {o,im,scope:'decor'};
   }
   function drawBackground(im,alpha=1){
-    const iw=im?.videoWidth||im?.naturalWidth,ih=im?.videoHeight||im?.naturalHeight;if(!iw||!ih)return;
+    const iw=im?.videoWidth||im?.naturalWidth,ih=im?.videoHeight||im?.naturalHeight;if(!iw||!ih||!layerVisible('background'))return;
     const zoom=window.jejuFocus?.backgroundScale(project.sceneFilters?.focus)||1,r=Math.max(project.width/iw,project.height/ih)*zoom,w=project.backgroundFit==='fill'?project.width*zoom:iw*r,h=project.backgroundFit==='fill'?project.height*zoom:ih*r;ctx.save();ctx.globalAlpha=alpha;ctx.filter=filter('background');ctx.drawImage(im,(project.width-w)/2,(project.height-h)/2,w,h);ctx.restore();
   }
   function paint(){
@@ -241,7 +244,7 @@
     drawBackground(bg);if(bgNext&&bgFadeAt!==null)drawBackground(bgNext,Math.min(1,(clock-bgFadeAt)/2));
     for(const [i,actor] of actors.entries())if(actor.kind==='cloud'||actor.kind==='mist')drawActor(actor,i);
     drawAtmosphere(0);const drawables=[];let depthRank=0;for(const o of window.jejuSpace?.ordered(project.objects,assets,project.height,project.gardenSpace,cameraView)||project.objects){
-      depthRank++;const a=assets.get(o.assetId),type=flowerSpecies(a);if(actorKind(a)){if(a.category==='grass'){const actor=actors.find(x=>x.object.id===o.id);if(actor)drawables.push(drawActor(actor,0,false))}continue;}
+      depthRank++;const a=assets.get(o.assetId),type=flowerSpecies(a);if(!layerVisible(a.category))continue;if(actorKind(a)){if(['grass','leaf','tree','basalt'].includes(a.category)){const actor=actors.find(x=>x.object.id===o.id);if(actor)drawables.push(drawActor(actor,0,false))}continue;}
       if(!type){let im=a.budStill||a.still;const reaction=active.get(o.id),button=buttons.get(o.id);if(reaction){if(clock-reaction.touchedAt>=30){active.delete(o.id);button.dataset.state='idle';button.setAttribute('aria-pressed','false')}else{im=a.openStill||im;button.dataset.state=a.budStill?'open':'reacting'}}if(touchFlower(a))syncHit(o,a,im,depthRank);drawables.push({o,im,scope:touchFlower(a)?'flowers':'decor'});continue}
       const v=a.variants.get(o.id);if(!v?.ready)continue;
       const button=buttons.get(o.id);
@@ -262,14 +265,14 @@
     }
     for(const {o,im} of drawables)window.jejuSpace?.castShadow(ctx,o,assets.get(o.assetId),im,project.height,project.gardenSpace,cameraView);
     if(!drawables.length)drawAtmosphere(1);for(const [i,{o,im,scope}] of drawables.entries()){drawObject(o,im,scope,1,false,false);if(i===Math.floor(drawables.length/2))drawAtmosphere(1)}
-    for(const [i,actor] of actors.entries())if(actor.kind!=='cloud'&&actor.kind!=='mist'&&assets.get(actor.object.assetId)?.category!=='grass')drawActor(actor,i);
+    for(const [i,actor] of actors.entries())if(actor.kind!=='cloud'&&actor.kind!=='mist'&&!['grass','leaf','tree','basalt'].includes(assets.get(actor.object.assetId)?.category))drawActor(actor,i);
     petals=petals.filter(p=>clock-p.start<p.life);ctx.save();ctx.filter=filter('flowers');
-    for(const p of petals){const t=clock-p.start,fade=Math.max(0,Math.min(1,(t-(p.life-3))/3));
+    for(const p of layerVisible('particle')&&layerVisible('flower')?petals:[]){const t=clock-p.start,fade=Math.max(0,Math.min(1,(t-(p.life-3))/3));
       // Integrated gusts vary the flight speed without reversing the left/up wind.
       const gust=(frequency,phase)=>t+p.turbulence*(Math.sin(t*frequency+phase)-Math.sin(phase))/frequency;
       const burst=1-Math.exp(-t*5);ctx.save();const defocus=([1.4,0,7][p.depth||0])*atmosphere.focus/100,blur=window.jejuFocus?.css(defocus,project.height,Math.abs(ctx.getTransform?.().a||canvas.width/project.width||1));if(blur)ctx.filter=[filter('flowers'),blur].filter(v=>v&&v!=='none').join(' ');ctx.globalAlpha=p.opacity*(1-fade*fade*(3-2*fade));ctx.translate(p.x+p.vx*gust(p.frequency,p.phase)+p.kickX*burst,p.y+p.vy*gust(p.frequency*.73,p.phase+1.7)+p.kickY*burst-project.height*.0006*t*t);ctx.rotate(p.rotation+t*p.spin+p.turbulence*Math.sin(t*p.frequency+p.phase));if(p.texture){ctx.drawImage(p.texture,-p.size,-p.size,p.size*2,p.size*2)}else{let color=p.color;if(ctx.createRadialGradient){const g=ctx.createRadialGradient(-p.size*.2,-p.size*.35,0,0,0,p.size);g.addColorStop(0,'#fff8e8');g.addColorStop(.35,p.color);g.addColorStop(1,p.color);color=g}ctx.fillStyle=color;ctx.beginPath();if(ctx.bezierCurveTo){ctx.moveTo(0,-p.size);ctx.bezierCurveTo(p.size,p.size*.1,p.size*.45,p.size,0,p.size);ctx.bezierCurveTo(-p.size*.65,p.size*.65,-p.size*.6,-p.size*.3,0,-p.size)}else ctx.ellipse(0,0,p.size*.6,p.size,0,0,Math.PI*2);ctx.fill();}ctx.restore()}ctx.restore();
     drawAtmosphere(2);const visibleAmbient=reduced.matches?[]:ambientParticles,sample=visibleAmbient[0]&&ambientPose(visibleAmbient[0]);canvas.dataset.ambientParticles=String(visibleAmbient.length);canvas.dataset.nearParticles=String(visibleAmbient.filter(p=>p.layer===2).length);canvas.dataset.clouds=String(cloudCount);canvas.dataset.cloudOffset=String(cloudOffset);canvas.dataset.ambientX=String(sample?.x??0);canvas.dataset.ambientY=String(sample?.y??0);canvas.dataset.particleFocus=String(atmosphere.focus);canvas.dataset.wind=String(atmosphere.wind);
-    canvas.dataset.petals=String(petals.length);canvas.dataset.reactions=String(active.size);canvas.dataset.flowers=String(buttons.size);canvas.dataset.swayCount=String(swayCount);canvas.dataset.renderFrames=String(paintCount);
+    canvas.dataset.backgroundTime=String(bg?.currentTime||0);canvas.dataset.rootedLoops=String(actors.filter(a=>assets.get(a.object.assetId)?.separatedLoopVersion===88).length);canvas.dataset.petals=String(petals.length);canvas.dataset.reactions=String(active.size);canvas.dataset.flowers=String(buttons.size);canvas.dataset.swayCount=String(swayCount);canvas.dataset.renderFrames=String(paintCount);
   }
   function disposeBackground(video){if(video?.tagName==='VIDEO'){video.pause();video.removeAttribute('src');video.load()}}
   async function loadBackground(src){
@@ -337,7 +340,7 @@
       await mapLimit([...used],async id=>{const a=map.get(id),type=flowerSpecies(a);if(!type&&!actorKind(a)){a.still=await image(plant(a)&&safeSource(a.preview)?a.preview:art.displaySrc(a.src));if(touchFlower(a)&&a.ready!==false&&a.bud){a.budStill=await image(a.bud);a.openStill=await image(a.open||a.openImage||a.src)}preparePlant(a,a.still,preparedAnchors)}
       if(type){const objects=next.objects.filter(o=>o.assetId===id),choices=new Map();for(const o of objects){const v=normalizeVariant(type,o.flowerVariant||o.flowerColor||a.bloomVariant||a.tone,a);a.variants.set(o.id,v);if(v?.ready)choices.set(v.id,v);else unavailable.push(v?.id||type)}await mapLimit([...choices.values()],async v=>{a.buds.set(v.id,await image(v.bud));a.opens.set(v.id,await image(v.open));if(v.petalTexture&&safeRoot(v.petalTexture))stills.set('petal:'+v.id,await image(v.petalTexture))})}
       });
-      const nextActors=await loadActors(next,map);for(const id of used){const a=map.get(id),im=a.still||a.buds?.values().next().value||nextActors.find(actor=>actor.object.assetId===id)?.first;if(im)preparePlant(a,im,preparedAnchors)}nextBackground=await loadBackground(next.background||BACKGROUNDS[0]);
+      const nextActors=await loadActors(next,map);for(const id of used){const a=map.get(id),im=a.still||a.buds?.values().next().value||nextActors.find(actor=>actor.object.assetId===id)?.first;if(im)preparePlant(a,im,preparedAnchors)}nextBackground=await loadBackground(next.backgroundLoop||next.background||BACKGROUNDS[0]);
       if(version!==generation){disposeBackground(nextBackground);for(const video of new Set(nextActors.map(a=>a.video)))disposeBackground(video);return false}
       for(const video of new Set(actors.map(a=>a.video)))disposeBackground(video);disposeBackground(bg);disposeBackground(bgNext);bg=nextBackground;bgNext=null;bgTask=null;bgFadeAt=null;bgChangeAt=180;
       const selected=(next.background||BACKGROUNDS[0]).split('?')[0].replace('/assets/background/','/assets/background-loops/').replace(/\.webp$/,'.mp4');bgIndex=BACKGROUNDS.findIndex(src=>src.split('?')[0]===selected);
@@ -354,8 +357,8 @@
     await load(project);return}const manifest=await getManifest(),variants=manifest.variants.filter(v=>v.ready);await load({format:'jeju-maze-wall-v1',name:'모든 꽃 · 24색 체험',width:2400,height:2100,gardenSpace:{enabled:false},assets:variants.map(v=>({id:`flower-${v.id}`,name:v.name,group:'flowers',species:v.species,tone:v.tone,bloomVariant:v.id,src:v.open})),background:BACKGROUNDS[0],objects:variants.map((v,i)=>({id:v.id,assetId:`flower-${v.id}`,name:v.name,x:i%4*600+180,y:Math.floor(i/4)*350+15,w:240,h:320,r:0,opacity:1,flowerVariant:v.id,flowerColor:v.tone}))})}
   function trustedMessage(event){return event.origin===ownOrigin&&window.parent!==window&&event.source===window.parent&&event.data&&typeof event.data==='object'}
   function state(){return {active:enabled,loading,flowerCount:buttons.size,activeBlooms:active.size,petals:petals.length,swayCount,renderFrames:paintCount,cacheSize:sequenceCache.size,decodedFrames:frameCache.size,decoding,queuedFrames:frameQueue.length,clock,backgroundIndex:bgIndex}}
-  window.jejuExhibition={load,setActive,reset,state,normalizeVariant,bloomAll:()=>{for(const o of project?.objects||[])if(touchFlower(assets.get(o.assetId)))bloom(o)}};
-  window.addEventListener('message',event=>{if(!trustedMessage(event))return;if(event.data.type==='jeju-exhibition-project')load(event.data.project).catch(()=>{});else if(event.data.type==='jeju-exhibition-active')setActive(event.data.active);else if(event.data.type==='jeju-exhibition-bloom-all')window.jejuExhibition.bloomAll()});
+  window.jejuExhibition={load,setActive,setLayers,reset,state,normalizeVariant,bloomAll:()=>{for(const o of project?.objects||[])if(touchFlower(assets.get(o.assetId)))bloom(o)}};
+  window.addEventListener('message',event=>{if(!trustedMessage(event))return;if(event.data.type==='jeju-exhibition-project')load(event.data.project).catch(()=>{});else if(event.data.type==='jeju-exhibition-layers')setLayers(event.data.categories);else if(event.data.type==='jeju-exhibition-active')setActive(event.data.active);else if(event.data.type==='jeju-exhibition-bloom-all')window.jejuExhibition.bloomAll()});
   $('openFile').onclick=()=>$('projectFile').click();$('projectFile').onchange=async e=>{const file=e.target.files[0];try{if(!file)return;if(file.size>256*1024*1024)throw Error('256MB 이하 JSON 파일을 선택하세요.');await load(JSON.parse(await file.text()))}catch(error){status(error.message)}finally{e.target.value=''}};
   $('demo').onclick=()=>demo().catch(error=>status(error.message));$('reset').onclick=reset;$('fullscreen').onclick=()=>{const task=document.fullscreenElement?document.exitFullscreen():document.body.requestFullscreen?.();task?.catch(()=>status('이 브라우저에서 전체 화면을 열 수 없습니다.'))};
   $('viewport').addEventListener('pointerdown',event=>{playBackground(bg);playBackground(bgNext);if(!project||loading||!running()||event.target?.closest?.('.flower-hit')||event.target?.closest?.('#atmosphereControls')||event.button!==undefined&&event.button!==0||clock-lastEmptyTouch<.15)return;const point=touchPoint(event);if(!point)return;lastEmptyTouch=clock;scatter({id:'empty-touch',x:point.x,y:point.y,w:project.height*.18,h:project.height*.26,r:0,opacity:1},{},point);canvas.dataset.touchX=String(point.x);canvas.dataset.touchY=String(point.y);paint();wake()});window.addEventListener('resize',resize);document.addEventListener('fullscreenchange',resize);document.addEventListener('visibilitychange',()=>setActive(enabled));

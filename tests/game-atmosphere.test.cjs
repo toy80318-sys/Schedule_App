@@ -1,0 +1,28 @@
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const {harness,project,flower,object}=require('./game-interaction.test.cjs');
+const change=(h,id,value)=>{const input=h.get(id);input.value=String(value);input.listeners.input();};
+const ambient=h=>h.ctx.draws.filter(d=>d.width===96&&d.height===96);
+(async()=>{
+ for(const theme of ['morning','day','sunset','night']){
+  const p=JSON.parse(fs.readFileSync(`docs/assets/set-review-v01/${theme}_editor_v06.json`,'utf8')),before=JSON.stringify(p),h=harness();
+  await h.api.load(p);h.api.setActive(true);const data=h.get('scene').dataset;
+  assert.equal(data.clouds,'2','category-only V05 clouds are recognized without cloud in their filename');assert.equal(data.ambientParticles,'96');assert.equal(data.nearParticles,'8');assert.equal(h.api.state().flowerCount,320);assert.equal(ambient(h).length,96);
+  const first=ambient(h)[0],last=ambient(h).at(-1);assert(first.args[2]<last.args[2],'near particles use a visibly larger lens footprint');
+  const flowerDraw=h.ctx.draws.findIndex(d=>d.source?.includes('-F')),firstAmbient=h.ctx.draws.indexOf(first),lastAmbient=h.ctx.draws.indexOf(last);assert(firstAmbient<flowerDraw&&lastAmbient>flowerDraw,'depth passes include particles behind and in front of the flower plane');
+  const originalX=data.ambientX;h.step(10000);assert.notEqual(data.ambientX,originalX);assert.notEqual(Number(data.cloudOffset),0);assert(Math.abs(Number(data.cloudOffset))<p.width*.1,'two clouds stay within their bounded drift range');
+  const seed={x:data.ambientX,y:data.ambientY};h.api.reset();h.step(10000);assert.deepEqual({x:data.ambientX,y:data.ambientY},seed,'same scene and elapsed time reproduce the same ambient positions');
+  change(h,'atmosphereWind',0);const stopped={x:data.ambientX,y:data.ambientY};h.step(1000);assert.deepEqual({x:data.ambientX,y:data.ambientY},stopped);assert.equal(data.cloudOffset,'0');assert(h.get('flowers').children.every(b=>Number(b.dataset.sway)===0));
+  change(h,'atmosphereRichness',0);assert.equal(data.ambientParticles,'0');change(h,'atmosphereRichness',999);assert.equal(data.ambientParticles,'144');assert.equal(h.get('atmosphereRichness').value,'150');assert.equal(h.get('atmosphereRichnessValue').textContent,'150%');
+  change(h,'atmosphereFocus',0);assert(ambient(h).every(d=>d.image.ctx.filter==='none'));change(h,'atmosphereFocus',100);assert(ambient(h).some(d=>d.image.ctx.filter==='blur(7px)'),'near focus changes the cached bokeh sprite rather than filtering the whole scene');
+  const clock=h.api.state().clock;change(h,'atmosphereWind',75);change(h,'atmosphereFocus','bad');assert.equal(h.api.state().clock,clock,'live controls do not reload the scene or reset timers');assert.equal(data.particleFocus,'100');
+  h.api.setActive(false);assert.equal(h.hasFrame(),false);change(h,'atmosphereRichness',100);assert.equal(h.hasFrame(),false);assert.equal(h.api.state().clock,clock);h.document.hidden=true;h.api.setActive(true);assert.equal(h.hasFrame(),false);h.document.hidden=false;h.api.setActive(true);assert(h.hasFrame());
+  assert.equal(JSON.stringify(p),before,'no game setting, particle pose or cloud drift is written into the input project');
+ }
+ const h=harness(),particle={id:'light',category:'particle',src:'https://example.test/particle.png',loopInPlace:true},p=project([flower,particle],[object('hero',flower.id),{...object('light','light'),motion:'stationary'}]),before=JSON.stringify(p);await h.api.load(p);h.api.setActive(true);
+ const initial=h.ctx.draws.find(d=>d.source===particle.src).matrix;h.step(1000);assert.notDeepEqual(h.ctx.draws.find(d=>d.source===particle.src).matrix,initial,'existing complete particle PNGs gently float without being replaced');
+ h.get('flowers').children[0].click();const clock=h.api.state().clock;change(h,'atmosphereFocus',0);assert(h.ctx.particles.every(p=>p.filter==='none'));change(h,'atmosphereFocus',100);assert(h.ctx.particles.some(p=>p.filter.includes('blur(')),'touch petals share the adjustable depth focus');assert.equal(h.api.state().clock,clock);assert.equal(h.api.state().activeBlooms,1);assert.equal(h.api.state().petals,36);
+ const count=h.api.state().petals;h.get('viewport').listeners.pointerdown(h.event(400,180,{closest:selector=>selector==='#atmosphereControls'}));assert.equal(h.api.state().petals,count,'using controls cannot also launch a stage burst');assert.equal(JSON.stringify(p),before);
+ for(const theme of ['__proto__','constructor',{toString:1}]){const h=harness();await h.api.load(project([{...flower,theme}],[object('unknown-theme',flower.id)]));h.api.setActive(true);h.get('flowers').children[0].click();assert.equal(ambient(h).length,96);assert(ambient(h).flatMap(d=>d.image.ctx.particles).every(p=>['#f8c3a6','#ffe8bb','#f5b9bc'].includes(p.color)),'untrusted theme metadata cannot read inherited palette entries');assert(h.ctx.particles.every(p=>p.color.stops.some(s=>['#f7ad99','#f4c2ab','#fff1d1'].includes(s[1]))),'touch bursts also use the safe palette fallback');}
+ const reduced=harness(true);await reduced.api.load(p);reduced.api.setActive(true);assert.equal(reduced.get('scene').dataset.ambientParticles,'0');reduced.get('flowers').children[0].click();assert.equal(reduced.api.state().petals,5);reduced.step(1000);assert.equal(reduced.get('flowers').children[0].dataset.sway,'0');
+ console.log('PASS: four real V06 scenes, category clouds, bounded deterministic three-depth ambient pool, focus sprites, live control clamps, wind stop, particle PNG float, timer/data preservation, hidden pause and reduced motion.');
+})().catch(error=>{console.error(error);process.exitCode=1});

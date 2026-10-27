@@ -18,3 +18,5 @@
 PCG 설정은 생성된 일반 오브젝트의 `procedural.params`에 저장됩니다. 그룹을 선택하고 설정을 불러오면 같은 시드로 재생성할 수 있습니다. 새 꽃밭 추가가 기본이고, 기존 꽃·풀·돌 교체는 사용자가 체크한 경우에만 적용합니다. 배경·후경·대기 요소를 유지하며, 실제 변경과 실행 취소 기록은 `app.js`의 `applyProcedural`이 담당합니다.
 
 곡선 PCG는 `procedural-curves.js`의 보간·영역 판정·호 길이 계산을 가이드와 배치 계산에서 함께 사용합니다. `shape`, `points`, `smooth`, `spacing`, `spread`, `planting`을 레시피에 저장합니다. 닫힌 곡선은 내부에, 열린 라인은 간격·흩어짐에 따라 심으며 꽃만/풀·잎만도 지원합니다. 제어점 조작은 배치 데이터를 바꾸지 않고, 생성·갱신 시에만 한 번의 실행 취소 이력을 만듭니다.
+
+- `flower-shape-catalog.js` registers 12 AI-generated transparent silhouettes without changing the canonical V05 set. `flower-shapes.js` chooses same-species, same-theme and same-color forms and preserves planted roots; the editor bridge adds one undo step. `flower-shapes-ui.js` exposes selected/all flower variation, the source comparison gallery and the existing verified ZIP exporter. New PCG beds recommend all 27 V05-compatible flower sources per theme; saved asset IDs remain unchanged.

@@ -26,7 +26,7 @@
     files[i]={name:'PNG/'+a.file,bytes};progress(++completed,items.length);
    }
   }))}catch(error){controller.abort();throw error}
-  const manifest={format:'jeju-source-png-v1',version:78,generatedAt:new Date().toISOString(),count:items.length,assets:items.map(a=>({id:a.id,name:a.name,file:'PNG/'+a.file,backgroundId:a.backgroundId,lightingId:a.lightingId,theme:a.theme,group:a.group,species:a.species,width:a.width,height:a.height,transparent:a.transparent,completeObject:a.completeObject,lightingBaked:a.lightingBaked,setReviewVersion:a.setReviewVersion,category:a.category,design:a.design,color:a.color,sha256:a.sha256,source:a.src,stillOnly:a.stillOnly}))};
+  const manifest={format:'jeju-source-png-v1',version:Math.max(78,...items.map(a=>a.morphologyVersion||0)),generatedAt:new Date().toISOString(),count:items.length,assets:items.map(a=>({id:a.id,name:a.name,file:'PNG/'+a.file,backgroundId:a.backgroundId,lightingId:a.lightingId,theme:a.theme,group:a.group,species:a.species,width:a.width,height:a.height,transparent:a.transparent,completeObject:a.completeObject,lightingBaked:a.lightingBaked,setReviewVersion:a.setReviewVersion,category:a.category,design:a.design,color:a.color,morphologyVersion:a.morphologyVersion,baseAssetId:a.baseAssetId,sha256:a.sha256,source:a.src,stillOnly:a.stillOnly}))};
   files.push({name:'sources.json',bytes:new Blob([JSON.stringify(manifest,null,2)],{type:'application/json'})},{name:'README.txt',bytes:new Blob(['제주 메이즈랜드 원본 PNG\nPNG 폴더에 원본을 모았습니다. 파일명의 BG는 배경, LT는 조명입니다.\nsources.json에서 종류·해상도·배경·조명·원본 해시를 확인하세요.\n이 ZIP은 정지 이미지 원본이며 편집 배치나 새 개화 영상을 포함하지 않습니다.\n'])});
   return zip(files);
  }

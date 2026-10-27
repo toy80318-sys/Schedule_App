@@ -8,3 +8,9 @@ for(const p of ['library','abstract-world-v44','all-images','oil-art','oil-galle
 console.log('PASS:4 scenes/80 current oil sources,8 older birds retired without pixel edits,6 useful filter cases,legacy themes/embedded links preserved and all4 project geometries unchanged.');
 
 assert(!read('atmosphere-loops.html').includes('href="atmosphere-assets.html'));assert(!read('atmosphere-loops.html').includes('editor.html?v=20261028-atmosphere85'));assert(read('flower-shapes-ui.js').includes('source-cutouts.html?category=flower'));
+
+const vm=require('node:vm'),garden=require('../docs/procedural-garden'),ui=read('procedural-ui.js'),legacy={...data.assets.find(a=>a.category==='flower'),id:'retired-flower',src:'retired.png'},custom={...data.assets.find(a=>a.category==='flower'),id:'my-flower',src:'my-flower.png'},state={assets:[...data.assets,legacy,custom],background:'ML_BG01_background.png',objects:[]},catalog={assets:[...data.assets,legacy],currentSourceIds:data.assets.map(a=>a.id)},before=JSON.stringify(state);
+const context={E:{state:()=>state},P:garden,window:{jejuFinalCatalog:catalog}};vm.createContext(context);const currentPools=vm.runInContext('('+ui.match(/function pools\(\)\{[^\n]+/)[0]+')',context),pool=currentPools();
+assert.equal(pool.flowers.length,13);assert(pool.flowers.some(a=>a.id==='my-flower'));assert(!pool.flowers.some(a=>a.id==='retired-flower'));assert.equal(JSON.stringify(state),before,'PCG source filtering never modifies saved assets or objects');
+assert(garden.pools(state).flowers.some(a=>a.id==='retired-flower'),'previously saved recipes can still resolve archived sources');delete catalog.currentSourceIds;assert(currentPools().flowers.some(a=>a.id==='retired-flower'),'older editor releases retain their original pools');
+console.log('PASS: PCG shows current sources and user imports, while saved layouts and archived recipe inputs remain intact.');

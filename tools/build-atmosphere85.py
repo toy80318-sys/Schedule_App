@@ -38,9 +38,20 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def versioned_video(relative, sha256):
+    return RAW + relative + "?v=" + sha256[:12]
+
+
+def reviewed_media_hash(row, key, path):
+    value = digest(path)
+    if row.get(key + "_SHA256") != value:
+        raise ValueError(f"Video bytes differ from the accepted review: {row['name']}/{key}")
+    return value
+
+
 def probe(path):
     result = subprocess.run(["ffprobe", "-v", "error", "-count_frames", "-select_streams", "v:0",
-                             "-show_entries", "stream=width,height,nb_read_frames:format=duration",
+                             "-show_entries", "stream=width,height,nb_read_frames,color_space,color_transfer,color_primaries,color_range:format=duration",
                              "-of", "json", str(path)], check=True, capture_output=True, text=True)
     data = json.loads(result.stdout)
     stream = data["streams"][0]
@@ -48,6 +59,8 @@ def probe(path):
         raise ValueError(f"Expected 480x480 and 150 decoded frames: {path.name}")
     if abs(float(data["format"]["duration"]) - 5) > 0.04:
         raise ValueError(f"Expected five seconds: {path.name}")
+    if tuple(stream.get(key) for key in ("color_space", "color_range", "color_primaries", "color_transfer")) != ("bt709", "tv", "bt709", "bt709"):
+        raise ValueError(f"Expected explicit BT.709 matrix, limited range, primaries and transfer: {path.name}")
 
 
 def validate_rows(accepted):
@@ -115,20 +128,21 @@ def make_manifest(accepted):
                         raise ValueError(f"Missing transparency or clipped visible form: {relative}")
                 hashes[label].append(digest(path))
         kind, number = name.rsplit("_", 1)
+        media_hashes = {key: reviewed_media_hash(row, key, path) for key, path in paths.items()}
         asset = {**old, "id": f"atmosphere85-{kind}-{number}", "name": old["name"] + " · 5초 루프",
                  "atmosphereVersion": 85, "imageStyleVersion": 85, "stillOnly": False,
                  "baseAssetId": old["id"], "frames": [RAW + path for path in expected],
                  "previewFrames": [RAW + path for path in previews], "previewWidth": 128, "previewHeight": 128,
                  "fps": 30, "duration": 5, "frameCount": 150, "loopWidth": 480, "loopHeight": 480,
-                 "loopInPlace": True, "loopVideo": RAW + base + "alpha.webm",
-                 "keyVideo": RAW + base + "key.mp4", "keyColor": row["keyColor"],
+                 "loopInPlace": True, "loopVideo": versioned_video(base + "alpha.webm", media_hashes["alphaWebM"]),
+                 "keyVideo": versioned_video(base + "key.mp4", media_hashes["keyMP4"]), "keyColor": row["keyColor"],
                  "jobId": row["jobId"], "model": row["model"], "prompt": row["prompt"],
                  "requestedSeconds": row["requestedSeconds"], "requestedResolution": row["requestedResolution"],
                  "nativeVideo": {key: row["nativeVideo"][key] for key in ("sha256", "width", "height", "fps", "frameCount", "seconds")},
                  "alphaMethod": "source-rgba-periodic-flow", "preservedOriginalAlpha": False,
                  "sourceAlphaDerivedByResampling": True, "motionDerivation": row["motionDerivation"],
                  "loopReview": {flag: True for flag in REVIEW_FLAGS},
-                 "loopHashes": {"keyMP4": digest(paths["keyMP4"]), "alphaWebM": digest(paths["alphaWebM"]), **hashes}}
+                 "loopHashes": {**media_hashes, **hashes}}
         assets.append(asset)
         for key, path in paths.items():
             files[f"{'MP4' if key == 'keyMP4' else 'WebM'}/{name}.{ 'mp4' if key == 'keyMP4' else 'webm'}"] = path.read_bytes()
@@ -148,7 +162,7 @@ def gallery(manifest):
     data = json.dumps(manifest["assets"], ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     return ('''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>메이즈랜드 · 12종 5초 루프 V85</title><style>
 :root{font:15px/1.6 system-ui,sans-serif;color:#edf4ef;background:#102224}*{box-sizing:border-box}body{margin:0}main{max-width:1400px;margin:auto;padding:28px 24px}h1{font-size:clamp(24px,3vw,34px);margin:0}p{color:#bdd0ca}nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}a{color:#c6f1dd}nav a{padding:9px 14px;border:1px solid #739d8d;border-radius:9px;text-decoration:none}a:focus-visible,video:focus-visible{outline:3px solid #ffd58d;outline-offset:3px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.card{border:1px solid #4e6d62;border-radius:13px;overflow:hidden;background:#193330}.preview{background:repeating-conic-gradient(#dce4dc 0 25%,#aabdb0 0 50%) 0/20px 20px}.preview video{display:block;width:100%;aspect-ratio:1;object-fit:contain}.info{padding:14px}.info h3{font-size:16px;margin:0}.info p{font-size:12px}.info a{display:inline-block;margin-right:10px;font-size:13px}h2{margin-top:28px}details{margin-top:24px}summary{cursor:pointer}@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:540px){.grid{grid-template-columns:1fr}main{padding:20px 14px}}
-</style></head><body><main><h1>구름 · 프리즘 나비 · 빛 입자 5초 루프</h1><p>구름 4종 · 나비 4종 · 파티클 4종 / 480 × 480 / 무음 / V85</p><nav><a href="assets/atmosphere-v85/'''+ZIP_NAME+'''" download>12종 MP4·WebM ZIP</a><a href="editor.html?v=20261028-atmosphere85">에디터 열기</a><a href="atmosphere-assets.html?v=84">정지 PNG 원본 12종</a></nav><p>아래 영상은 투명 배경 미리보기입니다. 보색 배경 MP4와 투명 WebM을 각각 내려받을 수 있습니다.</p><div id="sections"></div><details><summary>투명도와 검수 정보</summary><p>Higgsfield 생성 영상의 움직임을 바탕으로 원본 PNG를 부드럽게 변형해 반복을 맞춘 파생 소스입니다. 투명도도 함께 변형한 결과이며 정지 PNG 원본은 그대로 보존했습니다. 통과한 반복 경계·전체 프레임·투명도 검수 기록은 <a href="assets/atmosphere-v85/manifest.json">요소 목록</a>에 포함되어 있습니다.</p></details></main><script>
+</style></head><body><main><h1>구름 · 프리즘 나비 · 빛 입자 5초 루프</h1><p>구름 4종 · 나비 4종 · 파티클 4종 / 480 × 480 / 무음 / V85</p><nav><a href="assets/atmosphere-v85/'''+ZIP_NAME+'''" download>12종 MP4·WebM ZIP</a><a href="editor.html?v=20261028-atmosphere85-bt709">에디터 열기</a><a href="atmosphere-assets.html?v=84">정지 PNG 원본 12종</a></nav><p>아래 영상은 투명 배경 미리보기입니다. 보색 배경 MP4와 투명 WebM을 각각 내려받을 수 있습니다.</p><div id="sections"></div><details><summary>투명도와 검수 정보</summary><p>Higgsfield 생성 영상의 움직임을 바탕으로 원본 PNG를 부드럽게 변형해 반복을 맞춘 파생 소스입니다. 투명도도 함께 변형한 결과이며 정지 PNG 원본은 그대로 보존했습니다. 통과한 반복 경계·전체 프레임·투명도 검수 기록은 <a href="assets/atmosphere-v85/manifest.json">요소 목록</a>에 포함되어 있습니다.</p></details></main><script>
 const assets=__DATA__;for(const[k,label]of[['cloud','구름'],['butterfly','프리즘 나비'],['particle','반짝이는 파티클']]){const section=document.createElement('section'),heading=document.createElement('h2'),grid=document.createElement('div');heading.textContent=label+' 4종';grid.className='grid';section.append(heading,grid);document.querySelector('#sections').append(section);for(const a of assets.filter(x=>x.category===k)){const card=document.createElement('article'),preview=document.createElement('div'),video=document.createElement('video'),info=document.createElement('div'),name=document.createElement('h3'),meta=document.createElement('p');card.className='card';preview.className='preview';info.className='info';video.controls=true;video.loop=true;video.muted=true;video.playsInline=true;video.preload='metadata';video.poster=a.frames[0];video.src=a.loopVideo;video.setAttribute('aria-label',a.name+' 투명 반복 영상');name.textContent=a.name;meta.textContent='480 × 480 · 5초 · 30fps';preview.append(video);info.append(name,meta);for(const[text,url]of[['보색 MP4',a.keyVideo],['투명 WebM',a.loopVideo],['원본 PNG',a.src]]){const link=document.createElement('a');link.href=url;link.textContent=text;link.target='_blank';link.rel='noopener';info.append(link)}card.append(preview,info);grid.append(card)}}
 </script></body></html>'''.replace("__DATA__", data)).encode("utf-8")
 

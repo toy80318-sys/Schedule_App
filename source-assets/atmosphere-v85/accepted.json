@@ -30,11 +30,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/cloud_01/key.mp4",
-      "keyMP4_SHA256": "130400ca8bd2140f7ad7196adc075d43111d5f77cb4ce6a995ddc5e10714a575",
+      "keyMP4_SHA256": "eebc2b980bea37dfc7f5614980cba1ca70b6b07a3fab813b979a4d29543f6add",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/cloud_01/alpha.webm",
-      "alphaWebM_SHA256": "e40de0b137b921cc1a2b90cc515bcee08e271d4ed026f4a23e913d5ffd01607d",
+      "alphaWebM_SHA256": "dc24d167ff26ce616d535a17a1378da6876055baa9a5b098ad70823b1cd263b3",
       "frames": [
         "source-assets/atmosphere-v85/cloud_01/frames/frame_0000.png",
         "source-assets/atmosphere-v85/cloud_01/frames/frame_0001.png",
@@ -678,6 +678,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.079998,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -708,11 +726,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/cloud_02/key.mp4",
-      "keyMP4_SHA256": "13b95aa35f25a06e8ac29464e7f324a09648e4104194ae1eb456daf35710a228",
+      "keyMP4_SHA256": "89f5481d44f85aa1ffba8a21815b6fef433a53302f10c619457dadded87d8cf9",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/cloud_02/alpha.webm",
-      "alphaWebM_SHA256": "c4f37d3724b203737ec30bf9650eeb69988cc21808619693216cdb3e54afe93a",
+      "alphaWebM_SHA256": "b1cfd680eff6bfa3ca4e3be04170a3cf7d1c670c1f2bbedddacc143a8a9dcf37",
       "frames": [
         "source-assets/atmosphere-v85/cloud_02/frames/frame_0000.png",
         "source-assets/atmosphere-v85/cloud_02/frames/frame_0001.png",
@@ -1356,6 +1374,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.067403,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -1386,11 +1422,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/cloud_03/key.mp4",
-      "keyMP4_SHA256": "b814906497e46bc869a08dfe35d6836294303359972d06c9b016dd6613e2a4e0",
+      "keyMP4_SHA256": "5201d3c9aee87f7be0822841be1c2b60cdbee68a642662ee803e853b8f7daa76",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/cloud_03/alpha.webm",
-      "alphaWebM_SHA256": "91cf7d1d0b15810009d234a63c260e51c311a02ef11a774e2dcd5c43954918c1",
+      "alphaWebM_SHA256": "e40888096b696495298ad8164443032ca13134b5b601da82d1fbf76c5166a6eb",
       "frames": [
         "source-assets/atmosphere-v85/cloud_03/frames/frame_0000.png",
         "source-assets/atmosphere-v85/cloud_03/frames/frame_0001.png",
@@ -2034,6 +2070,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.138095,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -2064,11 +2118,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/cloud_04/key.mp4",
-      "keyMP4_SHA256": "4538152230ae44d983e7f98e075fef81ef5d23cfc06a4298a3bea35d5a351fc8",
+      "keyMP4_SHA256": "3eeea79488cf94fcb73a24cfed9f52662c69abd59d0edc1cc930cd55c7e767c7",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/cloud_04/alpha.webm",
-      "alphaWebM_SHA256": "f77a61b3977a08428dbb9fbf653f482de1a5df8494cd053401077c53f7453f00",
+      "alphaWebM_SHA256": "8ba3230889d88791553a25deb4448af97d7a4d83030da4210b7d915816d0e093",
       "frames": [
         "source-assets/atmosphere-v85/cloud_04/frames/frame_0000.png",
         "source-assets/atmosphere-v85/cloud_04/frames/frame_0001.png",
@@ -2712,6 +2766,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.100587,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -2742,11 +2814,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/butterfly_01/key.mp4",
-      "keyMP4_SHA256": "1df79f5bc0f18ed2f2fe8c141e451d628f6d97039a6549f9514810570f91f55c",
+      "keyMP4_SHA256": "18346d68b5d69215695abbc891765a206ccb77bc9e56c72fffa6604a6e6022fe",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/butterfly_01/alpha.webm",
-      "alphaWebM_SHA256": "f3eefb6663bbcb6c24c6d931c2a0c46983570de55ce3e798680db963a03c7c67",
+      "alphaWebM_SHA256": "f5ec101ea48594f471af6be1f107daedf6b8df30367f624eddb3449122f996e0",
       "frames": [
         "source-assets/atmosphere-v85/butterfly_01/frames/frame_0000.png",
         "source-assets/atmosphere-v85/butterfly_01/frames/frame_0001.png",
@@ -3390,6 +3462,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.212306,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -3420,11 +3510,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/butterfly_02/key.mp4",
-      "keyMP4_SHA256": "230751d007a9fa481fd7b8b5e8a7e13571abafd23779acd1df905d16566748d2",
+      "keyMP4_SHA256": "74e12f9560dd9ceae0f9523868d32bcef463e4751a611e0bd3243deaa83b50fa",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/butterfly_02/alpha.webm",
-      "alphaWebM_SHA256": "c55275ff24bdf38233f2d45bc3492fe10903e7a39615a377b4b946a6958f546e",
+      "alphaWebM_SHA256": "ee99cf12f81dc479d93d79f92a5e962760d3c59dfc5c52b905382fcdf77d5509",
       "frames": [
         "source-assets/atmosphere-v85/butterfly_02/frames/frame_0000.png",
         "source-assets/atmosphere-v85/butterfly_02/frames/frame_0001.png",
@@ -4068,6 +4158,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.125695,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -4098,11 +4206,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/butterfly_03/key.mp4",
-      "keyMP4_SHA256": "8ad2e51cd62f372fa1ba64badb4cac18a363a18c94ae65e6534ba7037c7521e1",
+      "keyMP4_SHA256": "c5224bbfbba10e0b9c8e19665bb094bb22c42fe52725a093d6e94e563f42cd3d",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/butterfly_03/alpha.webm",
-      "alphaWebM_SHA256": "879e13beafb1b8096f8400d2f82b5963ff0c50654044b5a72c7641185b358d22",
+      "alphaWebM_SHA256": "df513cb3cca5f22dab46ffe56100ae5608315bc2847fe3ba35bff6769a5d585f",
       "frames": [
         "source-assets/atmosphere-v85/butterfly_03/frames/frame_0000.png",
         "source-assets/atmosphere-v85/butterfly_03/frames/frame_0001.png",
@@ -4746,6 +4854,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.165445,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -4776,11 +4902,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/butterfly_04/key.mp4",
-      "keyMP4_SHA256": "3e6ce61d14569734003129aea8340862b986cdfa73331897059c7f17e0d100fd",
+      "keyMP4_SHA256": "933e4a154e7d61f901604a47ad16bdb2588546ac7cf91f447d43cf8566bcc2ab",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/butterfly_04/alpha.webm",
-      "alphaWebM_SHA256": "bee34fb0d54bcd89bd2d975057c0313d473dc6509bc7f4aff285b1e11c834d5d",
+      "alphaWebM_SHA256": "39d55b58f8a7e5dfcf78ac2c329c32a3b070839053c28a130571632af212da12",
       "frames": [
         "source-assets/atmosphere-v85/butterfly_04/frames/frame_0000.png",
         "source-assets/atmosphere-v85/butterfly_04/frames/frame_0001.png",
@@ -5424,6 +5550,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.132215,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -5454,11 +5598,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/particle_01/key.mp4",
-      "keyMP4_SHA256": "b7c3a2e70684d759abab8c59a426ff2883945a5d149bc1f55c7964940df59749",
+      "keyMP4_SHA256": "b03c8e37db58fbf5aeb315858ea080734f61ed9cc37c21b9d106aae69703348b",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/particle_01/alpha.webm",
-      "alphaWebM_SHA256": "7bdd8e89618f63a07209d61c5eb8eb0f13bb3a503936d5109bb0bbb552d6b41f",
+      "alphaWebM_SHA256": "3f60d5d23872285ce2dbb58a1a17ba72d33a744b0b03b2fcb17e572db451df94",
       "frames": [
         "source-assets/atmosphere-v85/particle_01/frames/frame_0000.png",
         "source-assets/atmosphere-v85/particle_01/frames/frame_0001.png",
@@ -6102,6 +6246,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.018829,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -6132,11 +6294,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/particle_02/key.mp4",
-      "keyMP4_SHA256": "9689d8c0d6af980697c1cde7bfcd542b9a84e06ee2b27dc180796fee89196ab4",
+      "keyMP4_SHA256": "18374c62ea56afe127f52c87aa1319d64adb8785d3fab7072716ab1ae4132c67",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/particle_02/alpha.webm",
-      "alphaWebM_SHA256": "1d02a740aa89f8af569a21a1e9aa60020bf5cd97e89831f8ae0ef2ee09cddb78",
+      "alphaWebM_SHA256": "890176447845ffe3e5abdfcd01bdd2e8d1e0c071b28d213a8f198f45e632cf6c",
       "frames": [
         "source-assets/atmosphere-v85/particle_02/frames/frame_0000.png",
         "source-assets/atmosphere-v85/particle_02/frames/frame_0001.png",
@@ -6780,6 +6942,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.010683,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -6810,11 +6990,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/particle_03/key.mp4",
-      "keyMP4_SHA256": "600b93bb2e35456dfdd7c3293047873ce2ee0127188c28ed197ec99175ccc382",
+      "keyMP4_SHA256": "82afd51ffb402f5ac5657eda8b799cca7da41a66fd39d6febaec108e1c6aa20d",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/particle_03/alpha.webm",
-      "alphaWebM_SHA256": "87b0c08514cb1cb1c49e5ad04179e7acf1730d6093b462deb0fa55a9ebfa3c8d",
+      "alphaWebM_SHA256": "e213c2cdbc9873e140cac669bb2786893b84dffbd76236b3c91849d7f85053d9",
       "frames": [
         "source-assets/atmosphere-v85/particle_03/frames/frame_0000.png",
         "source-assets/atmosphere-v85/particle_03/frames/frame_0001.png",
@@ -7458,6 +7638,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.041419,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     },
     {
@@ -7488,11 +7686,11 @@
         "allTwelveRealTimeReviewed": true
       },
       "keyMP4": "source-assets/atmosphere-v85/particle_04/key.mp4",
-      "keyMP4_SHA256": "9e5dc0e8c76575ffe348bf25a74b1512e3913c359807f86a5b211730e23a70ac",
+      "keyMP4_SHA256": "11cc0b75d6f14c6ad75f2dd744e993447cc305ec1bc190c01c8ebff61b6bb815",
       "keyMP4IsDerivative": true,
       "keyMP4Origin": "Original whole-object RGBA reconstructed with limited periodic motion and composited on its solid complementary key",
       "alphaWebM": "source-assets/atmosphere-v85/particle_04/alpha.webm",
-      "alphaWebM_SHA256": "5e2daccd5f7610589d4858def91fb5de58e58714f01c0dfd9d2e717ddd60e150",
+      "alphaWebM_SHA256": "a8f52b4d7c6ab34cf04443c8c18cc02c26c8ffa55019a80def15431edb82641e",
       "frames": [
         "source-assets/atmosphere-v85/particle_04/frames/frame_0000.png",
         "source-assets/atmosphere-v85/particle_04/frames/frame_0001.png",
@@ -8136,6 +8334,24 @@
         "maxAlphaByteError": 1,
         "meanAlphaByteError": 0.085431,
         "preservedOriginalAlphaBitIdentical": false
+      },
+      "colorEncoding": {
+        "rgbInputRange": "full",
+        "rgbToYUVMatrix": "bt709",
+        "colorRange": "tv",
+        "colorSpace": "bt709",
+        "colorTransfer": "bt709",
+        "colorPrimaries": "bt709",
+        "actualRGBToYUVConversionApplied": true,
+        "frameSetparamsAndEncoderTagsApplied": true,
+        "browserSampleAsset": "butterfly_01",
+        "browserSampleCornerRGB": [
+          0,
+          139,
+          255
+        ],
+        "browserSampleEvidenceSHA256": "e3a449ef8caa7bae67599d307dd9c1f94bbbaef3ae785e4a567bf478613801c4",
+        "browserSampleScope": "Representative sample; full media uses the same verified conversion and metadata"
       }
     }
   ]

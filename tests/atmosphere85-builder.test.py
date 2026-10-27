@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 import unittest
+from unittest.mock import patch
 
 path = Path(__file__).resolve().parents[1] / "tools/build-atmosphere85.py"
 spec = importlib.util.spec_from_file_location("atmosphere85", path)
@@ -55,6 +56,20 @@ class AcceptanceGates(unittest.TestCase):
     def test_file_paths_cannot_escape_the_reviewed_asset_folder(self):
         with self.assertRaisesRegex(ValueError, "Expected reviewed file"):
             builder.checked_file("../../outside.mp4", "source-assets/atmosphere-v85/cloud_01/key.mp4")
+
+    def test_video_urls_change_when_the_media_bytes_change(self):
+        for relative in ("source-assets/atmosphere-v85/cloud_01/key.mp4", "source-assets/atmosphere-v85/cloud_01/alpha.webm"):
+            first = builder.versioned_video(relative, "a" * 64)
+            next_version = builder.versioned_video(relative, "b" * 64)
+            self.assertEqual(first, builder.RAW + relative + "?v=" + "a" * 12)
+            self.assertNotEqual(first, next_version)
+
+    def test_a_video_changed_after_review_cannot_publish(self):
+        row = {"name": "cloud_01", "alphaWebM_SHA256": "a" * 64}
+        with patch.object(builder, "digest", return_value="a" * 64):
+            self.assertEqual(builder.reviewed_media_hash(row, "alphaWebM", Path("unused")), "a" * 64)
+        with patch.object(builder, "digest", return_value="b" * 64), self.assertRaisesRegex(ValueError, "differ from the accepted review"):
+            builder.reviewed_media_hash(row, "alphaWebM", Path("unused"))
 
     def test_registration_preserves_png_downloads_and_existing_scene_data(self):
         originals = json.loads((builder.ROOT / "docs/assets/atmosphere-v84/manifest.json").read_text("utf-8-sig"))["assets"]

@@ -33,12 +33,12 @@ function setup(options={}){
 }
 (async()=>{
   let t=setup();await t.switch(true);
-  assert.equal(t.fetches[0],'player-embed.txt?v=separated91');assert.equal(t.c.exhibitionActive,true);assert.equal(t.get('editorWorkspace').hidden,true);assert.equal(t.get('exhibitionWorkspace').hidden,false);assert.equal(t.frame.srcdocWrites,1);
+  assert.equal(t.fetches[0],'player-embed.txt?v=separated91-flower95');assert.equal(t.c.exhibitionActive,true);assert.equal(t.get('editorWorkspace').hidden,true);assert.equal(t.get('exhibitionWorkspace').hidden,false);assert.equal(t.frame.srcdocWrites,1);
   assert.equal(t.get('exhibitionTab').getAttribute('aria-selected'),'true');assert.equal(t.get('editorTab').tabIndex,-1);assert.equal(t.messages.length,0,'project waits for the iframe ready handshake');
   t.message({type:'jeju-exhibition-ready'},'https://evil.test');t.message({type:'jeju-exhibition-ready'},undefined,{});assert.equal(t.messages.length,0,'both origin and frame source must match');
   t.message({type:'jeju-exhibition-ready'});assert.deepEqual(t.messages.map(m=>m.value.type),['jeju-exhibition-project','jeju-exhibition-active']);assert.equal(t.messages[1].value.active,true);assert(t.messages.every(m=>m.origin==='https://toy80318-sys.github.io'));
   assert.equal(JSON.stringify(t.messages[0].value.project),t.before);assert.equal(t.project(),t.before);assert.equal(t.calls.save,0,'game entry never saves or mutates the layout');
-  t.message({type:'jeju-exhibition-loaded',flowerCount:320,unavailable:[]});assert(t.get('exhibitionStatus').textContent.includes('꽃잎 흩날림'));assert(t.get('exhibitionStatus').textContent.includes('개화 영상 미포함'));const status=t.get('exhibitionStatus').textContent;t.message({type:'jeju-exhibition-error',message:'spoof'},'https://evil.test');assert.equal(t.get('exhibitionStatus').textContent,status);
+  t.message({type:'jeju-exhibition-loaded',flowerCount:320,openingCount:8,unavailable:[]});assert(t.get('exhibitionStatus').textContent.includes('꽃잎 흩날림'));assert(t.get('exhibitionStatus').textContent.includes('검수된 3초 개화 8종'));const status=t.get('exhibitionStatus').textContent;t.message({type:'jeju-exhibition-error',message:'spoof'},'https://evil.test');assert.equal(t.get('exhibitionStatus').textContent,status);
   t.get('exhibitionBloomAll').click();assert.equal(t.messages.at(-1).value.type,'jeju-exhibition-bloom-all');t.get('exhibitionFullscreen').click();assert.equal(t.calls.fullscreen,1);
   t.visibility(true);assert.equal(t.messages.at(-1).value.active,false);t.visibility(false);assert.equal(t.messages.at(-1).value.active,true);
   await t.switch(false);assert.equal(t.c.exhibitionActive,false);assert.equal(t.get('editorWorkspace').hidden,false);assert.equal(t.get('exhibitionWorkspace').hidden,true);assert.equal(t.messages.at(-1).value.active,false);assert.equal(t.calls.fit,1);assert.equal(t.project(),t.before);

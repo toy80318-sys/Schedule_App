@@ -66,6 +66,7 @@
   for(const p of document.querySelectorAll('#properties .note'))if(p.textContent.startsWith('색상 변화 강도:'))p.hidden=true;
   document.body.append(legacy);document.body.classList.add('editor-organized');activate(typeof location==='object'&&new URLSearchParams(location.search).get('panel')==='files'?'files':'pcg');toggleTools(matchMedia('(max-width:760px)').matches);
   const pcgQuick=document.createElement('button');pcgQuick.id='openProcedural';pcgQuick.className='btn primary';pcgQuick.textContent='꽃밭 PCG';pcgQuick.onclick=()=>{activate('pcg');toggleTools(false)};document.querySelector('.worktop').prepend(pcgQuick);
+  const focus=$('openFocusBlur');if(focus){focus.textContent='초점 · 블러';document.querySelector('.worktop').append(focus)}
   const fileCopy=document.createElement('button');fileCopy.className='btn';fileCopy.type='button';fileCopy.textContent='프로젝트 파일 저장';fileCopy.onclick=()=>$('saveProject').click();panelById.get('files').querySelectorAll('.editor-tool-body')[1].prepend(fileCopy);
   window.jejuEditorLayout={sections,activate};
  }

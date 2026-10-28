@@ -544,7 +544,7 @@
   }
   function warmSequence(a){
     if(!a.frames?.length||a.atmosphereVersion!==85&&!a.frames[0].startsWith('/assets/animations/'))return Promise.resolve();
-    if(a.atmosphereVersion===85&&(a.frames.length!==150||!Array.isArray(a.previewFrames)||a.previewFrames.length!==150))return Promise.reject(Error('에디터용 루프 미리보기 목록이 맞지 않습니다.'));
+    if(a.atmosphereVersion===85&&a.elementLoopVersion!==95&&(a.frames.length!==150||!Array.isArray(a.previewFrames)||a.previewFrames.length!==150))return Promise.reject(Error('에디터용 루프 미리보기 목록이 맞지 않습니다.'));
     if(sequenceCache.has(a.id))return Promise.resolve();
     if(sequenceLoads.has(a.id))return sequenceLoads.get(a.id);
     const entry={urls:new Array(a.frames.length),decoded:new Array(a.frames.length),controller:new AbortController(),version:a.atmosphereVersion},control=entry.controller;
@@ -680,7 +680,7 @@
   function exhibitionMessage(message){$('exhibitionFrame').contentWindow?.postMessage(message,location.origin)}
   function sendExhibitionProject(){if(exhibitionReady&&exhibitionActive){exhibitionMessage({type:'jeju-exhibition-project',project:window.jejuEditor.project()});exhibitionMessage({type:'jeju-exhibition-active',active:!document.hidden})}}
   let exhibitionTemplateTask;
-  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=separated91').then(response=>{if(!response.ok)throw Error('게임 화면을 불러오지 못했습니다. 게임 모드를 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('게임 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
+  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=separated91-flower95').then(response=>{if(!response.ok)throw Error('게임 화면을 불러오지 못했습니다. 게임 모드를 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('게임 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
   async function switchWorkspace(exhibition){
     const request=++workspaceRequest,frame=$('exhibitionFrame');let template;
     if(exhibition)try{await bloomReady;while(pendingObjectAdds.size)await Promise.allSettled([...pendingObjectAdds]);if(!frame.getAttribute('srcdoc'))template=await exhibitionTemplate()}catch(err){if(request!==workspaceRequest)return;$('exhibitionStatus').hidden=false;$('exhibitionStatus').textContent=err.message;return}
@@ -694,7 +694,7 @@
   for(const id of ['editorTab','exhibitionTab'])$(id).addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();e.stopPropagation();const next=id==='editorTab'?'exhibitionTab':'editorTab';$(next).focus();$(next).click()}});
   $('exhibitionBloomAll').onclick=()=>exhibitionMessage({type:'jeju-exhibition-bloom-all'});
   $('exhibitionFullscreen').onclick=()=>{const task=document.fullscreenElement?document.exitFullscreen():$('exhibitionWorkspace').requestFullscreen?.();task?.catch(()=>{$('exhibitionStatus').textContent='이 브라우저에서 전체 화면을 열 수 없습니다.'})};
-  window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==$('exhibitionFrame').contentWindow)return;const data=e.data;if(data?.type==='jeju-exhibition-ready'){exhibitionReady=true;sendExhibitionProject()}else if(data?.type==='jeju-exhibition-loaded'){$('exhibitionStatus').textContent=`${Number.isFinite(data.flowerCount)?data.flowerCount:0}개 꽃 · 터치하면 꽃잎 흩날림 · 꽃·풀 살랑임 · 떠다니는 빛과 느린 구름 · 개화 영상 미포함`+(data.unavailable?.length?` · ${data.unavailable.length}개 상태 이미지 미연결`:'')}else if(data?.type==='jeju-exhibition-error')$('exhibitionStatus').textContent=typeof data.message==='string'?data.message:'게임 콘텐츠를 불러오지 못했습니다.'});
+  window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==$('exhibitionFrame').contentWindow)return;const data=e.data;if(data?.type==='jeju-exhibition-ready'){exhibitionReady=true;sendExhibitionProject()}else if(data?.type==='jeju-exhibition-loaded'){$('exhibitionStatus').textContent=`${Number.isFinite(data.flowerCount)?data.flowerCount:0}개 꽃 · 터치하면 꽃잎 흩날림 · 꽃·풀 살랑임 · 떠다니는 빛과 느린 구름`+(Number.isFinite(data.openingCount)&&data.openingCount>0?` · 검수된 3초 개화 ${data.openingCount}종`:' · 개화 영상 미연결')+(data.unavailable?.length?` · ${data.unavailable.length}개 상태 이미지 미연결`:'')}else if(data?.type==='jeju-exhibition-error')$('exhibitionStatus').textContent=typeof data.message==='string'?data.message:'게임 콘텐츠를 불러오지 못했습니다.'});
   document.addEventListener('visibilitychange',()=>{if(exhibitionReady)exhibitionMessage({type:'jeju-exhibition-active',active:exhibitionActive&&!document.hidden})});
   const bloomReady=fetch('assets/abstract-scene-v44/bloom-manifest_v44.json?v=44').then(response=>{if(!response.ok)throw Error('색상별 꽃 영상 목록을 불러오지 못했습니다.');return response.json()}).then(data=>{installBloomManifest(data);buildFlowerChoices();buildColorChoices();renderPalette();refresh();return restoreCurrent().then(()=>updateSavedLayouts()).then(()=>requestAnimationFrame(fit))});
   window.jejuEditor.ready=bloomReady;

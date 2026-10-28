@@ -150,8 +150,8 @@
   function bloomPhase(elapsed,seq,from=0){
     if(seq.route==='PNG_STATE_PAIR')return {frame:elapsed<30?1:0,done:elapsed>=30,closing:elapsed>=30};
 
-    const end=(seq.frameCount||seq.frames.length)-1,fps=seq.fps||30,closing=elapsed>=30;
-    return {frame:Math.max(0,Math.min(end,closing?end-Math.floor((elapsed-30)*fps):from+Math.floor(Math.max(0,elapsed)*fps))),done:elapsed>=30+(end+1)/fps,closing};
+    const end=(seq.frameCount||seq.frames.length)-1,fps=seq.fps||30;
+    return {frame:Math.max(0,Math.min(end,from+Math.floor(Math.max(0,elapsed)*fps))),done:false,closing:false};
   }
   function backgroundPhase(elapsed){const cycle=Math.floor(Math.max(0,elapsed)/180);return {cycle,blend:Math.min(1,Math.max(0,(elapsed-cycle*180)/2))}}
   async function image(src){
@@ -214,7 +214,7 @@
     if(!v?.ready){status(`${o.name||a?.name||'이 꽃'} · 이 색상의 개화 영상이 아직 준비되지 않았습니다.`);return}
     for(const key of [...frameFailures])if(key.includes(`/flower-blooms/${v.id}/`))frameFailures.delete(key);
     touches.set(o.id,clock);active.set(o.id,{variant:v,touchedAt:clock,from:0,display:null,error:false});rememberSequence(v);scatter(o,v,point);
-    button.dataset.state='opening';button.setAttribute('aria-pressed','true');status(v.route==='PNG_STATE_PAIR'?`${v.name||o.name||a.name} · 만개 PNG 상태 · 30초 후 봉오리 상태 복귀 · 개화 영상 미포함`:`${v.name||o.name||a.name} · 꽃이 피어납니다. 30초 뒤 천천히 봉오리로 닫힙니다.`);
+    button.dataset.state='opening';button.setAttribute('aria-pressed','true');status(v.route==='PNG_STATE_PAIR'?`${v.name||o.name||a.name} · 만개 PNG 상태 · 30초 후 봉오리 상태 복귀 · 개화 영상 미포함`:`${v.name||o.name||a.name} · 꽃이 펼쳐진 뒤 만개 상태를 유지합니다.`);
     prefetch(v,0,false);paint();wake();
   }
   function drawObject(o,im,scope='decor',opacity=1,neutral=false,cast=true){
@@ -350,7 +350,7 @@
       for(const video of new Set(actors.map(a=>a.video)))disposeBackground(video);disposeBackground(bg);disposeBackground(bgNext);bg=nextBackground;bgNext=null;bgTask=null;bgFadeAt=null;bgChangeAt=180;
       const selected=(next.background||BACKGROUNDS[0]).split('?')[0].replace('/assets/background/','/assets/background-loops/').replace(/\.webp$/,'.mp4');bgIndex=BACKGROUNDS.findIndex(src=>src.split('?')[0]===selected);
       next.gardenSpace=window.jejuSpace?.normalize(next.gardenSpace);project=next;cameraView=window.jejuSpace?.view(next.objects,map,next.width,next.height,next.gardenSpace,0);assets.clear();for(const [id,a] of map)assets.set(id,a);plantAnchors.clear();for(const [id,p] of preparedAnchors)plantAnchors.set(id,p);actors=nextActors;clock=0;paintCount=0;buildAtmosphere();buttons.clear();$('flowers').replaceChildren();
-      for(const o of window.jejuSpace?.ordered(project.objects,assets,project.height,project.gardenSpace,cameraView)||project.objects){const a=assets.get(o.assetId);if(!touchFlower(a))continue;const v=a.variants?.get(o.id),ready=flowerSpecies(a)?!!v?.ready:a.ready!==false,button=document.createElement('button');button.className='flower-hit';button.type='button';button.disabled=!ready;button.dataset.variant=v?.id||'';button.dataset.state=ready?'idle':'unavailable';button.dataset.budSupported=String(!!(a.budStill||v?.ready));button.setAttribute('aria-label',`${v?.name||o.name||a.name||'꽃'} · ${ready?'꽃잎 반응':'준비 중'}`);button.setAttribute('aria-pressed','false');button.title=a.budStill||v?.ready?'꽃잎 반응 · 30초 후 준비된 봉오리 상태 복귀':'꽃잎 반응 · 원본 꽃 유지 · 봉오리 이미지 준비 중';button.style.transformOrigin='50% 50%';
+      for(const o of window.jejuSpace?.ordered(project.objects,assets,project.height,project.gardenSpace,cameraView)||project.objects){const a=assets.get(o.assetId);if(!touchFlower(a))continue;const v=a.variants?.get(o.id),ready=flowerSpecies(a)?!!v?.ready:a.ready!==false,button=document.createElement('button');button.className='flower-hit';button.type='button';button.disabled=!ready;button.dataset.variant=v?.id||'';button.dataset.state=ready?'idle':'unavailable';button.dataset.budSupported=String(!!(a.budStill||v?.ready));button.setAttribute('aria-label',`${v?.name||o.name||a.name||'꽃'} · ${ready?'꽃잎 반응':'준비 중'}`);button.setAttribute('aria-pressed','false');button.title=a.bloomSequence||v?.ready&&v.route!=='PNG_STATE_PAIR'?'자연 개화 · 만개 상태 유지':a.budStill||v?.ready?'꽃잎 반응 · 30초 후 준비된 봉오리 상태 복귀':'꽃잎 반응 · 원본 꽃 유지 · 봉오리 이미지 준비 중';button.style.transformOrigin='50% 50%';
         button.onpointerenter=e=>{if(e.pointerType==='mouse')bloom(o,e,'hover')};button.onpointerdown=e=>{if(e.button!==undefined&&e.button!==0)return;e.stopPropagation?.();bloom(o,e,'pointer')};button.onclick=e=>bloom(o,e);$('flowers').append(button);buttons.set(o.id,button);
       }
       const openingCount=[...map.values()].filter(a=>a.bloomSequence&&used.has(a.id)).length;$('layoutName').textContent=(project.name||'현재 배치')+' · '+buttons.size+'개 꽃';resize();playBackground(bg);for(const actor of actors)playBackground(actor.video);status(openingCount?'봉오리를 터치하면 빠르게 펼쳐지고 꽃잎이 흩날립니다.':unavailable.length?'일부 색상의 개화 영상이 아직 준비되지 않았습니다.':'꽃 주변으로 빛과 꽃잎이 떠다닙니다. 개화 애니메이션은 준비 중입니다.');message('jeju-exhibition-loaded',{flowerCount:buttons.size,openingCount,unavailable:[...new Set(unavailable)]});wake();return true;

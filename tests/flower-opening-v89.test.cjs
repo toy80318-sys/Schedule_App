@@ -9,6 +9,8 @@ for(const wrong of [{...a,src:'https://example.test/other-flower.png'},{...a,sha
 const pending=structuredClone(catalog);pending.items[0].status='awaiting-video';assert.deepEqual(F.asset(a,pending),a,'pending and rejected videos never masquerade as a completed animation');
 console.log('PASS: exact two generated inputs, approved natural opening/alpha gate, matching flower and lighting, immutable sources, fixed 3s sequence and no reverse or morph fallback.');
 const {harness,project,object}=require('./game-interaction.test.cjs');
+const vm=require('node:vm'),fs=require('node:fs'),source=fs.readFileSync('docs/player.js','utf8'),start=source.indexOf('  function bloomPhase('),end=source.indexOf('  function backgroundPhase(',start),legacyPhase=vm.runInNewContext(source.slice(start,end)+';bloomPhase');
+for(const elapsed of [8,30,1000]){const state=legacyPhase(elapsed,{fps:30,frameCount:240,frames:[],route:'GPT_PAIR_TO_SEEDANCE'});assert.equal(state.frame,239);assert.equal(state.closing,false);assert.equal(state.done,false,'existing real-video clips also hold open instead of reversing after30s');}
 (async()=>{
  const h=harness();h.env.window.jejuFlowerOpening=F;h.env.window.jejuFlowerOpeningData=catalog;
  const p={...project([{...a,group:'flowers',ready:true}],[object('first',id),object('second',id,600)]),gameAtmosphereVersion:89},before=JSON.stringify(p);

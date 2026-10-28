@@ -3,7 +3,7 @@ const player=fs.readFileSync('docs/player.html','utf8'),embed=fs.readFileSync('d
 assert(embed.includes('data-jeju-embedded="true"'));assert(embed.includes('class="embedded"'));assert(!embed.includes('src="site-nav.js'),'embedded game has no second site navigation');
 const scripts=html=>[...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map(m=>m[1]).filter(s=>!s.startsWith('site-nav.js'));
 assert.deepEqual(scripts(embed),scripts(player),'editor and standalone game use identical dependency versions');
-assert(embed.includes('player.js?v=game82r1'));assert(app.includes('player-embed.txt?v=separated89'));
+assert(embed.includes('player.js?v=game82r1'));assert(app.includes('player-embed.txt?v=separated89r1'));
 for(const script of ['ambient-policy.js','garden-space.js','flower-hue.js','set-review-catalog.js','set-review-elements.js'])assert(embed.includes(script),script+' is available to current PNG projects');
 for(const html of [player,embed]){
   const stack=[],voidTags=new Set(['meta','link','input','img','br','hr','source','wbr']);let controlsPath;

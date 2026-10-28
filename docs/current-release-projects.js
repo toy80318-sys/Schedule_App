@@ -11,5 +11,12 @@
   const hash=Array.from(new Uint8Array(await cryptoAPI.subtle.digest('SHA-256',new TextEncoder().encode(text.replace(/\r\n/g,'\n')))),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==scene.projectSha256)throw Error('최신 배치의 원본 서명이 다릅니다.');
   const project=validate(JSON.parse(text),scene,release,renderer);await Promise.all([project.background,...project.assets.map(a=>a.src)].map(image));return project;
  }
- const api={validate,load};if(typeof module==='object'&&module.exports){module.exports=api;return}root.jejuCurrentProjects=api;
+ function prepare(project,theme,release,useVideo=false){
+  const layout=root.jejuReferenceLayout?root.jejuReferenceLayout.project(project,theme):project;
+  let next=root.jejuSeparatedLoops?root.jejuSeparatedMotion.project(layout,root.jejuSeparatedLoops,useVideo,release.assets.filter(a=>a.category==='particle')):layout;
+  if(root.jejuElementLoopData)next=root.jejuElementLoops.project(next,root.jejuElementLoopData);
+  if(root.jejuFlowerOpeningData)next=root.jejuFlowerOpening.project(next,root.jejuFlowerOpeningData);
+  if(root.jejuAmbient)next=root.jejuAmbient.cleanProject(next);return root.jejuRestoredBushes?root.jejuRestoredBushes.project(next):next;
+ }
+ const api={validate,load,prepare};if(typeof module==='object'&&module.exports){module.exports=api;return}root.jejuCurrentProjects=api;
 })(typeof window==='object'?window:globalThis);

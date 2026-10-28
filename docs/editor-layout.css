@@ -7,7 +7,7 @@
 .editor-organized .worktop{max-width:calc(100% - 24px);overflow:auto}
 .editor-organized .right{position:static;width:auto;display:flex;flex-direction:column;padding:0;overflow:hidden;box-shadow:none}
 .editor-tool-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:10px;border-bottom:1px solid #3e5156;background:#16262c;flex-shrink:0}
-.editor-tool-tabs button{border:1px solid #40565d;background:#20343b;color:#c4d6d7;border-radius:7px;padding:9px 3px;cursor:pointer;font:12px/1.4 system-ui}
+.editor-tool-tabs button{border:1px solid #40565d;background:#20343b;color:#c4d6d7;border-radius:7px;padding:9px 3px;cursor:pointer;font:12px/1.4 system-ui;white-space:normal;word-break:keep-all}
 .editor-tool-tabs button[aria-selected=true]{background:#88d2c6;border-color:#88d2c6;color:#132f2e;font-weight:700}
 #editorToolPanels{overflow:auto;min-height:0;padding:10px;flex:1}
 #editorToolPanels [role=tabpanel][hidden]{display:none}

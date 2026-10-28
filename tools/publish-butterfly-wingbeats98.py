@@ -39,6 +39,11 @@ for s in side:
     with zipfile.ZipFile(docs/item['sequenceZip']) as z:assert z.testzip() is None and len(z.namelist())==74
     item['alphaWebM_SHA256']=sha(folder/'alpha.webm');item['keyMP4_SHA256']=sha(folder/'key.mp4');items.append(item)
 data=dict(format='mazeland-butterfly-wingbeats-v98',version=98,date='2026-10-28',approvedRetryCount=3,maximumRetryCredits=6,actualRetryCredits=6,items=items)
+selection=json.loads((repo.parent/'20261028_메이즈랜드_원본소스/나비_실제날갯짓_480_3초_v98/사용확정_나비3종_20261028.json').read_text(encoding='utf-8'))
+data['selectedIds']=[a['id'] for a in selection['items'] if a['index'] in selection['selectedIndices']]
+assert data['selectedIds']==['atmosphere85-butterfly-01','atmosphere85-butterfly-02','atmosphere85-butterfly-03']
+data['selectionDecision']='사용자가 확정한 나비 3종만 사용'
+for item in items:item['gameApplied']=item['id'] in data['selectedIds']
 (public/'manifest.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 (docs/'butterfly-loop-catalog98.js').write_text('window.jejuButterflyLoopData='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\nwindow.jejuButterflyLoops.validate(window.jejuButterflyLoopData);\n',encoding='utf-8')
 with zipfile.ZipFile(public/'Butterfly4_PNGAlpha480_v98.zip','w',zipfile.ZIP_STORED) as z:

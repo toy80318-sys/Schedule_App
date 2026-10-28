@@ -3,11 +3,13 @@
   function isRetired(asset){
     if(!asset)return false;
     const id=String(asset.id||'').replace(/^loop-/,''),source=asset.src||asset.frames?.[0]||'';
-    return id==='wind1'||id==='cloud1'||/^\/assets\/animations\/(?:wind1|cloud1)\//.test(source);
+    return id==='wind1'||id==='cloud1'||/^\/assets\/animations\/(?:wind1|cloud1)\//.test(source)||/^BG0[1-4]-E06-V05$/.test(id)||/(?:^|\/)BG0[1-4]-E06-V05(?:\/|\.(?:png|webp)(?:[?#]|$))/.test(source)||["0556cccc4ed44f9696fac848833eb5b657b337713577e911022bfe66919ef835","139b4947682d54d193b6ea7110f02d090db48d851f090acddaafe164879d12d8","440031d555e11c90a774614cbaddd33c7ddae1064ea69e51f21b449512a3b4a6","07ffcf05e9a0ffaf8b9f34b17074c0f814440d14d2038e8daa017660d0eaf912"].includes(asset.sha256||asset.sourceSHA256);
   }
   function cleanProject(data){
     const assets=data.assets||[],removed=new Set(assets.filter(isRetired).map(a=>a.id));
-    return {...data,assets:assets.filter(a=>!isRetired(a)),objects:(data.objects||[]).filter(o=>!removed.has(o.assetId)&&!isRetired({id:o.assetId}))};
+    const keep=o=>!removed.has(o.assetId)&&!isRetired({id:o.assetId}),result={...data,assets:assets.filter(a=>!isRetired(a)),objects:(data.objects||[]).filter(keep)};
+    if(Array.isArray(data.styles))result.styles=data.styles.map(s=>({...s,presets:(s.presets||[]).map(p=>{const objects=p.objects.filter(keep);return objects.length===p.objects.length?{...p,objects}:{...p,objects,thumbnail:undefined}}).filter(p=>p.objects.length)}));
+    return result;
   }
   const atmosphereAssets=[
     {id:'atmosphere-cloud-white',name:'구름 · 천천히 왼쪽으로',group:'decor',atmosphere:'cloud',src:'/assets/atmosphere/cloud-white.webp'},

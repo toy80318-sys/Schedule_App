@@ -1,0 +1,73 @@
+{
+  "version": 99,
+  "date": "2026-10-28",
+  "passedFlowerTypes": 35,
+  "bloomHoldSeconds": 60,
+  "selectedButterflyIds": [
+    "atmosphere85-butterfly-01",
+    "atmosphere85-butterfly-02",
+    "atmosphere85-butterfly-03"
+  ],
+  "retiredLeafIds": [
+    "BG01-E06-V05",
+    "BG02-E06-V05",
+    "BG03-E06-V05",
+    "BG04-E06-V05"
+  ],
+  "restoredBushSourceCount": 4,
+  "unityRuntimeVerified": false,
+  "scenes": [
+    {
+      "id": "sunset",
+      "project": "sunset_editor_v99.json",
+      "sha256": "c061832f39026c66ab62cd2026bab0859071912b8166999aea4ee5007b18295e",
+      "objectCount": 405,
+      "restoredBushVersion99": 99,
+      "restoredBushObjects": 11,
+      "openingPreview": {
+        "passedTypes": 35,
+        "pendingTypes": 13,
+        "replacedObjects": 78
+      }
+    },
+    {
+      "id": "day",
+      "project": "day_editor_v99.json",
+      "sha256": "cb1c8f5b3622fbc5643642dcaf2f3c97ea24a867464cbb34af58d6c1f64d0fe0",
+      "objectCount": 405,
+      "restoredBushVersion99": 99,
+      "restoredBushObjects": 11,
+      "openingPreview": {
+        "passedTypes": 35,
+        "pendingTypes": 13,
+        "replacedObjects": 173
+      }
+    },
+    {
+      "id": "night",
+      "project": "night_editor_v99.json",
+      "sha256": "5f0a02404ec014572d1f69d46308e44cb1b33265918c503958d029a9f5894570",
+      "objectCount": 405,
+      "restoredBushVersion99": 99,
+      "restoredBushObjects": 11,
+      "openingPreview": {
+        "passedTypes": 35,
+        "pendingTypes": 13,
+        "replacedObjects": 26
+      }
+    },
+    {
+      "id": "morning",
+      "project": "morning_editor_v99.json",
+      "sha256": "44f1678df04dcdc09c13fad8709f9a5941eb5632e17090a28c20cdf645af3e2c",
+      "objectCount": 405,
+      "restoredBushVersion99": 99,
+      "restoredBushObjects": 11,
+      "openingPreview": {
+        "passedTypes": 35,
+        "pendingTypes": 13,
+        "replacedObjects": 111
+      }
+    }
+  ]
+}

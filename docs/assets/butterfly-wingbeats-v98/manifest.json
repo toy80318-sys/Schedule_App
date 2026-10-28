@@ -1530,9 +1530,15 @@
         "visualEvidence": "2026-10-28: complete raw clip and all72 alpha frames on dark/light backgrounds inspected; body remains side-on,attached wing hinges preserved; enclosed background regions compared with raw source;native-cycle seam selected without synthesis.",
         "knownLimits": "Original AI motion blur remains at fast wing strokes. Unity runtime and venue output not tested."
       },
-      "gameApplied": true,
+      "gameApplied": false,
       "alphaWebM_SHA256": "ecda789ef7e407d69d4e06c5eb81bfe641a2874c53368075257f53a5613894b3",
       "keyMP4_SHA256": "05c32d343f81e459626b771eae5637b76dfe870af5b8f239ac26eff61b616bd8"
     }
-  ]
+  ],
+  "selectedIds": [
+    "atmosphere85-butterfly-01",
+    "atmosphere85-butterfly-02",
+    "atmosphere85-butterfly-03"
+  ],
+  "selectionDecision": "사용자가 확정한 나비 3종만 사용"
 }

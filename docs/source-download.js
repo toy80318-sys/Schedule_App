@@ -1,7 +1,7 @@
 ((root)=>{
  'use strict';
  function entries(catalog,newOnly=false){
-  const latest=Math.max(68,...catalog.assets.map(a=>a.artStyleVersion||0)),current=catalog.currentSourceIds&&new Set(catalog.currentSourceIds),items=catalog.assets.filter(a=>!a.catalogHidden&&!a.referenceOnly&&(!newOnly||(current?current.has(a.id):a.imageStyleVersion===latest))),seen=new Set();
+  const latest=Math.max(68,...catalog.assets.map(a=>a.artStyleVersion||0)),current=catalog.currentSourceIds&&new Set(catalog.currentSourceIds),items=catalog.assets.filter(a=>a.ready!==false&&!a.distantBird&&!root.jejuAmbient?.isRetired(a)&&!a.catalogHidden&&!a.referenceOnly&&(!newOnly||(current?current.has(a.id):a.imageStyleVersion===latest))),seen=new Set();
   return items.filter(a=>{if(seen.has(a.src))return false;seen.add(a.src);return true}).map(a=>{
    const url=new URL(a.src);
    if(!/^[A-Za-z0-9_.-]+\.png$/i.test(a.file)||!/^[a-f0-9]{64}$/i.test(a.sha256)||url.protocol!=='https:'||url.username||url.password||!['raw.githubusercontent.com','lixkizqprsbnsnozwbpa.supabase.co'].includes(url.hostname))throw Error('원본 PNG 목록이 올바르지 않습니다.');

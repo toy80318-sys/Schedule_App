@@ -17,7 +17,7 @@ function saved(theme='sunset'){
 function setup(input,options={}){
   let current=copy(input),stored=0;const backups=[],events=[],notices=[],images=[],nodes=new Map();
   const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',src:'',classList:{toggle(){}}});return nodes.get(id);};
-  const c={window:{jejuFinalCatalog:copy(catalog),jejuSetReviewElements:copy(registry),jejuBackgroundGrade:grade,JejuSetRenderer:renderer,jejuAmbient:{cleanProject:v=>copy(v)},jejuSpace:{normalize:v=>copy(v||{enabled:false})},jejuFocus:{normalize:v=>copy(v)}},W:14165,H:3480,crypto:crypto.webcrypto,TextEncoder,Uint8Array,structuredClone,Date,Error,Map,Set,console,
+  const c={window:{jejuFinalCatalog:copy(catalog),jejuSetReviewElements:copy(registry),jejuBackgroundGrade:grade,JejuSetRenderer:renderer,jejuAmbient:{cleanProject:v=>copy(v),isRetired:()=>false},jejuSpace:{normalize:v=>copy(v||{enabled:false})},jejuFocus:{normalize:v=>copy(v)}},W:14165,H:3480,crypto:crypto.webcrypto,TextEncoder,Uint8Array,structuredClone,Date,Error,Map,Set,console,
     autosaveReady:false,saveTimer:null,backgroundDefaultVersion:0,assets:[],objects:[],background:'initial',reference:null,sceneFilters:{},gardenSpace:{enabled:false},history:[],future:[],selected:null,selectedIds:new Set(),builtins:[],currentFlowerAsset:a=>a,backgroundChoices:catalog.backgrounds.map(a=>[a.src,a.name]),snapshot:()=>events.push('snapshot'),renderWall:()=>events.push('wall'),scheduleSave:()=>events.push('save-schedule'),
     $:node,clamp:(n,a,b)=>Math.max(a,Math.min(b,n)),migrateLongStems:async()=>{},renderPalette(){},refresh(){events.push('render');},syncUndo(){},clearTimeout(){},uid:()=>String(backups.length+1),notice:m=>notices.push(m),
     readCurrent:async()=>copy(current),namedStore:async(mode,key,value)=>{events.push('backup-start');if(options.backupGate)await options.backupGate;if(options.backupFailure)throw Error('백업 커밋 실패');backups.push({key,value:copy(value)});events.push('backup-commit');},
@@ -69,7 +69,7 @@ function setup(input,options={}){
   for(const background of [null,'https://example.test/custom.png',catalog.backgrounds[0].src]){const value=saved();value.background=background;const bytes=JSON.stringify(value);await t.apply(value);assert.equal(t.c.background,background);assert.equal(JSON.stringify(t.c.sceneFilters),JSON.stringify(value.sceneFilters));assert.equal(JSON.stringify(value),bytes);}
   assert.throws(()=>t.set('https://example.test/custom.png'),/등록된 배경/);assert.equal(t.plan({...saved(),background:'constructor'}),null,'replacement lookup ignores inherited keys');
   assert.equal((app.match(/oilAssetVersion:14,backgroundDefaultVersion/g)||[]).length,4,'current, named, file and exhibition exports persist the receipt');
-  assert(app.includes('gardenSpace,backgroundDefaultVersion}),selected:'));
-  const html=read('editor.html');assert(html.indexOf('set-review-renderer.js')<html.indexOf('app.js?v=curated86'));assert(html.includes('whole62-scenes.js?v=80'));
+  assert(app.includes('gardenSpace,backgroundDefaultVersion,restoredBushVersion99}),selected:'));
+  const html=read('editor.html');assert(html.indexOf('set-review-renderer.js')<html.indexOf('app.js?v=media99'));assert(html.includes('whole62-scenes.js?v=80'));
   console.log('PASS: four-theme exact-source/alias migration, original backup bytes and commit order, geometry/focus/group filters preserved, neutral background, removed choices/imports/undo/API migrate while custom/none/bright filters stay intact, legacy backups, signed356-object fresh default and all download/hash/image/backup/save failure gates.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

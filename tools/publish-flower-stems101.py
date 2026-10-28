@@ -98,6 +98,7 @@ def main():
         assert report['sourceSHA256'] == sha(Path(report['source']))
         assert report['keyBackgroundRecompositedFromRGBA'] is True
         assert report['keyVideoSHA256'] == sha(Path(report['keyVideo']))
+        assert report['leadingHoldTrimmed'] is True
         actual_inputs = [source for source in registered if source['id'] == entry['id']]
         assert len(actual_inputs) == 2 and {source['role'] for source in actual_inputs} == {'start_image', 'end_image'}
         assert all(source['sourceSHA256'] == entry['images']['bud' if source['role']=='start_image' else 'bloom']['sha256'] for source in actual_inputs)
@@ -110,6 +111,7 @@ def main():
         shutil.copyfile(report['keyVideo'], folder / 'open2s-key.mp4')
         entry.update(videoReady=True, status='ready')
         entry['opening'] = {key: report[key] for key in ('duration', 'fps', 'frames', 'width', 'height', 'previewWidth', 'previewHeight', 'atlasColumns', 'atlasRows', 'jobId', 'sourceSHA256', 'keyVideoSHA256', 'fullyOpenBySeconds', 'route')}
+        entry['opening'].update(immediateStart=True, firstOpeningAtSeconds=1/24)
         atlas_sha = sha(folder / 'atlas.webp')
         entry['opening'].update(status='passed', matteRevision=report['matteRevision'], atlasSHA256=atlas_sha, atlas=f'assets/flower-stems-v101/{entry["id"]}/atlas.webp?v={atlas_sha[:12]}', framePattern=f'assets/flower-stems-v101/{entry["id"]}/frame_%04d.webp?v=101r3', keyVideo=f'assets/flower-stems-v101/{entry["id"]}/open2s-key.mp4', actualInputs=actual_inputs)
     result = {'format': 'jeju-flower-stems-v101', 'version': 101, 'count': 48,

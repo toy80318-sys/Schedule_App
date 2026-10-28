@@ -1,0 +1,24 @@
+const assert=require('node:assert/strict'),F=require('../docs/flower-opening');
+const id='BG01-camellia-scene-a-v83',sha='a'.repeat(64),frames=Array.from({length:72},(_,i)=>`assets/flower-openings-v89/${id}/frame_${String(i).padStart(4,'0')}.webp`);
+const item={id,sourceSHA256:sha,sourcePNG:'https://example.test/same-flower.png',theme:'sunset',status:'passed',route:'GENERATED_IMAGE_PAIR_TO_VIDEO',jobId:'test-fixture-not-a-real-job',fps:24,duration:3,previewWidth:192,previewHeight:192,transparent:true,frames,bud:frames[0],open:frames[71],inputs:[{role:'start_image',generatedImage:true,sha256:'b'.repeat(64)},{role:'end_image',generatedImage:true,sha256:'c'.repeat(64)}],review:{alpha:true,naturalOpening:true,fullyOpenBySeconds:1.2}};
+const catalog={format:'jeju-flower-openings-v89',items:[item]},a={id,src:item.sourcePNG,sha256:sha,theme:'sunset',category:'flower',stillOnly:true},original=JSON.stringify({catalog,a});
+F.validate(catalog);const next=F.asset(a,catalog);assert(next.bloomSequence);assert.equal(next.src,a.src);assert.equal(next.sha256,a.sha256);next.bloomSequence.frames.pop();assert.equal(item.frames.length,72);assert.equal(JSON.stringify({catalog,a}),original);
+assert.deepEqual([-.2,0,.5,1,3,30,10000].map(t=>F.phase(t,item)),[0,0,12,24,71,71,71],'one-way playback holds the fully-open frame forever and never reverses');
+for(const mutate of [v=>v.inputs.pop(),v=>v.inputs[0].role='image',v=>v.inputs[0].generatedImage=false,v=>v.frames[10]='../unsafe.webp',v=>v.review.naturalOpening=false,v=>v.review.alpha=false,v=>v.review.fullyOpenBySeconds=3.5,v=>v.duration=4,v=>v.previewWidth=480]){const invalid=structuredClone(catalog);mutate(invalid.items[0]);assert.throws(()=>F.validate(invalid));}
+for(const wrong of [{...a,src:'https://example.test/other-flower.png'},{...a,sha256:'d'.repeat(64)},{...a,theme:'night'}])assert.throws(()=>F.asset(wrong,catalog),'different source or lighting cannot reuse an opening');
+const pending=structuredClone(catalog);pending.items[0].status='awaiting-video';assert.deepEqual(F.asset(a,pending),a,'pending and rejected videos never masquerade as a completed animation');
+console.log('PASS: exact two generated inputs, approved natural opening/alpha gate, matching flower and lighting, immutable sources, fixed 3s sequence and no reverse or morph fallback.');
+const {harness,project,object}=require('./game-interaction.test.cjs');
+(async()=>{
+ const h=harness();h.env.window.jejuFlowerOpening=F;h.env.window.jejuFlowerOpeningData=catalog;
+ const p={...project([{...a,group:'flowers',ready:true}],[object('first',id),object('second',id,600)]),gameAtmosphereVersion:89},before=JSON.stringify(p);
+ await h.api.load(p);h.api.setActive(true);const [first,second]=h.get('flowers').children;
+ assert.equal(first.dataset.frame,'0');assert.equal(h.get('scene').dataset.readyOpenings,'1');assert.equal(h.requests.filter(src=>frames.includes(src)).length,72,'all tiny web frames are ready before interaction');
+ first.click();h.step(500);assert.equal(first.dataset.frame,'12');assert.equal(second.dataset.frame,'0','same sprite source has independent per-object playback');assert.equal(h.api.state().petals,36);
+ h.step(2500);assert.equal(first.dataset.frame,'71');assert.equal(first.dataset.state,'open');h.step(30000);assert.equal(first.dataset.frame,'71');first.click();assert.equal(first.dataset.frame,'71','retouch scatters petals without replaying or reversing an open flower');
+ h.api.reset();assert.equal(first.dataset.frame,'0');assert.equal(first.dataset.state,'idle');assert.equal(JSON.stringify(p),before,'runtime never writes into the editor layout');
+ await assert.rejects(h.api.load(project([{...a,bloomSequence:item}],[object('injected',id)])),/검수된/,'project JSON cannot supply an unreviewed fake opening');
+ const moving=harness(),cloud={id:'cloud-loop',category:'cloud',src:'https://example.test/cloud.png',loopInPlace:true},butterfly={id:'butterfly-loop',category:'butterfly',src:'https://example.test/butterfly.png',loopInPlace:true},scene={...project([cloud,butterfly],[{...object('cloud',cloud.id),motion:'stationary'},{...object('butterfly',butterfly.id),motion:'stationary'}]),gameAtmosphereVersion:89};
+ await moving.api.load(scene);moving.api.setActive(true);const matrix=src=>moving.ctx.draws.find(d=>d.source===src).matrix.slice(),c=matrix(cloud.src),b=matrix(butterfly.src);moving.step(10000);assert.notDeepEqual(matrix(cloud.src),c);assert.notDeepEqual(matrix(butterfly.src),b);assert.equal(moving.get('scene').dataset.skyParticles,'32');
+ console.log('PASS: preloaded one-way PNG playback, per-flower hover/touch state, held full bloom, explicit reset, untrusted-sequence rejection and bounded cloud/butterfly travel with sky particles.');
+})().catch(error=>{console.error(error);process.exitCode=1});

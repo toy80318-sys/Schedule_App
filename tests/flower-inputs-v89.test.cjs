@@ -1,0 +1,9 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto'),F=require('../docs/flower-opening');
+const m=JSON.parse(fs.readFileSync('docs/assets/flower-openings-v89/manifest.json','utf8'));F.validate(m);assert.equal(m.items.length,48);assert.equal(m.paidJobsSubmitted,0);assert.equal(m.creditEstimate,115.2);
+const prefix='https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/';
+const raw=url=>{assert(url.startsWith(prefix));const p=url.slice(prefix.length);assert(!p.includes('..'));return fs.readFileSync(p)},hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+for(const a of m.items){assert.equal(a.status,'awaiting-video-approval');assert.equal(a.imageReview.passed,true);assert.equal(a.inputs.length,2);assert.deepEqual(a.inputs.map(v=>v.role),['start_image','end_image']);assert.notEqual(a.inputs[0].sha256,a.inputs[1].sha256);assert(a.keyColor.match(/^#[0-9A-F]{6}$/));assert(!a.generationRecord,'local generation paths remain outside the public catalog');assert.equal(hash(raw(a.sourcePNG)),a.sourceSHA256);
+ for(const state of ['bud','bloom']){const image=a.images[state],b=raw(image.original);assert.equal(b[25],6);assert.equal(b.readUInt32BE(16),1254);assert.equal(b.readUInt32BE(20),1254);assert.equal(hash(b),image.sha256);assert(fs.existsSync('docs/'+image.preview));}
+ for(const i of a.inputs){const b=raw(i.value);assert.equal(hash(b),i.sha256);assert.equal(b[25],2,'actual video inputs have solid RGB key backgrounds');assert.equal(b.readUInt32BE(16),1254);assert.equal(b.readUInt32BE(20),1254);}
+}
+console.log('PASS: 48 same-lighting image pairs,96 real RGBA originals,96 separate solid-key inputs,exact source SHA and dimensions,no fabricated video completion or public local paths.');

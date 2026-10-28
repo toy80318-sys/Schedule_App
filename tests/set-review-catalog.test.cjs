@@ -21,5 +21,5 @@ for(const file of catalog.sourceFiles)assert(!/Darker_v60/.test(file.relativePat
 assert(!Object.hasOwn(catalog.backgroundReplacements,'https://example.test/ML_BG01_LT01_Background_Darker_v60.png'),'unregistered custom lookalikes are preserved');
 const after=JSON.stringify(catalog);vm.runInContext(code,context);assert.equal(JSON.stringify(catalog),after,'registry is idempotent');vm.runInNewContext(code,{window:{}});
 for(const [file,entry]of [['editor.html','app.js'],['player.html','player.js']]){const html=read(file);assert(html.indexOf('set-review-catalog.js')>0);assert(html.indexOf('set-review-catalog.js')<html.indexOf('src="'+entry));}
-assert(read('index.html').includes('set-review.html?v=20261028-v88'),'review tools remain in the production links');
+assert(read('index.html').includes('set-review.html?v=20261028-v89'),'review tools remain in the production links');
 console.log('PASS: bright-only four-theme gallery/assets/downloads, all legacy aliases replaced, unchanged flowers/environment, custom safety and idempotence.');

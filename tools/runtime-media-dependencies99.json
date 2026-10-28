@@ -5,7 +5,8 @@
     "player-embed.txt",
     "layered-garden.html",
     "source-cutouts.html",
-    "element-loops.html"
+    "element-loops.html",
+    "atmosphere-loops.html"
   ],
   "scripts": [
     "site-nav.js",
@@ -83,7 +84,8 @@
     "layered-garden.js",
     "image-preview.js",
     "web-collection.js",
-    "source-collection.js"
+    "source-collection.js",
+    "separated-loop-gallery.js"
   ],
   "styles": [
     "catalog.css",

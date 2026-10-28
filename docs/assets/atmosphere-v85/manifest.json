@@ -3,6 +3,7 @@
   "version": 85,
   "date": "2026-10-28",
   "count": 12,
+  "activeCount": 4,
   "tool": "Higgsfield motion-guided source RGBA loops",
   "models": [
     "seedance1_5",
@@ -67,6 +68,8 @@
         ]
       },
       "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-cloud-01",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/cloud_01/frames/frame_0000.png",
@@ -773,6 +776,8 @@
         ]
       },
       "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-cloud-02",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/cloud_02/frames/frame_0000.png",
@@ -1479,6 +1484,8 @@
         ]
       },
       "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-cloud-03",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/cloud_03/frames/frame_0000.png",
@@ -2185,6 +2192,8 @@
         ]
       },
       "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-cloud-04",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/cloud_04/frames/frame_0000.png",
@@ -2890,6 +2899,8 @@
           1227
         ]
       },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-butterfly-01",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/butterfly_01/frames/frame_0000.png",
@@ -3595,6 +3606,8 @@
           1150
         ]
       },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-butterfly-02",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/butterfly_02/frames/frame_0000.png",
@@ -4300,6 +4313,8 @@
           1075
         ]
       },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-butterfly-03",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/butterfly_03/frames/frame_0000.png",
@@ -5005,6 +5020,8 @@
           1047
         ]
       },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user",
       "baseAssetId": "atmosphere84-butterfly-04",
       "frames": [
         "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v85/butterfly_04/frames/frame_0000.png",

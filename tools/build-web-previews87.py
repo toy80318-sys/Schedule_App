@@ -46,7 +46,7 @@ def build(check=False):
                      'sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
         return relative
 
-    fields = ('id', 'name', 'file', 'src', 'width', 'height', 'theme', 'species', 'category', 'compatibleThemes')
+    fields = ('id', 'name', 'file', 'src', 'width', 'height', 'theme', 'species', 'category', 'compatibleThemes', 'catalogHidden', 'useStatus')
     assets = []
     for asset in release['assets']:
         thumb = preview(asset, asset['id'], 384)

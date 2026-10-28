@@ -3647,7 +3647,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-cloud-02",
@@ -4355,7 +4357,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-cloud-03",
@@ -5063,7 +5067,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-cloud-04",
@@ -5771,7 +5777,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-butterfly-01",
@@ -6478,7 +6486,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-butterfly-02",
@@ -7185,7 +7195,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-butterfly-03",
@@ -7892,7 +7904,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-butterfly-04",
@@ -8599,7 +8613,9 @@
         ]
       },
       "releaseVersion": 86,
-      "sourceVersion": "v85"
+      "sourceVersion": "v85",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere85-particle-01",

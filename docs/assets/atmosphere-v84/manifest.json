@@ -4,6 +4,7 @@
   "date": "2026-10-28",
   "tool": "built-in image_gen",
   "count": 12,
+  "activeCount": 4,
   "assets": [
     {
       "id": "atmosphere84-cloud-01",
@@ -62,7 +63,9 @@
           796
         ]
       },
-      "atmosphere": "cloud"
+      "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-cloud-02",
@@ -121,7 +124,9 @@
           753
         ]
       },
-      "atmosphere": "cloud"
+      "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-cloud-03",
@@ -180,7 +185,9 @@
           918
         ]
       },
-      "atmosphere": "cloud"
+      "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-cloud-04",
@@ -239,7 +246,9 @@
           754
         ]
       },
-      "atmosphere": "cloud"
+      "atmosphere": "cloud",
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-butterfly-01",
@@ -297,7 +306,9 @@
           1230,
           1227
         ]
-      }
+      },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-butterfly-02",
@@ -355,7 +366,9 @@
           1134,
           1150
         ]
-      }
+      },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-butterfly-03",
@@ -413,7 +426,9 @@
           1150,
           1075
         ]
-      }
+      },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-butterfly-04",
@@ -471,7 +486,9 @@
           1104,
           1047
         ]
-      }
+      },
+      "catalogHidden": true,
+      "useStatus": "rejected-by-user"
     },
     {
       "id": "atmosphere84-particle-01",

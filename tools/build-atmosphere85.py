@@ -18,7 +18,7 @@ PUBLIC = ROOT / "docs/assets/atmosphere-v85"
 RAW = "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/"
 NAMES = [f"{kind}_{i:02}" for kind in ("cloud", "butterfly", "particle") for i in range(1, 5)]
 REVIEW_FLAGS = ("passed", "loopReviewPassed", "allFramesReviewed", "alphaReviewPassed")
-ZIP_NAME = "Mazeland_Atmosphere_v85_12Loops.zip"
+ZIP_NAME = "Mazeland_Atmosphere_v85_4ParticlesLoops.zip"
 
 
 def encoded(value):
@@ -144,10 +144,11 @@ def make_manifest(accepted):
                  "loopReview": {flag: True for flag in REVIEW_FLAGS},
                  "loopHashes": {**media_hashes, **hashes}}
         assets.append(asset)
-        for key, path in paths.items():
-            files[f"{'MP4' if key == 'keyMP4' else 'WebM'}/{name}.{ 'mp4' if key == 'keyMP4' else 'webm'}"] = path.read_bytes()
+        if not asset.get("catalogHidden"):
+            for key, path in paths.items():
+                files[f"{'MP4' if key == 'keyMP4' else 'WebM'}/{name}.{ 'mp4' if key == 'keyMP4' else 'webm'}"] = path.read_bytes()
     manifest = {"format": "jeju-atmosphere-loops-v1", "version": 85, "date": "2026-10-28",
-                "count": 12, "tool": "Higgsfield motion-guided source RGBA loops", "models": sorted({a['model'] for a in assets}), "assets": assets}
+                "count": 12, "activeCount": 4, "tool": "Higgsfield motion-guided source RGBA loops", "models": sorted({a['model'] for a in assets}), "assets": assets}
     return manifest, files
 
 
@@ -160,13 +161,13 @@ def catalog_script(manifest):
 
 def gallery(manifest):
     assets = [{**{k: a[k] for k in ("id", "name", "category", "loopVideo", "keyVideo", "src")}, "sequenceZip":"https://github.com/toy80318-sys/Schedule_App/releases/download/mazeland-separated-loops-v88/"+a["id"]+"_PNG_ALPHA_v85.zip",
-               "frames": ["assets/web-v87/loop-" + a["id"] + ".webp"]} for a in manifest["assets"]]
+               "frames": ["assets/web-v87/loop-" + a["id"] + ".webp"]} for a in manifest["assets"] if not a.get("catalogHidden")]
     data = json.dumps(assets, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     return ('''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>메이즈랜드 · 루프 영상 모음</title><link rel="stylesheet" href="site-nav.css?v=86"><script defer src="site-nav.js?v=95"></script><style>
 :root{font:15px/1.6 system-ui,sans-serif;color:#edf4ef;background:#102224}*{box-sizing:border-box}body{margin:0}main{max-width:1400px;margin:auto;padding:28px 24px}h1{font-size:clamp(24px,3vw,34px);margin:0}p{color:#bdd0ca}nav{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}a{color:#c6f1dd}nav a{padding:9px 14px;border:1px solid #739d8d;border-radius:9px;text-decoration:none}a:focus-visible,video:focus-visible{outline:3px solid #ffd58d;outline-offset:3px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.card{border:1px solid #4e6d62;border-radius:13px;overflow:hidden;background:#193330}.preview{background:repeating-conic-gradient(#dce4dc 0 25%,#aabdb0 0 50%) 0/20px 20px}.preview video{display:block;width:100%;aspect-ratio:1;object-fit:contain}.info{padding:14px}.info h3{font-size:16px;margin:0}.info p{font-size:12px}.info a{display:inline-block;margin-right:10px;font-size:13px}h2{margin-top:28px}details{margin-top:24px}summary{cursor:pointer}@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:540px){.grid{grid-template-columns:1fr}main{padding:20px 14px}}
-</style><link rel="stylesheet" href="collection.css?v=86"></head><body><main class="collection"><p><a class="button" href="butterflies-oil.html?v=20261028-v98#wingbeat-motion">새 추상 유화 나비 · 실제 날갯짓 검수 →</a></p><p><a class="button" href="element-loops.html?v=20261028-v95">최신 480px · 3초 루프 28종 보기 →</a></p><h1>배경과 분리 요소 · 32종 루프</h1><p>배경 4종 · 풀·잎·나무·현무암 16종 · 구름·나비·빛 12종 / 480px 미리보기 / 무음</p><nav><a href="layered-garden.html?v=20261028-v89r1">분리 레이어로 재생</a><a href="assets/atmosphere-v85/'''+ZIP_NAME+'''" download>구름·나비·빛 12종 영상 ZIP</a><a href="editor.html?v=20261028-v89r1">에디터 열기</a><a href="source-cutouts.html?category=atmosphere&v=20261028-v89r1">정지 PNG 원본 12종</a></nav><p>아래 영상은 투명 배경 미리보기입니다. 보색 배경 MP4와 투명 WebM을 각각 내려받을 수 있습니다.</p><div id="sections"></div><details><summary>투명도와 검수 정보</summary><p>Higgsfield 생성 영상의 움직임을 바탕으로 원본 PNG를 부드럽게 변형해 반복을 맞춘 파생 소스입니다. 투명도도 함께 변형한 결과이며 정지 PNG 원본은 그대로 보존했습니다. 통과한 반복 경계·전체 프레임·투명도 검수 기록은 <a href="assets/atmosphere-v85/manifest.json">요소 목록</a>에 포함되어 있습니다.</p></details></main><script>
-const assets=__DATA__;for(const[k,label]of[['cloud','구름'],['butterfly','프리즘 나비'],['particle','반짝이는 파티클']]){const section=document.createElement('section'),heading=document.createElement('h2'),grid=document.createElement('div');heading.textContent=label+' 4종';grid.className='grid';section.append(heading,grid);document.querySelector('#sections').append(section);for(const a of assets.filter(x=>x.category===k)){const card=document.createElement('article'),preview=document.createElement('div'),video=document.createElement('video'),info=document.createElement('div'),name=document.createElement('h3'),meta=document.createElement('p');card.className='card';preview.className='preview';info.className='info';video.controls=true;video.loop=true;video.muted=true;video.playsInline=true;video.preload='none';video.poster=a.frames[0];video.src=a.loopVideo;video.setAttribute('aria-label',a.name+' 투명 반복 영상');name.textContent=a.name;meta.textContent='480 × 480 · 5초 · 30fps';preview.append(video);info.append(name,meta);for(const[text,url]of[['보색 MP4',a.keyVideo],['투명 WebM',a.loopVideo],['원본 PNG',a.src],['PNG 알파 시퀀스',a.sequenceZip]]){const link=document.createElement('a');link.href=url;link.textContent=text;link.target='_blank';link.rel='noopener';info.append(link)}card.append(preview,info);grid.append(card)}}
-</script><script src="separated-motion.js?v=88"></script><script src="separated-loop-gallery.js?v=88"></script></body></html>'''.replace("__DATA__", data)).encode("utf-8")
+</style><link rel="stylesheet" href="collection.css?v=86"></head><body><main class="collection"><p><a class="button" href="element-loops.html?v=20261028-v95">최신 480px · 현재 19종 루프 · 4종 덤불 PNG 보기 →</a></p><h1>이전 배경과 분리 요소 · 20종 루프</h1><p>배경 4종 · 풀·나무·현무암 12종 · 빛 파티클 4종 / 480px 미리보기 / 무음 · V84·V85 구름과 나비는 사용 대상에서 제외했습니다.</p><nav><a href="layered-garden.html?v=20261028-v89r1">분리 레이어로 재생</a><a href="assets/atmosphere-v85/'''+ZIP_NAME+'''" download>빛 파티클 4종 영상 ZIP</a><a href="editor.html?v=20261028-atmosphere85-particles">에디터 열기</a><a href="source-cutouts.html?category=atmosphere&v=20261028-v89r1">파티클 PNG 원본</a></nav><p>아래 영상은 투명 배경 미리보기입니다. 보색 배경 MP4와 투명 WebM을 각각 내려받을 수 있습니다.</p><div id="sections"></div><details><summary>투명도와 검수 정보</summary><p>Higgsfield 생성 영상의 움직임을 바탕으로 원본 PNG를 부드럽게 변형해 반복을 맞춘 파생 소스입니다. 투명도도 함께 변형한 결과이며 정지 PNG 원본은 그대로 보존했습니다. 통과한 반복 경계·전체 프레임·투명도 검수 기록은 <a href="assets/atmosphere-v85/manifest.json">요소 목록</a>에 포함되어 있습니다.</p></details></main><script>
+const assets=__DATA__;for(const[k,label]of[['cloud','구름'],['butterfly','프리즘 나비'],['particle','반짝이는 파티클']]){const selected=assets.filter(x=>x.category===k);if(!selected.length)continue;const section=document.createElement('section'),heading=document.createElement('h2'),grid=document.createElement('div');heading.textContent=label+' 4종';grid.className='grid';section.append(heading,grid);document.querySelector('#sections').append(section);for(const a of selected){const card=document.createElement('article'),preview=document.createElement('div'),video=document.createElement('video'),info=document.createElement('div'),name=document.createElement('h3'),meta=document.createElement('p');card.className='card';preview.className='preview';info.className='info';video.controls=true;video.loop=true;video.muted=true;video.playsInline=true;video.preload='none';video.poster=a.frames[0];video.src=a.loopVideo;video.setAttribute('aria-label',a.name+' 투명 반복 영상');name.textContent=a.name;meta.textContent='480 × 480 · 5초 · 30fps';preview.append(video);info.append(name,meta);for(const[text,url]of[['보색 MP4',a.keyVideo],['투명 WebM',a.loopVideo],['원본 PNG',a.src],['PNG 알파 시퀀스',a.sequenceZip]]){const link=document.createElement('a');link.href=url;link.textContent=text;link.target='_blank';link.rel='noopener';info.append(link)}card.append(preview,info);grid.append(card)}}
+</script><script src="separated-motion.js?v=88"></script><script src="ambient-policy.js?v=media99-r2"></script><script src="separated-loop-gallery.js?v=media99-r2"></script></body></html>'''.replace("__DATA__", data)).encode("utf-8")
 
 
 def main():
@@ -180,8 +181,9 @@ def main():
     manifest, files = make_manifest(accepted)
     generated = {PUBLIC / "manifest.json": encoded(manifest), ROOT / "docs/atmosphere85-catalog.js": catalog_script(manifest),
                  ROOT / "docs/atmosphere-loops.html": gallery(manifest)}
-    files["manifest.json"] = encoded(manifest)
-    files["README.txt"] = "메이즈랜드 V85 · 12종 5초 루프\nMP4: 보색 단색 배경으로 합성한 정원용 파생 루프\nWebM: 원본 RGBA를 움직임에 맞춰 변형한 투명 파생 루프\nHiggsfield 생성 영상의 움직임을 주기화한 파생본이며 생성 원본 영상과 구분됩니다. 정지 원본 PNG는 그대로 보존했습니다.\n".encode("utf-8")
+    active = [a for a in manifest["assets"] if not a.get("catalogHidden")]
+    files["manifest.json"] = encoded({**manifest, "count": len(active), "assets": active})
+    files["README.txt"] = "메이즈랜드 V85 · 빛 파티클 4종 5초 루프\nMP4: 보색 단색 배경으로 합성한 정원용 파생 루프\nWebM: 원본 RGBA를 움직임에 맞춰 변형한 투명 파생 루프\nHiggsfield 생성 영상의 움직임을 주기화한 파생본이며 생성 원본 영상과 구분됩니다. 정지 원본 PNG는 그대로 보존했습니다.\n구름과 나비는 사용자 선택에 따라 사용 대상에서 제외했습니다.\n".encode("utf-8")
     if args.check:
         for path, content in generated.items():
             if not path.is_file() or path.read_bytes().replace(b"\r\n", b"\n") != content:
@@ -189,7 +191,7 @@ def main():
         with zipfile.ZipFile(PUBLIC / ZIP_NAME) as archive:
             if set(archive.namelist()) != set(files) or any(archive.read(name) != data for name, data in files.items()):
                 raise ValueError("Loop ZIP differs from the reviewed originals")
-        print("PASS: all 12 reviewed loops, original PNG hashes, 1800 original-size and 1800 preview RGBA frames, video probes and public outputs")
+        print("PASS: all 12 loops preserved, four active particles, eight hidden assets, source hashes, RGBA frames, video probes and particle ZIP")
         return
     for path, content in generated.items():
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -201,7 +203,7 @@ def main():
             archive.writestr(entry, data)
     if (PUBLIC / ZIP_NAME).stat().st_size >= 95 * 1024 * 1024:
         raise ValueError("Loop ZIP exceeds the single-file hosting budget")
-    print("BUILT: 12 accepted loops; original PNG assets and saved layouts remain unchanged")
+    print("BUILT: four active particle loops; all 12 source IDs, original PNG assets and saved layouts preserved")
 
 
 if __name__ == "__main__":

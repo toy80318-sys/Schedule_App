@@ -327,14 +327,9 @@
 
     if(!actorManifestTask)actorManifestTask=fetch('/assets/animations/manifest.json?v=center-size-v51-20261020').then(r=>{if(!r.ok)throw Error('새·나비·구름 목록을 읽지 못했습니다.');return r.json()}).catch(e=>{actorManifestTask=null;throw e});
     const rawList=await actorManifestTask;if(!Array.isArray(rawList))throw Error('배경 배우 목록 형식 오류');const list=rawList.filter(a=>!window.jejuAmbient.isRetired(a));
-    const result=[],present=new Set();
+    const result=[];
     for(const o of next.objects){const a=map.get(o.assetId),kind=actorKind(a);if(!kind)continue;const found=list.find(v=>a.id===`loop-${v.id}`||a.id===v.id||a.frames?.[0]?.includes(`/animations/${v.id}/`)||a.src?.includes(`/animations/${v.id}/`));
-      const frames=a.frames||found?.frames||((kind==='cloud'||kind==='mist')?[a.src]:null);if(!frames?.length||frames.length>(frames.every(safeRoot)?3600:600)||!frames.every(safeSource))continue;present.add(kind);result.push({object:o,kind,frames,fps:(a.fps||found?.fps||30)*(a.sourceDriveId?1:kind==='cloud'?.25:kind==='loop'?1:.7)});
-    }
-    const h=next.height;
-    for(const spec of [{id:'bird1',kind:'bird',x:.66,y:.13,w:.25,opacity:.85},{id:'butterfly1',kind:'butterfly',x:.27,y:.58,w:.17,opacity:.9},{id:'butterfly2',kind:'butterfly',x:.73,y:.47,w:.14,opacity:.85}]){
-      if(next.editableActors||present.has(spec.kind))continue;const found=list.find(v=>v.id===spec.id);if(!found?.frames?.length||found.frames.length>600||!found.frames.every(safeRoot))continue;
-      result.push({kind:spec.kind,frames:found.frames,fps:found.fps*(spec.kind==='cloud'?.25:.7),object:{id:`ambient-${spec.id}`,x:next.width*spec.x,y:h*spec.y,w:h*spec.w,h:h*spec.w*9/16,r:0,opacity:spec.opacity}});
+      const frames=a.frames||found?.frames||((kind==='cloud'||kind==='mist')?[a.src]:null);if(!frames?.length||frames.length>(frames.every(safeRoot)?3600:600)||!frames.every(safeSource))continue;result.push({object:o,kind,frames,fps:(a.fps||found?.fps||30)*(a.sourceDriveId?1:kind==='cloud'?.25:kind==='loop'?1:.7)});
     }
     await mapLimit(result,async actor=>{const im=await image(actor.frames[0]);const cv=document.createElement('canvas');cv.width=actor.kind==='cloud'||actor.kind==='mist'?1086:320;cv.height=Math.max(1,Math.round(cv.width*im.naturalHeight/im.naturalWidth));cv.getContext('2d').drawImage(im,0,0,cv.width,cv.height);actor.first=cv;stills.delete(actor.frames[0])});return result;
   }

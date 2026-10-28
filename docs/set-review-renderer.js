@@ -24,6 +24,7 @@
   }
   for(const o of project.objects){
    if(!o||typeof o.id!=='string'||!o.id||o.id.length>256||objectIds.has(o.id)||!ids.has(o.assetId)||!finite(o.x,-100000,100000)||!finite(o.y,-100000,100000)||!finite(o.w,1,100000)||!finite(o.h,1,100000)||['r','opacity','z','rx','ry','blur','flowerHue'].some(k=>o[k]!==undefined&&!finite(o[k],{r:-100000,opacity:0,z:-2000,rx:-60,ry:-60,blur:0,flowerHue:-10}[k],{r:100000,opacity:1,z:2000,rx:60,ry:60,blur:40,flowerHue:10}[k]))||o.flipX!==undefined&&typeof o.flipX!=='boolean')throw Error('배치 좌표 또는 요소 참조가 올바르지 않습니다.');
+   if(o.effects!==undefined&&!root.jejuObjectEffects?.valid(o.effects))throw Error('객체 효과 값이 올바르지 않습니다.');
    objectIds.add(o.id);
   }
   if(project.background!=null&&!safeSource(project.background))throw Error('안전하지 않은 배경 이미지 경로입니다.');
@@ -104,7 +105,7 @@
    const hue=scope==='flowers'&&o.flowerHue?(root.jejuFlowerHue?.css(o.flowerHue)||''):'',blur=blurAmount(o,a,filters.focus,project.height,space);
    if(o.flowerHue&&!root.jejuFlowerHue)warn('꽃잎 색상 보정 도우미가 없어 저장된 PNG 색상으로 표시합니다.');
    const base=['particle','butterfly'].includes(a.category)?toneCSS(filters.scene):filter(scope);
-   ctx.save();ctx.filter=[base==='none'?'':base,hue,lighting===1?'':`brightness(${lighting})`,blur?`blur(${blur*project.height/1080*scale}px)`:''].filter(Boolean).join(' ')||'none';ctx.globalAlpha=o.opacity;ctx.translate(pose.x+pose.w/2,pose.y+pose.h/2);
+   ctx.save();ctx.filter=[base==='none'?'':base,hue,lighting===1?'':`brightness(${lighting})`,root.jejuObjectEffects?.css(o.effects,project.height,scale),blur?`blur(${blur*project.height/1080*scale}px)`:''].filter(Boolean).join(' ')||'none';ctx.globalAlpha=o.opacity;ctx.translate(pose.x+pose.w/2,pose.y+pose.h/2);
    if(root.jejuSpace)root.jejuSpace.orient(ctx,pose);else ctx.rotate(o.r*Math.PI/180);if(o.flipX)ctx.scale(-1,1);
    const ratio=Math.min(pose.w/im.naturalWidth,pose.h/im.naturalHeight),w=a.sourceRect?pose.w:im.naturalWidth*ratio,h=a.sourceRect?pose.h:im.naturalHeight*ratio;
    ctx.drawImage(im,-w/2,scope==='flowers'?pose.h/2-h:-h/2,w,h);ctx.restore();rendered++;

@@ -106,7 +106,7 @@
     if(!plant(a)||reduced.matches)return{angle:0,scale:1};
     const seed=seedOf(o.id);
     const phase=seed%628/100,t=clock-(active.get(o.id)?.touchedAt??-10),scale=!a.bloomSequence&&t>=0&&t<.45?1+.065*Math.sin(Math.PI*t/.45):1;
-    return{angle:atmosphere.wind/50*(a.category==='grass'?1.8:1.05)*(.55*breeze(clock,o.x)+.5*Math.sin(clock*.79+phase)+.12*Math.sin(clock*1.61+phase*.7)),scale};
+    return{angle:atmosphere.wind/50*(a.category==='grass'?1.8:3.2)*(.55*breeze(clock,o.x)+.5*Math.sin(clock*.79+phase)+.12*Math.sin(clock*1.61+phase*.7)),scale};
   }
   function plantGeometry(o,a,im){
     const iw=im.videoWidth||im.naturalWidth||im.width,ih=im.videoHeight||im.naturalHeight||im.height,ratio=Math.min(o.w/iw,o.h/ih),w=a.sourceRect?.length===4?o.w:iw*ratio,h=a.sourceRect?.length===4?o.h:ih*ratio,top=touchFlower(a)?o.h/2-h:-h/2,p=plantAnchors.get(a.id)||{x:.5,y:1};

@@ -15,9 +15,34 @@ def probe(path):
     return json.loads(result)
 
 
+def verify_static_environment(a):
+    parts=a['id'].split('-'); themes={'BG01':'sunset','BG02':'day','BG03':'night','BG04':'morning'}
+    categories={'E01':'grass','E02':'tree','E05':'basalt','E06':'leaf'}
+    assert len(parts)==3 and parts[0] in themes and parts[1] in categories and parts[2]=='V05'
+    assert a['theme']==themes[parts[0]] and a['category']==categories[parts[1]]
+    assert a['sourcePNG']==f'https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/{a["id"]}.png'
+    assert a['image']==f'assets/separated-loops-v88/{a["id"]}/still.png'
+    assert a['kind']=='image' and a['stillOnly'] is True and (a['frameCount'],a['width'],a['height'])==(1,1254,1254)
+    assert len(a['sourceSHA256'])==64 and all(c in '0123456789abcdef' for c in a['sourceSHA256']) and a['sha256']==a['sourceSHA256']
+    assert not any(k in a for k in ('frames','previewFrames','fps','duration','loopVideo','keyVideo','keyColor','sequenceZip','unityFrames','sequenceFrameCount','loopWidth','loopHeight','motion','rootAnchor','seamCheck','visualReview','alphaQA','alphaWebM_SHA256','keyMP4_SHA256','sequenceSHA256','qa'))
+    path=DOCS/a['image']; source=ROOT/'source-assets/set-review-v01'/f'{a["id"]}.png'
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==a['sourceSHA256']==hashlib.sha256(source.read_bytes()).hexdigest()
+    with Image.open(path) as image:
+        assert image.format=='PNG' and image.mode=='RGBA' and image.size==(1254,1254)
+        image.load()
+    return {'id':a['id'],'image':a['image'],'sha256':a['sha256'],'RGBAImagesChecked':1}
+
+
 def verify():
     data=json.loads(MANIFEST.read_text('utf-8')); checks=[]
+    assert data.get('environmentMode') in (None,'static-image')
+    static=data.get('environmentMode')=='static-image'
+    assert data['format']=='mazeland-separated-loops-v88' and data['version']==88
+    assert len(data['environment'])==16 and len({a['id'] for a in data['environment']})==16 and len(data['backgrounds'])==4
     for a in data['environment']:
+        if static:
+            row=verify_static_environment(a);checks.append(row);print(json.dumps(row),flush=True)
+            continue
         path=DOCS/a['loopVideo']; info=probe(path); stream=info['streams'][0]
         assert (stream['width'],stream['height'],stream['r_frame_rate'],int(stream['nb_read_frames']))==(480,480,'24/1',96)
         assert stream.get('tags',{}).get('alpha_mode')=='1'
@@ -60,7 +85,7 @@ def verify():
         assert hashlib.sha256(path.read_bytes()).hexdigest()==b['sha256']
         subprocess.run(['ffmpeg','-v','error','-i',str(path),'-f','null','-'],check=True)
         checks.append({'id':b['id'],'decodedFrames':1440,'duration':60,'fixedCamera':True});print('BG PASS '+b['id'],flush=True)
-    result={'environmentLoops':16,'backgrounds':4,'RGBAFramesChecked':1536,'backgroundFramesDecoded':5760,'checks':checks,'visualReview':'pending'}
+    result={('environmentImages' if static else 'environmentLoops'):16,'backgrounds':4,'RGBAFramesChecked':16 if static else 1536,'backgroundFramesDecoded':5760,'checks':checks,'visualReview':'pending'}
     (DELIVERY/'검수'/'기술검수.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     return result
 

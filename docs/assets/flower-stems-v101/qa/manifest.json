@@ -1,5 +1,5 @@
 {
-  "summary": "48편 · 2,304프레임 · 5단계 검수 완료 · 모든 비교 영상 5회 재생 완료 · 내부 구멍/불투명도 손실 검출 0",
+  "summary": "48편 · 2,304프레임 · 5단계/각 5회 재생 검수 완료 · 무손실 키 원본 48편 · 가는 줄기·잎 끝까지 RGB 손실 0",
   "items": [
     {
       "id": "BG01-buckwheat-scene-a-v83",
@@ -8,10 +8,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-a-v83_lossless_5cycles.mp4?v=b5bc93f144af",
       "comparison": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "de987d741bce7ec062acdb4dba0abd15f19dc4c67d92d4ec099d69f459118c8a",
-      "comparisonSHA256": "b8cfde85eba3354efaa09a80141d2b2df0cd613a88c57a6d98deafe61f06e0e6"
+      "qaVideoSHA256": "b5bc93f144afc4ad3ce71b01fa69bd7ec0a571b492a65dcccff4d87fe80e2f24",
+      "comparisonSHA256": "b8cfde85eba3354efaa09a80141d2b2df0cd613a88c57a6d98deafe61f06e0e6",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=cd85307beca7",
+      "losslessKeyVideoSHA256": "cd85307beca7721f60900f01afdc671ae1f879770e9940bcd23066212ef160b2",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-buckwheat-scene-b-v83",
@@ -20,10 +23,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-b-v83_lossless_5cycles.mp4?v=6d121f043897",
       "comparison": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "b7ac3f2ca66d5f48677f402d1f092895e37aab77eaccaa6d0292b8fd20d75e25",
-      "comparisonSHA256": "cb57fa9f5644d36258706f98c1d080bc40f83857d7c14f75e54964cafcc1ca5d"
+      "qaVideoSHA256": "6d121f043897995b1d166f570d95ffc14099a56e234930cab44bedc516d56d57",
+      "comparisonSHA256": "cb57fa9f5644d36258706f98c1d080bc40f83857d7c14f75e54964cafcc1ca5d",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=2e322d1d55f6",
+      "losslessKeyVideoSHA256": "2e322d1d55f6ec1da040c74343eef281522a412a74ffd65d63499d7ec2ee8484",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-buckwheat-scene-c-v83",
@@ -32,10 +38,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-c-v83_lossless_5cycles.mp4?v=33a52ebcf8c9",
       "comparison": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "836d1bb214ef3ff45a145feff5c6cf6a05aa337bef4e0c6cac85228f89f92cb4",
-      "comparisonSHA256": "160105391ff23c0dbe45068b0b67b6b64ed04ab6f73d2196b4e27ed584fbc341"
+      "qaVideoSHA256": "33a52ebcf8c99c07833eb1ba819f6e75211cd1db59c32f06141a57965bdfb0eb",
+      "comparisonSHA256": "160105391ff23c0dbe45068b0b67b6b64ed04ab6f73d2196b4e27ed584fbc341",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=ad16bbdeacc3",
+      "losslessKeyVideoSHA256": "ad16bbdeacc347972b4da355a95737c3d0d8e1bb56ae4fc0824101a85579eab9",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-buckwheat-scene-d-v83",
@@ -44,10 +53,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-d-v83_lossless_5cycles.mp4?v=cd1b3110810c",
       "comparison": "assets/flower-stems-v101/qa/BG01-buckwheat-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "696554fff226ecfe3244bfbfaabade133ba743481b78df06f2d17bb58eb58600",
-      "comparisonSHA256": "87e21c9508385ad4ac399302f91085ca2914479e8fa4131218614fa4666e8696"
+      "qaVideoSHA256": "cd1b3110810c18069c5212dffaddb1c99a6185e41ad24a1fcf9cecef49786c63",
+      "comparisonSHA256": "87e21c9508385ad4ac399302f91085ca2914479e8fa4131218614fa4666e8696",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=f34ecb8fd58c",
+      "losslessKeyVideoSHA256": "f34ecb8fd58c07cfc3b0e9823473132d694036d4fa09b3a500c2343a83462e10",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-camellia-scene-a-v83",
@@ -56,10 +68,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-a-v83_lossless_5cycles.mp4?v=9dbb429f29ec",
       "comparison": "assets/flower-stems-v101/qa/BG01-camellia-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "bf9b3b775c14332d2abe85e62595642905cab3c02f20b748d731c8ea5bcc4c08",
-      "comparisonSHA256": "6de1570f9b448b009fffb84244163e1ef5429c10437830f64b0f1e00b3ec9d32"
+      "qaVideoSHA256": "9dbb429f29ec6dd29c8fe39cbdd4ea896c6937872c4e07b93c76f03862e3e0c0",
+      "comparisonSHA256": "6de1570f9b448b009fffb84244163e1ef5429c10437830f64b0f1e00b3ec9d32",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=b0075f295ab5",
+      "losslessKeyVideoSHA256": "b0075f295ab5fefc6d7aa9151f6ce64df635682ad49b86e51616ac7e70d3255b",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-camellia-scene-b-v83",
@@ -68,10 +83,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-b-v83_lossless_5cycles.mp4?v=267cf70e7e0a",
       "comparison": "assets/flower-stems-v101/qa/BG01-camellia-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "32eaa4f2466aae17964a213910e29892a3a246dea547af66236856940b184cf2",
-      "comparisonSHA256": "6f64a66df51e57125db5face01bde88cc977cc41a1245fcc4787355254255bfa"
+      "qaVideoSHA256": "267cf70e7e0a7b52867ed80096e82a10a59699b7a6f8cb7fab7ed75fb351a9c6",
+      "comparisonSHA256": "6f64a66df51e57125db5face01bde88cc977cc41a1245fcc4787355254255bfa",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=78bdcbba0abd",
+      "losslessKeyVideoSHA256": "78bdcbba0abd5c797a5ffed8310a64d37628ad09a7984efe90feccfbc401e637",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-camellia-scene-c-v83",
@@ -80,10 +98,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-c-v83_lossless_5cycles.mp4?v=e2f96ef0c292",
       "comparison": "assets/flower-stems-v101/qa/BG01-camellia-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "76af315c539eeaf6ee8814405e190e5abe8e0e6009256e9d3c8169f1cb26ecb0",
-      "comparisonSHA256": "125a6c7f14784662660cee42667e25f0ec7ef34554496d1eda66b0f2b396bd40"
+      "qaVideoSHA256": "e2f96ef0c292daa39ba43d567189b5c28c8a7f62bf6893d50db200553eb7d16d",
+      "comparisonSHA256": "125a6c7f14784662660cee42667e25f0ec7ef34554496d1eda66b0f2b396bd40",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=1c2f407328f9",
+      "losslessKeyVideoSHA256": "1c2f407328f9575f53f8a2a42921ed0e204224e9abd2fc0bcef38d31aa79a5f0",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-camellia-scene-d-v83",
@@ -92,10 +113,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-camellia-scene-d-v83_lossless_5cycles.mp4?v=f17c12dcf4e4",
       "comparison": "assets/flower-stems-v101/qa/BG01-camellia-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "7d79305eeda98caffca2fda10a6772c8dc4445d4d965a3471e974211ef3bba3f",
-      "comparisonSHA256": "8d506f76a044bff6d8984cdd17dcdec78f58ef568724b0051748ee8fdc0aab15"
+      "qaVideoSHA256": "f17c12dcf4e4673098f0de2b77a26a684a5199f5bc5c2fb0307346a39eba4689",
+      "comparisonSHA256": "8d506f76a044bff6d8984cdd17dcdec78f58ef568724b0051748ee8fdc0aab15",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a30c11091804",
+      "losslessKeyVideoSHA256": "a30c11091804b943392f04b2662e885078b9acf02ccfea5a3a297f267fe81c2f",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-marigold-scene-a-v83",
@@ -104,10 +128,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-a-v83_lossless_5cycles.mp4?v=831f086ee0dd",
       "comparison": "assets/flower-stems-v101/qa/BG01-marigold-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "5ce09a31cab25acd47ddd234bc9fef56833b76a70859642a680f73757e716e41",
-      "comparisonSHA256": "ad06e477267a4db9cef5662d878778dfa71b154923a6ef57aaf8cccad55cf4a1"
+      "qaVideoSHA256": "831f086ee0dd24f55f18c6eaa60de3af0df38ec1a1b24dba0844d2ff04ac7e3f",
+      "comparisonSHA256": "ad06e477267a4db9cef5662d878778dfa71b154923a6ef57aaf8cccad55cf4a1",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=61015b610be8",
+      "losslessKeyVideoSHA256": "61015b610be89374918e8dd5b43ab5b15dfee1ebb27278ba32be41de0e659f78",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-marigold-scene-b-v83",
@@ -116,10 +143,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-b-v83_lossless_5cycles.mp4?v=26c0df883b10",
       "comparison": "assets/flower-stems-v101/qa/BG01-marigold-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "2ab00792e55f08c966a81a696a1339e5854086cfe494763762bbbadb04a31222",
-      "comparisonSHA256": "346d47132d753ac5ea70e501c0bea80cecb7231d73b95c807581526a0cbd9ce1"
+      "qaVideoSHA256": "26c0df883b1000c50242cb8b2ba1f925d4369c4df659fce2329d5601ccb5104c",
+      "comparisonSHA256": "346d47132d753ac5ea70e501c0bea80cecb7231d73b95c807581526a0cbd9ce1",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=f181a6b85559",
+      "losslessKeyVideoSHA256": "f181a6b85559b78454e3a027b675723883c092b7d3d240554a51e5b42f9cc07a",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-marigold-scene-c-v83",
@@ -128,10 +158,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-c-v83_lossless_5cycles.mp4?v=2875e561b65c",
       "comparison": "assets/flower-stems-v101/qa/BG01-marigold-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "61ef47934c2afc1fa26c1996a9a7d51c42d3cfa1d8f3d6b38f02d409a5a0df40",
-      "comparisonSHA256": "bb6496480293ae8eb0385f1948e819f38f6c9607781673dbf40497f0a437c3fd"
+      "qaVideoSHA256": "2875e561b65ce021483c5c9e4c609f0248094bae23a51779b44a14d9b13408ed",
+      "comparisonSHA256": "bb6496480293ae8eb0385f1948e819f38f6c9607781673dbf40497f0a437c3fd",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=c9aca1f3a1ee",
+      "losslessKeyVideoSHA256": "c9aca1f3a1eeec5113692dd3fdfef87208965a2fd022fb3dc989d6bb6fa8e85f",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG01-marigold-scene-d-v83",
@@ -140,10 +173,13 @@
       "backgroundId": "BG01",
       "lightingId": "LT01",
       "keyColor": "#00E0FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG01-marigold-scene-d-v83_lossless_5cycles.mp4?v=72cfd06abdcf",
       "comparison": "assets/flower-stems-v101/qa/BG01-marigold-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "2aa06ff04b83b5fffd02d5e9d66a6d3bb9335c6c073b6c1aa2c65fa577a77522",
-      "comparisonSHA256": "1dca6451f397f6c223276904c3e1725b9f16d2c541685cb7a2633aac4c9b2634"
+      "qaVideoSHA256": "72cfd06abdcf96923b292fd3444b542041f1f9a389998843315253cbbfaed0e8",
+      "comparisonSHA256": "1dca6451f397f6c223276904c3e1725b9f16d2c541685cb7a2633aac4c9b2634",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=776b4f9c2ccd",
+      "losslessKeyVideoSHA256": "776b4f9c2ccd8482334a789f2005c4305d324b3849cc3bb06b79a73f5724ef48",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-buckwheat-scene-a-v83",
@@ -152,10 +188,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-a-v83_lossless_5cycles.mp4?v=2de6684108fd",
       "comparison": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "f3b2f70791669410bf63e1242bd0baed03d76c6539ed72dabc9f1a92ae08c12b",
-      "comparisonSHA256": "4c524c5891fdc1b05785fffa709f8203e300ea63111f9a2cce7701790163a087"
+      "qaVideoSHA256": "2de6684108fd5e8f539f7eca05c8a5210a326bd93302aea9ac1944ee4185cdf1",
+      "comparisonSHA256": "4c524c5891fdc1b05785fffa709f8203e300ea63111f9a2cce7701790163a087",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=aa1fb13189df",
+      "losslessKeyVideoSHA256": "aa1fb13189dfedeea3cc73a3b207a4401ee4479ddf8fa0cc3fec6e22deedc4d4",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-buckwheat-scene-b-v83",
@@ -164,10 +203,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-b-v83_lossless_5cycles.mp4?v=d7a6a5f176e7",
       "comparison": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "78a510cf474b28446758c89d85986551af80eaf9e6d8885bfa7c0d8337387049",
-      "comparisonSHA256": "7fcd62f22c4217f72ef83336c1bccb025224ac6125321cf789e518f8c201508e"
+      "qaVideoSHA256": "d7a6a5f176e73dc9dfc5805eb4dc879285e40b614c52f8282305078af24c5c43",
+      "comparisonSHA256": "7fcd62f22c4217f72ef83336c1bccb025224ac6125321cf789e518f8c201508e",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=2d1647c7ec70",
+      "losslessKeyVideoSHA256": "2d1647c7ec70896927235e0c41635f60de982a1549b55887b0a09ee9193555e8",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-buckwheat-scene-c-v83",
@@ -176,10 +218,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-c-v83_lossless_5cycles.mp4?v=a0c114746978",
       "comparison": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "030cceb06b625ae2944b375d5e7a254b276a0a72d6b241c206112b1c13968835",
-      "comparisonSHA256": "4baacc718de6264b250746010cfe1463aeacbc96c1d3ad23e013ed917f3c02c9"
+      "qaVideoSHA256": "a0c114746978b5002b983822baaf258bf46435ec390a84baca858412e9aaf098",
+      "comparisonSHA256": "4baacc718de6264b250746010cfe1463aeacbc96c1d3ad23e013ed917f3c02c9",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=bee2e6e5a058",
+      "losslessKeyVideoSHA256": "bee2e6e5a058bd927c1eea5a1fe9dbdea22cd26b7c7e83b4583324f43e2ea06c",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-buckwheat-scene-d-v83",
@@ -188,10 +233,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-d-v83_lossless_5cycles.mp4?v=a9eae5f49c32",
       "comparison": "assets/flower-stems-v101/qa/BG02-buckwheat-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "7634920660d4360700e56cddadc7252be45d1162be489ea896b381cbea0ea8a5",
-      "comparisonSHA256": "2442e8f3849e4174db36d52d9fe5ff18424e8f31a8b23900406d3c54ee6a482b"
+      "qaVideoSHA256": "a9eae5f49c32f46b194920ab10d2d15b843291a6907387aa1e18caf95801d57c",
+      "comparisonSHA256": "2442e8f3849e4174db36d52d9fe5ff18424e8f31a8b23900406d3c54ee6a482b",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=12e27dcd8c14",
+      "losslessKeyVideoSHA256": "12e27dcd8c14a956514ba1d9e5fb2c11d070c5dbc9fc3ddb4942111723ac78bf",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-canola-scene-a-v83",
@@ -200,10 +248,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-a-v83_lossless_5cycles.mp4?v=da470c502aba",
       "comparison": "assets/flower-stems-v101/qa/BG02-canola-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "15b8a3c02fd13641a2a3aa09f749093430ec36814c6d63a5710b8dfcb7749e40",
-      "comparisonSHA256": "420df0ff4fb46a5fce541a0b02c2555cae74a3911e31974d9010112202c0e236"
+      "qaVideoSHA256": "da470c502aba573be6163808150a94c7b11db49046ae54188a4771c0c2e2c3ae",
+      "comparisonSHA256": "420df0ff4fb46a5fce541a0b02c2555cae74a3911e31974d9010112202c0e236",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=819c20659b4c",
+      "losslessKeyVideoSHA256": "819c20659b4c62565e57c16530be6b6272668c3b3aafb833f022a0b4f25fdeeb",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-canola-scene-b-v83",
@@ -212,10 +263,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-b-v83_lossless_5cycles.mp4?v=81c51ba376ca",
       "comparison": "assets/flower-stems-v101/qa/BG02-canola-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "0c64ee5dfae6c64179117a8499d4de611d5db558e7b2a679bf0d54f8a1dfed6d",
-      "comparisonSHA256": "7091022ec2ccc7d66f0d7ab6236b1ab7bcf3fc1b6efe85a9ce240bd33f971bb6"
+      "qaVideoSHA256": "81c51ba376ca489c8e137827b32d0f1aebc6ad8917846c8bed2448cd7abbd6ab",
+      "comparisonSHA256": "7091022ec2ccc7d66f0d7ab6236b1ab7bcf3fc1b6efe85a9ce240bd33f971bb6",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=3a407298297f",
+      "losslessKeyVideoSHA256": "3a407298297f1151166178c7f3607eafb67a02e2b0812e956dec7c1e1b8b9db3",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-canola-scene-c-v83",
@@ -224,10 +278,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-c-v83_lossless_5cycles.mp4?v=7c3cc7b9a0b2",
       "comparison": "assets/flower-stems-v101/qa/BG02-canola-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "2b3b83a795ec867603cce5f5a16700b64fdf25a968c54221c3e895a84a6fa5d4",
-      "comparisonSHA256": "56b26f02ba5b14e5f523feae863a87d4eca7c1160b61cc24e5f374dbad3c0297"
+      "qaVideoSHA256": "7c3cc7b9a0b211b5fa3532d634734a4675fe6bebfec6d1ecff826dbd2ab2207d",
+      "comparisonSHA256": "56b26f02ba5b14e5f523feae863a87d4eca7c1160b61cc24e5f374dbad3c0297",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4b179754ae7e",
+      "losslessKeyVideoSHA256": "4b179754ae7e992b0330bb716fcff9736e42c26fedc47ed5349049f9342ef0f3",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-canola-scene-d-v83",
@@ -236,10 +293,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-canola-scene-d-v83_lossless_5cycles.mp4?v=1661a64de849",
       "comparison": "assets/flower-stems-v101/qa/BG02-canola-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "f93988c75f73c0f3e14bb9987f70608fd1780c8d57981a8f0c64d6dbaff302f1",
-      "comparisonSHA256": "0dd397ce61460e90219256bfd9987202a084185c59ef1ad12ef3720c325e2644"
+      "qaVideoSHA256": "1661a64de84915d0b75fc49fd7b40e333fa0f3f732b7f546017ba9685a30aa3f",
+      "comparisonSHA256": "0dd397ce61460e90219256bfd9987202a084185c59ef1ad12ef3720c325e2644",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=5f37e4fc50df",
+      "losslessKeyVideoSHA256": "5f37e4fc50df9e32de89199c057044061c1494f2072ce4d57076a7f07ae66ad7",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-marigold-scene-a-v83",
@@ -248,10 +308,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-a-v83_lossless_5cycles.mp4?v=13f7e5c640ff",
       "comparison": "assets/flower-stems-v101/qa/BG02-marigold-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "2c584836630d2611a553406cae31853ac5ba4fc794006d1b09252e9c9805336b",
-      "comparisonSHA256": "e09b51247d042480a9f53866ca4c94874f285d9ccf700d7980e1060049ac26c8"
+      "qaVideoSHA256": "13f7e5c640ff68155f16a7cd62438cc4d30bf11d2ebb5db24e3a620cdf2c5cd3",
+      "comparisonSHA256": "e09b51247d042480a9f53866ca4c94874f285d9ccf700d7980e1060049ac26c8",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a87b6d3ad17c",
+      "losslessKeyVideoSHA256": "a87b6d3ad17c20ebfc3e60061ba38334585aa03f982d9514ad51941a26e6017b",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-marigold-scene-b-v83",
@@ -260,10 +323,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-b-v83_lossless_5cycles.mp4?v=bbaaf17d8c5a",
       "comparison": "assets/flower-stems-v101/qa/BG02-marigold-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "ae538fa36e047df4c4b5e80358e72bf71e05b805ee2e3925557adcc51052007e",
-      "comparisonSHA256": "416b7d5cc046c1337dfde06592fbeb18b26a95b4090a8dfb50079616a987b6a7"
+      "qaVideoSHA256": "bbaaf17d8c5ac228ba90082b20f4779d939893f7e8b32e75a978e523901554de",
+      "comparisonSHA256": "416b7d5cc046c1337dfde06592fbeb18b26a95b4090a8dfb50079616a987b6a7",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4e06698d9d3b",
+      "losslessKeyVideoSHA256": "4e06698d9d3baa7bdfb55a5123aa15a12d91ec21b3f05b49d195fcc68dc21180",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-marigold-scene-c-v83",
@@ -272,10 +338,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-c-v83_lossless_5cycles.mp4?v=8b05d60c329b",
       "comparison": "assets/flower-stems-v101/qa/BG02-marigold-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "0ba6642f6e75a276f880be9d0639aa50b29220d9cf1dc1f821de45c4b95f14c3",
-      "comparisonSHA256": "901ddb5fc686bb78de2000486b35615b65a83526e48a0833b70f5198cdba6d9a"
+      "qaVideoSHA256": "8b05d60c329b5e801beccefb236945d8486f37fb11be9d5d3b1562440aabae78",
+      "comparisonSHA256": "901ddb5fc686bb78de2000486b35615b65a83526e48a0833b70f5198cdba6d9a",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=b11aa43d2213",
+      "losslessKeyVideoSHA256": "b11aa43d22136b1c80dc6526fe4f58566825475e9fcac68ddbbfd709ae6961ec",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG02-marigold-scene-d-v83",
@@ -284,10 +353,13 @@
       "backgroundId": "BG02",
       "lightingId": "LT02",
       "keyColor": "#0000FF",
-      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG02-marigold-scene-d-v83_lossless_5cycles.mp4?v=0e66d3030093",
       "comparison": "assets/flower-stems-v101/qa/BG02-marigold-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "e4266bf11a78f672a391ac231b1467d1fdbe315b147cb7043b2387f50b3cd624",
-      "comparisonSHA256": "0da05a956fc3a8768b9d0f291e0e5dedcf34869af32d79d79e9ae3b594fb9617"
+      "qaVideoSHA256": "0e66d3030093e550039ad52468cbd65ad790619c1ea63c4c2a3f6fd6bbc64e35",
+      "comparisonSHA256": "0da05a956fc3a8768b9d0f291e0e5dedcf34869af32d79d79e9ae3b594fb9617",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a7df962ffa47",
+      "losslessKeyVideoSHA256": "a7df962ffa475355085e5a7805ec2b1543f37f351faa9c16c4e46b26c3026d4e",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-camellia-scene-a-v83",
@@ -296,10 +368,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-a-v83_lossless_5cycles.mp4?v=d9271ecb2f83",
       "comparison": "assets/flower-stems-v101/qa/BG03-camellia-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "96a9ef2d2aa18ca5b1818750217adf70e6e47e28333233da827ff45a7ca315b5",
-      "comparisonSHA256": "6c9e57412e6e41c6516a8d5375416ea8f8042d24096242c6d2da7a7c84620196"
+      "qaVideoSHA256": "d9271ecb2f8322b45a4b18766d3f45ce7b4a7dd61b07435e3b2123cfcbcf3bb7",
+      "comparisonSHA256": "6c9e57412e6e41c6516a8d5375416ea8f8042d24096242c6d2da7a7c84620196",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=1768f88260d3",
+      "losslessKeyVideoSHA256": "1768f88260d365845d6e4c1a33d7e318c916ae9c13e2bc384467199ef3ffc49b",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-camellia-scene-b-v83",
@@ -308,10 +383,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-b-v83_lossless_5cycles.mp4?v=fd584feb0fd0",
       "comparison": "assets/flower-stems-v101/qa/BG03-camellia-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "cf90420fd7eea27da589f5b743b94c25d49187c345854e12855d3e7336245971",
-      "comparisonSHA256": "a60a5ff89254bbd1c33286a6f5ec589c88f1c6aba8e3258851ff304a5fb3e670"
+      "qaVideoSHA256": "fd584feb0fd0a18010f829137cce55be47ad2bd79001680798483c9e1e1f1445",
+      "comparisonSHA256": "a60a5ff89254bbd1c33286a6f5ec589c88f1c6aba8e3258851ff304a5fb3e670",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=c52ddecd0db2",
+      "losslessKeyVideoSHA256": "c52ddecd0db25620b2928f29eb6b79872594c2c4d3c11e84f3f91e0ede1cbf9d",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-camellia-scene-c-v83",
@@ -320,10 +398,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-c-v83_lossless_5cycles.mp4?v=12fb558643b9",
       "comparison": "assets/flower-stems-v101/qa/BG03-camellia-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "13ecc638572bf7103c8103b7469ab3d3bf45f1f234f7feb66788e5aa42abf30a",
-      "comparisonSHA256": "3197f8b716302c290273d10a5deaa508b782f2295da8c030021e21c1a3e37128"
+      "qaVideoSHA256": "12fb558643b976d89ed59dfa5f33ffb84dd1bd10ea9efe9b6adaa7c6a524b112",
+      "comparisonSHA256": "3197f8b716302c290273d10a5deaa508b782f2295da8c030021e21c1a3e37128",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=ebbe59e792ed",
+      "losslessKeyVideoSHA256": "ebbe59e792eda0043af1789b8a08336125c33730f84335592b568cec2b322d37",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-camellia-scene-d-v83",
@@ -332,10 +413,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-camellia-scene-d-v83_lossless_5cycles.mp4?v=9783fe97a947",
       "comparison": "assets/flower-stems-v101/qa/BG03-camellia-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "1344d045c4be4c4780751a0e4b99ac4de6fd12f9cfb68a5d966809d4ab169c19",
-      "comparisonSHA256": "c7cca7416b73e8e1b7ad20b6a61b3baf4efa72eb5be1335a57bf97a85cbf7d87"
+      "qaVideoSHA256": "9783fe97a9478f5101c79acde57f294d097a5bbd7cc7f7a2a704a07573fa2962",
+      "comparisonSHA256": "c7cca7416b73e8e1b7ad20b6a61b3baf4efa72eb5be1335a57bf97a85cbf7d87",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4b25d65dca1c",
+      "losslessKeyVideoSHA256": "4b25d65dca1c17b8ced7a4e8c08277c1d2f7b80158cbdead51f4e6b98772ab6a",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-hydrangea-scene-a-v83",
@@ -344,10 +428,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-a-v83_lossless_5cycles.mp4?v=984541784d57",
       "comparison": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "3b421f5d1cfbb1fc7d4ea9d9cfaf5d5a39021bc6f500cd0a85dfab763f822b62",
-      "comparisonSHA256": "d1123d12f9d7c4ff48bf3a8afd0c7ccd1a4689f6d0a203b27d34dcb10ff6c07f"
+      "qaVideoSHA256": "984541784d57a3c3e60485423a1904025037245dc5667ccb7f99b48d5519184c",
+      "comparisonSHA256": "d1123d12f9d7c4ff48bf3a8afd0c7ccd1a4689f6d0a203b27d34dcb10ff6c07f",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=b5d2a4ec3093",
+      "losslessKeyVideoSHA256": "b5d2a4ec309341e0b995c3e2eac08df198dd5b38ddd8a4f7fcffcb3c0f9dbe7c",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-hydrangea-scene-b-v83",
@@ -356,10 +443,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-b-v83_lossless_5cycles.mp4?v=7ad5f25bf451",
       "comparison": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "81bbe3871b65caf15a5cccd31670985790f8a033985683efe6864dd5007f238e",
-      "comparisonSHA256": "0deca86dd75517eb26b7ddc529b9651ef0c8c38c91dfad23b6cdb771873d0f83"
+      "qaVideoSHA256": "7ad5f25bf45141f7ef2cb5af9c13dbd64ea2b5659ee32771af0b94d646749ad9",
+      "comparisonSHA256": "0deca86dd75517eb26b7ddc529b9651ef0c8c38c91dfad23b6cdb771873d0f83",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=16656de6fd83",
+      "losslessKeyVideoSHA256": "16656de6fd83b5a8d7eae6c139b38c453dfb1b869f04e662e3b4818e0fab1e92",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-hydrangea-scene-c-v83",
@@ -368,10 +458,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-c-v83_lossless_5cycles.mp4?v=f37fd8732552",
       "comparison": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "32055b0e098962e030a6d5f93af357e3ff75ad9e4fc5b767db5ec847c21303a6",
-      "comparisonSHA256": "ee482364896106ce2620270f4c1eec7ec7424700e2f1482a6992b065edaae9d6"
+      "qaVideoSHA256": "f37fd87325524e1d4c0ecf678cd9c73bab22df518d4b82ca305079ab8bf6e660",
+      "comparisonSHA256": "ee482364896106ce2620270f4c1eec7ec7424700e2f1482a6992b065edaae9d6",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=51df33e5aaef",
+      "losslessKeyVideoSHA256": "51df33e5aaefd9316d2606b91d872c1182809bd2332eadd3a52b861ede117607",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-hydrangea-scene-d-v83",
@@ -380,10 +473,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-d-v83_lossless_5cycles.mp4?v=35f9a92f3987",
       "comparison": "assets/flower-stems-v101/qa/BG03-hydrangea-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "04dbf005c13d5cd5d09a7b9b8914d7b45df25dc0896702c67bb53532082ccda2",
-      "comparisonSHA256": "21b85e375bc59ce35a646ed2dab2664f930832eaf07fc84d22942eccd8cd734e"
+      "qaVideoSHA256": "35f9a92f3987254202d12a06be845dfc6a5edd988809084d07c4a992f44fb504",
+      "comparisonSHA256": "21b85e375bc59ce35a646ed2dab2664f930832eaf07fc84d22942eccd8cd734e",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=cc206375e02a",
+      "losslessKeyVideoSHA256": "cc206375e02a496d6d836cd2300b82a180042969d608733863cc382b7f818fd2",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-lavender-scene-a-v83",
@@ -392,10 +488,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-a-v83_lossless_5cycles.mp4?v=95c13e199f34",
       "comparison": "assets/flower-stems-v101/qa/BG03-lavender-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "8b6ddd821e851c6814d135d11fee6084602ba60d1143e7409e0b9edd1930fbc2",
-      "comparisonSHA256": "b7fbf96411cd08231a3fad287862f6b52e7070b1b73fc07eddd3dfb31cd95d96"
+      "qaVideoSHA256": "95c13e199f34726cfc93d624d0fdbf9ea749e2d68b3530456247f65c4e33b9c2",
+      "comparisonSHA256": "b7fbf96411cd08231a3fad287862f6b52e7070b1b73fc07eddd3dfb31cd95d96",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4a079964fb0b",
+      "losslessKeyVideoSHA256": "4a079964fb0bbd389d9ca2d92ccf22d6990dcebb24ab8657a6053bce7d7f0a02",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-lavender-scene-b-v83",
@@ -404,10 +503,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-b-v83_lossless_5cycles.mp4?v=1b4f8c9a1e98",
       "comparison": "assets/flower-stems-v101/qa/BG03-lavender-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "af9e5b3b6ffc610d5d39a79cac8ceece200dd4b6692c7e845619ca4e217426a1",
-      "comparisonSHA256": "bd9a46a82e73b47d3bf148b14d5784cc353681f8f9e632c37cb82b433ea7a17b"
+      "qaVideoSHA256": "1b4f8c9a1e98c0b970b1ac551f183fe8404d42a66a15acf9cbcdc6e80246e166",
+      "comparisonSHA256": "bd9a46a82e73b47d3bf148b14d5784cc353681f8f9e632c37cb82b433ea7a17b",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=2bd6a506960b",
+      "losslessKeyVideoSHA256": "2bd6a506960ba5208f22b08fcbd815ad615dea4aa801f4558268303b10838c2b",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-lavender-scene-c-v83",
@@ -416,10 +518,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-c-v83_lossless_5cycles.mp4?v=e2f0fce5d576",
       "comparison": "assets/flower-stems-v101/qa/BG03-lavender-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "8e80240aa0f98c163186cd6dedda6b107e303e263be4001103b7e473cf1a53c5",
-      "comparisonSHA256": "74a132a61fde0648d1e34d9e34185a0d16d5431114fd2eb66aa3fe00be519796"
+      "qaVideoSHA256": "e2f0fce5d576f37058831a8aa45331ecd91fd2c40dd2ba1cdd1b288bd49572b8",
+      "comparisonSHA256": "74a132a61fde0648d1e34d9e34185a0d16d5431114fd2eb66aa3fe00be519796",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=d0f3e8dda1bc",
+      "losslessKeyVideoSHA256": "d0f3e8dda1bc662724871c6baecb1d7d8d7556f226492e3e013b3bd9d38bf6e4",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG03-lavender-scene-d-v83",
@@ -428,10 +533,13 @@
       "backgroundId": "BG03",
       "lightingId": "LT03",
       "keyColor": "#00FF00",
-      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG03-lavender-scene-d-v83_lossless_5cycles.mp4?v=1f4e526153dc",
       "comparison": "assets/flower-stems-v101/qa/BG03-lavender-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "d20beec5fe09c4273a925d8a5f3cd0cc4f70b73bb98f89ef65850d6c84edad6b",
-      "comparisonSHA256": "bf4a3bc970e37d8e117841afd50273f96a9329ff9d5fa83824066e3bdeda3530"
+      "qaVideoSHA256": "1f4e526153dcf3093145dfbc1bc8778ecac20d5511415a4f135068d621b9daca",
+      "comparisonSHA256": "bf4a3bc970e37d8e117841afd50273f96a9329ff9d5fa83824066e3bdeda3530",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=020feda4cbbc",
+      "losslessKeyVideoSHA256": "020feda4cbbc3cb51e55f7e279828e9ca4e988e8a5e4f94d5c1034678cd60b8b",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-buckwheat-scene-a-v83",
@@ -440,10 +548,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-a-v83_lossless_5cycles.mp4?v=207b15a34fff",
       "comparison": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "25ed3d4116418e6276e224256425abe04685cecc925a52b53536bf1901d58e38",
-      "comparisonSHA256": "5f7d990d210b5fe7775b1722ecdfd61d00eeac4ddd6e97f2375e6d0884dbf7a3"
+      "qaVideoSHA256": "207b15a34fff2e522bb77c5f1fdd61713980994308baf8722b5f0f5050e1fda6",
+      "comparisonSHA256": "5f7d990d210b5fe7775b1722ecdfd61d00eeac4ddd6e97f2375e6d0884dbf7a3",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=8816b3816a69",
+      "losslessKeyVideoSHA256": "8816b3816a6927521657729b9047d5ff99ceae0091cc52af51ec60da4a4ca369",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-buckwheat-scene-b-v83",
@@ -452,10 +563,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-b-v83_lossless_5cycles.mp4?v=9cb7fffd2a5e",
       "comparison": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "3b037ea90a4ab3dd3c362b497515dc8f2442891b68b193230f3f56c0b0defaaf",
-      "comparisonSHA256": "ff71447e97d98917de04d569d4e35256f734a4abfbafaa6113f772a242f6b7a2"
+      "qaVideoSHA256": "9cb7fffd2a5ef90b40302e6b584b9c74cb5a9ce50df44c2c26ca0c58e5959ccd",
+      "comparisonSHA256": "ff71447e97d98917de04d569d4e35256f734a4abfbafaa6113f772a242f6b7a2",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=f768396b2d97",
+      "losslessKeyVideoSHA256": "f768396b2d97a0a2af50c1b2e597d0083d7b7dea5c3648820a5212229fca77d7",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-buckwheat-scene-c-v83",
@@ -464,10 +578,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-c-v83_lossless_5cycles.mp4?v=8dd0d203b4c8",
       "comparison": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "f607501f98d1cee6c0f6d412c2125fbba68b424662741ece0f5821598d5d7e67",
-      "comparisonSHA256": "bd5df018a33c3642541b6a1c9743d5965535bff65c7261840fce65c71ea6575a"
+      "qaVideoSHA256": "8dd0d203b4c82a152954c5234ed975a6ea06c92258f1b1ecaec2b96c8e7fddd4",
+      "comparisonSHA256": "bd5df018a33c3642541b6a1c9743d5965535bff65c7261840fce65c71ea6575a",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=c54d39c8b5f6",
+      "losslessKeyVideoSHA256": "c54d39c8b5f6d698e37265df0017f02be59bab5affef3a31d4d539e73e243739",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-buckwheat-scene-d-v83",
@@ -476,10 +593,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-d-v83_lossless_5cycles.mp4?v=05d9f85a083d",
       "comparison": "assets/flower-stems-v101/qa/BG04-buckwheat-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "1ca0e6d4ba96e6bb75336e0245a432f18d4af2050fbb658976fd1751a5c44f28",
-      "comparisonSHA256": "4867577593e2572b7798817f0c149b6aba816e91b4af46cbc839de52567f3a3d"
+      "qaVideoSHA256": "05d9f85a083dfd1c6b6d106142c2089f1d25c6febf0643408fdb5dce03839ee3",
+      "comparisonSHA256": "4867577593e2572b7798817f0c149b6aba816e91b4af46cbc839de52567f3a3d",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=0c937a87b8bb",
+      "losslessKeyVideoSHA256": "0c937a87b8bb1fb4e7142b3cb164cc8cf127fc7260fe4a32eeac189eee6a5afe",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-hydrangea-scene-a-v83",
@@ -488,10 +608,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-a-v83_lossless_5cycles.mp4?v=18ad143c81d6",
       "comparison": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "228896afeaaefe05c5e2f5460e82e40c9cb7bffd4363cb6c20efe066df18dbf7",
-      "comparisonSHA256": "9041d7ffef5fd490c325a66cb8ebf6bf1e0e718f00cd39c1469d9a74b76a0614"
+      "qaVideoSHA256": "18ad143c81d6e12ebb3d6d2cf3e7343c265cedd074d57f9427ccea528e396c1c",
+      "comparisonSHA256": "9041d7ffef5fd490c325a66cb8ebf6bf1e0e718f00cd39c1469d9a74b76a0614",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=78c57fb2ee5c",
+      "losslessKeyVideoSHA256": "78c57fb2ee5c624be942ae58799e503be22962f310427dce11cd784ebc36715f",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-hydrangea-scene-b-v83",
@@ -500,10 +623,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-b-v83_lossless_5cycles.mp4?v=7bcfb69120ae",
       "comparison": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "d3851d0afe44479a971c4be89fe96e29d3e789949c3fd7753ce5486322c39732",
-      "comparisonSHA256": "7ac0502e7bd7ce5f5d47a8044e6f50b3ec7c6dd86d737937efea78bc01d6b1cc"
+      "qaVideoSHA256": "7bcfb69120aec09bdc71208f8c615c9ce1674709bc7754dec94d67d5e9178d06",
+      "comparisonSHA256": "7ac0502e7bd7ce5f5d47a8044e6f50b3ec7c6dd86d737937efea78bc01d6b1cc",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=5c54aecf8401",
+      "losslessKeyVideoSHA256": "5c54aecf84015fc59de2c8ba7c35bfd6aec899b542dd64211c50363db13defa3",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-hydrangea-scene-c-v83",
@@ -512,10 +638,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-c-v83_lossless_5cycles.mp4?v=a06b5f3191b8",
       "comparison": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "c1bccd36c7bdfbc024db56572b0695df376d64819f04bbac70a13fdb216b2e7e",
-      "comparisonSHA256": "dcf97b38b6e565313687db0a4cb8bb6ee8b1cdb33eabccf4116964ffcebe1790"
+      "qaVideoSHA256": "a06b5f3191b860d33bb5004a816c65595e6b1bf1df589635540af74e8d013ee8",
+      "comparisonSHA256": "dcf97b38b6e565313687db0a4cb8bb6ee8b1cdb33eabccf4116964ffcebe1790",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=8a35f2151387",
+      "losslessKeyVideoSHA256": "8a35f2151387630a151b08d1df0674f0336441cd52d2384268e62ea263a3e280",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-hydrangea-scene-d-v83",
@@ -524,10 +653,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-d-v83_lossless_5cycles.mp4?v=7a16ef0f993d",
       "comparison": "assets/flower-stems-v101/qa/BG04-hydrangea-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "f8ed2e1c63097473fcede1c2cebb66191929b7e07bbd388f0f273656324d7492",
-      "comparisonSHA256": "ba74b1bb66fcbd633669d481764357d2f02d31b73fec7b7657018f749f83ac02"
+      "qaVideoSHA256": "7a16ef0f993d14900dcb544a058155307513562967c099da45273a31a99852b3",
+      "comparisonSHA256": "ba74b1bb66fcbd633669d481764357d2f02d31b73fec7b7657018f749f83ac02",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=675452754b59",
+      "losslessKeyVideoSHA256": "675452754b598f63d24ab51e4559461a60d4ed736c102046961e1909e7142e41",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-lavender-scene-a-v83",
@@ -536,10 +668,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-a-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-a-v83_lossless_5cycles.mp4?v=ef37d7b0da04",
       "comparison": "assets/flower-stems-v101/qa/BG04-lavender-scene-a-v83_fixed.jpg",
-      "qaVideoSHA256": "f5100a62b961ca5537d887db45d877ec01001a74d7183fbb3df3f89da3757cf1",
-      "comparisonSHA256": "b2b95090a3a4c59f236def18f05aa9993c8b90f37d339ae1739c3d9be5214fc0"
+      "qaVideoSHA256": "ef37d7b0da04a2e77b5be04263163463636d1ecd9e0e7acda81f43361e7aa6fa",
+      "comparisonSHA256": "b2b95090a3a4c59f236def18f05aa9993c8b90f37d339ae1739c3d9be5214fc0",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a69b7e663821",
+      "losslessKeyVideoSHA256": "a69b7e663821f7039d2e192a254c2f4f5d3ed49833774a0a140945decf009e24",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-lavender-scene-b-v83",
@@ -548,10 +683,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-b-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-b-v83_lossless_5cycles.mp4?v=404d02a3fc46",
       "comparison": "assets/flower-stems-v101/qa/BG04-lavender-scene-b-v83_fixed.jpg",
-      "qaVideoSHA256": "6d347576b08e3958cfada49c7045d881ef775a56904537ed1ace58e5f1dc48b7",
-      "comparisonSHA256": "2adf293fb46606bd46cbedbb25efccbab04dc254c16b768d192efe63cdeded09"
+      "qaVideoSHA256": "404d02a3fc46414a5ac584cc4a8f21086a1009ec477e712bbca1cb73bf4c9bba",
+      "comparisonSHA256": "2adf293fb46606bd46cbedbb25efccbab04dc254c16b768d192efe63cdeded09",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=5945ceff2eaa",
+      "losslessKeyVideoSHA256": "5945ceff2eaa6a9445c7b4f279d91ce1e7c9320eba26bd069e67c0bf35382179",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-lavender-scene-c-v83",
@@ -560,10 +698,13 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-c-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-c-v83_lossless_5cycles.mp4?v=a9f096e65e8e",
       "comparison": "assets/flower-stems-v101/qa/BG04-lavender-scene-c-v83_fixed.jpg",
-      "qaVideoSHA256": "6146f3986a2ab1b4c45db6f5765d35d4818ca698d453a2843495e759eaa3e2fb",
-      "comparisonSHA256": "6f9df92a43a8fa23ddbf8840f529f43f20e1b7264741701f4fd812eb45083a7b"
+      "qaVideoSHA256": "a9f096e65e8e00b5760c7db038c32af09f71a0d4cc447ed2ecbdde2651462a53",
+      "comparisonSHA256": "6f9df92a43a8fa23ddbf8840f529f43f20e1b7264741701f4fd812eb45083a7b",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=7213465b8128",
+      "losslessKeyVideoSHA256": "7213465b8128cde7893790b9818bdfee1fc47ea18aa23789d06825bf8f8e3cc1",
+      "fullSilhouetteKeyOpacityLossMax": 0
     },
     {
       "id": "BG04-lavender-scene-d-v83",
@@ -572,14 +713,17 @@
       "backgroundId": "BG04",
       "lightingId": "LT04",
       "keyColor": "#FF2000",
-      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-d-v83_5cycles.mp4",
+      "qaVideo": "assets/flower-stems-v101/qa/BG04-lavender-scene-d-v83_lossless_5cycles.mp4?v=29272f37117d",
       "comparison": "assets/flower-stems-v101/qa/BG04-lavender-scene-d-v83_fixed.jpg",
-      "qaVideoSHA256": "d42c13175650809e54886c4a53da384279433195e6827d0565f1666cac390e71",
-      "comparisonSHA256": "c8bbcdd76b44488df907f6855b84acb3d989e50696136506f51c3c1d1108338f"
+      "qaVideoSHA256": "29272f37117d7cb4fef546d2297848c64afb43a3ee59e0905bb2e380479ba355",
+      "comparisonSHA256": "c8bbcdd76b44488df907f6855b84acb3d989e50696136506f51c3c1d1108338f",
+      "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a27bc4cee218",
+      "losslessKeyVideoSHA256": "a27bc4cee2189503ee0caabcba37ef462850f813b7f98e8863252a8cdc303b01",
+      "fullSilhouetteKeyOpacityLossMax": 0
     }
   ],
   "status": "passed",
-  "revision": "101-key5",
+  "revision": "101-key5-lossless",
   "passes": [
     {
       "pass": 1,
@@ -593,7 +737,7 @@
     },
     {
       "pass": 3,
-      "check": "Actual encoded MP4 independently re-keyed: no core holes, opacity loss or far-background residue",
+      "check": "Lossless MOV decoded RGB exactly equals the native alpha composite; conservative RGB key retains every nearly opaque pixel including one-pixel stems",
       "status": "passed"
     },
     {

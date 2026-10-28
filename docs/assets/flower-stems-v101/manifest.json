@@ -102,12 +102,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=cd85307beca7",
+        "losslessKeyVideoSHA256": "cd85307beca7721f60900f01afdc671ae1f879770e9940bcd23066212ef160b2",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1712761,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 94.83142852783203,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -222,12 +239,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=2e322d1d55f6",
+        "losslessKeyVideoSHA256": "2e322d1d55f6ec1da040c74343eef281522a412a74ffd65d63499d7ec2ee8484",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1439416,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 90.80748748779297,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -340,12 +374,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=ad16bbdeacc3",
+        "losslessKeyVideoSHA256": "ad16bbdeacc347972b4da355a95737c3d0d8e1bb56ae4fc0824101a85579eab9",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1389122,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 91.7060546875,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -458,12 +509,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=f34ecb8fd58c",
+        "losslessKeyVideoSHA256": "f34ecb8fd58c07cfc3b0e9823473132d694036d4fa09b3a500c2343a83462e10",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1672997,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 93.24162292480469,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -576,12 +644,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=b0075f295ab5",
+        "losslessKeyVideoSHA256": "b0075f295ab5fefc6d7aa9151f6ce64df635682ad49b86e51616ac7e70d3255b",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2056191,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 96.46761322021484,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -696,12 +781,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=78bdcbba0abd",
+        "losslessKeyVideoSHA256": "78bdcbba0abd5c797a5ffed8310a64d37628ad09a7984efe90feccfbc401e637",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1942938,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 95.65040588378906,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -814,12 +916,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=1c2f407328f9",
+        "losslessKeyVideoSHA256": "1c2f407328f9575f53f8a2a42921ed0e204224e9abd2fc0bcef38d31aa79a5f0",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1694499,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 96.4053955078125,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -932,12 +1051,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a30c11091804",
+        "losslessKeyVideoSHA256": "a30c11091804b943392f04b2662e885078b9acf02ccfea5a3a297f267fe81c2f",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1968259,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 90.29396057128906,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1050,12 +1186,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=61015b610be8",
+        "losslessKeyVideoSHA256": "61015b610be89374918e8dd5b43ab5b15dfee1ebb27278ba32be41de0e659f78",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1929262,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 94.59915161132812,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1170,12 +1323,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=f181a6b85559",
+        "losslessKeyVideoSHA256": "f181a6b85559b78454e3a027b675723883c092b7d3d240554a51e5b42f9cc07a",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1833546,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 98.0663070678711,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1288,12 +1458,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=c9aca1f3a1ee",
+        "losslessKeyVideoSHA256": "c9aca1f3a1eeec5113692dd3fdfef87208965a2fd022fb3dc989d6bb6fa8e85f",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1582737,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 100.01000213623047,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1406,12 +1593,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00E0FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=776b4f9c2ccd",
+        "losslessKeyVideoSHA256": "776b4f9c2ccd8482334a789f2005c4305d324b3849cc3bb06b79a73f5724ef48",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2127167,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 94.34510803222656,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1524,12 +1728,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=aa1fb13189df",
+        "losslessKeyVideoSHA256": "aa1fb13189dfedeea3cc73a3b207a4401ee4479ddf8fa0cc3fec6e22deedc4d4",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2119303,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 99.01010131835938,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1642,12 +1863,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=2d1647c7ec70",
+        "losslessKeyVideoSHA256": "2d1647c7ec70896927235e0c41635f60de982a1549b55887b0a09ee9193555e8",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1699243,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 99.78977966308594,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1760,12 +1998,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=bee2e6e5a058",
+        "losslessKeyVideoSHA256": "bee2e6e5a058bd927c1eea5a1fe9dbdea22cd26b7c7e83b4583324f43e2ea06c",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1491287,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 95.60334777832031,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1878,12 +2133,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=12e27dcd8c14",
+        "losslessKeyVideoSHA256": "12e27dcd8c14a956514ba1d9e5fb2c11d070c5dbc9fc3ddb4942111723ac78bf",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2034737,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 99.1766128540039,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -1996,12 +2268,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=819c20659b4c",
+        "losslessKeyVideoSHA256": "819c20659b4c62565e57c16530be6b6272668c3b3aafb833f022a0b4f25fdeeb",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1742800,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 99.62931060791016,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2116,12 +2405,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=3a407298297f",
+        "losslessKeyVideoSHA256": "3a407298297f1151166178c7f3607eafb67a02e2b0812e956dec7c1e1b8b9db3",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1581814,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 103.66291809082031,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2234,12 +2540,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4b179754ae7e",
+        "losslessKeyVideoSHA256": "4b179754ae7e992b0330bb716fcff9736e42c26fedc47ed5349049f9342ef0f3",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1315041,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 99.01010131835938,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2352,12 +2675,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=5f37e4fc50df",
+        "losslessKeyVideoSHA256": "5f37e4fc50df9e32de89199c057044061c1494f2072ce4d57076a7f07ae66ad7",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2000605,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 94.4933853149414,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2470,12 +2810,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a87b6d3ad17c",
+        "losslessKeyVideoSHA256": "a87b6d3ad17c20ebfc3e60061ba38334585aa03f982d9514ad51941a26e6017b",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1781043,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 94.6731185913086,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2588,12 +2945,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4e06698d9d3b",
+        "losslessKeyVideoSHA256": "4e06698d9d3baa7bdfb55a5123aa15a12d91ec21b3f05b49d195fcc68dc21180",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1946889,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 90.22749328613281,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2706,12 +3080,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=b11aa43d2213",
+        "losslessKeyVideoSHA256": "b11aa43d22136b1c80dc6526fe4f58566825475e9fcac68ddbbfd709ae6961ec",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1661499,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 86.44073486328125,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2824,12 +3215,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#0000FF",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a7df962ffa47",
+        "losslessKeyVideoSHA256": "a7df962ffa475355085e5a7805ec2b1543f37f351faa9c16c4e46b26c3026d4e",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1848712,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 100.60317993164062,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -2942,12 +3350,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=1768f88260d3",
+        "losslessKeyVideoSHA256": "1768f88260d365845d6e4c1a33d7e318c916ae9c13e2bc384467199ef3ffc49b",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1695501,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 130.45689392089844,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3060,12 +3485,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=c52ddecd0db2",
+        "losslessKeyVideoSHA256": "c52ddecd0db25620b2928f29eb6b79872594c2c4d3c11e84f3f91e0ede1cbf9d",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2174399,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 130.1114959716797,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3178,12 +3620,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=ebbe59e792ed",
+        "losslessKeyVideoSHA256": "ebbe59e792eda0043af1789b8a08336125c33730f84335592b568cec2b322d37",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1565649,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 131.58267211914062,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3296,12 +3755,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4b25d65dca1c",
+        "losslessKeyVideoSHA256": "4b25d65dca1c17b8ced7a4e8c08277c1d2f7b80158cbdead51f4e6b98772ab6a",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2041349,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 130.04998779296875,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3414,12 +3890,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=b5d2a4ec3093",
+        "losslessKeyVideoSHA256": "b5d2a4ec309341e0b995c3e2eac08df198dd5b38ddd8a4f7fcffcb3c0f9dbe7c",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2363034,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 130.6828155517578,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3534,12 +4027,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=16656de6fd83",
+        "losslessKeyVideoSHA256": "16656de6fd83b5a8d7eae6c139b38c453dfb1b869f04e662e3b4818e0fab1e92",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2210015,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 132.34046936035156,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3652,12 +4162,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=51df33e5aaef",
+        "losslessKeyVideoSHA256": "51df33e5aaefd9316d2606b91d872c1182809bd2332eadd3a52b861ede117607",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2159825,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 124.85591888427734,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3770,12 +4297,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=cc206375e02a",
+        "losslessKeyVideoSHA256": "cc206375e02a496d6d836cd2300b82a180042969d608733863cc382b7f818fd2",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2545658,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 128.1132354736328,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -3888,12 +4432,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=4a079964fb0b",
+        "losslessKeyVideoSHA256": "4a079964fb0bbd389d9ca2d92ccf22d6990dcebb24ab8657a6053bce7d7f0a02",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1718175,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 125.55477142333984,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4008,12 +4569,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=2bd6a506960b",
+        "losslessKeyVideoSHA256": "2bd6a506960ba5208f22b08fcbd815ad615dea4aa801f4558268303b10838c2b",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1412937,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 127.87493896484375,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4126,12 +4704,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=d0f3e8dda1bc",
+        "losslessKeyVideoSHA256": "d0f3e8dda1bc662724871c6baecb1d7d8d7556f226492e3e013b3bd9d38bf6e4",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1100939,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 130.56033325195312,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4244,12 +4839,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#00FF00",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=020feda4cbbc",
+        "losslessKeyVideoSHA256": "020feda4cbbc3cb51e55f7e279828e9ca4e988e8a5e4f94d5c1034678cd60b8b",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1667229,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 122.46224212646484,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4362,12 +4974,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=8816b3816a69",
+        "losslessKeyVideoSHA256": "8816b3816a6927521657729b9047d5ff99ceae0091cc52af51ec60da4a4ca369",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1519774,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 91.88579559326172,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4480,12 +5109,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=f768396b2d97",
+        "losslessKeyVideoSHA256": "f768396b2d97a0a2af50c1b2e597d0083d7b7dea5c3648820a5212229fca77d7",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1269836,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 94.05317687988281,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4598,12 +5244,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=c54d39c8b5f6",
+        "losslessKeyVideoSHA256": "c54d39c8b5f6d698e37265df0017f02be59bab5affef3a31d4d539e73e243739",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1358440,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 100.82658386230469,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4716,12 +5379,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=0c937a87b8bb",
+        "losslessKeyVideoSHA256": "0c937a87b8bb1fb4e7142b3cb164cc8cf127fc7260fe4a32eeac189eee6a5afe",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1291416,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 104.7377700805664,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4834,12 +5514,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=78c57fb2ee5c",
+        "losslessKeyVideoSHA256": "78c57fb2ee5c624be942ae58799e503be22962f310427dce11cd784ebc36715f",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2316386,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 92.2442398071289,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -4952,12 +5649,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=5c54aecf8401",
+        "losslessKeyVideoSHA256": "5c54aecf84015fc59de2c8ba7c35bfd6aec899b542dd64211c50363db13defa3",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2333528,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 96.7264175415039,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -5070,12 +5784,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=8a35f2151387",
+        "losslessKeyVideoSHA256": "8a35f2151387630a151b08d1df0674f0336441cd52d2384268e62ea263a3e280",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1972026,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 93.09135437011719,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -5188,12 +5919,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=675452754b59",
+        "losslessKeyVideoSHA256": "675452754b598f63d24ab51e4559461a60d4ed736c102046961e1909e7142e41",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 2361807,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 101.60216522216797,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -5306,12 +6054,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a69b7e663821",
+        "losslessKeyVideoSHA256": "a69b7e663821f7039d2e192a254c2f4f5d3ed49833774a0a140945decf009e24",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1355341,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 112.54332733154297,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -5424,12 +6189,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=5945ceff2eaa",
+        "losslessKeyVideoSHA256": "5945ceff2eaa6a9445c7b4f279d91ce1e7c9320eba26bd069e67c0bf35382179",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1349433,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 98.31072998046875,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -5542,12 +6324,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=7213465b8128",
+        "losslessKeyVideoSHA256": "7213465b8128cde7893790b9818bdfee1fc47ea18aa23789d06825bf8f8e3cc1",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1111854,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 100.17984008789062,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",
@@ -5660,12 +6459,29 @@
         "firstOpeningAtSeconds": 0.041666666666666664,
         "keyColor": "#FF2000",
         "fivePassQA": {
-          "revision": "101-key5",
+          "revision": "101-key5-lossless",
           "status": "passed",
           "passes": 5,
           "playbackCycles": 5,
           "frameProofSHA256": "395bbbc88f055dabb988bcb630019d087003df41409d954d32a93efcc965b8fe",
-          "browserProofSHA256": "39aa6a4e9272676997da697ed38c6d33fbff9b3ae88c9c52b5819394de9abd80"
+          "browserProofSHA256": "29f5b36392f3e7f9a05cc58763ab1f57ef436c9dbadb6695b507354fd2244fb3"
+        },
+        "keyPreviewOnly": true,
+        "losslessKeyVideo": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Open2s_Key480_Lossless_v101.mov?v=a27bc4cee218",
+        "losslessKeyVideoSHA256": "a27bc4cee2189503ee0caabcba37ef462850f813b7f98e8863252a8cdc303b01",
+        "losslessKeyAudit": {
+          "codec": "qtrle",
+          "pixelFormat": "rgb24",
+          "RGBErrorMax": 0,
+          "allNearlyOpaquePixelsTested": 1416138,
+          "fullSilhouetteKeyOpacityLossMax": 0,
+          "minimumOpaqueKeyRGBDistance": 114.02192687988281,
+          "testedRGBKeySoftRange": [
+            10,
+            50
+          ],
+          "frames": 48,
+          "duration": 2
         },
         "status": "passed",
         "matteRevision": "101-r4",

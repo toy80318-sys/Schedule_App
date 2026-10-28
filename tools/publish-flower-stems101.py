@@ -117,6 +117,11 @@ def main():
         entry.update(videoReady=True, status='ready')
         entry['opening'] = {key: report[key] for key in ('duration', 'fps', 'frames', 'width', 'height', 'previewWidth', 'previewHeight', 'atlasColumns', 'atlasRows', 'jobId', 'sourceSHA256', 'keyVideoSHA256', 'fullyOpenBySeconds', 'route')}
         entry['opening'].update(immediateStart=True, firstOpeningAtSeconds=1/24, keyColor=entry['keyColor'], fivePassQA=report['fivePassQA'])
+        lossless = Path(report['losslessKeyVideo'])
+        assert sha(lossless) == report['losslessKeyVideoSHA256']
+        assert report['losslessKeyAudit']['RGBErrorMax'] == report['losslessKeyAudit']['fullSilhouetteKeyOpacityLossMax'] == 0
+        assert sha(original_dir / lossless.name) == report['losslessKeyVideoSHA256']
+        entry['opening'].update(keyPreviewOnly=True, losslessKeyVideo=base + lossless.name + '?v=' + report['losslessKeyVideoSHA256'][:12], losslessKeyVideoSHA256=report['losslessKeyVideoSHA256'], losslessKeyAudit=report['losslessKeyAudit'])
         atlas_sha = sha(folder / 'atlas.webp')
         entry['opening'].update(status='passed', matteRevision=report['matteRevision'], atlasSHA256=atlas_sha, atlas=f'assets/flower-stems-v101/{entry["id"]}/atlas.webp?v={atlas_sha[:12]}', framePattern=f'assets/flower-stems-v101/{entry["id"]}/frame_%04d.webp?v=101r4', keyVideo=f'assets/flower-stems-v101/{entry["id"]}/open2s-key.mp4?v={report["keyVideoSHA256"][:12]}', actualInputs=actual_inputs)
     result = {'format': 'jeju-flower-stems-v101', 'version': 101, 'count': 48,

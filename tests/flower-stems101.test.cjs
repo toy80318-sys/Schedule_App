@@ -18,6 +18,11 @@ for(const x of m.items){
  assert.equal(o.fivePassQA.passes,5);assert.equal(o.fivePassQA.playbackCycles,5);
  assert.equal(x.keyColor,({sunset:'#00E0FF',day:'#0000FF',night:'#00FF00',morning:'#FF2000'})[x.theme]);
  assert.equal(x.generationKeyColor,({sunset:'#00FFFF',day:'#0000FF',night:'#80FF00',morning:'#FF8000'})[x.theme]);
+ assert.equal(o.keyPreviewOnly,true);assert.equal(o.losslessKeyAudit.RGBErrorMax,0);
+ assert.equal(o.losslessKeyAudit.fullSilhouetteKeyOpacityLossMax,0);
+ assert.equal(o.losslessKeyAudit.codec,'qtrle');assert.equal(o.losslessKeyAudit.pixelFormat,'rgb24');
+ const master=resolve(root,'source-assets/flower-stems-v101',new URL(o.losslessKeyVideo).pathname.split('/').pop());
+ assert.equal(createHash('sha256').update(readFileSync(master)).digest('hex'),o.losslessKeyVideoSHA256);
  assert.equal(o.actualInputs.length,2);
  for(const [role,state] of [['start_image','bud'],['end_image','bloom']]){
   const input=o.actualInputs.find(x=>x.role===role);assert.ok(input.media_id);
@@ -35,7 +40,7 @@ assert.equal(qa.items.length,48);
 assert.equal(qa.status,'passed');assert.equal(qa.passes.length,5);
 for(const x of qa.items){
  for(const [url,hash] of [[x.qaVideo,x.qaVideoSHA256],[x.comparison,x.comparisonSHA256]]){
-  const p=resolve(root,'docs',url);assert.ok(existsSync(p));assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'),hash);
+  const p=resolve(root,'docs',url.split('?')[0]);assert.ok(existsSync(p));assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'),hash);
  }
 }
 console.log('48 image-pair jobs / 96 images / 2304 frames / 5-pass QA / atlas and video hashes / 2-second geometry passed');

@@ -4,11 +4,11 @@
 body{background:#101c19;color:#eef4ec}.collection{max-width:1440px;margin:auto;padding:28px}nav,.actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button,a.button{cursor:pointer}button[aria-pressed=true]{outline:2px solid #d3e8ac}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}article{background:#1a2c25;border:1px solid #48654f;border-radius:14px;padding:16px}h2{margin:0 0 8px;font-size:18px}video{width:100%;height:auto;display:block;background:#18232d;border-radius:8px}p{line-height:1.6}.meta{color:#c3d3c7;font-size:13px}.result{color:#d7eaae}img{width:100%;height:auto}.summary{padding:14px;border:1px solid #48654f;border-radius:12px}button:disabled{cursor:wait}@media(max-width:700px){.cards{grid-template-columns:1fr}.collection{padding:16px}}
 </style></head><body><main class="collection">
 <p class="eyebrow">FLOWER 101 · CHROMA KEY / ALPHA REVIEW</p><h1>꽃 48종 · 컬러키 검수</h1>
-<p>왼쪽은 투명 PNG를 어두운 배경에, 가운데는 납품 MP4를 다시 컬러키로 분리해 밝은 배경에 올린 모습입니다. 오른쪽은 실제 단색 배경 MP4입니다.</p>
-<p class="meta">검수 영상은 2초 개화를 순서대로 5번 재생한 10초 비교본입니다. 게임용 원본은 2초 1회 개화입니다. MP4의 압축 가장자리는 색 번짐 제거가 필요하며, 게임에는 함께 제공한 PNG 알파 시퀀스를 권장합니다.</p>
+<p>왼쪽과 가운데는 검수된 PNG 알파를 어두운 배경과 밝은 배경에 올린 모습입니다. 오른쪽은 무손실 단색 키 원본의 미리보기입니다.</p>
+<p class="meta">2초 개화를 5번 재생하는 10초 비교본입니다. 키 작업에는 각 카드의 무손실 MOV를 사용하세요. 압축 MP4에서 생기는 가는 줄기·잎 끝의 색 손실을 막기 위해 RGB 원본을 추가했습니다. 게임에는 PNG 알파 시퀀스를 사용합니다.</p>
 <div class="summary" id="audit" role="status">검수 자료를 불러오는 중…</div>
 <nav aria-label="배경별 꽃"><button class="button" data-theme="sunset">노을 · 12종</button><button class="button" data-theme="day">낮 · 12종</button><button class="button" data-theme="night">밤 · 12종</button><button class="button" data-theme="morning">아침 · 12종</button></nav>
-<div class="actions"><button class="button" id="play" disabled>현재 배경 12편 · 5회 재생</button><a class="button" href="flower-stems-v101.html?v=key5">봉오리·만개 / 2초 개화 보기</a><a class="button" href="assets/flower-stems-v101/qa/manifest.json?v=key5">검수 기록</a></div>
+<div class="actions"><button class="button" id="play" disabled>현재 배경 12편 · 5회 재생</button><a class="button" href="flower-stems-v101.html?v=key5-lossless">봉오리·만개 / 2초 개화 보기</a><a class="button" href="assets/flower-stems-v101/qa/manifest.json?v=key5-lossless">검수 기록</a></div>
 <p id="playback" class="result" role="status">재생 대기</p><div class="cards" id="cards"></div>
 </main><script>
 let items=[],theme='sunset';const completed=new Set(),host=document.getElementById('cards'),play=document.getElementById('play'),status=document.getElementById('playback');
@@ -23,11 +23,13 @@ function show(){
   result.className='result';result.textContent=completed.has(item.id)?'5회 재생 완료':'재생 대기';
   video.addEventListener('ended',()=>{completed.add(item.id);video.dataset.cycles='5';result.textContent='5회 재생 완료';tally();});
   video.addEventListener('error',()=>{result.textContent='재생 오류 · 새로고침 후 다시 확인해 주세요.';video.dataset.failed='true';});
-  summary.textContent='원본·수정 전후 크게 비교';image.src=item.comparison;image.alt=item.name+' 원본과 알파 수정 전후 비교';image.loading='lazy';details.append(summary,image);article.append(title,meta,video,result,details);host.append(article);
+  summary.textContent='원본·알파 수정 전후 / MP4 참고';image.src=item.comparison;image.alt=item.name+' 원본과 알파 수정 전후 비교';image.loading='lazy';details.append(summary,image);article.append(title,meta,video,result);
+  if(item.losslessKeyVideo){const download=document.createElement('a');download.className='button';download.href=item.losslessKeyVideo;download.textContent='키 작업용 무손실 MOV 받기';download.setAttribute('download','');article.append(download);}
+  article.append(details);host.append(article);
  }
  play.disabled=false;tally();
 }
 for(const button of document.querySelectorAll('[data-theme]'))button.addEventListener('click',()=>{theme=button.dataset.theme;show();});
 play.addEventListener('click',async()=>{play.disabled=true;try{await Promise.all([...host.querySelectorAll('video')].map(async video=>{video.currentTime=0;await video.play();}));status.textContent='12편의 실제 영상 재생 중 · 각 5회';}catch(error){status.textContent='재생하지 못한 영상은 각 재생 버튼으로 확인해 주세요.';}finally{play.disabled=false;}});
-fetch('assets/flower-stems-v101/qa/manifest.json?v=key5').then(async r=>{if(!r.ok)throw Error('검수 목록을 불러오지 못했습니다.');return r.json();}).then(data=>{if(data.items.length!==48)throw Error('48종 자료를 확인해 주세요.');items=data.items;document.getElementById('audit').textContent=data.summary;show();}).catch(error=>document.getElementById('audit').textContent=error.message);
+fetch('assets/flower-stems-v101/qa/manifest.json?v=key5-lossless').then(async r=>{if(!r.ok)throw Error('검수 목록을 불러오지 못했습니다.');return r.json();}).then(data=>{if(data.items.length!==48)throw Error('48종 자료를 확인해 주세요.');items=data.items;document.getElementById('audit').textContent=data.summary;show();}).catch(error=>document.getElementById('audit').textContent=error.message);
 </script></body></html>

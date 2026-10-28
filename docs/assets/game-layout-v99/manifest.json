@@ -20,7 +20,7 @@
     {
       "id": "sunset",
       "project": "sunset_editor_v99.json",
-      "sha256": "7433d9083248bb8510a4e2020e05e63a7de7e4a5c8919e3dcf9e5d9aa025c455",
+      "sha256": "fa730ef7dc247e99f6688d79bea9719446bd80267f3bdb4768606fafc8aab5bc",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
@@ -33,7 +33,7 @@
     {
       "id": "day",
       "project": "day_editor_v99.json",
-      "sha256": "5684864c8c7dde0b822acb43958f8856cc59984007fc86a70f1e97c2881ff3d0",
+      "sha256": "1f5025f4c156f0b6c8251fae51b03302ad3145a75d9ba6bdf7e04f5395ee018b",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
@@ -46,7 +46,7 @@
     {
       "id": "night",
       "project": "night_editor_v99.json",
-      "sha256": "f562e7871033f6245d3a7d7337892f64a8b7d2911e6a448d3a6a9e16f58d428e",
+      "sha256": "787c3c13f9208118503b3874e0e2d896647937b3877a91b29ff10d351a89b308",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
@@ -59,7 +59,7 @@
     {
       "id": "morning",
       "project": "morning_editor_v99.json",
-      "sha256": "d34d10c4814cecda30bfcf81f1b0c3cccc4ac4f75a23322726894068af3779b0",
+      "sha256": "ed6a0c233d11e8f9f898530628527385363941dc57ba429e14a294472e9feaa7",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,

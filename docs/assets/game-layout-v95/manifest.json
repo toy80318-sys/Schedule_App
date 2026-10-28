@@ -8,7 +8,7 @@
     {
       "id": "sunset",
       "project": "sunset_editor_v95.json",
-      "sha256": "a6e0bf68bbed8ebb4d4a609e318f980808387ebe4a98311a09cd2bfb979a95b7",
+      "sha256": "f0a4dce3954d5f72279db670c7a0c00b8ce2d5d2661cb72ff93e109fbd2c0a47",
       "objects": 398,
       "preview": {
         "passedTypes": 35,
@@ -19,7 +19,7 @@
     {
       "id": "day",
       "project": "day_editor_v95.json",
-      "sha256": "56e0f40572550b2ec91ce313c483db554ba2ed7b2da5ac4b5b177168319cc6ac",
+      "sha256": "42c5242c1f13f5f02cf3bd3fcc9fdb80eef056373c3cd7d56afba5ec253653e5",
       "objects": 398,
       "preview": {
         "passedTypes": 35,
@@ -30,7 +30,7 @@
     {
       "id": "night",
       "project": "night_editor_v95.json",
-      "sha256": "43f1f8d16e9a049db0f1b684cb7b20f813d50a2f05ca72478fb7d9207c250fb7",
+      "sha256": "e314939baddadc1541daed2c6a9eb8c767ddebe870c93e7f958294a4b7f1a59b",
       "objects": 398,
       "preview": {
         "passedTypes": 35,
@@ -41,7 +41,7 @@
     {
       "id": "morning",
       "project": "morning_editor_v95.json",
-      "sha256": "1230af1e45c833e725dfc2b48a10c4a41e9a709d6f3dc3a7d33c6df57a1cb6f2",
+      "sha256": "10f44ea528eca41a5de745a07eaa8815dd269e943609d0ce6424da2168c69038",
       "objects": 398,
       "preview": {
         "passedTypes": 35,

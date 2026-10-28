@@ -35,7 +35,7 @@
     if(!f[scope]||typeof f[scope]!=='object'||Array.isArray(f[scope])||['brightness','contrast','saturation','warmth'].some(k=>f[scope][k]!==undefined&&!finite(f[scope][k],k==='warmth'?-100:0,k==='warmth'?100:200)))throw Error('색감 필터 값이 올바르지 않습니다.');
    }
    if(f.backgroundGrade!==undefined){const g=f.backgroundGrade;if(!g||typeof g!=='object'||Array.isArray(g)||['hue','exposure','brightness'].some(k=>g[k]!==undefined&&!finite(g[k],{hue:-180,exposure:-3,brightness:0}[k],{hue:180,exposure:3,brightness:200}[k]))||g.curve!==undefined&&(!Array.isArray(g.curve)||g.curve.length!==5||!g.curve.every(n=>finite(n,0,255))))throw Error('배경 색보정 값이 올바르지 않습니다.');}
-   if(f.focus!==undefined){const v=f.focus;if(!v||typeof v!=='object'||Array.isArray(v)||['background','far','near','focus'].some(k=>v[k]!==undefined&&!finite(v[k],k==='focus'?.2:0,k==='focus'?.9:30)))throw Error('초점 블러 값이 올바르지 않습니다.');}
+   if(f.focus!==undefined){const v=f.focus;if(!v||typeof v!=='object'||Array.isArray(v)||['background','far','near','focus'].some(k=>v[k]!==undefined&&!finite(v[k],k==='focus'?.2:0,k==='focus'?.9:30)))throw Error('초점 블러 값이 올바르지 않습니다.');if(v.region!==undefined){const r=v.region;if(!r||typeof r!=='object'||Array.isArray(r)||!['x','y','w','h','blur'].every(k=>finite(r[k],k==='w'||k==='h'?.01:0,k==='blur'?30:1))||r.x+r.w>1.0000001||r.y+r.h>1.0000001)throw Error('블러 영역 값이 올바르지 않습니다.');}}
   }
   if(project.gardenSpace!==undefined&&(!project.gardenSpace||typeof project.gardenSpace!=='object'||Array.isArray(project.gardenSpace)))throw Error('입체 공간 값이 올바르지 않습니다.');
   if(project.gardenSpace){const s=project.gardenSpace;if(['enabled','spatial','cameraOrbit'].some(k=>s[k]!==undefined&&typeof s[k]!=='boolean')||['strength','horizon','cameraAmount','spread','targetX','targetY'].some(k=>s[k]!=null&&!finite(s[k],{strength:0,horizon:.15,cameraAmount:0,spread:0,targetX:-100000,targetY:-100000}[k],{strength:1,horizon:.85,cameraAmount:5,spread:2000,targetX:100000,targetY:100000}[k])))throw Error('입체 공간 값이 올바르지 않습니다.');}
@@ -91,8 +91,8 @@
   const bg=images.get(background);
   if(bg){
    const bgBlur=number(filters.focus?.background,0,0,30),zoom=1+6*bgBlur/1080,registered=project.assets.some(a=>a.category==='background'&&a.src===background&&a.imageStyleVersion>=56),fit=project.backgroundFit||(registered?'fill':'cover');
-   const ratio=(fit==='contain'?Math.min:Math.max)(project.width/bg.naturalWidth,project.height/bg.naturalHeight)*zoom,w=fit==='fill'?project.width*zoom:bg.naturalWidth*ratio,h=fit==='fill'?project.height*zoom:bg.naturalHeight*ratio;
-   ctx.save();ctx.filter=[filter('background'),bgBlur?`blur(${bgBlur*project.height/1080*scale}px)`:''].filter(v=>v&&v!=='none').join(' ')||'none';ctx.drawImage(bg,(project.width-w)/2,(project.height-h)/2,w,h);ctx.restore();
+   const ratio=(fit==='contain'?Math.min:Math.max)(project.width/bg.naturalWidth,project.height/bg.naturalHeight)*zoom,w=fit==='fill'?project.width*zoom:bg.naturalWidth*ratio,placement=root.jejuBackgroundGrade?.placement(filters.backgroundGrade)||{scaleY:1,offsetY:0},h=(fit==='fill'?project.height*zoom:bg.naturalHeight*ratio)*placement.scaleY;
+   ctx.save();ctx.filter=[filter('background'),bgBlur?`blur(${bgBlur*project.height/1080*scale}px)`:''].filter(v=>v&&v!=='none').join(' ')||'none';ctx.drawImage(bg,(project.width-w)/2,(project.height-h)/2+project.height*placement.offsetY,w,h);ctx.restore();
   }
   const ordered=root.jejuSpace?.ordered(objects,assets,project.height,space,camera)||objects,drawables=ordered.map(o=>({o,a:assets.get(o.assetId),im:images.get(sources.get(o.id))})).filter(v=>v.im);
   for(const {o,a,im} of drawables)root.jejuSpace?.castShadow(ctx,o,a,im,project.height,space,camera);
@@ -108,6 +108,7 @@
    const ratio=Math.min(pose.w/im.naturalWidth,pose.h/im.naturalHeight),w=a.sourceRect?pose.w:im.naturalWidth*ratio,h=a.sourceRect?pose.h:im.naturalHeight*ratio;
    ctx.drawImage(im,-w/2,scope==='flowers'?pose.h/2-h:-h/2,w,h);ctx.restore();rendered++;
   }
+  root.jejuFocus?.drawRegion(ctx,canvas,filters.focus);
   for(const item of missing)errors.push(item.id+' · '+item.error);
   return{mode:'web-composite-not-unity-runtime',width,height,sourceWidth:project.width,sourceHeight:project.height,totalObjects:project.objects.length,objectCount:project.objects.length,renderedObjects:rendered,renderedCount:rendered,missing,missingAssets:missing,errors,warnings,complete:missing.length===0&&rendered===project.objects.length};
  }

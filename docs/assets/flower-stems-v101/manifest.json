@@ -10,6 +10,7 @@
   "route": "GENERATED_BUD_AND_BLOOM_IMAGES_BEFORE_VIDEO",
   "requestedGameDuration": 2,
   "automaticPaidRetry": false,
+  "videoCount": 48,
   "videoInputResolution": [
     1152,
     1536
@@ -35,8 +36,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "4fc74c25da5de566fca526656f74a8bbf64d4c3f2aa9ff6bd963ecc5b6795b40",
       "images": {
         "bud": {
@@ -80,7 +81,55 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "fe722dc6-926c-42b2-8ae1-52bf3dc8f642",
+        "sourceSHA256": "828458a3818f4c0ba5cdd4698a03dcd87c654d8cc66144f0882ff0242a921bc7",
+        "keyVideoSHA256": "8358eb954537f7703da1d2164967cab962598cff5848565399ef5ed4ee0d8370",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "b805a7dc5c26195f4bd520869655545d38741bd2939da8e5874cd75898c4ee4e",
+        "atlas": "assets/flower-stems-v101/BG01-buckwheat-scene-a-v83/atlas.webp?v=b805a7dc5c26",
+        "framePattern": "assets/flower-stems-v101/BG01-buckwheat-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-buckwheat-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "i": 6,
+            "id": "BG01-buckwheat-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "fd877242-cf22-44dc-b9a4-b02994947783",
+            "sha256": "ce9d237c6b322e108113afc2e19ddad920b995cb25cd533a9959d6d3578e9a98",
+            "sourceSHA256": "72d422fa0e5829090e08029d6237cda3592c257b4cbc6507d9aaa373c34cb24b",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          },
+          {
+            "i": 7,
+            "id": "BG01-buckwheat-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "df7b3165-fb45-4341-b51d-752a0e7f4b38",
+            "sha256": "44c09f30349d9db08d8b50fb201beccce4891e3028f573c78cc9757388604cfb",
+            "sourceSHA256": "3409d6c360e679ca0de56784253684b8a74442d3879f0a9f1cf94f75948175c9",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          }
+        ]
+      }
     },
     {
       "id": "BG01-buckwheat-scene-b-v83",
@@ -95,8 +144,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "23ecd2570b04242e27ab0dd91de55a6c3f63954035e042e4cfd56580e0781f9c",
       "images": {
         "bud": {
@@ -140,7 +189,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "374410a5-7bc1-4db3-9271-29808144d568",
+        "sourceSHA256": "3e8e37d550054f23e9da5c21b51ccb584a47c994457d55f874d9af269ff315fd",
+        "keyVideoSHA256": "50be58464f78e3e9c6aca3ce368f17e4c2c8d22b1cc64480436911f1fb016758",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "25aa9850838e2150fed196ea7de362c51c7897f4792e70c418c73f5169d7a34a",
+        "atlas": "assets/flower-stems-v101/BG01-buckwheat-scene-b-v83/atlas.webp?v=25aa9850838e",
+        "framePattern": "assets/flower-stems-v101/BG01-buckwheat-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-buckwheat-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 6,
+            "id": "BG01-buckwheat-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "144a76d0-5a31-4d7c-bab4-ef09faea49fa",
+            "sha256": "1ee6278e9e88b4162a86391a5a505b80c0a9fcf49a770c7f3b62d0685a358600",
+            "sourceSHA256": "05350e968a05167fb4ebea14d990c602b312c5d54042d120e78e137e92c23e40",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 6,
+            "id": "BG01-buckwheat-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "8e822342-e247-435a-a94c-cd8985238135",
+            "sha256": "9c6a63f46f7f3e1e457b6b15936e0b8e0eff256292a9c25fa5182fa58d4b534e",
+            "sourceSHA256": "661f9dafc2b646e7f320c85395eb201c44780712394aa2cceacdcaadbc299c37",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-buckwheat-scene-c-v83",
@@ -155,8 +250,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "16e6259eecc946a9c1a7a8600b8e932cdddfa671e7a7390a160be7d0d063774b",
       "images": {
         "bud": {
@@ -200,7 +295,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "7fe29f55-1cb7-4e39-9f4e-8b378ba07a26",
+        "sourceSHA256": "4d3e8ba6bb4479edaed166d28cade6f8b4845de9fa7163e3f40486c72415ab50",
+        "keyVideoSHA256": "3b55c046930df5a784fe0bb2e6ad6e67f13c7f57306749e630bac33fc9c9ca63",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "431be8bfe41ed9bbcaeed13a02a06a6b79de510a5f0e669dba3632584bcc00c4",
+        "atlas": "assets/flower-stems-v101/BG01-buckwheat-scene-c-v83/atlas.webp?v=431be8bfe41e",
+        "framePattern": "assets/flower-stems-v101/BG01-buckwheat-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-buckwheat-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 7,
+            "id": "BG01-buckwheat-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "847c808a-a48a-49a4-b39a-2b6cd251054e",
+            "sha256": "e34ff434fbeba5577559c34930d88eff9551f428edf9ead507732ab00108bc52",
+            "sourceSHA256": "bd7e7206f04f3030ee54fec4408825ad8b5a2d6fae287c4c2af115707fbbf1b7",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 7,
+            "id": "BG01-buckwheat-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "7a09fb2e-b1a8-4527-b690-364f3b38d6b3",
+            "sha256": "73fb7ab3f335fc0eb6c3855b82aaacdc947476e5b341c8357a9f7c3dd097ba6f",
+            "sourceSHA256": "013d1611709d058bfe5e133f71b334d9824a15a971d1910044ce19b53238f6bc",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-buckwheat-scene-d-v83",
@@ -215,8 +356,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "5cea74b6a80cdf3e2db5be9bcdc97d56ac63022439b721c26540235a00204b51",
       "images": {
         "bud": {
@@ -260,7 +401,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "4a6845c0-c61b-4cf2-bb5a-6759f68de897",
+        "sourceSHA256": "af2ca830d387e7c422953444cf80d8b56344300c77d614f51dfa190313ad0b33",
+        "keyVideoSHA256": "9a28e32e547e73c6ca7be4f37b0d8a5c988e7f103ea53e088333956d5b8a0841",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "794ef860da8f4b56ddbcbbe7742ad3d72b99e2c2f8edb5e0faef885ba06cae4f",
+        "atlas": "assets/flower-stems-v101/BG01-buckwheat-scene-d-v83/atlas.webp?v=794ef860da8f",
+        "framePattern": "assets/flower-stems-v101/BG01-buckwheat-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-buckwheat-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 8,
+            "id": "BG01-buckwheat-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "7f61fad1-7fb9-4007-b697-dc7fa7e09114",
+            "sha256": "8ea1ef2c1ec62a90d068619db6b39ebc01ded47363fdc19d1baa68c47e5c8a05",
+            "sourceSHA256": "5280740e27c3b236c32f8e618a8509c5d0ffd371d33f1a4f8e70ca6762d833bb",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 8,
+            "id": "BG01-buckwheat-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "d300d367-91de-4e44-bca9-695cb6456798",
+            "sha256": "e9b62c47492899a10f0cbb7fa1d8525a85e7a11a2984197c405734556488f794",
+            "sourceSHA256": "9805c1b471780a66af8febc8d920f7085521a065602bd62fd1c992d66b052e1b",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-camellia-scene-a-v83",
@@ -275,8 +462,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "40f87126ba6f47020a03d3bae56a4893469d5e4f3de155d6260f9e06a45c4a72",
       "images": {
         "bud": {
@@ -320,7 +507,55 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "358df1bd-0c55-419e-bc96-534f6fafe6a2",
+        "sourceSHA256": "cc665b8221510d7a5bc4f2d6b408da4b5f921b040f9d05a9083acd030b927798",
+        "keyVideoSHA256": "7e606ce2f57898d5bccdb53c99232e75618661b20d4752a68fefb81eeebc283d",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "803c3fa6d3db7ec681f268f2eca46ecdb5dd0ac4cf1e70e238ff815e5949932d",
+        "atlas": "assets/flower-stems-v101/BG01-camellia-scene-a-v83/atlas.webp?v=803c3fa6d3db",
+        "framePattern": "assets/flower-stems-v101/BG01-camellia-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-camellia-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "i": 0,
+            "id": "BG01-camellia-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "a6cddf6d-1bfa-41da-b9ad-2315eadd109e",
+            "sha256": "eb1e01fda6990382705eec3d6cc81d51d00f0873267a96c872acaeb511bfe1c3",
+            "sourceSHA256": "5a6d35ad8e77fcc0550769f62b88ae4f038b56b89edf35d6ad3304680e359f81",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          },
+          {
+            "i": 1,
+            "id": "BG01-camellia-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "d80a663f-b362-4a34-aa33-82cefd0c7034",
+            "sha256": "732d21cb183e16a62335035012b68c15b931bc1f56f185cb71b35fed18cba778",
+            "sourceSHA256": "7e44d873d2903992ab7fb6386579824973c73b8451dc0ee8a5d1f7b15654abec",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          }
+        ]
+      }
     },
     {
       "id": "BG01-camellia-scene-b-v83",
@@ -335,8 +570,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "7d625a4aa474e748fbf5100311bcde8998dafb0c1dcc6c6008028d48b17f9482",
       "images": {
         "bud": {
@@ -380,7 +615,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "0fbdc1aa-64c9-43cb-a1af-76f5309a8c40",
+        "sourceSHA256": "7a998fd86851d5f6553c892210da9ecff31433829e21cce0d63c25e67192a2e6",
+        "keyVideoSHA256": "585b19cfe2a40fc50f1af3d918c9f00e1d614127501216bd60206d7c5c304821",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "6feec9e526743de23f8c49f2f9b2402c58268d9aa0a41f1a2afa66c3aa36a2f6",
+        "atlas": "assets/flower-stems-v101/BG01-camellia-scene-b-v83/atlas.webp?v=6feec9e52674",
+        "framePattern": "assets/flower-stems-v101/BG01-camellia-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-camellia-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 9,
+            "id": "BG01-camellia-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "57ab601b-6a78-4063-b8d5-341b657fc159",
+            "sha256": "e7d7f8874a930709390c81eb6d9152c06715484f364591a79867812e667bfb41",
+            "sourceSHA256": "57699ea973b33b1c32735dced0254a9f4dd0c2e58658493311643a136cab93a5",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 9,
+            "id": "BG01-camellia-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "74b72392-1260-4950-bafe-f3617ed0e5fb",
+            "sha256": "94988f49510e3447e53abcb150074c86f95d4ab1db992442176de85c19364670",
+            "sourceSHA256": "ab99bf5bfce78a6ebdb51963a421075b446002df012b2ac33d2228edb029d614",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-camellia-scene-c-v83",
@@ -395,8 +676,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "64009d5cec8f9f54bcd528c9d46db514feb6beabd473f35fbb0e2952d8460b3d",
       "images": {
         "bud": {
@@ -440,7 +721,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "517122f4-5301-4147-8a37-6facb82b6654",
+        "sourceSHA256": "99d8bff34e869121ef78d78ceda839874e8786300741e4c4fe02dabaad4e317b",
+        "keyVideoSHA256": "b6b3abf7ccb48ad5670663185706e0261c4c3244bcc6039cd0b5a5baf47a37d8",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "36ea334b90ca82e059e663c3276c1a18607d9a6521cd1eaf5b7aea7cb7efc462",
+        "atlas": "assets/flower-stems-v101/BG01-camellia-scene-c-v83/atlas.webp?v=36ea334b90ca",
+        "framePattern": "assets/flower-stems-v101/BG01-camellia-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-camellia-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 10,
+            "id": "BG01-camellia-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "ddcc07b8-7820-4acf-9485-c4f19a571748",
+            "sha256": "36161807e1728638c4017b0ce0cb64870addc6e2d29faeff8143c405ce3f7470",
+            "sourceSHA256": "bfa1e9f37b9e6557eb34ebe79f29cc2325788c279bc739118da6e59ee88e445f",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 10,
+            "id": "BG01-camellia-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "94c771b3-8395-4902-9f41-854fedeb68a4",
+            "sha256": "b5f869a660f44058278bc1c8817c423fda971621eca6df2797bf0300b4ebd444",
+            "sourceSHA256": "def8687070d69739663d3375640f36f1750c50bd5be6939b82926024a3fdf4ca",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-camellia-scene-d-v83",
@@ -455,8 +782,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "61407a6e8a853a565dd0b8ed8265280c008561538b548de72bff0209f2837a24",
       "images": {
         "bud": {
@@ -500,7 +827,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "b9a677cd-c119-4bb8-b8e7-a5956adc63c6",
+        "sourceSHA256": "607e03d526fbada62da06fe65b1858b8a47bd6cc97d16d4102c18d95436443d2",
+        "keyVideoSHA256": "170c534519af065b2cfd8f25618ffbaa691453c5f6158627e1225328fd66a5b0",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "fa62b2f0b99588497e0fba6e722c2ff5e00dcb3a1b417c52a7365843c5776fd3",
+        "atlas": "assets/flower-stems-v101/BG01-camellia-scene-d-v83/atlas.webp?v=fa62b2f0b995",
+        "framePattern": "assets/flower-stems-v101/BG01-camellia-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-camellia-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 11,
+            "id": "BG01-camellia-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "7bc8dce7-0ba5-4d45-96bb-705792f64661",
+            "sha256": "6741938b84826873c74070de9d47cff9ddf4e8d8e8bca96a082d0584d8c2f8b3",
+            "sourceSHA256": "7beafb1be65fcf4bbf9175da3e497df4112b6e1fff4c416ff4514582a20484b5",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 11,
+            "id": "BG01-camellia-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "070089d9-59ec-48b0-8e39-6e0fa7488e6a",
+            "sha256": "4afdc24f8d2fab69d2be1423ae0e4be2998f3b89f9299c203086a2debb7f9fec",
+            "sourceSHA256": "d9fe581b75dfab2a407cb7ee6728f367fe3aae09b73be4d54ef5a655e25c5794",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-marigold-scene-a-v83",
@@ -515,8 +888,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "3b4f984a3c66daaf2ba365b764bc620c506ae2abd3bd0d06a1131cf227def34a",
       "images": {
         "bud": {
@@ -560,7 +933,55 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "e7f67834-8e1a-49fd-adcc-c37b3702bf62",
+        "sourceSHA256": "e6b57decf4819537b7ae0df373969631f8fc4eb26899dd3468c38363bc97c9e3",
+        "keyVideoSHA256": "a897e6fa38bece9cb58195e6ef258fcdbe67bbb6d80b366743f654678c1989c2",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "fda0d5fbc1b5365856305e0ff3c6672f69e8dc8a45bf80f2ecb8bdd38b60c69b",
+        "atlas": "assets/flower-stems-v101/BG01-marigold-scene-a-v83/atlas.webp?v=fda0d5fbc1b5",
+        "framePattern": "assets/flower-stems-v101/BG01-marigold-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-marigold-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "i": 2,
+            "id": "BG01-marigold-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "2594b132-08c4-49de-93f6-884f60847600",
+            "sha256": "442f1fd7c9b5a8589d3588223cf913a6970b97b9b2892875635e6791d52d8c2a",
+            "sourceSHA256": "3675535356fe673470966c9892b103cea7cf8c3302e00d9ab7491ddb57918ec5",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          },
+          {
+            "i": 3,
+            "id": "BG01-marigold-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "6d6d4139-c611-4943-a8d6-f10c08c02532",
+            "sha256": "0b023b46c87a021cd76fa751900cd2e43a785af9f945685cebbc46723290072f",
+            "sourceSHA256": "b544a0be827576191eb1f0298e01539d3e33c02e55244bcc57efe99228a5d3e8",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          }
+        ]
+      }
     },
     {
       "id": "BG01-marigold-scene-b-v83",
@@ -575,8 +996,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "9e44a63fc14e6ab3617ded3cff8021126908bf45ef9eff248a20210ac6b67446",
       "images": {
         "bud": {
@@ -620,7 +1041,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "c07a8bb8-cd42-4f8d-bce4-9170b06b7cf7",
+        "sourceSHA256": "0f8a2028975635c979233a075bf90d6f4c347b79f0284baa7b277007c79f5b5c",
+        "keyVideoSHA256": "9f0d79ec5a5bd8b5e2a82e532e5886d129c389c297fd2b546956bc9b2741e26b",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "0d883c198667e7d7717c12821a872599e8b2fe8d0ca136e1b1031fdfa32c5517",
+        "atlas": "assets/flower-stems-v101/BG01-marigold-scene-b-v83/atlas.webp?v=0d883c198667",
+        "framePattern": "assets/flower-stems-v101/BG01-marigold-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-marigold-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 12,
+            "id": "BG01-marigold-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "d2eebad7-e2e9-4a12-95d0-9ff3906771af",
+            "sha256": "7fe256f060ba5af043ea67dbe44af5b3f01d8bf3303db60bd3f805c2bca5dcd2",
+            "sourceSHA256": "530f754902c394c3a326a26db3d6575370ebfdc5ef2cf33a87e0b6598ef937fe",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 12,
+            "id": "BG01-marigold-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "661788d4-5b64-4471-b867-6ace756d7038",
+            "sha256": "0f1b4413e84227b8b61b200e4f81889146355390f066685e8ae42ca44c14e5e0",
+            "sourceSHA256": "0e4490de219b961d63e5f11610be4838b2e477498b1ad74897765f6c357bbf5c",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-marigold-scene-c-v83",
@@ -635,8 +1102,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "464ed50ab57ffda870fde3662bd8dda97239cc2dbff8fc058f73ba06808ed603",
       "images": {
         "bud": {
@@ -680,7 +1147,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "485570f7-4f41-4d07-b9b4-e8c09392738a",
+        "sourceSHA256": "b3c1db1013b20edcd5f81528108ffc9d1e716113e6dcf9624c9704499f35ae63",
+        "keyVideoSHA256": "21bc9c5b164d41a84164a5a5d0c06a0f09d3758f76de7dd2dbb50b138f414413",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "5ada25790b72ce55198dad1f7364ab1c131084e6d94a674bb660c8131f4026ae",
+        "atlas": "assets/flower-stems-v101/BG01-marigold-scene-c-v83/atlas.webp?v=5ada25790b72",
+        "framePattern": "assets/flower-stems-v101/BG01-marigold-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-marigold-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 13,
+            "id": "BG01-marigold-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "a11d179f-9630-4c56-b0a7-ff5b43a3c877",
+            "sha256": "d6ef654dc698df262cf6cee62de8fde1cc7808acefc9dd8969e82bb3e1023ab4",
+            "sourceSHA256": "97763cd7c820e88c1852d37bfe88884bde5d0ac3e7a00e2571a37dcb5f04870b",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 13,
+            "id": "BG01-marigold-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "25096ad9-a3e3-4eed-84bd-350a55f13c64",
+            "sha256": "b61269d1f9f77edd94d508984933fcdc2f9e7f7c32a0222b96f74fe3087a7749",
+            "sourceSHA256": "3196c2bdb30bdf29606eaeffaa9a6f13570bbd1430dc6e780d8200850d8e898f",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG01-marigold-scene-d-v83",
@@ -695,8 +1208,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "060e4daef18b36a318bc8f5b3cc96ccbf4947af37f9aff771eb86885edfe4031",
       "images": {
         "bud": {
@@ -740,7 +1253,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#00FFFF"
+      "keyColor": "#00FFFF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "923e1390-5e47-49aa-a3a1-01704af48ca2",
+        "sourceSHA256": "89effb7c8c2ec6b6232fd35e6cb4d93f6af30f7cb82b1de758594c2f2f4de1e9",
+        "keyVideoSHA256": "3f8027d958dc7ade7a9656f8c887ee65afc60cbdfefd831177069c34ae57ec8c",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "99b8f13c934cf7dd1dfb000ad6a2f91a066d19f8bc32f75c24f2ff202aafd194",
+        "atlas": "assets/flower-stems-v101/BG01-marigold-scene-d-v83/atlas.webp?v=99b8f13c934c",
+        "framePattern": "assets/flower-stems-v101/BG01-marigold-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG01-marigold-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 14,
+            "id": "BG01-marigold-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+            "media_id": "67a501d6-9c5a-4c32-ac45-d169b37b3add",
+            "sha256": "188067e5af5729ab053a2103bc1618f73a40fcc0aff3672426486093d816853a",
+            "sourceSHA256": "35edf8c1d36f23dca4ec6e423729f9e4b21857d030279045489d8aa5fcb03957",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 14,
+            "id": "BG01-marigold-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+            "media_id": "36b051ca-8159-4054-8143-c558cd4d9dc9",
+            "sha256": "7ad6db92160beadce24833d557726a5eb7459fce4fcc64a74e6252ef9ccc4d42",
+            "sourceSHA256": "89a02c5d639068e4446f6088772d212bed0ad87fb557deb5ccd9dff1655a9bbb",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-buckwheat-scene-a-v83",
@@ -755,8 +1314,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "b2b6e5e9c4e8a3b6148e8567206580137d34f694fa63e3fe631199459415434e",
       "images": {
         "bud": {
@@ -800,7 +1359,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "6ec06c27-1496-4f05-b14a-6f434cf53453",
+        "sourceSHA256": "c3229a3f68b8592656738eb042b32ca78466f9f175177f94c95bd04895efe1c2",
+        "keyVideoSHA256": "6d12fd9c6e7e23a8b691fc2628ef7a562839e97591cb1faa222bf01a35d48aa6",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "c0a5748f8feec65fa0b0e37155f7883ee60911d04c8338d6092d99c25eed7cae",
+        "atlas": "assets/flower-stems-v101/BG02-buckwheat-scene-a-v83/atlas.webp?v=c0a5748f8fee",
+        "framePattern": "assets/flower-stems-v101/BG02-buckwheat-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-buckwheat-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 15,
+            "id": "BG02-buckwheat-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "74be2608-0a51-4339-9bb3-6de2f6e74df7",
+            "sha256": "722209a7da91e7c213c0ce7f8665642990ee41425781d9f2b7f413da553812b8",
+            "sourceSHA256": "ecf3f5ce128f9ad78b506df4c4a220e5886def3f23b019156b3bdbe6d42a454c",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 15,
+            "id": "BG02-buckwheat-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "49b0c92b-3a0c-4be4-abc7-257cb20890e6",
+            "sha256": "a50786871bb912bd4574e4f85a141ed22da3fadfcc4fc41d76b59ef654dc9bc9",
+            "sourceSHA256": "da017d4b7a69a8af57f32b62cdf93f7016cb2221450cde6a4ce5ddb624ba490d",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-buckwheat-scene-b-v83",
@@ -815,8 +1420,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "84db94581acad27277165e543a5dc7e0c9ec2d0c11a4abeea9a250c5deddf6b7",
       "images": {
         "bud": {
@@ -860,7 +1465,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "9950aaf7-62b5-41ef-b666-9611946ad2be",
+        "sourceSHA256": "ebcb22fcebddb2fae440ce8d10862fc9771a51c23d0d6cd4aedbe4b0e711e510",
+        "keyVideoSHA256": "2237c6fa9a8c36068e8463ad0439f271681b9b60f8a531517ef5504e57150e2c",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "3f7823d80167c3a40e326d972e2eeae69ab6ce24321b24b00ad69343eea3f6b8",
+        "atlas": "assets/flower-stems-v101/BG02-buckwheat-scene-b-v83/atlas.webp?v=3f7823d80167",
+        "framePattern": "assets/flower-stems-v101/BG02-buckwheat-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-buckwheat-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 16,
+            "id": "BG02-buckwheat-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "7a82152b-bff4-4c18-be04-2fb3e511bab5",
+            "sha256": "13619a9a865ccab5633cb42219c1f51e5ae7cb8e0497c688d52aec77f3000476",
+            "sourceSHA256": "94647c87eefe7cbb762ce7d2cef32a87e36cb790c18b0fdf4a3fabf6d9ba40c2",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 16,
+            "id": "BG02-buckwheat-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "ef74fa0c-75bc-4f82-854d-a26ab4c6e8a1",
+            "sha256": "1d9d4538d8f3cdda62dac58c4651f7f829ecfac9575ed65249da94309e036990",
+            "sourceSHA256": "d55ef6231f7d3cc9b7b6909f8acccb2fc8bbb6fe3dee2f209793881d0cb5f5e8",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-buckwheat-scene-c-v83",
@@ -875,8 +1526,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "029e220c5476357cc26713088aefbee9c3d6735848227df1fa355c1c4905dea5",
       "images": {
         "bud": {
@@ -920,7 +1571,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "9149a23d-28a7-43ef-96c2-ebd821cf2029",
+        "sourceSHA256": "f62925135fd25b4275fce206ddc5ab8fb52df62a04375abd2c873dcdd4a41108",
+        "keyVideoSHA256": "f7f8a196a922dd724a7e36609dce1e68d028f16886d12939876d30bf299361d3",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "b5d73cf9feedd47816a7c84d78e542f73d82743999fded39f1c3d63a8983f773",
+        "atlas": "assets/flower-stems-v101/BG02-buckwheat-scene-c-v83/atlas.webp?v=b5d73cf9feed",
+        "framePattern": "assets/flower-stems-v101/BG02-buckwheat-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-buckwheat-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 17,
+            "id": "BG02-buckwheat-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "cffc8628-7b44-4d39-b10f-69638d911965",
+            "sha256": "f7b7deaa18d1c16b8727995955a6e44b488335993615b1b2a3cb069951d057b7",
+            "sourceSHA256": "e34c20fa1126b143a327660e4be42f3628388c12206fa69554a3a00275935532",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 17,
+            "id": "BG02-buckwheat-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "63b3676f-0cd2-48b7-a2d8-351c96df764a",
+            "sha256": "53a76ee12dd1549474a5632290363030b3c90c689c73123abf5ff7f868404c39",
+            "sourceSHA256": "2d460013561efcfc86326a952686f7d339deab7af6c47379623beffb7353a2d9",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-buckwheat-scene-d-v83",
@@ -935,8 +1632,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "4ccf02895a92a015db3ac5ae601971cdca056df3ae8aa8b96ebdbf771a3d77b9",
       "images": {
         "bud": {
@@ -980,7 +1677,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "c2d860a6-9972-4d66-9bbf-31e8e45b6a92",
+        "sourceSHA256": "ed3736bf255125272193584697f36e8ea1c105018464398f536cc8538fa143ec",
+        "keyVideoSHA256": "62e076845ccd6153c156a2ce5fb54b3894bc50234b4948460b7317c0602eb078",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "78677612ecb6a64ee99dc8693ecc2716ecc8cc10c1c87e33661a7b8ac0bfac12",
+        "atlas": "assets/flower-stems-v101/BG02-buckwheat-scene-d-v83/atlas.webp?v=78677612ecb6",
+        "framePattern": "assets/flower-stems-v101/BG02-buckwheat-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-buckwheat-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 18,
+            "id": "BG02-buckwheat-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "41b43347-719b-481f-9f4f-1673f625b23a",
+            "sha256": "ff489d556f60adb7d015d78559c268e49a8c43dadf7d1a898eef27f253411794",
+            "sourceSHA256": "1fd9d476b882a501f8044f5e43bdaa0628b7f6d1970cac713364f14328bbc708",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 18,
+            "id": "BG02-buckwheat-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "4d82897f-8df0-4541-9ed9-abe8c0cd18d6",
+            "sha256": "9f5a4571b58f8448618a8dda990954954cb081998a7bff52b6b9eb1ace826c51",
+            "sourceSHA256": "c1bb38f9a95354fd4448575774bba6515ea32e33e7bbd2434fa1520eb6e1f765",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-canola-scene-a-v83",
@@ -995,8 +1738,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "4a89c0ba78b1b60e752f7704c1ba073451bb11efa21dbee1cab47e13d6d87558",
       "images": {
         "bud": {
@@ -1040,7 +1783,55 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "cf31f48b-e136-4fe7-8e3f-4d10f0fa9e4e",
+        "sourceSHA256": "4b8c7311fc8e045213a043199c506f837e095f9dac5a1ce23f1bdbff35df27ba",
+        "keyVideoSHA256": "622c9d184618cedfd3c3d487ba5a8fd328c9cf0af4b5944a172dfefb5ae1ea23",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "dedbdb8f9366456908741ad401ad49c06747fbf5fe56027e55e26fa2d7ca26cd",
+        "atlas": "assets/flower-stems-v101/BG02-canola-scene-a-v83/atlas.webp?v=dedbdb8f9366",
+        "framePattern": "assets/flower-stems-v101/BG02-canola-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-canola-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "i": 10,
+            "id": "BG02-canola-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "b039ac69-88bb-4f66-b786-3744c62fc55a",
+            "sha256": "f9f9561a1356ac6ce6dfa50089e7365951b92550b3bebd12b9254e7ec04eb5d2",
+            "sourceSHA256": "7145ae0bc10397ec1865838e84c30b5fbac897d5709022d7e8a242fb324da785",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          },
+          {
+            "i": 11,
+            "id": "BG02-canola-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "75771749-b496-4840-bf63-992acdaf7347",
+            "sha256": "59b471765c7670f760cc4ea321510300d382b23cecf837f4964f1888f0b75b60",
+            "sourceSHA256": "580f56203508b3cd13932ee38bcfe8160dba9696354826352c590e7486b87ddd",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          }
+        ]
+      }
     },
     {
       "id": "BG02-canola-scene-b-v83",
@@ -1055,8 +1846,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "963ea37f4a0bfc38ef67f7f7dd7b90977648bfe3a051e595b4d336806560d9d2",
       "images": {
         "bud": {
@@ -1100,7 +1891,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "a349627d-0ba2-42c5-8c36-229a8ccce689",
+        "sourceSHA256": "e7005f50e0f4f9c83373c8193c83b32808657719c85ebf2935ff9530fda1ba1c",
+        "keyVideoSHA256": "5eb28509850a56451e4fc4e526e5a9334f90fec049c79c5fbc2ca61ce790814c",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "a592885c8121b4574ada734f5fcdd013ad885a87428615b71b4fed1ad3de1b7c",
+        "atlas": "assets/flower-stems-v101/BG02-canola-scene-b-v83/atlas.webp?v=a592885c8121",
+        "framePattern": "assets/flower-stems-v101/BG02-canola-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-canola-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 19,
+            "id": "BG02-canola-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "b48e186a-6361-4f81-8677-95ecbe3f0487",
+            "sha256": "cdaab31532de4bdd8ba49f0b5e0ece0cd2be9b78b4e4a0a5d5a211fe3653c366",
+            "sourceSHA256": "e1faac6cacaa06bfb71264c2e1c11623907cc8ce4aafcb36848ed87a047f83f8",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 19,
+            "id": "BG02-canola-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "f272d423-a5d2-44c7-9cb2-a745578c5032",
+            "sha256": "fa2c84ff9f2b63047aa63cc1a7968e2d25eefef144582518303b50548238ec42",
+            "sourceSHA256": "41ac78f9e09127d8a8395168c9554faf75f8fbfc7f77b03537758d9b4feb0f08",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-canola-scene-c-v83",
@@ -1115,8 +1952,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "af73241b1f5d4e7560c0d59b99aaba822124e8f3efab115a1ca35f7bcedd095b",
       "images": {
         "bud": {
@@ -1160,7 +1997,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "ad4a3843-0bc3-45f0-a1fc-e8938cb13dc0",
+        "sourceSHA256": "77764ed53a981374692ba2bcd73ce315929094ae8acdab115da1c3595468736b",
+        "keyVideoSHA256": "645494e1d80f60b1ddf8f71792bed7e1aeb1bcb2d8cd7583676ab8db1b3cdfb9",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "a976485b72304569942c8b731b1ffdc4c0b7b2c616194fba658c7b362f7f90ef",
+        "atlas": "assets/flower-stems-v101/BG02-canola-scene-c-v83/atlas.webp?v=a976485b7230",
+        "framePattern": "assets/flower-stems-v101/BG02-canola-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-canola-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 20,
+            "id": "BG02-canola-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "b866d348-5ff7-4046-bcae-8e19db059109",
+            "sha256": "e6ff6cb9e25741d5bb6066ef6696b20aaa0336092df6db687f75ca552762a822",
+            "sourceSHA256": "e9e90c0759e7b28aec49df2df5c2ae188dad4ceb659b83eca607d621b8fe7bd1",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 20,
+            "id": "BG02-canola-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "3b3942be-7ab8-47e9-8eef-95eb7ebec644",
+            "sha256": "5f001634d4bda48d52eaf99c4ea32a3117e43ee34e397053a0d31582d32392a2",
+            "sourceSHA256": "2b9f466215adc6e891e14938042c4883e71c146ba7d3f8b8388d59b4e0d32c59",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-canola-scene-d-v83",
@@ -1175,8 +2058,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "2e5eb4fdd724362d321b9951b120dbc033ebfc7c3018a8c382d212450f4263e5",
       "images": {
         "bud": {
@@ -1220,7 +2103,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "7113284d-bc08-47fa-8647-1c2207763724",
+        "sourceSHA256": "40bb14a429c00839c2e0a977c8309b7dcc3c6bb81771470733b2df46e2b2dc61",
+        "keyVideoSHA256": "b30f49e88032523c8f13fc942d8733256f8b5f810c1ee8d4f0fbb05a8319cc8f",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "bf840ff87297b221374261e57aab2dbd3b79887f3358cf4279e6948cdd393a53",
+        "atlas": "assets/flower-stems-v101/BG02-canola-scene-d-v83/atlas.webp?v=bf840ff87297",
+        "framePattern": "assets/flower-stems-v101/BG02-canola-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-canola-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 21,
+            "id": "BG02-canola-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "6da73f90-a549-410b-9ff6-36e4683cf885",
+            "sha256": "7b1427066ee7e7a350a8697eb2fc111fdf2dd5dacf08041948197cf641dfd085",
+            "sourceSHA256": "abfb48406c314dd2d954cc6fef16bae12337f05d3fc1fea2b4379b33d253408f",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 21,
+            "id": "BG02-canola-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "ec44a828-627d-4413-8f2f-61231c3aeea8",
+            "sha256": "051a58f6d20832a91183d695ee9b8cb14c405ba1dfc72ec1122523d45f029cfa",
+            "sourceSHA256": "90d39bf0c310eec59e78153902cbe0a57cb8340d6827c08f84629d6b36b1a9b2",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-marigold-scene-a-v83",
@@ -1235,8 +2164,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "8007b4d96b05f4be031d0758c0474277a6ebd1730f82581b67155a55c72dfd86",
       "images": {
         "bud": {
@@ -1280,7 +2209,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "cad24f08-f24d-469b-baac-4a2b453045c9",
+        "sourceSHA256": "288ae0a6090fd5c132ecb809c30077ffa1707ccf9256ade3106aefbdbf98ef6b",
+        "keyVideoSHA256": "ad6e3e32a00273314aaff734c4ff9cc32697237b36525d9bba4c59dd2c4fdc72",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "eb321061d36cf27009d6f057facf581373f7aaca86f5dc224bed24ec5e8ae115",
+        "atlas": "assets/flower-stems-v101/BG02-marigold-scene-a-v83/atlas.webp?v=eb321061d36c",
+        "framePattern": "assets/flower-stems-v101/BG02-marigold-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-marigold-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 22,
+            "id": "BG02-marigold-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "5e0ebd22-bc0d-4ee5-9f55-8a1341ab2553",
+            "sha256": "7cb79bf2b37acd237caf4408b009890cae9b2676c2d8b9eac2e41fc61b276e88",
+            "sourceSHA256": "d7bcfee431cf6aaae6d3d0b54c368b0d4354218fdbcc071cd73c9fb66b23dccb",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 22,
+            "id": "BG02-marigold-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "64f6fbbd-5d4a-4f3b-ae12-b91771c620ec",
+            "sha256": "1a0f84801e2c1e9f5f1bc4e1c0015fa2d2d872a72f0e789735466579068fa510",
+            "sourceSHA256": "8a165a8e5203237aca2b0de9d48c07f81781a0e6323c1e46d63c88e8b0311287",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-marigold-scene-b-v83",
@@ -1295,8 +2270,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "47774a19e3b296e75b2bf85f62da48093536a6a2682f57c917bd8430d7281d6d",
       "images": {
         "bud": {
@@ -1340,7 +2315,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "8bdf8555-7a4a-4f47-b88e-f19734ed6c3e",
+        "sourceSHA256": "b69084edb1311156f7f24ba3c212ddfa3e0c5b74896356bec6518e04f28c0cf1",
+        "keyVideoSHA256": "d005b9f09f304d8d3d41532a74b296a9bfe8f87b3d7a5e5379b85fc332caf08e",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "bf22d4026c5ebaeea6cdc0149fa79aee77dd233007e849c227f6576c6dbaa33f",
+        "atlas": "assets/flower-stems-v101/BG02-marigold-scene-b-v83/atlas.webp?v=bf22d4026c5e",
+        "framePattern": "assets/flower-stems-v101/BG02-marigold-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-marigold-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 23,
+            "id": "BG02-marigold-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "cc35ee27-74d7-45d7-a871-c6084b504f32",
+            "sha256": "74ef502e97c4700cf0f00688badf9b820d5ead1c3ca57a87b6dceadac13d2260",
+            "sourceSHA256": "843493db1d4fbf5e2109df0ebca8fa190e8990db6f8c49f74a0f1c2fec0d05f6",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 23,
+            "id": "BG02-marigold-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "15466017-c778-4863-8456-24c587ed2e40",
+            "sha256": "85fc07b777fd30601e24cdb7754ed06d9c82a6f99e2e23478b70c84c5773a96a",
+            "sourceSHA256": "d8f835b6d5e5c3fd41b0610fae7bf3ac7f2baa6814f92ea7d855ec886fc3fd5b",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-marigold-scene-c-v83",
@@ -1355,8 +2376,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "203a4241db1ed356f8384d657be929cc8d9f80a81b1d4802881118df1eb9da50",
       "images": {
         "bud": {
@@ -1400,7 +2421,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "0e3f4290-da1e-4f39-8387-723d276b4958",
+        "sourceSHA256": "49da054a9addc5db8ae160651b2a097a9d638541b94c408668db15914c7076dd",
+        "keyVideoSHA256": "ac6446c3e4efb3357521af57cf7b08df898af9edab458dbad82355383838a716",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "0433847831fa30594096bcbf98b53a221d0e13d6a9ef27eda48039d24fd25248",
+        "atlas": "assets/flower-stems-v101/BG02-marigold-scene-c-v83/atlas.webp?v=0433847831fa",
+        "framePattern": "assets/flower-stems-v101/BG02-marigold-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-marigold-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 24,
+            "id": "BG02-marigold-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "cae2823a-1a0a-4be9-8793-bba4f362cba7",
+            "sha256": "95e1c23fc10c79b71a1bc82548519385e05911ede65e2713d215196ac8678054",
+            "sourceSHA256": "1051e2c7d316a47f670298c96fdcaae9c7150b1e8b5808e4a75119984237fc45",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 24,
+            "id": "BG02-marigold-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "d6388e69-5678-4cc6-ae15-22a0eb8f59f8",
+            "sha256": "6f074d1fcec82bc5e7033b1f649707643fe2d1c569cd7b012370895653f560d7",
+            "sourceSHA256": "71b009750ab0abf2a67bddd9811b44a5c5f2f0b83289100496c2a95fe8518bac",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG02-marigold-scene-d-v83",
@@ -1415,8 +2482,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "2f7aea0ed4e85ac7deb9765249c04e302a19ac541b11ca6c48582e089ea0c083",
       "images": {
         "bud": {
@@ -1460,7 +2527,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#0000FF"
+      "keyColor": "#0000FF",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "90c80a63-62c2-4e4f-87a9-bc038196570f",
+        "sourceSHA256": "77ce83de43913889effbc107cc9bd6dd647cce46d8127cce226c79bdee42beeb",
+        "keyVideoSHA256": "e891123a61ae122ced2f12aaef822aa427582d1d640d870ad8b58b2611fd192d",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "0091a306dd00ca23aa232b9829960d2211ed36a04a9403aa568302ec0c90e60f",
+        "atlas": "assets/flower-stems-v101/BG02-marigold-scene-d-v83/atlas.webp?v=0091a306dd00",
+        "framePattern": "assets/flower-stems-v101/BG02-marigold-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG02-marigold-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 25,
+            "id": "BG02-marigold-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+            "media_id": "965037ae-3a5a-4e24-8331-c2b4234716cb",
+            "sha256": "5a859b105981ce5ffc0a4b6c3920e2469ad99566813804970e4a6fd8a1c1ea84",
+            "sourceSHA256": "c7d9ee3cf6bb33c744dfc35ba9e5613df2e5e6ef9b4f5a5ff1a6bc3612797b06",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 25,
+            "id": "BG02-marigold-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+            "media_id": "b3a4f73e-5735-4c59-9396-da87677bd43b",
+            "sha256": "641b3d05bd42d3d56b886d23cf09df953411e2c54eacc927bb3291951ce1d900",
+            "sourceSHA256": "c48ed66c2da95d8784e7a669bd908ac351f799e6a50eb1680600d1164ca57757",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-camellia-scene-a-v83",
@@ -1475,8 +2588,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "1d8306e965038a49c1394f236010096e62a62a7410f6975184ed8fe77f27230e",
       "images": {
         "bud": {
@@ -1520,7 +2633,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "de3567f5-b3de-4512-b02f-6b98442d875d",
+        "sourceSHA256": "9493ba9941d577f399008d38f956a4d5d6167c16ec06c2c30bae2408630047ae",
+        "keyVideoSHA256": "87d961966ae3d6067207e5e87701146bd2d712ecc2afc8ddd100e157dd34ba50",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "1e851c77d744e3d24cc7392441e300f457c85bcf19dfbed2dbd8bc044d38ee3e",
+        "atlas": "assets/flower-stems-v101/BG03-camellia-scene-a-v83/atlas.webp?v=1e851c77d744",
+        "framePattern": "assets/flower-stems-v101/BG03-camellia-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-camellia-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 26,
+            "id": "BG03-camellia-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "8fd79974-40df-4de4-9956-a3c71e91c544",
+            "sha256": "d7adf5e8a8c345f5ae956fe686dda3616e66f996bb6741ca3bc0a02db85572ec",
+            "sourceSHA256": "a6e2b01b24902e671e558e029d5ecd5054c80193f153f8bfa813d9035f5eaa58",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 26,
+            "id": "BG03-camellia-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "92f9154a-7aed-4107-8c31-4c6a0a919d44",
+            "sha256": "0003d3ff5c555b982e2bba2ef7406d671dfaacfb80845bb35f312365ca861d57",
+            "sourceSHA256": "946f5ddfda664e3ff4a45e4cebc9d5763a327cb9d5e152c575c7609805ae43d5",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-camellia-scene-b-v83",
@@ -1535,8 +2694,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "046eeeeaf14246d325ad8ef208667b16096c95e10f98426d1a65864c9076738e",
       "images": {
         "bud": {
@@ -1580,7 +2739,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "be835d2b-aba9-4c47-9b9f-34b5b9b5b649",
+        "sourceSHA256": "9f0886e71fb8e49ac5dfbb5bf325e381a83f520abdc0af83ee651f8d50cfcb1c",
+        "keyVideoSHA256": "77e905333a57d60385f2b63360faf0d51c2a560ce947f6fa50dbe8d7e0160e04",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "7c8f3c6c90fb8afb7bc2fd7ada01f65123aca18a3433b2a22abb7545619764fd",
+        "atlas": "assets/flower-stems-v101/BG03-camellia-scene-b-v83/atlas.webp?v=7c8f3c6c90fb",
+        "framePattern": "assets/flower-stems-v101/BG03-camellia-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-camellia-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 27,
+            "id": "BG03-camellia-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "1779bff6-b870-4973-a419-e9588b89bc1f",
+            "sha256": "96cb13f4e8ecd5bd9465cf700324779a50902abf4f6802f73f0557291f190715",
+            "sourceSHA256": "4a3ca7c1c47d3a773456f972a2bf4c1b34dca76d1dbec82cf6b5071112d4e8ae",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 27,
+            "id": "BG03-camellia-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "5c7c8959-1277-40aa-9089-18be7b79c194",
+            "sha256": "a8e993a143411df056477c5bfb38bd2d02c7df46bec3f5d08eebf0f2000680ab",
+            "sourceSHA256": "d043fdb7092db3762b52fff608cf039405bcc9c9ade5ef83368416304dda766d",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-camellia-scene-c-v83",
@@ -1595,8 +2800,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "f4060c1342518ba8ad08a05a48f04f2758489ee9de0a873c9084cbba4232349f",
       "images": {
         "bud": {
@@ -1640,7 +2845,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "e912735c-92fc-4c4e-9bb1-23182b435090",
+        "sourceSHA256": "29b1081c5addcbe28dfa31c6c56848aeab2610b26c430840c7746dc06568adde",
+        "keyVideoSHA256": "4f2befead0bb79846e00c284d3ac262e429ffae211cd4038b96ea10ed3e96539",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "d6f9367907ad267e4e374bb23a2384ad6b8d47433c6d95abc3fd7a1274cfcf94",
+        "atlas": "assets/flower-stems-v101/BG03-camellia-scene-c-v83/atlas.webp?v=d6f9367907ad",
+        "framePattern": "assets/flower-stems-v101/BG03-camellia-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-camellia-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 28,
+            "id": "BG03-camellia-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "8eb61b31-11f0-4a6c-8b23-6f7f5f766232",
+            "sha256": "a13a8b3dc475c8e461c31ba29d69c58790d06f56838a4fd3a33ff7d41bd7cef3",
+            "sourceSHA256": "634be8518171cd33378cab712fcfd832c5a676eafe0aac4b451214df87c3521e",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 28,
+            "id": "BG03-camellia-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "111cb854-0869-4edf-a61b-ba24fb1fb0dc",
+            "sha256": "df71805570cb30ea7c4c3cb355118901e5464c5c7367705d311a03ffe3cf6d9b",
+            "sourceSHA256": "d6a1931c73de126d3e8ecd1457ab97a7c6eb419283812bf3b0f9fd6a8da5aac1",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-camellia-scene-d-v83",
@@ -1655,8 +2906,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "d92cc7d205849c30c57e534741454c04331720955b189d8994ef0fef696aeb4a",
       "images": {
         "bud": {
@@ -1700,7 +2951,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "7afd45a4-014d-4c9a-9d87-a352bc60984e",
+        "sourceSHA256": "7010fcafcdb8c2adc2ee0b4a7fb420977830ee16c01675e56e66ad6ceceeeee6",
+        "keyVideoSHA256": "6d7281b9b315ca83460e17ee5578ac757e9f65f9766676daa12905d17e1793d3",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "d9e6df8e1a170ba0e4280bc2d66e5eddee805e10f8fa7a615e76e2dd1d2c74c9",
+        "atlas": "assets/flower-stems-v101/BG03-camellia-scene-d-v83/atlas.webp?v=d9e6df8e1a17",
+        "framePattern": "assets/flower-stems-v101/BG03-camellia-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-camellia-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 29,
+            "id": "BG03-camellia-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "669370d5-8505-42ee-bd39-6a016ba239b3",
+            "sha256": "b3395080473cc2c88c01ea4c6e634fd2ed59d5936724f3f787f8855bdd1138df",
+            "sourceSHA256": "072475128ecf44b5a27f6169997e2e6f78b5b9e34417bf286b6d91261a36b72e",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 29,
+            "id": "BG03-camellia-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "a6cbb790-aebb-4a09-b04f-69fc267a3698",
+            "sha256": "1dc072f8deb6b2515b608d9f68ea4521f53b7b50ed761b8068b6d82f923bc961",
+            "sourceSHA256": "34fbe4537af63ebb566312d5a61b3e1e54df6bb27f11b3c0c00808659a3f6276",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-hydrangea-scene-a-v83",
@@ -1715,8 +3012,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "f920c6162327a946f739becf0644cd987f0aa55b16d2e1b9fd4583c07ce93e7e",
       "images": {
         "bud": {
@@ -1760,7 +3057,55 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "e53dfed0-21b0-40f6-85ca-d78d1c3ac384",
+        "sourceSHA256": "ed8b55c70365bedbd8facf335fe6403ebc1063eadbd60b4274b12a8bcbd75589",
+        "keyVideoSHA256": "1c9b59c7b537a5ea2641dd1e1ae186fe9f3722d0443749cc9911b5f09eb3e93a",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "d1e10f11160f49182ef923080b9bbc7ace27d7e4b7b04fad35c00bd946323e7b",
+        "atlas": "assets/flower-stems-v101/BG03-hydrangea-scene-a-v83/atlas.webp?v=d1e10f11160f",
+        "framePattern": "assets/flower-stems-v101/BG03-hydrangea-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-hydrangea-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "i": 8,
+            "id": "BG03-hydrangea-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "9df71ccf-ba2c-4257-a58c-7998f2b29c45",
+            "sha256": "bd5a4bc3c01d6e0db469029af47d01ebfc2f05afa35ebf41849b354005869be1",
+            "sourceSHA256": "23adc1fa26049b3f23a4b8c483629f3630b113e3d685c7695fbb2529ec30c8da",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          },
+          {
+            "i": 9,
+            "id": "BG03-hydrangea-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "51491aee-7c34-4251-b04d-34c3b4828fae",
+            "sha256": "47e782b6c432352dd8fc228e586f8b3c08225a815737d853ca575018c03df16d",
+            "sourceSHA256": "0a0e7c90552af492e975642e73831b0c64eb76adf76e04bb6df5ed3b8062e60d",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          }
+        ]
+      }
     },
     {
       "id": "BG03-hydrangea-scene-b-v83",
@@ -1775,8 +3120,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "2a7dff9a7d16c83e949c94030f796d6893d41253c0c07447f2a92e62c74a09e4",
       "images": {
         "bud": {
@@ -1820,7 +3165,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "e904cc6c-52de-42ae-b687-7526f3d7813c",
+        "sourceSHA256": "debc1ca543c03e7145ed264c3e7833c34503162ed32cfbeea3565a4ef31ad40d",
+        "keyVideoSHA256": "f8d22bcee9b149270d1aab895b13c9d9f061850d919fbe0d4acae8146b1a8ea6",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "c287f576b4eb3ca4333fa5e9b4dc1977c9c0c136e4c208a75d3f29042a0ba33e",
+        "atlas": "assets/flower-stems-v101/BG03-hydrangea-scene-b-v83/atlas.webp?v=c287f576b4eb",
+        "framePattern": "assets/flower-stems-v101/BG03-hydrangea-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-hydrangea-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 30,
+            "id": "BG03-hydrangea-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "03877e37-d25a-4c89-abe2-d030b4ab3651",
+            "sha256": "428c9e4a4cf3e99c768ac0091040f517bd584510130dfd5d469f1cc418fe8f0a",
+            "sourceSHA256": "2794f46b7d406cea2de2f8ac4d52f356ceec35194cdeaaa712e9b27c3fe530f1",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 30,
+            "id": "BG03-hydrangea-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "073942b3-f56a-4995-8df5-4974c0f64462",
+            "sha256": "3e8a605be428f6caeaec68b69a0dbe3c59119994e1c1b304e8f6360ee571f4e6",
+            "sourceSHA256": "26c768eaaa88ff05a31d336807d5dcbd41fd91052cba8fab01bfbcb0f903e6e2",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-hydrangea-scene-c-v83",
@@ -1835,8 +3226,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "3710dc7ba0611d39c5793fdeeca30dc0297042d1d54566ff52df9f0d0263c7c8",
       "images": {
         "bud": {
@@ -1880,7 +3271,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "84ddd099-ea86-4713-9d64-a0a0c23f0beb",
+        "sourceSHA256": "9b60c3a9fdf559b68e5a7d1a07590011ca76daa673cd2d0ce8d582f9a2aec27a",
+        "keyVideoSHA256": "cb1daae8b32c63e5c02fa427b2fede57bd166df740326ea22937558cace5b73e",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "b916d3f6d8b1158ce61e942314ac2efd0463c23862b338137ab01f1b0ed3bca2",
+        "atlas": "assets/flower-stems-v101/BG03-hydrangea-scene-c-v83/atlas.webp?v=b916d3f6d8b1",
+        "framePattern": "assets/flower-stems-v101/BG03-hydrangea-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-hydrangea-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 31,
+            "id": "BG03-hydrangea-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "0d77ffe9-81ef-4077-a888-4ad87d4278a6",
+            "sha256": "1adcd814a9c8c78c32826975460c1c99a22cd3139c198c93235b7fe1cf95a956",
+            "sourceSHA256": "29c38ad809f76cd46634456b04fa35671d2de7a7457051bc0f5f03b9aacb5a82",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 31,
+            "id": "BG03-hydrangea-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "69d8ff40-260d-47b8-aed7-34c6371b3580",
+            "sha256": "ec7aac7aca050ba97d5fd58bca00c186c22f483106b03f29fed0877ec987315e",
+            "sourceSHA256": "33c1457f8194adcba315bf173483d6b406e9f591abdf1dddf0b935100f1ec851",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-hydrangea-scene-d-v83",
@@ -1895,8 +3332,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "db2261a92678fa7e7a21fc6b98a4824c0b9b0ecce1467b0825ee25bbbe751163",
       "images": {
         "bud": {
@@ -1940,7 +3377,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "07990afe-5ec4-4bd1-8046-c9ded4ad7d36",
+        "sourceSHA256": "ddc28e6187c21637acd6f9394ab6939c45fb17c0239d3163f768ece2520577d8",
+        "keyVideoSHA256": "3ab0483c97b0807e72b94e9f29ebedc0b06196cd659148f8890ef029eb9ffb25",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "1816f767cd7bdaf0ed33ff245e45f95099ebc4d0f1bef369fd545a7fe6f7d620",
+        "atlas": "assets/flower-stems-v101/BG03-hydrangea-scene-d-v83/atlas.webp?v=1816f767cd7b",
+        "framePattern": "assets/flower-stems-v101/BG03-hydrangea-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-hydrangea-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 32,
+            "id": "BG03-hydrangea-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "396851e2-7a5d-44b3-9983-1fbe8c2a7bda",
+            "sha256": "5ba0f4d6ab7387b1897d8ae9387ea9c9c533debfd6f8042f5e843e78c3356b6c",
+            "sourceSHA256": "b2528961e49346d86c91e9916c7d50da302f9be10c2354a2ffa85ef1c471b4e8",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 32,
+            "id": "BG03-hydrangea-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "b6356e45-dbec-427a-a0da-facce956e619",
+            "sha256": "9ab583e9b23e6bd6674f5120c4a1a8a53944429ccb5d99e8920a38d41d8482c3",
+            "sourceSHA256": "f60f9f634e8ad98ea54b676f011a97c4043d70834ffa2f95e8fc60d91aa892f1",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-lavender-scene-a-v83",
@@ -1955,8 +3438,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "8d9aaf92bebaa23f4b711844a7993d9080fa8f1d3d9dfd7b96197de021a516c1",
       "images": {
         "bud": {
@@ -2000,7 +3483,55 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "7172ff13-69c9-4a97-bca5-e3053b17fdf5",
+        "sourceSHA256": "4a21210872ae5c89a9a50ea2af0ab54eb29bfd9fa1f9d804105ebd34bbf72514",
+        "keyVideoSHA256": "630191d5ff078b805a9c9c0c3ae4979779b0dcb60a3b67af380d3c5009dba339",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "224fe859eaee76e244834a6846e6ab362af5ec8315f1937df82b9d506399d8d0",
+        "atlas": "assets/flower-stems-v101/BG03-lavender-scene-a-v83/atlas.webp?v=224fe859eaee",
+        "framePattern": "assets/flower-stems-v101/BG03-lavender-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-lavender-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "i": 4,
+            "id": "BG03-lavender-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "093d1887-cc04-4f94-9163-94e222dc6756",
+            "sha256": "38dfbd6d1a7f29749284e52d93fafe54c2684e006c9ad0e920c56cc45044f990",
+            "sourceSHA256": "82a6825d1635ba767bedd16939611830eba0ea6aa50599e78b788d98e29b7b2e",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          },
+          {
+            "i": 5,
+            "id": "BG03-lavender-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "d586448e-2a3f-48c4-bc18-83a644df1e75",
+            "sha256": "bee93a05bad0c4b9f93fe061d9c1a4a452e078209f3a77ff74e70bfb2a91d234",
+            "sourceSHA256": "9e2ec697140f8dcc5601ecdb265c801cbf1cd60040a6636461f41f1a718871f9",
+            "http": "200",
+            "exit": 0,
+            "error": ""
+          }
+        ]
+      }
     },
     {
       "id": "BG03-lavender-scene-b-v83",
@@ -2015,8 +3546,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "a2143f1ad5166ed5299c7393c8bdf427e9b6974029a6284c31f710f0b9afa994",
       "images": {
         "bud": {
@@ -2060,7 +3591,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "8b598c0b-bc03-4a16-9025-7d47ce275f6b",
+        "sourceSHA256": "4f7d7d81b6008e85dee2dd7179951fc6f5ea465a0223043e5ed8fc0c628572fd",
+        "keyVideoSHA256": "64a93de7ab8f1befe48552d2439dfc069e844d1e7e39e4d723af90a707816787",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "4ad4365d2a01833d929b6f88b45803b50aca7b47c25cc8d28331b1d2c8a7c54b",
+        "atlas": "assets/flower-stems-v101/BG03-lavender-scene-b-v83/atlas.webp?v=4ad4365d2a01",
+        "framePattern": "assets/flower-stems-v101/BG03-lavender-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-lavender-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 33,
+            "id": "BG03-lavender-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "c65cfd54-8b5f-47b9-996d-97a00a8c89e6",
+            "sha256": "ded39f507f9ffd857e139709706224ddc3c9841c07028ecb67752728372a5574",
+            "sourceSHA256": "333e7152d49df1f7e798d218418f8a8e3436f4ccc7406dfea3a12ceb16d8a980",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 33,
+            "id": "BG03-lavender-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "149682de-3312-4782-8fad-01b0ccd756e5",
+            "sha256": "40244ad8f42387d4502b419da885f342fe41e35124daf504910ffe0826d92378",
+            "sourceSHA256": "7848ae4cb9fb6d595ec78f5dc0336dfaff6f4e5fee355fb254f8552658636999",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-lavender-scene-c-v83",
@@ -2075,8 +3652,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "02e57c7cd96208b083d5d207257e8d2a5510a614576b9471c930a52c462bf269",
       "images": {
         "bud": {
@@ -2120,7 +3697,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "23aad575-63ed-4b92-b849-7608ea8bf15d",
+        "sourceSHA256": "61279d7dfe268914ddda7823e4ca94100f96d1c40f9c70dac925b9b8fe63fa7d",
+        "keyVideoSHA256": "922130c6cf19518fc1073d4104323827037c551c50bae4b8fbab2231fb8c738a",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "d4e2b4dbc49be0592ea0e3ce0b32db11df3e5ff4006021e53c4f3030961394e1",
+        "atlas": "assets/flower-stems-v101/BG03-lavender-scene-c-v83/atlas.webp?v=d4e2b4dbc49b",
+        "framePattern": "assets/flower-stems-v101/BG03-lavender-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-lavender-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 34,
+            "id": "BG03-lavender-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "b80d94fd-cee6-4ad5-b6e4-6b06e0985049",
+            "sha256": "6a3585af7beafe3405c9ab03edf7df01ad211341362ebe42359a43ef59ff1653",
+            "sourceSHA256": "c630aa5a7720953b5bfadc7abacc988be23afce7eec3832752ebb34f2531669a",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 34,
+            "id": "BG03-lavender-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "7bb2c89f-4dee-47ce-a1df-d5229f8b0d5d",
+            "sha256": "3446a70a25cd36bdaa5b3d82415b3d324664cdc2a754b4dff1e99dd89e55f609",
+            "sourceSHA256": "0a41cc31f097da650d1d2e13c4f87ed8a13336833bcbcc5d896a08382bf89b64",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG03-lavender-scene-d-v83",
@@ -2135,8 +3758,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "1c8ede72bc09a0abb75cb28de9ec307643a36eaba9c651bb52efc30ecf85b41b",
       "images": {
         "bud": {
@@ -2180,7 +3803,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#80FF00"
+      "keyColor": "#80FF00",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "4bbc3d2f-4bed-461c-b446-43250cde8a42",
+        "sourceSHA256": "700443f04e9633f2a6394f664a7dd11785cc98a67e1bbaf425b257f86897a30b",
+        "keyVideoSHA256": "814e45668fb4963b882727730eb968970b7b8157d232cc238e23f477e8f02c1e",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "91b02833d14aea4269705c97525b8425e04f21ded14db57fe5cc6e018b513aa6",
+        "atlas": "assets/flower-stems-v101/BG03-lavender-scene-d-v83/atlas.webp?v=91b02833d14a",
+        "framePattern": "assets/flower-stems-v101/BG03-lavender-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG03-lavender-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 35,
+            "id": "BG03-lavender-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+            "media_id": "47cce312-8890-4ac1-ae8d-b81606008bc5",
+            "sha256": "1a63cd4e1b0bbdc95606f868f1ca445eaa0480c2956444ccc139fd0401620ea3",
+            "sourceSHA256": "d216e6792a63ad2b370bff0209dc752e61cbbe9777b3c7adf946ac9267d61118",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 35,
+            "id": "BG03-lavender-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+            "media_id": "7fb5465b-9fd0-4314-be37-357a0ec5b6f7",
+            "sha256": "ddcc53d1358753de5d4cfa88f1c11dfb282f613c2afd70288b6450ed7bb5988b",
+            "sourceSHA256": "540adfd566d08575ddc4c5bc9a233754f5aa729184b7def0665580268ab41815",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-buckwheat-scene-a-v83",
@@ -2195,8 +3864,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "08b64a89abc1d2b1d6a7494f479f141116abd5cdde17d9be9e517ddfc031d823",
       "images": {
         "bud": {
@@ -2240,7 +3909,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "c990dd2a-821f-4d23-aa01-a8069d2b73eb",
+        "sourceSHA256": "b10e1a0d4994249d1250acaa4088fb15afd43cf02c47d9bceb6f6c5e738d1171",
+        "keyVideoSHA256": "f03e7ee176343fb43bab1d40583f7d56b4bf858102029ec037de12799418ca66",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "fb275f977831f66c341c824a48cce1ba7c6bafc43aac0004b142def25e35ec81",
+        "atlas": "assets/flower-stems-v101/BG04-buckwheat-scene-a-v83/atlas.webp?v=fb275f977831",
+        "framePattern": "assets/flower-stems-v101/BG04-buckwheat-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-buckwheat-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 36,
+            "id": "BG04-buckwheat-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "93666cbe-09a4-45bc-8e3b-85868fbf46a0",
+            "sha256": "902f03e00374667a710e4093193e8e1414a547e99ba38e5d68adc4d9e41dc43f",
+            "sourceSHA256": "b0ca447121fab719041884e18a6f936e703a6403cb255d401cf382b584e69f83",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 36,
+            "id": "BG04-buckwheat-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "e95dd3e2-e7ac-42f7-a922-5cc719980d4d",
+            "sha256": "1082531391769541961f68837879be4ad63ba83a7f2c90ffd31c181acd2354c4",
+            "sourceSHA256": "f0e17c858d0f884b8aea47bc1b8a01d6f8a6261249626ef056c21263615157ae",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-buckwheat-scene-b-v83",
@@ -2255,8 +3970,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "40493c4425f852c5ccdd0436c26ad86286c1d172a2f7c84c58e9c99e4a17f82b",
       "images": {
         "bud": {
@@ -2300,7 +4015,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "52f98268-63e5-4b7b-a88e-0dbd8c6e5eba",
+        "sourceSHA256": "4aae048956ee9a94921ed843b20a4abb6540c148f4b4fef613b78307b7f4763d",
+        "keyVideoSHA256": "a26c53a42de1bb301ba9ecaaee16bc3d8dc6e1829152357f16541f56d52e6217",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "ed8cd2eb92f1f0097c3101c81b5a4ae973c8279da4b5365057616b1b33ccac5c",
+        "atlas": "assets/flower-stems-v101/BG04-buckwheat-scene-b-v83/atlas.webp?v=ed8cd2eb92f1",
+        "framePattern": "assets/flower-stems-v101/BG04-buckwheat-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-buckwheat-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 37,
+            "id": "BG04-buckwheat-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "b17c3462-540e-43c8-b5a1-d0ece2811e61",
+            "sha256": "295f5a43aeabaa92ffba80f75de8792f12e68cd6440708a5f0d961b6c22a95b9",
+            "sourceSHA256": "1db4d5f4508865fbef46a658297d2034a8f256f0970066870a5fc76a13138586",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 37,
+            "id": "BG04-buckwheat-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "ff75b7cf-6eaf-47fd-accc-10a3891c7fb9",
+            "sha256": "290d09c2240f1cbe3ad0e39d948866534774b2a2b58dcfca2c90174d2f67e684",
+            "sourceSHA256": "772aa6a436f4acb9c7287f055cc5e390de5e9813a980d38fb32741405c1c4506",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-buckwheat-scene-c-v83",
@@ -2315,8 +4076,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "d1bad7f0fc20ce7982a708fa1f3dbe1947fec26255aab78833b73ba3484aab3e",
       "images": {
         "bud": {
@@ -2360,7 +4121,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "ad2b064e-6874-4027-b937-b03c9f9b6058",
+        "sourceSHA256": "a1c3f0661690cd9c19693f8d54c07892dc4d1e7a5a02f73b3abdbbf7415ec8d6",
+        "keyVideoSHA256": "d7e85fcfc6dee86bf002e9ec12f1eabfe0152cd6b49ca3dc8f620117f985518c",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "e8cfb5d9622f55b906fcb9f779797fe322d323f86a68e165a4d674e4444093a8",
+        "atlas": "assets/flower-stems-v101/BG04-buckwheat-scene-c-v83/atlas.webp?v=e8cfb5d9622f",
+        "framePattern": "assets/flower-stems-v101/BG04-buckwheat-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-buckwheat-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 38,
+            "id": "BG04-buckwheat-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "9e85a8e8-abb0-467e-9f32-eab2290b36b6",
+            "sha256": "98920eec329669bafaa25ccf13a0ff2222212422e5b88d29ee1f87504eda606f",
+            "sourceSHA256": "df89ea48429f0175096a2353972010268f52911e085f3826e47f5c1df01b83c1",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 38,
+            "id": "BG04-buckwheat-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "5c380bfa-f789-446e-b630-b7f00bc4f0fb",
+            "sha256": "fd0fbc68a5b2dcee728cbc1e382c37b3b95c377b18a0db380d613399bf91c0e6",
+            "sourceSHA256": "9db2ed28471cc739f9b0760f21ab07b8a0ef3683b8dddc73cf16db036849a5b5",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-buckwheat-scene-d-v83",
@@ -2375,8 +4182,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "32d2b1adaca4e335c73a7ca91b515b002082b462f17a173400f77dcc69f02c5d",
       "images": {
         "bud": {
@@ -2420,7 +4227,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "3f45cd4a-0239-4554-941b-e87078a1dfdb",
+        "sourceSHA256": "2d0e7904b7e13bddb9269d0f147f0dadd478163257894fae59616d68b5fd4eaa",
+        "keyVideoSHA256": "3fe5aca0001b69ef20f1a30b194a2715ae349a93464ebb4d33d50da50f700a69",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "6b695139df734d2dd00b99142fae84183c211454be98311cb8acc533e40a3616",
+        "atlas": "assets/flower-stems-v101/BG04-buckwheat-scene-d-v83/atlas.webp?v=6b695139df73",
+        "framePattern": "assets/flower-stems-v101/BG04-buckwheat-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-buckwheat-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 39,
+            "id": "BG04-buckwheat-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "4fe974eb-6fa1-4a0a-998e-a9d893aabbd2",
+            "sha256": "1a9450cc767af3ea75b6772876e808ed17a81da14c33e08a954bcc7a3bf9d0be",
+            "sourceSHA256": "37837fdcc560b12e702ec34795547af4a8a540cd25a2806bd6cb673ee0d1787a",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 39,
+            "id": "BG04-buckwheat-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "78357df6-1147-40c7-b1d5-265f48d1dfb2",
+            "sha256": "ebca82be16ade107cf8e0d4e4bcd33d87b43df287aa475e94826857da3596909",
+            "sourceSHA256": "6d105bacde667ae774168c1d5621e064f1c8a1e6a5e0114573334ad7e0453803",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-hydrangea-scene-a-v83",
@@ -2435,8 +4288,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "303fe94520b2e94768c0b9a28562da256b10371308e09119d6ffba98179c1e42",
       "images": {
         "bud": {
@@ -2480,7 +4333,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "5b6cf43d-1a82-4de5-8fbc-f9a25f0a7c32",
+        "sourceSHA256": "0f2240885c2c44d010eaf4ab3c3cba584f46eaf5df0359e8e5a98afc4687d00d",
+        "keyVideoSHA256": "ddbe466a95b0dbeff6c77603efad55abe183e139a3a8047b66c5fb35f794df44",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "7606e4f6411765401c20714cc1948a3acaf53d6efa131feb47e650d3f45a3403",
+        "atlas": "assets/flower-stems-v101/BG04-hydrangea-scene-a-v83/atlas.webp?v=7606e4f64117",
+        "framePattern": "assets/flower-stems-v101/BG04-hydrangea-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-hydrangea-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 40,
+            "id": "BG04-hydrangea-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "19bdbaa1-7171-4d17-be9e-936760b2b806",
+            "sha256": "050479fed3b3c239b4b7e3950bd96875565bd6648f89a75c4d75edcf1803e708",
+            "sourceSHA256": "d5552e288a0bb56f1a194a6ef2d73001b8f41cbe94f1c2921c055109b86d3412",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 40,
+            "id": "BG04-hydrangea-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "8a0dbc66-dd7c-45c1-a876-ee0ad2b817b5",
+            "sha256": "30a82372edc2389fcf2efe1e3561df793ff503f6c6bbc2758cdd8bb8a09b194b",
+            "sourceSHA256": "aabdb0bcde08724a92a1e6a1dcfec74f914db12448feff8f1572c840321ffe24",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-hydrangea-scene-b-v83",
@@ -2495,8 +4394,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "66cbf58f40a24efc6fbe5e8afeb6a2080cc32a9e8cebf4353fbe50d23e55d6ab",
       "images": {
         "bud": {
@@ -2540,7 +4439,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "e27cc7fd-e60d-4070-99da-69494b5f56af",
+        "sourceSHA256": "4f49c35a536a9c932fa4d09d82f6d85b883ff2783e9969379d52164ca1fdd411",
+        "keyVideoSHA256": "ed882b8c73b52e51c39ccfa01dca3d319bb170a705e177bf716851bc740e163d",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "95204233f4be1a807f29d617d2085c1bbdbbe8e7349e4ec8a6c06b1ce99adce8",
+        "atlas": "assets/flower-stems-v101/BG04-hydrangea-scene-b-v83/atlas.webp?v=95204233f4be",
+        "framePattern": "assets/flower-stems-v101/BG04-hydrangea-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-hydrangea-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 41,
+            "id": "BG04-hydrangea-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "7a42bc56-4f26-455d-a0d1-fe56b23f28be",
+            "sha256": "b4b2eb98e482c9729b083716ae2b1d268f7fcab40e924a4a41a739f6a72fdbff",
+            "sourceSHA256": "74bfd2bddca67139e8a08bd1732854cbccc1120242c8ad7a4dceca4495383984",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 41,
+            "id": "BG04-hydrangea-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "22499325-bbf6-4559-a1be-0056aa2149ca",
+            "sha256": "f790aa66733eee4af8dfbd8e191702803486039d43a268d62cbb04160cd7839b",
+            "sourceSHA256": "44b2bd5804b34090847b383065ec45b9db0ae156fff3422a9afc34725638d6e1",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-hydrangea-scene-c-v83",
@@ -2555,8 +4500,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "c5e9639511aaaf8c46d90451527617166fa7223449486ebb8097dfcf91c615cf",
       "images": {
         "bud": {
@@ -2600,7 +4545,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "b2a6444c-f15d-4bba-8254-b0ee56d1cfb4",
+        "sourceSHA256": "a62aa808a367fb837692e754130a94278aa5040f1593e5d79d81a8650f72fbd0",
+        "keyVideoSHA256": "2b55c1549d84bb76b13c4859ee48c7e8495237802da6af0ea269838766d37ec3",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "b29a65a9ae80e8d18ea196789ebf8f39d6d13ff0bddc0b33d60c14915b8488d2",
+        "atlas": "assets/flower-stems-v101/BG04-hydrangea-scene-c-v83/atlas.webp?v=b29a65a9ae80",
+        "framePattern": "assets/flower-stems-v101/BG04-hydrangea-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-hydrangea-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 42,
+            "id": "BG04-hydrangea-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "1c3dc165-d606-4e3e-98ce-2bbc1de42008",
+            "sha256": "79f090f6cd6d2aabb25db4d482eeed50837ddfeee825ea08524de485c23548f8",
+            "sourceSHA256": "0cad0d03606435f8fbfc764d94ebe0908b433221943abbe52865015357ec34a1",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 42,
+            "id": "BG04-hydrangea-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "a7549717-5f95-4424-a0f0-92fbf8fc1ceb",
+            "sha256": "ce92131889e750b22aa11f7d9e1c3f3d0918841831bad2d6387161e92328fb6f",
+            "sourceSHA256": "55df6d6371560895f1dc8b8893823cff1ebcdcdbee075db6c687d8df48b194d2",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-hydrangea-scene-d-v83",
@@ -2615,8 +4606,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "dbd3d6dfc18a704069c27461415ba1c1d54f9be8fee3243dfb1e5768cd277ff6",
       "images": {
         "bud": {
@@ -2660,7 +4651,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "044537f1-992d-42b9-9227-b06e969ef5b4",
+        "sourceSHA256": "ab4597173de35513b55184bd4ff37fadb35438282280a2732f7c67be7d9d057b",
+        "keyVideoSHA256": "efdc419bdd22914565fe29548a2d07989d3077e887f9898541bf500743b29c41",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "5ede23c59db17bdd7a0db1f35a4e0ec743993f9d2b11cceb9d012316f3a91ee3",
+        "atlas": "assets/flower-stems-v101/BG04-hydrangea-scene-d-v83/atlas.webp?v=5ede23c59db1",
+        "framePattern": "assets/flower-stems-v101/BG04-hydrangea-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-hydrangea-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 43,
+            "id": "BG04-hydrangea-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "c4601c9e-b115-4f74-88c7-55224dc9fa09",
+            "sha256": "30d6c00ade5843701c97f2484b6df3628a59cbf979cc2ca107b149b779b6936b",
+            "sourceSHA256": "3ec8a18e7cd9c267e19a29e120e0417b98c9156fdd12248342089af7a90f8357",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 43,
+            "id": "BG04-hydrangea-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "641910e4-7753-4697-bb09-cb79a10aa5ca",
+            "sha256": "4b01cf77132ebd62d0de14ea450a190d06a2660c489081e30a7e254c9954c2fa",
+            "sourceSHA256": "3fbe8f8cc98dc4601cf07e827ce8475f3ea2fba6ae4d6f8e61b21989d57a9bfa",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-lavender-scene-a-v83",
@@ -2675,8 +4712,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "f6e47c184e57b08be32da192c6589bfd36497b62f8fd89cd12829fe95abd8dca",
       "images": {
         "bud": {
@@ -2720,7 +4757,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "53762700-3102-4e79-880e-a837c7a11ce0",
+        "sourceSHA256": "4281c7ba3c7e137607f1be886e21e7cdae1deae027b28db5b382cf772f3eac84",
+        "keyVideoSHA256": "46a5109485a1d6d078afa60dea051fcab8e02418cd7ba01b68a0720e178d5674",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "f7f71093613909545f1e095f0aae3eb0da96ca2fde4395abeba0dcb6414b3986",
+        "atlas": "assets/flower-stems-v101/BG04-lavender-scene-a-v83/atlas.webp?v=f7f710936139",
+        "framePattern": "assets/flower-stems-v101/BG04-lavender-scene-a-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-lavender-scene-a-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 44,
+            "id": "BG04-lavender-scene-a-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "3b325a11-37e4-4c18-8421-10593a608209",
+            "sha256": "668498eb2f595c59a66f8e1dd4fcf5db1ce48fbb91bfc3a21a4e031137d4d3d1",
+            "sourceSHA256": "73ff4c2f9c5390f30b3ccf1b6aea19cd468c21cdf262e78a4c4c4d034c3dab33",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 44,
+            "id": "BG04-lavender-scene-a-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "12b5d7a6-d488-4fac-8dca-79bc4aa090b1",
+            "sha256": "6c2fec578c9f4197af40750841e920911795fb6cc7116927238acceb716cd0e1",
+            "sourceSHA256": "d091d3e9867149d9db9a379fdc7bb407f8d4bd1d242fc5ab83d15070e90164fb",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-lavender-scene-b-v83",
@@ -2735,8 +4818,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "57966c56b498075958c8c91110498f710919d869d96bcd8fdeba231786a5bf8a",
       "images": {
         "bud": {
@@ -2780,7 +4863,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "67bde3c8-6d29-46e2-b1d2-b0e90f98a26c",
+        "sourceSHA256": "0a3ce7fe54d6d65686777d15312a940e949f2b29d870552692a48ae343117a07",
+        "keyVideoSHA256": "a8730d46dee5a35afb3e8f4b809135c725bf19b2b291a5a0d6a1ce04318f1684",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "5389640784b2ddfc254b95f9e07a722ca5d342adc3bbd2f2f843441000af4baf",
+        "atlas": "assets/flower-stems-v101/BG04-lavender-scene-b-v83/atlas.webp?v=5389640784b2",
+        "framePattern": "assets/flower-stems-v101/BG04-lavender-scene-b-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-lavender-scene-b-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 45,
+            "id": "BG04-lavender-scene-b-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "4a7b978e-d98c-4c6a-8b86-30ae724c99fe",
+            "sha256": "9ec8665acfc04c4f8192e505283212568277d2cccfbdf1a6295c1bce0d22395e",
+            "sourceSHA256": "477d344c11f96acc05f5edbba8da5d76ae43d46aea9b694d8f010a13772b1d71",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 45,
+            "id": "BG04-lavender-scene-b-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "a7b903c2-e0fc-4832-b40d-e55fdbcd68f2",
+            "sha256": "42992578adb14e980e6503be2c6f99f4fba6bc0f207e48330880f985e493d358",
+            "sourceSHA256": "de82c5c5699bee8143ab2f1a5964220d08c14e0cf1d48a4b66c39e89f2784da0",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-lavender-scene-c-v83",
@@ -2795,8 +4924,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "04f0ce1b2b50bc84cd0e90e448fbbf465dc14f360c434569211e98c4cad34500",
       "images": {
         "bud": {
@@ -2840,7 +4969,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "cf8a6e65-45af-45e6-a84e-272c474f1722",
+        "sourceSHA256": "d74309a13b57b010a4cef0fe06f40631f5c22e665355b027e1467e13b82dc338",
+        "keyVideoSHA256": "9b036973368aea0f8e0f02d172ddac0845ffb5a7eee8072abcce0fa33e21f1b7",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "a5a2532b13e595c99ae2755c5e03e5a26474e0306242d9a275e1c4b7de6ab178",
+        "atlas": "assets/flower-stems-v101/BG04-lavender-scene-c-v83/atlas.webp?v=a5a2532b13e5",
+        "framePattern": "assets/flower-stems-v101/BG04-lavender-scene-c-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-lavender-scene-c-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 46,
+            "id": "BG04-lavender-scene-c-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "cba57d6a-3219-456a-b345-25c0a9d39305",
+            "sha256": "79508731512d1f1be3bc428f00a31d295f8794cd916e4821615d6a3999998613",
+            "sourceSHA256": "54639f4030f655ec8cdff405d301ab87b8ee9dd50f1ad2840041dff4814f5dca",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 46,
+            "id": "BG04-lavender-scene-c-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "f8627602-65da-41ca-a11f-471dc601957a",
+            "sha256": "9ff5e2492b586a92abc10eb01347c2783f00b61aca18a0da4ab118f5755df03d",
+            "sourceSHA256": "30cd8b5a9a90103d0692f81eb81e53fc76cbf1d779a851a8f5759ccf413d17c0",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     },
     {
       "id": "BG04-lavender-scene-d-v83",
@@ -2855,8 +5030,8 @@
       "roots": false,
       "width": 1024,
       "height": 1536,
-      "status": "images-ready",
-      "videoReady": false,
+      "status": "ready",
+      "videoReady": true,
       "sourceBloomSHA256": "773f70c87b7c5668ff5559a862d72d2ab090f46334d273e873f3b064da25ec3e",
       "images": {
         "bud": {
@@ -2900,7 +5075,53 @@
           "generatedImage": true
         }
       ],
-      "keyColor": "#FF8000"
+      "keyColor": "#FF8000",
+      "opening": {
+        "duration": 2,
+        "fps": 24,
+        "frames": 48,
+        "width": 320,
+        "height": 480,
+        "previewWidth": 192,
+        "previewHeight": 288,
+        "atlasColumns": 8,
+        "atlasRows": 6,
+        "jobId": "da7af646-a10e-4090-92a0-a927e655de00",
+        "sourceSHA256": "0a067ff3ac09bc300f11efec29e7100df4345faa2e729dd75b4bd25ca6c73d2f",
+        "keyVideoSHA256": "a0bc5b9003b4d839d5be652e789f08395a501769ae575d946765648120557e7b",
+        "fullyOpenBySeconds": 1.625,
+        "route": "GENERATED_BUD_AND_BLOOM_IMAGES_TO_NEW_VIDEO",
+        "status": "passed",
+        "matteRevision": "101-r3",
+        "atlasSHA256": "c18909d32b2fd5f131011306cc6ba55a1c2922469a407bb44c43d454ff215aec",
+        "atlas": "assets/flower-stems-v101/BG04-lavender-scene-d-v83/atlas.webp?v=c18909d32b2f",
+        "framePattern": "assets/flower-stems-v101/BG04-lavender-scene-d-v83/frame_%04d.webp?v=101r3",
+        "keyVideo": "assets/flower-stems-v101/BG04-lavender-scene-d-v83/open2s-key.mp4",
+        "actualInputs": [
+          {
+            "index": 47,
+            "id": "BG04-lavender-scene-d-v83",
+            "role": "start_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+            "media_id": "bdd157d9-cd79-43ac-9663-617d714f9913",
+            "sha256": "cded7b301be759328539698f48f0e09b1a488ffdf7bb68cbadefe08ecd47188d",
+            "sourceSHA256": "9769a4767f433b5f7c595355134e247a398c3fb4e44c7db3f1354b7d93c9ad45",
+            "http": "200",
+            "exit": 0
+          },
+          {
+            "index": 47,
+            "id": "BG04-lavender-scene-d-v83",
+            "role": "end_image",
+            "filename": "ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+            "media_id": "c55793a8-9abc-46e1-89d1-9ad5512c44e8",
+            "sha256": "7057585b00038945d787f03abe45ed94a7cf032e68c6f21fdeca0840d63e940c",
+            "sourceSHA256": "184e046139bff9300bf8b8de41b234a179e5fb00b62b3159b6aa0acf07a2e7c4",
+            "http": "200",
+            "exit": 0
+          }
+        ]
+      }
     }
   ]
 }

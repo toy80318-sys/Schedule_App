@@ -5,7 +5,7 @@
   function normalizedAsset(asset){return root.jejuButterflyLoopData&&root.jejuButterflyLoops?root.jejuButterflyLoops.asset(asset,root.jejuButterflyLoopData):asset;}
   function isRetired(asset){
     if(!asset)return false;
-    const approved=approvedButterflies98.some(m=>asset.src===m.source&&asset.sha256===m.sha256&&(!asset.loopVideo||asset.loopVideo===m.base+'alpha.webm')&&(!asset.frames||asset.frames.every((p,i)=>p===m.base+'frame_'+String(i).padStart(4,'0')+'.webp')));
+    const approved=approvedButterflies98.some(m=>asset.src===m.source&&asset.sha256===m.sha256&&(!asset.loopVideo||asset.loopVideo===m.base+'alpha.webm')&&(!asset.frames||asset.frames.every((p,i)=>p===m.base+'frame_'+String(i).padStart(4,'0')+'.webp'||p===m.base+'png/frame_'+String(i).padStart(4,'0')+'.png')));
     if(approved)return false;
     const id=String(asset.id||'').replace(/^loop-/,''),source=asset.src||asset.frames?.[0]||'',sources=[asset.src,asset.frames?.[0],asset.loopVideo,asset.preview,asset.thumb].filter(v=>typeof v==='string').map(v=>{try{return decodeURIComponent(v)}catch{return v}}).join(' ');
     if(asset.useStatus==='rejected-by-user'||/^atmosphere8[45]-(?:cloud|butterfly)-0[1-4]$/.test(id)||/(?:source-assets|assets)\/(?:atmosphere-v8[45]|element-loops-v95)\/(?:previews?\/)?(?:cloud_0[1-4]|butterfly_0[1-4]|atmosphere85-(?:cloud|butterfly)-0[1-4])(?:[\/.?#]|$)/.test(sources)||rejectedAtmosphereHashes.includes(asset.sha256||asset.sourceSHA256))return true;

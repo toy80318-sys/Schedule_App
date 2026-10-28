@@ -1,0 +1,2051 @@
+{
+  "sourceId": "BG04-buckwheat-scene-d-v83",
+  "inputHash": "3bfd779df1229f8a6c39809140fc33b4377a3d6556b66270e9f8a86758ee5467",
+  "sourceUnchanged": true,
+  "sourceOriginal": "source-assets/flower-petals-v90/ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Petal_v90.png",
+  "sourceFlowerSHA256": "32d2b1adaca4e335c73a7ca91b515b002082b462f17a173400f77dcc69f02c5d",
+  "fps": 30,
+  "seconds": 5,
+  "width": 480,
+  "height": 480,
+  "frames": 150,
+  "rotationAxis": "Y",
+  "rotationDegrees": 360,
+  "camera": "fixed perspective, focal distance 1200 pixels",
+  "pivot": [
+    239.5,
+    239.5
+  ],
+  "model": "deterministic-two-sided-texture",
+  "backSurface": "same original image on both sides, physically mirrored on the back; no generated backside",
+  "periodClosureExact": true,
+  "encodedAlphaChecked": true,
+  "actualLastFrameDuplicatesFirst": false,
+  "keyColor": "#0030FF",
+  "projectedWidths": [
+    339.0,
+    338.7144775390625,
+    337.8582763671875,
+    336.4323425292969,
+    334.438232421875,
+    331.8782653808594,
+    328.75537109375,
+    325.0731201171875,
+    320.8359069824219,
+    316.04876708984375,
+    310.71746826171875,
+    304.8487548828125,
+    298.449951171875,
+    291.52935791015625,
+    284.09613037109375,
+    276.1603698730469,
+    267.7330322265625,
+    258.8261413574219,
+    249.45260620117188,
+    239.62640380859375,
+    229.36251831054688,
+    218.67697143554688,
+    207.58682250976562,
+    196.1101837158203,
+    184.2661590576172,
+    172.0748748779297,
+    159.55746459960938,
+    146.73605346679688,
+    133.6335906982422,
+    120.27403259277344,
+    106.68197631835938,
+    92.88294982910156,
+    78.90309143066406,
+    64.76913452148438,
+    50.50834655761719,
+    36.14849853515625,
+    21.71759033203125,
+    7.2439422607421875,
+    7.2439422607421875,
+    21.71759033203125,
+    36.14849853515625,
+    50.50837707519531,
+    64.76913452148438,
+    78.90310668945312,
+    92.88298034667969,
+    106.68199157714844,
+    120.27400207519531,
+    133.6336212158203,
+    146.73605346679688,
+    159.55746459960938,
+    172.07489013671875,
+    184.26612854003906,
+    196.11019897460938,
+    207.58682250976562,
+    218.67697143554688,
+    229.36251831054688,
+    239.62640380859375,
+    249.45260620117188,
+    258.8261413574219,
+    267.7330322265625,
+    276.1603698730469,
+    284.09613037109375,
+    291.5293273925781,
+    298.449951171875,
+    304.8487548828125,
+    310.71746826171875,
+    316.04876708984375,
+    320.8359069824219,
+    325.0731201171875,
+    328.75537109375,
+    331.8782653808594,
+    334.438232421875,
+    336.43231201171875,
+    337.8582763671875,
+    338.7144775390625,
+    339.0,
+    338.7144775390625,
+    337.8582763671875,
+    336.4323425292969,
+    334.438232421875,
+    331.8782653808594,
+    328.75537109375,
+    325.0731201171875,
+    320.8359069824219,
+    316.04876708984375,
+    310.71746826171875,
+    304.8487548828125,
+    298.449951171875,
+    291.52935791015625,
+    284.09613037109375,
+    276.1603698730469,
+    267.7330322265625,
+    258.8261413574219,
+    249.45260620117188,
+    239.62640380859375,
+    229.36251831054688,
+    218.67697143554688,
+    207.58682250976562,
+    196.1101837158203,
+    184.2661590576172,
+    172.0748748779297,
+    159.55746459960938,
+    146.73605346679688,
+    133.6335906982422,
+    120.27403259277344,
+    106.68197631835938,
+    92.88294982910156,
+    78.90309143066406,
+    64.76913452148438,
+    50.50834655761719,
+    36.14849853515625,
+    21.71759033203125,
+    7.2439422607421875,
+    7.2439422607421875,
+    21.71759033203125,
+    36.14849853515625,
+    50.50837707519531,
+    64.76913452148438,
+    78.90310668945312,
+    92.88298034667969,
+    106.68199157714844,
+    120.27400207519531,
+    133.6336212158203,
+    146.73605346679688,
+    159.55746459960938,
+    172.07489013671875,
+    184.26612854003906,
+    196.11019897460938,
+    207.58682250976562,
+    218.67697143554688,
+    229.36251831054688,
+    239.62640380859375,
+    249.45260620117188,
+    258.8261413574219,
+    267.7330322265625,
+    276.1603698730469,
+    284.09613037109375,
+    291.5293273925781,
+    298.449951171875,
+    304.8487548828125,
+    310.71746826171875,
+    316.04876708984375,
+    320.8359069824219,
+    325.0731201171875,
+    328.75537109375,
+    331.8782653808594,
+    334.438232421875,
+    336.43231201171875,
+    337.8582763671875,
+    338.7144775390625
+  ],
+  "perFrame": [
+    {
+      "index": 0,
+      "alphaBounds": [
+        153,
+        134,
+        342,
+        391
+      ],
+      "opaquePixels": 22635,
+      "borderPixels": 0
+    },
+    {
+      "index": 1,
+      "alphaBounds": [
+        152,
+        134,
+        334,
+        391
+      ],
+      "opaquePixels": 22478,
+      "borderPixels": 0
+    },
+    {
+      "index": 2,
+      "alphaBounds": [
+        152,
+        134,
+        334,
+        392
+      ],
+      "opaquePixels": 22467,
+      "borderPixels": 0
+    },
+    {
+      "index": 3,
+      "alphaBounds": [
+        153,
+        134,
+        340,
+        392
+      ],
+      "opaquePixels": 22330,
+      "borderPixels": 0
+    },
+    {
+      "index": 4,
+      "alphaBounds": [
+        153,
+        134,
+        339,
+        392
+      ],
+      "opaquePixels": 22214,
+      "borderPixels": 0
+    },
+    {
+      "index": 5,
+      "alphaBounds": [
+        153,
+        134,
+        338,
+        393
+      ],
+      "opaquePixels": 22097,
+      "borderPixels": 0
+    },
+    {
+      "index": 6,
+      "alphaBounds": [
+        154,
+        134,
+        330,
+        393
+      ],
+      "opaquePixels": 21837,
+      "borderPixels": 0
+    },
+    {
+      "index": 7,
+      "alphaBounds": [
+        155,
+        134,
+        329,
+        393
+      ],
+      "opaquePixels": 21664,
+      "borderPixels": 0
+    },
+    {
+      "index": 8,
+      "alphaBounds": [
+        156,
+        134,
+        334,
+        394
+      ],
+      "opaquePixels": 21383,
+      "borderPixels": 0
+    },
+    {
+      "index": 9,
+      "alphaBounds": [
+        157,
+        134,
+        332,
+        394
+      ],
+      "opaquePixels": 21052,
+      "borderPixels": 0
+    },
+    {
+      "index": 10,
+      "alphaBounds": [
+        158,
+        134,
+        324,
+        395
+      ],
+      "opaquePixels": 20694,
+      "borderPixels": 0
+    },
+    {
+      "index": 11,
+      "alphaBounds": [
+        159,
+        133,
+        328,
+        395
+      ],
+      "opaquePixels": 20286,
+      "borderPixels": 0
+    },
+    {
+      "index": 12,
+      "alphaBounds": [
+        161,
+        133,
+        326,
+        395
+      ],
+      "opaquePixels": 19880,
+      "borderPixels": 0
+    },
+    {
+      "index": 13,
+      "alphaBounds": [
+        162,
+        133,
+        324,
+        396
+      ],
+      "opaquePixels": 19399,
+      "borderPixels": 0
+    },
+    {
+      "index": 14,
+      "alphaBounds": [
+        164,
+        133,
+        316,
+        396
+      ],
+      "opaquePixels": 18903,
+      "borderPixels": 0
+    },
+    {
+      "index": 15,
+      "alphaBounds": [
+        166,
+        133,
+        313,
+        396
+      ],
+      "opaquePixels": 18363,
+      "borderPixels": 0
+    },
+    {
+      "index": 16,
+      "alphaBounds": [
+        168,
+        133,
+        316,
+        396
+      ],
+      "opaquePixels": 17800,
+      "borderPixels": 0
+    },
+    {
+      "index": 17,
+      "alphaBounds": [
+        171,
+        133,
+        308,
+        397
+      ],
+      "opaquePixels": 17216,
+      "borderPixels": 0
+    },
+    {
+      "index": 18,
+      "alphaBounds": [
+        173,
+        133,
+        306,
+        397
+      ],
+      "opaquePixels": 16589,
+      "borderPixels": 0
+    },
+    {
+      "index": 19,
+      "alphaBounds": [
+        176,
+        133,
+        303,
+        397
+      ],
+      "opaquePixels": 15928,
+      "borderPixels": 0
+    },
+    {
+      "index": 20,
+      "alphaBounds": [
+        178,
+        133,
+        300,
+        397
+      ],
+      "opaquePixels": 15245,
+      "borderPixels": 0
+    },
+    {
+      "index": 21,
+      "alphaBounds": [
+        181,
+        133,
+        297,
+        398
+      ],
+      "opaquePixels": 14524,
+      "borderPixels": 0
+    },
+    {
+      "index": 22,
+      "alphaBounds": [
+        184,
+        133,
+        298,
+        398
+      ],
+      "opaquePixels": 13790,
+      "borderPixels": 0
+    },
+    {
+      "index": 23,
+      "alphaBounds": [
+        187,
+        133,
+        291,
+        398
+      ],
+      "opaquePixels": 13040,
+      "borderPixels": 0
+    },
+    {
+      "index": 24,
+      "alphaBounds": [
+        190,
+        133,
+        288,
+        398
+      ],
+      "opaquePixels": 12243,
+      "borderPixels": 0
+    },
+    {
+      "index": 25,
+      "alphaBounds": [
+        193,
+        133,
+        284,
+        399
+      ],
+      "opaquePixels": 11424,
+      "borderPixels": 0
+    },
+    {
+      "index": 26,
+      "alphaBounds": [
+        197,
+        133,
+        281,
+        399
+      ],
+      "opaquePixels": 10594,
+      "borderPixels": 0
+    },
+    {
+      "index": 27,
+      "alphaBounds": [
+        200,
+        133,
+        278,
+        399
+      ],
+      "opaquePixels": 9741,
+      "borderPixels": 0
+    },
+    {
+      "index": 28,
+      "alphaBounds": [
+        204,
+        133,
+        277,
+        399
+      ],
+      "opaquePixels": 8864,
+      "borderPixels": 0
+    },
+    {
+      "index": 29,
+      "alphaBounds": [
+        207,
+        134,
+        271,
+        399
+      ],
+      "opaquePixels": 7957,
+      "borderPixels": 0
+    },
+    {
+      "index": 30,
+      "alphaBounds": [
+        211,
+        133,
+        267,
+        398
+      ],
+      "opaquePixels": 7086,
+      "borderPixels": 0
+    },
+    {
+      "index": 31,
+      "alphaBounds": [
+        215,
+        133,
+        264,
+        399
+      ],
+      "opaquePixels": 6164,
+      "borderPixels": 0
+    },
+    {
+      "index": 32,
+      "alphaBounds": [
+        219,
+        134,
+        260,
+        399
+      ],
+      "opaquePixels": 5234,
+      "borderPixels": 0
+    },
+    {
+      "index": 33,
+      "alphaBounds": [
+        222,
+        133,
+        255,
+        399
+      ],
+      "opaquePixels": 4276,
+      "borderPixels": 0
+    },
+    {
+      "index": 34,
+      "alphaBounds": [
+        226,
+        134,
+        253,
+        400
+      ],
+      "opaquePixels": 3345,
+      "borderPixels": 0
+    },
+    {
+      "index": 35,
+      "alphaBounds": [
+        230,
+        135,
+        249,
+        400
+      ],
+      "opaquePixels": 2382,
+      "borderPixels": 0
+    },
+    {
+      "index": 36,
+      "alphaBounds": [
+        234,
+        133,
+        246,
+        400
+      ],
+      "opaquePixels": 1419,
+      "borderPixels": 0
+    },
+    {
+      "index": 37,
+      "alphaBounds": [
+        238,
+        138,
+        242,
+        400
+      ],
+      "opaquePixels": 477,
+      "borderPixels": 0
+    },
+    {
+      "index": 38,
+      "alphaBounds": [
+        238,
+        138,
+        242,
+        400
+      ],
+      "opaquePixels": 477,
+      "borderPixels": 0
+    },
+    {
+      "index": 39,
+      "alphaBounds": [
+        234,
+        133,
+        246,
+        400
+      ],
+      "opaquePixels": 1419,
+      "borderPixels": 0
+    },
+    {
+      "index": 40,
+      "alphaBounds": [
+        231,
+        135,
+        250,
+        400
+      ],
+      "opaquePixels": 2382,
+      "borderPixels": 0
+    },
+    {
+      "index": 41,
+      "alphaBounds": [
+        227,
+        134,
+        254,
+        400
+      ],
+      "opaquePixels": 3345,
+      "borderPixels": 0
+    },
+    {
+      "index": 42,
+      "alphaBounds": [
+        225,
+        133,
+        258,
+        399
+      ],
+      "opaquePixels": 4276,
+      "borderPixels": 0
+    },
+    {
+      "index": 43,
+      "alphaBounds": [
+        220,
+        134,
+        261,
+        399
+      ],
+      "opaquePixels": 5234,
+      "borderPixels": 0
+    },
+    {
+      "index": 44,
+      "alphaBounds": [
+        216,
+        133,
+        265,
+        399
+      ],
+      "opaquePixels": 6164,
+      "borderPixels": 0
+    },
+    {
+      "index": 45,
+      "alphaBounds": [
+        213,
+        133,
+        269,
+        398
+      ],
+      "opaquePixels": 7086,
+      "borderPixels": 0
+    },
+    {
+      "index": 46,
+      "alphaBounds": [
+        209,
+        134,
+        273,
+        399
+      ],
+      "opaquePixels": 7957,
+      "borderPixels": 0
+    },
+    {
+      "index": 47,
+      "alphaBounds": [
+        203,
+        133,
+        276,
+        399
+      ],
+      "opaquePixels": 8864,
+      "borderPixels": 0
+    },
+    {
+      "index": 48,
+      "alphaBounds": [
+        202,
+        133,
+        280,
+        399
+      ],
+      "opaquePixels": 9741,
+      "borderPixels": 0
+    },
+    {
+      "index": 49,
+      "alphaBounds": [
+        199,
+        133,
+        283,
+        399
+      ],
+      "opaquePixels": 10594,
+      "borderPixels": 0
+    },
+    {
+      "index": 50,
+      "alphaBounds": [
+        196,
+        133,
+        287,
+        399
+      ],
+      "opaquePixels": 11424,
+      "borderPixels": 0
+    },
+    {
+      "index": 51,
+      "alphaBounds": [
+        192,
+        133,
+        290,
+        398
+      ],
+      "opaquePixels": 12243,
+      "borderPixels": 0
+    },
+    {
+      "index": 52,
+      "alphaBounds": [
+        189,
+        133,
+        293,
+        398
+      ],
+      "opaquePixels": 13040,
+      "borderPixels": 0
+    },
+    {
+      "index": 53,
+      "alphaBounds": [
+        182,
+        133,
+        296,
+        398
+      ],
+      "opaquePixels": 13790,
+      "borderPixels": 0
+    },
+    {
+      "index": 54,
+      "alphaBounds": [
+        183,
+        133,
+        299,
+        398
+      ],
+      "opaquePixels": 14524,
+      "borderPixels": 0
+    },
+    {
+      "index": 55,
+      "alphaBounds": [
+        180,
+        133,
+        302,
+        397
+      ],
+      "opaquePixels": 15245,
+      "borderPixels": 0
+    },
+    {
+      "index": 56,
+      "alphaBounds": [
+        177,
+        133,
+        304,
+        397
+      ],
+      "opaquePixels": 15928,
+      "borderPixels": 0
+    },
+    {
+      "index": 57,
+      "alphaBounds": [
+        174,
+        133,
+        307,
+        397
+      ],
+      "opaquePixels": 16589,
+      "borderPixels": 0
+    },
+    {
+      "index": 58,
+      "alphaBounds": [
+        172,
+        133,
+        309,
+        397
+      ],
+      "opaquePixels": 17216,
+      "borderPixels": 0
+    },
+    {
+      "index": 59,
+      "alphaBounds": [
+        164,
+        133,
+        312,
+        396
+      ],
+      "opaquePixels": 17800,
+      "borderPixels": 0
+    },
+    {
+      "index": 60,
+      "alphaBounds": [
+        167,
+        133,
+        314,
+        396
+      ],
+      "opaquePixels": 18363,
+      "borderPixels": 0
+    },
+    {
+      "index": 61,
+      "alphaBounds": [
+        164,
+        133,
+        316,
+        396
+      ],
+      "opaquePixels": 18903,
+      "borderPixels": 0
+    },
+    {
+      "index": 62,
+      "alphaBounds": [
+        156,
+        133,
+        318,
+        396
+      ],
+      "opaquePixels": 19399,
+      "borderPixels": 0
+    },
+    {
+      "index": 63,
+      "alphaBounds": [
+        154,
+        133,
+        319,
+        395
+      ],
+      "opaquePixels": 19880,
+      "borderPixels": 0
+    },
+    {
+      "index": 64,
+      "alphaBounds": [
+        152,
+        133,
+        321,
+        395
+      ],
+      "opaquePixels": 20286,
+      "borderPixels": 0
+    },
+    {
+      "index": 65,
+      "alphaBounds": [
+        156,
+        134,
+        322,
+        395
+      ],
+      "opaquePixels": 20694,
+      "borderPixels": 0
+    },
+    {
+      "index": 66,
+      "alphaBounds": [
+        148,
+        134,
+        323,
+        394
+      ],
+      "opaquePixels": 21052,
+      "borderPixels": 0
+    },
+    {
+      "index": 67,
+      "alphaBounds": [
+        146,
+        134,
+        324,
+        394
+      ],
+      "opaquePixels": 21383,
+      "borderPixels": 0
+    },
+    {
+      "index": 68,
+      "alphaBounds": [
+        151,
+        134,
+        325,
+        393
+      ],
+      "opaquePixels": 21664,
+      "borderPixels": 0
+    },
+    {
+      "index": 69,
+      "alphaBounds": [
+        150,
+        134,
+        326,
+        393
+      ],
+      "opaquePixels": 21837,
+      "borderPixels": 0
+    },
+    {
+      "index": 70,
+      "alphaBounds": [
+        142,
+        134,
+        327,
+        393
+      ],
+      "opaquePixels": 22097,
+      "borderPixels": 0
+    },
+    {
+      "index": 71,
+      "alphaBounds": [
+        141,
+        134,
+        327,
+        392
+      ],
+      "opaquePixels": 22214,
+      "borderPixels": 0
+    },
+    {
+      "index": 72,
+      "alphaBounds": [
+        140,
+        134,
+        327,
+        392
+      ],
+      "opaquePixels": 22330,
+      "borderPixels": 0
+    },
+    {
+      "index": 73,
+      "alphaBounds": [
+        146,
+        134,
+        328,
+        392
+      ],
+      "opaquePixels": 22467,
+      "borderPixels": 0
+    },
+    {
+      "index": 74,
+      "alphaBounds": [
+        146,
+        134,
+        328,
+        391
+      ],
+      "opaquePixels": 22478,
+      "borderPixels": 0
+    },
+    {
+      "index": 75,
+      "alphaBounds": [
+        138,
+        134,
+        327,
+        391
+      ],
+      "opaquePixels": 22635,
+      "borderPixels": 0
+    },
+    {
+      "index": 76,
+      "alphaBounds": [
+        138,
+        134,
+        327,
+        391
+      ],
+      "opaquePixels": 22464,
+      "borderPixels": 0
+    },
+    {
+      "index": 77,
+      "alphaBounds": [
+        145,
+        134,
+        327,
+        390
+      ],
+      "opaquePixels": 22444,
+      "borderPixels": 0
+    },
+    {
+      "index": 78,
+      "alphaBounds": [
+        138,
+        134,
+        326,
+        390
+      ],
+      "opaquePixels": 22288,
+      "borderPixels": 0
+    },
+    {
+      "index": 79,
+      "alphaBounds": [
+        138,
+        134,
+        325,
+        390
+      ],
+      "opaquePixels": 22169,
+      "borderPixels": 0
+    },
+    {
+      "index": 80,
+      "alphaBounds": [
+        146,
+        134,
+        324,
+        389
+      ],
+      "opaquePixels": 22006,
+      "borderPixels": 0
+    },
+    {
+      "index": 81,
+      "alphaBounds": [
+        139,
+        134,
+        323,
+        389
+      ],
+      "opaquePixels": 21743,
+      "borderPixels": 0
+    },
+    {
+      "index": 82,
+      "alphaBounds": [
+        140,
+        134,
+        322,
+        389
+      ],
+      "opaquePixels": 21539,
+      "borderPixels": 0
+    },
+    {
+      "index": 83,
+      "alphaBounds": [
+        141,
+        134,
+        321,
+        388
+      ],
+      "opaquePixels": 21216,
+      "borderPixels": 0
+    },
+    {
+      "index": 84,
+      "alphaBounds": [
+        142,
+        134,
+        319,
+        388
+      ],
+      "opaquePixels": 20882,
+      "borderPixels": 0
+    },
+    {
+      "index": 85,
+      "alphaBounds": [
+        151,
+        134,
+        317,
+        388
+      ],
+      "opaquePixels": 20503,
+      "borderPixels": 0
+    },
+    {
+      "index": 86,
+      "alphaBounds": [
+        145,
+        134,
+        316,
+        387
+      ],
+      "opaquePixels": 20073,
+      "borderPixels": 0
+    },
+    {
+      "index": 87,
+      "alphaBounds": [
+        147,
+        134,
+        314,
+        387
+      ],
+      "opaquePixels": 19657,
+      "borderPixels": 0
+    },
+    {
+      "index": 88,
+      "alphaBounds": [
+        156,
+        134,
+        312,
+        387
+      ],
+      "opaquePixels": 19185,
+      "borderPixels": 0
+    },
+    {
+      "index": 89,
+      "alphaBounds": [
+        151,
+        134,
+        310,
+        386
+      ],
+      "opaquePixels": 18689,
+      "borderPixels": 0
+    },
+    {
+      "index": 90,
+      "alphaBounds": [
+        153,
+        134,
+        308,
+        386
+      ],
+      "opaquePixels": 18152,
+      "borderPixels": 0
+    },
+    {
+      "index": 91,
+      "alphaBounds": [
+        162,
+        134,
+        305,
+        386
+      ],
+      "opaquePixels": 17594,
+      "borderPixels": 0
+    },
+    {
+      "index": 92,
+      "alphaBounds": [
+        158,
+        134,
+        303,
+        386
+      ],
+      "opaquePixels": 16977,
+      "borderPixels": 0
+    },
+    {
+      "index": 93,
+      "alphaBounds": [
+        161,
+        134,
+        301,
+        385
+      ],
+      "opaquePixels": 16346,
+      "borderPixels": 0
+    },
+    {
+      "index": 94,
+      "alphaBounds": [
+        164,
+        134,
+        298,
+        385
+      ],
+      "opaquePixels": 15706,
+      "borderPixels": 0
+    },
+    {
+      "index": 95,
+      "alphaBounds": [
+        167,
+        134,
+        295,
+        385
+      ],
+      "opaquePixels": 15006,
+      "borderPixels": 0
+    },
+    {
+      "index": 96,
+      "alphaBounds": [
+        176,
+        134,
+        293,
+        385
+      ],
+      "opaquePixels": 14306,
+      "borderPixels": 0
+    },
+    {
+      "index": 97,
+      "alphaBounds": [
+        179,
+        135,
+        290,
+        385
+      ],
+      "opaquePixels": 13544,
+      "borderPixels": 0
+    },
+    {
+      "index": 98,
+      "alphaBounds": [
+        182,
+        134,
+        287,
+        384
+      ],
+      "opaquePixels": 12806,
+      "borderPixels": 0
+    },
+    {
+      "index": 99,
+      "alphaBounds": [
+        181,
+        134,
+        284,
+        384
+      ],
+      "opaquePixels": 12024,
+      "borderPixels": 0
+    },
+    {
+      "index": 100,
+      "alphaBounds": [
+        189,
+        135,
+        281,
+        384
+      ],
+      "opaquePixels": 11223,
+      "borderPixels": 0
+    },
+    {
+      "index": 101,
+      "alphaBounds": [
+        193,
+        135,
+        278,
+        384
+      ],
+      "opaquePixels": 10376,
+      "borderPixels": 0
+    },
+    {
+      "index": 102,
+      "alphaBounds": [
+        196,
+        134,
+        275,
+        383
+      ],
+      "opaquePixels": 9555,
+      "borderPixels": 0
+    },
+    {
+      "index": 103,
+      "alphaBounds": [
+        200,
+        135,
+        272,
+        384
+      ],
+      "opaquePixels": 8689,
+      "borderPixels": 0
+    },
+    {
+      "index": 104,
+      "alphaBounds": [
+        204,
+        135,
+        268,
+        383
+      ],
+      "opaquePixels": 7820,
+      "borderPixels": 0
+    },
+    {
+      "index": 105,
+      "alphaBounds": [
+        208,
+        134,
+        265,
+        383
+      ],
+      "opaquePixels": 6925,
+      "borderPixels": 0
+    },
+    {
+      "index": 106,
+      "alphaBounds": [
+        212,
+        135,
+        262,
+        382
+      ],
+      "opaquePixels": 6031,
+      "borderPixels": 0
+    },
+    {
+      "index": 107,
+      "alphaBounds": [
+        217,
+        135,
+        259,
+        383
+      ],
+      "opaquePixels": 5106,
+      "borderPixels": 0
+    },
+    {
+      "index": 108,
+      "alphaBounds": [
+        221,
+        135,
+        255,
+        340
+      ],
+      "opaquePixels": 4199,
+      "borderPixels": 0
+    },
+    {
+      "index": 109,
+      "alphaBounds": [
+        225,
+        136,
+        252,
+        382
+      ],
+      "opaquePixels": 3274,
+      "borderPixels": 0
+    },
+    {
+      "index": 110,
+      "alphaBounds": [
+        229,
+        136,
+        249,
+        381
+      ],
+      "opaquePixels": 2337,
+      "borderPixels": 0
+    },
+    {
+      "index": 111,
+      "alphaBounds": [
+        234,
+        135,
+        245,
+        339
+      ],
+      "opaquePixels": 1412,
+      "borderPixels": 0
+    },
+    {
+      "index": 112,
+      "alphaBounds": [
+        238,
+        143,
+        242,
+        339
+      ],
+      "opaquePixels": 470,
+      "borderPixels": 0
+    },
+    {
+      "index": 113,
+      "alphaBounds": [
+        238,
+        143,
+        242,
+        339
+      ],
+      "opaquePixels": 470,
+      "borderPixels": 0
+    },
+    {
+      "index": 114,
+      "alphaBounds": [
+        235,
+        135,
+        246,
+        339
+      ],
+      "opaquePixels": 1412,
+      "borderPixels": 0
+    },
+    {
+      "index": 115,
+      "alphaBounds": [
+        231,
+        136,
+        251,
+        381
+      ],
+      "opaquePixels": 2337,
+      "borderPixels": 0
+    },
+    {
+      "index": 116,
+      "alphaBounds": [
+        228,
+        136,
+        255,
+        382
+      ],
+      "opaquePixels": 3274,
+      "borderPixels": 0
+    },
+    {
+      "index": 117,
+      "alphaBounds": [
+        225,
+        135,
+        259,
+        340
+      ],
+      "opaquePixels": 4199,
+      "borderPixels": 0
+    },
+    {
+      "index": 118,
+      "alphaBounds": [
+        221,
+        135,
+        263,
+        383
+      ],
+      "opaquePixels": 5106,
+      "borderPixels": 0
+    },
+    {
+      "index": 119,
+      "alphaBounds": [
+        218,
+        135,
+        268,
+        382
+      ],
+      "opaquePixels": 6031,
+      "borderPixels": 0
+    },
+    {
+      "index": 120,
+      "alphaBounds": [
+        215,
+        134,
+        272,
+        383
+      ],
+      "opaquePixels": 6925,
+      "borderPixels": 0
+    },
+    {
+      "index": 121,
+      "alphaBounds": [
+        212,
+        135,
+        276,
+        383
+      ],
+      "opaquePixels": 7820,
+      "borderPixels": 0
+    },
+    {
+      "index": 122,
+      "alphaBounds": [
+        208,
+        135,
+        280,
+        384
+      ],
+      "opaquePixels": 8689,
+      "borderPixels": 0
+    },
+    {
+      "index": 123,
+      "alphaBounds": [
+        205,
+        134,
+        284,
+        383
+      ],
+      "opaquePixels": 9555,
+      "borderPixels": 0
+    },
+    {
+      "index": 124,
+      "alphaBounds": [
+        202,
+        135,
+        287,
+        384
+      ],
+      "opaquePixels": 10376,
+      "borderPixels": 0
+    },
+    {
+      "index": 125,
+      "alphaBounds": [
+        199,
+        135,
+        291,
+        384
+      ],
+      "opaquePixels": 11223,
+      "borderPixels": 0
+    },
+    {
+      "index": 126,
+      "alphaBounds": [
+        196,
+        134,
+        299,
+        384
+      ],
+      "opaquePixels": 12024,
+      "borderPixels": 0
+    },
+    {
+      "index": 127,
+      "alphaBounds": [
+        193,
+        134,
+        298,
+        384
+      ],
+      "opaquePixels": 12806,
+      "borderPixels": 0
+    },
+    {
+      "index": 128,
+      "alphaBounds": [
+        190,
+        135,
+        301,
+        385
+      ],
+      "opaquePixels": 13544,
+      "borderPixels": 0
+    },
+    {
+      "index": 129,
+      "alphaBounds": [
+        187,
+        134,
+        304,
+        385
+      ],
+      "opaquePixels": 14306,
+      "borderPixels": 0
+    },
+    {
+      "index": 130,
+      "alphaBounds": [
+        185,
+        134,
+        313,
+        385
+      ],
+      "opaquePixels": 15006,
+      "borderPixels": 0
+    },
+    {
+      "index": 131,
+      "alphaBounds": [
+        182,
+        134,
+        316,
+        385
+      ],
+      "opaquePixels": 15706,
+      "borderPixels": 0
+    },
+    {
+      "index": 132,
+      "alphaBounds": [
+        179,
+        134,
+        319,
+        385
+      ],
+      "opaquePixels": 16346,
+      "borderPixels": 0
+    },
+    {
+      "index": 133,
+      "alphaBounds": [
+        177,
+        134,
+        322,
+        386
+      ],
+      "opaquePixels": 16977,
+      "borderPixels": 0
+    },
+    {
+      "index": 134,
+      "alphaBounds": [
+        175,
+        134,
+        318,
+        386
+      ],
+      "opaquePixels": 17594,
+      "borderPixels": 0
+    },
+    {
+      "index": 135,
+      "alphaBounds": [
+        172,
+        134,
+        327,
+        386
+      ],
+      "opaquePixels": 18152,
+      "borderPixels": 0
+    },
+    {
+      "index": 136,
+      "alphaBounds": [
+        170,
+        134,
+        329,
+        386
+      ],
+      "opaquePixels": 18689,
+      "borderPixels": 0
+    },
+    {
+      "index": 137,
+      "alphaBounds": [
+        168,
+        134,
+        324,
+        387
+      ],
+      "opaquePixels": 19185,
+      "borderPixels": 0
+    },
+    {
+      "index": 138,
+      "alphaBounds": [
+        166,
+        134,
+        333,
+        387
+      ],
+      "opaquePixels": 19657,
+      "borderPixels": 0
+    },
+    {
+      "index": 139,
+      "alphaBounds": [
+        164,
+        134,
+        335,
+        387
+      ],
+      "opaquePixels": 20073,
+      "borderPixels": 0
+    },
+    {
+      "index": 140,
+      "alphaBounds": [
+        163,
+        134,
+        329,
+        388
+      ],
+      "opaquePixels": 20503,
+      "borderPixels": 0
+    },
+    {
+      "index": 141,
+      "alphaBounds": [
+        161,
+        134,
+        338,
+        388
+      ],
+      "opaquePixels": 20882,
+      "borderPixels": 0
+    },
+    {
+      "index": 142,
+      "alphaBounds": [
+        159,
+        134,
+        339,
+        388
+      ],
+      "opaquePixels": 21216,
+      "borderPixels": 0
+    },
+    {
+      "index": 143,
+      "alphaBounds": [
+        158,
+        134,
+        340,
+        389
+      ],
+      "opaquePixels": 21539,
+      "borderPixels": 0
+    },
+    {
+      "index": 144,
+      "alphaBounds": [
+        157,
+        134,
+        341,
+        389
+      ],
+      "opaquePixels": 21743,
+      "borderPixels": 0
+    },
+    {
+      "index": 145,
+      "alphaBounds": [
+        156,
+        134,
+        334,
+        389
+      ],
+      "opaquePixels": 22006,
+      "borderPixels": 0
+    },
+    {
+      "index": 146,
+      "alphaBounds": [
+        155,
+        134,
+        342,
+        390
+      ],
+      "opaquePixels": 22169,
+      "borderPixels": 0
+    },
+    {
+      "index": 147,
+      "alphaBounds": [
+        154,
+        134,
+        342,
+        390
+      ],
+      "opaquePixels": 22288,
+      "borderPixels": 0
+    },
+    {
+      "index": 148,
+      "alphaBounds": [
+        153,
+        134,
+        335,
+        390
+      ],
+      "opaquePixels": 22444,
+      "borderPixels": 0
+    },
+    {
+      "index": 149,
+      "alphaBounds": [
+        153,
+        134,
+        342,
+        391
+      ],
+      "opaquePixels": 22464,
+      "borderPixels": 0
+    }
+  ],
+  "fullCycleFrameHashes": [
+    "43a8f82acb06985defea6712ca418475dc8d2524969ac0980994fb05e18550b1",
+    "1599c239a332fb33695438874752d71cee6c9bed34de5ae022cc0eecb11d6ace",
+    "2f09192429d88dd5994167e24cbc8e440ae3295b34d5883e70ae2934b9b844a2",
+    "2ed2531183c76613c8bf8a9477fe9a27639df4e3e417b719dd20ea850d9a92b1",
+    "c994987a69c83d29b6335ca492912bf2521c72e7c85e88f13b2d3c27a8aa9bb1",
+    "f4b5fb0e34ce2ab2a3b02c95e6cacaec8a1e86d1a8bfc2ec0e24ba7cca6e04b6",
+    "aa57aba2dd82330f2c3be21ef0a8fe20bac860f6999beb759bc1a3a4d3ae48f6",
+    "f2df32e37d271939a56e6ec01188680e58424675b0359ced281290a1b5737967",
+    "0bfb0cf44297db4d8f617ec2f7a2c5b7690df25ace03ff971e15d8c810138e58",
+    "fa0577f56e823111b44e1adb283090c0b9d3fdbdb79e64be465724779dda792a",
+    "de67337442b612d79fe532d05f0118af3b9447b8db6ca4a927bfc83d30afc52f",
+    "d62d43679dc23915d0042c7f29fc15825588eb1364fa75c10aacbc74e7b015e9",
+    "731fb0a67e05d0c81418fd9bf0d0ed1e37328c123e12d7fb0d9520ee5e6235d6",
+    "2491933e08929449538f148b1faf082a98c434e2903f7b04561951ffbd07d4b1",
+    "8a569b8d4e925923dbff5cbe9f8d9a8b51eca5af259a204baac471525163153c",
+    "b66b082579d16f78d42a041788dca07661eb4d2041b03a3497b37b8e99a3bbb2",
+    "914b82b690094735126e6e8c27f76afc6ed7c2e77424a88120e4911e9e5b6ff9",
+    "5a7686a25f3c66b7793997759347fabe11bf2ee61d877f44dd7429be3423963d",
+    "73b0761af42d311f18d94539bff60017f3e86e254905a3fbdd48235189f84a99",
+    "c8b8f592764011f60c253a3eeeca407024cb5d418f8ef700a6ad12fe5df118b7",
+    "b70a205c2fa0e73474f771d9ab4e3521768e9d55aaaf597b9c33c2e422688dc3",
+    "4fd4dd36d1f9eda8ef97986a16a3d90de25fcc2ee5fa185d74411cfe1e3ff7d7",
+    "2040d19fd927c3a177bcb22dbdedc9fa87e1010b0c96f54ce9d31df54f3f4d1d",
+    "c9e227b22a34ab0e9cea34c0147cc59c32d5f27e03ee323672d7ef99f39c727c",
+    "705b674b034caba4e1fe62030733d4af650bd7ebb1ccf447705f14e19eb94585",
+    "633d5745f7845a6adfe4633befcb9b81e750337083498889f96345481c149251",
+    "9f0bb3da9e2d49126a8bc112da95fa2b8f233b69094b24b2cea80b441ab50ff1",
+    "62223ae9c234ec16f56325d8e494a4f28318dccd9a881678db8357ee8383cdea",
+    "fe5e922de247508f34e7b38e7e6e7e2dcdbc01ce30c254a62b9e79b58dbbe4e0",
+    "adc88a96ab879737ae7de4e074218b8f3e5fb3cf154c30eccf1db04895bf4359",
+    "20927a039ebba02ce57fd650407f8d33b8896d00f73256ef38c1ad7880a5261b",
+    "f3695398bea786a589d415ffe3535eb4341cfb7a93bf93f0adf1c3791fefa565",
+    "efe9ce8252302de84af727aa2133fe107c34426504b43ae5041d5f008e0a82c3",
+    "2023a6825ab1758a429c1b15ebe415a6fe4cefbc448d85862c993336d708a946",
+    "6047a4398324899d8030241efe2e130c41484e94221eece99435357c0fef870b",
+    "3a5b6f1408048d9fbbb871e8b1ac117e60aa59d9aedc31aecee52e512fbad0fb",
+    "bb9e178d7cf0d95cdf1af229956091faa45fa884129faeacad73c9317c98a648",
+    "992d707d00729f4be85ca1596f6f2b1aefc2ca515a69c2a49cc0bb4ecefbe37a",
+    "f54a80f5263773a69ac6e85ce0fa3b3c1ac701e96976cecd4659154551492d49",
+    "6045a18d531813dc6e241e7cb3d93cf5674eb44ce670b8d4832ce23d5f2571cd",
+    "b2a03de94e87f68d37dbdcd2293e3f1561b896668c30be445314c0e103e4bd40",
+    "763e3658716a7188283625e7a5840c673cfe96e66a67abd7735233dccd7d77bd",
+    "a880a777e9253a01bd8f7d94776abfc4a56ae9992956cb3682e6545f33681d89",
+    "84c781f6cadf0ac80fce56afe1a35f2b1be4d674d8f5416dcd23a53cf04f4e40",
+    "b21847fc7a5bb73aff56a2f448e86329ac73f9014a87d52bff5f05f182a060e1",
+    "01772ed5bae8ed06d35119d04883fd8098d66aa70c2b72e38543564bbca5cf4e",
+    "a2ca242e0cf1b8526e86390d8f7550e41e9af03e8a9c4bc6273967ece01994fd",
+    "adee48d9dff881098145bb58cd0e4d7b6d0add5c806bd6aa9d5cd2c53f8969e4",
+    "f6e3f04deef79beadea7ae22797c25e0c4e94b9d5ed033cbef11d27dc846cd31",
+    "43eb487e83685a32bb96616f47fd81c703dca71d08e5c0e97294579b3ad40072",
+    "6b04a726efa0e147bcdd65cd753c7362acc7cc189440321e44eb583f8eeace73",
+    "131265690ea04d8523d8895d77f90c3de85df2ce61bebb89ea3fdd5b0c60b554",
+    "f54515c61ab96e6dfb4f3f98de832245135f9b03d32a7063840119af58681f28",
+    "018935595801dd1d1122330a2ce508c112883b18f90c08f4be7e23d5de194f1f",
+    "a8654eb4473eb5cec136bff71d95dfc963cd627bc729be9b439fcf8b8367d289",
+    "649c4d7e4165905334eeeef52efc746e3a515b44f4d370292085d3d3b5fbdaab",
+    "88a9d05e262a5e44be28a42fc5b5d2d2720f2ed966288a8b2ce61daf94b8ce80",
+    "f7dec6ab513f7145f0301c712428d28f1752ee9d71fe0a4476a7b0f6cab36056",
+    "3e8693eea88ddda4bd29c8984b72f3f24fc1292049312cdf9d0b8e9c8efcfb4d",
+    "a290eb44ca5bea756baa070616b5107435fd7b089173316316b2f6e7173fb8f7",
+    "543d9a8f91d35ef93943c6b71c689c609f9929d9fbaddae226ca624de9ac79ef",
+    "239b5b2194a6dab760c1ce880773ee60df0069ecc86f4ffccac06c003653d8d5",
+    "1d5521675813bce14b61513cbc9f506076adc197aea31e02153ec9c2c46952c5",
+    "83ab031303ae30cafc2cbe37db8ea48e3caa59560ed380f3398edd199f6ebd07",
+    "724be711b9b8d4e6a23c0cb527f79be37990d0a035cf7993c4c1bf8cc95bafbf",
+    "08131586f973f6f24150cc30c262139279108aeca00dac23de67c8a053eea8b2",
+    "efd4c6b2814cb2be0d4eeb1d57a84435108a322ec2a1bf4efdc0efdf99966f5e",
+    "a713e781cba8bd03f68a60ce61633e393407d767e872e607cbbf23b7e9f1e6f2",
+    "058970ae1c51c7b72346d60b53f0f824aacf3712f82cc22a478b5953e928638b",
+    "61962efe7598840e956440a5e9ed7f0dafe0324871108cba6c3dc9ef6a596a00",
+    "7eb603a341f92203d75fe9290fc8b4e1d06282b75ac4df1e4cea641ee719b672",
+    "d9964a1817a2d3aaab746c1cf53418858deb2213f972bc075e229b987e1247a3",
+    "001de98558126f6300bd6ea07c9aaa5882cd0991c73f6c0493148234225cf83f",
+    "a91f0cb208314bc362588a4e89465f1a3b642f4b3f6dfcbd1cd22d95d74d6da7",
+    "d9a7cf7eeec4809be42bc5c6d45af716c6a1941933fbe47391cf6305e5b8f087",
+    "b20f406aaa97602db1107380d7ac84b31c0164842877735e07145be84d1d1b39",
+    "e5ee1d8dc5bd37f40f73b72cf3d143dd9b9e876d4bd8d803d7eb2aa1215284c1",
+    "bf493bbbeb2713f4510cfcbc94c522f23049462db9192d8016e33115c7e7e3d3",
+    "d94593a83af39e8a6f44a2957cc668414daaef3e64d033b64de576bead1615a7",
+    "e302af3a5b992c856da50c4c5e04dfdd8ca39609467d06dad7149975ae7909b2",
+    "d8a10db585bc07990f2583637721b7ea143010310ed062dad09b9ee88f23a130",
+    "8479476c413db6afc4f3ffff77d580faaa8f1603b177fa77c4db236584d58178",
+    "0fe0267764d1c66c824b887b77a388e4f251a82ced1e84fc86d6bfdc3c683217",
+    "af33180d6316c8b64ca6a320da1ea925b401c0a28baf2835fd28c83cbb99304c",
+    "fa4532d247bbf004b65d2ee64660e62c65feaacb6de1a8b072490bf28bd2ba42",
+    "3672a9bfd5f0f599cc7858ae97d0999f79c63c2c4b6069d85d88de8fdd59520f",
+    "6227fb52cb3749eb66e0de0e045a0364a693256d53205694325b4029196093a0",
+    "98b98a187627df5e581291e0134c37dc89dcf91b06fe24b89cb202e6fbc718a7",
+    "e6e33a0f3a4dd877726d991ad80b3dff836d361fc7c87bafea0c8012ca363de4",
+    "79bc9830d2ee5c9526f6cddd0054e5a5510ffe660c5641ff713ac656483a40d9",
+    "a6eec3075f4f7b83df809ef540ea019abef238766f7c5525aef0ac613648682a",
+    "95a7adeb0c73516e01fa2167a705aacef3ec4d04658ff4411d8b0e4a33bd1a5f",
+    "2019a78243263854fc73cb12497dfe491726a812ab9ef8df9b3c758a06918f87",
+    "d793d3f09ef7caa90f2c8c178f3095957d3b32c9fb9f76df9665cea26b1db951",
+    "f71d558bc07d62746cdbe13f454355d6581ed858bf9f98f05775cb5917261ce6",
+    "12710c2189f6188807a486e11eecf287a92825656fe4f6e7e4294682e26120a8",
+    "8e91987019d3cd9dd7effdd19b8888465f1fcc45a1e4924903d224174902c9dd",
+    "10dfbac54192ce57de5a29371d9e84cc93f7bdc8b40826121a6e847648e85362",
+    "a8e137a78a17f3743f2def8ce6bfa69317164cb782378a58672b586f8fbdcf0e",
+    "0acc3e9bf4ecc8956873449f6232d9c2abd1404b554731f6dd4d2fd4c81e4239",
+    "f7f517805f9c80bcc979bded683d933f7ef64a5ae09ea0dba92f10d3eba47d0f",
+    "37d9f65bfbfbebb25de86637648c98935fdc85437d8d9cd7aa9545c671baae15",
+    "1556da4520cb3c1b3c40b6d442c50f9287471e059e8bcb34756e32eea63830f5",
+    "5839b61495129281b286c3fb6a2dcc52002128678e0a3c0824fff1aeecd5bd3e",
+    "e4d05f135a2216f19046df9e2d436b5db3d8f03220aa544d961e8932944d07cb",
+    "60d35228705a75e4040b1917ba4455c189d448a89b7444ecb8ab595d8a229c2c",
+    "639b7c62aa4c6e40fe68ace96373b76da7e2736fefdc6090ceb4ea5f55dda9ed",
+    "a8990e36d159b58cd77da684cba27731de174e45ff05e801f0460030033ec9d4",
+    "6edfca2955f5651a7dd4a7c31d8a62efb0a7a1a7329f3bb1a159882a41de463a",
+    "4201b33e0320ad40a88f529878731d9c2f18357a6eb358e4734fa91a41cfcf96",
+    "03339c887d6dbfeb424e94a8dca489704c956b24c52161485d4cf9e08c363754",
+    "0eec3ba63fc49ab080ffa35f2df6199074196e1c73094b36e6e43911be8c9426",
+    "5a0d08ebbed88fa5a518ef2912efb474d3ba6f81448d93c09de0cd6f5a30c531",
+    "b16fca75b098c61932a94d90e6c9d4371a9f6e6108a037b92c8376a7fba02019",
+    "47d7fc66126c75799dc24acf8d8d347834309b6dfe62a7bd2232a46255a58bdc",
+    "3ebff0337d8248868b79dab153b71e975a5057fa3d4940500c947917ac072e1c",
+    "5b76c4f6ae69f3d9858c1696f7c3d188757f035c9e2d1e59c5eb2e766390e81b",
+    "53c3d2858839a2a7df5393c309f1598a1c2b17c3ab07fc7e7f130351a7f5d88d",
+    "4d580ed0846c905f7a52ad13514bef1c18b8b919327b20750a7fc8efe189a978",
+    "58ff9ba3aa783400ab70e56286a391d039a7d000e8a10b13d195096353abcaf7",
+    "27267d4d5f5b933cb8b04024fefa6e50f5f1a785e73e40ce21703cbb63c996ad",
+    "6efeee400ab58fa4f2dcea3a6031925be11d6ede80cbd1c540abfdcab022fa75",
+    "5de2bd24eb42b6b2eaeb9c9fa60608bb80d58d5e5af2c8c6d915c71c6149a5ae",
+    "02f518f0461eb4d803ab1b29a99e048d2ce9984ba4f134d9fd4d6c79decb034f",
+    "87738c7a6df90097613b64138736b46d7362261de3b45f53aa1e65c79d03b633",
+    "92135a855b3ab2d4a2aeceab29185a9c0eaee650c80636b94d2456ffdcbd3611",
+    "36ce318c9ebd3f0a7028c293aafe235a43f0f1b631f781452022e52d80717c37",
+    "177f71af3f17f602605cf7793257af581623b2873d86f9e5a253d624bd11695e",
+    "8187cac6a4746ad6d23bb1b2c7b2000c3032ec15c1d5f83ca4be135754adbd03",
+    "4a491bc20a34f7af10990348c74bbb5bfc1387ed507ee26cdc84f043d93cd353",
+    "6a28c5595e11074671f535df6433337a778649bb50d5c28ba092c146c15bb22b",
+    "75cf2bcae2b40882ad519a38ef827b448c27d6ea803bec730761a17c0dbae12f",
+    "ae470b7ef7e2387d6012b0716ded740ffe7ffe8705f6f7c0a7a2af3157b69868",
+    "903ca274429423323169fe16ef4d4aff27a09599401031f8e7ad8aae927c46e7",
+    "393ae14bbbf8a6a8fb82a941b8fc81d14bac1a34f0f589d8446cbdce38d11653",
+    "9a7b39dbceab6f15b4021b29ccd6005ed642ea4e1fa8fc6ccc3f004e84d5ca7a",
+    "528d5f3bd32c25a61a3f6fd84316814d71f24d8b14b0ff5b82e1152edaa4d23a",
+    "7217db9a6655d4fc208c40a465b98d9e0c64a16586a3264e3b6af416f3f1d34a",
+    "2755d2d9271b54c468a53241cd8feacb479a0d30360ffe27d4b6f49dcdfee0eb",
+    "79365549babe949aece956650801559a2d13acbca3a917f93777e45d65c2a932",
+    "3076837951430baae7abdff35c98e12446c205c2b41fb39698c8a9cddf796b86",
+    "249d13efc479741fd61618fd19dde2c1b0bb11f45a6b1277292ae4b066c4bd7b",
+    "a0205cdd0b1c6870a030fa4f66ffa195f57b82bbd699647f2ebf86b8b7b5fad0",
+    "412de17cd4c27b93baadee2d205d46a30884e90af763d0154b6cde5520121bb4",
+    "5eef247badecee11d67933182ed10e58aa80c665663e352befce0c277a25b72b",
+    "f157880d95306b37529f302e813d224ec67789d081db85141850cfc938bc6e1e",
+    "349b37090335c2481dac06f72707b840fe11fa850f7eac8fc2c90719ecb36d5a",
+    "cf8d198e7d270f9144597d1e6811429f3d0b5d7619aaf2cdec4629f2863b36a1",
+    "1add4a4f296583698bb87d2672a2585635683c61cc31cca7332f6b26bb9b0bd4",
+    "0dedff5ea6585f8c2cd6f38a09b751f6a6f281874cf0aff88c692b68d5dc5841"
+  ],
+  "video": {
+    "alpha": {
+      "file": "alpha.webm",
+      "sha256": "4861ba320038303b17997e48a0919059bf49514038c469ab3a81d5dbaa11a5a7",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 480,
+            "height": 480,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "150",
+            "tags": {
+              "alpha_mode": "1"
+            }
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      }
+    },
+    "key": {
+      "file": "key.mp4",
+      "sha256": "127426fc1b8a30003ef7f53bf4a24624a4bb0057d75be7a8c2bf65b40a0da803",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 480,
+            "height": 480,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "150",
+            "tags": {}
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      }
+    }
+  },
+  "qa": {
+    "sourceSeamMAE": 0.19869008660316467,
+    "sourceMaximumAdjacentMAE": 1.1809942722320557,
+    "encodedAlpha": {
+      "framesChecked": 150,
+      "opaqueInteriorFailures": 0,
+      "borderFailures": 0,
+      "translucentPixels": 2445468,
+      "seamMAE": 0.2582358419895172,
+      "maximumAdjacentMAE": 1.1796413660049438,
+      "alphaDecoder": "libvpx-vp9"
+    },
+    "visualReview": "reviewed-contacts-and-four-theme-15-cycle-playback",
+    "edgeOnNote": "A flat two-sided texture is edge-on at 90 and 270 degrees; the 150 encoded samples avoid the zero-width instant.",
+    "visualReviewEvidence": "review/browser-loop-playback-review.json",
+    "visualReviewScope": "Sampled front, edge and back views in normal-speed four-theme overviews, plus separately decoded RGBA alpha and full phase contacts"
+  },
+  "renderRevision": 1
+}

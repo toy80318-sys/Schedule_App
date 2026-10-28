@@ -1,0 +1,1600 @@
+{
+  "format": "petal-y102-independent-qa",
+  "count": 48,
+  "encodedVideoFilesChecked": 96,
+  "decodedAlphaFrames": 7200,
+  "sourceHashesUnchanged": 48,
+  "passed": true,
+  "visualApproval": false,
+  "notes": [
+    "Independent file hash, codec, duration, frame count, BT709, no-audio, native alpha decode and loop-boundary measurements passed.",
+    "This report does not substitute for root normal-speed ten-cycle viewing.",
+    "Y rotation is a two-sided textured flat plane; back is original artwork mirrored, not a newly authored backside."
+  ],
+  "items": [
+    {
+      "id": "BG01-buckwheat-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31509960,
+      "opaquePixels": 2722991,
+      "semiTransparentPixels": 327049,
+      "seamMAE": 0.2002093493938446,
+      "maximumAdjacentMAE": 1.245055913925171,
+      "firstLastDiffer": true,
+      "frontWidth": 200,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-buckwheat-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31393517,
+      "opaquePixels": 2842052,
+      "semiTransparentPixels": 324431,
+      "seamMAE": 0.19864189624786377,
+      "maximumAdjacentMAE": 1.262215495109558,
+      "firstLastDiffer": true,
+      "frontWidth": 202,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-buckwheat-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31033853,
+      "opaquePixels": 3166919,
+      "semiTransparentPixels": 359228,
+      "seamMAE": 0.2517348527908325,
+      "maximumAdjacentMAE": 1.4397437572479248,
+      "firstLastDiffer": true,
+      "frontWidth": 254,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-buckwheat-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30999604,
+      "opaquePixels": 3208736,
+      "semiTransparentPixels": 351660,
+      "seamMAE": 0.2415732592344284,
+      "maximumAdjacentMAE": 1.5409388542175293,
+      "firstLastDiffer": true,
+      "frontWidth": 210,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-camellia-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30415613,
+      "opaquePixels": 3754043,
+      "semiTransparentPixels": 390344,
+      "seamMAE": 0.3161144256591797,
+      "maximumAdjacentMAE": 1.9164053201675415,
+      "firstLastDiffer": true,
+      "frontWidth": 266,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-camellia-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30841627,
+      "opaquePixels": 3344751,
+      "semiTransparentPixels": 373622,
+      "seamMAE": 0.26154953241348267,
+      "maximumAdjacentMAE": 1.5665414333343506,
+      "firstLastDiffer": true,
+      "frontWidth": 250,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-camellia-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30438324,
+      "opaquePixels": 3721291,
+      "semiTransparentPixels": 400385,
+      "seamMAE": 0.2814736068248749,
+      "maximumAdjacentMAE": 1.6914374828338623,
+      "firstLastDiffer": true,
+      "frontWidth": 252,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-camellia-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30289508,
+      "opaquePixels": 3859152,
+      "semiTransparentPixels": 411340,
+      "seamMAE": 0.3038884103298187,
+      "maximumAdjacentMAE": 1.667433500289917,
+      "firstLastDiffer": true,
+      "frontWidth": 284,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-marigold-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30903599,
+      "opaquePixels": 3249556,
+      "semiTransparentPixels": 406845,
+      "seamMAE": 0.26539814472198486,
+      "maximumAdjacentMAE": 1.592925786972046,
+      "firstLastDiffer": true,
+      "frontWidth": 260,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-marigold-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32193836,
+      "opaquePixels": 2022214,
+      "semiTransparentPixels": 343950,
+      "seamMAE": 0.13401813805103302,
+      "maximumAdjacentMAE": 0.9006019234657288,
+      "firstLastDiffer": true,
+      "frontWidth": 212,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-marigold-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32046564,
+      "opaquePixels": 2151218,
+      "semiTransparentPixels": 362218,
+      "seamMAE": 0.16486705839633942,
+      "maximumAdjacentMAE": 1.1167083978652954,
+      "firstLastDiffer": true,
+      "frontWidth": 214,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG01-marigold-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31372204,
+      "opaquePixels": 2774460,
+      "semiTransparentPixels": 413336,
+      "seamMAE": 0.20796193182468414,
+      "maximumAdjacentMAE": 1.2784470319747925,
+      "firstLastDiffer": true,
+      "frontWidth": 258,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-buckwheat-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32007486,
+      "opaquePixels": 2260576,
+      "semiTransparentPixels": 291938,
+      "seamMAE": 0.16016104817390442,
+      "maximumAdjacentMAE": 1.0558390617370605,
+      "firstLastDiffer": true,
+      "frontWidth": 184,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-buckwheat-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31603149,
+      "opaquePixels": 2647945,
+      "semiTransparentPixels": 308906,
+      "seamMAE": 0.19098588824272156,
+      "maximumAdjacentMAE": 1.2530324459075928,
+      "firstLastDiffer": true,
+      "frontWidth": 194,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-buckwheat-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31843522,
+      "opaquePixels": 2411602,
+      "semiTransparentPixels": 304876,
+      "seamMAE": 0.17741329967975616,
+      "maximumAdjacentMAE": 1.1661806106567383,
+      "firstLastDiffer": true,
+      "frontWidth": 181,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-buckwheat-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32242607,
+      "opaquePixels": 2044291,
+      "semiTransparentPixels": 273102,
+      "seamMAE": 0.1409684717655182,
+      "maximumAdjacentMAE": 1.011567234992981,
+      "firstLastDiffer": true,
+      "frontWidth": 162,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-canola-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30126221,
+      "opaquePixels": 4045612,
+      "semiTransparentPixels": 388167,
+      "seamMAE": 0.31847554445266724,
+      "maximumAdjacentMAE": 1.7004966735839844,
+      "firstLastDiffer": true,
+      "frontWidth": 258,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-canola-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31859417,
+      "opaquePixels": 2393592,
+      "semiTransparentPixels": 306991,
+      "seamMAE": 0.17200778424739838,
+      "maximumAdjacentMAE": 1.0725306272506714,
+      "firstLastDiffer": true,
+      "frontWidth": 192,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-canola-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31426506,
+      "opaquePixels": 2795501,
+      "semiTransparentPixels": 337993,
+      "seamMAE": 0.21091243624687195,
+      "maximumAdjacentMAE": 1.3429886102676392,
+      "firstLastDiffer": true,
+      "frontWidth": 208,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-canola-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30432938,
+      "opaquePixels": 3757045,
+      "semiTransparentPixels": 370017,
+      "seamMAE": 0.2884189486503601,
+      "maximumAdjacentMAE": 1.5774792432785034,
+      "firstLastDiffer": true,
+      "frontWidth": 246,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-marigold-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32181496,
+      "opaquePixels": 2037615,
+      "semiTransparentPixels": 340889,
+      "seamMAE": 0.13361889123916626,
+      "maximumAdjacentMAE": 1.0043609142303467,
+      "firstLastDiffer": true,
+      "frontWidth": 214,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-marigold-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32213939,
+      "opaquePixels": 1980118,
+      "semiTransparentPixels": 365943,
+      "seamMAE": 0.1417573243379593,
+      "maximumAdjacentMAE": 1.0455948114395142,
+      "firstLastDiffer": true,
+      "frontWidth": 235,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-marigold-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32241513,
+      "opaquePixels": 1974346,
+      "semiTransparentPixels": 344141,
+      "seamMAE": 0.13760514557361603,
+      "maximumAdjacentMAE": 1.042420744895935,
+      "firstLastDiffer": true,
+      "frontWidth": 210,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG02-marigold-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32041697,
+      "opaquePixels": 2164926,
+      "semiTransparentPixels": 353377,
+      "seamMAE": 0.16177326440811157,
+      "maximumAdjacentMAE": 1.1417157649993896,
+      "firstLastDiffer": true,
+      "frontWidth": 224,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-camellia-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 29977445,
+      "opaquePixels": 4154833,
+      "semiTransparentPixels": 427722,
+      "seamMAE": 0.37396159768104553,
+      "maximumAdjacentMAE": 1.94491446018219,
+      "firstLastDiffer": true,
+      "frontWidth": 312,
+      "quarterWidth": 8,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-camellia-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31021493,
+      "opaquePixels": 3183359,
+      "semiTransparentPixels": 355148,
+      "seamMAE": 0.25366848707199097,
+      "maximumAdjacentMAE": 1.4966007471084595,
+      "firstLastDiffer": true,
+      "frontWidth": 236,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-camellia-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30451529,
+      "opaquePixels": 3722475,
+      "semiTransparentPixels": 385996,
+      "seamMAE": 0.3022182285785675,
+      "maximumAdjacentMAE": 1.6485552787780762,
+      "firstLastDiffer": true,
+      "frontWidth": 272,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-camellia-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30387483,
+      "opaquePixels": 3748774,
+      "semiTransparentPixels": 423743,
+      "seamMAE": 0.346341997385025,
+      "maximumAdjacentMAE": 1.9297856092453003,
+      "firstLastDiffer": true,
+      "frontWidth": 288,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-hydrangea-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30123990,
+      "opaquePixels": 4055686,
+      "semiTransparentPixels": 380324,
+      "seamMAE": 0.3506939113140106,
+      "maximumAdjacentMAE": 1.8557801246643066,
+      "firstLastDiffer": true,
+      "frontWidth": 272,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-hydrangea-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30160001,
+      "opaquePixels": 4014380,
+      "semiTransparentPixels": 385619,
+      "seamMAE": 0.351779043674469,
+      "maximumAdjacentMAE": 1.7595688104629517,
+      "firstLastDiffer": true,
+      "frontWidth": 294,
+      "quarterWidth": 7,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-hydrangea-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30440946,
+      "opaquePixels": 3750951,
+      "semiTransparentPixels": 368103,
+      "seamMAE": 0.30167073011398315,
+      "maximumAdjacentMAE": 1.5895713567733765,
+      "firstLastDiffer": true,
+      "frontWidth": 254,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-hydrangea-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30341232,
+      "opaquePixels": 3857198,
+      "semiTransparentPixels": 361570,
+      "seamMAE": 0.3237309157848358,
+      "maximumAdjacentMAE": 1.5930737257003784,
+      "firstLastDiffer": true,
+      "frontWidth": 278,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-lavender-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32009735,
+      "opaquePixels": 2244631,
+      "semiTransparentPixels": 305634,
+      "seamMAE": 0.15080812573432922,
+      "maximumAdjacentMAE": 1.0741677284240723,
+      "firstLastDiffer": true,
+      "frontWidth": 180,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-lavender-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31777678,
+      "opaquePixels": 2459045,
+      "semiTransparentPixels": 323277,
+      "seamMAE": 0.16300998628139496,
+      "maximumAdjacentMAE": 1.1132510900497437,
+      "firstLastDiffer": true,
+      "frontWidth": 204,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-lavender-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31591034,
+      "opaquePixels": 2608329,
+      "semiTransparentPixels": 360637,
+      "seamMAE": 0.177665114402771,
+      "maximumAdjacentMAE": 1.4006922245025635,
+      "firstLastDiffer": true,
+      "frontWidth": 208,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG03-lavender-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31424439,
+      "opaquePixels": 2765934,
+      "semiTransparentPixels": 369627,
+      "seamMAE": 0.2035820186138153,
+      "maximumAdjacentMAE": 1.3490737676620483,
+      "firstLastDiffer": true,
+      "frontWidth": 216,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-buckwheat-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31175699,
+      "opaquePixels": 3049825,
+      "semiTransparentPixels": 334476,
+      "seamMAE": 0.23712408542633057,
+      "maximumAdjacentMAE": 1.471128225326538,
+      "firstLastDiffer": true,
+      "frontWidth": 208,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-buckwheat-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31634281,
+      "opaquePixels": 2616545,
+      "semiTransparentPixels": 309174,
+      "seamMAE": 0.1881045252084732,
+      "maximumAdjacentMAE": 1.2439607381820679,
+      "firstLastDiffer": true,
+      "frontWidth": 192,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-buckwheat-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31996638,
+      "opaquePixels": 2268516,
+      "semiTransparentPixels": 294846,
+      "seamMAE": 0.16849853098392487,
+      "maximumAdjacentMAE": 1.1468497514724731,
+      "firstLastDiffer": true,
+      "frontWidth": 174,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-buckwheat-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32077362,
+      "opaquePixels": 2195238,
+      "semiTransparentPixels": 287400,
+      "seamMAE": 0.15619206428527832,
+      "maximumAdjacentMAE": 1.0582494735717773,
+      "firstLastDiffer": true,
+      "frontWidth": 170,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-hydrangea-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30502731,
+      "opaquePixels": 3699410,
+      "semiTransparentPixels": 357859,
+      "seamMAE": 0.31610235571861267,
+      "maximumAdjacentMAE": 1.698737621307373,
+      "firstLastDiffer": true,
+      "frontWidth": 264,
+      "quarterWidth": 7,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-hydrangea-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 29605036,
+      "opaquePixels": 4498808,
+      "semiTransparentPixels": 456156,
+      "seamMAE": 0.3879985511302948,
+      "maximumAdjacentMAE": 1.9783512353897095,
+      "firstLastDiffer": true,
+      "frontWidth": 290,
+      "quarterWidth": 7,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-hydrangea-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30979941,
+      "opaquePixels": 3231212,
+      "semiTransparentPixels": 348847,
+      "seamMAE": 0.2665749192237854,
+      "maximumAdjacentMAE": 1.4377907514572144,
+      "firstLastDiffer": true,
+      "frontWidth": 255,
+      "quarterWidth": 6,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-hydrangea-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 30259185,
+      "opaquePixels": 3925612,
+      "semiTransparentPixels": 375203,
+      "seamMAE": 0.3359246850013733,
+      "maximumAdjacentMAE": 1.6699663400650024,
+      "firstLastDiffer": true,
+      "frontWidth": 264,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-lavender-scene-a-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31527111,
+      "opaquePixels": 2685118,
+      "semiTransparentPixels": 347771,
+      "seamMAE": 0.1930379718542099,
+      "maximumAdjacentMAE": 1.2249723672866821,
+      "firstLastDiffer": true,
+      "frontWidth": 226,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-lavender-scene-b-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 32070075,
+      "opaquePixels": 2168314,
+      "semiTransparentPixels": 321611,
+      "seamMAE": 0.16540992259979248,
+      "maximumAdjacentMAE": 1.1873515844345093,
+      "firstLastDiffer": true,
+      "frontWidth": 226,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-lavender-scene-c-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31827267,
+      "opaquePixels": 2380074,
+      "semiTransparentPixels": 352659,
+      "seamMAE": 0.15891526639461517,
+      "maximumAdjacentMAE": 1.132952094078064,
+      "firstLastDiffer": true,
+      "frontWidth": 212,
+      "quarterWidth": 4,
+      "visualReview": "root pending"
+    },
+    {
+      "id": "BG04-lavender-scene-d-v83",
+      "sourceHashUnchanged": true,
+      "probes": {
+        "alpha": {
+          "codec": "vp9",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        },
+        "key": {
+          "codec": "h264",
+          "duration": "5.000000",
+          "frames": "150",
+          "pixelFormat": "yuv420p",
+          "BT709": true,
+          "noAudio": true
+        }
+      },
+      "decodedAlphaFrames": 150,
+      "alphaBoundaryPixels": 0,
+      "transparentPixels": 31576014,
+      "opaquePixels": 2639911,
+      "semiTransparentPixels": 344075,
+      "seamMAE": 0.18748348951339722,
+      "maximumAdjacentMAE": 1.1386984586715698,
+      "firstLastDiffer": true,
+      "frontWidth": 237,
+      "quarterWidth": 5,
+      "visualReview": "root pending"
+    }
+  ]
+}

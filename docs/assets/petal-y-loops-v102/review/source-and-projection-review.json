@@ -1,0 +1,581 @@
+{
+  "status": "source-and-geometry-passed-video-pending",
+  "items": [
+    {
+      "id": "BG01-buckwheat-scene-a-v83",
+      "sourceHash": "e2277cd2d05b93c470e3421431c7750c798334b6b699dfc89a2d1fad1b39e9b4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-buckwheat-scene-b-v83",
+      "sourceHash": "5da2cfea588eb1339e97d5dd39dc2ea2b651430d96dd6485b350ff6d2e7452cd",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-buckwheat-scene-c-v83",
+      "sourceHash": "79810685b8809b64cc639848407e8908d01e683df81633f0115ae19448d9a2c5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-buckwheat-scene-d-v83",
+      "sourceHash": "262891f8ffe0245d1e73a0c85bf44277e40d94d66873541e530479c46b107be5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-camellia-scene-a-v83",
+      "sourceHash": "5427eb29645ad4c87fc32a5068430226e6a5061b4bf2d3e1c53458791d419b81",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-camellia-scene-b-v83",
+      "sourceHash": "70efd48b44292c745f5d4abab45013f1bd589a7a0e0a0aaa445e9744728cdead",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-camellia-scene-c-v83",
+      "sourceHash": "0cca01ee9ed2dcf81c63781035287e5b117b7ea25f1d0bbf994aedd6d0ab7476",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-camellia-scene-d-v83",
+      "sourceHash": "2a7f4a30ac4613d35fc5728158b23164976511a592cedf9a49138fa292e513cc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-marigold-scene-a-v83",
+      "sourceHash": "9a91c17f893d261c3c39c7ca472f1c3044b399b3be281045386553a991b91f0e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-marigold-scene-b-v83",
+      "sourceHash": "d9e9c0930c70d9679570a5f76c2303191f6239e3464fe723260d94517328f384",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-marigold-scene-c-v83",
+      "sourceHash": "1a3b491d14544db115c6a7803b44165824f9f7a144d5d614bb0b1b92ba658e8b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG01-marigold-scene-d-v83",
+      "sourceHash": "3500bad3de6227b125c94dc0129ab758ba6dd6ae6ad6dd57cd2dceb650660389",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-buckwheat-scene-a-v83",
+      "sourceHash": "f373b62722ce53eced7322682582bfc8a88e38867451e99f4f55f678df6d168d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-buckwheat-scene-b-v83",
+      "sourceHash": "93c3d79396509e65190c42e8cd393f7472f80d4958d97d5965a61048600acde3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-buckwheat-scene-c-v83",
+      "sourceHash": "b4826a82ec0edb3ca568cb339725be96060336968d1ef147c10d0942e5904aa5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-buckwheat-scene-d-v83",
+      "sourceHash": "33c57a6534c89d7dd3e3215cfd6a3a97d066cff8e4486b4a98aa86aad064a29b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-canola-scene-a-v83",
+      "sourceHash": "c2844ec2d16aacb339b924b94f0d2e07dd5303f8eb67a3c8accda3207cd024f2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-canola-scene-b-v83",
+      "sourceHash": "76554171972d87db16cc00c614e2c0d9b758a1794021f66f154671bae3d1060d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-canola-scene-c-v83",
+      "sourceHash": "d886f950318ff0bafee2ab2568b7effef738558a68527260013dccc8bcd0b7b5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-canola-scene-d-v83",
+      "sourceHash": "09319ff49230a47d635d174a945432ce3048af9236b70a093ac22c9eb98c0e62",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-marigold-scene-a-v83",
+      "sourceHash": "7267906767e705e259e85ef213b83c3ae9e9d8cf1f927d5169c4e149e11fd36d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-marigold-scene-b-v83",
+      "sourceHash": "24bc85b6a61608f80387c35bb9d4109000b0e97825022f34cd5446d22c0ce460",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-marigold-scene-c-v83",
+      "sourceHash": "78b7a7f2e570a915c847cd0c4f621d658be6d04f47f2acfcabfc4a3d1abcffbd",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG02-marigold-scene-d-v83",
+      "sourceHash": "fd049308fa6daa50361d6c443025897ced928453cbea68d0b62a1750ad7c2a1f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-camellia-scene-a-v83",
+      "sourceHash": "82a95aa7181cff56123f48752b8ded0b308f41f97a1dd4c8169d110fc8161eb9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-camellia-scene-b-v83",
+      "sourceHash": "f395662cc82336f3a056f1a41742b1122195bccd8313672fe703ddd46fa3de20",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-camellia-scene-c-v83",
+      "sourceHash": "1680b413fbb683c6fbaf0b34e098a270ad2a637c08fd709acc4c8e01b31af62a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-camellia-scene-d-v83",
+      "sourceHash": "6df764147096a3c869614f0aaf0f86e0d1a9ace28e1a889ee5175252cd83ab87",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-hydrangea-scene-a-v83",
+      "sourceHash": "4d412428d6b769f5c9067c04fd59f875449bfd33f8dfe68f5777b19b180e06ef",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-hydrangea-scene-b-v83",
+      "sourceHash": "059670f9c257db0931e4cc35d815f12cc38bdeeed1089ea23cfa952a389e7ca5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-hydrangea-scene-c-v83",
+      "sourceHash": "ed1e85de404e3dc0861baee2f2b62c9e764f4e30608ac9d26597be6fa323c4ca",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-hydrangea-scene-d-v83",
+      "sourceHash": "25cb0c6d85cbf0511aa3acf10365f63f23976809d42835c47fd733ad3923a7f7",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-lavender-scene-a-v83",
+      "sourceHash": "8820ba7c5e188e00ddbfb77bd1bf39d6a77be2ac65a2bda88b87c38163a98120",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-lavender-scene-b-v83",
+      "sourceHash": "97fad3bac12ed340d792e57e227662a907935eb8f41b3cdf40205b8ff9d1edd4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-lavender-scene-c-v83",
+      "sourceHash": "336665d4fc4b37121d84e54b11d83aa3909592514ab560e0a118f384906d35f3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG03-lavender-scene-d-v83",
+      "sourceHash": "cda0c93505439b08472bae5931e917cb46ea627bf6ce9b7eea0e54560833d3aa",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-buckwheat-scene-a-v83",
+      "sourceHash": "32a8b1c40aa48ca8245349dfd092f1c73b11e79aca73607cf030629bdbe15fce",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-buckwheat-scene-b-v83",
+      "sourceHash": "9e67443739e17e58355933d45bb05698e6ec81d6dd7756ae91df1e0ed1588fb8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-buckwheat-scene-c-v83",
+      "sourceHash": "ee6bbedd8c9c139f166936989cb8fa196e2cbb8cc969e6583e455455192aea21",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-buckwheat-scene-d-v83",
+      "sourceHash": "3bfd779df1229f8a6c39809140fc33b4377a3d6556b66270e9f8a86758ee5467",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-hydrangea-scene-a-v83",
+      "sourceHash": "816d7c49753455e21a781e463b1e14cb8965c3a7d76e575420ce3c6d869b7293",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-hydrangea-scene-b-v83",
+      "sourceHash": "e46b70f88fae5599168c7fcc4dad7a2e60d9b31fb859ac344204213ff049ddec",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-hydrangea-scene-c-v83",
+      "sourceHash": "3d05cbea7cbc5ae62b439bfa4152fe9ccc32d7b8385a8d11fc41000f3ba33f7b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-hydrangea-scene-d-v83",
+      "sourceHash": "8a7e5c96b14710442e97363e2b0ed0c7432bf7402398ffc1345695c8c9c5587f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-lavender-scene-a-v83",
+      "sourceHash": "4b4d83d9ebaf79d7ab92d527c3e340fe63c4967bba32df50ac58958069f5dc8a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-lavender-scene-b-v83",
+      "sourceHash": "d681dcddab64674860ae8ba57b81146bb2f9638da67a7bef8b6bae0a679cfe26",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-lavender-scene-c-v83",
+      "sourceHash": "146f8efdae5dd877e055060dcb76e628e76b9e2913cf08e0bf8dead298db756f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    },
+    {
+      "id": "BG04-lavender-scene-d-v83",
+      "sourceHash": "1d5495341ab805a5743750ee119fd0d6c1d742626e5ba46995f73040d5661e0d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "yPeriodPixelIdentical": true,
+      "backExactlyMirrored": true,
+      "noDuplicateEndpoint": true,
+      "noQuadClipping": true
+    }
+  ]
+}

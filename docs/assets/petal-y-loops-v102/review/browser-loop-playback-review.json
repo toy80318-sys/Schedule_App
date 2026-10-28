@@ -1,0 +1,50 @@
+{
+  "elapsedSeconds": 74.526,
+  "tracks": [
+    {
+      "duration": 5,
+      "loop": true,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "src": "http://127.0.0.1:8809/assets/petal-y-loops-v102/review/sunset_overview.mp4",
+      "time": 2.0013,
+      "observedCycles": 15
+    },
+    {
+      "duration": 5,
+      "loop": true,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "src": "http://127.0.0.1:8809/assets/petal-y-loops-v102/review/day_overview.mp4",
+      "time": 1.9963,
+      "observedCycles": 15
+    },
+    {
+      "duration": 5,
+      "loop": true,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "src": "http://127.0.0.1:8809/assets/petal-y-loops-v102/review/night_overview.mp4",
+      "time": 1.997,
+      "observedCycles": 15
+    },
+    {
+      "duration": 5,
+      "loop": true,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "src": "http://127.0.0.1:8809/assets/petal-y-loops-v102/review/morning_overview.mp4",
+      "time": 2.0008,
+      "observedCycles": 15
+    }
+  ],
+  "review": "normal-speed four-theme playback with sampled front/back/edge-on views; encoded RGBA frames were checked independently",
+  "checkedAt": "2026-10-28T16:14:35.696Z",
+  "visualScope": "48 petals in four theme overview videos, front/back/edge-on screenshots plus full decoded-alpha and phase-contact checks",
+  "unityRuntimeTested": false,
+  "publicEditorIntegrated": false
+}

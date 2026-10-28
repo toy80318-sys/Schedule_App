@@ -1,0 +1,2 @@
+# Preserve generated media and the exact QA bytes referenced by SHA-256.
+* -text

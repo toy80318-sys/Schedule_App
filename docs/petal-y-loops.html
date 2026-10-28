@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>메이즈랜드 · 꽃잎 Y축 회전</title>
+<style>
+:root{color-scheme:dark;font:16px/1.6 system-ui,sans-serif;color:#eef0e0;background:#10271f}*{box-sizing:border-box}body{margin:0}main{max-width:1440px;margin:auto;padding:30px 24px}h1{font-size:clamp(28px,4vw,40px);line-height:1.25;margin:8px 0 14px}h2{font-size:18px;margin:14px 0 5px}p{margin:8px 0}.eyebrow{font-size:11px;letter-spacing:2px;color:#b4c9a6}.lead,.note{color:#b7cab8;max-width:900px}.toolbar,.tabs,.links{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.toolbar{margin:24px 0 16px}.tabs{margin:20px 0}button,select,a{font:inherit}button,select,.links a,.package{border:1px solid #789079;border-radius:22px;background:#18372b;color:#e9efcf;padding:9px 15px}button{cursor:pointer}button:hover,.links a:hover{background:#2d503c}button[aria-selected=true]{color:#163420;background:#dce6b4}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #f1d58c;outline-offset:3px}a{color:#e5edc4;text-underline-offset:4px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.card{border:1px solid #49674e;border-radius:16px;padding:14px;background:#173126}.preview{border-radius:12px;overflow:hidden;aspect-ratio:1;background-color:#dedfd7;background-image:linear-gradient(45deg,#bbc1b7 25%,transparent 25%),linear-gradient(-45deg,#bbc1b7 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#bbc1b7 75%),linear-gradient(-45deg,transparent 75%,#bbc1b7 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}body[data-backdrop=light] .preview{background:#f7f2e5}body[data-backdrop=dark] .preview{background:#182a28}body[data-backdrop=night] .preview{background:#12192f}video{display:block;width:100%;height:100%;object-fit:contain}.play{width:100%;margin:10px 0 4px}.links{gap:7px}.links a{font-size:12px;padding:6px 9px;text-decoration:none}.meta{font-size:12px;color:#adc3b1;overflow-wrap:anywhere}details{font-size:12px;color:#b7cab8;margin-top:12px}footer{margin-top:32px;padding-top:18px;border-top:1px solid #49674e}.error{color:#ffc9a4}.package{display:inline-block;text-decoration:none;margin-top:14px}[hidden]{display:none!important}@media(max-width:1000px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:740px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:440px){.grid{grid-template-columns:1fr}main{padding:22px 16px}}
+</style>
+</head>
+<body data-backdrop="checker">
+<main>
+<header><p class="eyebrow">MAZELAND JEJU · PETAL ROTATION</p><h1>꽃잎이 한 바퀴, 부드럽게</h1><p class="lead">세로축(Y)을 중심으로 회전하는 꽃잎 48종입니다. 같은 자리에서 5초 동안 한 바퀴를 돌고, 자연스럽게 다시 이어집니다.</p><p class="note">꽃잎 원본의 색과 붓결을 유지했습니다. 뒷면은 같은 원본 그림을 양면으로 사용했습니다.</p><a id="packageDownload" class="package" hidden download>꽃잎 회전 영상 전체 받기</a></header>
+<div class="toolbar"><label for="backdrop">미리보기 배경 </label><select id="backdrop"><option value="checker">투명 체크</option><option value="light">밝은 배경</option><option value="dark">어두운 배경</option><option value="night">밤 배경</option></select><button id="stopAll" type="button">모두 정지</button></div>
+<div id="themeTabs" class="tabs" role="tablist" aria-label="꽃잎 시간대"></div>
+<p id="loopStatus" role="status" aria-live="polite">꽃잎 회전 영상을 준비하고 있습니다…</p>
+<section id="themePanel" role="tabpanel" tabindex="0"><div id="loopCards" class="grid"></div></section>
+<footer><p class="note">480×480 · 30fps · 5초 · Y축 360° 회전. 투명 영상은 WebM, 단색 보색 배경 영상은 MP4입니다.</p><p class="note">꽃잎 하나를 선택해 재생하세요. 화면 밖으로 나가거나 다른 꽃잎을 재생하면 이전 영상은 멈춥니다.</p></footer>
+</main>
+<script id="petalYData" type="application/json"></script>
+<script src="petal-y-loops.js?v=102"></script>
+</body>
+</html>

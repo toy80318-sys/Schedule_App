@@ -1,0 +1,90 @@
+{
+  "contactSheetsViewed": 6,
+  "species": [
+    "buckwheat",
+    "camellia",
+    "marigold",
+    "canola",
+    "hydrangea",
+    "lavender"
+  ],
+  "phasesPerSheet": 8,
+  "backgroundsPerSheet": 4,
+  "observed": "No obvious clipping, opaque backdrop, detached extra fragments, or color discontinuity in the six complete four-background contact sheets. Exact edge-on phases are blank by flat-plane geometry.",
+  "limits": "120px contact thumbnails do not establish tiny-pixel or full temporal visual approval. Full 48 loops and ten-cycle normal-speed viewing remain root responsibility.",
+  "overviewVideos": [
+    {
+      "theme": "sunset",
+      "file": "docs\\assets\\petal-y-loops-v102\\review\\sunset_overview.mp4",
+      "SHA256": "db75c2489faeae4f6e567190e907d6f460a4eb2f21195377beb18dcf690b6f4e",
+      "width": 1024,
+      "height": 840,
+      "frames": 150,
+      "fps": 30,
+      "duration": 5,
+      "decodedSourceVideos": 12,
+      "backgrounds": [
+        "light",
+        "dark",
+        "checker",
+        "night"
+      ],
+      "normalSpeed10CycleReview": "root pending"
+    },
+    {
+      "theme": "day",
+      "file": "docs\\assets\\petal-y-loops-v102\\review\\day_overview.mp4",
+      "SHA256": "e1bda3820dcccb3b4ccab4e03586d45112bd179c7f924d4bbdb649e3588d0181",
+      "width": 1024,
+      "height": 840,
+      "frames": 150,
+      "fps": 30,
+      "duration": 5,
+      "decodedSourceVideos": 12,
+      "backgrounds": [
+        "light",
+        "dark",
+        "checker",
+        "night"
+      ],
+      "normalSpeed10CycleReview": "root pending"
+    },
+    {
+      "theme": "night",
+      "file": "docs\\assets\\petal-y-loops-v102\\review\\night_overview.mp4",
+      "SHA256": "b5817ddbee327b889349855e0b274109e5387cb730cc6667c4608ea7a497a14b",
+      "width": 1024,
+      "height": 840,
+      "frames": 150,
+      "fps": 30,
+      "duration": 5,
+      "decodedSourceVideos": 12,
+      "backgrounds": [
+        "light",
+        "dark",
+        "checker",
+        "night"
+      ],
+      "normalSpeed10CycleReview": "root pending"
+    },
+    {
+      "theme": "morning",
+      "file": "docs\\assets\\petal-y-loops-v102\\review\\morning_overview.mp4",
+      "SHA256": "25b191fb06f372159f5087660dfb0e1a5f8ff1df80205f4ae279345d0ee4bbdc",
+      "width": 1024,
+      "height": 840,
+      "frames": 150,
+      "fps": 30,
+      "duration": 5,
+      "decodedSourceVideos": 12,
+      "backgrounds": [
+        "light",
+        "dark",
+        "checker",
+        "night"
+      ],
+      "normalSpeed10CycleReview": "root pending"
+    }
+  ],
+  "visualApproval": false
+}

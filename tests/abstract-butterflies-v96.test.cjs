@@ -15,5 +15,5 @@ for a in m['items']:
 with zipfile.ZipFile('docs/assets/abstract-butterflies-v96/Butterfly_AbstractOil3x_4PNG_v96.zip') as z:assert z.testzip() is None and len(z.namelist())==5
 print('RGBA1024/padding/complementary solid inputs/original SHA/ZIP verified.')`;
 const r=spawnSync('python',['-X','utf8','-c',code],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);console.log(r.stdout.trim());
-const page=fs.readFileSync('docs/butterflies-oil.html','utf8');assert.equal((page.match(/<article id="butterfly-/g)||[]).length,4);assert(page.includes('생성 비용 확인 대기'));for(const f of ['docs/atmosphere-loops.html','docs/element-loops.html'])assert(fs.readFileSync(f,'utf8').includes('butterflies-oil.html?v=20261028-v96'));
+const page=fs.readFileSync('docs/butterflies-oil.html','utf8');assert.equal((page.match(/<article id="butterfly-/g)||[]).length,4);assert(page.includes(fs.existsSync('docs/assets/abstract-butterflies-v97/production.json')?'실제 날갯짓':'생성 비용 확인 대기'));for(const f of ['docs/atmosphere-loops.html','docs/element-loops.html'])assert(fs.readFileSync(f,'utf8').includes('butterflies-oil.html?v=20261028-v97#wingbeat-motion'));
 console.log('PASS:4 newly generated whole-object butterfly images,real alpha,matching key inputs,original preservation and honest video-pending display.');

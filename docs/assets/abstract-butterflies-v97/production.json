@@ -1,0 +1,227 @@
+{
+  "format": "mazeland-butterfly-wingbeats-v97",
+  "version": 97,
+  "date": "2026-10-28",
+  "approvedInitialCount": 4,
+  "maximumApprovedCredits": 9.6,
+  "quotedMaximumCredits": 9.2,
+  "submittedCount": 4,
+  "paidRetries": 0,
+  "gameReplacements": 0,
+  "items": [
+    {
+      "index": 1,
+      "id": "atmosphere85-butterfly-01",
+      "sourcePNG": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly01_AbstractOil3x_v96.png",
+      "sourceSHA256": "7e70e61a9817c9cb70a424f3073f688ce3579f9ee32d530d798b0fd7cad1d196",
+      "model": "seedance1_5",
+      "generationStatus": "completed",
+      "productionStatus": "rejected",
+      "gameApplied": false,
+      "jobId": "c636a8d6-a017-441e-8b43-ecc04885736e",
+      "rawVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly01_Wingbeat_Raw_v97.mp4",
+      "rawVideoSHA256": "53851952ddc5c3ee3db4335ab9f65d0f8e8b8d6a783d5073874a0b2d01768b45",
+      "fps": 24.0,
+      "width": 640,
+      "height": 640,
+      "frameCount": 97,
+      "duration": 4.041666666666667,
+      "reviewSheet": "assets/abstract-butterflies-v97/Butterfly01_review.jpg",
+      "review": {
+        "index": 1,
+        "rawSHA256": "53851952ddc5c3ee3db4335ab9f65d0f8e8b8d6a783d5073874a0b2d01768b45",
+        "status": "rejected",
+        "allOriginalFramesInspected": 97,
+        "reason": "날개를 접고 펼치는 동작은 있으나 몸통이 원래 대각선에서 정면·수직으로 회전하고 그림자가 생성됨. 시작·끝 정지 구간과 박자 변화가 있어 게임 루프로 불합격.",
+        "problemFrameRanges": [
+          [
+            12,
+            28
+          ],
+          [
+            25,
+            83
+          ]
+        ],
+        "alphaSequenceReleased": false,
+        "loopCyclesApproved": 0
+      }
+    },
+    {
+      "index": 2,
+      "id": "atmosphere85-butterfly-02",
+      "sourcePNG": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly02_AbstractOil3x_v96.png",
+      "sourceSHA256": "1e552b40c8cee871aa57ef6422b4476d03bf4602603011832a03817473ee1d54",
+      "model": "seedance1_5",
+      "generationStatus": "completed",
+      "productionStatus": "rejected",
+      "gameApplied": false,
+      "jobId": "65c1008f-57c4-4468-8c9e-d1f23a906f05",
+      "rawVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly02_Wingbeat_Raw_v97.mp4",
+      "rawVideoSHA256": "b936aa80d7f2f9954d206cbc99158fb94cdfb8935bfd7e5d7d67bd3656747695",
+      "fps": 24.0,
+      "width": 640,
+      "height": 640,
+      "frameCount": 97,
+      "duration": 4.041666666666667,
+      "reviewSheet": "assets/abstract-butterflies-v97/Butterfly02_review.jpg",
+      "review": {
+        "index": 2,
+        "rawSHA256": "b936aa80d7f2f9954d206cbc99158fb94cdfb8935bfd7e5d7d67bd3656747695",
+        "status": "rejected",
+        "allOriginalFramesInspected": 97,
+        "reason": "몸통이 정면으로 돌아가고 유화 색면이 매끈한 사실적 날개 무늬·새 몸통으로 바뀜. 긴 정지와 불규칙한 날갯짓으로 불합격.",
+        "problemFrameRanges": [
+          [
+            13,
+            81
+          ],
+          [
+            25,
+            52
+          ]
+        ],
+        "alphaSequenceReleased": false,
+        "loopCyclesApproved": 0
+      }
+    },
+    {
+      "index": 3,
+      "id": "atmosphere85-butterfly-03",
+      "sourcePNG": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly03_Side_AbstractOil_v97.png",
+      "sourceSHA256": "5d29f839b0f42fdb8027dac8522d3cecd09e11ca7adddb2f5564b73fe1b2e4ef",
+      "model": "seedance1_5",
+      "generationStatus": "completed",
+      "productionStatus": "rejected",
+      "gameApplied": false,
+      "jobId": "8124c038-5a5b-4eed-ac30-4e934310ed5f",
+      "rawVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly03_Wingbeat_Raw_v97.mp4",
+      "rawVideoSHA256": "098cfb0ccfcc2d10831d241c8ae7bb04168400b4cd579b9d7a53802c3cac8164",
+      "fps": 24.0,
+      "width": 640,
+      "height": 640,
+      "frameCount": 97,
+      "duration": 4.041666666666667,
+      "reviewSheet": "assets/abstract-butterflies-v97/Butterfly03_review.jpg",
+      "review": {
+        "index": 3,
+        "rawSHA256": "098cfb0ccfcc2d10831d241c8ae7bb04168400b4cd579b9d7a53802c3cac8164",
+        "status": "rejected",
+        "allOriginalFramesInspected": 97,
+        "reason": "측면 입력에서도 새로운 노랑·검정 줄무늬 몸통과 그림자가 나타남. 원본의 단순 유화 몸통·고정 방향이 유지되지 않아 불합격.",
+        "problemFrameRanges": [
+          [
+            16,
+            90
+          ]
+        ],
+        "alphaSequenceReleased": false,
+        "loopCyclesApproved": 0
+      }
+    },
+    {
+      "index": 4,
+      "id": "atmosphere85-butterfly-04",
+      "sourcePNG": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Side_AbstractOil_v97.png",
+      "sourceSHA256": "faa79a1062b9838dacd5a8d58ce92331e6f5995dad538ded0ef554b19708a9e2",
+      "model": "seedance_2_0_mini",
+      "generationStatus": "completed",
+      "productionStatus": "motion-candidate",
+      "gameApplied": false,
+      "jobId": "3d924537-67b3-4667-a9bd-36f26e4fb4be",
+      "rawVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Wingbeat_Raw_v97.mp4",
+      "rawVideoSHA256": "e07e90551654bb4ac05f7040962bbfc07d1f06a3c7ba0e5c98d485e518560eb5",
+      "fps": 24.0,
+      "width": 640,
+      "height": 640,
+      "frameCount": 97,
+      "duration": 4.041666666666667,
+      "reviewSheet": "assets/abstract-butterflies-v97/Butterfly04_review.jpg",
+      "review": {
+        "index": 4,
+        "rawSHA256": "e07e90551654bb4ac05f7040962bbfc07d1f06a3c7ba0e5c98d485e518560eb5",
+        "status": "motion-candidate",
+        "allOriginalFramesInspected": 97,
+        "reason": "실제 측면 날갯짓 원본에서 프레임26–49의 온전한 1초 주기를 선택해 원속도로3회 연결했습니다. 동작 확인용3초 후보이며, 알파 가장자리의 청록 잔색·흐림은 보정 검토 중입니다. 최종 게임 소스로 승인하지 않았습니다.",
+        "alphaSequenceReleased": false,
+        "loopCyclesApproved": 0
+      }
+    }
+  ],
+  "sideInputs": [
+    {
+      "index": 1,
+      "id": "atmosphere85-butterfly-01",
+      "sourcePNG": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly01_Side_AbstractOil_v97.png",
+      "sourceSHA256": "fa46e30f65398e04c89d523e304cd1eb640ea480e390106d6ef65f2f00c84029",
+      "keyImage": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly01_Side_AbstractOil_v97_Key00ECFF.png",
+      "keyColor": "#00ECFF",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "normalization": "Uniform resize600 and translation only; original alpha unchanged; thorax approximately at image center",
+      "imageReview": "passed"
+    },
+    {
+      "index": 2,
+      "id": "atmosphere85-butterfly-02",
+      "sourcePNG": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly02_Side_AbstractOil_v97.png",
+      "sourceSHA256": "4b64e18fe294a4a17c2ff4b0b0ff16299e4957aff64ca9af577f91f9823942b4",
+      "keyImage": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly02_Side_AbstractOil_v97_Key00A8FF.png",
+      "keyColor": "#00A8FF",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "normalization": "Uniform resize640 and translation only; original alpha unchanged; thorax approximately at image center",
+      "imageReview": "passed"
+    },
+    {
+      "index": 3,
+      "id": "atmosphere85-butterfly-03",
+      "sourcePNG": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly03_Side_AbstractOil_v97.png",
+      "sourceSHA256": "5d29f839b0f42fdb8027dac8522d3cecd09e11ca7adddb2f5564b73fe1b2e4ef",
+      "keyImage": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly03_Side_AbstractOil_v97_Key00C2FF.png",
+      "keyColor": "#00C2FF",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "normalization": "Uniform resize640 and translation only; original alpha unchanged; thorax approximately at image center",
+      "imageReview": "passed"
+    },
+    {
+      "index": 4,
+      "id": "atmosphere85-butterfly-04",
+      "sourcePNG": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Side_AbstractOil_v97.png",
+      "sourceSHA256": "faa79a1062b9838dacd5a8d58ce92331e6f5995dad538ded0ef554b19708a9e2",
+      "keyImage": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Side_AbstractOil_v97_Key00FFF4.png",
+      "keyColor": "#00FFF4",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "normalization": "Uniform resize640 and translation only; original alpha unchanged; thorax approximately at image center",
+      "imageReview": "passed"
+    }
+  ],
+  "motionPreview": {
+    "index": 4,
+    "keyVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Wingbeat_Key_480_3s_v97.mp4",
+    "alphaVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Wingbeat_Alpha_480_3s_v97.webm",
+    "fiveCycleVideo": "assets/abstract-butterflies-v97/ML_SHARED_Butterfly04_Wingbeat_5회확인_v97.mp4",
+    "sequenceZip": "assets/abstract-butterflies-v97/Butterfly04_Wingbeat_PNGAlpha480_CANDIDATE_v97.zip",
+    "fps": 24,
+    "frameCount": 72,
+    "duration": 3,
+    "sourceCycle": [
+      26,
+      50
+    ],
+    "seamMAE": 2.3516812324523926,
+    "alphaReview": "edge-cleanup-pending",
+    "status": "motion-review-candidate",
+    "gameApplied": false
+  }
+}

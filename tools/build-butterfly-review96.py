@@ -12,3 +12,24 @@ page='''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="v
 base=repo.parent/'20261028_메이즈랜드_원본소스/나비_추상유화3배_480_3초_v96'
 (base/'00_나비4종_추상유화_비교_v96.html').write_text(page.replace('<head>','<head><base href="https://toy80318-sys.github.io/Schedule_App/">'),encoding='utf-8')
 print('Built4 new-image comparisons; video production honestly pending.')
+production=docs/'assets/abstract-butterflies-v97/production.json'
+if production.exists():
+    p=json.loads(production.read_text(encoding='utf-8'));videos=[]
+    motion=p.get('motionPreview')
+    if motion:
+        videos.append(f'''<article id="wingbeat-motion"><h2>실제 날갯짓 · 3초 동작 확인용</h2><p>04 나비의 온전한 1초 날갯짓을 원래 속도로 세 번 연결했습니다. 날개가 몸통 연결부에서 접혔다 펼쳐집니다. 역재생·이미지 전체 흔들기·형태 보간을 사용하지 않았습니다.</p><div class="compare"><figure><figcaption>480×480 · 보색 키 · 3초 루프</figcaption><video id="wingbeat-key" src="{motion['keyVideo']}" controls muted loop playsinline preload="metadata"></video></figure><figure><figcaption>PNG 알파 파생 영상 · 가장자리 보정 검토 중</figcaption><video id="wingbeat-alpha" src="{motion['alphaVideo']}" controls muted loop playsinline preload="metadata"></video></figure><figure class="light"><figcaption>밝은 배경 · 같은 알파 후보</figcaption><video src="{motion['alphaVideo']}" controls muted loop playsinline preload="metadata"></video></figure></div><p class="status">동작 확인용 후보입니다. 알파 가장자리의 청록 잔색·흐림 보정과 사용자 확인 전이며, 에디터·게임에 적용하지 않았습니다.</p><p><a class="button" href="{motion['keyVideo']}" download>3초 키 영상 받기</a> <a class="button" href="{motion['sequenceZip']}" download>PNG 알파 72장 · 검토용</a> <a href="{motion['fiveCycleVideo']}" target="_blank" rel="noopener">5회 반복 · 15초 영상</a></p></article>''')
+    for a in p['items']:
+        if 'rawVideo' not in a:continue
+        reason=a.get('review',{}).get('reason','최종 동작·알파 검토 중입니다.')
+        label='불합격 · 게임 사용 제외' if a['productionStatus']=='rejected' else '원본 검토용 · 게임 미적용'
+        videos.append(f'''<article id="wingbeat-raw-{a['index']}"><h2>{a['index']:02} · {label}</h2><p class="status">{html.escape(reason)}</p><div class="compare"><figure><figcaption>실제로 입력한 이미지</figcaption><img loading="lazy" src="{a['sourcePNG']}" alt="나비 {a['index']} 실제 영상 입력 이미지"></figure><figure><figcaption>새 Higgsfield 생성 원본 · {html.escape(a['model'])}</figcaption><video controls muted loop playsinline preload="none" src="{a['rawVideo']}"></video></figure><figure><figcaption>원본 16시점 · 확대 가능</figcaption><a href="{a['reviewSheet']}" target="_blank" rel="noopener"><img loading="lazy" src="{a['reviewSheet']}" alt="나비 {a['index']} 영상 16시점 검수"></a></figure></div><p>{a['width']}×{a['height']} 실제 출력 · 24fps · {a['frameCount']}프레임 · 작업 {a['jobId']}</p></article>''')
+    inputs='<details id="wingbeat-inputs"><summary>몸통 방향 고정을 위해 보완한 측면 입력4종</summary><div class="compare">'+''.join(f'<figure><figcaption>{a["index"]:02} · 측면 입력 PNG</figcaption><a href="{a["sourcePNG"]}" download><img loading="lazy" src="{a["sourcePNG"]}" alt="나비{a["index"]}의 새 측면 입력"></a></figure>' for a in p['sideInputs'])+'</div></details>'
+    section='<section id="wingbeats"><h2>새로 생성한 실제 날갯짓 · v97</h2><p>승인된 최초4편을 생성했습니다. 견적 누계는9.2/9.6크레딧이며 유료 재시도와 업스케일은0회입니다. 생성 완료와 품질 합격을 구분합니다.</p>'+''.join(videos[:1])+inputs+''.join(videos[1:])+'</section>'
+    page=page.replace('</style>','video{display:block;width:100%;aspect-ratio:1;object-fit:contain}#wingbeats{scroll-margin-top:100px}</style>')
+    page=page.replace('새 이미지와 보색 키 입력 4종을 준비했습니다. 480p·무음 영상 4편의 견적은 총 최대9.6크레딧이며 별도 확인 대기입니다. 모델 최소4초 원본을 검수한 뒤 게임용480×480·24fps·3초 PNG 알파로 정리합니다. 업스케일과 자동 유료 재시도는 실행하지 않습니다.','아래에서 실제 날개 접기·펼치기 생성 결과와 불합격 사유를 확인할 수 있습니다. 동작 확인용3초 후보를 공개했으며 게임용 최종 알파와 전체4종 교체는 완료 전입니다.')
+    page=page.replace('<article id="butterfly-1">',section+'<h2 id="painted-images">기존에 준비한 추상 유화 이미지4종</h2><article id="butterfly-1">')
+    page=page.replace('새 영상: 생성 비용 확인 대기 · 기존 영상은 새 이미지 영상으로 표시하지 않습니다.','새 영상: 상단 실제 날갯짓 검수 참조 · 기존 게임 루프와 구분됩니다.')
+    page=page.replace('NEW ART · 2026-10-28 · v96','NEW ART + WINGBEATS · 2026-10-28 · v97')
+    (docs/'butterflies-oil.html').write_text(page,encoding='utf-8')
+    (base/'00_나비4종_추상유화_비교_v96.html').write_text(page.replace('<head>','<head><base href="https://toy80318-sys.github.io/Schedule_App/">'),encoding='utf-8')
+    print('Added exact newly generated video candidates and quality decisions,without game replacement.')

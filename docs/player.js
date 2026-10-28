@@ -343,6 +343,7 @@
     const version=++generation,preparedAnchors=new Map();clearFrameQueue();stills.clear();loading=true;active.clear();touches.clear();lastEmptyTouch=-Infinity;petals=[];sequenceCache.clear();$('loading').hidden=false;
     let nextBackground;
     try{
+      if(window.jejuSeparatedLoops){const normalize=source=>window.jejuSeparatedMotion.staticBackground(source,window.jejuSeparatedLoops);next.background=normalize(next.background);if(normalize(next.backgroundLoop)!==next.backgroundLoop)delete next.backgroundLoop;if(Array.isArray(next.backgroundPlaylist))next.backgroundPlaylist=next.backgroundPlaylist.map(normalize);}
       next.background=window.jejuFinalCatalog?.backgroundAliases?.[next.background?.split('?')[0]]||next.background;const map=new Map(next.assets.map(a=>{const source=window.jejuAmbient.currentAsset(a,window.jejuFinalCatalog),current=window.jejuElementLoopData?window.jejuElementLoops.asset(source,window.jejuElementLoopData):source;return[a.id,window.jejuFlowerOpeningData?window.jejuFlowerOpening.asset(current,window.jejuFlowerOpening.validate(window.jejuFlowerOpeningData)):{...current}]})),used=new Set(next.objects.map(o=>o.assetId));if([...used].some(id=>flowerSpecies(map.get(id))))await getManifest();
       for(const id of used){const a=map.get(id);if(flowerSpecies(a)){a.buds=new Map();a.opens=new Map();a.variants=new Map()}}
       const unavailable=[];

@@ -24,11 +24,17 @@
     const span=width+object.w*2+40,speed=span/(kind==='cloud'?540:900);
     return {...object,x:((object.x+object.w+20-time*speed*(object.motion==='right'?-1:1))%span+span)%span-object.w-20};
   }
+  function staticSeparatedAsset(asset){
+    if(!asset||!['grass','leaf','tree','basalt'].includes(asset.category)||!/^BG0[1-4]-E0[1256]-V05$/.test(asset.id||'')&&!/^https:\/\/raw\.githubusercontent\.com\/toy80318-sys\/Schedule_App\/main\/source-assets\/set-review-v01\/BG0[1-4]-E0[1256]-V05\.png(?:[?#]|$)/.test(asset.src||''))return asset;
+    const value={...asset,stillOnly:true,loopInPlace:false,separatedLoopVersion:88};
+    for(const key of ['frames','previewFrames','previewWidth','previewHeight','fps','frameCount','duration','loopWidth','loopHeight','loopVideo','keyVideo','keyColor','sequenceZip','unityFrames','sequenceFrameCount','elementLoopVersion','motion'])delete value[key];
+    return value;
+  }
   function currentAsset(asset,catalog){
     const source=(asset.src||asset.frames?.[0]||'').split('?')[0];
     const current=catalog?.assets?.find(a=>!a.referenceOnly&&(a.id===asset.id||a.legacyAssetIds?.includes(asset.id)||a.legacySources?.includes(source)||a.legacySourcePrefixes?.some(prefix=>source.startsWith(prefix))));
-    return current?{...asset,...current,id:asset.id,frames:current.frames}:asset;
+    return staticSeparatedAsset(current?{...asset,...current,id:asset.id,frames:current.frames}:asset);
   }
-  const policy={isRetired,cleanProject,atmosphereAssets,atmosphereKind,driftPose,currentAsset};
+  const policy={isRetired,cleanProject,atmosphereAssets,atmosphereKind,driftPose,currentAsset,staticSeparatedAsset};
   if(typeof module==='object'&&module.exports)module.exports=policy;else root.jejuAmbient=policy;
 })(typeof window==='object'?window:globalThis);

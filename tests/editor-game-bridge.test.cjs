@@ -33,7 +33,7 @@ function setup(options={}){
 }
 (async()=>{
   let t=setup();await t.switch(true);
-  assert.equal(t.fetches[0],'player-embed.txt?v=butterfly98-particles');assert.equal(t.c.exhibitionActive,true);assert.equal(t.get('editorWorkspace').hidden,true);assert.equal(t.get('exhibitionWorkspace').hidden,false);assert.equal(t.frame.srcdocWrites,1);
+  assert.equal(t.fetches[0],'player-embed.txt?v=static-v88');assert.equal(t.c.exhibitionActive,true);assert.equal(t.get('editorWorkspace').hidden,true);assert.equal(t.get('exhibitionWorkspace').hidden,false);assert.equal(t.frame.srcdocWrites,1);
   assert.equal(t.get('exhibitionTab').getAttribute('aria-selected'),'true');assert.equal(t.get('editorTab').tabIndex,-1);assert.equal(t.messages.length,0,'project waits for the iframe ready handshake');
   t.message({type:'jeju-exhibition-ready'},'https://evil.test');t.message({type:'jeju-exhibition-ready'},undefined,{});assert.equal(t.messages.length,0,'both origin and frame source must match');
   t.message({type:'jeju-exhibition-ready'});assert.deepEqual(t.messages.map(m=>m.value.type),['jeju-exhibition-project','jeju-exhibition-active']);assert.equal(t.messages[1].value.active,true);assert(t.messages.every(m=>m.origin==='https://toy80318-sys.github.io'));
@@ -50,6 +50,6 @@ function setup(options={}){
   t=setup({httpFailure:true});await t.switch(true);t.options.httpFailure=false;await t.switch(true);assert.equal(t.fetches.length,2,'failed template loads can be retried');assert.equal(t.frame.srcdocWrites,1);
   for(const mode of ['move','pan','marquee']){t=setup({drag:{mode},pendingPointer:{clientX:10}});await t.switch(true);assert.equal(t.c.drag,null);assert.equal(t.c.pendingPointer,null);assert.equal(t.c.marquee.style.display,'none');assert.equal(t.calls.flush,1);assert.equal(t.calls.save,mode==='move'?1:0,'only an existing unfinished edit is finalized');assert.equal(t.project(),t.before);}
   t=setup();let prevented=0;t.get('editorTab').listeners.keydown({key:'ArrowRight',preventDefault:()=>prevented++,stopPropagation(){}});await t.get('exhibitionTab').lastClick;assert.equal(t.get('exhibitionTab').focused,true);assert.equal(prevented,1);assert.equal(t.c.exhibitionActive,true);
-  const html=read('editor.html');assert.equal((html.match(/class="workspace-tabs"/g)||[]).length,1);assert(!html.includes('id="gameTab"'));assert(html.includes('tabindex="-1">게임 모드</button>'));assert(html.includes('id="exhibitionBloomAll">모든 꽃 반응'));assert(html.includes('app.js?v=butterfly98-particles'));
+  const html=read('editor.html');assert.equal((html.match(/class="workspace-tabs"/g)||[]).length,1);assert(!html.includes('id="gameTab"'));assert(html.includes('tabindex="-1">게임 모드</button>'));assert(html.includes('id="exhibitionBloomAll">모든 꽃 반응'));assert(html.includes('app.js?v=static-v88'));
   console.log('PASS: two-tab game bridge, editor/add readiness, ready/load/active ordering, origin/source checks, inactive pause, current/frozen layout preservation, rapid-transition races, retry/failure gates, pointer cleanup, keyboard/fullscreen and unchanged message/API IDs.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

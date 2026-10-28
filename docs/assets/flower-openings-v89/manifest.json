@@ -5,7 +5,7 @@
   "creditEstimate": 115.2,
   "account": "추진이",
   "model": "seedance1_5",
-  "paidJobsSubmitted": 0,
+  "paidJobsSubmitted": 6,
   "items": [
     {
       "id": "BG01-buckwheat-scene-a-v83",
@@ -17,7 +17,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "4fc74c25da5de566fca526656f74a8bbf64d4c3f2aa9ff6bd963ecc5b6795b40",
-      "status": "awaiting-video-approval",
+      "status": "generated-review-pending",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -79,6 +79,13 @@
       "rootBloom": [
         600.5,
         1218
+      ],
+      "jobId": "a9c2d6cd-9c7a-4c50-a638-c244f8d922ad",
+      "videoReview": "전체 97프레임 개화 1차 검토, 알파 검수 전",
+      "rawVideoSHA256": "ce6731f106cc750ffe165169a2ce3376c818bdefef68c68a36d757030bf8d12e",
+      "actualResolution": [
+        640,
+        640
       ]
     },
     {
@@ -91,7 +98,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "23ecd2570b04242e27ab0dd91de55a6c3f63954035e042e4cfd56580e0781f9c",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -165,7 +172,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "16e6259eecc946a9c1a7a8600b8e932cdddfa671e7a7390a160be7d0d063774b",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -239,7 +246,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "5cea74b6a80cdf3e2db5be9bcdc97d56ac63022439b721c26540235a00204b51",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -313,7 +320,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_camellia_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "40f87126ba6f47020a03d3bae56a4893469d5e4f3de155d6260f9e06a45c4a72",
-      "status": "awaiting-video-approval",
+      "status": "generated-review-pending",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -375,6 +382,13 @@
       "rootBloom": [
         716.31,
         1201
+      ],
+      "jobId": "57cd0cae-f5f9-46f8-9679-86e1ef425096",
+      "videoReview": "전체 97프레임 개화 1차 검토, 알파 검수 전",
+      "rawVideoSHA256": "acd66cf887d2d5c2636e2c44837ec750b0626c65d2e07fe3d0622fa3307420e6",
+      "actualResolution": [
+        640,
+        640
       ]
     },
     {
@@ -387,7 +401,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_camellia_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "7d625a4aa474e748fbf5100311bcde8998dafb0c1dcc6c6008028d48b17f9482",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -461,7 +475,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_camellia_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "64009d5cec8f9f54bcd528c9d46db514feb6beabd473f35fbb0e2952d8460b3d",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -535,7 +549,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_camellia_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "61407a6e8a853a565dd0b8ed8265280c008561538b548de72bff0209f2837a24",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -609,7 +623,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_marigold_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "3b4f984a3c66daaf2ba365b764bc620c506ae2abd3bd0d06a1131cf227def34a",
-      "status": "awaiting-video-approval",
+      "status": "generated-review-pending",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -671,6 +685,13 @@
       "rootBloom": [
         655.3,
         1189
+      ],
+      "jobId": "1f7326d9-979a-4983-94c3-2db43e9e56b6",
+      "videoReview": "전체 97프레임 개화 1차 검토, 알파 검수 전",
+      "rawVideoSHA256": "d921055757fddbf457dd116a778f48018637456437d9039e9f86e0a09c3c5706",
+      "actualResolution": [
+        640,
+        640
       ]
     },
     {
@@ -683,7 +704,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_marigold_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "9e44a63fc14e6ab3617ded3cff8021126908bf45ef9eff248a20210ac6b67446",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -757,7 +778,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_marigold_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "464ed50ab57ffda870fde3662bd8dda97239cc2dbff8fc058f73ba06808ed603",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -831,7 +852,7 @@
       "lightingId": "LT01",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG01_LT01_marigold_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "060e4daef18b36a318bc8f5b3cc96ccbf4947af37f9aff771eb86885edfe4031",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -905,7 +926,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "b2b6e5e9c4e8a3b6148e8567206580137d34f694fa63e3fe631199459415434e",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -979,7 +1000,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "84db94581acad27277165e543a5dc7e0c9ec2d0c11a4abeea9a250c5deddf6b7",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1053,7 +1074,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "029e220c5476357cc26713088aefbee9c3d6735848227df1fa355c1c4905dea5",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1127,7 +1148,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "4ccf02895a92a015db3ac5ae601971cdca056df3ae8aa8b96ebdbf771a3d77b9",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1201,7 +1222,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_canola_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "4a89c0ba78b1b60e752f7704c1ba073451bb11efa21dbee1cab47e13d6d87558",
-      "status": "awaiting-video-approval",
+      "status": "rejected",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1263,6 +1284,13 @@
       "rootBloom": [
         669.4,
         1238
+      ],
+      "jobId": "8e0114a2-b612-4437-894b-cdca9af271a7",
+      "videoReview": "약 3.3초 이후 꽃잎 형태가 다시 변해 시작·끝 쌍의 자연스러운 개화 조건 불충족. 유료 재시도 없음.",
+      "rawVideoSHA256": "481cfb8f43b9a267e9adeed5cdab81dd4a6b1479de370455b597ef3a62b725a9",
+      "actualResolution": [
+        640,
+        640
       ]
     },
     {
@@ -1275,7 +1303,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_canola_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "963ea37f4a0bfc38ef67f7f7dd7b90977648bfe3a051e595b4d336806560d9d2",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1349,7 +1377,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_canola_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "af73241b1f5d4e7560c0d59b99aaba822124e8f3efab115a1ca35f7bcedd095b",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1423,7 +1451,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_canola_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "2e5eb4fdd724362d321b9951b120dbc033ebfc7c3018a8c382d212450f4263e5",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1497,7 +1525,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_marigold_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "8007b4d96b05f4be031d0758c0474277a6ebd1730f82581b67155a55c72dfd86",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1571,7 +1599,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_marigold_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "47774a19e3b296e75b2bf85f62da48093536a6a2682f57c917bd8430d7281d6d",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1645,7 +1673,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_marigold_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "203a4241db1ed356f8384d657be929cc8d9f80a81b1d4802881118df1eb9da50",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1719,7 +1747,7 @@
       "lightingId": "LT02",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG02_LT02_marigold_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "2f7aea0ed4e85ac7deb9765249c04e302a19ac541b11ca6c48582e089ea0c083",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1793,7 +1821,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_camellia_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "1d8306e965038a49c1394f236010096e62a62a7410f6975184ed8fe77f27230e",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1867,7 +1895,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_camellia_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "046eeeeaf14246d325ad8ef208667b16096c95e10f98426d1a65864c9076738e",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -1941,7 +1969,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_camellia_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "f4060c1342518ba8ad08a05a48f04f2758489ee9de0a873c9084cbba4232349f",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2015,7 +2043,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_camellia_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "d92cc7d205849c30c57e534741454c04331720955b189d8994ef0fef696aeb4a",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2089,7 +2117,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "f920c6162327a946f739becf0644cd987f0aa55b16d2e1b9fd4583c07ce93e7e",
-      "status": "awaiting-video-approval",
+      "status": "generated-review-pending",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2151,6 +2179,13 @@
       "rootBloom": [
         650.5,
         1213
+      ],
+      "jobId": "cf657b27-44b7-430e-8d45-506e578be0e9",
+      "videoReview": "전체 97프레임 개화 1차 검토, 알파 검수 전",
+      "rawVideoSHA256": "a57fb0aae1d4838d8d1fb2fa989b0632d462ab51c97aec784a11a967c324b407",
+      "actualResolution": [
+        640,
+        640
       ]
     },
     {
@@ -2163,7 +2198,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "2a7dff9a7d16c83e949c94030f796d6893d41253c0c07447f2a92e62c74a09e4",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2237,7 +2272,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "3710dc7ba0611d39c5793fdeeca30dc0297042d1d54566ff52df9f0d0263c7c8",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2311,7 +2346,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "db2261a92678fa7e7a21fc6b98a4824c0b9b0ecce1467b0825ee25bbbe751163",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2385,7 +2420,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_lavender_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "8d9aaf92bebaa23f4b711844a7993d9080fa8f1d3d9dfd7b96197de021a516c1",
-      "status": "awaiting-video-approval",
+      "status": "generated-review-pending",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2447,6 +2482,13 @@
       "rootBloom": [
         673.23,
         1229
+      ],
+      "jobId": "c070da0d-db6e-4bca-93c3-4c6d0e1a0b50",
+      "videoReview": "전체 97프레임 개화 1차 검토, 알파 검수 전",
+      "rawVideoSHA256": "ccc4e66efd764330a534d2a1f35a2a34908aa8cefde95caf0c675316d2898ba0",
+      "actualResolution": [
+        640,
+        640
       ]
     },
     {
@@ -2459,7 +2501,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_lavender_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "a2143f1ad5166ed5299c7393c8bdf427e9b6974029a6284c31f710f0b9afa994",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2533,7 +2575,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_lavender_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "02e57c7cd96208b083d5d207257e8d2a5510a614576b9471c930a52c462bf269",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2607,7 +2649,7 @@
       "lightingId": "LT03",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG03_LT03_lavender_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "1c8ede72bc09a0abb75cb28de9ec307643a36eaba9c651bb52efc30ecf85b41b",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2681,7 +2723,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "08b64a89abc1d2b1d6a7494f479f141116abd5cdde17d9be9e517ddfc031d823",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2755,7 +2797,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "40493c4425f852c5ccdd0436c26ad86286c1d172a2f7c84c58e9c99e4a17f82b",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2829,7 +2871,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "d1bad7f0fc20ce7982a708fa1f3dbe1947fec26255aab78833b73ba3484aab3e",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2903,7 +2945,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "32d2b1adaca4e335c73a7ca91b515b002082b462f17a173400f77dcc69f02c5d",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -2977,7 +3019,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "303fe94520b2e94768c0b9a28562da256b10371308e09119d6ffba98179c1e42",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3051,7 +3093,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "66cbf58f40a24efc6fbe5e8afeb6a2080cc32a9e8cebf4353fbe50d23e55d6ab",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3125,7 +3167,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "c5e9639511aaaf8c46d90451527617166fa7223449486ebb8097dfcf91c615cf",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3199,7 +3241,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "dbd3d6dfc18a704069c27461415ba1c1d54f9be8fee3243dfb1e5768cd277ff6",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3273,7 +3315,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_lavender_ShapeA_SceneOil_Bloom_v83.png",
       "sourceSHA256": "f6e47c184e57b08be32da192c6589bfd36497b62f8fd89cd12829fe95abd8dca",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3347,7 +3389,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_lavender_ShapeB_SceneOil_Bloom_v83.png",
       "sourceSHA256": "57966c56b498075958c8c91110498f710919d869d96bcd8fdeba231786a5bf8a",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3421,7 +3463,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_lavender_ShapeC_SceneOil_Bloom_v83.png",
       "sourceSHA256": "04f0ce1b2b50bc84cd0e90e448fbbf465dc14f360c434569211e98c4cad34500",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3495,7 +3537,7 @@
       "lightingId": "LT04",
       "sourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/scene-flowers-v83/ML_BG04_LT04_lavender_ShapeD_SceneOil_Bloom_v83.png",
       "sourceSHA256": "773f70c87b7c5668ff5559a862d72d2ab090f46334d273e873f3b064da25ec3e",
-      "status": "awaiting-video-approval",
+      "status": "approved-awaiting-generation",
       "route": "GENERATED_IMAGE_PAIR_TO_VIDEO",
       "inputs": [
         {
@@ -3559,5 +3601,9 @@
         1230
       ]
     }
-  ]
+  ],
+  "approval": "approved",
+  "approvedMaximumCredits": 115.2,
+  "automaticPaidRetry": false,
+  "upscaleApproved": false
 }

@@ -1,0 +1,48 @@
+{
+  "version": 93,
+  "date": "2026-10-28",
+  "coordinateSystem": "top-left, normalized canvas coordinates; root pivots remain in the complete sprites",
+  "unityRuntimeVerified": false,
+  "scenes": [
+    {
+      "id": "sunset",
+      "project": "sunset_editor_v93.json",
+      "sha256": "27ecb421f9c101f6354234d4d648ab7fe92f24052e64a6700958db196b5a6602",
+      "objectCount": 398,
+      "flowers": 320,
+      "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG01_LT01_Integrated_AbstractOil_Flower30_v84.png",
+      "sourceProject": "assets/current-release-v86/sunset_editor_v86.json",
+      "sourceProjectSHA256": "58ec60d3c2a6a302f3afbeaeb4b18ecd72cc16e4365b78775ff84349966abc6d"
+    },
+    {
+      "id": "day",
+      "project": "day_editor_v93.json",
+      "sha256": "4a137dc8bd67fe8ec2f9d2c3441d4a27a083c2d15d1549565d388470fcde3f46",
+      "objectCount": 398,
+      "flowers": 320,
+      "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG02_LT02_Integrated_AbstractOil_Flower30_v84.png",
+      "sourceProject": "assets/current-release-v86/day_editor_v86.json",
+      "sourceProjectSHA256": "993648445fff53528f7763a8b0e1c039374e2b33189785ded17c80da5ab90d8b"
+    },
+    {
+      "id": "night",
+      "project": "night_editor_v93.json",
+      "sha256": "3b4498f09eb3a0c47619428380e73fab8a9145940a31ffd4802ee566f2600d76",
+      "objectCount": 398,
+      "flowers": 320,
+      "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG03_LT03_Integrated_AbstractOil_Flower30_v84.png",
+      "sourceProject": "assets/current-release-v86/night_editor_v86.json",
+      "sourceProjectSHA256": "37ab95ba082d3082543c73336dcb87a6d7c793e77b4a126453da7efb59799953"
+    },
+    {
+      "id": "morning",
+      "project": "morning_editor_v93.json",
+      "sha256": "da3c9639f63bc4c78ca3d218a195a460971750a137f20979e157a6acf0fbe669",
+      "objectCount": 398,
+      "flowers": 320,
+      "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG04_LT04_Integrated_AbstractOil_Flower30_v84.png",
+      "sourceProject": "assets/current-release-v86/morning_editor_v86.json",
+      "sourceProjectSHA256": "0decee240f28ce0c4b409f7f9ff9d46788bdbc058fcf3ad6903643701a544f63"
+    }
+  ]
+}

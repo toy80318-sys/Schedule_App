@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const docs=path.resolve(__dirname,'../docs'),read=p=>JSON.parse(fs.readFileSync(path.join(docs,p),'utf8')),dir=path.join(docs,'assets/current-release-v86');fs.mkdirSync(dir,{recursive:true});
 const write=(p,v)=>fs.writeFileSync(path.join(docs,p),JSON.stringify(v,null,2)+'\n'),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(docs,p),'utf8').replace(/\r\n/g,'\n')).digest('hex');
 const release=read('assets/current-release-v85/manifest.json'),review=read('assets/current-release-v85/set-review.json');
-release.version=86;release.assets=release.assets.filter(a=>a.category!=='bird').map(a=>({...a,releaseVersion:86}));release.counts.bird=0;release.note='Current abstract oil collection only. Earlier bird designs and historical sources remain archived; user layouts are not migrated.';
+release.version=86;release.assets=release.assets.filter(a=>a.category!=='bird').map(a=>({...a,...(/^atmosphere85-(cloud|butterfly)-0[1-4]$/.test(a.id)?{catalogHidden:true,useStatus:'rejected-by-user'}:{}),releaseVersion:86}));release.counts.bird=0;release.note='Current abstract oil collection only. Earlier bird designs and historical sources remain archived; user layouts are not migrated.';
 const active=new Set(release.assets.map(a=>a.id));
 for(const scene of release.scenes){
  const project=read(scene.project),unity=read(scene.unityLayout);scene.assetIds=scene.assetIds.filter(id=>active.has(id));

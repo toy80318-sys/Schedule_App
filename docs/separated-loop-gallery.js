@@ -1,7 +1,7 @@
 (()=>{'use strict';
  const root=document.createElement('section');root.id='environment88';document.querySelector('#sections').before(root);const status=document.createElement('p');status.textContent='배경과 분리 환경 루프를 불러오는 중…';root.append(status);
  fetch('assets/separated-loops-v88/manifest.json?v=88').then(r=>{if(!r.ok)throw Error('분리 루프 목록을 불러오지 못했습니다.');return r.json()}).then(data=>{
-  window.jejuSeparatedMotion.validate(data);status.textContent='배경 4종 · 풀·잎·나무 12종 · 고정 현무암 4종 · 기존 구름·나비·빛 12종. 원본 PNG를 보존한 분리 루프입니다.';
+  window.jejuSeparatedMotion.validate(data);status.textContent='배경 4종 · 풀·잎·나무 12종 · 고정 현무암 4종 · 빛 파티클 4종. 원본 PNG를 보존한 분리 루프입니다.';
   const labels={grass:'풀',leaf:'잎 가지',tree:'나무',basalt:'현무암 · 고정'};
   for(const[type,title,items]of[['background','배경만 · 60초 루프',data.backgrounds],['environment','풀·잎·나무·현무암 · 4초 루프',data.environment]]){
    const heading=document.createElement('h2'),grid=document.createElement('div');heading.textContent=title;grid.className='grid';root.append(heading,grid);

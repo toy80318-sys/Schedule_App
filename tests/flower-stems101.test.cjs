@@ -13,6 +13,7 @@ for(const x of m.items){
  assert.deepEqual([o.duration,o.fps,o.frames,o.width,o.height],[2,24,48,320,480]);
  assert.deepEqual([o.atlasColumns,o.atlasRows,o.previewWidth,o.previewHeight],[8,6,192,288]);
  assert.equal(o.status,'passed');assert.ok(o.fullyOpenBySeconds<2);
+ assert.equal(o.immediateStart,true);assert.equal(o.firstOpeningAtSeconds,1/24);
  assert.equal(o.actualInputs.length,2);
  for(const [role,state] of [['start_image','bud'],['end_image','bloom']]){
   const input=o.actualInputs.find(x=>x.role===role);assert.ok(input.media_id);

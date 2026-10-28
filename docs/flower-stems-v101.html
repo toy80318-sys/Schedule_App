@@ -34,7 +34,7 @@ h3{font-size:17px;margin:0 0 8px}.meta{font-size:13px;color:#bdcebf;line-height:
 <div id="flowers"></div>
 </main>
 <script>
-fetch('assets/flower-stems-v101/manifest.json?v=101').then(response=>{
+fetch('assets/flower-stems-v101/manifest.json?v=101-immediate2').then(response=>{
  if(!response.ok)throw Error('긴 줄기 꽃 목록을 불러오지 못했습니다.');return response.json();
 }).then(data=>{
  if(data.format!=='jeju-flower-stems-v101'||data.count!==48||data.items?.length!==48||data.imageCount!==96)throw Error('새 꽃 이미지 목록을 확인해 주세요.');

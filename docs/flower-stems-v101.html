@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>메이즈랜드 · 긴 줄기 꽃 봉오리와 만개</title>
+<link rel="stylesheet" href="collection.css?v=86">
+<link rel="stylesheet" href="site-nav.css?v=86">
+<script defer src="site-nav.js?v=95"></script>
+<style>
+nav.tones{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}section{scroll-margin-top:100px}
+.pairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+article{padding:18px;border:1px solid #425b50;border-radius:16px;background:#172722}
+h3{font-size:17px;margin:0 0 8px}.meta{font-size:13px;color:#bdcebf;line-height:1.6}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}figure{margin:0}
+.pair img{display:block;width:100%;aspect-ratio:2/3;object-fit:contain;border-radius:10px;background:#233d35}
+.pair a{display:block;color:inherit}.pair figcaption{padding:9px 0;text-align:center;font-size:13px}
+@media(max-width:1050px){.pairs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.pairs{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="collection">
+<header class="page-heading"><div>
+<p class="eyebrow">LONG STEM · SAME FLOWER PAIRS</p>
+<h1>긴 줄기 꽃 · 봉오리와 만개</h1>
+<p class="lead">꽃송이의 색상과 추상 유화 질감을 유지하며, 줄기를 기존 대비 3배 길게 새로 만든 꽃 48종입니다. 뿌리 없이 깔끔한 줄기로 끝납니다.</p>
+</div><a class="button" href="editor.html?v=stem101">에디터 열기 →</a></header>
+<p class="meta">1024×1536 투명 PNG · 배경·조명별 같은 꽃의 봉오리/만개 한 쌍. 이미지를 누르면 원본을 크게 볼 수 있습니다. 영상은 이 새 이미지 쌍을 시작·끝 입력으로 사용해, 시작 즉시 개화하여 2초 안에 만개하도록 별도로 제작·검수합니다.</p>
+<p id="status" role="status">새 꽃 이미지를 불러오는 중입니다…</p>
+<nav class="tones" aria-label="배경별 꽃"><a class="button" href="#sunset">노을</a><a class="button" href="#day">낮</a><a class="button" href="#night">밤</a><a class="button" href="#morning">아침</a></nav>
+<div id="flowers"></div>
+</main>
+<script>
+fetch('assets/flower-stems-v101/manifest.json?v=101').then(response=>{
+ if(!response.ok)throw Error('긴 줄기 꽃 목록을 불러오지 못했습니다.');return response.json();
+}).then(data=>{
+ if(data.format!=='jeju-flower-stems-v101'||data.count!==48||data.items?.length!==48||data.imageCount!==96)throw Error('새 꽃 이미지 목록을 확인해 주세요.');
+ const host=document.getElementById('flowers');
+ for(const[theme,label]of[['sunset','노을'],['day','낮'],['night','밤'],['morning','아침']]){
+  const section=document.createElement('section'),heading=document.createElement('h2'),grid=document.createElement('div');
+  section.id=theme;heading.textContent=label+' · 12종';grid.className='pairs';
+  for(const flower of data.items.filter(item=>item.theme===theme)){
+   const article=document.createElement('article'),title=document.createElement('h3'),meta=document.createElement('p'),pair=document.createElement('div');
+   title.textContent=flower.name;meta.className='meta';meta.textContent=flower.backgroundId+' / '+flower.lightingId+' · 줄기 3배 · 뿌리 없음';pair.className='pair';
+   for(const[state,label]of[['bud','봉오리'],['bloom','만개']]){
+    const image=flower.images[state],figure=document.createElement('figure'),link=document.createElement('a'),img=document.createElement('img'),caption=document.createElement('figcaption');
+    link.href=image.original;link.target='_blank';link.rel='noopener';img.src=image.preview;img.alt=flower.name+' '+label;img.loading='lazy';img.decoding='async';img.width=384;img.height=576;
+    caption.textContent=label+' · PNG 원본';link.append(img);figure.append(link,caption);pair.append(figure);
+   }
+   article.append(title,meta,pair);grid.append(article);
+  }
+  section.append(heading,grid);host.append(section);
+ }
+ document.getElementById('status').textContent='48종 · 봉오리 48장 + 만개 48장 · 투명 PNG 96장';
+}).catch(error=>document.getElementById('status').textContent=error.message);
+</script>
+</body>
+</html>

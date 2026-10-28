@@ -33,7 +33,7 @@ function setup(options={}){
 }
 (async()=>{
   let t=setup();await t.switch(true);
-  assert.equal(t.fetches[0],'player-embed.txt?v=separated89r1');assert.equal(t.c.exhibitionActive,true);assert.equal(t.get('editorWorkspace').hidden,true);assert.equal(t.get('exhibitionWorkspace').hidden,false);assert.equal(t.frame.srcdocWrites,1);
+  assert.equal(t.fetches[0],'player-embed.txt?v=separated90');assert.equal(t.c.exhibitionActive,true);assert.equal(t.get('editorWorkspace').hidden,true);assert.equal(t.get('exhibitionWorkspace').hidden,false);assert.equal(t.frame.srcdocWrites,1);
   assert.equal(t.get('exhibitionTab').getAttribute('aria-selected'),'true');assert.equal(t.get('editorTab').tabIndex,-1);assert.equal(t.messages.length,0,'project waits for the iframe ready handshake');
   t.message({type:'jeju-exhibition-ready'},'https://evil.test');t.message({type:'jeju-exhibition-ready'},undefined,{});assert.equal(t.messages.length,0,'both origin and frame source must match');
   t.message({type:'jeju-exhibition-ready'});assert.deepEqual(t.messages.map(m=>m.value.type),['jeju-exhibition-project','jeju-exhibition-active']);assert.equal(t.messages[1].value.active,true);assert(t.messages.every(m=>m.origin==='https://toy80318-sys.github.io'));

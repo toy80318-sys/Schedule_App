@@ -1,9 +1,9 @@
 (()=>{'use strict';
  const root=document.createElement('section');root.id='environment88';document.querySelector('#sections').before(root);const status=document.createElement('p');status.textContent='배경 영상과 환경 이미지를 불러오는 중…';root.append(status);
  fetch('assets/separated-loops-v88/manifest.json?v=static106').then(r=>{if(!r.ok)throw Error('배경과 환경 목록을 불러오지 못했습니다.');return r.json()}).then(data=>{
-  window.jejuSeparatedMotion.validate(data);const environment=data.environment.filter(a=>!window.jejuAmbient.isRetired({id:a.id,src:a.sourcePNG,sha256:a.sourceSHA256}));status.textContent='배경 영상 4종 · 풀·나무·현무암 정지 PNG 12종 · 빛 파티클 영상 4종';
+  window.jejuSeparatedMotion.validate(data);const environment=data.environment.filter(a=>!window.jejuAmbient.isRetired({id:a.id,src:a.sourcePNG,sha256:a.sourceSHA256}));status.textContent='배경 영상 4종 · 풀·현무암 정지 PNG 8종 · 빛 파티클 영상 4종';
   const labels={grass:'풀',tree:'나무',basalt:'현무암'};
-  for(const[type,title,items]of [['background','배경만 · 60초 루프',data.backgrounds],['environment','풀·나무·현무암 · 원본 정지 PNG',environment]]){
+  for(const[type,title,items]of [['background','배경만 · 60초 루프',data.backgrounds],['environment','풀·현무암 · 원본 정지 PNG',environment]]){
    const heading=document.createElement('h2'),grid=document.createElement('div');heading.textContent=title;grid.className='grid';root.append(heading,grid);
    for(const a of items){
     const card=document.createElement('article'),preview=document.createElement('div'),media=document.createElement(type==='background'?'video':'img'),info=document.createElement('div'),name=document.createElement('h3'),note=document.createElement('p');card.className='card';card.id='loop-'+a.id;preview.className='preview';info.className='info';name.textContent=a.name;

@@ -2,13 +2,14 @@
  const kinds=['grass','leaf','tree','basalt'],ambient=typeof module==='object'&&module.exports?require('./ambient-policy'):null;
  const staticAsset=a=>(ambient||root.jejuAmbient).staticSeparatedAsset(a);
  function validate(data){
-  if(data?.format!=='mazeland-separated-loops-v88'||data.version!==88||data.environment?.length!==16||data.backgrounds?.length!==4)throw Error('분리 루프 목록이 올바르지 않습니다.');
-  const still=data.environmentMode==='static-image';if(data.environmentMode&&!still)throw Error('분리 요소의 이미지 형식이 다릅니다.');
+  const still=data?.environmentMode==='static-image';
+  if(data?.format!=='mazeland-separated-loops-v88'||data.version!==88||!(still?[12,16].includes(data.environment?.length):data.environment?.length===16)||data.backgrounds?.length!==4)throw Error('분리 루프 목록이 올바르지 않습니다.');
+  if(data.environmentMode&&!still)throw Error('분리 요소의 이미지 형식이 다릅니다.');
   const ids=new Set();for(const a of data.environment){
    const id=/^BG0([1-4])-E0([1256])-V05$/.exec(a.id),valid=id&&a.theme===['sunset','day','night','morning'][Number(id[1])-1]&&a.category===({1:'grass',2:'tree',5:'basalt',6:'leaf'})[id[2]];
    const fields=['frames','previewFrames','previewWidth','previewHeight','fps','duration','loopWidth','loopHeight','loopVideo','keyVideo','keyColor','sequenceZip','unityFrames','sequenceFrameCount','motion','rootAnchor','seamCheck','visualReview','alphaQA','alphaWebM_SHA256','keyMP4_SHA256','sequenceSHA256','qa'];
    const format=still?a.kind==='image'&&a.stillOnly===true&&a.frameCount===1&&a.width===1254&&a.height===1254&&a.image===`assets/separated-loops-v88/${a.id}/still.png`&&a.sha256===a.sourceSHA256&&a.sourcePNG===`https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/${a.id}.png`&&!fields.some(key=>Object.hasOwn(a,key)):a.fps===24&&a.duration===4&&a.width===480&&a.height===480&&a.frames?.length===96&&a.frames.every((src,i)=>src===`assets/separated-loops-v88/${a.id}/frame_${String(i).padStart(4,'0')}.webp`)&&a.loopVideo===`assets/separated-loops-v88/${a.id}/alpha.webm`&&a.keyVideo===`assets/separated-loops-v88/${a.id}/key.mp4`;
-   if(ids.has(a.id)||!valid||!format||!/^[a-f0-9]{64}$/.test(a.sourceSHA256))throw Error('분리 요소의 번호·규격·경로가 다릅니다.');ids.add(a.id);
+   if(ids.has(a.id)||!valid||!format||still&&data.environment.length===12&&a.category==='tree'||!/^[a-f0-9]{64}$/.test(a.sourceSHA256))throw Error('분리 요소의 번호·규격·경로가 다릅니다.');ids.add(a.id);
   }
   const themes=new Set();for(const b of data.backgrounds){if(!['sunset','day','night','morning'].includes(b.id)||themes.has(b.id)||b.video!==`assets/separated-loops-v88/${b.id}/background.mp4`||b.duration!==60||b.fps!==24)throw Error('배경 루프 정보가 다릅니다.');themes.add(b.id)}return data;
  }

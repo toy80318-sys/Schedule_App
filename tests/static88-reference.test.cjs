@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require(
 const dir='docs/assets/reference-layout-v93/',read=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=s=>crypto.createHash('sha256').update(s).digest('hex');
 const manifest=read(dir+'manifest.json'),environment=read('docs/assets/separated-loops-v88/manifest.json').environment;
 const fields=['frames','previewFrames','previewWidth','previewHeight','fps','frameCount','duration','loopWidth','loopHeight','loopVideo','keyVideo','keyColor','sequenceZip','unityFrames','sequenceFrameCount','elementLoopVersion','motion'];
-const protectedHashes={sunset:'82bd654c21d01da00ab0bec9e8a918a5ae67957b0d09e589d8efdb063fdf999d',day:'ed5494407de7a0488a9118baeaafe4b78c7a005c76c6f3f2a0d4938deebf0edc',night:'02c68ea82bcf5067aeaf0d682a31ff823d47d497a98c6ac4f47d4453d96800b7',morning:'2a024e6378c88af74ed433f0c31ed2fa26b21d0bdfe5f05acb781e1b26d58766'};
+const protectedHashes={"sunset":"566679bb1c58c183fb2034700d04013654b7c53b657936e308d822c123e8fcb6","day":"ee05305f523db521d840229214b6aa3ba7bcba6e91355cc80a6eab53bb7106d9","night":"5cf3f3379a4ffb6b0fb8acff90aa4f0d06ff7b60e010d0ee93bb171b3b8cb108","morning":"6eb7e269dd6b5c10f298129b2b13ce4cdcf5f0a1f9420d40ce7ff68c2f89f133"};
 let count=0;
 for(const scene of manifest.scenes){
  const bytes=fs.readFileSync(dir+scene.project,'utf8'),p=JSON.parse(bytes);assert.equal(hash(bytes.replace(/\r\n/g,'\n')),scene.sha256);
@@ -12,4 +12,4 @@ for(const scene of manifest.scenes){
  }
  assert.equal(hash(JSON.stringify(p)),protectedHashes[scene.id],scene.id+' background, placements, groups or non-environment metadata changed');
 }
-assert.equal(count,16);console.log('PASS: all16 reference environment assets are original static PNGs;4 manifest hashes match; background, geometry,groups and all unrelated metadata remain exact.');
+assert.equal(count,12);console.log('PASS: all12 remaining reference environment assets are original static PNGs;4 manifest hashes match; background, geometry,groups and all unrelated metadata remain exact.');

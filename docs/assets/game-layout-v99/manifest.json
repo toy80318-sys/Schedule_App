@@ -22,8 +22,8 @@
     {
       "id": "sunset",
       "project": "sunset_editor_v99.json",
-      "sha256": "7e6c18fda8f004721393d454e3083bdd8e2dbf2083e8b3985524a01a131b91d5",
-      "objectCount": 403,
+      "sha256": "23be2eb13437508fc861bcd4ef3083a90b3d8f5c0be95fe25c758b054d0be035",
+      "objectCount": 401,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
       "foregroundGrassVersion101": 101,
@@ -37,8 +37,8 @@
     {
       "id": "day",
       "project": "day_editor_v99.json",
-      "sha256": "0aec975ec3b973cea16d7c6011df83203cb0326ba70485f7342a82f04e814849",
-      "objectCount": 403,
+      "sha256": "c8145eff54759a6cb9a7f43e983b474bf8156877278b82440c3648b71b59f844",
+      "objectCount": 401,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
       "foregroundGrassVersion101": 101,
@@ -52,8 +52,8 @@
     {
       "id": "night",
       "project": "night_editor_v99.json",
-      "sha256": "5a459c791c44231cd83ee553eee0f68e0f09c285e401a3d194c8fce6d393ec61",
-      "objectCount": 403,
+      "sha256": "bcfd82403dde51cd35a7833bd9d595a32303d1e4f546c1218aaa7dede51b6204",
+      "objectCount": 401,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
       "foregroundGrassVersion101": 101,
@@ -67,8 +67,8 @@
     {
       "id": "morning",
       "project": "morning_editor_v99.json",
-      "sha256": "353b91cfce8a259d0d049e2360ddaf5ba1deb5d40c8249ea6f0ad5ecf09eb55a",
-      "objectCount": 403,
+      "sha256": "eebdce7b2eba1eef4875954b8c24754dc4dc200185c8b804f6118a4565b7a3a7",
+      "objectCount": 401,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
       "foregroundGrassVersion101": 101,

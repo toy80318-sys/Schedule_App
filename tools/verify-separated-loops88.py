@@ -38,7 +38,8 @@ def verify():
     assert data.get('environmentMode') in (None,'static-image')
     static=data.get('environmentMode')=='static-image'
     assert data['format']=='mazeland-separated-loops-v88' and data['version']==88
-    assert len(data['environment'])==16 and len({a['id'] for a in data['environment']})==16 and len(data['backgrounds'])==4
+    assert len(data['environment']) in ((12,16) if static else (16,)) and len({a['id'] for a in data['environment']})==len(data['environment']) and len(data['backgrounds'])==4
+    if static and len(data['environment'])==12: assert not any(a['category']=='tree' for a in data['environment'])
     for a in data['environment']:
         if static:
             row=verify_static_environment(a);checks.append(row);print(json.dumps(row),flush=True)
@@ -85,7 +86,7 @@ def verify():
         assert hashlib.sha256(path.read_bytes()).hexdigest()==b['sha256']
         subprocess.run(['ffmpeg','-v','error','-i',str(path),'-f','null','-'],check=True)
         checks.append({'id':b['id'],'decodedFrames':1440,'duration':60,'fixedCamera':True});print('BG PASS '+b['id'],flush=True)
-    result={('environmentImages' if static else 'environmentLoops'):16,'backgrounds':4,'RGBAFramesChecked':16 if static else 1536,'backgroundFramesDecoded':5760,'checks':checks,'visualReview':'pending'}
+    result={('environmentImages' if static else 'environmentLoops'):len(data['environment']),'backgrounds':4,'RGBAFramesChecked':len(data['environment']) if static else 1536,'backgroundFramesDecoded':5760,'checks':checks,'visualReview':'pending'}
     (DELIVERY/'검수'/'기술검수.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     return result
 

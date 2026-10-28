@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>메이즈랜드 · 긴 줄기 꽃 봉오리와 만개</title>
+<title>메이즈랜드 · 긴 줄기 꽃 48종 · 2초 개화</title>
 <link rel="stylesheet" href="collection.css?v=86">
 <link rel="stylesheet" href="site-nav.css?v=86">
 <script defer src="site-nav.js?v=95"></script>
@@ -13,7 +13,9 @@ nav.tones{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}section{scroll-marg
 article{padding:18px;border:1px solid #425b50;border-radius:16px;background:#172722}
 h3{font-size:17px;margin:0 0 8px}.meta{font-size:13px;color:#bdcebf;line-height:1.6}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}figure{margin:0}
-.pair img{display:block;width:100%;aspect-ratio:2/3;object-fit:contain;border-radius:10px;background:#233d35}
+.pair img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;border-radius:10px;background:#233d35}
+.opening{margin-top:16px}.opening canvas{display:block;width:100%;max-width:320px;height:auto;margin:12px auto;background:#19222d;border-radius:10px}
+.opening canvas[hidden]{display:none}
 .pair a{display:block;color:inherit}.pair figcaption{padding:9px 0;text-align:center;font-size:13px}
 @media(max-width:1050px){.pairs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.pairs{grid-template-columns:1fr}}
@@ -26,7 +28,7 @@ h3{font-size:17px;margin:0 0 8px}.meta{font-size:13px;color:#bdcebf;line-height:
 <h1>긴 줄기 꽃 · 봉오리와 만개</h1>
 <p class="lead">꽃송이의 색상과 추상 유화 질감을 유지하며, 줄기를 기존 대비 3배 길게 새로 만든 꽃 48종입니다. 뿌리 없이 깔끔한 줄기로 끝납니다.</p>
 </div><a class="button" href="editor.html?v=stem101">에디터 열기 →</a></header>
-<p class="meta">1024×1536 투명 PNG · 배경·조명별 같은 꽃의 봉오리/만개 한 쌍. 이미지를 누르면 원본을 크게 볼 수 있습니다. 영상은 이 새 이미지 쌍을 시작·끝 입력으로 사용해, 시작 즉시 개화하여 2초 안에 만개하도록 별도로 제작·검수합니다.</p>
+<p class="meta">1024×1536 투명 PNG · 배경·조명별 같은 꽃의 봉오리/만개 한 쌍. 이미지를 누르면 원본을 크게 볼 수 있습니다. 새 이미지 쌍을 실제 시작·끝 입력으로 생성한 2초 개화를 아래 버튼으로 재생할 수 있습니다. 긴 줄기 영상의 에디터·게임 연결은 별도 적용 전입니다.</p>
 <p id="status" role="status">새 꽃 이미지를 불러오는 중입니다…</p>
 <nav class="tones" aria-label="배경별 꽃"><a class="button" href="#sunset">노을</a><a class="button" href="#day">낮</a><a class="button" href="#night">밤</a><a class="button" href="#morning">아침</a></nav>
 <div id="flowers"></div>
@@ -48,11 +50,31 @@ fetch('assets/flower-stems-v101/manifest.json?v=101').then(response=>{
     link.href=image.original;link.target='_blank';link.rel='noopener';img.src=image.preview;img.alt=flower.name+' '+label;img.loading='lazy';img.decoding='async';img.width=384;img.height=576;
     caption.textContent=label+' · PNG 원본';link.append(img);figure.append(link,caption);pair.append(figure);
    }
-   article.append(title,meta,pair);grid.append(article);
+   article.append(title,meta,pair);
+   if(flower.videoReady&&flower.opening?.status==='passed'){
+    const motion=flower.opening,box=document.createElement('div'),button=document.createElement('button'),canvas=document.createElement('canvas'),caption=document.createElement('p');
+    box.className='opening';button.className='button';button.type='button';button.textContent='2초 개화 보기';button.setAttribute('aria-label',flower.name+' 2초 개화 보기');canvas.width=320;canvas.height=480;canvas.hidden=true;canvas.setAttribute('aria-label',flower.name+' 투명 PNG 개화 애니메이션');caption.className='meta';caption.setAttribute('role','status');
+    let atlas=null,run=0;
+    button.addEventListener('click',async()=>{
+     const current=++run;button.disabled=true;
+     try{
+      if(!atlas){atlas=new Image();atlas.src=motion.atlas;await atlas.decode();}
+      canvas.hidden=false;button.disabled=false;button.textContent='다시 보기';caption.textContent='봉오리에서 꽃잎이 펼쳐지는 중';
+      const context=canvas.getContext('2d'),start=performance.now();
+      const draw=time=>{
+       if(current!==run)return;
+       const progress=Math.min((time-start)/2000,1),frame=Math.min(Math.floor(progress*48),47);
+       context.clearRect(0,0,320,480);context.drawImage(atlas,(frame%8)*192,Math.floor(frame/8)*288,192,288,0,0,320,480);canvas.dataset.frame=String(frame);
+       if(progress<1)requestAnimationFrame(draw);else caption.textContent='2초 개화 완료 · 투명 PNG 48프레임';
+      };requestAnimationFrame(draw);
+     }catch(error){atlas=null;button.disabled=false;caption.textContent='영상을 불러오지 못했습니다. 다시 눌러 주세요.';}
+    });const download=document.createElement('a');download.href=motion.keyVideo;download.download=flower.images.bloom.file.replace('_Bloom_v101.png','_Open2s_Key480_v101.mp4');download.className='button';download.textContent='단색 배경 영상 받기';box.append(button,canvas,caption,download);article.append(box);
+   }
+   grid.append(article);
   }
   section.append(heading,grid);host.append(section);
  }
- document.getElementById('status').textContent='48종 · 봉오리 48장 + 만개 48장 · 투명 PNG 96장';
+ document.getElementById('status').textContent='48종 · 투명 PNG 96장 · 2초 개화 '+data.videoCount+'편 · 편당 투명 프레임 48장';
 }).catch(error=>document.getElementById('status').textContent=error.message);
 </script>
 </body>

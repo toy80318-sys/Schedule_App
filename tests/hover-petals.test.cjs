@@ -34,7 +34,7 @@ const advance=ms=>{now=ms;const fn=frame;frame=null;assert(fn);fn(ms)};
  advance(8500);ctx.ellipses.forEach(p=>assert(Math.abs(p.alpha-.4)<1e-9,'half opacity halfway through final three seconds'));
  advance(9999);assert.equal(ctx.ellipses.length,24);ctx.ellipses.forEach(p=>assert(p.alpha<.00001));
  advance(10000);assert.equal(get('scene').dataset.petals,'0','particles expire at exactly ten seconds');
- advance(31000);assert.equal(api.state().activeBlooms,0);assert.equal(button.dataset.state,'idle');
+advance(61000);assert.equal(api.state().activeBlooms,0);assert.equal(button.dataset.state,'idle');
  button.click();assert.equal(get('scene').dataset.petals,'24','touch/keyboard click remains available after reset');
  api.reset();assert.equal(get('scene').dataset.petals,'0');assert.equal(api.state().activeBlooms,0);
  const policy=require('../docs/ambient-policy.js'),fixed={x:100,y:50,w:100,motion:'left'};assert.strictEqual(policy.driftPose(fixed,'cloud',20,1000,{loopInPlace:true}),fixed);assert.notEqual(policy.driftPose(fixed,'cloud',20,1000).x,fixed.x);

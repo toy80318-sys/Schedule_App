@@ -30,6 +30,8 @@ if production.exists():
     page=page.replace('<article id="butterfly-1">',section+'<h2 id="painted-images">기존에 준비한 추상 유화 이미지4종</h2><article id="butterfly-1">')
     page=page.replace('새 영상: 생성 비용 확인 대기 · 기존 영상은 새 이미지 영상으로 표시하지 않습니다.','새 영상: 상단 실제 날갯짓 검수 참조 · 기존 게임 루프와 구분됩니다.')
     page=page.replace('NEW ART · 2026-10-28 · v96','NEW ART + WINGBEATS · 2026-10-28 · v97')
+    if motion:
+        for key in ['keyVideo','alphaVideo','fiveCycleVideo','sequenceZip']:page=page.replace(motion[key]+'"',motion[key]+'?v=97r2"')
     (docs/'butterflies-oil.html').write_text(page,encoding='utf-8')
     (base/'00_나비4종_추상유화_비교_v96.html').write_text(page.replace('<head>','<head><base href="https://toy80318-sys.github.io/Schedule_App/">'),encoding='utf-8')
     print('Added exact newly generated video candidates and quality decisions,without game replacement.')

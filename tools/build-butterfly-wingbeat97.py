@@ -19,6 +19,8 @@ def matte(rgb):
     # Eroded opaque paint avoids baking cyan mixed pixels into the wing edge.
     cyan_mix=(f[:,:,0]<np.minimum(f[:,:,1],f[:,:,2])*.55)&(np.abs(f[:,:,1]-f[:,:,2])<40)
     core=cv2.erode(((hue>.4)&(distance>80)&~cyan_mix).astype(np.uint8),np.ones((3,3),np.uint8)).astype(bool)
+    # Dark painted body pixels are opaque foreground; cyan shadows retain the key hue.
+    core|=(f.max(2)<bg.max(2)*.5)&(distance>100)&(hue>.2)
     assert core.any()
     spatial,labels=cv2.distanceTransformWithLabels((~core).astype(np.uint8),cv2.DIST_L2,5,labelType=cv2.DIST_LABEL_PIXEL)
     palette=np.zeros((int(labels.max())+1,3),np.float32);palette[labels[core]]=f[core];foreground=palette[labels];direction=foreground-bg
@@ -69,6 +71,6 @@ arr=np.stack([np.asarray(f).astype(np.float32) for f in cycle]);arr[:,:,:,:3]*=a
 adj=np.abs(arr[1:]-arr[:-1]).mean((1,2,3));seam=float(np.abs(arr[-1]-arr[0]).mean());velocity=float(np.abs((arr[0]-arr[-1])-(arr[1]-arr[0])).mean());assert seam<adj.max() and velocity<adj.max()
 for file in target.glob('*.mp4'):
     cap=cv2.VideoCapture(str(file));assert cap.get(cv2.CAP_PROP_FPS)==24;assert cap.get(cv2.CAP_PROP_FRAME_COUNT)==(360 if '5회' in file.name else 72);cap.release()
-record=dict(index=4,rawSHA256=hashlib.sha256(raw.read_bytes()).hexdigest(),sourceFrameIndices=indices,fps=24,duration=3,width=480,height=480,actualCycleFrames=24,cycleSourceStart=26,cycleSourceEndExclusive=50,derivation='Three unchanged forward repetitions of a complete24-frame native-rate wingbeat from originalframes26..49;no reverse,no duplicated endpoint,no morph,no optical-flow synthesis,no retiming. RGB key removed using measured background; detached cast shadow excluded by chromatic evidence.',opaqueSourcePixelsPreserved=core_counts,pngSHA256=hashes,seamMAE=seam,velocityMAE=velocity,maxAdjacentMAE=float(adj.max()),visualReview='pending',gameApplied=False)
+record=dict(index=4,matteRevision=2,rawSHA256=hashlib.sha256(raw.read_bytes()).hexdigest(),sourceFrameIndices=indices,fps=24,duration=3,width=480,height=480,actualCycleFrames=24,cycleSourceStart=26,cycleSourceEndExclusive=50,derivation='Three unchanged forward repetitions of a complete24-frame native-rate wingbeat from originalframes26..49;no reverse,no duplicated endpoint,no morph,no optical-flow synthesis,no retiming. RGB key removed using measured background; detached cast shadow excluded by chromatic evidence. Mixed key-edge RGB decontaminated using the actual source painting palette; opaque paint kept unchanged.',opaqueSourcePixelsPreserved=core_counts,pngSHA256=hashes,seamMAE=seam,velocityMAE=velocity,maxAdjacentMAE=float(adj.max()),visualReview='pending',gameApplied=False)
 (base/'검수/Butterfly04_루프후보_검증_v97.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in record.items() if k not in ['sourceFrameIndices','opaqueSourcePixelsPreserved','pngSHA256']},ensure_ascii=False))

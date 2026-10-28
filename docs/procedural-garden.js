@@ -2,6 +2,8 @@
 (function(root){
  'use strict';const C=typeof module==='object'?require('./procedural-curves'):root.jejuProceduralCurves;
  const foreground=typeof module==='object'?require('./foreground-grass101'):null,ambient=typeof module==='object'?require('./ambient-policy'):root.jejuAmbient;
+ const restored=typeof module==='object'?require('./restored-bushes99'):null;
+ const rearKind=a=>(restored||root.jejuRestoredBushes)?.rearKind?.(a)||null;
  const clamp=(n,a,b)=>Math.max(a,Math.min(b,n)),num=(n,d,a,b)=>Number.isFinite(n)?clamp(n,a,b):d;
  function normalize(p={}){
   let left=num(p.left,0,0,99),right=num(p.right,100,1,100),top=num(p.top,68,45,99),bottom=num(p.bottom,99,46,100);
@@ -14,11 +16,11 @@
  function ground(o,a){return o.placementRole!=='contrast_backdrop_v68'&&!rear(a)&&(a?.group==='flowers'||['grass','leaf','basalt','rock'].includes(a?.category)||/-rocks-/.test(a?.id||''))}
  function pools(state){
   const key=theme(state),all=state.assets.filter(a=>a.theme===key&&a.completeObject&&a.ready!==false&&a.src&&!a.catalogHidden&&!a.legacyFlower&&!a.referenceOnly&&(!ambient||!ambient.isRetired(a))),unique=list=>[...new Map(list.map(a=>[a.src,a])).values()],version=a=>Number((a.setReviewVersion||'').slice(1))||0;
-  const flowers=unique(all.filter(a=>a.group==='flowers')),grass=unique(all.filter(a=>['grass','leaf'].includes(a.category)&&!rear(a))),rocks=unique(all.filter(a=>(['basalt','rock'].includes(a.category)||/-rocks-/.test(a.id))&&!rear(a)));
+  const flowers=unique(all.filter(a=>a.group==='flowers')),grass=unique(all.filter(a=>['grass','leaf'].includes(a.category)&&(!rear(a)||rearKind(a)==='grass'))),rocks=unique(all.filter(a=>(['basalt','rock'].includes(a.category)||/-rocks-/.test(a.id)||rearKind(a)==='rock')&&(!rear(a)||rearKind(a)==='rock')));
   const preferred=list=>{const style=Math.max(0,...list.map(a=>a.artStyleVersion||0)),latest=Math.max(0,...list.map(version));return list.filter(a=>!a.catalogHidden&&(style?a.artStyleVersion===style:!latest||version(a)===latest)).map(a=>a.id)};
   const props=unique(all.filter(a=>['tree','branch','cloud','butterfly','bird','particle','mist'].includes(a.category)&&/\.(png|webp)(?:[?#]|$)/i.test(a.src)));
-  const addedGrass=grass.filter(a=>a.foregroundGrassVersion===101),baseGrass=addedGrass.length?grass.filter(a=>(foreground||root.jejuForegroundGrass)?.original(a)):[],grassIds=[...new Set([...preferred(grass),...baseGrass.map(a=>a.id),...addedGrass.map(a=>a.id)])];
-  return{theme:key,flowers,grass,rocks,props,preferred:{assetIds:preferred(flowers),grassIds,rockIds:preferred(rocks),propIds:preferred(props)}};
+  const addedGrass=grass.filter(a=>a.foregroundGrassVersion===101),baseGrass=addedGrass.length?grass.filter(a=>(foreground||root.jejuForegroundGrass)?.original(a)):[],grassIds=[...new Set([...preferred(grass.filter(a=>!rear(a))),...baseGrass.map(a=>a.id),...addedGrass.map(a=>a.id)])];
+  return{theme:key,flowers,grass,rocks,props,preferred:{assetIds:preferred(flowers),grassIds,rockIds:preferred(rocks.filter(a=>!rear(a))),propIds:preferred(props)}};
  }
  function selectedGroup(objects,selected){const id=selected[0]?.groupId;if(!id||selected.some(o=>o.groupId!==id))return null;const o=objects.find(o=>o.groupId===id&&o.procedural?.type==='flower-bed');return o?{id,name:o.groupName,params:Array.isArray(o.procedural.params?.layers)?(typeof module==='object'?require('./procedural-layers'):root.jejuProceduralLayers).normalize(o.procedural.params):normalize(o.procedural.params)}:null}
  function build(state,input,width,height,uid,groupId=null){
@@ -46,7 +48,7 @@
    if(kind!=='flower'&&kind!=='main')return{x:rand(),y:kind==='rock'?.8+rand()*.2:.15+rand()*.85};
    const c=clusters[i%clusters.length],mix=p.clump/100,x=(i%cols+.15+rand()*.7)/cols,y=(Math.floor(i/cols)+.15+rand()*.7)/rows;return{x:clamp(x*(1-mix)+(c.x+(rand()+rand()-1)*.2)*mix,0,1),y:clamp(y*(1-mix)+(c.y+(rand()+rand()-1)*.3)*mix,0,1)};
   }
-  for(let i=0;i<n;i++){const point=position(i,n,'main');const a=main[i%main.length],kind=['grass','leaf'].includes(a.category)?'grass':['basalt','rock'].includes(a.category)?'rock':'flower';add(a,point.x,point.y,kind)}
+  for(let i=0;i<n;i++){const point=position(i,n,'main');const a=main[i%main.length],kind=['grass','leaf'].includes(a.category)?'grass':['basalt','rock'].includes(a.category)||rearKind(a)==='rock'?'rock':'flower';add(a,point.x,point.y,kind)}
   if(p.planting==='mixed')for(const [kind,assets,count] of [['rock',rocks,Math.round(n*p.rocks/100)],['grass',grass,Math.round(n*p.grass/100)]])if(assets.length&&assets!==main)for(let i=0;i<count;i++){const point=position(i,count,kind);add(assets[i%assets.length],point.x,point.y,kind)};
   objects.sort((a,b)=>a.pcgRootY-b.pcgRootY);objects.forEach(o=>delete o.pcgRootY);
   return{objects,params:p,plantCount:n,flowerCount:objects.filter(o=>pool.flowers.some(a=>a.id===o.assetId)).length,groupId:id,theme:pool.theme};

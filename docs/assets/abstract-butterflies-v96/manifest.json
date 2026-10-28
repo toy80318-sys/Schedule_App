@@ -1,0 +1,101 @@
+{
+  "format": "mazeland-abstract-butterflies-v96",
+  "version": 96,
+  "date": "2026-10-28",
+  "imageCount": 4,
+  "paidVideoJobsSubmitted": 0,
+  "videoApproval": false,
+  "maximumEstimatedCredits": 9.6,
+  "generator": "Built-in image_gen;one new image per butterfly",
+  "artDirection": "Remove microscopic veins,jewels,scales and tiny patterns;paint broad opalescent impasto color masses. About3x stronger abstract oil language. Preserve whole silhouettes.",
+  "items": [
+    {
+      "index": 1,
+      "id": "atmosphere85-butterfly-01",
+      "name": "넓은 날개 · 추상 유화 나비",
+      "originalSourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v84/butterfly_01.png",
+      "originalSourceSHA256": "cbab7ace68740bbe4c4fe97a969545747b899dc92c7074babbf72567a1b44708",
+      "sourcePNG": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly01_AbstractOil3x_v96.png",
+      "sourceSHA256": "7e70e61a9817c9cb70a424f3073f688ce3579f9ee32d530d798b0fd7cad1d196",
+      "preview": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly01_AbstractOil3x_v96_preview.webp",
+      "keyImage": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly01_AbstractOil3x_v96_Key00ECFF_1024.png",
+      "keyColor": "#00ECFF",
+      "width": 1024,
+      "height": 1024,
+      "compatibleThemes": [
+        "sunset",
+        "day",
+        "night",
+        "morning"
+      ],
+      "imageReview": "passed",
+      "videoStatus": "awaiting-cost-approval"
+    },
+    {
+      "index": 2,
+      "id": "atmosphere85-butterfly-02",
+      "name": "긴 꼬리 · 추상 유화 나비",
+      "originalSourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v84/butterfly_02.png",
+      "originalSourceSHA256": "9759e862b0448881022f04cf1d93b33a6e9c99ec5360e26e407a3e6228a74aa5",
+      "sourcePNG": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly02_AbstractOil3x_v96.png",
+      "sourceSHA256": "1e552b40c8cee871aa57ef6422b4476d03bf4602603011832a03817473ee1d54",
+      "preview": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly02_AbstractOil3x_v96_preview.webp",
+      "keyImage": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly02_AbstractOil3x_v96_Key00A8FF_1024.png",
+      "keyColor": "#00A8FF",
+      "width": 1024,
+      "height": 1024,
+      "compatibleThemes": [
+        "sunset",
+        "day",
+        "night",
+        "morning"
+      ],
+      "imageReview": "passed",
+      "videoStatus": "awaiting-cost-approval"
+    },
+    {
+      "index": 3,
+      "id": "atmosphere85-butterfly-03",
+      "name": "둥근 날개 · 추상 유화 나비",
+      "originalSourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v84/butterfly_03.png",
+      "originalSourceSHA256": "68cac29d87bfae6016c406b6bd2a11961cd015e274e968f9be88f746e3999925",
+      "sourcePNG": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly03_AbstractOil3x_v96.png",
+      "sourceSHA256": "d132bc8fd4ed96596539cc53fae696a83ca49139e24c51fb1b1ca809fcf0d288",
+      "preview": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly03_AbstractOil3x_v96_preview.webp",
+      "keyImage": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly03_AbstractOil3x_v96_Key00C2FF_1024.png",
+      "keyColor": "#00C2FF",
+      "width": 1024,
+      "height": 1024,
+      "compatibleThemes": [
+        "sunset",
+        "day",
+        "night",
+        "morning"
+      ],
+      "imageReview": "passed",
+      "videoStatus": "awaiting-cost-approval"
+    },
+    {
+      "index": 4,
+      "id": "atmosphere85-butterfly-04",
+      "name": "가느다란 날개 · 추상 유화 나비",
+      "originalSourcePNG": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/atmosphere-v84/butterfly_04.png",
+      "originalSourceSHA256": "fcf6041245e4b4b0b2236e631ba5c8009c5d6fa7dc20e47bbd6a51fba9aff3b6",
+      "sourcePNG": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly04_AbstractOil3x_v96.png",
+      "sourceSHA256": "f9c7815428fa47adcd1db8a920c5269313422f9708ab214ee23689a50739fc96",
+      "preview": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly04_AbstractOil3x_v96_preview.webp",
+      "keyImage": "assets/abstract-butterflies-v96/ML_SHARED_Butterfly04_AbstractOil3x_v96_Key00FFF4_1024.png",
+      "keyColor": "#00FFF4",
+      "width": 1024,
+      "height": 1024,
+      "compatibleThemes": [
+        "sunset",
+        "day",
+        "night",
+        "morning"
+      ],
+      "imageReview": "passed",
+      "videoStatus": "awaiting-cost-approval"
+    }
+  ]
+}

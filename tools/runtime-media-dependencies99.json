@@ -44,6 +44,8 @@
     "current-release.js",
     "web-previews.js",
     "restored-bushes99.js",
+    "foreground-grass-catalog101.js",
+    "foreground-grass101.js",
     "current-release-registry.js",
     "current-release-projects.js",
     "reference-layout.js",
@@ -101,6 +103,7 @@
     "assets/element-loops-v95/manifest.json",
     "assets/butterfly-wingbeats-v98/manifest.json",
     "assets/flower-openings-v89/manifest.json",
-    "assets/abstract-scene-v44/bloom-manifest_v44.json"
+    "assets/abstract-scene-v44/bloom-manifest_v44.json",
+    "assets/foreground-grass-v101/manifest.json"
   ]
 }

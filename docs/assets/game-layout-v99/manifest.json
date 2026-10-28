@@ -15,15 +15,19 @@
     "BG04-E06-V05"
   ],
   "restoredBushSourceCount": 4,
+  "foregroundGrassVariantCount": 4,
+  "foregroundGrassNewSourceCount": 12,
   "unityRuntimeVerified": false,
   "scenes": [
     {
       "id": "sunset",
       "project": "sunset_editor_v99.json",
-      "sha256": "fa730ef7dc247e99f6688d79bea9719446bd80267f3bdb4768606fafc8aab5bc",
+      "sha256": "7e6c18fda8f004721393d454e3083bdd8e2dbf2083e8b3985524a01a131b91d5",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassObjects": 32,
       "openingPreview": {
         "passedTypes": 35,
         "pendingTypes": 13,
@@ -33,10 +37,12 @@
     {
       "id": "day",
       "project": "day_editor_v99.json",
-      "sha256": "1f5025f4c156f0b6c8251fae51b03302ad3145a75d9ba6bdf7e04f5395ee018b",
+      "sha256": "0aec975ec3b973cea16d7c6011df83203cb0326ba70485f7342a82f04e814849",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassObjects": 32,
       "openingPreview": {
         "passedTypes": 35,
         "pendingTypes": 13,
@@ -46,10 +52,12 @@
     {
       "id": "night",
       "project": "night_editor_v99.json",
-      "sha256": "787c3c13f9208118503b3874e0e2d896647937b3877a91b29ff10d351a89b308",
+      "sha256": "5a459c791c44231cd83ee553eee0f68e0f09c285e401a3d194c8fce6d393ec61",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassObjects": 32,
       "openingPreview": {
         "passedTypes": 35,
         "pendingTypes": 13,
@@ -59,10 +67,12 @@
     {
       "id": "morning",
       "project": "morning_editor_v99.json",
-      "sha256": "ed6a0c233d11e8f9f898530628527385363941dc57ba429e14a294472e9feaa7",
+      "sha256": "353b91cfce8a259d0d049e2360ddaf5ba1deb5d40c8249ea6f0ad5ecf09eb55a",
       "objectCount": 403,
       "restoredBushVersion99": 99,
       "restoredBushObjects": 11,
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassObjects": 32,
       "openingPreview": {
         "passedTypes": 35,
         "pendingTypes": 13,

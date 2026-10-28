@@ -5,7 +5,7 @@
   return items.filter(a=>{if(seen.has(a.src))return false;seen.add(a.src);return true}).map(a=>{
    const url=new URL(a.src);
    if(!/^[A-Za-z0-9_.-]+\.png$/i.test(a.file)||!/^[a-f0-9]{64}$/i.test(a.sha256)||url.protocol!=='https:'||url.username||url.password||!['raw.githubusercontent.com','lixkizqprsbnsnozwbpa.supabase.co'].includes(url.hostname))throw Error('원본 PNG 목록이 올바르지 않습니다.');
-   return current?.has(a.id)?{...a,releaseVersion:catalog.currentReleaseVersion}:a;
+   return current?.has(a.id)?{...a,releaseVersion:Math.max(a.releaseVersion||0,catalog.currentReleaseVersion||0)}:a;
   });
  }
  async function packageSources(items,fetcher,zip,progress,cryptoAPI){

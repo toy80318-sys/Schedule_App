@@ -1,16 +1,17 @@
 """Preserve generated wingbeats and expose every original frame for review."""
 from pathlib import Path
-import hashlib,json,math,urllib.request
+import hashlib,json,math,urllib.request,sys
 import cv2,numpy as np
 from PIL import Image,ImageDraw
 
 repo=Path(__file__).resolve().parents[1]
 base=repo.parent/'20261028_메이즈랜드_원본소스/나비_추상유화3배_480_3초_v96'
-jobs=json.loads((base/'생성완료_v97.json').read_text(encoding='utf-8'))['jobs']
-for d in ['원본영상_v97','검수']: (base/d).mkdir(exist_ok=True)
+version=int(sys.argv[1]) if len(sys.argv)>1 else 97;assert version in [97,98]
+jobs=json.loads((base/('재생성_완료3종_v98.json' if version==98 else '생성완료_v97.json')).read_text(encoding='utf-8'))['jobs']
+for d in [f'원본영상_v{version}','검수']: (base/d).mkdir(exist_ok=True)
 for job in jobs:
     if job['status']!='completed':continue
-    i=job['index'];file=base/'원본영상_v97'/f'ML_SHARED_Butterfly{i:02}_Wingbeat_Raw_v97.mp4'
+    i=job['index'];file=base/f'원본영상_v{version}'/f'ML_SHARED_Butterfly{i:02}_Wingbeat_Raw_v{version}.mp4'
     if not file.exists():urllib.request.urlretrieve(job['result_url'],file)
     cap=cv2.VideoCapture(str(file));fps=cap.get(cv2.CAP_PROP_FPS);frames=[]
     while True:
@@ -22,12 +23,12 @@ for job in jobs:
         cols=8 if size==160 else 4;sheet=Image.new('RGB',(cols*size,math.ceil(len(indices)/cols)*(size+20)),'#142129');draw=ImageDraw.Draw(sheet)
         for n,k in enumerate(indices):
             x=n%cols*size;y=n//cols*(size+20);sheet.paste(Image.fromarray(frames[k]).resize((size,size)),(x,y));draw.text((x+4,y+size+2),f'{k:03} / {k/fps:.3f}s',fill='white')
-        sheet.save(base/'검수'/f'Butterfly{i:02}_원본_{label}_v97.jpg',quality=95)
+        sheet.save(base/'검수'/f'Butterfly{i:02}_원본_{label}_v{version}.jpg',quality=95)
     stats=[]
     for f in frames:
         bg=np.median(np.concatenate([f[:4].reshape(-1,3),f[-4:].reshape(-1,3),f[:,:4].reshape(-1,3),f[:,-4:].reshape(-1,3)]),axis=0)
         mask=np.linalg.norm(f.astype(float)-bg,axis=2)>70;y,x=np.where(mask)
         stats.append(dict(area=int(mask.sum()),bbox=[int(x.min()),int(y.min()),int(x.max()),int(y.max())],bg=bg.tolist()))
     info=dict(index=i,jobId=job['job_id'],file=str(file),sourceURL=job['result_url'],sha256=hashlib.sha256(file.read_bytes()).hexdigest(),fps=fps,frameCount=len(frames),duration=len(frames)/fps,width=frames[0].shape[1],height=frames[0].shape[0],frameStats=stats,visualReview='pending')
-    (base/'검수'/f'Butterfly{i:02}_원본검수_v97.json').write_text(json.dumps(info,ensure_ascii=False,indent=2),encoding='utf-8')
+    (base/'검수'/f'Butterfly{i:02}_원본검수_v{version}.json').write_text(json.dumps(info,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({k:v for k,v in info.items() if k!='frameStats'},ensure_ascii=False))

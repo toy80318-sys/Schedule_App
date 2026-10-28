@@ -544,7 +544,8 @@
   }
   function warmSequence(a){
     if(!a.frames?.length||a.atmosphereVersion!==85&&!a.frames[0].startsWith('/assets/animations/'))return Promise.resolve();
-    if(a.atmosphereVersion===85&&a.elementLoopVersion!==95&&(a.frames.length!==150||!Array.isArray(a.previewFrames)||a.previewFrames.length!==150))return Promise.reject(Error('에디터용 루프 미리보기 목록이 맞지 않습니다.'));
+    const expectedFrames=[95,98].includes(a.elementLoopVersion)?72:150;
+    if(a.atmosphereVersion===85&&(a.frames.length!==expectedFrames||!Array.isArray(a.previewFrames)||a.previewFrames.length!==expectedFrames))return Promise.reject(Error('에디터용 루프 미리보기 목록이 맞지 않습니다.'));
     if(sequenceCache.has(a.id))return Promise.resolve();
     if(sequenceLoads.has(a.id))return sequenceLoads.get(a.id);
     const entry={urls:new Array(a.frames.length),decoded:new Array(a.frames.length),controller:new AbortController(),version:a.atmosphereVersion},control=entry.controller;
@@ -680,7 +681,7 @@
   function exhibitionMessage(message){$('exhibitionFrame').contentWindow?.postMessage(message,location.origin)}
   function sendExhibitionProject(){if(exhibitionReady&&exhibitionActive){exhibitionMessage({type:'jeju-exhibition-project',project:window.jejuEditor.project()});exhibitionMessage({type:'jeju-exhibition-active',active:!document.hidden})}}
   let exhibitionTemplateTask;
-  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=separated91-flower95').then(response=>{if(!response.ok)throw Error('게임 화면을 불러오지 못했습니다. 게임 모드를 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('게임 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
+  function exhibitionTemplate(){if(!exhibitionTemplateTask)exhibitionTemplateTask=fetch('player-embed.txt?v=butterfly98').then(response=>{if(!response.ok)throw Error('게임 화면을 불러오지 못했습니다. 게임 모드를 다시 눌러 주세요.');return response.text()}).then(html=>{if(!html.includes('data-jeju-embedded')||!html.includes('player.js'))throw Error('게임 화면 파일이 올바르지 않습니다.');return html}).catch(error=>{exhibitionTemplateTask=null;throw error});return exhibitionTemplateTask}
   async function switchWorkspace(exhibition){
     const request=++workspaceRequest,frame=$('exhibitionFrame');let template;
     if(exhibition)try{await bloomReady;while(pendingObjectAdds.size)await Promise.allSettled([...pendingObjectAdds]);if(!frame.getAttribute('srcdoc'))template=await exhibitionTemplate()}catch(err){if(request!==workspaceRequest)return;$('exhibitionStatus').hidden=false;$('exhibitionStatus').textContent=err.message;return}

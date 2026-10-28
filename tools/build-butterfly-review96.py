@@ -35,3 +35,23 @@ if production.exists():
     (docs/'butterflies-oil.html').write_text(page,encoding='utf-8')
     (base/'00_나비4종_추상유화_비교_v96.html').write_text(page.replace('<head>','<head><base href="https://toy80318-sys.github.io/Schedule_App/">'),encoding='utf-8')
     print('Added exact newly generated video candidates and quality decisions,without game replacement.')
+
+latest=docs/'assets/butterfly-wingbeats-v98/manifest.json'
+if latest.exists():
+    import re
+    d=json.loads(latest.read_text(encoding='utf-8'));current=[]
+    for a in d['items']:
+        current.append(f'''<article id="wingbeat-{a['index']}"><h2>{a['index']:02} · 추상 유화 나비 · 실제 날갯짓</h2><div class="compare"><figure><figcaption>단색 키 · {a['keyColor']} · 3초</figcaption><video controls muted loop playsinline preload="metadata" src="{a['keyVideo']}"></video></figure><figure><figcaption>어두운 배경 · 실제 알파 영상</figcaption><video controls muted loop playsinline preload="metadata" src="{a['loopVideo']}"></video></figure><figure class="light"><figcaption>밝은 배경 · 같은 알파 영상</figcaption><video controls muted loop playsinline preload="metadata" src="{a['loopVideo']}"></video></figure></div><p>480×480 · 24fps · 72프레임 · 3초 · 측면 날개 접기/펼치기 · 에디터와 정원에 연결</p><p>원래 속도의 {a['actualCycleFrames']/24:g}초 날갯짓 주기를 순방향으로 반복했습니다. 빠른 날갯짓의 원본 모션 블러는 남아 있습니다.</p><p><a class="button" href="{a['sequenceZip']}" download>PNG 알파 72장 받기</a> <a class="button" href="{a['keyVideo']}" download>단색 키 영상</a> <a href="{a['fiveCycleVideo']}" target="_blank" rel="noopener">5회 반복 확인</a></p><details><summary>입력 이미지·생성 원본·검수 보기</summary><div class="compare"><figure><figcaption>실제 시작/끝 입력</figcaption><a href="{a['sourcePNG']}" download><img src="{a['sourcePNG']}" alt="나비 {a['index']}의 실제 입력 PNG" loading="lazy"></a></figure><figure><figcaption>480p 설정의 실제 640×640 원본</figcaption><video controls muted playsinline preload="none" src="{a['rawVideo']}"></video></figure><figure><figcaption>원본 16시점</figcaption><a href="{a['reviewSheet']}"><img loading="lazy" src="{a['reviewSheet']}" alt="나비 {a['index']} 검수"></a></figure></div><p>작업 {a['jobId']} · 입력 이미지와 원본 영상 해시 대조 완료</p></details></article>''')
+    history=page.split('<main class="collection">',1)[1].rsplit('</main>',1)[0]
+    main='''<header class="page-heading"><div><p class="eyebrow">ACTUAL WINGBEATS · 2026-10-28 · v98</p><h1>추상 유화 나비 · 실제 날갯짓 4종</h1><p class="lead">날개를 접었다 펼치는 실제 생성 영상에서 자연스러운 주기를 골라 3초 루프로 정리했습니다. 배경이 투명한 PNG 시퀀스와 보색 단색 영상도 함께 제공합니다.</p></div></header><p>불합격 3종을 각 1회 재생성했습니다. 추가 사용 6/6크레딧 · 업스케일 없음.</p><p><a class="button" href="assets/butterfly-wingbeats-v98/Butterfly4_PNGAlpha480_v98.zip" download>나비 4종 PNG 알파 전체 받기</a> <a class="button" href="layered-garden.html?v=20261028-v98&theme=sunset">정원에서 보기</a> <a class="button" href="editor.html?v=20261028-v98">에디터 열기</a></p><section id="wingbeat-motion">'''+''.join(current)+'</section><details id="old-wingbeats"><summary>이전 이미지·불합격 영상 기록</summary>'+history+'</details>'
+    page=page.split('<main class="collection">',1)[0]+'<main class="collection">'+main+'</main></body></html>'
+    page=page.replace('site-nav.js?v=96','site-nav.js?v=98')
+    (docs/'butterflies-oil.html').write_text(page,encoding='utf-8')
+    (base/'00_나비4종_실제날갯짓_v98.html').write_text(page.replace('<head>','<head><base href="https://toy80318-sys.github.io/Schedule_App/">'),encoding='utf-8')
+    loops=docs/'element-loops.html';s=loops.read_text(encoding='utf-8')
+    s=re.sub(r'<article><h3>[^<]*</h3><p>atmosphere85-butterfly-0[1-4].*?</article>','',s)
+    s=s.replace('20261028-v97#wingbeat-motion','20261028-v98#wingbeat-motion').replace('구름·유리 나비·빛 입자','구름·추상 유화 나비·빛 입자').replace('새 유료 AI 생성은 하지 않았습니다.','나비 4종은 새 추상 유화 입력으로 생성한 실제 날갯짓입니다. 다른 요소는 기존 검수 소스의 파생본입니다.')
+    s=re.sub(r'<article><h3>추상 유화 나비 4종.*?</article>','',s)
+    s=s.replace('</main>','<article><h3>추상 유화 나비 4종 · 실제 날개 접기/펼치기</h3><p>새 PNG 알파·단색 키 영상과 검수 기록을 한곳에 정리했습니다.</p><a class="button" href="butterflies-oil.html?v=20261028-v98#wingbeat-motion">4종 날갯짓 보기</a></article></main>').replace('site-nav.js?v=95','site-nav.js?v=98')
+    loops.write_text(s,encoding='utf-8')
+    print('Latest4 native loops linked; previous failures kept in collapsed history.')

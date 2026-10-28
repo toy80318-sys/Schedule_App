@@ -91,9 +91,14 @@ def main():
         registered.extend(json.loads(registration.read_text(encoding='utf-8'))['inputs'])
     for report_path in (args.source_root / '제작기록').glob('*_Open2s_Alpha_v101.json'):
         report = json.loads(report_path.read_text(encoding='utf-8'))
-        if report['alphaVisualApproved'] is not True or report.get('matteRevision') != '101-r3':
+        if report['alphaVisualApproved'] is not True or report.get('matteRevision') != '101-r4':
             continue
         entry = by_id[report['id']]
+        audit = report['keyQualityAudit']
+        assert all(audit[key] == 0 for key in ('provenTissueLossAfterMax', 'rekeyOpaqueHoleMax', 'rekeyOpacityLossMax', 'rekeyBlankResidueMax'))
+        assert report['fivePassQA']['status'] == 'passed'
+        entry['generationKeyColor'] = report['generationKeyBackground']
+        entry['keyColor'] = report['keyBackground']
         assert (report['duration'], report['fps'], report['frames']) == (2, 24, 48)
         assert report['sourceSHA256'] == sha(Path(report['source']))
         assert report['keyBackgroundRecompositedFromRGBA'] is True
@@ -111,9 +116,9 @@ def main():
         shutil.copyfile(report['keyVideo'], folder / 'open2s-key.mp4')
         entry.update(videoReady=True, status='ready')
         entry['opening'] = {key: report[key] for key in ('duration', 'fps', 'frames', 'width', 'height', 'previewWidth', 'previewHeight', 'atlasColumns', 'atlasRows', 'jobId', 'sourceSHA256', 'keyVideoSHA256', 'fullyOpenBySeconds', 'route')}
-        entry['opening'].update(immediateStart=True, firstOpeningAtSeconds=1/24)
+        entry['opening'].update(immediateStart=True, firstOpeningAtSeconds=1/24, keyColor=entry['keyColor'], fivePassQA=report['fivePassQA'])
         atlas_sha = sha(folder / 'atlas.webp')
-        entry['opening'].update(status='passed', matteRevision=report['matteRevision'], atlasSHA256=atlas_sha, atlas=f'assets/flower-stems-v101/{entry["id"]}/atlas.webp?v={atlas_sha[:12]}', framePattern=f'assets/flower-stems-v101/{entry["id"]}/frame_%04d.webp?v=101r3', keyVideo=f'assets/flower-stems-v101/{entry["id"]}/open2s-key.mp4', actualInputs=actual_inputs)
+        entry['opening'].update(status='passed', matteRevision=report['matteRevision'], atlasSHA256=atlas_sha, atlas=f'assets/flower-stems-v101/{entry["id"]}/atlas.webp?v={atlas_sha[:12]}', framePattern=f'assets/flower-stems-v101/{entry["id"]}/frame_%04d.webp?v=101r4', keyVideo=f'assets/flower-stems-v101/{entry["id"]}/open2s-key.mp4?v={report["keyVideoSHA256"][:12]}', actualInputs=actual_inputs)
     result = {'format': 'jeju-flower-stems-v101', 'version': 101, 'count': 48,
               'imageCount': 96, 'resolution': [1024, 1536],
               'route': 'GENERATED_BUD_AND_BLOOM_IMAGES_BEFORE_VIDEO',

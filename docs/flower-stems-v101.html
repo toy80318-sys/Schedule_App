@@ -30,11 +30,12 @@ h3{font-size:17px;margin:0 0 8px}.meta{font-size:13px;color:#bdcebf;line-height:
 </div><a class="button" href="editor.html?v=stem101">에디터 열기 →</a></header>
 <p class="meta">1024×1536 투명 PNG · 배경·조명별 같은 꽃의 봉오리/만개 한 쌍. 이미지를 누르면 원본을 크게 볼 수 있습니다. 새 이미지 쌍을 실제 시작·끝 입력으로 생성한 2초 개화를 아래 버튼으로 재생할 수 있습니다. 긴 줄기 영상의 에디터·게임 연결은 별도 적용 전입니다.</p>
 <p id="status" role="status">새 꽃 이미지를 불러오는 중입니다…</p>
+<p><a class="button" href="flower-key-check-v101.html?v=key5">컬러키·알파 5회 검수 보기 →</a></p>
 <nav class="tones" aria-label="배경별 꽃"><a class="button" href="#sunset">노을</a><a class="button" href="#day">낮</a><a class="button" href="#night">밤</a><a class="button" href="#morning">아침</a></nav>
 <div id="flowers"></div>
 </main>
 <script>
-fetch('assets/flower-stems-v101/manifest.json?v=101-immediate2').then(response=>{
+fetch('assets/flower-stems-v101/manifest.json?v=101-key5').then(response=>{
  if(!response.ok)throw Error('긴 줄기 꽃 목록을 불러오지 못했습니다.');return response.json();
 }).then(data=>{
  if(data.format!=='jeju-flower-stems-v101'||data.count!==48||data.items?.length!==48||data.imageCount!==96)throw Error('새 꽃 이미지 목록을 확인해 주세요.');

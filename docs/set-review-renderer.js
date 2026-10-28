@@ -35,6 +35,7 @@
     if(!f[scope]||typeof f[scope]!=='object'||Array.isArray(f[scope])||['brightness','contrast','saturation','warmth'].some(k=>f[scope][k]!==undefined&&!finite(f[scope][k],k==='warmth'?-100:0,k==='warmth'?100:200)))throw Error('색감 필터 값이 올바르지 않습니다.');
    }
    if(f.backgroundGrade!==undefined){const g=f.backgroundGrade;if(!g||typeof g!=='object'||Array.isArray(g)||['hue','exposure','brightness'].some(k=>g[k]!==undefined&&!finite(g[k],{hue:-180,exposure:-3,brightness:0}[k],{hue:180,exposure:3,brightness:200}[k]))||g.curve!==undefined&&(!Array.isArray(g.curve)||g.curve.length!==5||!g.curve.every(n=>finite(n,0,255))))throw Error('배경 색보정 값이 올바르지 않습니다.');}
+   if(f.glow!==undefined){const g=f.glow;if(!g||typeof g!=='object'||Array.isArray(g)||g.strength!==undefined&&!finite(g.strength,0,100)||g.radius!==undefined&&!finite(g.radius,1,40))throw Error('글로우 값이 올바르지 않습니다.');}
    if(f.focus!==undefined){const v=f.focus;if(!v||typeof v!=='object'||Array.isArray(v)||['background','far','near','focus'].some(k=>v[k]!==undefined&&!finite(v[k],k==='focus'?.2:0,k==='focus'?.9:30)))throw Error('초점 블러 값이 올바르지 않습니다.');if(v.region!==undefined){const r=v.region;if(!r||typeof r!=='object'||Array.isArray(r)||!['x','y','w','h','blur'].every(k=>finite(r[k],k==='w'||k==='h'?.01:0,k==='blur'?30:1))||r.x+r.w>1.0000001||r.y+r.h>1.0000001)throw Error('블러 영역 값이 올바르지 않습니다.');}}
   }
   if(project.gardenSpace!==undefined&&(!project.gardenSpace||typeof project.gardenSpace!=='object'||Array.isArray(project.gardenSpace)))throw Error('입체 공간 값이 올바르지 않습니다.');
@@ -108,6 +109,7 @@
    const ratio=Math.min(pose.w/im.naturalWidth,pose.h/im.naturalHeight),w=a.sourceRect?pose.w:im.naturalWidth*ratio,h=a.sourceRect?pose.h:im.naturalHeight*ratio;
    ctx.drawImage(im,-w/2,scope==='flowers'?pose.h/2-h:-h/2,w,h);ctx.restore();rendered++;
   }
+  root.jejuGlow?.draw(ctx,canvas,filters.glow);
   root.jejuFocus?.drawRegion(ctx,canvas,filters.focus);
   for(const item of missing)errors.push(item.id+' · '+item.error);
   return{mode:'web-composite-not-unity-runtime',width,height,sourceWidth:project.width,sourceHeight:project.height,totalObjects:project.objects.length,objectCount:project.objects.length,renderedObjects:rendered,renderedCount:rendered,missing,missingAssets:missing,errors,warnings,complete:missing.length===0&&rendered===project.objects.length};

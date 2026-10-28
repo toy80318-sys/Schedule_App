@@ -23,7 +23,7 @@ for(const height of [-15,0,40])for(const blur of [0,10])for(const fill of [true,
  const window={jejuBackgroundGrade:G,jejuFocus:F},sceneFilters={backgroundGrade:grade,focus};
  const drawEditor=vm.runInNewContext(appDraw+';drawBackground',{window,sceneFilters,H,background:'test.png',sourceRegistered:new Set(fill?['test.png']:[]),filterCSS:()=> 'none'});drawEditor(ctx,im,W,H);const editorRect=ctx.last.slice(1);
  const drawGame=vm.runInNewContext(playerDraw+';drawBackground',{window,ctx,project:{width:W,height:H,backgroundFit:fill?'fill':'cover',sceneFilters},layerVisible:()=>true,filter:()=> 'none'});drawGame(im);assert.deepEqual(ctx.last.slice(1),editorRect,'editor PNG/Unity drawing and game drawing use identical placement');
- const wallBackground={style:{}};vm.runInNewContext(appDOM+';applySceneFilters()',{window,sceneFilters,wallBackground,objects:[],syncFilterControls(){},filterCSS:()=> 'none'});
+ const wallBackground={style:{}};vm.runInNewContext(appDOM+';applySceneFilters()',{window,sceneFilters,wallBackground,wallScene:{style:{}},W,H,objects:[],syncFilterControls(){},filterCSS:()=> 'none'});
  assert.equal(wallBackground.style.transform,`translateY(${placement.offsetY*100}%) scale(${zoom},${zoom*placement.scaleY})`);
  const top=H*(1-zoom*placement.scaleY)/2+H*placement.offsetY,bottom=top+H*zoom*placement.scaleY;assert(top<=1e-8&&bottom>=H-1e-8,'overscan covers the complete view at every allowed height');
  for(const py of [0,H/2,H]){const localY=(py-H/2-H*placement.offsetY)/(zoom*placement.scaleY)+H/2;assert(localY>=-1e-8&&localY<=H+1e-8);const coverRatio=fill?H/ih:Math.max(W/iw,H/ih),baseTop=fill?0:(H-ih*coverRatio)/2,domSourceY=(localY-baseTop)/coverRatio,canvasSourceY=(py-editorRect[1])/editorRect[3]*ih;near(domSourceY,canvasSourceY);}

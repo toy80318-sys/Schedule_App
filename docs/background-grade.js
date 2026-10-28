@@ -2,7 +2,8 @@
  'use strict';
  const X=[0,64/255,128/255,192/255,1],DEFAULT=[0,64,128,192,255],cache=new Map(),NS='http://www.w3.org/2000/svg';
  const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),number=(v,f,a,b)=>typeof v==='number'&&Number.isFinite(v)?clamp(v,a,b):f;
- function normalize(v){return{hue:number(v?.hue,0,-180,180),exposure:number(v?.exposure,0,-3,3),brightness:number(v?.brightness,100,0,200),curve:DEFAULT.map((d,i)=>number(v?.curve?.[i],d,0,255))}}
+ function normalize(v){return{hue:number(v?.hue,0,-180,180),exposure:number(v?.exposure,0,-3,3),brightness:number(v?.brightness,100,0,200),curve:DEFAULT.map((d,i)=>number(v?.curve?.[i],d,0,255)),groundHeight:number(v?.groundHeight,0,-15,40)}}
+ function placement(value){const h=normalize(value).groundHeight/100;return{scaleY:1+2*Math.abs(h),offsetY:h?-h:0}}
  function neutral(v){v=normalize(v);return v.hue===0&&v.exposure===0&&v.brightness===100&&v.curve.every((n,i)=>n===DEFAULT[i])}
  function curveTable(values){
   const y=normalize({curve:values}).curve.map(v=>v/255),d=X.slice(1).map((x,i)=>(y[i+1]-y[i])/(x-X[i])),m=[d[0],0,0,0,d[3]];
@@ -21,8 +22,8 @@
    svg.setAttribute('width','0');svg.setAttribute('height','0');svg.setAttribute('aria-hidden','true');svg.style.position='absolute';svg.style.pointerEvents='none';filter.setAttribute('id',id);filter.setAttribute('color-interpolation-filters','sRGB');hue.setAttribute('type','hueRotate');
    const channels=['R','G','B'].map(c=>{const el=document.createElementNS(NS,'feFunc'+c);el.setAttribute('type','table');transfer.append(el);return el});filter.append(hue,transfer);defs.append(filter);svg.append(defs);document.body.append(svg);item={hue,channels,key:''};cache.set(id,item);
   }
-  const key=JSON.stringify(v);if(item.key!==key){item.hue.setAttribute('values',String(v.hue));const values=table(v).map(x=>x.toFixed(7)).join(' ');for(const el of item.channels)el.setAttribute('tableValues',values);item.key=key}
+  const key=JSON.stringify([v.hue,v.exposure,v.brightness,v.curve]);if(item.key!==key){item.hue.setAttribute('values',String(v.hue));const values=table(v).map(x=>x.toFixed(7)).join(' ');for(const el of item.channels)el.setAttribute('tableValues',values);item.key=key}
   return'url(#'+id+')';
  }
- const api={normalize,neutral,curveTable,table,hueMatrix,pixel,css};if(typeof module==='object'&&module.exports)module.exports=api;else root.jejuBackgroundGrade=api;
+ const api={normalize,neutral,placement,curveTable,table,hueMatrix,pixel,css};if(typeof module==='object'&&module.exports)module.exports=api;else root.jejuBackgroundGrade=api;
 })(typeof window==='object'?window:globalThis);

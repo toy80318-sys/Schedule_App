@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('fs'),G=require('../docs/background-grade.js');
-assert.deepEqual(G.normalize(),{hue:0,exposure:0,brightness:100,curve:[0,64,128,192,255]});assert(G.neutral());
-assert.deepEqual(G.normalize({hue:Infinity,exposure:99,brightness:-1,curve:[NaN,80,null,200,999]}),{hue:0,exposure:3,brightness:0,curve:[0,80,128,200,255]});
+assert.deepEqual(G.normalize(),{hue:0,exposure:0,brightness:100,curve:[0,64,128,192,255],groundHeight:0});assert(G.neutral());
+assert.deepEqual(G.normalize({hue:Infinity,exposure:99,brightness:-1,curve:[NaN,80,null,200,999]}),{hue:0,exposure:3,brightness:0,curve:[0,80,128,200,255],groundHeight:0});
 const identity=G.table();identity.forEach((v,i)=>assert(Math.abs(v-i/255)<1e-12));
 assert.deepEqual(G.pixel([31,128,240],{}),[31,128,240]);assert(G.pixel([128,128,128],{exposure:1})[0]>170);assert(G.pixel([128,128,128],{exposure:-1})[0]<100);
 assert.deepEqual(G.pixel([50,100,150],{brightness:0}),[0,0,0]);assert(G.pixel([255,0,0],{hue:120})[1]>100);

@@ -19,4 +19,4 @@ for(const theme of ['sunset','day','night','morning'])test(theme+' archived loop
 
 test('both editor import buttons and garden use the same refined layout',()=>{for(const f of ['docs/current-release-editor.js','docs/catalog.js','docs/layered-garden.js'])assert.ok(/jejuReferenceLayout\.project|jejuCurrentProjects\.prepare/.test(fs.readFileSync(f,'utf8')));for(const f of ['docs/editor.html','docs/layered-garden.html'])assert.ok(fs.readFileSync(f,'utf8').includes('reference-layout.js?v=93'))});
 
-test('download and status controls exist before the garden loader runs',()=>{const html=fs.readFileSync('docs/layered-garden.html','utf8');assert.equal((html.match(/id="layerLayout"/g)||[]).length,1);assert.ok(html.includes('production-status.html?v=20261028-v94'));assert.ok(html.includes('layered-garden.js?v=media99-static101'))});
+test('download and status controls exist before the garden loader runs',()=>{const html=fs.readFileSync('docs/layered-garden.html','utf8');assert.equal((html.match(/id="layerLayout"/g)||[]).length,1);assert.ok(html.includes('production-status.html?v=20261028-v94'));assert.ok(html.includes('layered-garden.js?v=ground-height'))});

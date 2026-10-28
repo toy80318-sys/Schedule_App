@@ -8,13 +8,13 @@ for(const theme of ['sunset','day','night','morning'])test(theme+' reference lay
  assert.equal(q.objects.filter(o=>assets.get(o.assetId).category==='grass').length,42);assert.equal(q.objects.filter(o=>assets.get(o.assetId).category==='leaf').length,4);
 });
 
-for(const theme of ['sunset','day','night','morning'])test(theme+' archived loop-bearing placement remains animated without rewriting the archive',()=>{
+for(const theme of ['sunset','day','night','morning'])test(theme+' reference environment uses original stills while background and archive input stay intact',()=>{
  const M=require('../docs/separated-motion'),read=p=>JSON.parse(fs.readFileSync('docs/'+p)),R=read('assets/current-release-v86/manifest.json'),m=read('assets/separated-loops-v88/manifest.json'),archive=read('assets/reference-layout-v93/manifest.json').scenes.find(s=>s.id===theme),hash=p=>crypto.createHash('sha256').update(fs.readFileSync('docs/'+p,'utf8').replace(/\r\n/g,'\n')).digest('hex');
  assert.equal(hash('assets/reference-layout-v93/'+archive.project),archive.sha256);assert.equal(hash(archive.sourceProject),archive.sourceProjectSHA256);
  const p=read(archive.sourceProject),q=M.project(L.project(p,theme),m,false,R.assets.filter(a=>a.category==='particle')),download=read('assets/reference-layout-v93/'+archive.project),before=JSON.stringify(download),normalized=M.project(download,m,false);
  assert.equal(JSON.stringify(download),before);assert.deepEqual(normalized.objects,download.objects);assert.equal(normalized.background,download.background);assert.equal(normalized.backgroundLoop,download.backgroundLoop);assert.equal(q.backgroundLoop,undefined);
  for(const a of normalized.assets.filter(a=>/^BG0[1-4]-E0[1256]-V05$/.test(a.id))){const old=download.assets.find(b=>b.id===a.id);assert.equal(a.src,old.src);assert.equal(a.sha256,old.sha256);assert.deepEqual(a.frames,old.frames);assert.equal(a.loopVideo,old.loopVideo);assert.equal(a.stillOnly,old.stillOnly);assert.equal(a.loopInPlace,old.loopInPlace)}
- const game=M.project(L.project(p,theme),m,true,R.assets.filter(a=>a.category==='particle'));assert.deepEqual(game.objects,download.objects);assert.equal(game.background,m.backgrounds.find(b=>b.id===theme).video);assert.equal(game.backgroundLoop,game.background);
+ const game=M.project(L.project(p,theme),m,true,R.assets.filter(a=>a.category==='particle'));assert.deepEqual(game.objects.filter(o=>!/^BG0[1-4]-E02-V05$/.test(o.assetId)),download.objects);assert.equal(game.background,m.backgrounds.find(b=>b.id===theme).video);assert.equal(game.backgroundLoop,game.background);
 });
 
 test('both editor import buttons and garden use the same refined layout',()=>{for(const f of ['docs/current-release-editor.js','docs/catalog.js','docs/layered-garden.js'])assert.ok(/jejuReferenceLayout\.project|jejuCurrentProjects\.prepare/.test(fs.readFileSync(f,'utf8')));for(const f of ['docs/editor.html','docs/layered-garden.html'])assert.ok(fs.readFileSync(f,'utf8').includes('reference-layout.js?v=93'))});

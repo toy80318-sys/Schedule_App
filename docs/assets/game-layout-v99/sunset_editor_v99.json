@@ -564,34 +564,6 @@
       "separatedLoopVersion": 88
     },
     {
-      "id": "BG01-E02-V05",
-      "name": "노을 · 나무",
-      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG01-E02-V05.png",
-      "preview": "assets/set-review-v01/preview/BG01-E02-V05.webp",
-      "width": 1254,
-      "height": 1254,
-      "category": "tree",
-      "theme": "sunset",
-      "sha256": "136cf4803af707624b350e0e92b09c0c74ec90a72df4b0bff7c32907394f7c5f",
-      "file": "BG01-E02-V05.png",
-      "thumb": "assets/set-review-v01/preview/BG01-E02-V05.webp",
-      "group": "decor",
-      "design": null,
-      "color": null,
-      "completeObject": true,
-      "transparent": true,
-      "stillOnly": true,
-      "lightingBaked": true,
-      "imageStyleVersion": 76,
-      "setReviewVersion": "V05",
-      "ready": true,
-      "kind": "image",
-      "releaseVersion": 85,
-      "sourceVersion": "V05",
-      "loopInPlace": false,
-      "separatedLoopVersion": 88
-    },
-    {
       "id": "BG01-E05-V05",
       "name": "노을 · 현무암",
       "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG01-E05-V05.png",
@@ -4002,6 +3974,156 @@
       "layerRole": "RearBush",
       "abstractStyle": "loose_gestural_oil_3x",
       "placementRole": "behind_flowers"
+    },
+    {
+      "id": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
+      "theme": "sunset",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "category": "grass",
+      "group": "decor",
+      "kind": "image",
+      "file": "BG01_LT01_arching_v101.png",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/docs/assets/foreground-grass-v101/BG01_LT01_arching_v101.png",
+      "preview": "assets/foreground-grass-v101/BG01_LT01_arching_v101.png",
+      "thumb": "https://toy80318-sys.github.io/Schedule_App/assets/foreground-grass-v101/BG01_LT01_arching_v101.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "completeObject": true,
+      "sourceProvenance": "complete_independent_generated_object",
+      "imageStyleVersion": 59,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "stillOnly": true,
+      "ready": true,
+      "motion": "stationary",
+      "loopInPlace": false,
+      "pixelsPerUnit": 100,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "groundAnchor": {
+        "x": 0.5,
+        "y": 0.95703125
+      },
+      "defaultWidthMm": 650,
+      "defaultHeightMm": 650,
+      "sha256": "06e904cd68202a5d59e2934ff326b505f91639ff65e6535fbae25f7cff31609f",
+      "originalSource": "ML_BG01_LT01_greenery_06_Whole_v59.png",
+      "originalSHA256": "06e904cd68202a5d59e2934ff326b505f91639ff65e6535fbae25f7cff31609f",
+      "visibleBounds": [
+        156,
+        142,
+        921,
+        927
+      ],
+      "sourceCreation": "reused-complete-object-v59",
+      "sourceStyleVersion": 59,
+      "foregroundGrassVersion": 101,
+      "foregroundVariant": "arching"
+    },
+    {
+      "id": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
+      "theme": "sunset",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "category": "grass",
+      "group": "decor",
+      "kind": "image",
+      "file": "BG01_LT01_sedge_v101.png",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/docs/assets/foreground-grass-v101/BG01_LT01_sedge_v101.png",
+      "preview": "assets/foreground-grass-v101/BG01_LT01_sedge_v101.png",
+      "thumb": "https://toy80318-sys.github.io/Schedule_App/assets/foreground-grass-v101/BG01_LT01_sedge_v101.png",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true,
+      "completeObject": true,
+      "sourceProvenance": "complete_independent_generated_object",
+      "sourceCreation": "builtin-imagegen-native",
+      "sourceStyleVersion": 101,
+      "imageStyleVersion": 101,
+      "foregroundGrassVersion": 101,
+      "foregroundVariant": "sedge",
+      "lightingBaked": true,
+      "colorBaked": true,
+      "stillOnly": true,
+      "ready": true,
+      "motion": "stationary",
+      "loopInPlace": false,
+      "pixelsPerUnit": 100,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "groundAnchor": {
+        "x": 0.5,
+        "y": 0.8153907496012759
+      },
+      "visibleBounds": [
+        55,
+        381,
+        1213,
+        1023
+      ],
+      "defaultWidthMm": 900,
+      "defaultHeightMm": 900,
+      "sha256": "ef66ec7cbaafe1e0da539e0372c4a7069caeb846aa89471c37fa3dec14c7964d",
+      "originalSource": "exec-72682c73-646d-45fb-82bc-ede7da672a07.png",
+      "originalSHA256": "ef66ec7cbaafe1e0da539e0372c4a7069caeb846aa89471c37fa3dec14c7964d"
+    },
+    {
+      "id": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
+      "theme": "sunset",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "category": "grass",
+      "group": "decor",
+      "kind": "image",
+      "file": "BG01_LT01_wide_v101.png",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/docs/assets/foreground-grass-v101/BG01_LT01_wide_v101.png",
+      "preview": "assets/foreground-grass-v101/BG01_LT01_wide_v101.png",
+      "thumb": "https://toy80318-sys.github.io/Schedule_App/assets/foreground-grass-v101/BG01_LT01_wide_v101.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "completeObject": true,
+      "sourceProvenance": "complete_independent_generated_object",
+      "imageStyleVersion": 59,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "stillOnly": true,
+      "ready": true,
+      "motion": "stationary",
+      "loopInPlace": false,
+      "pixelsPerUnit": 100,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "groundAnchor": {
+        "x": 0.5,
+        "y": 0.95703125
+      },
+      "defaultWidthMm": 650,
+      "defaultHeightMm": 650,
+      "sha256": "44d18110fb61f7120be6d817b471a1a2fcfbc3488d13260f9aed24b0575fb54d",
+      "originalSource": "ML_BG01_LT01_greenery_05_Whole_v59.png",
+      "originalSHA256": "44d18110fb61f7120be6d817b471a1a2fcfbc3488d13260f9aed24b0575fb54d",
+      "visibleBounds": [
+        107,
+        244,
+        937,
+        810
+      ],
+      "sourceCreation": "reused-complete-object-v59",
+      "sourceStyleVersion": 59,
+      "foregroundGrassVersion": 101,
+      "foregroundVariant": "wide"
     }
   ],
   "objects": [
@@ -4205,8 +4327,8 @@
     },
     {
       "id": "sunset-reference93-bed-0",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 140.3203760850297,
       "y": 2580.3668620517847,
       "w": 882.233137948215,
@@ -4219,12 +4341,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-1",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 631.9744864185634,
       "y": 2432.5276411756126,
       "w": 1030.0723588243873,
@@ -4237,7 +4364,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-2",
@@ -4255,12 +4387,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-3",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 2744.162485128801,
       "y": 2457.606184497848,
       "w": 1004.993815502152,
@@ -4273,12 +4410,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-4",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 3884.8796286354714,
       "y": 2560.516136818528,
       "w": 902.083863181472,
@@ -4291,12 +4433,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-5",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 4815.592252291094,
       "y": 2440.379253814146,
       "w": 1022.2207461858541,
@@ -4309,12 +4456,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-6",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 6196.189108804572,
       "y": 2462.1404556848106,
       "w": 1000.4595443151893,
@@ -4327,7 +4479,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-7",
@@ -4345,12 +4502,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-8",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 8233.449922251368,
       "y": 2535.662561868131,
       "w": 926.937438131869,
@@ -4363,7 +4525,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-9",
@@ -4381,12 +4548,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-10",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 10437.132150524889,
       "y": 2436.9125964836776,
       "w": 1025.6874035163225,
@@ -4399,12 +4571,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-11",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 10772.965199927357,
       "y": 2421.0158988133817,
       "w": 1041.5841011866182,
@@ -4417,7 +4594,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-12",
@@ -4435,12 +4617,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-bed-13",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 12825.111682766606,
       "y": 2487.047791653201,
       "w": 975.552208346799,
@@ -4453,7 +4640,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-flower-046-v04-0",
@@ -5794,42 +5986,6 @@
       "anchorKind": "alpha-bounds-bottom-center",
       "referenceBand": 0,
       "groupId": "reference93-flowers-0"
-    },
-    {
-      "id": "BG01-tree-00",
-      "assetId": "BG01-E02-V05",
-      "name": "노을 · 나무",
-      "x": 0,
-      "y": 1670.4,
-      "w": 1044,
-      "h": 1044,
-      "baseW": 1044,
-      "baseH": 1044,
-      "aspect": 1,
-      "r": 0,
-      "opacity": 0.8,
-      "flipX": false,
-      "blur": 0,
-      "motion": "stationary",
-      "groupId": "reference93-backdrop"
-    },
-    {
-      "id": "BG01-tree-01",
-      "assetId": "BG01-E02-V05",
-      "name": "노을 · 나무",
-      "x": 13121,
-      "y": 1670.4,
-      "w": 1044,
-      "h": 1044,
-      "baseW": 1044,
-      "baseH": 1044,
-      "aspect": 1,
-      "r": 0,
-      "opacity": 0.8,
-      "flipX": false,
-      "blur": 0,
-      "motion": "stationary",
-      "groupId": "reference93-backdrop"
     },
     {
       "id": "BG01-flower-079-v04-0",
@@ -12007,8 +12163,8 @@
     },
     {
       "id": "BG01-grass-01",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 336.5113441126953,
       "y": 3004.538888962626,
       "w": 471.9811110373736,
@@ -12021,12 +12177,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-04",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 2291.4414040063425,
       "y": 3142.3062403305616,
       "w": 334.213759669438,
@@ -12039,12 +12200,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-13",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 6452.878116987311,
       "y": 3017.7298086821434,
       "w": 458.79019131785634,
@@ -12057,12 +12223,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-23",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 11666.144878844518,
       "y": 3020.8877305239735,
       "w": 455.6322694760263,
@@ -12075,12 +12246,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-02",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 1129.873761487508,
       "y": 3004.114780752316,
       "w": 472.4052192476838,
@@ -12093,7 +12269,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-05",
@@ -12111,12 +12292,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-07",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-arching",
+      "name": "노을 · 긴 잎이 휘는 풀",
       "x": 3724.186778741293,
       "y": 3060.957276834637,
       "w": 415.562723165363,
@@ -12129,12 +12315,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-08",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 4032.5839159691186,
       "y": 3056.008371731803,
       "w": 420.51162826819717,
@@ -12147,7 +12338,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-10",
@@ -12165,12 +12361,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-14",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 6933.244462679083,
       "y": 3002.2951954557448,
       "w": 474.2248045442551,
@@ -12183,7 +12384,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-16",
@@ -12201,12 +12407,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-17",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 8833.421737049473,
       "y": 3118.4394383951426,
       "w": 358.08056160485745,
@@ -12219,12 +12430,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-19",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-sedge",
+      "name": "노을 · 낮고 풍성한 사초",
       "x": 9545.837964481421,
       "y": 3004.4017238564193,
       "w": 472.1182761435807,
@@ -12237,7 +12453,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-20",
@@ -12255,12 +12476,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-25",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 12687.767755656578,
       "y": 3022.6477960867883,
       "w": 453.8722039132119,
@@ -12273,7 +12499,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-26",
@@ -12291,12 +12522,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-grass-11",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 5457.872212261445,
       "y": 3012.0231106439533,
       "w": 464.49688935604695,
@@ -12309,12 +12545,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "sunset-reference93-grass-22",
-      "assetId": "BG01-E01-V05",
-      "name": "노을 · 풀",
+      "assetId": "foreground101-sunset-wide",
+      "name": "노을 · 낮게 퍼진 풀",
       "x": 11262.885845312987,
       "y": 3060.847633537844,
       "w": 415.67236646215616,
@@ -12327,7 +12568,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG01-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG01-E01-V05"
     },
     {
       "id": "BG01-butterfly-00",
@@ -12688,6 +12934,7 @@
     "replacedObjects": 78
   },
   "restoredBushVersion99": 99,
+  "foregroundGrassVersion101": 101,
   "gameAtmosphereVersion": 89,
   "mediaPlaybackVersion": 99
 }

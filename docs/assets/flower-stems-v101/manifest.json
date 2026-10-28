@@ -1,0 +1,2906 @@
+{
+  "format": "jeju-flower-stems-v101",
+  "version": 101,
+  "count": 48,
+  "imageCount": 96,
+  "resolution": [
+    1024,
+    1536
+  ],
+  "route": "GENERATED_BUD_AND_BLOOM_IMAGES_BEFORE_VIDEO",
+  "requestedGameDuration": 2,
+  "automaticPaidRetry": false,
+  "videoInputResolution": [
+    1152,
+    1536
+  ],
+  "keyPadding": [
+    64,
+    0,
+    64,
+    0
+  ],
+  "upscaleApproved": false,
+  "items": [
+    {
+      "id": "BG01-buckwheat-scene-a-v83",
+      "name": "노을 · 메밀꽃 · 배경 조화 A",
+      "theme": "sunset",
+      "species": "buckwheat",
+      "shape": "A",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "4fc74c25da5de566fca526656f74a8bbf64d4c3f2aa9ff6bd963ecc5b6795b40",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-a-v83_bud.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "72d422fa0e5829090e08029d6237cda3592c257b4cbc6507d9aaa373c34cb24b",
+          "alphaBounds": [
+            144,
+            18,
+            918,
+            1521
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-a-v83_bloom.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "3409d6c360e679ca0de56784253684b8a74442d3879f0a9f1cf94f75948175c9",
+          "alphaBounds": [
+            130,
+            20,
+            919,
+            1521
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "15826a1eb2bb30eb634ed74a179c9a54ff57bc6481caf917e89bfc4fbe3d7928",
+          "alphaSHA256": "72d422fa0e5829090e08029d6237cda3592c257b4cbc6507d9aaa373c34cb24b",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "311625184bb69cd00f4e5d771f0de61efd1b3e2e7ff1563ad74e5fb8c00a4f35",
+          "alphaSHA256": "3409d6c360e679ca0de56784253684b8a74442d3879f0a9f1cf94f75948175c9",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-buckwheat-scene-b-v83",
+      "name": "노을 · 메밀꽃 · 배경 조화 B",
+      "theme": "sunset",
+      "species": "buckwheat",
+      "shape": "B",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "23ecd2570b04242e27ab0dd91de55a6c3f63954035e042e4cfd56580e0781f9c",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-b-v83_bud.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "05350e968a05167fb4ebea14d990c602b312c5d54042d120e78e137e92c23e40",
+          "alphaBounds": [
+            176,
+            16,
+            877,
+            1510
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-b-v83_bloom.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "661f9dafc2b646e7f320c85395eb201c44780712394aa2cceacdcaadbc299c37",
+          "alphaBounds": [
+            171,
+            23,
+            875,
+            1510
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "307abd5392cbed8775241d082adeeb530ce54314a06862f70f76ac4dacea909d",
+          "alphaSHA256": "05350e968a05167fb4ebea14d990c602b312c5d54042d120e78e137e92c23e40",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "ef5c4eb62ee177c9f53cfc6fe5b2b7fa7e3e657028b3ee2ce6d25c2399daf9fa",
+          "alphaSHA256": "661f9dafc2b646e7f320c85395eb201c44780712394aa2cceacdcaadbc299c37",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-buckwheat-scene-c-v83",
+      "name": "노을 · 메밀꽃 · 배경 조화 C",
+      "theme": "sunset",
+      "species": "buckwheat",
+      "shape": "C",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "16e6259eecc946a9c1a7a8600b8e932cdddfa671e7a7390a160be7d0d063774b",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-c-v83_bud.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "bd7e7206f04f3030ee54fec4408825ad8b5a2d6fae287c4c2af115707fbbf1b7",
+          "alphaBounds": [
+            200,
+            24,
+            929,
+            1496
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-c-v83_bloom.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "013d1611709d058bfe5e133f71b334d9824a15a971d1910044ce19b53238f6bc",
+          "alphaBounds": [
+            199,
+            36,
+            925,
+            1495
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "7cae034fdbf5c97b4cb0ea6e1eec4d08c06142792307805a3b887678b110941a",
+          "alphaSHA256": "bd7e7206f04f3030ee54fec4408825ad8b5a2d6fae287c4c2af115707fbbf1b7",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "7c0ad45255d3185fae3e5877432560febad34069ae3b211c55007c30fc3a7b23",
+          "alphaSHA256": "013d1611709d058bfe5e133f71b334d9824a15a971d1910044ce19b53238f6bc",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-buckwheat-scene-d-v83",
+      "name": "노을 · 메밀꽃 · 배경 조화 D",
+      "theme": "sunset",
+      "species": "buckwheat",
+      "shape": "D",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "5cea74b6a80cdf3e2db5be9bcdc97d56ac63022439b721c26540235a00204b51",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-d-v83_bud.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "5280740e27c3b236c32f8e618a8509c5d0ffd371d33f1a4f8e70ca6762d833bb",
+          "alphaBounds": [
+            186,
+            21,
+            844,
+            1507
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-buckwheat-scene-d-v83_bloom.webp",
+          "file": "ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "9805c1b471780a66af8febc8d920f7085521a065602bd62fd1c992d66b052e1b",
+          "alphaBounds": [
+            175,
+            21,
+            845,
+            1507
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "df780241f698329cb780271522bae951e65865e20c8fb0e30156739377091f65",
+          "alphaSHA256": "5280740e27c3b236c32f8e618a8509c5d0ffd371d33f1a4f8e70ca6762d833bb",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "6ccc6e6e0ffc6108eef4a3b242f6c304d35a685d7ef45f42e9df7a16f8189332",
+          "alphaSHA256": "9805c1b471780a66af8febc8d920f7085521a065602bd62fd1c992d66b052e1b",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-camellia-scene-a-v83",
+      "name": "노을 · 동백 · 배경 조화 A",
+      "theme": "sunset",
+      "species": "camellia",
+      "shape": "A",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "40f87126ba6f47020a03d3bae56a4893469d5e4f3de155d6260f9e06a45c4a72",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-a-v83_bud.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "5a6d35ad8e77fcc0550769f62b88ae4f038b56b89edf35d6ad3304680e359f81",
+          "alphaBounds": [
+            93,
+            38,
+            900,
+            1509
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-a-v83_bloom.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "7e44d873d2903992ab7fb6386579824973c73b8451dc0ee8a5d1f7b15654abec",
+          "alphaBounds": [
+            93,
+            34,
+            900,
+            1509
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "957eb4185e145f2cb4c98487682f7cb64b1aefe12934a5139708d0b69e9c2978",
+          "alphaSHA256": "5a6d35ad8e77fcc0550769f62b88ae4f038b56b89edf35d6ad3304680e359f81",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_camellia_ShapeA_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "ba0e532d0587e2b627a09382bb61d3de420d3d94c2b121841597df6c27abbdb3",
+          "alphaSHA256": "7e44d873d2903992ab7fb6386579824973c73b8451dc0ee8a5d1f7b15654abec",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-camellia-scene-b-v83",
+      "name": "노을 · 동백 · 배경 조화 B",
+      "theme": "sunset",
+      "species": "camellia",
+      "shape": "B",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "7d625a4aa474e748fbf5100311bcde8998dafb0c1dcc6c6008028d48b17f9482",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-b-v83_bud.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "57699ea973b33b1c32735dced0254a9f4dd0c2e58658493311643a136cab93a5",
+          "alphaBounds": [
+            152,
+            30,
+            960,
+            1509
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-b-v83_bloom.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "ab99bf5bfce78a6ebdb51963a421075b446002df012b2ac33d2228edb029d614",
+          "alphaBounds": [
+            148,
+            17,
+            956,
+            1507
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "6dedfa74afe37477d41036e67427a3ac0ad74f9bebed12d7b49d11a309cd4629",
+          "alphaSHA256": "57699ea973b33b1c32735dced0254a9f4dd0c2e58658493311643a136cab93a5",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_camellia_ShapeB_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "2f16dfcbb275c90701f782e18e075e0cedc9e17eddea4a9dafb955f30ac35ad0",
+          "alphaSHA256": "ab99bf5bfce78a6ebdb51963a421075b446002df012b2ac33d2228edb029d614",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-camellia-scene-c-v83",
+      "name": "노을 · 동백 · 배경 조화 C",
+      "theme": "sunset",
+      "species": "camellia",
+      "shape": "C",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "64009d5cec8f9f54bcd528c9d46db514feb6beabd473f35fbb0e2952d8460b3d",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-c-v83_bud.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "bfa1e9f37b9e6557eb34ebe79f29cc2325788c279bc739118da6e59ee88e445f",
+          "alphaBounds": [
+            144,
+            66,
+            866,
+            1500
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-c-v83_bloom.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "def8687070d69739663d3375640f36f1750c50bd5be6939b82926024a3fdf4ca",
+          "alphaBounds": [
+            143,
+            38,
+            873,
+            1498
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "a30fe97ae1cebf7674808a76a6d4a8a160ce7a174f5d422920df13729e1352f4",
+          "alphaSHA256": "bfa1e9f37b9e6557eb34ebe79f29cc2325788c279bc739118da6e59ee88e445f",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_camellia_ShapeC_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "a84d1eb8a6cfec23a1976c0136b91b93102ec7aecf68a92dcdf38c4146fb6986",
+          "alphaSHA256": "def8687070d69739663d3375640f36f1750c50bd5be6939b82926024a3fdf4ca",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-camellia-scene-d-v83",
+      "name": "노을 · 동백 · 배경 조화 D",
+      "theme": "sunset",
+      "species": "camellia",
+      "shape": "D",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "61407a6e8a853a565dd0b8ed8265280c008561538b548de72bff0209f2837a24",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-d-v83_bud.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "7beafb1be65fcf4bbf9175da3e497df4112b6e1fff4c416ff4514582a20484b5",
+          "alphaBounds": [
+            173,
+            25,
+            912,
+            1507
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-camellia-scene-d-v83_bloom.webp",
+          "file": "ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "d9fe581b75dfab2a407cb7ee6728f367fe3aae09b73be4d54ef5a655e25c5794",
+          "alphaBounds": [
+            173,
+            26,
+            914,
+            1504
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "b7a989518d3e6194c6fb984c042f1c7d77c5b8308573f519d5eb36033eb3df50",
+          "alphaSHA256": "7beafb1be65fcf4bbf9175da3e497df4112b6e1fff4c416ff4514582a20484b5",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_camellia_ShapeD_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "6d52c60b876d9da027b0d2c034cd7229e2b1c33bb27b1462d482b58b0c5dd9cd",
+          "alphaSHA256": "d9fe581b75dfab2a407cb7ee6728f367fe3aae09b73be4d54ef5a655e25c5794",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-marigold-scene-a-v83",
+      "name": "노을 · 금잔화 · 배경 조화 A",
+      "theme": "sunset",
+      "species": "marigold",
+      "shape": "A",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "3b4f984a3c66daaf2ba365b764bc620c506ae2abd3bd0d06a1131cf227def34a",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-a-v83_bud.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "3675535356fe673470966c9892b103cea7cf8c3302e00d9ab7491ddb57918ec5",
+          "alphaBounds": [
+            122,
+            16,
+            912,
+            1524
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-a-v83_bloom.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "b544a0be827576191eb1f0298e01539d3e33c02e55244bcc57efe99228a5d3e8",
+          "alphaBounds": [
+            124,
+            26,
+            906,
+            1521
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "efdb2df9568c8373726c4a32526dce0c47222f41fa92184d763392f9a48ab6c6",
+          "alphaSHA256": "3675535356fe673470966c9892b103cea7cf8c3302e00d9ab7491ddb57918ec5",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_marigold_ShapeA_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "5f9bcb8167f65783e225afe880a13c7fee972051cc4c19d67f682cd7635db4cf",
+          "alphaSHA256": "b544a0be827576191eb1f0298e01539d3e33c02e55244bcc57efe99228a5d3e8",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-marigold-scene-b-v83",
+      "name": "노을 · 금잔화 · 배경 조화 B",
+      "theme": "sunset",
+      "species": "marigold",
+      "shape": "B",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "9e44a63fc14e6ab3617ded3cff8021126908bf45ef9eff248a20210ac6b67446",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-b-v83_bud.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "530f754902c394c3a326a26db3d6575370ebfdc5ef2cf33a87e0b6598ef937fe",
+          "alphaBounds": [
+            136,
+            57,
+            968,
+            1519
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-b-v83_bloom.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "0e4490de219b961d63e5f11610be4838b2e477498b1ad74897765f6c357bbf5c",
+          "alphaBounds": [
+            115,
+            22,
+            967,
+            1518
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "90e3d51e0e11fc595afc4816decf7601fe68c85eaa7fab1cdd5aca75d90ad307",
+          "alphaSHA256": "530f754902c394c3a326a26db3d6575370ebfdc5ef2cf33a87e0b6598ef937fe",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_marigold_ShapeB_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "d1c270615e17d6c29131a63b91aa69f56477ec3fe2c896e9ca516c9e570cc7ab",
+          "alphaSHA256": "0e4490de219b961d63e5f11610be4838b2e477498b1ad74897765f6c357bbf5c",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-marigold-scene-c-v83",
+      "name": "노을 · 금잔화 · 배경 조화 C",
+      "theme": "sunset",
+      "species": "marigold",
+      "shape": "C",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "464ed50ab57ffda870fde3662bd8dda97239cc2dbff8fc058f73ba06808ed603",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-c-v83_bud.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "97763cd7c820e88c1852d37bfe88884bde5d0ac3e7a00e2571a37dcb5f04870b",
+          "alphaBounds": [
+            129,
+            66,
+            915,
+            1516
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-c-v83_bloom.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "3196c2bdb30bdf29606eaeffaa9a6f13570bbd1430dc6e780d8200850d8e898f",
+          "alphaBounds": [
+            132,
+            19,
+            911,
+            1517
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "2ea1c6c992999cedfa61b018088239c6ee8bf497b69a6f89f0d218b65d73503c",
+          "alphaSHA256": "97763cd7c820e88c1852d37bfe88884bde5d0ac3e7a00e2571a37dcb5f04870b",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_marigold_ShapeC_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "64e353b2793191fa7f0402902ed9783c910eb1c0114b435c7dcb9f8af0090510",
+          "alphaSHA256": "3196c2bdb30bdf29606eaeffaa9a6f13570bbd1430dc6e780d8200850d8e898f",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG01-marigold-scene-d-v83",
+      "name": "노을 · 금잔화 · 배경 조화 D",
+      "theme": "sunset",
+      "species": "marigold",
+      "shape": "D",
+      "backgroundId": "BG01",
+      "lightingId": "LT01",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "060e4daef18b36a318bc8f5b3cc96ccbf4947af37f9aff771eb86885edfe4031",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-d-v83_bud.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "35edf8c1d36f23dca4ec6e423729f9e4b21857d030279045489d8aa5fcb03957",
+          "alphaBounds": [
+            104,
+            84,
+            969,
+            1509
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG01-marigold-scene-d-v83_bloom.webp",
+          "file": "ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "89a02c5d639068e4446f6088772d212bed0ad87fb557deb5ccd9dff1655a9bbb",
+          "alphaBounds": [
+            102,
+            46,
+            967,
+            1509
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bud_Key00FFFF_v101.png",
+          "sha256": "58eb41885aa1a28ffd67682b3fd1764c1933b03f6632b8bcc041d2c452129095",
+          "alphaSHA256": "35edf8c1d36f23dca4ec6e423729f9e4b21857d030279045489d8aa5fcb03957",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG01_LT01_marigold_ShapeD_SceneOil_Stem3x_Bloom_Key00FFFF_v101.png",
+          "sha256": "0a12af019a7ecf72698a357616c99a8bc2c23bff0dba72c4f44cd79b443041e6",
+          "alphaSHA256": "89a02c5d639068e4446f6088772d212bed0ad87fb557deb5ccd9dff1655a9bbb",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#00FFFF"
+    },
+    {
+      "id": "BG02-buckwheat-scene-a-v83",
+      "name": "낮 · 메밀꽃 · 배경 조화 A",
+      "theme": "day",
+      "species": "buckwheat",
+      "shape": "A",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "b2b6e5e9c4e8a3b6148e8567206580137d34f694fa63e3fe631199459415434e",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-a-v83_bud.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "ecf3f5ce128f9ad78b506df4c4a220e5886def3f23b019156b3bdbe6d42a454c",
+          "alphaBounds": [
+            78,
+            9,
+            974,
+            1512
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-a-v83_bloom.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "da017d4b7a69a8af57f32b62cdf93f7016cb2221450cde6a4ce5ddb624ba490d",
+          "alphaBounds": [
+            40,
+            28,
+            1003,
+            1511
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "86c28b8fc76ac0e730edaf5902da6cb88bd40c9938058789231c885d049e18ba",
+          "alphaSHA256": "ecf3f5ce128f9ad78b506df4c4a220e5886def3f23b019156b3bdbe6d42a454c",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "1f92a5902ac171384c8393419e5186c0d132d59f4270fb8d3195d0906e8f36ba",
+          "alphaSHA256": "da017d4b7a69a8af57f32b62cdf93f7016cb2221450cde6a4ce5ddb624ba490d",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-buckwheat-scene-b-v83",
+      "name": "낮 · 메밀꽃 · 배경 조화 B",
+      "theme": "day",
+      "species": "buckwheat",
+      "shape": "B",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "84db94581acad27277165e543a5dc7e0c9ec2d0c11a4abeea9a250c5deddf6b7",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-b-v83_bud.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "94647c87eefe7cbb762ce7d2cef32a87e36cb790c18b0fdf4a3fabf6d9ba40c2",
+          "alphaBounds": [
+            88,
+            14,
+            975,
+            1507
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-b-v83_bloom.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "d55ef6231f7d3cc9b7b6909f8acccb2fc8bbb6fe3dee2f209793881d0cb5f5e8",
+          "alphaBounds": [
+            62,
+            31,
+            960,
+            1506
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "dc3744d67fb773d7a34a02089a83cff2ab9cf3a554249b71f4949a57b93bd8b5",
+          "alphaSHA256": "94647c87eefe7cbb762ce7d2cef32a87e36cb790c18b0fdf4a3fabf6d9ba40c2",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "1b18366551fc13fc8bced71f4125da0f212c38d7a1699bb2ab4f1bc32cae6e09",
+          "alphaSHA256": "d55ef6231f7d3cc9b7b6909f8acccb2fc8bbb6fe3dee2f209793881d0cb5f5e8",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-buckwheat-scene-c-v83",
+      "name": "낮 · 메밀꽃 · 배경 조화 C",
+      "theme": "day",
+      "species": "buckwheat",
+      "shape": "C",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "029e220c5476357cc26713088aefbee9c3d6735848227df1fa355c1c4905dea5",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-c-v83_bud.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "e34c20fa1126b143a327660e4be42f3628388c12206fa69554a3a00275935532",
+          "alphaBounds": [
+            143,
+            23,
+            933,
+            1502
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-c-v83_bloom.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "2d460013561efcfc86326a952686f7d339deab7af6c47379623beffb7353a2d9",
+          "alphaBounds": [
+            143,
+            33,
+            944,
+            1501
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "ad68643380e4e5987c3bd6ba55101d0b3274fb78058f545f02ce134f6883b210",
+          "alphaSHA256": "e34c20fa1126b143a327660e4be42f3628388c12206fa69554a3a00275935532",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "5cf61b79a0b07c1aa2ea918647e402714cdf8e1cb97315ab06af087fcad42791",
+          "alphaSHA256": "2d460013561efcfc86326a952686f7d339deab7af6c47379623beffb7353a2d9",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-buckwheat-scene-d-v83",
+      "name": "낮 · 메밀꽃 · 배경 조화 D",
+      "theme": "day",
+      "species": "buckwheat",
+      "shape": "D",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "4ccf02895a92a015db3ac5ae601971cdca056df3ae8aa8b96ebdbf771a3d77b9",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-d-v83_bud.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "1fd9d476b882a501f8044f5e43bdaa0628b7f6d1970cac713364f14328bbc708",
+          "alphaBounds": [
+            84,
+            28,
+            963,
+            1507
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-buckwheat-scene-d-v83_bloom.webp",
+          "file": "ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "c1bb38f9a95354fd4448575774bba6515ea32e33e7bbd2434fa1520eb6e1f765",
+          "alphaBounds": [
+            79,
+            33,
+            962,
+            1506
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "946a94513fc6aaf9930ed46e6f16beb5f193b68569ef9d98859098df576c18f9",
+          "alphaSHA256": "1fd9d476b882a501f8044f5e43bdaa0628b7f6d1970cac713364f14328bbc708",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "b575a04adb72141acb0b600d44f9a8e09010b2dcd8dbe0d795df0c809d0af765",
+          "alphaSHA256": "c1bb38f9a95354fd4448575774bba6515ea32e33e7bbd2434fa1520eb6e1f765",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-canola-scene-a-v83",
+      "name": "낮 · 유채꽃 · 배경 조화 A",
+      "theme": "day",
+      "species": "canola",
+      "shape": "A",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "4a89c0ba78b1b60e752f7704c1ba073451bb11efa21dbee1cab47e13d6d87558",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-a-v83_bud.webp",
+          "file": "ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "7145ae0bc10397ec1865838e84c30b5fbac897d5709022d7e8a242fb324da785",
+          "alphaBounds": [
+            143,
+            24,
+            901,
+            1511
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-a-v83_bloom.webp",
+          "file": "ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "580f56203508b3cd13932ee38bcfe8160dba9696354826352c590e7486b87ddd",
+          "alphaBounds": [
+            144,
+            20,
+            899,
+            1510
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "8e5c3537ba065e5097ac75a3856f2e6a9e6e5c4fbf0a1df063fab7b8feb20a5f",
+          "alphaSHA256": "7145ae0bc10397ec1865838e84c30b5fbac897d5709022d7e8a242fb324da785",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_canola_ShapeA_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "5cf51c6fb4965a77f395581997374b5bd33bdc98ef8b9c2f4c9ec81bebf4419c",
+          "alphaSHA256": "580f56203508b3cd13932ee38bcfe8160dba9696354826352c590e7486b87ddd",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-canola-scene-b-v83",
+      "name": "낮 · 유채꽃 · 배경 조화 B",
+      "theme": "day",
+      "species": "canola",
+      "shape": "B",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "963ea37f4a0bfc38ef67f7f7dd7b90977648bfe3a051e595b4d336806560d9d2",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-b-v83_bud.webp",
+          "file": "ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "e1faac6cacaa06bfb71264c2e1c11623907cc8ce4aafcb36848ed87a047f83f8",
+          "alphaBounds": [
+            196,
+            19,
+            907,
+            1517
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-b-v83_bloom.webp",
+          "file": "ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "41ac78f9e09127d8a8395168c9554faf75f8fbfc7f77b03537758d9b4feb0f08",
+          "alphaBounds": [
+            129,
+            35,
+            907,
+            1517
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "e36e3c5998a90ed663fbc030317fdcfbad8ba98e644069284fb0b6e718fe2da3",
+          "alphaSHA256": "e1faac6cacaa06bfb71264c2e1c11623907cc8ce4aafcb36848ed87a047f83f8",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_canola_ShapeB_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "6e26e7ec72e801646a16b64a2a7e169a6cdf56e0ce08f366623cd433a060def0",
+          "alphaSHA256": "41ac78f9e09127d8a8395168c9554faf75f8fbfc7f77b03537758d9b4feb0f08",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-canola-scene-c-v83",
+      "name": "낮 · 유채꽃 · 배경 조화 C",
+      "theme": "day",
+      "species": "canola",
+      "shape": "C",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "af73241b1f5d4e7560c0d59b99aaba822124e8f3efab115a1ca35f7bcedd095b",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-c-v83_bud.webp",
+          "file": "ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "e9e90c0759e7b28aec49df2df5c2ae188dad4ceb659b83eca607d621b8fe7bd1",
+          "alphaBounds": [
+            184,
+            20,
+            892,
+            1522
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-c-v83_bloom.webp",
+          "file": "ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "2b9f466215adc6e891e14938042c4883e71c146ba7d3f8b8388d59b4e0d32c59",
+          "alphaBounds": [
+            185,
+            15,
+            893,
+            1523
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "3bebf74ec1ae87e710f569afa2997acbeec477832af9b962757e49637dbaadad",
+          "alphaSHA256": "e9e90c0759e7b28aec49df2df5c2ae188dad4ceb659b83eca607d621b8fe7bd1",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_canola_ShapeC_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "0ef313fe9e760c25934c23d31855435f8a3cc3e8dee5ce5aea19b096f49adad0",
+          "alphaSHA256": "2b9f466215adc6e891e14938042c4883e71c146ba7d3f8b8388d59b4e0d32c59",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-canola-scene-d-v83",
+      "name": "낮 · 유채꽃 · 배경 조화 D",
+      "theme": "day",
+      "species": "canola",
+      "shape": "D",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "2e5eb4fdd724362d321b9951b120dbc033ebfc7c3018a8c382d212450f4263e5",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-d-v83_bud.webp",
+          "file": "ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "abfb48406c314dd2d954cc6fef16bae12337f05d3fc1fea2b4379b33d253408f",
+          "alphaBounds": [
+            132,
+            30,
+            929,
+            1512
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-canola-scene-d-v83_bloom.webp",
+          "file": "ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "90d39bf0c310eec59e78153902cbe0a57cb8340d6827c08f84629d6b36b1a9b2",
+          "alphaBounds": [
+            73,
+            18,
+            963,
+            1511
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "9a6ffa9f11dacaa75663442360dd71fc594e1e947e7803af5f0135f6f7bf4348",
+          "alphaSHA256": "abfb48406c314dd2d954cc6fef16bae12337f05d3fc1fea2b4379b33d253408f",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_canola_ShapeD_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "72a0fa8ee2bb6baa5100f86e57a0e012e4219c27dc40adcd2331365b48c1240e",
+          "alphaSHA256": "90d39bf0c310eec59e78153902cbe0a57cb8340d6827c08f84629d6b36b1a9b2",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-marigold-scene-a-v83",
+      "name": "낮 · 금잔화 · 배경 조화 A",
+      "theme": "day",
+      "species": "marigold",
+      "shape": "A",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "8007b4d96b05f4be031d0758c0474277a6ebd1730f82581b67155a55c72dfd86",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-a-v83_bud.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "d7bcfee431cf6aaae6d3d0b54c368b0d4354218fdbcc071cd73c9fb66b23dccb",
+          "alphaBounds": [
+            150,
+            187,
+            926,
+            1505
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-a-v83_bloom.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "8a165a8e5203237aca2b0de9d48c07f81781a0e6323c1e46d63c88e8b0311287",
+          "alphaBounds": [
+            150,
+            47,
+            925,
+            1505
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "a5d6205a8459c982f3b3babc3c3f71b6cc2dd8021fb82a9e3892bec8699617ea",
+          "alphaSHA256": "d7bcfee431cf6aaae6d3d0b54c368b0d4354218fdbcc071cd73c9fb66b23dccb",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_marigold_ShapeA_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "12685c79e0ab772bcfbb9aadea60b1d522556d9423c85ce9d28c0ea8f0f70756",
+          "alphaSHA256": "8a165a8e5203237aca2b0de9d48c07f81781a0e6323c1e46d63c88e8b0311287",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-marigold-scene-b-v83",
+      "name": "낮 · 금잔화 · 배경 조화 B",
+      "theme": "day",
+      "species": "marigold",
+      "shape": "B",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "47774a19e3b296e75b2bf85f62da48093536a6a2682f57c917bd8430d7281d6d",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-b-v83_bud.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "843493db1d4fbf5e2109df0ebca8fa190e8990db6f8c49f74a0f1c2fec0d05f6",
+          "alphaBounds": [
+            186,
+            171,
+            964,
+            1524
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-b-v83_bloom.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "d8f835b6d5e5c3fd41b0610fae7bf3ac7f2baa6814f92ea7d855ec886fc3fd5b",
+          "alphaBounds": [
+            115,
+            12,
+            962,
+            1523
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "fa1908e24776e2eb8d1660c5d78a2c714db4311a38e9b476b137ed16f5a65f6f",
+          "alphaSHA256": "843493db1d4fbf5e2109df0ebca8fa190e8990db6f8c49f74a0f1c2fec0d05f6",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_marigold_ShapeB_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "2fbe88fb75d44066d51405d94aea465d9f859c05ee04c65510e00873b7ec0fea",
+          "alphaSHA256": "d8f835b6d5e5c3fd41b0610fae7bf3ac7f2baa6814f92ea7d855ec886fc3fd5b",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-marigold-scene-c-v83",
+      "name": "낮 · 금잔화 · 배경 조화 C",
+      "theme": "day",
+      "species": "marigold",
+      "shape": "C",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "203a4241db1ed356f8384d657be929cc8d9f80a81b1d4802881118df1eb9da50",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-c-v83_bud.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "1051e2c7d316a47f670298c96fdcaae9c7150b1e8b5808e4a75119984237fc45",
+          "alphaBounds": [
+            102,
+            111,
+            913,
+            1511
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-c-v83_bloom.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "71b009750ab0abf2a67bddd9811b44a5c5f2f0b83289100496c2a95fe8518bac",
+          "alphaBounds": [
+            102,
+            33,
+            962,
+            1511
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "f859c5493e9c4319be4c8d614491fbf0fe55c2314189908c185543e3a98e4864",
+          "alphaSHA256": "1051e2c7d316a47f670298c96fdcaae9c7150b1e8b5808e4a75119984237fc45",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_marigold_ShapeC_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "54c6e2281652b0b016a24dd97361e32c4cdcce2bd17813983ab203f8bc77a2e2",
+          "alphaSHA256": "71b009750ab0abf2a67bddd9811b44a5c5f2f0b83289100496c2a95fe8518bac",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG02-marigold-scene-d-v83",
+      "name": "낮 · 금잔화 · 배경 조화 D",
+      "theme": "day",
+      "species": "marigold",
+      "shape": "D",
+      "backgroundId": "BG02",
+      "lightingId": "LT02",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "2f7aea0ed4e85ac7deb9765249c04e302a19ac541b11ca6c48582e089ea0c083",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-d-v83_bud.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "c7d9ee3cf6bb33c744dfc35ba9e5613df2e5e6ef9b4f5a5ff1a6bc3612797b06",
+          "alphaBounds": [
+            160,
+            15,
+            882,
+            1516
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG02-marigold-scene-d-v83_bloom.webp",
+          "file": "ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "c48ed66c2da95d8784e7a669bd908ac351f799e6a50eb1680600d1164ca57757",
+          "alphaBounds": [
+            159,
+            20,
+            882,
+            1514
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bud_Key0000FF_v101.png",
+          "sha256": "3585991db45dba47d2b69d60288cf371a67734aabeaa96e563cd97ee67251faa",
+          "alphaSHA256": "c7d9ee3cf6bb33c744dfc35ba9e5613df2e5e6ef9b4f5a5ff1a6bc3612797b06",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG02_LT02_marigold_ShapeD_SceneOil_Stem3x_Bloom_Key0000FF_v101.png",
+          "sha256": "511fac628aa16a3f81d1c7d42508158dd77020cb22239e04d75291fcd5cc1dc9",
+          "alphaSHA256": "c48ed66c2da95d8784e7a669bd908ac351f799e6a50eb1680600d1164ca57757",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#0000FF"
+    },
+    {
+      "id": "BG03-camellia-scene-a-v83",
+      "name": "달빛 · 동백 · 배경 조화 A",
+      "theme": "night",
+      "species": "camellia",
+      "shape": "A",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "1d8306e965038a49c1394f236010096e62a62a7410f6975184ed8fe77f27230e",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-a-v83_bud.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "a6e2b01b24902e671e558e029d5ecd5054c80193f153f8bfa813d9035f5eaa58",
+          "alphaBounds": [
+            138,
+            74,
+            869,
+            1515
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-a-v83_bloom.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "946f5ddfda664e3ff4a45e4cebc9d5763a327cb9d5e152c575c7609805ae43d5",
+          "alphaBounds": [
+            137,
+            37,
+            864,
+            1515
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "a1e297aeef11af48d44ce086f3455652c63dcd39b67f05807d09cfbc6dd7bfe2",
+          "alphaSHA256": "a6e2b01b24902e671e558e029d5ecd5054c80193f153f8bfa813d9035f5eaa58",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_camellia_ShapeA_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "8b611b1464906bdd956ab01598f122698cc5ea8b38f2f25c9380bb74114a3bb0",
+          "alphaSHA256": "946f5ddfda664e3ff4a45e4cebc9d5763a327cb9d5e152c575c7609805ae43d5",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-camellia-scene-b-v83",
+      "name": "달빛 · 동백 · 배경 조화 B",
+      "theme": "night",
+      "species": "camellia",
+      "shape": "B",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "046eeeeaf14246d325ad8ef208667b16096c95e10f98426d1a65864c9076738e",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-b-v83_bud.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "4a3ca7c1c47d3a773456f972a2bf4c1b34dca76d1dbec82cf6b5071112d4e8ae",
+          "alphaBounds": [
+            190,
+            76,
+            926,
+            1518
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-b-v83_bloom.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "d043fdb7092db3762b52fff608cf039405bcc9c9ade5ef83368416304dda766d",
+          "alphaBounds": [
+            87,
+            28,
+            924,
+            1518
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "f5eda9e419557cf3d60d4124b7bf5cad95e6f19eb9a0727f7264f614a1f375ce",
+          "alphaSHA256": "4a3ca7c1c47d3a773456f972a2bf4c1b34dca76d1dbec82cf6b5071112d4e8ae",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_camellia_ShapeB_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "86e6f5eb52fce95cc1df6a8f50f593c6fe5539b14fc00673eb514d01f0a948cd",
+          "alphaSHA256": "d043fdb7092db3762b52fff608cf039405bcc9c9ade5ef83368416304dda766d",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-camellia-scene-c-v83",
+      "name": "달빛 · 동백 · 배경 조화 C",
+      "theme": "night",
+      "species": "camellia",
+      "shape": "C",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "f4060c1342518ba8ad08a05a48f04f2758489ee9de0a873c9084cbba4232349f",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-c-v83_bud.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "634be8518171cd33378cab712fcfd832c5a676eafe0aac4b451214df87c3521e",
+          "alphaBounds": [
+            165,
+            148,
+            821,
+            1512
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-c-v83_bloom.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "d6a1931c73de126d3e8ecd1457ab97a7c6eb419283812bf3b0f9fd6a8da5aac1",
+          "alphaBounds": [
+            164,
+            37,
+            856,
+            1513
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "c8a4c6a401b3647428744d3adebafa93266e92f589cba35e919a80e3c4fcfca2",
+          "alphaSHA256": "634be8518171cd33378cab712fcfd832c5a676eafe0aac4b451214df87c3521e",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_camellia_ShapeC_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "a747b8d551eb3134553f49e9ceeefc59af673e58284e2852d340bc45f0309789",
+          "alphaSHA256": "d6a1931c73de126d3e8ecd1457ab97a7c6eb419283812bf3b0f9fd6a8da5aac1",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-camellia-scene-d-v83",
+      "name": "달빛 · 동백 · 배경 조화 D",
+      "theme": "night",
+      "species": "camellia",
+      "shape": "D",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "d92cc7d205849c30c57e534741454c04331720955b189d8994ef0fef696aeb4a",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-d-v83_bud.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "072475128ecf44b5a27f6169997e2e6f78b5b9e34417bf286b6d91261a36b72e",
+          "alphaBounds": [
+            65,
+            188,
+            933,
+            1501
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-camellia-scene-d-v83_bloom.webp",
+          "file": "ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "34fbe4537af63ebb566312d5a61b3e1e54df6bb27f11b3c0c00808659a3f6276",
+          "alphaBounds": [
+            66,
+            36,
+            941,
+            1501
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "93bea28c3e14efbdc8ee74590645154cce010ab6d493f49e1d54ec737974659a",
+          "alphaSHA256": "072475128ecf44b5a27f6169997e2e6f78b5b9e34417bf286b6d91261a36b72e",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_camellia_ShapeD_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "5ebcc05d749162363d28b8a4383c50eaf84e79fb27aaec233eaf6e1200ba5b5e",
+          "alphaSHA256": "34fbe4537af63ebb566312d5a61b3e1e54df6bb27f11b3c0c00808659a3f6276",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-hydrangea-scene-a-v83",
+      "name": "달빛 · 수국 · 배경 조화 A",
+      "theme": "night",
+      "species": "hydrangea",
+      "shape": "A",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "f920c6162327a946f739becf0644cd987f0aa55b16d2e1b9fd4583c07ce93e7e",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-a-v83_bud.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "23adc1fa26049b3f23a4b8c483629f3630b113e3d685c7695fbb2529ec30c8da",
+          "alphaBounds": [
+            139,
+            29,
+            950,
+            1511
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-a-v83_bloom.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "0a0e7c90552af492e975642e73831b0c64eb76adf76e04bb6df5ed3b8062e60d",
+          "alphaBounds": [
+            134,
+            39,
+            950,
+            1511
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "7e6892873542fb85db40c02daf0ff0b9b4c9e2022a546b1b7ef20b378ab46cb8",
+          "alphaSHA256": "23adc1fa26049b3f23a4b8c483629f3630b113e3d685c7695fbb2529ec30c8da",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "dd0d4d855c036f27c8018c1924bce3c93f3a19bceced91cb3a177a49fdbe543c",
+          "alphaSHA256": "0a0e7c90552af492e975642e73831b0c64eb76adf76e04bb6df5ed3b8062e60d",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-hydrangea-scene-b-v83",
+      "name": "달빛 · 수국 · 배경 조화 B",
+      "theme": "night",
+      "species": "hydrangea",
+      "shape": "B",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "2a7dff9a7d16c83e949c94030f796d6893d41253c0c07447f2a92e62c74a09e4",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-b-v83_bud.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "2794f46b7d406cea2de2f8ac4d52f356ceec35194cdeaaa712e9b27c3fe530f1",
+          "alphaBounds": [
+            70,
+            18,
+            965,
+            1521
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-b-v83_bloom.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "26c768eaaa88ff05a31d336807d5dcbd41fd91052cba8fab01bfbcb0f903e6e2",
+          "alphaBounds": [
+            64,
+            18,
+            962,
+            1520
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "d412259c2655ad728f30709f084e2444fdb6c1c9a6656187671d93bef4ea47af",
+          "alphaSHA256": "2794f46b7d406cea2de2f8ac4d52f356ceec35194cdeaaa712e9b27c3fe530f1",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "7fe28e21065accccfb1187088e5e953ba023e4fa5f2c1b0c563aed77d5ccb69c",
+          "alphaSHA256": "26c768eaaa88ff05a31d336807d5dcbd41fd91052cba8fab01bfbcb0f903e6e2",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-hydrangea-scene-c-v83",
+      "name": "달빛 · 수국 · 배경 조화 C",
+      "theme": "night",
+      "species": "hydrangea",
+      "shape": "C",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "3710dc7ba0611d39c5793fdeeca30dc0297042d1d54566ff52df9f0d0263c7c8",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-c-v83_bud.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "29c38ad809f76cd46634456b04fa35671d2de7a7457051bc0f5f03b9aacb5a82",
+          "alphaBounds": [
+            128,
+            7,
+            961,
+            1521
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-c-v83_bloom.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "33c1457f8194adcba315bf173483d6b406e9f591abdf1dddf0b935100f1ec851",
+          "alphaBounds": [
+            128,
+            14,
+            966,
+            1520
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "27a052dd0348d0decd3628d7c42ac088a5ac865fcfca98619e13160510cb42d5",
+          "alphaSHA256": "29c38ad809f76cd46634456b04fa35671d2de7a7457051bc0f5f03b9aacb5a82",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "56c7862272956b00967c55370c1b9119acb5fda27f23c2dca38cd57a55931355",
+          "alphaSHA256": "33c1457f8194adcba315bf173483d6b406e9f591abdf1dddf0b935100f1ec851",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-hydrangea-scene-d-v83",
+      "name": "달빛 · 수국 · 배경 조화 D",
+      "theme": "night",
+      "species": "hydrangea",
+      "shape": "D",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "db2261a92678fa7e7a21fc6b98a4824c0b9b0ecce1467b0825ee25bbbe751163",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-d-v83_bud.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "b2528961e49346d86c91e9916c7d50da302f9be10c2354a2ffa85ef1c471b4e8",
+          "alphaBounds": [
+            100,
+            32,
+            943,
+            1526
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-hydrangea-scene-d-v83_bloom.webp",
+          "file": "ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "f60f9f634e8ad98ea54b676f011a97c4043d70834ffa2f95e8fc60d91aa892f1",
+          "alphaBounds": [
+            100,
+            34,
+            932,
+            1525
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "0255f7b750add742211e10bf72d7c09ca201aae814c05e60d9b53ab6599ee9c0",
+          "alphaSHA256": "b2528961e49346d86c91e9916c7d50da302f9be10c2354a2ffa85ef1c471b4e8",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "4f638536081bb2a1eea601be89c34510883b49af0ec2bd15e88fde7152aa7e7e",
+          "alphaSHA256": "f60f9f634e8ad98ea54b676f011a97c4043d70834ffa2f95e8fc60d91aa892f1",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-lavender-scene-a-v83",
+      "name": "달빛 · 라벤더 · 배경 조화 A",
+      "theme": "night",
+      "species": "lavender",
+      "shape": "A",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "8d9aaf92bebaa23f4b711844a7993d9080fa8f1d3d9dfd7b96197de021a516c1",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-a-v83_bud.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "82a6825d1635ba767bedd16939611830eba0ea6aa50599e78b788d98e29b7b2e",
+          "alphaBounds": [
+            184,
+            7,
+            916,
+            1525
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-a-v83_bloom.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "9e2ec697140f8dcc5601ecdb265c801cbf1cd60040a6636461f41f1a718871f9",
+          "alphaBounds": [
+            160,
+            13,
+            925,
+            1523
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "1a57da75bd4ee58604edf90a8b1066fa49ce38da7b444be4ca79201bf7eabcd2",
+          "alphaSHA256": "82a6825d1635ba767bedd16939611830eba0ea6aa50599e78b788d98e29b7b2e",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_lavender_ShapeA_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "ead7947c9769068885863541a3fe90d503c4e1da7b8d9b939f33d7c379fd24cd",
+          "alphaSHA256": "9e2ec697140f8dcc5601ecdb265c801cbf1cd60040a6636461f41f1a718871f9",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-lavender-scene-b-v83",
+      "name": "달빛 · 라벤더 · 배경 조화 B",
+      "theme": "night",
+      "species": "lavender",
+      "shape": "B",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "a2143f1ad5166ed5299c7393c8bdf427e9b6974029a6284c31f710f0b9afa994",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-b-v83_bud.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "333e7152d49df1f7e798d218418f8a8e3436f4ccc7406dfea3a12ceb16d8a980",
+          "alphaBounds": [
+            160,
+            10,
+            909,
+            1520
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-b-v83_bloom.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "7848ae4cb9fb6d595ec78f5dc0336dfaff6f4e5fee355fb254f8552658636999",
+          "alphaBounds": [
+            145,
+            17,
+            909,
+            1519
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "ead1f43070e62ac44d9f282b64f7a3ea0a5359dcf42e90dfea167d22bc572d43",
+          "alphaSHA256": "333e7152d49df1f7e798d218418f8a8e3436f4ccc7406dfea3a12ceb16d8a980",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_lavender_ShapeB_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "b09f247e4081f5d7508295925b9c51ce23a60203ea0dfd0e1f2dad0202bf286c",
+          "alphaSHA256": "7848ae4cb9fb6d595ec78f5dc0336dfaff6f4e5fee355fb254f8552658636999",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-lavender-scene-c-v83",
+      "name": "달빛 · 라벤더 · 배경 조화 C",
+      "theme": "night",
+      "species": "lavender",
+      "shape": "C",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "02e57c7cd96208b083d5d207257e8d2a5510a614576b9471c930a52c462bf269",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-c-v83_bud.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "c630aa5a7720953b5bfadc7abacc988be23afce7eec3832752ebb34f2531669a",
+          "alphaBounds": [
+            243,
+            14,
+            878,
+            1523
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-c-v83_bloom.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "0a41cc31f097da650d1d2e13c4f87ed8a13336833bcbcc5d896a08382bf89b64",
+          "alphaBounds": [
+            244,
+            24,
+            903,
+            1523
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "43a756cd5e2c785a68f44dd0dda4e253b7e715b6e609f6a3cc3184c0f06ab267",
+          "alphaSHA256": "c630aa5a7720953b5bfadc7abacc988be23afce7eec3832752ebb34f2531669a",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_lavender_ShapeC_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "82c4a4e416e08dd958fe029bf5b658d9f0873b374355210af981567145bf25c8",
+          "alphaSHA256": "0a41cc31f097da650d1d2e13c4f87ed8a13336833bcbcc5d896a08382bf89b64",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG03-lavender-scene-d-v83",
+      "name": "달빛 · 라벤더 · 배경 조화 D",
+      "theme": "night",
+      "species": "lavender",
+      "shape": "D",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "1c8ede72bc09a0abb75cb28de9ec307643a36eaba9c651bb52efc30ecf85b41b",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-d-v83_bud.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "d216e6792a63ad2b370bff0209dc752e61cbbe9777b3c7adf946ac9267d61118",
+          "alphaBounds": [
+            172,
+            14,
+            882,
+            1512
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG03-lavender-scene-d-v83_bloom.webp",
+          "file": "ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "540adfd566d08575ddc4c5bc9a233754f5aa729184b7def0665580268ab41815",
+          "alphaBounds": [
+            163,
+            20,
+            879,
+            1511
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bud_Key80FF00_v101.png",
+          "sha256": "66549eded1c47ba35cde37369e823e2de04226e5b82627eaaca9fcf31f0f881f",
+          "alphaSHA256": "d216e6792a63ad2b370bff0209dc752e61cbbe9777b3c7adf946ac9267d61118",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG03_LT03_lavender_ShapeD_SceneOil_Stem3x_Bloom_Key80FF00_v101.png",
+          "sha256": "d0ec8a2f052da14f5bb54908b4762f0751402ac8d7ea0fea2eff73b85b703ec2",
+          "alphaSHA256": "540adfd566d08575ddc4c5bc9a233754f5aa729184b7def0665580268ab41815",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#80FF00"
+    },
+    {
+      "id": "BG04-buckwheat-scene-a-v83",
+      "name": "아침 · 메밀꽃 · 배경 조화 A",
+      "theme": "morning",
+      "species": "buckwheat",
+      "shape": "A",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "08b64a89abc1d2b1d6a7494f479f141116abd5cdde17d9be9e517ddfc031d823",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-a-v83_bud.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "b0ca447121fab719041884e18a6f936e703a6403cb255d401cf382b584e69f83",
+          "alphaBounds": [
+            160,
+            13,
+            880,
+            1519
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-a-v83_bloom.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "f0e17c858d0f884b8aea47bc1b8a01d6f8a6261249626ef056c21263615157ae",
+          "alphaBounds": [
+            159,
+            28,
+            879,
+            1518
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "1c33932eacb8f4be8ad83946c16b65a661a3c64c85f62804c588e1ffa23d5893",
+          "alphaSHA256": "b0ca447121fab719041884e18a6f936e703a6403cb255d401cf382b584e69f83",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeA_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "7eb778ac2a068dc1ca36f97e669ad7f79fb9d8c07c3f99d550daa38b4afb47ce",
+          "alphaSHA256": "f0e17c858d0f884b8aea47bc1b8a01d6f8a6261249626ef056c21263615157ae",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-buckwheat-scene-b-v83",
+      "name": "아침 · 메밀꽃 · 배경 조화 B",
+      "theme": "morning",
+      "species": "buckwheat",
+      "shape": "B",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "40493c4425f852c5ccdd0436c26ad86286c1d172a2f7c84c58e9c99e4a17f82b",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-b-v83_bud.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "1db4d5f4508865fbef46a658297d2034a8f256f0970066870a5fc76a13138586",
+          "alphaBounds": [
+            237,
+            19,
+            905,
+            1535
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-b-v83_bloom.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "772aa6a436f4acb9c7287f055cc5e390de5e9813a980d38fb32741405c1c4506",
+          "alphaBounds": [
+            230,
+            20,
+            903,
+            1532
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "40846c7dda05f9a70b0a4b2f3630933ec5d61fac169f0da5c23a609acbcbd0a9",
+          "alphaSHA256": "1db4d5f4508865fbef46a658297d2034a8f256f0970066870a5fc76a13138586",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeB_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "e3f1b8d51e549de24b10b903f4908515f538fee68ffc9887ae25c9daa9eb3fc2",
+          "alphaSHA256": "772aa6a436f4acb9c7287f055cc5e390de5e9813a980d38fb32741405c1c4506",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-buckwheat-scene-c-v83",
+      "name": "아침 · 메밀꽃 · 배경 조화 C",
+      "theme": "morning",
+      "species": "buckwheat",
+      "shape": "C",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "d1bad7f0fc20ce7982a708fa1f3dbe1947fec26255aab78833b73ba3484aab3e",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-c-v83_bud.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "df89ea48429f0175096a2353972010268f52911e085f3826e47f5c1df01b83c1",
+          "alphaBounds": [
+            190,
+            25,
+            932,
+            1514
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-c-v83_bloom.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "9db2ed28471cc739f9b0760f21ab07b8a0ef3683b8dddc73cf16db036849a5b5",
+          "alphaBounds": [
+            183,
+            30,
+            946,
+            1514
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "56b33f3192989631e97668bf4b83566e4cd75cd98959c8db46c557425304dbe9",
+          "alphaSHA256": "df89ea48429f0175096a2353972010268f52911e085f3826e47f5c1df01b83c1",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeC_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "67588aa6f46f150f651d9704229798ac94c67fda6f9e6e3067b6c76f3a8a38d7",
+          "alphaSHA256": "9db2ed28471cc739f9b0760f21ab07b8a0ef3683b8dddc73cf16db036849a5b5",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-buckwheat-scene-d-v83",
+      "name": "아침 · 메밀꽃 · 배경 조화 D",
+      "theme": "morning",
+      "species": "buckwheat",
+      "shape": "D",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "32d2b1adaca4e335c73a7ca91b515b002082b462f17a173400f77dcc69f02c5d",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-d-v83_bud.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "37837fdcc560b12e702ec34795547af4a8a540cd25a2806bd6cb673ee0d1787a",
+          "alphaBounds": [
+            186,
+            17,
+            867,
+            1519
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-buckwheat-scene-d-v83_bloom.webp",
+          "file": "ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "6d105bacde667ae774168c1d5621e064f1c8a1e6a5e0114573334ad7e0453803",
+          "alphaBounds": [
+            177,
+            20,
+            878,
+            1519
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "eaa3bd52b5646e32f5bc5144004210f0e4c64d1163482f968c2eb42c6b38aea1",
+          "alphaSHA256": "37837fdcc560b12e702ec34795547af4a8a540cd25a2806bd6cb673ee0d1787a",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_buckwheat_ShapeD_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "e0cf32c3d5e3f3bd4235e79137ad801f041d714679bdbd3efc1b1c44ec61c4f6",
+          "alphaSHA256": "6d105bacde667ae774168c1d5621e064f1c8a1e6a5e0114573334ad7e0453803",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-hydrangea-scene-a-v83",
+      "name": "아침 · 수국 · 배경 조화 A",
+      "theme": "morning",
+      "species": "hydrangea",
+      "shape": "A",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "303fe94520b2e94768c0b9a28562da256b10371308e09119d6ffba98179c1e42",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-a-v83_bud.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "d5552e288a0bb56f1a194a6ef2d73001b8f41cbe94f1c2921c055109b86d3412",
+          "alphaBounds": [
+            96,
+            28,
+            932,
+            1512
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-a-v83_bloom.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "aabdb0bcde08724a92a1e6a1dcfec74f914db12448feff8f1572c840321ffe24",
+          "alphaBounds": [
+            97,
+            26,
+            934,
+            1512
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "be47d97eb2fff367af472b35b85eb7dd0d3d3be22be14fdeb2829d65925fb71a",
+          "alphaSHA256": "d5552e288a0bb56f1a194a6ef2d73001b8f41cbe94f1c2921c055109b86d3412",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeA_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "b7943c5911078b8ecdfafc4593c3481716187e6e6c1f5f972678cce3da71d58c",
+          "alphaSHA256": "aabdb0bcde08724a92a1e6a1dcfec74f914db12448feff8f1572c840321ffe24",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-hydrangea-scene-b-v83",
+      "name": "아침 · 수국 · 배경 조화 B",
+      "theme": "morning",
+      "species": "hydrangea",
+      "shape": "B",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "66cbf58f40a24efc6fbe5e8afeb6a2080cc32a9e8cebf4353fbe50d23e55d6ab",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-b-v83_bud.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "74bfd2bddca67139e8a08bd1732854cbccc1120242c8ad7a4dceca4495383984",
+          "alphaBounds": [
+            88,
+            28,
+            986,
+            1512
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-b-v83_bloom.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "44b2bd5804b34090847b383065ec45b9db0ae156fff3422a9afc34725638d6e1",
+          "alphaBounds": [
+            93,
+            35,
+            984,
+            1511
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "80bb333c99365f584d72743397ba4524a0d1acfa5f11663c1ca20e92dc54652a",
+          "alphaSHA256": "74bfd2bddca67139e8a08bd1732854cbccc1120242c8ad7a4dceca4495383984",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeB_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "69feda442cc41f525e1eafdb20469cfb56b44c1b3f2a3b6525bfe85c53d77747",
+          "alphaSHA256": "44b2bd5804b34090847b383065ec45b9db0ae156fff3422a9afc34725638d6e1",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-hydrangea-scene-c-v83",
+      "name": "아침 · 수국 · 배경 조화 C",
+      "theme": "morning",
+      "species": "hydrangea",
+      "shape": "C",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "c5e9639511aaaf8c46d90451527617166fa7223449486ebb8097dfcf91c615cf",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-c-v83_bud.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "0cad0d03606435f8fbfc764d94ebe0908b433221943abbe52865015357ec34a1",
+          "alphaBounds": [
+            152,
+            15,
+            980,
+            1521
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-c-v83_bloom.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "55df6d6371560895f1dc8b8893823cff1ebcdcdbee075db6c687d8df48b194d2",
+          "alphaBounds": [
+            152,
+            19,
+            960,
+            1519
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "5c00169cc465a9d414f1b76c190525f9ac4de65218754b14ea1209bb3ff95df7",
+          "alphaSHA256": "0cad0d03606435f8fbfc764d94ebe0908b433221943abbe52865015357ec34a1",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeC_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "33f3a59d72cb4b74165ebb755e0b325bbc606ea839c350f1d6a02e4be3070e09",
+          "alphaSHA256": "55df6d6371560895f1dc8b8893823cff1ebcdcdbee075db6c687d8df48b194d2",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-hydrangea-scene-d-v83",
+      "name": "아침 · 수국 · 배경 조화 D",
+      "theme": "morning",
+      "species": "hydrangea",
+      "shape": "D",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "dbd3d6dfc18a704069c27461415ba1c1d54f9be8fee3243dfb1e5768cd277ff6",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-d-v83_bud.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "3ec8a18e7cd9c267e19a29e120e0417b98c9156fdd12248342089af7a90f8357",
+          "alphaBounds": [
+            112,
+            26,
+            941,
+            1514
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-hydrangea-scene-d-v83_bloom.webp",
+          "file": "ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "3fbe8f8cc98dc4601cf07e827ce8475f3ea2fba6ae4d6f8e61b21989d57a9bfa",
+          "alphaBounds": [
+            99,
+            36,
+            947,
+            1509
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "a2f850bbc51c8f023b6083117a415388bfe7ed9010f4ce2e27759e161c038874",
+          "alphaSHA256": "3ec8a18e7cd9c267e19a29e120e0417b98c9156fdd12248342089af7a90f8357",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_hydrangea_ShapeD_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "d8d279f0c8f541c9df964345bf327f0c7cc9a8a87ee139123d45fd90b6bd2e5e",
+          "alphaSHA256": "3fbe8f8cc98dc4601cf07e827ce8475f3ea2fba6ae4d6f8e61b21989d57a9bfa",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-lavender-scene-a-v83",
+      "name": "아침 · 라벤더 · 배경 조화 A",
+      "theme": "morning",
+      "species": "lavender",
+      "shape": "A",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "f6e47c184e57b08be32da192c6589bfd36497b62f8fd89cd12829fe95abd8dca",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-a-v83_bud.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "73ff4c2f9c5390f30b3ccf1b6aea19cd468c21cdf262e78a4c4c4d034c3dab33",
+          "alphaBounds": [
+            210,
+            7,
+            828,
+            1526
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-a-v83_bloom.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "d091d3e9867149d9db9a379fdc7bb407f8d4bd1d242fc5ab83d15070e90164fb",
+          "alphaBounds": [
+            201,
+            5,
+            839,
+            1527
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "899896f51a797a597fa8178550055a3b0fd2393e5e223d599aa19907bc8d9357",
+          "alphaSHA256": "73ff4c2f9c5390f30b3ccf1b6aea19cd468c21cdf262e78a4c4c4d034c3dab33",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_lavender_ShapeA_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "697e3b33e4b6ea9a7485ff4f8e551dc0749f8822fdf55622ee7096a29d198eb8",
+          "alphaSHA256": "d091d3e9867149d9db9a379fdc7bb407f8d4bd1d242fc5ab83d15070e90164fb",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-lavender-scene-b-v83",
+      "name": "아침 · 라벤더 · 배경 조화 B",
+      "theme": "morning",
+      "species": "lavender",
+      "shape": "B",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "57966c56b498075958c8c91110498f710919d869d96bcd8fdeba231786a5bf8a",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-b-v83_bud.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "477d344c11f96acc05f5edbba8da5d76ae43d46aea9b694d8f010a13772b1d71",
+          "alphaBounds": [
+            157,
+            9,
+            892,
+            1524
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-b-v83_bloom.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "de82c5c5699bee8143ab2f1a5964220d08c14e0cf1d48a4b66c39e89f2784da0",
+          "alphaBounds": [
+            138,
+            8,
+            892,
+            1524
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "10d6d9df89af94f4e83a7d5788c8efc2b9e07643ef5ed804d49fbb377680250c",
+          "alphaSHA256": "477d344c11f96acc05f5edbba8da5d76ae43d46aea9b694d8f010a13772b1d71",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_lavender_ShapeB_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "200aacd157faf3583c8bbb6e5a83ffd54c3f6307b93e93877194b06167686c32",
+          "alphaSHA256": "de82c5c5699bee8143ab2f1a5964220d08c14e0cf1d48a4b66c39e89f2784da0",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-lavender-scene-c-v83",
+      "name": "아침 · 라벤더 · 배경 조화 C",
+      "theme": "morning",
+      "species": "lavender",
+      "shape": "C",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "04f0ce1b2b50bc84cd0e90e448fbbf465dc14f360c434569211e98c4cad34500",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-c-v83_bud.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "54639f4030f655ec8cdff405d301ab87b8ee9dd50f1ad2840041dff4814f5dca",
+          "alphaBounds": [
+            176,
+            19,
+            849,
+            1516
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-c-v83_bloom.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "30cd8b5a9a90103d0692f81eb81e53fc76cbf1d779a851a8f5759ccf413d17c0",
+          "alphaBounds": [
+            172,
+            30,
+            856,
+            1515
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "8325abfd5ff01757eb78fea96c5ca052a55aa7a09a56a19f211f91cd79892aeb",
+          "alphaSHA256": "54639f4030f655ec8cdff405d301ab87b8ee9dd50f1ad2840041dff4814f5dca",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_lavender_ShapeC_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "cfc6258bbe4b6786e3823d717302a1b5242d3cf7be0c9a267634da1f9708bf05",
+          "alphaSHA256": "30cd8b5a9a90103d0692f81eb81e53fc76cbf1d779a851a8f5759ccf413d17c0",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    },
+    {
+      "id": "BG04-lavender-scene-d-v83",
+      "name": "아침 · 라벤더 · 배경 조화 D",
+      "theme": "morning",
+      "species": "lavender",
+      "shape": "D",
+      "backgroundId": "BG04",
+      "lightingId": "LT04",
+      "stemLengthMultiplier": 3,
+      "flowerHeadScaleTarget": 1,
+      "roots": false,
+      "width": 1024,
+      "height": 1536,
+      "status": "images-ready",
+      "videoReady": false,
+      "sourceBloomSHA256": "773f70c87b7c5668ff5559a862d72d2ab090f46334d273e873f3b064da25ec3e",
+      "images": {
+        "bud": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-d-v83_bud.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bud_v101.png",
+          "sha256": "9769a4767f433b5f7c595355134e247a398c3fb4e44c7db3f1354b7d93c9ad45",
+          "alphaBounds": [
+            190,
+            16,
+            852,
+            1520
+          ]
+        },
+        "bloom": {
+          "original": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/flower-stems-v101/ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "preview": "assets/flower-stems-v101/BG04-lavender-scene-d-v83_bloom.webp",
+          "file": "ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bloom_v101.png",
+          "sha256": "184e046139bff9300bf8b8de41b234a179e5fb00b62b3159b6aa0acf07a2e7c4",
+          "alphaBounds": [
+            190,
+            19,
+            852,
+            1520
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "role": "start_image",
+          "file": "ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bud_KeyFF8000_v101.png",
+          "sha256": "7615de9c1bc569674ca2dd602395d94569bd90deb731b52313537757662cc860",
+          "alphaSHA256": "9769a4767f433b5f7c595355134e247a398c3fb4e44c7db3f1354b7d93c9ad45",
+          "generatedImage": true
+        },
+        {
+          "role": "end_image",
+          "file": "ML_BG04_LT04_lavender_ShapeD_SceneOil_Stem3x_Bloom_KeyFF8000_v101.png",
+          "sha256": "e309f8ac69b58598c1378fc6888cb99ef4112f5855210a890a7d6523bedae030",
+          "alphaSHA256": "184e046139bff9300bf8b8de41b234a179e5fb00b62b3159b6aa0acf07a2e7c4",
+          "generatedImage": true
+        }
+      ],
+      "keyColor": "#FF8000"
+    }
+  ]
+}

@@ -16,7 +16,7 @@
   let next=root.jejuSeparatedLoops?root.jejuSeparatedMotion.project(layout,root.jejuSeparatedLoops,useVideo,release.assets.filter(a=>a.category==='particle')):layout;
   if(root.jejuElementLoopData)next=root.jejuElementLoops.project(next,root.jejuElementLoopData);
   if(root.jejuFlowerOpeningData)next=root.jejuFlowerOpening.project(next,root.jejuFlowerOpeningData);
-  if(root.jejuAmbient)next=root.jejuAmbient.cleanProject(next);return root.jejuRestoredBushes?root.jejuRestoredBushes.project(next):next;
+  if(root.jejuAmbient)next=root.jejuAmbient.cleanProject(next);if(root.jejuRestoredBushes)next=root.jejuRestoredBushes.project(next);return root.jejuForegroundGrass?root.jejuForegroundGrass.project(next):next;
  }
  const api={validate,load,prepare};if(typeof module==='object'&&module.exports){module.exports=api;return}root.jejuCurrentProjects=api;
 })(typeof window==='object'?window:globalThis);

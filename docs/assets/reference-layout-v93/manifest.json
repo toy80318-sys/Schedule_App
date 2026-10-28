@@ -7,8 +7,8 @@
     {
       "id": "sunset",
       "project": "sunset_editor_v93.json",
-      "sha256": "27ecb421f9c101f6354234d4d648ab7fe92f24052e64a6700958db196b5a6602",
-      "objectCount": 398,
+      "sha256": "f3cfee4b5e145a59a8888b2142f0cba1554bc0dae8e4f532a13766b1d5085ccf",
+      "objectCount": 396,
       "flowers": 320,
       "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG01_LT01_Integrated_AbstractOil_Flower30_v84.png",
       "sourceProject": "assets/current-release-v86/sunset_editor_v86.json",
@@ -17,8 +17,8 @@
     {
       "id": "day",
       "project": "day_editor_v93.json",
-      "sha256": "4a137dc8bd67fe8ec2f9d2c3441d4a27a083c2d15d1549565d388470fcde3f46",
-      "objectCount": 398,
+      "sha256": "56a0a3e85100678540a037fb7d5c9092943ffb2bf2aaff2121074176e13fa55d",
+      "objectCount": 396,
       "flowers": 320,
       "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG02_LT02_Integrated_AbstractOil_Flower30_v84.png",
       "sourceProject": "assets/current-release-v86/day_editor_v86.json",
@@ -27,8 +27,8 @@
     {
       "id": "night",
       "project": "night_editor_v93.json",
-      "sha256": "3b4498f09eb3a0c47619428380e73fab8a9145940a31ffd4802ee566f2600d76",
-      "objectCount": 398,
+      "sha256": "c435cea476056514184b9897d9962f5813070a5a396e1e31c230e5575423fddb",
+      "objectCount": 396,
       "flowers": 320,
       "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG03_LT03_Integrated_AbstractOil_Flower30_v84.png",
       "sourceProject": "assets/current-release-v86/night_editor_v86.json",
@@ -37,8 +37,8 @@
     {
       "id": "morning",
       "project": "morning_editor_v93.json",
-      "sha256": "da3c9639f63bc4c78ca3d218a195a460971750a137f20979e157a6acf0fbe669",
-      "objectCount": 398,
+      "sha256": "b9916fdc83eec0de4cf9b85e02bd14fd786c33bf21a5668f7cea6823c1361d82",
+      "objectCount": 396,
       "flowers": 320,
       "reference": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/integrated-small-flowers-v84/ML_BG04_LT04_Integrated_AbstractOil_Flower30_v84.png",
       "sourceProject": "assets/current-release-v86/morning_editor_v86.json",

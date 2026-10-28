@@ -564,34 +564,6 @@
       "separatedLoopVersion": 88
     },
     {
-      "id": "BG03-E02-V05",
-      "name": "달빛 · 나무",
-      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-E02-V05.png",
-      "preview": "assets/set-review-v01/preview/BG03-E02-V05.webp",
-      "width": 1254,
-      "height": 1254,
-      "category": "tree",
-      "theme": "night",
-      "sha256": "909db735399393c2d75952195b194e665ce7d03a35680fa9e273634646cf5328",
-      "file": "BG03-E02-V05.png",
-      "thumb": "assets/set-review-v01/preview/BG03-E02-V05.webp",
-      "group": "decor",
-      "design": null,
-      "color": null,
-      "completeObject": true,
-      "transparent": true,
-      "stillOnly": true,
-      "lightingBaked": true,
-      "imageStyleVersion": 76,
-      "setReviewVersion": "V05",
-      "ready": true,
-      "kind": "image",
-      "releaseVersion": 85,
-      "sourceVersion": "V05",
-      "loopInPlace": false,
-      "separatedLoopVersion": 88
-    },
-    {
       "id": "BG03-E05-V05",
       "name": "달빛 · 현무암",
       "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/source-assets/set-review-v01/BG03-E05-V05.png",
@@ -4002,6 +3974,156 @@
       "layerRole": "RearBush",
       "abstractStyle": "loose_gestural_oil_3x",
       "placementRole": "behind_flowers"
+    },
+    {
+      "id": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
+      "theme": "night",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "category": "grass",
+      "group": "decor",
+      "kind": "image",
+      "file": "BG03_LT03_arching_v101.png",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/docs/assets/foreground-grass-v101/BG03_LT03_arching_v101.png",
+      "preview": "assets/foreground-grass-v101/BG03_LT03_arching_v101.png",
+      "thumb": "https://toy80318-sys.github.io/Schedule_App/assets/foreground-grass-v101/BG03_LT03_arching_v101.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "completeObject": true,
+      "sourceProvenance": "complete_independent_generated_object",
+      "imageStyleVersion": 59,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "stillOnly": true,
+      "ready": true,
+      "motion": "stationary",
+      "loopInPlace": false,
+      "pixelsPerUnit": 100,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "groundAnchor": {
+        "x": 0.5,
+        "y": 0.95703125
+      },
+      "defaultWidthMm": 650,
+      "defaultHeightMm": 650,
+      "sha256": "beef4eda47b2ad31b9e7e1dbcfdfc65f1c49d6fdda15e0887deafed7428b2461",
+      "originalSource": "ML_BG03_LT03_greenery_06_Whole_v59.png",
+      "originalSHA256": "beef4eda47b2ad31b9e7e1dbcfdfc65f1c49d6fdda15e0887deafed7428b2461",
+      "visibleBounds": [
+        191,
+        114,
+        859,
+        932
+      ],
+      "sourceCreation": "reused-complete-object-v59",
+      "sourceStyleVersion": 59,
+      "foregroundGrassVersion": 101,
+      "foregroundVariant": "arching"
+    },
+    {
+      "id": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
+      "theme": "night",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "category": "grass",
+      "group": "decor",
+      "kind": "image",
+      "file": "BG03_LT03_sedge_v101.png",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/docs/assets/foreground-grass-v101/BG03_LT03_sedge_v101.png",
+      "preview": "assets/foreground-grass-v101/BG03_LT03_sedge_v101.png",
+      "thumb": "https://toy80318-sys.github.io/Schedule_App/assets/foreground-grass-v101/BG03_LT03_sedge_v101.png",
+      "width": 1254,
+      "height": 1254,
+      "transparent": true,
+      "completeObject": true,
+      "sourceProvenance": "complete_independent_generated_object",
+      "sourceCreation": "builtin-imagegen-native",
+      "sourceStyleVersion": 101,
+      "imageStyleVersion": 101,
+      "foregroundGrassVersion": 101,
+      "foregroundVariant": "sedge",
+      "lightingBaked": true,
+      "colorBaked": true,
+      "stillOnly": true,
+      "ready": true,
+      "motion": "stationary",
+      "loopInPlace": false,
+      "pixelsPerUnit": 100,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "groundAnchor": {
+        "x": 0.5,
+        "y": 0.8177830940988836
+      },
+      "visibleBounds": [
+        52,
+        380,
+        1216,
+        1026
+      ],
+      "defaultWidthMm": 900,
+      "defaultHeightMm": 900,
+      "sha256": "3df729b9fa07eb9fffcffaa2a5ad2f98862a8f5b07515eb5d03954ea09ac9340",
+      "originalSource": "exec-e190f23a-5498-4551-a10c-76e15f0518db.png",
+      "originalSHA256": "3df729b9fa07eb9fffcffaa2a5ad2f98862a8f5b07515eb5d03954ea09ac9340"
+    },
+    {
+      "id": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
+      "theme": "night",
+      "backgroundId": "BG03",
+      "lightingId": "LT03",
+      "category": "grass",
+      "group": "decor",
+      "kind": "image",
+      "file": "BG03_LT03_wide_v101.png",
+      "src": "https://raw.githubusercontent.com/toy80318-sys/Schedule_App/main/docs/assets/foreground-grass-v101/BG03_LT03_wide_v101.png",
+      "preview": "assets/foreground-grass-v101/BG03_LT03_wide_v101.png",
+      "thumb": "https://toy80318-sys.github.io/Schedule_App/assets/foreground-grass-v101/BG03_LT03_wide_v101.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "completeObject": true,
+      "sourceProvenance": "complete_independent_generated_object",
+      "imageStyleVersion": 59,
+      "lightingBaked": true,
+      "colorBaked": true,
+      "stillOnly": true,
+      "ready": true,
+      "motion": "stationary",
+      "loopInPlace": false,
+      "pixelsPerUnit": 100,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "groundAnchor": {
+        "x": 0.5,
+        "y": 0.95703125
+      },
+      "defaultWidthMm": 650,
+      "defaultHeightMm": 650,
+      "sha256": "5ba20e20f3f1d77f628a2d869bc8b3f72ffc6c28dd8ad692a3cf14347a9aedc3",
+      "originalSource": "ML_BG03_LT03_greenery_05_Whole_v59.png",
+      "originalSHA256": "5ba20e20f3f1d77f628a2d869bc8b3f72ffc6c28dd8ad692a3cf14347a9aedc3",
+      "visibleBounds": [
+        85,
+        274,
+        925,
+        809
+      ],
+      "sourceCreation": "reused-complete-object-v59",
+      "sourceStyleVersion": 59,
+      "foregroundGrassVersion": 101,
+      "foregroundVariant": "wide"
     }
   ],
   "objects": [
@@ -4205,8 +4327,8 @@
     },
     {
       "id": "night-reference93-bed-0",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 333.2966832900287,
       "y": 2562.603456900269,
       "w": 899.9965430997313,
@@ -4219,7 +4341,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-1",
@@ -4237,12 +4364,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-2",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 1755.3178303477673,
       "y": 2581.559482284486,
       "w": 881.0405177155138,
@@ -4255,12 +4387,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-3",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 3024.5119527576276,
       "y": 2466.0144843759385,
       "w": 996.5855156240614,
@@ -4273,12 +4410,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-4",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 3705.9860466653445,
       "y": 2517.1521764878926,
       "w": 945.4478235121073,
@@ -4291,7 +4433,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-5",
@@ -4309,12 +4456,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-6",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 5793.3489105738245,
       "y": 2566.805139716864,
       "w": 895.7948602831364,
@@ -4327,12 +4479,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-7",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 6774.076405264154,
       "y": 2461.3761132173986,
       "w": 1001.2238867826015,
@@ -4345,12 +4502,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-8",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 8088.530998594467,
       "y": 2467.7657431586085,
       "w": 994.8342568413915,
@@ -4363,12 +4525,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-9",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 9025.610419098117,
       "y": 2544.0808857328443,
       "w": 918.5191142671556,
@@ -4381,12 +4548,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-10",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 10076.131975147326,
       "y": 2469.2767628923057,
       "w": 993.3232371076944,
@@ -4399,7 +4571,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-11",
@@ -4417,12 +4594,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-12",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 11800.238824803117,
       "y": 2494.2189659486708,
       "w": 968.3810340513289,
@@ -4435,12 +4617,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-bed-13",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 13185.296599793211,
       "y": 2482.8965997932105,
       "w": 979.7034002067893,
@@ -4453,7 +4640,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-bed"
+      "groupId": "reference93-bed",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-bed",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-flower-030-v04-0",
@@ -5183,42 +5375,6 @@
       "anchorKind": "alpha-bounds-bottom-center",
       "referenceBand": 0,
       "groupId": "reference93-flowers-0"
-    },
-    {
-      "id": "BG03-tree-00",
-      "assetId": "BG03-E02-V05",
-      "name": "달빛 · 나무",
-      "x": 0,
-      "y": 1670.4,
-      "w": 1044,
-      "h": 1044,
-      "baseW": 1044,
-      "baseH": 1044,
-      "aspect": 1,
-      "r": 0,
-      "opacity": 0.8,
-      "flipX": false,
-      "blur": 0,
-      "motion": "stationary",
-      "groupId": "reference93-backdrop"
-    },
-    {
-      "id": "BG03-tree-01",
-      "assetId": "BG03-E02-V05",
-      "name": "달빛 · 나무",
-      "x": 13121,
-      "y": 1670.4,
-      "w": 1044,
-      "h": 1044,
-      "baseW": 1044,
-      "baseH": 1044,
-      "aspect": 1,
-      "r": 0,
-      "opacity": 0.8,
-      "flipX": false,
-      "blur": 0,
-      "motion": "stationary",
-      "groupId": "reference93-backdrop"
     },
     {
       "id": "BG03-flower-012-v04-0",
@@ -11969,12 +12125,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-14",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 6934.684357394268,
       "y": 3099.051468937978,
       "w": 377.46853106202184,
@@ -11987,7 +12148,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-16",
@@ -12005,12 +12171,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-20",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 10295.253275509898,
       "y": 3089.659895916715,
       "w": 386.8601040832848,
@@ -12023,12 +12194,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-01",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 313.43077389345063,
       "y": 3005.902033147484,
       "w": 470.6179668525159,
@@ -12041,12 +12217,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-02",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 1067.754529745363,
       "y": 3083.5786919846983,
       "w": 392.9413080153018,
@@ -12059,12 +12240,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-05",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 2409.64911554556,
       "y": 3083.1354505520762,
       "w": 393.3845494479239,
@@ -12077,12 +12263,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-07",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-sedge",
+      "name": "달빛 · 낮고 풍성한 사초",
       "x": 3598.2240506565863,
       "y": 2980.8057803079487,
       "w": 495.7142196920514,
@@ -12095,7 +12286,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-08",
@@ -12113,12 +12309,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-10",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 5205.064573522777,
       "y": 2973.516849611208,
       "w": 503.00315038879216,
@@ -12131,12 +12332,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-11",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 5639.153379731277,
       "y": 3068.655204126477,
       "w": 407.8647958735228,
@@ -12149,12 +12355,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-grass-13",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 6797.249229687288,
       "y": 3112.5449083232584,
       "w": 363.9750916767418,
@@ -12167,12 +12378,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-17",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 8520.292133249292,
       "y": 3130.0951642355026,
       "w": 346.4248357644975,
@@ -12185,7 +12401,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-19",
@@ -12203,12 +12424,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-22",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 11143.668400361583,
       "y": 3080.4715438523144,
       "w": 396.0484561476856,
@@ -12221,12 +12447,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-23",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-arching",
+      "name": "달빛 · 긴 잎이 휘는 풀",
       "x": 11755.982981794688,
       "y": 3078.267219690263,
       "w": 398.25278030973675,
@@ -12239,7 +12470,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-25",
@@ -12257,12 +12493,17 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "night-reference93-grass-26",
-      "assetId": "BG03-E01-V05",
-      "name": "달빛 · 풀",
+      "assetId": "foreground101-night-wide",
+      "name": "달빛 · 낮게 퍼진 풀",
       "x": 13117.745486311771,
       "y": 3007.090858906433,
       "w": 469.42914109356695,
@@ -12275,7 +12516,12 @@
       "flipX": false,
       "blur": 0,
       "motion": "stationary",
-      "groupId": "reference93-foreground"
+      "groupId": "reference93-foreground",
+      "foregroundGrassVersion101": 101,
+      "foregroundGrassRole101": "lower-row",
+      "foregroundGrassRow101": "reference93-foreground",
+      "foregroundGrassSource101": "BG03-E01-V05",
+      "foregroundGrassOriginalAsset101": "BG03-E01-V05"
     },
     {
       "id": "BG03-butterfly-00",
@@ -12636,6 +12882,7 @@
     "replacedObjects": 26
   },
   "restoredBushVersion99": 99,
+  "foregroundGrassVersion101": 101,
   "gameAtmosphereVersion": 89,
   "mediaPlaybackVersion": 99
 }

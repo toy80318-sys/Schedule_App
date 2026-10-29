@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const current=window.jejuCurrentRelease,data=current?{...window.jejuFinalCatalog,assets:current.assets,sourceFiles:current.assets.map(a=>({id:a.id,relativePath:a.file,stablePreviewUrl:a.src}))}:window.jejuFinalCatalog,E=window.jejuEditor,$=id=>document.getElementById(id);
+  const current=window.jejuCurrentRelease,data=current?{...window.jejuFinalCatalog,assets:current.assets.map(a=>window.jejuFlowerOpening.availability(a,window.jejuFlowerOpeningData)),sourceFiles:current.assets.map(a=>window.jejuFlowerOpening.availability(a,window.jejuFlowerOpeningData)).map(a=>({id:a.id,relativePath:a.file,stablePreviewUrl:a.src}))}:window.jejuFinalCatalog,E=window.jejuEditor,$=id=>document.getElementById(id);
   const labels={tree:'나무',basalt:'현무암 돌',leaf:'잎 가지',flower:'꽃 · 만개 PNG',petal:'꽃잎',background:'배경 PNG',cloud:'구름',mist:'안개',bird:'새',butterfly:'나비',grass:'잎 · 잎줄기 · 풀',decor:'현무암',cluster:'군집 이미지',particle:'빛 입자',reference:'참고 자료'};
   let chosen=null,frame=0,playing=false,last=0,raf=0,loadToken=0;
   const host=$('finalCatalog'),list=$('catalogCards'),media=$('catalogMedia'),seek=$('catalogSeek');
@@ -14,7 +14,7 @@
     stop();const token=++loadToken;chosen=a;frame=0;media.replaceChildren();$('catalogName').textContent=a.name;
     const warning=a.visualWarning||a.warning||'';
     $('catalogInfo').textContent=[labels[a.category]||a.category,a.width&&`${a.width} × ${a.height}`,a.frames?.length&&`${a.frames.length}프레임 · ${a.fps}FPS`,a.duration&&`${Number(a.duration).toFixed(2)}초`,a.referenceOnly&&'참고용 · 전시 배치 제외',warning].filter(Boolean).join(' · ');
-    $('catalogWarning').textContent=a.stillOnly?'정지 PNG입니다. 신규 봉오리·개화 영상은 연결되어 있지 않습니다.':a.category==='flower'?'조명이 적용된 만개 PNG입니다. 봉오리 PNG도 별도로 제공됩니다. 개화 영상은 포함하지 않습니다.':a.sourceFpsVerified===false?'원본에 FPS 정보가 없어 웹 재생 속도를 30FPS로 지정했습니다.':warning;
+    $('catalogWarning').textContent=a.stemAssetVersion===101?'긴 줄기 만개 PNG · 게임에서 같은 꽃의 2초 PNG 알파 개화가 재생됩니다.':a.stillOnly?'정지 PNG입니다. 신규 봉오리·개화 영상은 연결되어 있지 않습니다.':a.category==='flower'?'조명이 적용된 만개 PNG입니다. 봉오리 PNG도 별도로 제공됩니다. 개화 영상은 포함하지 않습니다.':a.sourceFpsVerified===false?'원본에 FPS 정보가 없어 웹 재생 속도를 30FPS로 지정했습니다.':warning;
     const im=document.createElement(a.kind==='video'?'video':'img');im.setAttribute('aria-label',a.name);if(a.kind==='video'){im.controls=true;im.muted=true;im.playsInline=true;im.preload='metadata';im.poster=a.poster||a.thumb||'';im.src=(a.fallbackSrc&&im.canPlayType?.('video/mp4; codecs="av01.0.08M.08"')===''?a.fallbackSrc:a.src)+(a.revision||'')}else{im.alt=a.name;im.src=a.frames?.[0]||a.src}media.append(im);
     seek.hidden=!a.frames?.length;seek.max=Math.max(0,(a.frames?.length||1)-1);seek.value=0;$('catalogPlay').hidden=!a.frames?.length;$('catalogStart').hidden=!a.frames?.length;$('catalogEnd').hidden=!a.frames?.length;frameLabel();
     $('catalogAdd').disabled=!!a.referenceOnly;$('catalogAdd').textContent=a.category==='background'?'이 배경 적용':'현재 배치에 추가';$('catalogReplace').disabled=!!a.referenceOnly||a.category==='background';

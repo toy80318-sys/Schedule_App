@@ -33,9 +33,9 @@
    }catch{fail(record)}
   }
   function register(asset,petal){
-   const row=rows.get(asset?.id);
-   if(!row||asset.src!==row.sourcePNG||asset.sha256!==row.sourceSHA256||petal?.id!==row.id||petal.sourcePNG!==row.sourcePNG||petal.sourceSHA256!==row.sourceSHA256||petal.sha256!==row.sourcePetalSHA256)return false;
-   if(!records.has(row.id))records.set(row.id,{row,video:null,canvas:null,context:null,failed:false,disposed:false,blocked:false,pending:false,used:false,sampled:-1});return true;
+   const row=rows.get(asset?.openingAssetId||asset?.id);
+   if(!row||(asset.petalSourcePNG||asset.src)!==row.sourcePNG||(asset.petalSourceSHA256||asset.sha256)!==row.sourceSHA256||petal?.id!==row.id||petal.sourcePNG!==row.sourcePNG||petal.sourceSHA256!==row.sourceSHA256||petal.sha256!==row.sourcePetalSHA256)return false;
+   if(!records.has(asset.id))records.set(asset.id,{row,video:null,canvas:null,context:null,failed:false,disposed:false,blocked:false,pending:false,used:false,sampled:-1});return true;
   }
   function draw(ctx,id,fallback,x,y,w,h){
    const record=records.get(id);let image=null;
